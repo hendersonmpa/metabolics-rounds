@@ -1,0 +1,93 @@
+#+TITLE: Organic Acids in Homo Sapiens
+#+AUTHOR: Matthew Henderson, PhD, FCACB
+#+DATE: \today
+
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [presentation, smaller]
+#+BEAMER_THEME: Boadilla [height=20pt]
+#+BEAMER_COLOR_THEME: [RGB={170,160,80}]{structure}
+#+BEAMER_FRAME_LEVEL: 2
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+OPTIONS: H:2 toc:nil
+#+PROPERTY: header-args:R :session *R*
+#+PROPERTY: header-args :cache no
+#+PROPERTY: header-args :tangle yes
+#+STARTUP: beamer
+#+STARTUP: overview
+#+STARTUP: hidestars
+#+STARTUP: indent
+# #+BEAMER_HEADER: \subtitle{What is an Automated and Reproducible Report?}
+#+BEAMER_HEADER: \institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
+#+BEAMER_HEADER: \titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
+#+latex_header: \hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
+#+LaTeX_header: \usepackage{textpos}
+#+LaTeX_header: \usepackage[version=4]{mhchem}
+#+LaTeX_header: \usepackage{chemfig}
+#+LaTeX_header: \usepackage{siunitx}
+#+LaTex_HEADER: \usepackage[usenames,dvipsnames]{xcolor}
+#+LaTeX_HEADER: \usepackage[T1]{fontenc}
+#+LaTeX_HEADER: \usepackage{lmodern}
+#+LaTeX_HEADER: \usepackage{verbatim}
+
+#+BEGIN_LaTeX
+\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
+    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
+}
+
+\vspace{220pt}}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\tiny}
+
+% \addtobeamertemplate{frametitle}{}{%
+% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+% \includegraphics[height=1cm,width=2cm]{cat}
+% \end{textblock*}}
+#+END_LaTeX
+
+* Background
+** Nomenclature
+
+| Length | Monocarboxylic acid   | Dicarboxylic acid |
+|--------+-----------------------+-------------------|
+| C2     | Acetic                | Oxalic            |
+| C3     | Propionic             | Malonic           |
+| C4     | Butyric               | Succinic          |
+|        | Isobutyric            |                   |
+| C5     | Valeric               | Glutaric          |
+|        | Isovaleric            |                   |
+|        | 2-Methylbutyric       |                   |
+| C6     | Hexanoic (caprioc)    | Adipic            |
+| C7     | Heptanoic (enanthic)  | Pimelic           |
+| C8     | Octanoic (caprylic)   | Suberic           |
+| C9     | Nonanoic (pelargonic) | Azelaic           |
+| C10    | Decanoic (capric)     | Sebacic           |
+
+** Functional Groups
+#+BEGIN_LaTeX
+\centering
+\chemfig{X-C(-[2]X)(-[6]X)-C(-[2]X)(-[6]X)-C(-[7]OH)=[1]O}
+#+END_LaTeX
+
+| Functional group | Formula            |
+|------------------+--------------------|
+| hydrogen         | -H                 |
+| keto             | .= O               |
+| hydroxyl         | -OH                |
+| carboxyl         | -COOH              |
+| side chain       | -(CH$_2$)$_n$      |
+
+#+TBLFM: $2=O
+** Side Chains
+#+BEGIN_LaTeX
+\centering
+\chemfig{X-C(-[2]X)(-[6]X)-C(-[2]X)(-[6]X)-C(-[7]OH)=[1]O}
+#+END_LaTeX
+
+| Side chain | Structure                      |
+|------------+--------------------------------|
+| Methyl     | \chemfig{CH_3-}                |
+| Ethyl      | \chemfig{CH_3-CH_2-}           |
+| Propyl     | \chemfig{CH_3-CH_2-CH_2-}      |
+| Butyl      | \chemfig{CH_3-CH_2-CH_2-CH_2-} |
+

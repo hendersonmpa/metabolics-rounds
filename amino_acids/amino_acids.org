@@ -1,0 +1,442 @@
+#+TITLE: Protein and Amino Acid Metabolism
+#+AUTHOR: Matthew Henderson, PhD, FCACB
+#+DATE: \today
+
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [presentation, smaller]
+#+BEAMER_THEME: Boadilla [height=20pt]
+#+BEAMER_COLOR_THEME: [RGB={170,160,80}]{structure}
+#+BEAMER_FRAME_LEVEL: 2
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+OPTIONS: H:2 toc:nil
+#+PROPERTY: header-args:R :session *R*
+#+PROPERTY: header-args :cache no
+#+PROPERTY: header-args :tangle yes
+#+STARTUP: beamer
+#+STARTUP: overview
+#+STARTUP: hidestars
+#+STARTUP: indent
+# #+BEAMER_HEADER: \subtitle{What is an Automated and Reproducible Report?}
+#+BEAMER_HEADER: \institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
+#+BEAMER_HEADER: \titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
+#+latex_header: \hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
+#+LaTeX_header: \usepackage{textpos}
+#+LaTeX_header: \usepackage{textgreek}
+#+LaTeX_header: \usepackage[version=4]{mhchem}
+#+LaTeX_header: \usepackage{chemfig}
+#+LaTeX_header: \usepackage{siunitx}
+#+LaTex_HEADER: \usepackage[usenames,dvipsnames]{xcolor}
+#+LaTeX_HEADER: \usepackage[T1]{fontenc}
+#+LaTeX_HEADER: \usepackage{lmodern}
+#+LaTeX_HEADER: \usepackage{verbatim}
+#+LaTeX_HEADER: \usepackage{tikz}
+#+LaTeX_HEADER: \usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+
+
+#+BEGIN_LaTeX
+%\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
+%    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
+%}
+
+\vspace{220pt}}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\tiny}
+% \addtobeamertemplate{frametitle}{}{%
+% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+% \includegraphics[height=1cm,width=2cm]{cat}
+% \end{textblock*}}
+
+\tikzstyle{core} = [rectangle, rounded corners, text width=2cm, minimum height=.5cm,text centered, draw=black, fill=blue!30]
+\tikzstyle{io} = [rectangle, rounded corners, text width=2cm, minimum height=.5cm,text centered, draw=black, fill=gray!30]
+\tikzstyle{hl} = [rectangle, rounded corners, text width=2cm, minimum height=.5cm,text centered, draw=black, fill=red!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
+
+#+END_LaTeX
+
+* Protein Digestion
+** Protein Metabolism
+#+BEGIN_LaTeX
+\begin{center}
+\begin{tikzpicture}[node distance=2cm]
+% nodes
+\node(protein)[core]{Protein (\textasciitilde{}11 kg)};
+\node(faa)[core, below of=protein, yshift=-1cm]{Free amino acids (\textasciitilde{}70 g/d)};
+\node(proteolysis)[io, left of=faa, xshift=-1cm, yshift=1.5cm]{Proteolysis (\textasciitilde{}300 g/d)};
+\node(food)[io, left of=faa, xshift=-1cm]{Food intake};
+\node(synthesis)[io, left of=faa, xshift=-1cm, yshift=-1cm]{Amino acid synthesis};
+\node(protsyn)[io, right of=faa, xshift=1cm, yshift=1.5cm]{Protein synthesis (\textasciitilde{}300 g/d)};
+\node(degradation)[io, right of=faa, xshift=1cm]{Degradation};
+\node(conversion)[io, right of=faa, xshift=1cm, yshift=-1cm]{Conversion};
+
+% arrows
+\draw[arrow](protein) -| (proteolysis);
+\draw[arrow](protsyn) |- (protein);
+\draw[arrow](proteolysis) -- (faa);
+\draw[arrow](faa) -- (protsyn);
+\draw[arrow](food) -- (faa);
+\draw[arrow](synthesis) -- (faa);
+\draw[arrow](faa) -- (degradation);
+\draw[arrow](faa) -- (conversion);
+
+\end{tikzpicture}
+\end{center}
+\\
+\begin{flushright}
+\tiny{Adapted from SIMD-NAMA}
+\end{flushright}
+#+END_LaTeX
+
+- 70 kg adult
+** Protein Metabolism: Food Intake
+#+BEGIN_LaTeX
+\begin{center}
+\begin{tikzpicture}[node distance=2cm]
+% nodes
+\node(protein)[core]{Protein (\textasciitilde{}11 kg)};
+\node(faa)[core, below of=protein, yshift=-1cm]{Free amino acids (\textasciitilde{}70 g/d)};
+\node(proteolysis)[io, left of=faa, xshift=-1cm, yshift=1.5cm]{Proteolysis (\textasciitilde{}300 g/d)};
+\node(food)[hl, left of=faa, xshift=-1cm]{Food intake};
+\node(synthesis)[io, left of=faa, xshift=-1cm, yshift=-1cm]{Amino acid synthesis};
+\node(protsyn)[io, right of=faa, xshift=1cm, yshift=1.5cm]{Protein synthesis (\textasciitilde{}300 g/d)};
+\node(degradation)[io, right of=faa, xshift=1cm]{Degradation};
+\node(conversion)[io, right of=faa, xshift=1cm, yshift=-1cm]{Conversion};
+
+% arrows
+\draw[arrow](protein) -| (proteolysis);
+\draw[arrow](protsyn) |- (protein);
+\draw[arrow](proteolysis) -- (faa);
+\draw[arrow](faa) -- (protsyn);
+\draw[hl-arrow](food) -- (faa);
+\draw[arrow](synthesis) -- (faa);
+\draw[arrow](faa) -- (degradation);
+\draw[arrow](faa) -- (conversion);
+
+\end{tikzpicture}
+\end{center}
+\
+\begin{flushright}
+\tiny{Adapted from SIMD-NAMA}
+\end{flushright}
+#+END_LaTeX
+
+** Pancreatic and Intestinal Proteases
+\centering
+#+ATTR_LATEX: :height 0.9\textheight
+[[./figures/proteolysis.png]]
+
+- Cystic Fibrosis
+** Absorption from Small Intestine
+- Most AA have \gt 1 transport system
+- Driven by low intracellular \ce{Na+}
+  - secondary active transport
+
+***                                                                 :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+- Hartnup disease
+  - non-polar amino acids
+- cystinuria
+
+
+***                                                                 :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+[[./figures/transport.png]]
+
+** 20 Essential & Non-essential Amino Acids
+
+***                                                                 :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.45
+:END:
+**** Essential
+- Histidine
+- Isoleucine
+- Leucine
+- Lysine
+- Methionine
+- Phenylalanine
+- Threonine
+- Tryptophan
+- Valine
+
+***                                                                 :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.45
+:END:
+**** Non-essential
+- Glycine
+- Alanine
+- Serine
+- /Cysteine (Met)/
+- Glutamate
+- Glutamine
+- Proline
+- Arginine
+- Asparagine
+- Aspartate
+- /Tyrosine (Phe)/
+
+* Proteolysis
+** Protein Metabolism: Proteolysis
+#+BEGIN_LaTeX
+\begin{center}
+\begin{tikzpicture}[node distance=2cm]
+% nodes
+\node(protein)[core]{Protein (\textasciitilde{}11 kg)};
+\node(faa)[core, below of=protein, yshift=-1cm]{Free amino acids (\textasciitilde{}70 g/d)};
+\node(proteolysis)[hl, left of=faa, xshift=-1cm, yshift=1.5cm]{Proteolysis (\textasciitilde{}300 g/d)};
+\node(food)[io, left of=faa, xshift=-1cm]{Food intake};
+\node(synthesis)[io, left of=faa, xshift=-1cm, yshift=-1cm]{Amino acid synthesis};
+\node(protsyn)[io, right of=faa, xshift=1cm, yshift=1.5cm]{Protein synthesis (\textasciitilde{}300 g/d)};
+\node(degradation)[io, right of=faa, xshift=1cm]{Degradation};
+\node(conversion)[io, right of=faa, xshift=1cm, yshift=-1cm]{Conversion};
+
+% arrows
+\draw[hl-arrow](protein) -| (proteolysis);
+\draw[arrow](protsyn) |- (protein);
+\draw[hl-arrow](proteolysis) -- (faa);
+\draw[arrow](faa) -- (protsyn);
+\draw[arrow](food) -- (faa);
+\draw[arrow](synthesis) -- (faa);
+\draw[arrow](faa) -- (degradation);
+\draw[arrow](faa) -- (conversion);
+
+\end{tikzpicture}
+\end{center}
+\\
+\begin{flushright}
+\tiny{Adapted from SIMD-NAMA}
+\end{flushright}
+#+END_LaTeX
+
+** Protein Turnover - Intracellular amino acid pool
+- Proteolysis happens in catabolic circumstances (energetic requirements > intake)
+  - Fasting  	        
+  - Physiologic stress (fever, infections, stress, surgery)
+- Skeletal muscle is the main source of amino acids
+- 30 g muscle \to 6.25 g protein  \to 1 g nitrogen
+*** Lysosomal protein turnover
+- autophagy: engulf cytoplasm into vesicles
+  - can be triggered by starvation
+- cathepsin digests engulfed protein \to amino acids
+*** Ubiquitin-proteasome pathway
+- covalent binding of ubiquitin targets proteins for degradation by proteasome.
+- PEST sequences increase ubiquitination and decrease half-life.
+
+* Protein Synthesis
+** Protein Metabolism: Synthesis
+#+BEGIN_LaTeX
+\begin{center}
+\begin{tikzpicture}[node distance=2cm]
+% nodes
+\node(protein)[core]{Protein (\textasciitilde{}11 kg)};
+\node(faa)[core, below of=protein, yshift=-1cm]{Free amino acids (\textasciitilde{}70 g/d)};
+\node(proteolysis)[io, left of=faa, xshift=-1cm, yshift=1.5cm]{Proteolysis (\textasciitilde{}300 g/d)};
+\node(food)[io, left of=faa, xshift=-1cm]{Food intake};
+\node(synthesis)[io, left of=faa, xshift=-1cm, yshift=-1cm]{Amino acid synthesis};
+\node(protsyn)[hl, right of=faa, xshift=1cm, yshift=1.5cm]{Protein synthesis (\textasciitilde{}300 g/d)};
+\node(degradation)[io, right of=faa, xshift=1cm]{Degradation};
+\node(conversion)[io, right of=faa, xshift=1cm, yshift=-1cm]{Conversion};
+
+% arrows
+\draw[arrow](protein) -| (proteolysis);
+\draw[hl-arrow](protsyn) |- (protein);
+\draw[arrow](proteolysis) -- (faa);
+\draw[hl-arrow](faa) -- (protsyn);
+\draw[arrow](food) -- (faa);
+\draw[arrow](synthesis) -- (faa);
+\draw[arrow](faa) -- (degradation);
+\draw[arrow](faa) -- (conversion);
+
+\end{tikzpicture}
+\end{center}
+\\
+\begin{flushright}
+\tiny{Adapted from SIMD-NAMA}
+\end{flushright}
+#+END_LaTeX
+
+** Protein Synthesis
+- Amino acid composition of proteins is genetically determined
+- Essential amino acids are limiting
+*** Control                                                         :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.45
+:END:
+**** Control
+- 20g natural protein intake
+- 9 essential AAs,Phe 4% = 800mg
+- Synthesized protein 10-16 g
+- Muscle 100g
+*** Classical PKU                                                   :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.45
+:END:
+**** Classical PKU
+- 5-8 g natural protein intake
+  - Phe = 200-320 mg
+- Phe free AA mixture 15g
+- 8 essential AAs w Phe (300mg)
+- Synthesized protein 5-8 g
+- Muscle 25-35 g
+***                                                       :B_ignoreheading:
+:PROPERTIES:
+:BEAMER_env: ignoreheading
+:END:
+#+BEGIN_LaTeX
+\begin{flushright}
+\tiny{Adapted from SIMD-NAMA}
+\end{flushright}
+#+END_LaTeX
+* Amino Acid Synthesis
+** Protein Metabolism: Amino Acid Synthesis
+#+BEGIN_LaTeX
+\begin{center}
+\begin{tikzpicture}[node distance=2cm]
+% nodes
+\node(protein)[core]{Protein (\textasciitilde{}11 kg)};
+\node(faa)[core, below of=protein, yshift=-1cm]{Free amino acids (\textasciitilde{}70 g/d)};
+\node(proteolysis)[io, left of=faa, xshift=-1cm, yshift=1.5cm]{Proteolysis (\textasciitilde{}300 g/d)};
+\node(food)[io, left of=faa, xshift=-1cm]{Food intake};
+\node(synthesis)[hl, left of=faa, xshift=-1cm, yshift=-1cm]{Amino acid synthesis};
+\node(protsyn)[io, right of=faa, xshift=1cm, yshift=1.5cm]{Protein synthesis (\textasciitilde{}300 g/d)};
+\node(degradation)[io, right of=faa, xshift=1cm]{Degradation};
+\node(conversion)[io, right of=faa, xshift=1cm, yshift=-1cm]{Conversion};
+
+% arrows
+\draw[arrow](protein) -| (proteolysis);
+\draw[arrow](protsyn) |- (protein);
+\draw[arrow](proteolysis) -- (faa);
+\draw[arrow](faa) -- (protsyn);
+\draw[arrow](food) -- (faa);
+\draw[hl-arrow](synthesis) -- (faa);
+\draw[arrow](faa) -- (degradation);
+\draw[arrow](faa) -- (conversion);
+
+\end{tikzpicture}
+\end{center}
+\\
+\begin{flushright}
+\tiny{Adapted from SIMD-NAMA}
+\end{flushright}
+#+END_LaTeX
+
+
+** Synthesis of Non-essential Amino Acids
+
+[[./figures/AA_synthesis.png]]
+
+** The AA transaminases
+- One specific transaminase for each amino acid
+  - \textalpha{}-amino transamination
+  - Transamination of other amines 
+    - \textdelta{}-ornithine
+    - \textgamma{}-GABA
+- Common characteristics:
+  - The cofactor: pyridoxal-P (vitamin B6)
+  - All use \textalpha{}-ketoglutaric acid as nitrogen acceptor 	
+  - All produce glutamic acid, which is central to nitrogen metabolism 
+  - Allows carbon skeleton to be oxidized by specific pathways
+** The Role of Cofactors in Amino Acid Metabolism
+- AA metabolism requires three important cofactors:
+  - Pyridoxal phosphate (PLP)
+    - transamination reactions
+  - Tetrahydrofolate (\ce{FH4})
+    - one-carbon transfer
+  - Tetrahydrobiopterin (\ce{BH4})
+    - hydroxylation reactions
+** AA biosynthetic families
+- Diverse biosynthetic pathways
+- Carbon skeletons of non-essential AAs come from either:
+  - intermediates of glycolysis
+  - citric acid cycle
+
+** AAs Derived from Glycolysis Intermediates
+
+#+BEGIN_LaTeX
+\centering
+\chemname{\chemfig[][scale=.75]{^{+}H_3N-C(-[2]COO^{-})(-[6]H)-H}}{\small glycine}
+\chemname{\chemfig[][scale=.75]{^{+}H_3N-C(-[2]COO^{-})(-[6]CH_3)-H}}{\small alanine}
+\chemname{\chemfig[][scale=.75]{^{+}H_3N-C(-[2]COO^{-})(-[6]CH_2-[6]OH)-H}}{\small serine}
+\chemname{\chemfig[][scale=.75]{^{+}H_3N-C(-[2]COO^{-})(-[6]CH_3-[6]{\color{red}S}H)-H}}{\small cysteine}
+#+END_LaTeX
+
+** AAs derived from TCA cycle intermediates: \alpha{}-ketoglutarate
+#+BEGIN_LaTeX
+\centering
+\chemname{\chemfig[][scale=.75]{^{-}OOC-[7](=[1]O)-[6]CH_2-[6]CH_2-[6]COO^{-}}}{\small \textalpha{}-ketoglutarate}
+\chemname{\chemfig[][scale=.75]{^{+}H_3N-C(-[2]COO^{-})(-[6]CH_2-[6]CH_2-[6]COO^{-})-H}}{\small glutamate}
+\chemname{\chemfig[][scale=.75]{^{+}H_3N-C(-[2]COO^{-})(-[6]CH_2-[6]CH_2-[6]C(=O)-[6]NH_2)-H}}{\small glutamine}
+\chemname{\chemfig[][scale=.75]{^{-}OOC-[6]*5(-^{+}H_2N----)}}{\small proline}
+\chemname{\chemfig[][scale=.75]{^{+}H_3N-C(-[2]COO^{-})(-[6]{(CH_2)_3}-[6]NH-[6]C(=NH_2^{+})-[6]NH_2)-H}}{\small arginine}
+%\chemname{\chemfig[][scale=.75]{^{+}H_3N-C(-[2]COO^{-})(-[6]CH_2-[6]*5(=-N=-NH-))-H}}{\small histidine}
+#+END_LaTeX
+
+** AAs derived from TCA cycle intermediate: oxaloacetate
+
+#+BEGIN_LaTeX
+\centering
+\chemname{\chemfig[][scale=.75]{^{-}OOC-[7](=[1]O)-[6]CH_2-[6]COO^{-}}}{\small oxaloacetate}
+\chemname{\chemfig[][scale=.75]{^{+}H_3N-C(-[2]COO^{-})(-[6]CH_2-[6]COO^{-})-H}}{\small aspartate}
+\chemname{\chemfig[][scale=.75]{^{+}H_3N-C(-[2]COO^{-})(-[6]CH_2-[6]C(=O)-[6]NH_2)-H}}{\small asparagine}
+#+END_LaTeX
+
+* Amino Acids Catabolism
+** Protein Metabolism: Amino Acid Catabolism
+#+BEGIN_LaTeX
+\begin{center}
+\begin{tikzpicture}[node distance=2cm]
+% nodes
+\node(protein)[core]{Protein (\textasciitilde{}11 kg)};
+\node(faa)[core, below of=protein, yshift=-1cm]{Free amino acids (\textasciitilde{}70 g/d)};
+\node(proteolysis)[io, left of=faa, xshift=-1cm, yshift=1.5cm]{Proteolysis (\textasciitilde{}300 g/d)};
+\node(food)[io, left of=faa, xshift=-1cm]{Food intake};
+\node(synthesis)[io, left of=faa, xshift=-1cm, yshift=-1cm]{Amino acid synthesis};
+\node(protsyn)[io, right of=faa, xshift=1cm, yshift=1.5cm]{Protein synthesis (\textasciitilde{}300 g/d)};
+\node(degradation)[hl, right of=faa, xshift=1cm]{Degradation};
+\node(conversion)[hl, right of=faa, xshift=1cm, yshift=-1cm]{Conversion};
+
+% arrows
+\draw[arrow](protein) -| (proteolysis);
+\draw[arrow](protsyn) |- (protein);
+\draw[arrow](proteolysis) -- (faa);
+\draw[arrow](faa) -- (protsyn);
+\draw[arrow](food) -- (faa);
+\draw[arrow](synthesis) -- (faa);
+\draw[hl-arrow](faa) -- (degradation);
+\draw[hl-arrow](faa) -- (conversion);
+
+\end{tikzpicture}
+\end{center}
+\\
+\begin{flushright}
+\tiny{Adapted from SIMD-NAMA}
+\end{flushright}
+#+END_LaTeX
+
+** Amino Acid Catabolism
+\centering
+#+ATTR_LATEX: :height 0.9\textheight
+[[./figures/kgaas.png]]
+
+** Amino Acid Nitrogen
+
+- Urea Cycle, see previous!
+
+\centering
+#+ATTR_LATEX: :width 0.7\textwidth
+[[./figures/urea_cycle_crop.png]]
+
+
+** Next up
+ - Amino Acid Analysis
+   - HPLC
+   - FIA-MS/MS
+   - LC- MS/MS
+     
