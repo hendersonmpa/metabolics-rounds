@@ -154,10 +154,10 @@
 
 - Electrospray ionization in positive mode
 - Parents of 85
-- \alpha{}-amino acids fragment to produce the neutral butyl formate molecule (102 Da). 
-- A neutral loss scan is used to identify parent molecules with a NL of 102 Da.
-- MRM is used to detected amino acids with basic functional groups
-  - arginine, ornithine and citrulline
+- butylated acylcarnitines fragment to produce a characteristic the neutral butyl formate molecule (102 Da). 
+- A parent ion scann is used to identify parent molecules with an 102 m/z fragment.
+- MRM is used to detected dicarboxylic acylcarnitines
+  
 
 \small
 | Compound | Chan Reaction   |
