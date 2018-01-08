@@ -1,4 +1,4 @@
-#+TITLE: Laboratory Methods for Quantitative Acyl Carnitines in Biological Matrices
+#+TITLE: Laboratory Methods for Quantitative Acyl-Carnitines in Biological Matrices
 #+AUTHOR: Matthew Henderson, PhD, FCACB
 #+DATE: \today
 
@@ -60,6 +60,39 @@
 #+END_LaTeX
 
 * Introduction
+
+** Carnitine
+
+- Carnitine (3-carboxy-2-hydroxy-N,N,N-tri-methylpropan-1-aminium) is
+  an endogenous quaternary ammonium compound synthesized from lysine
+  and methionine
+
+- Primary function is to shuttle long chain fatty acids to the
+  mitochondrial matrix, where they subsequently undergo
+  \Beta{}-oxidation
+
+
+#+BEGIN_LaTeX
+\centering
+\chemname{\chemfig[][scale=.33]{H3N-N^{+}([2]-CH3)([6]-CH3)-CH2-C([2]-H)([6]-O)-CH_2-C([1]=O)([7]-O^{-})}}{\tiny Carnitine}
+\chemname{\chemfig[][scale=.33]{H3N-N^{+}([2]-CH3)([6]-CH3)-CH2-C([2]-H)([6]-O-C([0]=O)-{\color{red}R})-CH_2-C([1]=O)([7]-O^{-})}}{\tiny Acylcarnitine}
+\chemname{\chemfig[][scale=.33]{H3N-N^{+}([2]-CH3)([6]-CH3)-CH2-C([2]-H)([6]-O-C([0]=O)-{\color{red}R})-CH_2-C([2]=O)-O-CH_2-CH_2-CH_2-CH_3}}{\tiny Acylcarnitine, butyl ester}
+
+#+END_LaTeX
+** Acyl-Carnitines Measurement
+- Typically, carnitine is derivitized to from a butyl ester, thus
+  improving its ionization and retention characteristics. A potential
+  problem with this approach is that the acidic conditions used to
+  carry out the reaction may hydrolyze other acyl esters, resulting in
+  ex-vivo artifacts.
+
+- Low carnitine levels can mask diagnostic elevations in plasma
+  acylcarnitines.Therefore,interpretation of plasma acylcarnitines
+  without evaluating the total carnitine pool can lead to
+  misdiagnosis. Because many of the adverse effects of the described
+  disorders may be mitigated through dietary intervention and
+  supplementation, early diagnosis is critical. Thus accurate and
+  robust methods for carnitine quantification are critical.
 
 * FIA-MS/MS
 
@@ -241,12 +274,13 @@
 | 25.0 | 0.65 | 99.8 |  0.5 |
 
 ** LC-MS/MS sample prep
-- 10 \micro{}L of sample is mixed with 990 \micro{}L of IS in 0.5 mM Perfluoroheptanoic acid and centrifuge to deproteinize.
+- 10 \micro{}L of sample is mixed with 990 \micro{}L of IS in 0.5 mM perfluoroheptanoic acid and centrifuge to deproteinize.
 - 200 \micro{}L of supernatant is removed
 - 7.5 \micro{}L is injected onto an octadecylsilyl (C18) stationary phase.
 
 
-#+begin_src gnuplot :var data=data-table :file ./figures/outletmethod.png
+#+begin_src gnuplot :var data=data-table :file ./figures/outletmethod.pdf
+reset
 set title "UPLC Gradient"
 set xlabel "min"
 
@@ -262,7 +296,7 @@ plot data u 1:3 w lp lw 2 title 'A', \
 
 #+ATTR_LATEX: :width 0.7\textwidth
 #+RESULTS:
-[[file:./figures/outletmethod.png]]
+[[file:./figures/outletmethod.pdf]]
 
 
 ** Ion-Pairing Chromatography

@@ -205,7 +205,7 @@
 - Sodium metabisulphite, found in some intravenous preparations as a
   preservative, can cause the conversion of cystine to sulphocysteine.
 
-**  Urine
+** Urine
 - Urine
   - 24 hour or random urine
   - preservative free bottle
@@ -258,7 +258,6 @@
 [[./figures/erndim.png]]
 
 * Amino Acid Analyser
-
 ** Amino Acid Analyser Schematic
 
 #+BEGIN_LaTeX
@@ -296,7 +295,6 @@
 \schemestop
 \end{center}
 #+END_LaTeX
-
 
 ** Amino Acid Analyser
 - Cation-exchange chromatography using a lithium buffer system
