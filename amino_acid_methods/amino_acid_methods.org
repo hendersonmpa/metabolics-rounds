@@ -223,7 +223,7 @@
   - reported in \micro{}mol/g creatinine
   - Aminoaciduria due to overflow and amino acid transport defects.
 
-**  Cerebral Spinal Fluid
+** Cerebral Spinal Fluid
   - free of blood contamination
   - which tube is used?
   - investigation of neurological disorders and essential for the
