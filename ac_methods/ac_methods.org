@@ -67,19 +67,19 @@
 - Carnitine (3-hydroxy-4-N,N,N-trimethylaminobutyrate) is
   an endogenous quaternary ammonium compound synthesized from lysine
   and methionine.
-- L-Carnitine has been described as a "conditionally essential"
-  nutrient for humans.
-- Populations with an exogenous carnitine requirement include:
-  - infants (premature and full-term),
-  - patients on long-term parenteral nutrition,
-  - perhaps children.
-- Exogenous carnitine is required to maintain "normal" (in the
-  epidemiologic sense) plasma or serum carnitine concentrations in
-  humans of all ages.
+# - L-Carnitine has been described as a "conditionally essential"
+#   nutrient for humans.
+# - Populations with an exogenous carnitine requirement include:
+#   - infants (premature and full-term),
+#   - patients on long-term parenteral nutrition,
+#   - perhaps children.
+# - Exogenous carnitine is required to maintain "normal" (in the
+#   epidemiologic sense) plasma or serum carnitine concentrations in
+#   humans of all ages.
 - Primary function is to shuttle long chain fatty acids to the
   mitochondrial matrix, for \beta{}-oxidation.
-
-** Carnitine and Acylcarnitines
+- Acylcarnitines are markers for FAODs and OAs
+\vspace{2em}
 #+BEGIN_LaTeX
 \centering
 \chemname{\chemfig[][scale=.5]{H3C-N^{+}([2]-CH3)([6]-CH3)-CH2-C([2]-H)([6]-OH)-CH_2-C([1]=O)([7]-O^{-})}}{\tiny Carnitine}
