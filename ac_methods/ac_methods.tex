@@ -1,4 +1,4 @@
-% Created 2018-01-11 Thu 09:37
+% Created 2018-01-11 Thu 12:45
 \documentclass[presentation, smaller]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -31,12 +31,12 @@
 \usecolortheme{whale}
 \author{Matthew Henderson, PhD, FCACB}
 \date{\today}
-\title{Laboratory Methods for Quantitative Acyl-Carnitines in Biological Matrices}
+\title{Laboratory Methods for Quantitative Acylcarnitines in Biological Matrices}
 \institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
 \titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
 \hypersetup{
  pdfauthor={Matthew Henderson, PhD, FCACB},
- pdftitle={Laboratory Methods for Quantitative Acyl-Carnitines in Biological Matrices},
+ pdftitle={Laboratory Methods for Quantitative Acylcarnitines in Biological Matrices},
  pdfkeywords={},
  pdfsubject={},
  pdfcreator={Emacs 25.2.1 (Org mode 8.3.4)}, 
@@ -61,7 +61,7 @@
 \tikzstyle{hardware} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=gray!30]
 \tikzstyle{ms} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=orange, fill=none]
 \tikzstyle{msw} = [rectangle, rounded corners, text width=7em, minimum height=1em,text centered, draw=orange, fill=none]
-\tikzstyle{label} = [rectangle,text width=5em, minimum height=1em, text centered, draw=none, fill=none]
+\tikzstyle{label} = [rectangle,text width=8em, minimum height=1em, text centered, draw=none, fill=none]
 \tikzstyle{hl} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=red!30]
 \tikzstyle{box} = [rectangle, rounded corners, text width=5em, minimum height=5em,text centered, draw=black, fill=none]
 \tikzstyle{arrow} = [thick,->,>=stealth]
@@ -71,7 +71,7 @@
 \label{sec:orgheadline7}
 \begin{frame}[label={sec:orgheadline1}]{Carnitine and Acylcarnitines}
 \begin{itemize}
-\item Carnitine (3-hydroxy-4-N,N,N-trimethylaminobutyrate) is
+\item Carnitine (\(\beta\)-hydroxy-\(\gamma\)-N-trimethylaminobutyric acid) is
 an endogenous quaternary ammonium compound synthesized from lysine
 and methionine.
 
@@ -144,7 +144,7 @@ C18 & 172\\
 \item NSO uses 60\degree{}C for 20 minutes.
 \item IMD uses 55\degree{}C for 20 minutes.
 
-\item A sample with low free carnitine and high acetylcarnitine.
+\item In a sample with low free carnitine and high acetylcarnitine.
 \begin{itemize}
 \item 30\% of the acetylcarnitine and smaller amounts of higher
 molecular mass acylcarnitines are converted to carnitine
@@ -155,20 +155,27 @@ blood spots with high levels of acylcarnitines should therefore be
 used with caution." \footnotemark[1]{}
 \end{itemize}
 \end{frame}
-\begin{frame}[label={sec:orgheadline6}]{Fractional Tubular Re-absorption of Carnitine}
-\begin{itemize}
-\item investigation of CUD
-\end{itemize}
-
+\begin{frame}[label={sec:orgheadline6}]{Free and Total Carnitine}
+\begin{block}{Fractional Tubular Re-absorption of Carnitine}
 \begin{equation*}
 FTR_{carnitine}\% = \left( 1 -  \frac{carnitine_{urine} \cdot creatinine_{plasma}}{carnitine_{plasma} \cdot creatinine_{urine}}\right) \cdot 100
 \end{equation*}
 
 \begin{itemize}
-\item normally \textgreater{} 98\%
+\item normally >98\%, \(\Downarrow\) in CUD
 \end{itemize}
-\end{frame}
+\end{block}
 
+\begin{block}{Free/Total Carnitine}
+\[
+\frac{Free_{carnitine}}{Total_{carnitine}} = \frac{C_0}{\sum_{0}^{18} C_n}
+\]
+
+\begin{itemize}
+\item \(\Downarrow\) in CUD, < 5-10\% of normal
+\end{itemize}
+\end{block}
+\end{frame}
 \section{Screening FIA-MS/MS}
 \label{sec:orgheadline14}
 \begin{frame}[label={sec:orgheadline8}]{FIA-MS/MS schematic}
@@ -191,7 +198,7 @@ FTR_{carnitine}\% = \left( 1 -  \frac{carnitine_{urine} \cdot creatinine_{plasma
 \end{center}
 
 \begin{itemize}
-\item Solvent delivery is via HPLC with no chromatography, called flow injection analysis.
+\item Solvent delivery is via HPLC with no chromatography
 \item 10 \textmu{}L of sample extract is injected into a flowing stream operating at \textasciitilde{}0.15 ml/min.
 
 \item Typical injection rates between samples are 2 min, giving a potential 400
@@ -242,11 +249,14 @@ to 600 sample capacity per instrument per day.
 \begin{center}
 \begin{tikzpicture}[]
 \node[box](ms1)[]{};
+\node[label](ms1u)[above=of ms1,yshift=-3em]{MS1};
 \node[label](ms1l)[below=of ms1,yshift=3em]{scanning};
 \node[box](cc)[right= of ms1]{};
+\node[label](ccu)[above=of cc,yshift=-3em]{Collision cell};
 \node[label](ccl)[below=of cc,yshift=3em]{fragmentation};
 \node[box](ms2)[right= of cc]{};
-\node[label](ms2l)[below=of ms2,yshift=3em]{selected m/z};
+\node[label](ms2u)[above=of ms2,yshift=-3em]{MS2};
+\node[label](ms2l)[below=of ms2,yshift=3em]{85 m/z};
 \draw[->](ms1) -- (cc);
 \draw[->](cc) -- (ms2);
 
@@ -296,7 +306,7 @@ to 600 sample capacity per instrument per day.
 \small
 \begin{center}
 \begin{tabular}{ll}
-Compound & Chan Reaction\\
+Compound & Reaction\\
 \hline
 C0 & 218.10 > 103.00\\
 C0 IS & 227.10 > 103.00\\
@@ -364,7 +374,7 @@ C8DC & 430.45 > 85.00\\
 \end{block}
 \end{frame}
 \section{Diagnostic FIA-MS/MS}
-\label{sec:orgheadline18}
+\label{sec:orgheadline20}
 \begin{frame}[label={sec:orgheadline15}]{Diagnostic FIA-MS/MS schematic}
 \begin{center}
 \begin{tikzpicture}[node distance=7em]
@@ -393,7 +403,7 @@ C8DC & 430.45 > 85.00\\
 \item supernatant is removed and 100 \textmu{}L of n-butanol-3M HCL is added
 \item dried down
 \item reconstituted with 200 \textmu{}L 80\% acetonitrile.
-\item 
+\item 7.5 \textmu{}L injection.
 \end{itemize}
 
 \includegraphics[width=0.7\textwidth]{./figures/outletmethod.pdf}
@@ -464,5 +474,29 @@ C8DC & 430.45 > 85.00\\
 \end{column}
 \end{columns}
 \end{block}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline18}]{Pros and Cons of Butanol  FIA-MSMS for Aceylcarnitines}
+\begin{block}{Pros}
+\begin{itemize}
+\item Speed
+\item Sensitivity
+\item Expertise
+\item Amino acid measurement
+\end{itemize}
+\end{block}
+\begin{block}{Cons}
+\begin{itemize}
+\item Isobaric compounds
+\begin{itemize}
+\item C5DC and C10-OH
+\end{itemize}
+\item Overestimation of CO due to hydrolysis
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline19}]{Why derivatize?}
+\includegraphics[width=.9\linewidth]{./figures/ionization.png}
 \end{frame}
 \end{document}
