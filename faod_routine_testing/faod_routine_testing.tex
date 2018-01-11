@@ -1,0 +1,335 @@
+% Created 2017-12-14 Thu 12:55
+\documentclass[presentation, smaller]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
+\usepackage{textpos}
+\usepackage{textgreek}
+\usepackage[version=4]{mhchem}
+\usepackage{chemfig}
+\usepackage{siunitx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{verbatim}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+\usetheme{Hannover}
+\usecolortheme{whale}
+\author{Matthew Henderson, PhD, FCACB}
+\date{\today}
+\title{Abnormal Routine Biochemistry Results in Mitochondrial FAO Defects}
+\institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
+\titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
+\hypersetup{
+ pdfauthor={Matthew Henderson, PhD, FCACB},
+ pdftitle={Abnormal Routine Biochemistry Results in Mitochondrial FAO Defects},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.2.1 (Org mode 8.3.4)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+%\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
+%    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
+%}
+
+\vspace{220pt}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\tiny}
+% \addtobeamertemplate{frametitle}{}{%
+% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+% \includegraphics[height=1cm,width=2cm]{cat}
+% \end{textblock*}}
+
+\tikzstyle{chemical} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=none]
+\tikzstyle{hardware} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=gray!30]
+\tikzstyle{ms} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{msw} = [rectangle, rounded corners, text width=7em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{label} = [rectangle,text width=5em, minimum height=1em, text centered, draw=none, fill=none]
+\tikzstyle{hl} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=red!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
+
+\section{Follow-up}
+\label{sec:orgheadline8}
+\begin{frame}[label={sec:orgheadline1}]{Follow-up}
+\begin{itemize}
+\item Address a few outstanding questions from previous FAO talks
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline2}]{Carnitine Transport Defect}
+\begin{itemize}
+\item Organic cation/carnitine transporter(OCTN2) responsible for
+carnitine uptake across the plasma membrane
+\begin{itemize}
+\item heart, muscle and kidney.
+\end{itemize}
+
+\item \textbf{What about liver?}
+
+\begin{itemize}
+\item Analysis of carnitine transport in different tissues suggests the
+presence of heterogeneous transporters.\footnote{Scaglia, F., Wang, Y., \& Longo, N. (1999). Functional
+characterization of the carnitine transporter defective in primary
+carnitine deficiency. Archives of Biochemistry and Biophysics,
+364(1), 99–106.}
+\item Liver and brain have a low-affinity (Km 2–10 uM), high-capacity transporter
+\item Fibroblast, muscle, and heart cells have a high-affinity (Km 5–10 uM), low-capacity system.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline3}]{Models for Fatty Acid Transport Across Cell Membranes}
+\includegraphics[width=.9\linewidth]{./figures/FA_transport.jpg}
+
+\tiny
+\begin{itemize}
+\item CD35 = FAT
+\end{itemize}
+\end{frame}
+\begin{frame}[label={sec:orgheadline4}]{Oxidation of Medium-Chain Length Fatty Acids}
+\begin{itemize}
+\item \(\uparrow\) solubility
+\item \(\to\) mito matrix via the monocarboxylate transporter
+\item \textbf{Are there any reports of disease causing MCT mutations?}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline5}]{Oxidation of Medium-Chain Length Fatty Acids}
+\begin{itemize}
+\item "There is a general consensus that short-chain and medium-chain fatty
+acids (C4 to C12) diffuse freely across plasma and mitochondrial
+membranes" \footnote{Odaib, A. A., Shneider, B. L., Bennett, M. J., Pober, B. R.,
+Reyes-Mugica, M., Friedman, A. L., … Rinaldo, P. (1998). A defect in
+the transport of long-chain fatty acids associated with acute liver
+failure. N Engl J Med, 339(24), 1752–1757.}
+
+\item Butyrate is taken up by enterocytes, presumably by means of the
+monocarboxylate transporter 1 (MCT-1) and the sodium-coupled
+monocarboxylate transporter 1 (SMCT-1) \footnote{Butyrate is used by these cells mostly as fuel.  Schönfeld, P., \&
+Wojtczak, L. (2016). Short- and medium-chain fatty acids in energy
+metabolism: the cellular perspective. Journal of Lipid Research,
+57(6), 943–954.}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline6}]{Monocarboxylate Transporter 1}
+\begin{itemize}
+\item Out of 14 known mammalian MCTs, six isoforms have been functionally
+characterized to transport monocarboxylates and short chain fatty
+acids (MCT1-4), thyroid hormones (MCT8-10) and aromatic amino
+acids (MCT10)
+
+\item MCT1 mediates the movement of lactate and pyruvate across cell
+membranes.
+\begin{itemize}
+\item erythrocytes, muscle, intestine, liver and kidney
+\end{itemize}
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{ll}
+Phenotype & Inheritance\\
+\hline
+Erythrocyte lactate transporter defect & AD\\
+Hyperinsulinemic hypoglycemia, familial, 7\footnotemark & AD\\
+Monocarboxylate transporter 1 deficiency & AR, AD\\
+ & \\
+\end{tabular}
+\end{center}\footnotetext[4]{promoter-activating mutations in patients with hyperinsulinemic
+hypoglycemia induce SLC16A1 expression in beta cells, where this
+gene is not usually transcribed, permitting pyruvate uptake and
+pyruvate-stimulated insulin release despite ensuing hypoglycemia}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline7}]{ACAD9 in VLCADD}
+\begin{itemize}
+\item ACAD9 is responsible for production of C14:1 in VLCADD \footnote{Nouws, J., Te brinke, H., Nijtmans, L. G., \& Houten,
+S. M. (2014). ACAD9, a complex i assembly factor with a moonlighting
+function in fatty acid oxidation deficiencies. Human Molecular
+Genetics, 23(5), 1311–1319.}
+\item VLCAD\(^{\text{-/-}}\) cell lines accumulate C14:1
+\begin{itemize}
+\item VLCAD\(^{\text{-/-}}\)/ACAD9\(^{\text{-/-}}\) cell lines accumulate C18:1
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\section{Routine Biochemistry}
+\label{sec:orgheadline21}
+\begin{frame}[label={sec:orgheadline9}]{Routine Biochemistry}
+\begin{itemize}
+\item Glucose
+\item Ketones
+\item Lactate
+\item Ammonia
+\item Uric Acid
+\item Creatine Kinase (CK)
+\item Acute Fatty Liver of Pregnancy (AFLP) \& Hemolysis, Elevated Liver enzymes Low Platlets (HELLP)
+\begin{itemize}
+\item Mothers who are heterozygous for LCHAD or MTP deficiency when
+carrying an affected fetus
+\end{itemize}
+\end{itemize}
+\end{frame}
+\begin{frame}[label={sec:orgheadline10}]{Fasting Hypoglycaemia  in FAODs}
+\begin{itemize}
+\item Fasting hypoglycaemia is the classic metabolic disturbance in FAODs
+\begin{itemize}
+\item primarily due to increased peripheral glucose consumption
+\end{itemize}
+\begin{itemize}
+\item The hypoglycaemia is hypoketotic.
+\begin{itemize}
+\item Ketone bodies can be synthesised (medium-or short-chain FAODs or
+if there is high residual enzyme activity)
+\item plasma concentrations are lower than expected for hypoglycaemia or
+the plasma free fatty acid concentrations.
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline11}]{Randle Cycle \footnote{Hue, L., Taegtmeyer, H., Randle, P., Garland, P., \& Hales,
+N. (2009). The Randle cycle revisited. Am J Physiol Endocrinol Metab,
+297, 578–591.}}
+\begin{itemize}
+\item Fasted state:
+\begin{itemize}
+\item Fatty Acids inhibit glucose oxidation at pyruvate dehydrogenase
+(PDH)
+\item Long-chain acyl-CoA derivatives directly inhibit glucokinase
+\end{itemize}
+\item Fed state:
+\begin{itemize}
+\item Insulin inhibits lipolysis
+\item Malonyl-CoA inhibits CPT1
+\begin{itemize}
+\item \(\uparrow\) esterification of FA
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline12}]{Randle Cycle}
+\includegraphics[width=.9\linewidth]{./figures/randle.png}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline13}]{Inhibition of Glucose Utilization}
+\includegraphics[width=.9\linewidth]{./figures/glucose_oxidation_inhibition.png}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline14}]{Inhibition of Fatty Acid Utilization}
+\includegraphics[width=.9\linewidth]{./figures/FAO_inhibition.png}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline15}]{Lactic Acidemia in FAODs}
+\begin{itemize}
+\item Lactic acidaemia is seen in long-chain FAODs (VLCAD, LCHAD and MTP deficiencies)
+\item Long-chain acyl-CoA esters have been found to inhibit a large
+variety of enzymes including the mitochondrial ATP/ADP carrier.
+
+\item \emph{In vivo} the ATP/ADP carrier catalyses the transport of ATP
+synthesized in the mitochondrion by the F\(_{\text{1}}\) F\(_{\text{0}}\)-ATPase reaction to the
+extra-mitochondrial space in exchange for cytosolic ADP
+\begin{itemize}
+\item \(\uparrow\) intra-mitochondrial ATP/ADP ratio and \(\downarrow\) oxidation of
+NADH \(\to\) NAD\(^{\text{+}}\)
+\end{itemize}
+\item \(\uparrow\) ATP/ADP and NADH/NAD\(^{\text{+}}\) ratios will activate PDK
+\begin{itemize}
+\item PDK inactivates PDH by phosphorylation.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline16}]{Hyperammonaemia in FAODs}
+\begin{itemize}
+\item Hyperammonaemia occurs in some severe defects,
+\begin{itemize}
+\item with normal or low glutamine concentrations;
+\item decreased acetyl-CoA production reducing the synthesis of N-acetylglutamate \footnote{Haberle, J. (2011). Clinical practice: The management of
+hyperammonemia. European Journal of Pediatrics, 170(1), 21–34.}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline17}]{Hyperammonaemia in FAODs}
+\includegraphics[width=.9\linewidth]{./figures/2nd_ammonemia.png}
+
+\tiny
+Influence of metabolic disorders on function of urea cycle leading to secondary hyperammonemia
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline18}]{Moderate hyperuricaemia , elevated CK}
+\begin{itemize}
+\item Seen in acute attacks 
+\begin{itemize}
+\item The association suggests that the mechanism is a breakdown of
+cells, particularly muscle.
+\item ATP depletion \(\to\) \(\downarrow\) Na/K-ATPase
+\end{itemize}
+\item Release of CK
+\item The uric acid excess is the product of nucleic acid and nucleotide catabolism.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline19}]{AFLP/HELLP}
+\begin{itemize}
+\item Mothers who are heterozygous for LCHAD or MTP deficiency when
+carrying an affected fetus
+\item A woman whose affected fetus has the Glu474Gln mutation on one or
+both alleles of the \(\alpha\)-subunit of the trifunctional protein is
+likely to have acute fatty liver of pregnancy or the HELLP syndrome \footnote{Odaib, A. A., Shneider, B. L., Bennett, M. J., Pober, B. R.,
+Reyes-Mugica, M., Friedman, A. L., … Rinaldo, P. (1998). A defect in
+the transport of long-chain fatty acids associated with acute liver
+failure. N Engl J Med, 339(24), 1752–1757.}
+\begin{itemize}
+\item Long-chain 3-hydroxyacyl metabolites produced by the fetus or
+placenta accumulate in the mother and are highly toxic to the liver
+\item Exaggerated by the decreased metabolic utilization of fatty acids
+during pregnancy.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}[label={sec:orgheadline20}]{Next time}
+\begin{itemize}
+\item Diagnostic Testing for FAODs
+\begin{itemize}
+\item Biochemical
+\begin{itemize}
+\item LC-MS/MS
+\item enzymatic
+\item cell based assays
+\end{itemize}
+\item Molecular
+\end{itemize}
+
+\item Methods for Quantitation of Acylcarnitines
+\begin{itemize}
+\item LC-MS/MS
+\item FIA-MS/MS
+\end{itemize}
+\end{itemize}
+\end{frame}
+\end{document}

@@ -1,0 +1,125 @@
+% Created 2017-09-20 Wed 11:44
+\documentclass[presentation, smaller]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
+\usepackage{textpos}
+\usepackage[version=4]{mhchem}
+\usepackage{chemfig}
+\usepackage{siunitx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{verbatim}
+\usetheme[height=20pt]{Boadilla}
+\usecolortheme[RGB={170,160,80}]{{structure}}
+\author{Matthew Henderson, PhD, FCACB}
+\date{\today}
+\title{Organic Acids in Homo Sapiens}
+\institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
+\titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
+\hypersetup{
+ pdfauthor={Matthew Henderson, PhD, FCACB},
+ pdftitle={Organic Acids in Homo Sapiens},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.2.1 (Org mode 8.3.4)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
+    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
+}
+
+\vspace{220pt}}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\tiny}
+
+% \addtobeamertemplate{frametitle}{}{%
+% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+% \includegraphics[height=1cm,width=2cm]{cat}
+% \end{textblock*}}
+
+\section{Background}
+\label{sec:orgheadline4}
+\begin{frame}[label={sec:orgheadline1}]{Nomenclature}
+\begin{center}
+\begin{tabular}{lll}
+Length & Monocarboxylic acid & Dicarboxylic acid\\
+\hline
+C2 & Acetic & Oxalic\\
+C3 & Propionic & Malonic\\
+C4 & Butyric & Succinic\\
+ & Isobutyric & \\
+C5 & Valeric & Glutaric\\
+ & Isovaleric & \\
+ & 2-Methylbutyric & \\
+C6 & Hexanoic (caprioc) & Adipic\\
+C7 & Heptanoic (enanthic) & Pimelic\\
+C8 & Octanoic (caprylic) & Suberic\\
+C9 & Nonanoic (pelargonic) & Azelaic\\
+C10 & Decanoic (capric) & Sebacic\\
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline2}]{Functional Groups}
+%% Make polymer delimeters
+\newcommand\setpolymerdelim[2]{\def\delimleft{#1}\def\delimright{#2}}
+\def\makebraces[#1,#2]#3#4#5{%
+\edef\delimhalfdim{\the\dimexpr(#1+#2)/2}%
+\edef\delimvshift{\the\dimexpr(#1-#2)/2}%
+\chemmove{%
+\node[at=(#4),yshift=(\delimvshift)]
+{$\left\delimleft\vrule height\delimhalfdim depth\delimhalfdim
+width0pt\right.$};%
+\node[at=(#5),yshift=(\delimvshift)]
+{$\left.\vrule height\delimhalfdim depth\delimhalfdim
+width0pt\right\delimright_{\rlap{$\scriptstyle#3$}}$};}}
+\setpolymerdelim()
+
+\centering
+\chemfig{X-C(-[2]X)(-[6]X)-C(-[2]X)(-[6]X)-C(-[7]OH)=[1]O}
+
+\begin{center}
+\begin{tabular}{ll}
+Functional group & Formula\\
+\hline
+hydrogen & -H\\
+keto & .= O\\
+hydroxyl & -OH\\
+carboxyl & -COOH\\
+side chain & -(CH\(_2\))\(_n\)\\
+\end{tabular}
+\end{center}
+\end{frame}
+\begin{frame}[label={sec:orgheadline3}]{Side Chains}
+\centering
+\chemfig{X-C(-[2]X)(-[6]X)-C(-[2]X)(-[6]X)-C(-[7]OH)=[1]O}
+
+\begin{center}
+\begin{tabular}{ll}
+Side chain & Structure\\
+\hline
+Methyl & \chemfig{CH_3-}\\
+Ethyl & \chemfig{CH_3-CH_2-}\\
+Propyl & \chemfig{CH_3-CH_2-CH_2-}\\
+Butyl & \chemfig{CH_3-CH_2-CH_2-CH_2-}\\
+\end{tabular}
+\end{center}
+\end{frame}
+\end{document}

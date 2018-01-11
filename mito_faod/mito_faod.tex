@@ -1,0 +1,635 @@
+% Created 2017-11-30 Thu 16:28
+\documentclass[presentation, smaller]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
+\usepackage{textpos}
+\usepackage{textgreek}
+\usepackage[version=4]{mhchem}
+\usepackage{chemfig}
+\usepackage{siunitx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{verbatim}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+\usetheme{Hannover}
+\usecolortheme{whale}
+\author{Matthew Henderson, PhD, FCACB}
+\date{\today}
+\title{Mitochondrial FAO Defects}
+\institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
+\titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
+\hypersetup{
+ pdfauthor={Matthew Henderson, PhD, FCACB},
+ pdftitle={Mitochondrial FAO Defects},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.2.1 (Org mode 8.3.4)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+%\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
+%    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
+%}
+
+\vspace{220pt}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\tiny}
+% \addtobeamertemplate{frametitle}{}{%
+% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+% \includegraphics[height=1cm,width=2cm]{cat}
+% \end{textblock*}}
+
+\tikzstyle{chemical} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=none]
+\tikzstyle{hardware} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=gray!30]
+\tikzstyle{ms} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{msw} = [rectangle, rounded corners, text width=7em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{label} = [rectangle,text width=5em, minimum height=1em, text centered, draw=none, fill=none]
+\tikzstyle{hl} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=red!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
+
+\section{Introduction}
+\label{sec:orgheadline2}
+\begin{frame}[label={sec:orgheadline1}]{Overview}
+\includegraphics[width=.9\linewidth]{./figures/b_oxidation.png}
+\end{frame}
+
+\section{Carnitine Cycle Defects}
+\label{sec:orgheadline13}
+\begin{frame}[label={sec:orgheadline3}]{Carnitine Transporter Deficiency}
+\includegraphics[width=.9\linewidth]{./figures/octn.pdf}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline4}]{Carnitine Transporter Deficiency}
+\begin{itemize}
+\item Organic cation/carnitine transporter(OCTN2) responsible for
+carnitine uptake across the plasma membrane,
+\begin{itemize}
+\item heart, muscle and kidney.
+\end{itemize}
+\item Defects \(\to\) primary carnitine deficiency with \(\uparrow\) renal loss of carnitine
+\begin{itemize}
+\item low plasma concentrations
+\item low intracellular concentrations \(\to\) impair fatty acid oxidation
+\end{itemize}
+\end{itemize}
+\end{frame}
+\begin{frame}[label={sec:orgheadline5}]{Carnitine Transporter Deficiency}
+\begin{itemize}
+\item Precipitated by infection, fasting, pregnancy or antibiotics containing pivalate
+\begin{itemize}
+\item pivalate is excreted bound to carnitine, \(\downarrow\) carnitine concentration
+\item isobaric with C5-carnitine
+\end{itemize}
+\item Some present in infancy with hypoglycaemia, liver dysfunction and hyperammonaemia
+\item Other children develop heart failure due to cardiomyopathy,
+thickened ventricular walls and reduced contractility.
+\begin{itemize}
+\item often accompanied by skeletal muscle weakness.
+\end{itemize}
+\item Adults may suffer fatigue or arrhythmias
+\item Screening has shown that many subjects with low plasma carnitine remain asymptomatic
+\begin{itemize}
+\item Faroe Islands prevalence is 1:300.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline6}]{Carnitine Palmitoyltransferase I Deficiency}
+\includegraphics[width=.9\linewidth]{./figures/cpt1.pdf}
+\end{frame}
+\begin{frame}[label={sec:orgheadline7}]{Carnitine Palmitoyltransferase I Deficiency}
+\begin{itemize}
+\item \textbf{CPT Ia} liver and kidney
+\item \textbf{CPT Ib}  muscle and heart
+\item \textbf{CPT Ic}  brain
+
+\item Only CPT Ia deficiency has been identified.
+\item Usually present by the age of 2 years with hypoketotic hypoglycaemia,
+\begin{itemize}
+\item induced by fasting or illness.
+\end{itemize}
+\item Accompanied by hepatomegaly, liver dysfunction and occasionally cholestasis
+\begin{itemize}
+\item may also be transient lipaemia and renal tubular acidosis.
+\end{itemize}
+\item CPT I deficiency is extremely common in the Inuit population of Canada and Greenland.
+\begin{itemize}
+\item c.1436C>T, P479L
+\end{itemize}
+\item A few of these patients present with hypoglycaemia as neonates or young children
+\begin{itemize}
+\item most remain asymptomatic.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline8}]{Carnitine Acylcarnitine Translocase Deficiency}
+\includegraphics[width=.9\linewidth]{./figures/cact.pdf}
+\end{frame}
+\begin{frame}[label={sec:orgheadline9}]{Carnitine Acylcarnitine Translocase Deficiency}
+\begin{itemize}
+\item This rare disorder usually presents in the neonatal period, with
+death by 3 months of age
+\begin{itemize}
+\item severe hypoglycaemia and hyperammonaemia, cardiomyopathy,
+atrioventricular block and ventricular arrhythmias.
+\end{itemize}
+\item A few more mildly affected patients present later with hypoglycaemic
+encephalopathy
+\begin{itemize}
+\item precipitated by fasting or infections.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline10}]{Carnitine Palmitoyltransferase II Deficiency}
+\includegraphics[width=.9\linewidth]{./figures/cpt2.pdf}
+\end{frame}
+\begin{frame}[label={sec:orgheadline11}]{Carnitine Palmitoyltransferase II Deficiency}
+\begin{block}{Neonatal}
+\begin{itemize}
+\item Severe neonatal onset CPT II deficiency is usually lethal.
+\item Patients become comatose within a few days of birth
+\begin{itemize}
+\item hypoglycaemia and hyperammonaemia.
+\item may have cardiomyopathy, arrhythmias and congenital malformations,
+principally renal cysts and neuronal migration defects.
+\end{itemize}
+\item There is also an intermediate form of CPT II deficiency that causes
+episodes of hypoglycaemia and liver dysfunction, sometimes
+accompanied by cardiomyopathy and arrhythmias
+\end{itemize}
+\end{block}
+
+\begin{block}{Childhood}
+\begin{itemize}
+\item Episodes may be brought on by infections or exercise
+\item In moderate or severe episodes there is myoglobinuria, \(\uparrow\) CK
+\begin{itemize}
+\item may lead to acute renal failure
+\item CK often normalises between episodes but may remain moderately
+elevated
+\end{itemize}
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline12}]{Carnitine Palmitoyltransferase II Deficiency}
+\begin{block}{Adolescence,  young adult}
+\begin{itemize}
+\item Most common form is a partial deficiency that presents with
+episodes of rhabdomyolysis.
+\begin{itemize}
+\item usually precipitated by prolonged exercise
+\item particularly in the cold or after fasting
+\end{itemize}
+\end{itemize}
+\end{block}
+\end{frame}
+
+\section{\(\beta\)-Oxidation Defects}
+\label{sec:orgheadline37}
+\begin{frame}[label={sec:orgheadline14}]{Very-Long-Chain Acyl-CoA Dehydrogenase Deficiency}
+\includegraphics[width=.9\linewidth]{./figures/vlcad.pdf}
+\end{frame}
+\begin{frame}[label={sec:orgheadline15}]{Very-Long-Chain Acyl-CoA Dehydrogenase Deficiency}
+\scriptsize
+\begin{block}{Early infancy}
+\begin{itemize}
+\item Severely affected patients present in early infancy with
+cardiomyopathy, in addition to the problems seen in milder patients.
+\end{itemize}
+\end{block}
+
+\begin{block}{Childhood}
+\begin{itemize}
+\item patients present in childhood with hypoglycaemia but suffer exercise
+or illness induced rhabdomyolysis or chronic weakness at a later age.
+\end{itemize}
+\end{block}
+
+\begin{block}{Adolescence, Adult}
+\begin{itemize}
+\item Mildly affected patients present as adolescents or adults with
+exercise-induced rhabdomyolysis.
+\end{itemize}
+\end{block}
+
+\begin{block}{Screening}
+\begin{itemize}
+\item Second most common FAOD in Europe and the USA
+\item prevalence between 1:50,000 and 1:100,000
+\item Much higher than detected clinically
+\item likely that many patients diagnosed by screening would remain
+asymptomatic without intervention
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline16}]{Mitochondrial Trifunctional Protein}
+\includegraphics[width=.9\linewidth]{./figures/b_oxidation.png}
+\end{frame}
+\begin{frame}[label={sec:orgheadline17}]{Mitochondrial Trifunctional Protein}
+\begin{itemize}
+\item MTP a hetero-octamer composed of four \(\alpha\)-subunits and four \(\beta\)-subunits;
+\item \(\alpha\)-subunit has long-chain enoyl-CoA hydratase (LCEH) and LCHAD activities
+\item \(\beta\)-subunit has long-chain ketoacyl-CoA thiolase (LCKAT) activity.
+\item Patients may have isolated LCHAD deficiency or a generalised deficiency of all three enzyme activities.
+
+\item Mothers who are heterozygous for LCHAD or MTP deficiency have a high
+risk of illness during pregnancies when carrying an affected fetus
+\item The main problems are HELLP syndrome (Haemolysis, Elevated Liver
+enzymes and Low Platelets) and acute fatty liver of pregnancy
+(AFLP).
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline18}]{Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase}
+\includegraphics[width=.9\linewidth]{./figures/lchad.pdf}
+\end{frame}
+\begin{frame}[label={sec:orgheadline19}]{Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase}
+\begin{itemize}
+\item Isolated LCHAD deficiency usually presents acutely before 6 months of age
+\begin{itemize}
+\item hypoglycaemia, liver dysfunction, lactic acidosis
+\item Many have cardiomyopathy, some have hypoparathyroidism or ARDS
+\end{itemize}
+\item Other patients present with chronic symptoms
+\begin{itemize}
+\item failure to thrive, hypotonia, occasionally cholestasis or cirrhosis.
+\end{itemize}
+\item Subsequently, episodes of rhabdomyolysis are common.
+\item Many patients develop retinopathy, may start as early as 2 years of age.
+\item Granular pigmentation followed by chorioretinal atrophy w deteriorating central vision.
+\item Some patients develop cataracts
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline20}]{Mitochondrial Trifunctional Protein Deficiency}
+\includegraphics[width=.9\linewidth]{./figures/mtp.pdf}
+\end{frame}
+\begin{frame}[label={sec:orgheadline21}]{Mitochondrial Trifunctional Protein Deficiency}
+\begin{itemize}
+\item Presentation of generalised MTP deficiency is heterogeneous
+\item Patients with severe deficiency present as neonates
+\begin{itemize}
+\item cardiomyopathy, respiratory distress, hypoglycaemia and liver dysfunction
+\item most die within a few months, regardless of treatment.
+\end{itemize}
+\item Other patients resemble those with isolated LCHAD deficiency.
+\item A milder neuromyopathic phenotype:
+\begin{itemize}
+\item exercise induced rhabdomyolysis and progressive peripheral
+neuropathy
+\item can present at any age from infancy to adulthood.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline22}]{Long-Chain Acyl-CoA Dehydrogenase Deficiency}
+\includegraphics[width=.9\linewidth]{./figures/lcad.pdf}
+\end{frame}
+\begin{frame}[label={sec:orgheadline23}]{Long-Chain Acyl-CoA Dehydrogenase Deficiency}
+\begin{itemize}
+\item No human disease-causing mutations have been identified
+\item role  in  human  metabolism  is unclear.
+\item \emph{In vitro}, the substrate specificity of LCAD overlaps with that of
+VLCAD and ACAD9.
+\item enzymes have strong activity toward long-chain acyl-CoAs (C14-20)
+\item surfactant deficiency and altered lung mechanics in LCAD deficient
+mice.
+\begin{itemize}
+\item postulated that LCAD deficiency in humans may manifest primarily
+as a lung disease
+\end{itemize}
+\end{itemize}
+\end{frame}
+\begin{frame}[label={sec:orgheadline24}]{Medium-Chain Acyl-CoA Dehydrogenase Deficiency}
+\includegraphics[width=.9\linewidth]{./figures/mcad.pdf}
+\end{frame}
+\begin{frame}[label={sec:orgheadline25}]{Medium-Chain Acyl-CoA Dehydrogenase Deficiency}
+\begin{itemize}
+\item most common FAOD with an incidence of approximately 1:10,000-20,000
+in Europe,USA and Australia.
+\item Before NBS, presented 4 months to 4 years
+\begin{itemize}
+\item acute hypoglycaemic encephalopathy \sout{and liver dysfunction} not always
+\item some deteriorated rapidly and died.
+\end{itemize}
+\item Precipitated by prolonged fasting or infection with vomiting
+\item Some babies still present within 72 hours of birth before
+newborn screening results are available
+\begin{itemize}
+\item hypoglycaemia and/or arrhythmias
+\item breast-fed babies are at higher risk, due to the small supply of
+breast milk at this stage.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline26}]{Medium-Chain Acyl-CoA Dehydrogenase Deficiency}
+\begin{itemize}
+\item MCAD deficiency only presents clinically if exposed to an
+appropriate environmental stress.
+\item Prior to NBS \textasciitilde{} 30-50\% remained asymptomatic
+\item NBS and preventative measures, hypoglycaemia is rare.
+\begin{itemize}
+\item Patients do not develop cardiomyopathy or myopathy and few present
+initially as adults.
+\end{itemize}
+\item Healty MCAD deficient children > 1 year can fast for 12-14 hours without problems.
+\item >14 hours \(\to\) non-ketotic (inappropriately low) hypoglycaemia.
+\item Shorter fasts may cause problems in infancy
+\item Encephalopathy may occur without hypoglycaemia
+\begin{itemize}
+\item accumulation of FFA acids and carnitine/CoA esters.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline27}]{Short-Chain Acyl-CoA Dehydrogenase Deficiency}
+\includegraphics[width=.9\linewidth]{./figures/scad.pdf}
+\end{frame}
+\begin{frame}[label={sec:orgheadline28}]{Short-Chain Acyl-CoA Dehydrogenase Deficiency}
+\begin{itemize}
+\item non-disease?
+\begin{itemize}
+\item previous association with symptoms due to ascertainment bias?
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline29}]{Short-chain enoyl-CoA hydratase deficiency}
+\includegraphics[width=.9\linewidth]{./figures/crotonase.pdf}
+\end{frame}
+\begin{frame}[label={sec:orgheadline30}]{Short-chain enoyl-CoA hydratase deficiency}
+\begin{columns}
+\begin{column}{0.5\columnwidth}
+\begin{itemize}
+\item Reactive intermediates in the valine pathway are likely responsible
+for the pathology.
+\item Severe neurological problems, lactic acidosis and sometimes
+cardiomyopathy
+\item One of >75 genes \(\to\) Leigh syndrome
+\end{itemize}
+\end{column}
+
+\begin{column}{0.5\columnwidth}
+\centering
+\includegraphics[height=0.85\textheight]{./figures/valine.png}
+\end{column}
+\end{columns}
+\end{frame}
+\begin{frame}[label={sec:orgheadline31}]{3-Hydroxyacyl-CoA Dehydrogenase Deficiency}
+\includegraphics[width=.9\linewidth]{./figures/hadh.pdf}
+\end{frame}
+\begin{frame}[label={sec:orgheadline32}]{3-Hydroxyacyl-CoA Dehydrogenase Deficiency}
+\begin{itemize}
+\item This defect (HADH), previously called SCHAD deficiency, causes
+hyperinsulinaemic hypoglycaemia
+\item Role in modulation of ATP production inhibition of GDH
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline33}]{Acyl-CoA dehydrogenase 9}
+\includegraphics[width=.9\linewidth]{./figures/acad9.pdf}
+\end{frame}
+\begin{frame}[label={sec:orgheadline34}]{Acyl-CoA dehydrogenase 9}
+\begin{itemize}
+\item A complex I assembly factor with a moonlighting function in fatty
+acid oxidation deficiencies.
+\item ACAD9 is most homologous to VLCAD
+\item recombinant ACAD9 displays activity towards long-chain acyl-CoAs,
+very similar to VLCAD.
+\item Responsible for production of C14:1-carnitine and C12-carnitine in
+VLCAD deficiency.
+\item Patients with ACAD9 defects present in infancy or childhood with
+myopathy or hypertrophic cardiomyopathy and lactic acidaemia;
+\item some also have neurological problems.
+\item The myopathic patients often respond to treatment with riboflavin
+\begin{itemize}
+\item FAD is the enzyme-bound prosthetic group of all acyl-CoA
+dehydrogenases
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline35}]{2,4-Dienoyl-CoA reductase deficiency}
+\begin{columns}
+\begin{column}{0.5\columnwidth}
+\centering
+\includegraphics[height=0.85\textheight]{./figures/dienol.pdf}
+\end{column}
+\begin{column}{0.5\columnwidth}
+\begin{itemize}
+\item Oxidation of unsaturated fatty acids
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline36}]{2,4-Dienoyl-CoA reductase deficiency}
+\begin{itemize}
+\item initially described in 1990 based on a single case who presented with persistent hypotonia.
+\begin{itemize}
+\item elevated lysine, low carnitine
+\item abnormal acylcarnitine profile in urine and plasma.
+\end{itemize}
+\item The abnormal acylcarnitine species was 2-trans,4-cis-decadienoylcarnitine
+\begin{itemize}
+\item intermediate of linoleic acid metabolism.
+\end{itemize}
+\item The index case died of respiratory failure at four months of age.
+\item Postmortem enzyme analysis on liver and muscle samples revealed
+decreased 2,4-dienoyl-CoA reductase activity when compared to normal
+controls.
+\item a deficiency of this enzyme has been shown to occur
+in a patient due to a mutation in the NADK2 gene, a mitochondrial
+NAD kinase
+\item disruption of NADP synthesis \(\to\) secondary deficiencies of
+2,4-dienoyl-coA reductase and \(\alpha\)-aminoadipic semialdehyde
+synthase
+\end{itemize}
+\end{frame}
+
+\section{Electron Transfer Defects}
+\label{sec:orgheadline42}
+\begin{frame}[label={sec:orgheadline38}]{Multiple acyl-CoA dehydrogenase deficiency}
+\includegraphics[width=.9\linewidth]{./figures/mad.pdf}
+\end{frame}
+\begin{frame}[label={sec:orgheadline39}]{Multiple acyl-CoA dehydrogenase deficiency}
+\begin{itemize}
+\item Electron transfer flavoprotein (ETF) and ETF ubiquinone
+oxidoreductase (ETFQO) carry electrons to the respiratory chain from
+multiple FAD-linked dehydrogenases.
+\item Includes enzymes of amino acid, choline metabolism and acyl-CoA
+dehydrogenases of \(\beta\)-oxidation
+\item Defects in ETF or ETFQO lead to multiple acyl-CoA dehydrogenase
+(MAD) deficiency (glutaric aciduria type II).
+\item MAD deficiency, less often, a result of defects of riboflavin
+transport or metabolism
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline40}]{Multiple acyl-CoA dehydrogenase deficiency}
+\begin{itemize}
+\item ETF and ETFQO deficiencies \(\to\) wide range of clinical severity.
+\item Severely affected patients present in the first few days of life
+\begin{itemize}
+\item hypoglycaemia, hyperammonaemia and acidosis
+\item hypotonia and hepatomegaly.
+\end{itemize}
+\item There is usually an odour of sweaty feet similar to that in isovaleric acidaemia.
+\item Some patients have congenital anomalies
+\begin{itemize}
+\item Large cystic kidneys, hypospadias and neuronal migration defects and facial dysmorphism
+\begin{itemize}
+\item low set ears, high forehead and midfacial hypoplasia.
+\end{itemize}
+\end{itemize}
+\item The malformations resemble those seen in CPT II deficiency but the pathogenesis is unknown.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline41}]{Multiple acyl-CoA dehydrogenase deficiency}
+\begin{itemize}
+\item Most patients with neonatal presentation die within a week of birth
+\item Others develop cardiomyopathy and die within a few months.
+\item Less severe cases can present at any age from infancy to adulthood
+\begin{itemize}
+\item with hypoglycaemia, liver dysfunction and weakness
+\item usually precipitated by an infection
+\end{itemize}
+\item Cardiomyopathy is common in infants.
+\item Rarer problems include stridor and leukodystrophy.
+\item Mildly affected children may have recurrent bouts of vomiting.
+\item Muscle weakness is the commonest presentation in adolescents and adults.
+\begin{itemize}
+\item Predominantly affects proximal muscles and may lead to scoliosis,
+hypoventilation or an inability to lift the chin off the chest.
+\end{itemize}
+\item Weakness can worsen rapidly during infection or pregnancy, myoglobinuria is rare.
+\begin{itemize}
+\item Many milder defects respond to riboflavin
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\section{Additional Defects}
+\label{sec:orgheadline45}
+\begin{frame}[label={sec:orgheadline43}]{FA transport}
+\begin{itemize}
+\item The mechanisms of fatty acid transport across the plasma membrane are still not completely clear.
+\item Impaired uptake has been reported in 2 boys who presented with liver failure.
+\item The molecular basis was not identified and the diagnoses remains uncertain.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline44}]{Potential Defects}
+\begin{block}{Medium-chain 3-ketoacyl-CoA thiolase (MCKAT) deficiency}
+\begin{itemize}
+\item reported in one patient, who died at 13 days of age
+\item hypoglycaemia, hyperammonaemia, acidosis and myoglobinuria
+\end{itemize}
+\end{block}
+
+\begin{block}{Long-chain acyl-CoA dehydrogenase (LCAD)}
+\begin{itemize}
+\item involved in surfactant metabolism
+\item LCAD deficiency has been reported in two cases of sudden infant death
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+\section{Metabolic Derangement}
+\label{sec:orgheadline48}
+\begin{frame}[label={sec:orgheadline46}]{Metabolic Derangement}
+\begin{itemize}
+\item Fasting hypoglycaemia is the classic metabolic disturbance in FAODs
+\begin{itemize}
+\item primarily due to increased peripheral glucose consumption
+\item epatic glucose output is also reduced under some conditions.
+\end{itemize}
+\item The hypoglycaemia is hypoketotic.
+\begin{itemize}
+\item Ketone bodies can be synthesised (medium-or short-chain FAODs or if there is high residual enzyme activity)
+\item plasma concentrations are lower than expected for hypoglycaemia or the plasma free fatty acid concentrations.
+\end{itemize}
+\item Hyperammonaemia occurs in some severe defects,
+\begin{itemize}
+\item with normal or low glutamine concentrations;
+\item decreased acetyl-CoA production reducing the synthesis of N-acetylglutamate
+\end{itemize}
+\item Lactic acidaemia is seen in long-chain FAODs, (LCHAD and MTP deficiencies)
+\begin{itemize}
+\item inhibitory effects of metabolites on pyruvate metabolism.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline47}]{Metabolic Derangement}
+\begin{itemize}
+\item Moderate hyperuricaemia - frequent finding during acute attacks.
+\item Secondary hyperprolinaemia occurs in some babies with MAD deficiency.
+\item Accumulating long-chain acylcarnitines may be responsible for
+arrhythmias and may interfere with surfactant metabolism.
+\item In LCHAD and MTP deficiencies, \sout{long chain hydroxy-acylcarnitine}
+  \sout{concentrations correlate with the severity of retinopathy and may}
+  \sout{cause both this and the peripheral neuropathy}
+\end{itemize}
+\end{frame}
+
+\section{Summary}
+\label{sec:orgheadline51}
+\begin{frame}[label={sec:orgheadline49}]{Common manifestations in FAODs}
+\includegraphics[width=.9\linewidth]{./figures/Ch101f016.png}
+
+\begin{itemize}
+\item Green squares indicate that the feature is frequently seen in the disorder
+\item Yellow squares represent an intermediate rate of occurrence
+\item Red squares denote that it is uncommon
+\end{itemize}
+\tiny{Source: Mitochondrial Fatty Acid Oxidation Disorders, The Online Metabolic and Molecular Bases of Inherited Disease}
+\end{frame}
+\begin{frame}[label={sec:orgheadline50}]{Next time}
+\begin{itemize}
+\item Diagnostic Testing for FAODs
+\begin{itemize}
+\item Biochemical
+\begin{itemize}
+\item LC-MS/MS
+\item enzymatic
+\item cell based assays
+\end{itemize}
+\item Molecular
+\end{itemize}
+
+\item Methods for Quantitation of Acylcarnitines
+\begin{itemize}
+\item LC-MS/MS
+\item FIA-MS/MS
+\end{itemize}
+\end{itemize}
+\end{frame}
+\end{document}

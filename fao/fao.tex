@@ -1,0 +1,351 @@
+% Created 2017-11-16 Thu 12:54
+\documentclass[presentation, smaller]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
+\usepackage{textpos}
+\usepackage{textgreek}
+\usepackage[version=4]{mhchem}
+\usepackage{chemfig}
+\usepackage{siunitx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{verbatim}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+\usetheme{Frankfurt}
+\usecolortheme{rose}
+\useinnertheme{circles}
+\author{Matthew Henderson, PhD, FCACB}
+\date{\today}
+\title{Fatty Acid Oxidation}
+\institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
+\titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
+\hypersetup{
+ pdfauthor={Matthew Henderson, PhD, FCACB},
+ pdftitle={Fatty Acid Oxidation},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.2.1 (Org mode 8.3.4)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+%\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
+%    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
+%}
+
+\vspace{220pt}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\tiny}
+% \addtobeamertemplate{frametitle}{}{%
+% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+% \includegraphics[height=1cm,width=2cm]{cat}
+% \end{textblock*}}
+
+
+\tikzstyle{chemical} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=none]
+\tikzstyle{hardware} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=gray!30]
+\tikzstyle{ms} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{msw} = [rectangle, rounded corners, text width=7em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{label} = [rectangle,text width=5em, minimum height=1em, text centered, draw=none, fill=none]
+\tikzstyle{hl} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=red!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
+
+
+\section{Introduction}
+\label{sec:orgheadline5}
+\begin{frame}[label={sec:orgheadline1}]{Fatty Acids}
+\begin{itemize}
+\item usually straight aliphatic chains with a methyl group at one end
+(\(\omega\)-carbon) and a carboxyl group and the other end.
+\end{itemize}
+
+\definesubmol{x}{-[1,.6]-[7,.6]}
+\definesubmol{a}{-[1,.6]\beta{}-[7,.6]\alpha{}}
+\definesubmol{y}{!x!x!x!x!x!x!x!x}
+\definesubmol{b}{!x!x!x!x!x!x!x!a}
+%\chemfig{H{_3}C!y-[1]C(=[1]O)-[7]O{^-}}
+\chemname{\chemfig{\omega{}!b-[1]C(=[1]O)-[7]O{^-}}}{\small stearic acid 18:0}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline2}]{Fatty Acid Nomenclature}
+\begin{itemize}
+\item Non-systematic historical names most commonly used.
+\begin{description}
+\item[{Palmitic acid}] discovered in palm oil
+\item[{Stearic acid}] from the Greek word "stear", which means tallow.
+\item[{Oleic acid}] oleic means related to, or derived from, olive oil
+\end{description}
+\item The position of a double bond is designated by the number of the carbon in the double bond that is closest to the carboxyl group
+\end{itemize}
+
+
+\definesubmol{x}{-[1,.6]-[7,.6]}
+\definesubmol{y}{-[7,.6]-[1,.6]}
+\definesubmol{d}{=[0,.6](-[7,0.25,,,draw=none]\scriptstyle\color{red}9)-[1,.6]}
+\definesubmol{e}{!x!x!x!x!d!y!y!y}
+\chemname{\chemfig{\omega{}(-[3,0.25,,,draw=none]\scriptstyle\color{red}18)!e(-[2,0.25,,,draw=none]\scriptstyle\color{red}2)-[7,.6]COOH}}{\small Oleic acid 18:1,\Delta{}$^9$}
+
+\begin{itemize}
+\item 18 carbons
+\item 1 double bond
+\item \(\Delta^{\text{9}}\), double bond between 9th and 10th carbon.
+\item Also 18:1(9)
+\item Distance from \(\omega\) methyl group, \(\omega\)-9
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline3}]{Fatty Acid Chain Length}
+\begin{description}
+\item[{Very long-chain}] > C20
+\item[{Long-chain}] C12-C20
+\item[{Medium-chain}] C6-C12
+\item[{Short-chain}] C4
+\end{description}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline4}]{Fatty Acids as an Energy Source}
+\begin{itemize}
+\item Long chain fatty acids released from adipose tissue triacylglycerol
+stores during periods of increased fuel demand or fasting.
+\item \(\downarrow\) insulin, \(\uparrow\) glucagon \(\to\) \(\uparrow\) lipolysis
+\begin{itemize}
+\item dietary lipids
+\item triacylglycerols synthesis in the liver
+\item palmitate (C16:0), oleate (C18:1, \(\Delta ^9\)) and stearate (C18:0)
+\end{itemize}
+\item FA transported to tissue bound to albumin
+\item Energy derived from oxidation of FA to acetyl-CoA in B-oxidation.
+\item The acetyl-CoA is oxidized in the TCA cycle or converted to ketone bodies in the liver.
+\end{itemize}
+\end{frame}
+
+\section{B-oxidation}
+\label{sec:orgheadline15}
+\begin{frame}[label={sec:orgheadline6}]{Overview of Mitochondrial Long-Chain Fatty Acid Metabolism}
+\begin{columns}
+\begin{column}{0.5\columnwidth}
+\centering
+\includegraphics[height=0.8\textheight]{./figures/23_1.png}
+\end{column}
+
+\begin{column}{0.5\columnwidth}
+\begin{enumerate}
+\item Membrane transport
+\begin{itemize}
+\item FaBP
+\end{itemize}
+\item Activation
+\begin{itemize}
+\item Coenzyme A
+\end{itemize}
+\item Carnitine
+\item B-oxidation
+\item Ketone bodies
+\end{enumerate}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline7}]{Activation of Fatty Acids}
+\includegraphics[width=.9\linewidth]{./figures/23_2.png}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline8}]{Transport of Long-Chain Fatty Acids into Mitochondria}
+\begin{columns}
+\begin{column}{0.6\columnwidth}
+\centering
+\includegraphics[height=0.6\textheight]{./figures/23_5.png}
+\end{column}
+
+\begin{column}{0.4\columnwidth}
+\begin{itemize}
+\item chain length specificity
+\item Organ and organelle specificity
+\begin{itemize}
+\item Acyl-CoA synthetases
+\item Acyltransferases
+\item Acyl-CoA dehydrogenases
+\end{itemize}
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline9}]{Chain Length Specificity}
+\begin{columns}
+\begin{column}{.5\columnwidth}
+\begin{block}{Acyl-CoA Synthetases}
+\scriptsize
+\begin{center}
+\begin{tabular}{lrl}
+Enzyme & Length & location\\
+\hline
+V.L. chain & 14-26 & pex\\
+L. chain & 12-20 & ER, mito, pex\\
+M. chain & 6-12 & mito - kidney, liver\\
+acetyl & 2-4 & cyto, ?mito?\\
+\end{tabular}
+\end{center}
+\end{block}
+\end{column}
+
+
+\begin{column}{.5\columnwidth}
+\begin{block}{Acyl-CoA Dehydrogenases}
+\scriptsize
+\begin{center}
+\begin{tabular}{lrl}
+Enzyme & Length & location\\
+\hline
+VLCAD & 14-20 & IMM\\
+LCAD & 12-18 & MM\\
+MCAD & 4-12 & MM\\
+SCAD & 2-4 & MM\\
+\end{tabular}
+\end{center}
+\end{block}
+\end{column}
+\end{columns}
+
+\begin{block}{Other}
+\scriptsize
+\begin{center}
+\begin{tabular}{lrl}
+Enzyme & Length & comment\\
+\hline
+Enoyl-CoA hydratase,SC & >4 & \(\downarrow\) activity w \(\uparrow\) length\\
+Hydroxyacyl-CoA dehydrogenase, SC & 4-16 & \(\downarrow\) activity w \(\uparrow\) length\\
+Acetoacetyl-CoA thiolase & 4 & Acetoacetyl-CoA specific\\
+Trifunctional protein & 12-16 & \(\uparrow\) activity w \(\uparrow\) length\\
+\end{tabular}
+\end{center}
+\end{block}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline10}]{B-oxidation of Long-Chain Fatty Acids}
+\centering
+\includegraphics[height=0.85\textheight]{./figures/23_7.png}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline11}]{Oxidation of Unsaturated Fatty Acids}
+\begin{columns}
+\begin{column}{0.5\columnwidth}
+\centering
+\includegraphics[height=0.85\textheight]{./figures/23_9.png}
+\end{column}
+
+\begin{column}{0.5\columnwidth}
+\begin{itemize}
+\item isomerase and reductase change location of the double bonds
+\begin{itemize}
+\item correct configuration for B-oxidation
+\end{itemize}
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+\begin{frame}[label={sec:orgheadline12}]{Odd-Chain Length Fatty Acids}
+\centering
+\includegraphics[height=0.5\textheight]{./figures/23_10.png}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline13}]{Oxidation of Medium-Chain Length Fatty Acids}
+\begin{itemize}
+\item \(\uparrow\) solubility
+\item not stored in adipose triacylglycerol
+\item gut \(\to\) portal vein \(\to\) liver
+\item \(\to\) mito matrix via the monocarboxylate transporter
+\item activated in the mito matrix
+\item B-oxidation
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline14}]{Regulation of B-oxidation}
+\centering
+\includegraphics[height=0.6\textheight]{./figures/23_12.png}
+
+\begin{enumerate}
+\item Lipolysis or gut
+\item Regulation of CPT1 activity
+\item Re-oxidation of NAD\(^{\text{+}}\) and FAD\(^{\text{2+}}\)
+\end{enumerate}
+\end{frame}
+
+\section{Alternative Routes of Fatty Acid Oxidation}
+\label{sec:orgheadline20}
+
+\begin{frame}[label={sec:orgheadline16}]{Peroxisomal Oxidation of Fatty Acids}
+\includegraphics[width=.9\linewidth]{./figures/23_14.png}
+
+\begin{itemize}
+\item very long chain FA C24-26 mandatory
+\item long chain optional
+\item carnitine not required for entry into peroxisomes
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline17}]{Long-Chain Branched-Chain Fatty Acids}
+\centering
+\includegraphics[height=0.7\textheight]{./figures/ff22.png}
+
+\begin{itemize}
+\item \(\alpha\)-oxidation of phytanic acid takes place in peroxisomes.
+\item Pristanic acid can then undergo \(\beta\)-oxidation.
+\begin{itemize}
+\item Propionyl-CoA is released when the \(\alpha\) carbon is substituted
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline18}]{\(\omega\)-Oxidation of Fatty Acids}
+\begin{columns}
+\begin{column}{0.5\columnwidth}
+\centering
+\includegraphics[height=0.5\textheight]{./figures/23_16.png}
+\end{column}
+
+
+\begin{column}{0.5\columnwidth}
+\begin{itemize}
+\item occurs in the ER
+\item the \(\omega\)-carbon is oxidized to an alcohol
+\item dehydrogenated to a carboxylic acid \(\to\) dicarboxylic acid
+\begin{itemize}
+\item excreted in urine as medium chain dicarboxylic acids
+\end{itemize}
+\item xenobiotic compounds w FA like structure
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline19}]{Thanks}
+\begin{itemize}
+\item Next up:
+\begin{itemize}
+\item Fatty Acid Oxidation Defects
+\item Carnitine and Aceylcarnitines methods
+\end{itemize}
+\end{itemize}
+\end{frame}
+\end{document}

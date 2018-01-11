@@ -126,9 +126,9 @@
   - 30% of the acetylcarnitine and smaller amounts of higher
     molecular mass acylcarnitines are converted to carnitine
   - a low carnitine sample could appear to be normal.
-- The free carnitine results obtained by this screening method on
+- "The free carnitine results obtained by this screening method on
   blood spots with high levels of acylcarnitines should therefore be
-  used with caution.
+  used with caution." [fn:johnson]
 
 [fn:johnson] Johnson, D. W. (1999). Inaccurate measurement of free
 carnitine by the electrospray tandem mass spectrometry screening
@@ -139,14 +139,14 @@ method for blood spots. Journal of Inherited Metabolic Disease, 22(2),
 - investigation of CUD
 
 #+BEGIN_LaTeX
-\begin{equation}
+\begin{equation*}
 FTR_{carnitine}\% = \left( 1 -  \frac{carnitine_{urine} \cdot creatinine_{plasma}}{carnitine_{plasma} \cdot creatinine_{urine}}\right) \cdot 100
-\end{equation}
+\end{equation*}
 #+END_LaTeX
 
-- norm >98%
+- normally >98%
 
-* FIA-MS/MS
+* Screening FIA-MS/MS
 ** FIA-MS/MS schematic
 #+BEGIN_LaTeX
 \begin{center}
@@ -203,7 +203,6 @@ FTR_{carnitine}\% = \left( 1 -  \frac{carnitine_{urine} \cdot creatinine_{plasma
 \chemname{\chemfig[][scale=.33]{-N^{+}([2]-)([6]-)-[1]-[7]([6]-O-([5]=O)!e-[7,.6]O!x!x)-[1]-[7]([6]=O)-[1,.6]O!y!y}}{\tiny C6DC-carnitine, butyl ester}
 \schemestop 
 #+END_LaTeX
-
 
 ** FIA-MS/MS Method
 
@@ -331,20 +330,8 @@ FTR_{carnitine}\% = \left( 1 -  \frac{carnitine_{urine} \cdot creatinine_{plasma
 - C18:1-OH
 - C18:2
 - C18-OH
-** Pros and Cons of FIA-MS/MS using DBS
-- As compared to LC-MS/MS 
-*** Pros
-- ~2 min analysis time
-- Amino acids  quantified simultaneously
-
-*** Cons
-- Variability in DBS sample as described above
-- Iso-baric compounds
- - C5DC-Bu^2 and C10-OH-Bu
-- Fewer AC quantified
-
-* MS/MS
-** MS/MS schematic
+* Diagnostic FIA-MS/MS
+** Diagnostic FIA-MS/MS schematic
 #+BEGIN_LaTeX
 \begin{center}
 \begin{tikzpicture}[node distance=7em]
@@ -376,7 +363,7 @@ FTR_{carnitine}\% = \left( 1 -  \frac{carnitine_{urine} \cdot creatinine_{plasma
 | 1.85 | 0.100 | 100 |  0 |
 |  2.5 | 0.100 | 100 |  0 |
 
-** MS/MS sample prep
+** FIA-MS/MS sample prep
 - 20 \micro{}L of sample is mixed with 400 \micro{}L of IS in Methanol centrifuge to deproteinize.
 - supernatant is removed and 100 \micro{}L of n-butanol-3M HCL is added
 - dried down
@@ -402,8 +389,7 @@ plot data u 1:2 w lp lw 2 t "80% ACN"
 #+RESULTS:
 [[file:./figures/outletmethod.pdf]]
 
-
-** LC- MS/MS transitions
+** FIA-MS/MS transitions
 *** Quantified acetylcarnitines
 \tiny
 
@@ -469,14 +455,4 @@ plot data u 1:2 w lp lw 2 t "80% ACN"
 - C18OH (3OH STEAROYL)
 - C16DC	
 - C18:1DC
-
-
-** Pros and Cons of LC-MS/MS
-- As compared to FIA-MS/MS 
-*** Pros
-- 44 vs ~30 acylcarnitines quantified
-*** Cons
-- Can not measure C0
-- Can not measure 
-
 
