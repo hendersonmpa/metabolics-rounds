@@ -260,8 +260,8 @@ details. ACL, ATP-citrate lyase; FAS, fatty acid synthase.
   synthesized in the mitochondrion by the F_1 F_0-ATPase reaction to the
   extra-mitochondrial space in exchange for cytosolic ADP
   - \uparrow intra-mitochondrial ATP/ADP ratio and \downarrow oxidation of
-    NADH \to NAD^{+}    
-- \uparrow ATP/ADP and NADH/NAD^{+} ratios will activate PDK
+    NADH \to NAD^{+}
+  - \uparrow ATP/ADP and NADH/NAD^{+} ratios will activate PDK
   - PDK inactivates PDH by phosphorylation.
 
 ** COMMENT Lactic Acidemia in FAODs
