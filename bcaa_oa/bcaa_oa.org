@@ -62,7 +62,97 @@
 #+END_LaTeX
 
 * Introduction
+** BCAAs
+
+#+BEGIN_LaTeX
+\centering
+\chemname{\chemfig[][scale=.75]{^{+}H_3N-C(-[2]COO^{-})(-[6]CH(-[7]CH_3)(-[5]CH_3))-H}}{\small valine}
+\chemname{\chemfig[][scale=.75]{^{+}H_3N-C(-[2]COO^{-})(-[6]CH_2-[6]CH(-[7]CH_3)(-[5]CH_3))-H}}{\small leucine}
+\chemname{\chemfig[][scale=.75]{^{+}H_3N-C(-[2]COO^{-})(-[6]CH(-CH_3)-[6]CH_2-[6]CH_3)-H}}{\small isoleucine}
+
+#+END_LaTeX
+
 ** BCAA Catabolism
 \centering
 #+ATTR_LATEX: :height 0.85\textheight
 [[./figures/bcaa.png]]
+
+** BCAA Catabolism
+- First two steps are shared
+  - BCAT :: reversible transammination
+  - BCKDC :: irreversible oxidative decarboxylation and thioesterification
+    - CoA derivatives committed to oxidative phosphorylation
+    - Regulated step
+      - products
+      - phosporylation
+      - transcription
+- Escape first pass hepatic metabolism
+- Metabolized in skeletal muscle and adipose tissue
+
+** Branched Chain \alpha{}-Ketoacid-Dehdrogenase Complex
+- multi-enzyme complex in the IMM
+- shares structural and biochemical features with pyruvate and
+  \alpha{}-ketoglutarate dehydrogenase
+*** Feedback Inhibition
+- product inhibition by branched chain acyl-CoAs
+- \uparrow NADH:NAD^{+} ratio
+*** Phosphorylation
+- Inhibited by phosphorylation of E1\alpha Ser 293 
+- \uparrow protein diet, adrenaline and glucogon dephosphorylate BCKD
+- Phenylbutyrate prevents dephosphorylation 
+*** Gene Expression
+- three subunits differentially regulated 
+
+** Amino Acid Transport
+- Large Neutral Amino Acids
+  - Phe, Trp, Met, Tyr, His, Thr, *Leu, Ile, Val*
+- Transported to the brain and other organs primarily by the
+  L1-neutral amino acid transporter
+- Relative [ ] \to competition \to neurotransmitters
+** Leucine
+nnn
+** Maple Syrup Urine Disease
+- Only BCAA disorder detected by plasma amino acids.
+- \Uparrow \Uparrow Leucine, also isoleucine and valine
+- BCKA = \alpha{}-ketoisocaproate
+
+
+** Blocks Distal to BCKD 
+- Do no accumulate AAs or 2-oxo-acids
+- Lead to accumulation of intermediates proximal to the block
+- Plasma Acylcarnitines or Urine Organic Acids
+  
+***                                                                 :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.33
+:END:
+
+**** Leucine
+- isovaleric acidemia
+- 3-MCC carboxylase 
+- 3-Methyl-glutaconic aciduria
+- 3-OH-2-methylglutaryl-CoA lyase 
+
+***                                                                 :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.33
+:END:
+
+**** Isoleucine
+- mitochondrial acetoacetyl-CoA thiolase
+- short/branched chain acyl-CoA dehydrogenase
+- 2-methyl-3-OH-butyryl-CoA dehydrogenase
+
+***                                                                 :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.33
+:END:
+
+**** Valine
+- isobutyryl-CoA dehydrogenase
+- 3-OH-isobutyryl-CoA hydrolase
+- 2-OH-isobutyric aciduria
+- methylmalonic semialdehyde dehydrogenase
+
+
+** Blocks Distal to BCKD 
