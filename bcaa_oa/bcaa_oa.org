@@ -1,4 +1,4 @@
-#+TITLE: Branched Chain Organic Acidurias
+#+TITLE: Disorders of Branched Chain Amino Acid Catabolism
 #+AUTHOR: Matthew Henderson, PhD, FCACB
 #+DATE: \today
 
@@ -18,7 +18,7 @@
 #+STARTUP: overview
 #+STARTUP: hidestars
 #+STARTUP: indent
-# #+BEAMER_HEADER: \subtitle{What is an Automated and Reproducible Report?}
+#+BEAMER_HEADER: \subtitle{Part 1: Maple Syrup Urine Disease}
 #+BEAMER_HEADER: \institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
 #+BEAMER_HEADER: \titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
 #+latex_header: \hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
@@ -77,22 +77,68 @@
 #+ATTR_LATEX: :height 0.85\textheight
 [[./figures/bcaa.png]]
 
+
+* MSUD Biochemistry
+** Maple Syrup Urine Disease
+- Only BCAA disorder detected by plasma amino acids.
+  - \Uparrow \Uparrow Leucine, also isoleucine and valine
+    - Presence of Allo-isoleucine is pathognomonic
+- - \Uparrow \alpha{}-ketoisocaproate, \alpha{}-keto-\beta{}-methylvaleric and \alpha{}-ketoisovaleric
+** L-Alloisoleucine
+- L-alloisoleucine is a branched chain amino acid and is a
+  stereo-isomer of L-isoleucine.
+- It is a common constituent of human plasma at low levels.
+- Produced as a byproduct of isoleucine transamination.
+- L-alloisoleucine differs from L-isoleucine by having having
+  different stereochemistry around its beta carbon.
+
+#+BEGIN_LaTeX
+\centering
+\chemname{\chemfig[][scale=.75]{H_{3}C-[1]-[7](<[6]CH_3)-[1](<:[2]NH_2)-[7](=[6]0)-[1]OH}}{\small L-isoleucine}
+\chemname{\chemfig[][scale=.75]{H_{3}C-[1]-[7](<:[6]CH_3)-[1](<:[2]NH_2)-[7](=[6]0)-[1]OH}}{\small L-alloisoleucine}
+
+#+END_LaTeX
+
+** Rules 
+
+[[./figures/aa_rules.png]]
+
+
+VICKERY, H. B. (1947). Rules for the nomenclature of the natural amino
+acids and related substances. The Journal of Biological Chemistry,
+169(2), 237–245.
 ** BCAA Catabolism
 - First two steps are shared
-  - BCAT :: reversible transammination
-  - BCKDC :: irreversible oxidative decarboxylation and thioesterification
-    - CoA derivatives committed to oxidative phosphorylation
-    - Regulated step
-      - products
-      - phosporylation
-      - transcription
-- Escape first pass hepatic metabolism
-- Metabolized in skeletal muscle and adipose tissue
+- *BCAT*: reversible transammination
+  - BCAAs escape first pass hepatic metabolism
+    - \downarrow expression of BCAT in the liver
+  - Metabolized in skeletal muscle and adipose tissue
+- *BCKDC*: irreversible oxidative decarboxylation and thioesterification
+  - CoA derivatives are committed to oxidative phosphorylation
+  - BCKDC is the regulated step in BCAA metabolism
+    - product inhibition
+    - phosporylation
+    - transcription
+** BCAT and BCKDC Reaction
 
-** Branched Chain \alpha{}-Ketoacid-Dehdrogenase Complex
-- multi-enzyme complex in the IMM
-- shares structural and biochemical features with pyruvate and
-  \alpha{}-ketoglutarate dehydrogenase
+\centering
+#+ATTR_LATEX: :height 0.90\textheight
+[[./figures/BCKD_Reaction.png]]
+
+** Branched Chain \alpha{}-Ketoacid-Dehdrogenase Metabolic Machine
+- 4-megadalton metabolic machine on the IMM organized around a 24-meric
+  transacylase (E2b) cubic core
+- E2b contains 24 identical subunits made up of three folded domains:
+  - lipoyl (LD),
+  - E1b/E3-binding (BD)
+  - E2b core domains
+- multiple copies of the following are attached to E2b via ionic interactions
+  - decarboxylase (E1b),
+  - dehydrogenase (E3),
+  - specific kinase
+  - specific phosphatase 
+
+** Regulation of the BCKD Metabolic Machine
 *** Feedback Inhibition
 - product inhibition by branched chain acyl-CoAs
 - \uparrow NADH:NAD^{+} ratio
@@ -101,26 +147,61 @@
 - \uparrow protein diet, adrenaline and glucogon dephosphorylate BCKD
 - Phenylbutyrate prevents dephosphorylation 
 *** Gene Expression
-- three subunits differentially regulated 
+- subunit expression differentially regulated 
 
-** Amino Acid Transport
-- Large Neutral Amino Acids
-  - Phe, Trp, Met, Tyr, His, Thr, *Leu, Ile, Val*
-- Transported to the brain and other organs primarily by the
-  L1-neutral amino acid transporter
-- Relative [ ] \to competition \to neurotransmitters
+** Structure of the BCKD Metabolic Machine
+
+\centering
+#+ATTR_LATEX: :height 0.90\textheight
+[[./figures/bckdmm.jpg]]
+
+*** COMMENT Note 
+The macromolecular structure (4 x 106 daltons in size) is organized
+about a cubic transacylase (E2b) core, to which a decarboxylase (E1b),
+a dehydrogenase (E3) are attached through ionic interactions. E2b of
+the BCKD complex contains 24 identical subunits with each polypeptide
+made up of three folded domains: lipoyl (LD), E1b/E3-binding (BD), and
+the E2b core domains that are linked by flexible regions.
+
+E1 alpah2bbeta2 heterotetramers or E3 homodimers are
+attached to BD. The BCKD kinase and BCKD phosphatase that are not
+shown bind to LD. E1b catalyzes the ThDP-mediated oxidative
+decarboxylation of branched-chain alpha-ketoacids. The
+ThDP-hydroxyacylidene moiety is transferred to a reduced lipoyl
+prosthetic group (in the box) on LD. The flexible LD carries
+S-acyldihydrolipoamide to the active site in the E2 core to generate
+acyl-CoA. The reduced lipoyl moiety on LD is oxidized by E3 on BD with
+the concomitant reduction of NAD+. The sum of the above component
+reactions is the oxidative decarboxylation of branched-chain
+alpha-ketoacids (Reproduced from Ævarsson et al.,
+Nat. Struct. Biol. 6: 785-792, 2000).
+
 ** Leucine
-nnn
-** Maple Syrup Urine Disease
-- Only BCAA disorder detected by plasma amino acids.
-- \Uparrow \Uparrow Leucine, also isoleucine and valine
-- BCKA = \alpha{}-ketoisocaproate
 
+\centering
+[[./figures/leu.png]]
+
+*** COMMENT
+- CNS
+  - compete for transport with other large neutral amino acids
+    - LAT1 low Km
+  - glutamate/GABA/glutamine cycle
+    - \/ glutaminergic neurotransmitters
+    - /\ ketoisocaproate -> mito disfunction
+    - /\ mTOR -> decreased food intake
+- Skeletal muscle
+  - mTOR -> increased protein synthesis
+  - /\ anabolism
+  - /\ insulin secretion
+
+
+
+* COMMENT BCAA Organic Acidurias
 
 ** Blocks Distal to BCKD 
 - Do no accumulate AAs or 2-oxo-acids
 - Lead to accumulation of intermediates proximal to the block
-- Plasma Acylcarnitines or Urine Organic Acids
+- Metabolites detected by plasma acylcarnitines or urine organic acids
   
 ***                                                                 :BMCOL:
 :PROPERTIES:
@@ -155,4 +236,57 @@ nnn
 - methylmalonic semialdehyde dehydrogenase
 
 
-** Blocks Distal to BCKD 
+** Nomenclature
+
+| Length | Monocarboxylic acid   | Dicarboxylic acid |
+|--------+-----------------------+-------------------|
+| C2     | Acetic                | Oxalic            |
+| C3     | Propionic             | Malonic           |
+| C4     | Butyric               | Succinic          |
+|        | Isobutyric            |                   |
+| C5     | Valeric               | Glutaric          |
+|        | Isovaleric            |                   |
+|        | 2-Methylbutyric       |                   |
+| C6     | Hexanoic (caprioc)    | Adipic            |
+| C7     | Heptanoic (enanthic)  | Pimelic           |
+| C8     | Octanoic (caprylic)   | Suberic           |
+| C9     | Nonanoic (pelargonic) | Azelaic           |
+| C10    | Decanoic (capric)     | Sebacic           |
+
+** Functional Groups
+#+BEGIN_LaTeX
+\centering
+\chemfig{X-C(-[2]X)(-[6]X)-C(-[2]X)(-[6]X)-C(-[7]OH)=[1]O}
+#+END_LaTeX
+
+| Functional group | Formula            |
+|------------------+--------------------|
+| hydrogen         | -H                 |
+| keto             | .= O               |
+| hydroxyl         | -OH                |
+| carboxyl         | -COOH              |
+| side chain       | -(CH$_2$)$_n$      |
+
+** Side Chains
+#+BEGIN_LaTeX
+\centering
+\chemfig{X-C(-[2]X)(-[6]X)-C(-[2]X)(-[6]X)-C(-[7]OH)=[1]O}
+#+END_LaTeX
+
+| Side chain | Structure                      |
+|------------+--------------------------------|
+| Methyl     | \chemfig{CH_3-}                |
+| Ethyl      | \chemfig{CH_3-CH_2-}           |
+| Propyl     | \chemfig{CH_3-CH_2-CH_2-}      |
+| Butyl      | \chemfig{CH_3-CH_2-CH_2-CH_2-} |
+
+
+** Propionic Acidemia / Methylmalonic Acidemia
+
+- Final step in valine and isoleucine metabolism
+  - Propiogenic substrates
+    - Met
+    - Thr
+    - Odd-chain fatty acids
+    - Cholesterol
+
