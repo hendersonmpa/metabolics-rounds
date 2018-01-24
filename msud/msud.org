@@ -1,0 +1,204 @@
+#+TITLE: Disorders of Branched Chain Amino Acid Catabolism
+#+AUTHOR: Matthew Henderson, PhD, FCACB
+#+DATE: \today
+
+:PROPERTIES:
+#+DRAWERS: PROPERTIES
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [presentation, smaller]
+#+BEAMER_THEME: Hannover
+#+BEAMER_COLOR_THEME: whale
+#+BEAMER_FRAME_LEVEL: 2
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+OPTIONS: H:2 toc:nil
+#+PROPERTY: header-args:R :session *R*
+#+PROPERTY: header-args :cache no
+#+PROPERTY: header-args :tangle yes
+#+STARTUP: beamer
+#+STARTUP: overview
+#+STARTUP: hidestars
+#+STARTUP: indent
+#+BEAMER_HEADER: \subtitle{Part 1: Maple Syrup Urine Disease}
+#+BEAMER_HEADER: \institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
+#+BEAMER_HEADER: \titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
+#+latex_header: \hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
+#+LaTeX_header: \usepackage{textpos}
+#+LaTeX_header: \usepackage{textgreek}
+#+LaTeX_header: \usepackage[version=4]{mhchem}
+#+LaTeX_header: \usepackage{chemfig}
+#+LaTeX_header: \usepackage{siunitx}
+#+LaTeX_header: \usepackage{gensymb}
+#+LaTex_HEADER: \usepackage[usenames,dvipsnames]{xcolor}
+#+LaTeX_HEADER: \usepackage[T1]{fontenc}
+#+LaTeX_HEADER: \usepackage{lmodern}
+#+LaTeX_HEADER: \usepackage{verbatim}
+#+LaTeX_HEADER: \usepackage{tikz}
+#+LaTeX_HEADER: \usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+:END:
+#+BEGIN_LaTeX
+%\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
+%    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
+%}
+
+\vspace{220pt}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\tiny}
+% \addtobeamertemplate{frametitle}{}{%
+% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+% \includegraphics[height=1cm,width=2cm]{cat}
+% \end{textblock*}}
+
+\tikzstyle{chemical} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=none]
+\tikzstyle{hardware} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=gray!30]
+\tikzstyle{ms} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{msw} = [rectangle, rounded corners, text width=7em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{label} = [rectangle,text width=8em, minimum height=1em, text centered, draw=none, fill=none]
+\tikzstyle{hl} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=red!30]
+\tikzstyle{box} = [rectangle, rounded corners, text width=5em, minimum height=5em,text centered, draw=black, fill=none]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
+
+#+END_LaTeX
+
+* Introduction
+** BCAAs
+
+#+BEGIN_LaTeX
+\centering
+\chemname{\chemfig[][scale=.75]{^{+}H_3N-C(-[2]COO^{-})(-[6]CH(-[7]CH_3)(-[5]CH_3))-H}}{\small valine}
+\chemname{\chemfig[][scale=.75]{^{+}H_3N-C(-[2]COO^{-})(-[6]CH_2-[6]CH(-[7]CH_3)(-[5]CH_3))-H}}{\small leucine}
+\chemname{\chemfig[][scale=.75]{^{+}H_3N-C(-[2]COO^{-})(-[6]CH(-CH_3)-[6]CH_2-[6]CH_3)-H}}{\small isoleucine}
+
+#+END_LaTeX
+
+** BCAA Catabolism
+\centering
+#+ATTR_LATEX: :height 0.85\textheight
+[[./figures/bcaa.png]]
+
+
+* Biochemistry
+** Maple Syrup Urine Disease
+- Only BCAA disorder detected by plasma amino acids.
+  - \Uparrow \Uparrow Leucine, also isoleucine and valine
+    - Presence of Allo-isoleucine is pathognomonic
+- - \Uparrow \alpha{}-ketoisocaproate, \alpha{}-keto-\beta{}-methylvaleric and \alpha{}-ketoisovaleric
+** L-Alloisoleucine
+- L-alloisoleucine is a branched chain amino acid and is a
+  stereo-isomer of L-isoleucine.
+- It is a common constituent of human plasma at low levels.
+- Produced as a byproduct of isoleucine transamination.
+- L-alloisoleucine differs from L-isoleucine by having having
+  different stereochemistry around its beta carbon.
+
+#+BEGIN_LaTeX
+\centering
+\chemname{\chemfig[][scale=.75]{H_{3}C-[1]-[7](<[6]CH_3)-[1](<:[2]NH_2)-[7](=[6]0)-[1]OH}}{\small L-isoleucine}
+\chemname{\chemfig[][scale=.75]{H_{3}C-[1]-[7](<:[6]CH_3)-[1](<:[2]NH_2)-[7](=[6]0)-[1]OH}}{\small L-alloisoleucine}
+
+#+END_LaTeX
+
+** Rules 
+
+[[./figures/aa_rules.png]]
+
+
+VICKERY, H. B. (1947). Rules for the nomenclature of the natural amino
+acids and related substances. The Journal of Biological Chemistry,
+169(2), 237–245.
+** BCAA Catabolism
+- First two steps are shared
+- *BCAT*: reversible transammination
+  - BCAAs escape first pass hepatic metabolism
+    - \downarrow expression of BCAT in the liver
+  - Metabolized in skeletal muscle and adipose tissue
+- *BCKDC*: irreversible oxidative decarboxylation and thioesterification
+  - CoA derivatives are committed to oxidative phosphorylation
+  - BCKDC is the regulated step in BCAA metabolism
+    - product inhibition
+    - phosporylation
+    - transcription
+** BCAT and BCKDC Reaction
+
+\centering
+#+ATTR_LATEX: :height 0.90\textheight
+[[./figures/BCKD_Reaction.png]]
+
+** Branched Chain \alpha{}-Ketoacid-Dehdrogenase Metabolic Machine
+- 4-megadalton metabolic machine on the IMM organized around a 24-meric
+  transacylase (E2b) cubic core
+- E2b contains 24 identical subunits made up of three folded domains:
+  - lipoyl (LD),
+  - E1b/E3-binding (BD)
+  - E2b core domains
+- multiple copies of the following are attached to E2b via ionic interactions
+  - decarboxylase (E1b),
+  - dehydrogenase (E3),
+  - specific kinase
+  - specific phosphatase 
+
+** Regulation of the BCKD Metabolic Machine
+*** Feedback Inhibition
+- product inhibition by branched chain acyl-CoAs
+- \uparrow NADH:NAD^{+} ratio
+*** Phosphorylation
+- Inhibited by phosphorylation of E1\alpha Ser 293 
+- \uparrow protein diet, adrenaline and glucogon dephosphorylate BCKD
+- Phenylbutyrate prevents dephosphorylation 
+*** Gene Expression
+- subunit expression differentially regulated 
+
+** Structure of the BCKD Metabolic Machine
+
+\centering
+#+ATTR_LATEX: :height 0.90\textheight
+[[./figures/bckdmm.jpg]]
+
+*** COMMENT Note 
+The macromolecular structure (4 x 106 daltons in size) is organized
+about a cubic transacylase (E2b) core, to which a decarboxylase (E1b),
+a dehydrogenase (E3) are attached through ionic interactions. E2b of
+the BCKD complex contains 24 identical subunits with each polypeptide
+made up of three folded domains: lipoyl (LD), E1b/E3-binding (BD), and
+the E2b core domains that are linked by flexible regions.
+
+E1 alpah2bbeta2 heterotetramers or E3 homodimers are
+attached to BD. The BCKD kinase and BCKD phosphatase that are not
+shown bind to LD. E1b catalyzes the ThDP-mediated oxidative
+decarboxylation of branched-chain alpha-ketoacids. The
+ThDP-hydroxyacylidene moiety is transferred to a reduced lipoyl
+prosthetic group (in the box) on LD. The flexible LD carries
+S-acyldihydrolipoamide to the active site in the E2 core to generate
+acyl-CoA. The reduced lipoyl moiety on LD is oxidized by E3 on BD with
+the concomitant reduction of NAD+. The sum of the above component
+reactions is the oxidative decarboxylation of branched-chain
+alpha-ketoacids (Reproduced from Ævarsson et al.,
+Nat. Struct. Biol. 6: 785-792, 2000).
+
+** Leucine
+
+\centering
+[[./figures/leu.png]]
+
+*** COMMENT
+- CNS
+  - compete for transport with other large neutral amino acids
+    - LAT1 low Km
+  - glutamate/GABA/glutamine cycle
+    - \/ glutaminergic neurotransmitters
+    - /\ ketoisocaproate -> mito disfunction
+    - /\ mTOR -> decreased food intake
+- Skeletal muscle
+  - mTOR -> increased protein synthesis
+  - /\ anabolism
+  - /\ insulin secretion
+
+
+
+
+* Testing
+** NBS
+
+
+

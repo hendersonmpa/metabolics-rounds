@@ -1,0 +1,206 @@
+% Created 2018-01-24 Wed 09:18
+\documentclass[presentation, smaller]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
+\usepackage{textpos}
+\usepackage{textgreek}
+\usepackage[version=4]{mhchem}
+\usepackage{chemfig}
+\usepackage{siunitx}
+\usepackage{gensymb}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{verbatim}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+\usetheme{Hannover}
+\usecolortheme{whale}
+\author{Matthew Henderson, PhD, FCACB}
+\date{\today}
+\title{Disorders of Branched Chain Amino Acid Catabolism}
+\subtitle{Part 1: Maple Syrup Urine Disease}
+\institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
+\titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
+\hypersetup{
+ pdfauthor={Matthew Henderson, PhD, FCACB},
+ pdftitle={Disorders of Branched Chain Amino Acid Catabolism},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.2.1 (Org mode 8.3.4)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+%\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
+%    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
+%}
+
+\vspace{220pt}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\tiny}
+% \addtobeamertemplate{frametitle}{}{%
+% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+% \includegraphics[height=1cm,width=2cm]{cat}
+% \end{textblock*}}
+
+\tikzstyle{chemical} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=none]
+\tikzstyle{hardware} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=gray!30]
+\tikzstyle{ms} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{msw} = [rectangle, rounded corners, text width=7em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{label} = [rectangle,text width=8em, minimum height=1em, text centered, draw=none, fill=none]
+\tikzstyle{hl} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=red!30]
+\tikzstyle{box} = [rectangle, rounded corners, text width=5em, minimum height=5em,text centered, draw=black, fill=none]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
+
+\section{Introduction}
+\label{sec:orgheadline3}
+\begin{frame}[label={sec:orgheadline1}]{BCAAs}
+\centering
+\chemname{\chemfig[][scale=.75]{^{+}H_3N-C(-[2]COO^{-})(-[6]CH(-[7]CH_3)(-[5]CH_3))-H}}{\small valine}
+\chemname{\chemfig[][scale=.75]{^{+}H_3N-C(-[2]COO^{-})(-[6]CH_2-[6]CH(-[7]CH_3)(-[5]CH_3))-H}}{\small leucine}
+\chemname{\chemfig[][scale=.75]{^{+}H_3N-C(-[2]COO^{-})(-[6]CH(-CH_3)-[6]CH_2-[6]CH_3)-H}}{\small isoleucine}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline2}]{BCAA Catabolism}
+\centering
+\includegraphics[height=0.85\textheight]{./figures/bcaa.png}
+\end{frame}
+
+
+\section{Biochemistry}
+\label{sec:orgheadline13}
+\begin{frame}[label={sec:orgheadline4}]{Maple Syrup Urine Disease}
+\begin{itemize}
+\item Only BCAA disorder detected by plasma amino acids.
+\begin{itemize}
+\item \(\Uparrow\) \(\Uparrow\) Leucine, also isoleucine and valine
+\begin{itemize}
+\item Presence of Allo-isoleucine is pathognomonic
+\end{itemize}
+\end{itemize}
+\item - \(\Uparrow\) \(\alpha\)-ketoisocaproate, \(\alpha\)-keto-\(\beta\)-methylvaleric and \(\alpha\)-ketoisovaleric
+\end{itemize}
+\end{frame}
+\begin{frame}[label={sec:orgheadline5}]{L-Alloisoleucine}
+\begin{itemize}
+\item L-alloisoleucine is a branched chain amino acid and is a
+stereo-isomer of L-isoleucine.
+\item It is a common constituent of human plasma at low levels.
+\item Produced as a byproduct of isoleucine transamination.
+\item L-alloisoleucine differs from L-isoleucine by having having
+different stereochemistry around its beta carbon.
+\end{itemize}
+
+\centering
+\chemname{\chemfig[][scale=.75]{H_{3}C-[1]-[7](<[6]CH_3)-[1](<:[2]NH_2)-[7](=[6]0)-[1]OH}}{\small L-isoleucine}
+\chemname{\chemfig[][scale=.75]{H_{3}C-[1]-[7](<:[6]CH_3)-[1](<:[2]NH_2)-[7](=[6]0)-[1]OH}}{\small L-alloisoleucine}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline6}]{Rules}
+\includegraphics[width=.9\linewidth]{./figures/aa_rules.png}
+
+
+VICKERY, H. B. (1947). Rules for the nomenclature of the natural amino
+acids and related substances. The Journal of Biological Chemistry,
+169(2), 237–245.
+\end{frame}
+\begin{frame}[label={sec:orgheadline7}]{BCAA Catabolism}
+\begin{itemize}
+\item First two steps are shared
+\item \textbf{BCAT}: reversible transammination
+\begin{itemize}
+\item BCAAs escape first pass hepatic metabolism
+\begin{itemize}
+\item \(\downarrow\) expression of BCAT in the liver
+\end{itemize}
+\item Metabolized in skeletal muscle and adipose tissue
+\end{itemize}
+\item \textbf{BCKDC}: irreversible oxidative decarboxylation and thioesterification
+\begin{itemize}
+\item CoA derivatives are committed to oxidative phosphorylation
+\item BCKDC is the regulated step in BCAA metabolism
+\begin{itemize}
+\item product inhibition
+\item phosporylation
+\item transcription
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{frame}
+\begin{frame}[label={sec:orgheadline8}]{BCAT and BCKDC Reaction}
+\centering
+\includegraphics[height=0.90\textheight]{./figures/BCKD_Reaction.png}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline9}]{Branched Chain \(\alpha\)-Ketoacid-Dehdrogenase Metabolic Machine}
+\begin{itemize}
+\item 4-megadalton metabolic machine on the IMM organized around a 24-meric
+transacylase (E2b) cubic core
+\item E2b contains 24 identical subunits made up of three folded domains:
+\begin{itemize}
+\item lipoyl (LD),
+\item E1b/E3-binding (BD)
+\item E2b core domains
+\end{itemize}
+\item multiple copies of the following are attached to E2b via ionic interactions
+\begin{itemize}
+\item decarboxylase (E1b),
+\item dehydrogenase (E3),
+\item specific kinase
+\item specific phosphatase
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline10}]{Regulation of the BCKD Metabolic Machine}
+\begin{block}{Feedback Inhibition}
+\begin{itemize}
+\item product inhibition by branched chain acyl-CoAs
+\item \(\uparrow\) NADH:NAD\(^{\text{+}}\) ratio
+\end{itemize}
+\end{block}
+\begin{block}{Phosphorylation}
+\begin{itemize}
+\item Inhibited by phosphorylation of E1\(\alpha\) Ser 293
+\item \(\uparrow\) protein diet, adrenaline and glucogon dephosphorylate BCKD
+\item Phenylbutyrate prevents dephosphorylation
+\end{itemize}
+\end{block}
+\begin{block}{Gene Expression}
+\begin{itemize}
+\item subunit expression differentially regulated
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline11}]{Structure of the BCKD Metabolic Machine}
+\centering
+\includegraphics[height=0.90\textheight]{./figures/bckdmm.jpg}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline12}]{Leucine}
+\centering
+\includegraphics[width=.9\linewidth]{./figures/leu.png}
+\end{frame}
+
+\section{Testing}
+\label{sec:orgheadline15}
+\begin{frame}[label={sec:orgheadline14}]{NBS}
+\end{frame}
+\end{document}
