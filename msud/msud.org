@@ -87,7 +87,7 @@
 ** L-Alloisoleucine
 - L-alloisoleucine is a branched chain amino acid and is a
   stereo-isomer of L-isoleucine.
-- It is a common constituent of human plasma at low levels.
+- It is a common low [ ] constituent of human plasma.
 - Produced as a byproduct of isoleucine transamination.
 - L-alloisoleucine differs from L-isoleucine by having having
   different stereochemistry around its beta carbon.
@@ -126,17 +126,21 @@ acids and related substances. The Journal of Biological Chemistry,
 [[./figures/BCKD_Reaction.png]]
 
 ** Branched Chain \alpha{}-Ketoacid-Dehdrogenase Metabolic Machine
+- encoded by six genetic loci
+  - E1\alpha
+  - E1\beta
+  - E2
+  - E3
+  - BCKD kinase
+  - BCKD phosphatase)
+
 - 4-megadalton metabolic machine on the IMM organized around a 24-meric
   transacylase (E2b) cubic core
 - E2b contains 24 identical subunits made up of three folded domains:
-  - lipoyl (LD),
-  - E1b/E3-binding (BD)
-  - E2b core domains
-- multiple copies of the following are attached to E2b via ionic interactions
-  - decarboxylase (E1b),
-  - dehydrogenase (E3),
-  - specific kinase
-  - specific phosphatase 
+- multiple copies of the above are attached to E2b via ionic interactions
+- MSUD is classified into four molecular groups
+  - IA, IB, II, and III
+  - E1α, E1β, E2, and E3
 
 ** Regulation of the BCKD Metabolic Machine
 *** Feedback Inhibition
@@ -197,8 +201,118 @@ Nat. Struct. Biol. 6: 785-792, 2000).
 
 
 
-* Testing
-** NBS
+* Diagnosis
+** NSO Screening Logic
 
+*** Screening
+- Inital positive :: LEU/ALA \ge 0.85 AND LEU \ge 250
+  - Repeat overnight
+  - No weekend reporting
+- Alert :: LEU/ALA \ge 1.25 AND LEU \ge 300
+  - Repeat same day
+  - Weekend reporting
+
+*** Confirmation
+- Screen Positive :: LEU/ALA \ge 1.0 AND LEU \ge 300
+
+**  Newborn Screening ACT Sheet
+*** YOU SHOULD TAKE THE FOLLOWING ACTIONS IMMEDIATELY:
+
+- Contact family to inform them of the newborn screening result and
+  ascertain clinical status (poor feeding,vomiting, lethargy,
+  tachypnea).
+- Consult with pediatric metabolic specialist.
+- Evaluate the newborn (poor feeding, lethargy, tachypnea, alternating
+  hypertonia/hypotonia, seizures).
+- If any sign is present or infant is ill, transport to hospital for
+  further treatment in consultation with metabolic specialist.
+- Initiate timely confirmatory/diagnostic testing and management, as
+  recommended by specialist.
+- Provide the family with basic information about MSUD and dietary
+  management.
+- Report findings to newborn screening program.
+
+** Diagnostic Evaluation
+
+[[./figures/leu_elevated.png]]
+
+** Hydroxyprolinemia
+- hydroxyproline is primarily derived from collagen turn-over
+- hydroxyprolinemia is due to a defect in hydroxyproline dehydrogenase (HYDH)
+- Does not cause disease
+
+#+BEGIN_LaTeX
+\centering
+\schemedebug{false}
+\schemestart
+\chemname{\chemfig[][scale=.55]{COO^{-}>[6]*5(-^{+}H_2N--(<:[7]OH)--)}}{\small hydroyproline}
+\arrow{->[{\tiny HYDH}]}
+\chemname{\chemfig[][scale=.55]{COO^{-}>[6]*5(-H_N^{+}=-(<:[7]OH)--)}}{\small hydroyproline}
+\arrow{->}
+\schemestop
+#+END_LaTeX
+
+- hydroxyproline, leucine, isoleucine and alloisoleucine are isobaric
+  - commonly termed as "Xle"
+- share the same parent and product in FIA-MS/MS with butanol derivatization
+  - 188 m/z \to 86 m/z , NL of 102 
+
+** Clinical Considerations
+- MSUD presents in the neonate with:
+  - feeding intolerance
+  - failure to thrive
+  - vomiting
+  - lethargy
+  - maple syrup odor to urine and cerumen.
+- If untreated, it will progress to:
+  - irreversible mental retardation
+  - hyperactivity
+  - failure to thrive
+  - seizures
+  - coma
+  - cerebral edema
+- Hydroxyprolinemia is probably benign.
+
+* Treatment
+** Acute Management in the Newborn
+- Metabolic decompensation
+  - hemodialysis and hemofiltration
+  - high energy dietary treatment
+  - leu reduced to \le 1 mmol/l in hours
+- Recovery
+  - BCAA-free formula
+  - Monitoring plasma [aa] daily
+    - Val, Ile
+
+** Long-term management
+- Similar principle to PKU
+- BCAA free amino acid supplementation
+- Prevent catabolism
+- Serial monitoring of blood [BCAA]
+
+- type II missense mutations that appear correlate with the milder
+  thiamine-responsive form of MSUD
+
+
+*** Liver Transplantation
+- transplanted patient no longer require protein restriction
+- \downarrow risk of metabolic decompensation
+- candidate for domino transplantation
+
+** Prognosis
+- The age at diagnosis and the subsequent course are the most
+  important determinants.
+- Treatment initiated before 10 days of age gives the best results
+- in early studies, only a few patients treated after 14 days of age
+  achieved normal intellect.
+- Chronic mild to moderate elevations of the BCAAs/BCKAs have been
+  associated with dysmyelinating changes in brain,
+- One study of 24 children over the first 6 years of life demonstrated
+  that exposure to elevated plasma leucine levels has a negative
+  impact on cognitive outcome, as measured by IQ testing
+- patients identified by the Massachusetts Newborn Screening Program
+  - carefully monitored and achieved good compliance
+  - had only a few mild episodes of metabolic decompensation.
+  - Some are now college graduates in their 20s and 30s.
 
 

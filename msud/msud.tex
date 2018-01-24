@@ -1,4 +1,4 @@
-% Created 2018-01-24 Wed 09:18
+% Created 2018-01-24 Wed 14:49
 \documentclass[presentation, smaller]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -101,7 +101,7 @@
 \begin{itemize}
 \item L-alloisoleucine is a branched chain amino acid and is a
 stereo-isomer of L-isoleucine.
-\item It is a common constituent of human plasma at low levels.
+\item It is a common low [ ] constituent of human plasma.
 \item Produced as a byproduct of isoleucine transamination.
 \item L-alloisoleucine differs from L-isoleucine by having having
 different stereochemistry around its beta carbon.
@@ -150,20 +150,24 @@ acids and related substances. The Journal of Biological Chemistry,
 
 \begin{frame}[label={sec:orgheadline9}]{Branched Chain \(\alpha\)-Ketoacid-Dehdrogenase Metabolic Machine}
 \begin{itemize}
+\item encoded by six genetic loci
+\begin{itemize}
+\item E1\(\alpha\)
+\item E1\(\beta\)
+\item E2
+\item E3
+\item BCKD kinase
+\item BCKD phosphatase)
+\end{itemize}
+
 \item 4-megadalton metabolic machine on the IMM organized around a 24-meric
 transacylase (E2b) cubic core
 \item E2b contains 24 identical subunits made up of three folded domains:
+\item multiple copies of the above are attached to E2b via ionic interactions
+\item MSUD is classified into four molecular groups
 \begin{itemize}
-\item lipoyl (LD),
-\item E1b/E3-binding (BD)
-\item E2b core domains
-\end{itemize}
-\item multiple copies of the following are attached to E2b via ionic interactions
-\begin{itemize}
-\item decarboxylase (E1b),
-\item dehydrogenase (E3),
-\item specific kinase
-\item specific phosphatase
+\item IA, IB, II, and III
+\item E1α, E1β, E2, and E3
 \end{itemize}
 \end{itemize}
 \end{frame}
@@ -199,8 +203,166 @@ transacylase (E2b) cubic core
 \includegraphics[width=.9\linewidth]{./figures/leu.png}
 \end{frame}
 
-\section{Testing}
-\label{sec:orgheadline15}
-\begin{frame}[label={sec:orgheadline14}]{NBS}
+\section{Diagnosis}
+\label{sec:orgheadline19}
+\begin{frame}[label={sec:orgheadline14}]{NSO Screening Logic}
+\begin{block}{Screening}
+\begin{description}
+\item[{Inital positive}] LEU/ALA \(\ge\) 0.85 AND LEU \(\ge\) 250
+\begin{itemize}
+\item Repeat overnight
+\item No weekend reporting
+\end{itemize}
+\item[{Alert}] LEU/ALA \(\ge\) 1.25 AND LEU \(\ge\) 300
+\begin{itemize}
+\item Repeat same day
+\item Weekend reporting
+\end{itemize}
+\end{description}
+\end{block}
+
+\begin{block}{Confirmation}
+\begin{description}
+\item[{Screen Positive}] LEU/ALA \(\ge\) 1.0 AND LEU \(\ge\) 300
+\end{description}
+\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline15}]{Newborn Screening ACT Sheet}
+\begin{block}{YOU SHOULD TAKE THE FOLLOWING ACTIONS IMMEDIATELY:}
+\begin{itemize}
+\item Contact family to inform them of the newborn screening result and
+ascertain clinical status (poor feeding,vomiting, lethargy,
+tachypnea).
+\item Consult with pediatric metabolic specialist.
+\item Evaluate the newborn (poor feeding, lethargy, tachypnea, alternating
+hypertonia/hypotonia, seizures).
+\item If any sign is present or infant is ill, transport to hospital for
+further treatment in consultation with metabolic specialist.
+\item Initiate timely confirmatory/diagnostic testing and management, as
+recommended by specialist.
+\item Provide the family with basic information about MSUD and dietary
+management.
+\item Report findings to newborn screening program.
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline16}]{Diagnostic Evaluation}
+\includegraphics[width=.9\linewidth]{./figures/leu_elevated.png}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline17}]{Hydroxyprolinemia}
+\begin{itemize}
+\item hydroxyproline is primarily derived from collagen turn-over
+\item hydroxyprolinemia is due to a defect in hydroxyproline dehydrogenase (HYDH)
+\item Does not cause disease
+\end{itemize}
+
+\centering
+\schemedebug{false}
+\schemestart
+\chemname{\chemfig[][scale=.55]{COO^{-}>[6]*5(-^{+}H_2N--(<:[7]OH)--)}}{\small hydroyproline}
+\arrow{->[{\tiny HYDH}]}
+\chemname{\chemfig[][scale=.55]{COO^{-}>[6]*5(-H_N^{+}=-(<:[7]OH)--)}}{\small hydroyproline}
+\arrow{->}
+\schemestop
+
+\begin{itemize}
+\item hydroxyproline, leucine, isoleucine and alloisoleucine are isobaric
+\begin{itemize}
+\item commonly termed as "Xle"
+\end{itemize}
+\item share the same parent and product in FIA-MS/MS with butanol derivatization
+\begin{itemize}
+\item 188 m/z \(\to\) 86 m/z , NL of 102
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline18}]{Clinical Considerations}
+\begin{itemize}
+\item MSUD presents in the neonate with:
+\begin{itemize}
+\item feeding intolerance
+\item failure to thrive
+\item vomiting
+\item lethargy
+\item maple syrup odor to urine and cerumen.
+\end{itemize}
+\item If untreated, it will progress to:
+\begin{itemize}
+\item irreversible mental retardation
+\item hyperactivity
+\item failure to thrive
+\item seizures
+\item coma
+\item cerebral edema
+\end{itemize}
+\item Hydroxyprolinemia is probably benign.
+\end{itemize}
+\end{frame}
+
+\section{Treatment}
+\label{sec:orgheadline23}
+\begin{frame}[label={sec:orgheadline20}]{Acute Management in the Newborn}
+\begin{itemize}
+\item Metabolic decompensation
+\begin{itemize}
+\item hemodialysis and hemofiltration
+\item high energy dietary treatment
+\item leu reduced to \(\le\) 1 mmol/l in hours
+\end{itemize}
+\item Recovery
+\begin{itemize}
+\item BCAA-free formula
+\item Monitoring plasma [aa] daily
+\begin{itemize}
+\item Val, Ile
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline21}]{Long-term management}
+\begin{itemize}
+\item Similar principle to PKU
+\item BCAA free amino acid supplementation
+\item Prevent catabolism
+\item Serial monitoring of blood [BCAA]
+
+\item type II missense mutations that appear correlate with the milder
+thiamine-responsive form of MSUD
+\end{itemize}
+
+
+\begin{block}{Liver Transplantation}
+\begin{itemize}
+\item transplanted patient no longer require protein restriction
+\item \(\downarrow\) risk of metabolic decompensation
+\item candidate for domino transplantation
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline22}]{Prognosis}
+\begin{itemize}
+\item The age at diagnosis and the subsequent course are the most
+important determinants.
+\item Treatment initiated before 10 days of age gives the best results
+\item in early studies, only a few patients treated after 14 days of age
+achieved normal intellect.
+\item Chronic mild to moderate elevations of the BCAAs/BCKAs have been
+associated with dysmyelinating changes in brain,
+\item One study of 24 children over the first 6 years of life demonstrated
+that exposure to elevated plasma leucine levels has a negative
+impact on cognitive outcome, as measured by IQ testing
+\item patients identified by the Massachusetts Newborn Screening Program
+\begin{itemize}
+\item carefully monitored and achieved good compliance
+\item had only a few mild episodes of metabolic decompensation.
+\item Some are now college graduates in their 20s and 30s.
+\end{itemize}
+\end{itemize}
 \end{frame}
 \end{document}

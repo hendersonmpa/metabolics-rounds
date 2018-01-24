@@ -2,6 +2,8 @@
 #+AUTHOR: Matthew Henderson, PhD, FCACB
 #+DATE: \today
 
+:PROPERTIES:
+#+DRAWERS: PROPERTIES
 #+LaTeX_CLASS: beamer
 #+LaTeX_CLASS_OPTIONS: [presentation, smaller]
 #+BEAMER_THEME: Boadilla [height=20pt]
@@ -31,7 +33,7 @@
 #+LaTeX_HEADER: \usepackage{verbatim}
 #+LaTeX_HEADER: \usepackage{tikz}
 #+LaTeX_HEADER: \usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
-
+:END:
 
 #+BEGIN_LaTeX
 %\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
