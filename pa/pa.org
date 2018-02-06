@@ -61,22 +61,15 @@
 
 #+END_LaTeX
 
-* Propionic Acidemia
-** PA Phenotype
-- Recurrent episodes of ketosis, acidosis and dehydration progressive to coma;
-- neutropenia, thrombocytopenia; osteoporosis;
-- hyperglycinemia;
-- propionic acidemia;
-- methylcitraturia;
-- deficiency of propionyl CoA carboxylase.
+* Introduction
 
-** PA History
+** History
 *** Ketotic Hyperglycinemia
 - A patient with PA was reported in 1961 as hyperglycinemia
   - recurrent ketoacidosis
   - \uparrow \uparrow glycine in blood and urine
   - attacks related to the intake of protein
-    - administration of BCAA, Thr, Met \to ketonuria
+    - administratioppn of BCAA, Thr, Met \to ketonuria
 *** Non-ketotic Hyperglycinemia
 - Methylmalonic acidemia
 
@@ -93,6 +86,11 @@
   - \alpha{}_{4}\beta{}_{4} heteropolymer
 - Apoenzyme activated by covalent binding of biotin
 
+** Genetics
+- autosomal recessive trait
+- Propionyl CoA Carboxylase
+
+* Clincal Findings
 ** Acute presentation
 - Life-threatening illness early in life
   - ketonuria
@@ -105,20 +103,6 @@
 - ketotic episodes
 - infection
 - protein intolerance
-
-
-** Clinical Chemistry
-- Acidosis in acute episodes
-  - accumulation of \beta-hydroxybutyrate and acetoacetate
-  - Arterial pH as low as 6.9
-  - Bicarb as low as 5 mEq/L
-- \uparrow lactic acid
-- Hypoglycemia
-- Hyperammonemia 
-
-** Amino Acids
-- \Uparrow glycine
-- \uparrow glutamine when hyperammonemia
 
 
 ** Long term
@@ -160,6 +144,21 @@
 
 
 
-** Genetics
-- autosomal recessive trait
-- Propionyl CoA Carboxylase
+* Laboratory Investigations
+** Newborn Screening
+** Clinical Chemistry
+- Acidosis in acute episodes
+  - accumulation of \beta-hydroxybutyrate and acetoacetate
+  - Arterial pH as low as 6.9
+  - Bicarb as low as 5 mEq/L
+- \uparrow lactic acid
+- Hypoglycemia
+- Hyperammonemia 
+
+** Amino Acids
+- \Uparrow glycine
+- \uparrow glutamine when hyperammonemia
+
+
+
+
