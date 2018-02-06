@@ -18,7 +18,7 @@
 #+STARTUP: overview
 #+STARTUP: hidestars
 #+STARTUP: indent
-#+BEAMER_HEADER: \subtitle{Part 1: Maple Syrup Urine Disease}
+#+BEAMER_HEADER: \subtitle{Part 1: Maple Syrup Urine Diseas}
 #+BEAMER_HEADER: \institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
 #+BEAMER_HEADER: \titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
 #+latex_header: \hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
@@ -81,9 +81,20 @@
 * Biochemistry
 ** Maple Syrup Urine Disease
 - Only BCAA disorder detected by plasma amino acids.
-  - \Uparrow \Uparrow Leucine, also isoleucine and valine
-    - Presence of Allo-isoleucine is pathognomonic
-- - \Uparrow \alpha{}-ketoisocaproate, \alpha{}-keto-\beta{}-methylvaleric and \alpha{}-ketoisovaleric
+  - \Uparrow \Uparrow leucine, also isoleucine and valine
+    - Presence of alloisoleucine is pathognomonic
+- Urine organic acids
+  - \Uparrow \alpha{}-ketoisocaproate,
+    \alpha{}-keto-\beta{}-methylvaleric and \alpha{}-ketoisovaleric
+    - Also elevated in fasting state
+** Rules 
+
+[[./figures/aa_rules.png]]
+
+
+VICKERY, H. B. (1947). Rules for the nomenclature of the natural amino
+acids and related substances. The Journal of Biological Chemistry,
+169(2), 237–245.
 ** L-Alloisoleucine
 - L-alloisoleucine is a branched chain amino acid and is a
   stereo-isomer of L-isoleucine.
@@ -98,15 +109,6 @@
 \chemname{\chemfig[][scale=.75]{H_{3}C-[1]-[7](<:[6]CH_3)-[1](<:[2]NH_2)-[7](=[6]0)-[1]OH}}{\small L-alloisoleucine}
 
 #+END_LaTeX
-
-** Rules 
-
-[[./figures/aa_rules.png]]
-
-
-VICKERY, H. B. (1947). Rules for the nomenclature of the natural amino
-acids and related substances. The Journal of Biological Chemistry,
-169(2), 237–245.
 ** BCAA Catabolism
 - First two steps are shared
 - *BCAT*: reversible transammination
@@ -126,21 +128,19 @@ acids and related substances. The Journal of Biological Chemistry,
 [[./figures/BCKD_Reaction.png]]
 
 ** Branched Chain \alpha{}-Ketoacid-Dehdrogenase Metabolic Machine
+- 4-megadalton metabolic machine on the IMM
+- organized around a 24-meric transacylase (E2b) cubic core
 - encoded by six genetic loci
   - E1\alpha
   - E1\beta
   - E2
   - E3
   - BCKD kinase
-  - BCKD phosphatase)
-
-- 4-megadalton metabolic machine on the IMM organized around a 24-meric
-  transacylase (E2b) cubic core
-- E2b contains 24 identical subunits made up of three folded domains:
+  - BCKD phosphatase
 - multiple copies of the above are attached to E2b via ionic interactions
 - MSUD is classified into four molecular groups
   - IA, IB, II, and III
-  - E1α, E1β, E2, and E3
+  - E1\alpha{}, E1\beta{}, E2, and E3
 
 ** Regulation of the BCKD Metabolic Machine
 *** Feedback Inhibition
@@ -239,7 +239,7 @@ Nat. Struct. Biol. 6: 785-792, 2000).
 ** Hydroxyprolinemia
 - hydroxyproline is primarily derived from collagen turn-over
 - hydroxyprolinemia is due to a defect in hydroxyproline dehydrogenase (HYDH)
-- Does not cause disease
+- Hydroxyprolinemia is probably benign.
 
 #+BEGIN_LaTeX
 \centering
@@ -271,7 +271,7 @@ Nat. Struct. Biol. 6: 785-792, 2000).
   - seizures
   - coma
   - cerebral edema
-- Hydroxyprolinemia is probably benign.
+
 
 * Treatment
 ** Acute Management in the Newborn
@@ -303,16 +303,20 @@ Nat. Struct. Biol. 6: 785-792, 2000).
 - The age at diagnosis and the subsequent course are the most
   important determinants.
 - Treatment initiated before 10 days of age gives the best results
-- in early studies, only a few patients treated after 14 days of age
+- In early studies, only a few patients treated after 14 days of age
   achieved normal intellect.
 - Chronic mild to moderate elevations of the BCAAs/BCKAs have been
   associated with dysmyelinating changes in brain,
 - One study of 24 children over the first 6 years of life demonstrated
   that exposure to elevated plasma leucine levels has a negative
   impact on cognitive outcome, as measured by IQ testing
-- patients identified by the Massachusetts Newborn Screening Program
-  - carefully monitored and achieved good compliance
-  - had only a few mild episodes of metabolic decompensation.
+- Patients identified by the Massachusetts Newborn Screening Program
+  - Carefully monitored and achieved good compliance
+    - only a few mild episodes of metabolic decompensation.
   - Some are now college graduates in their 20s and 30s.
 
 
+** Next time
+
+- Disorders of Branched Chain Amino Acid Catabolism
+  - Part 2: Branch Chain Organic Acidurias

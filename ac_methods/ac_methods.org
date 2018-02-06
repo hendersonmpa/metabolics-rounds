@@ -96,61 +96,16 @@
   - Newborn Screening for FAODs and OAs
 - Urine
   - Diagnosis of CUD
-** ERNDIM Plasma Acylcarnitines Survey
+** COMMENT ERNDIM Plasma Acylcarnitines Survey
 #+CAPTION: Free Carnitine
 #+ATTR_LATEX: :height 0.8\textheight
 [[./figures/free_carnitine_erndim.png]]
 
-** ERNDIM Plasma Acylcarnitines Survey
+** COMMENT ERNDIM Plasma Acylcarnitines Survey
 #+CAPTION: Acetylcarnitine
 #+ATTR_LATEX: :height 0.8\textheight
 [[./figures/acetylcarnitine_erndim.png]]
 
-** Overestimation of Free Carnitine
-
-- Butylated acylcarnitines are converted to butylated carnitine in
-  n-butanol-3M HCl at 65\degree{}C. [fn:johnson]
-
-| Acyl Carnitine | Half-life (min) |
-|----------------+-----------------|
-| C2             |              31 |
-| C10            |             125 |
-| C18            |             172 |
-
-- 65\degree{}C for 15 min.  
-- NSO uses 60\degree{}C for 20 minutes.
-- IMD uses 55\degree{}C for 20 minutes.
-
-- In a sample with low free carnitine and high acetylcarnitine.
-  - 30% of the acetylcarnitine and smaller amounts of higher
-    molecular mass acylcarnitines are converted to carnitine
-  - a low carnitine sample could appear to be normal.
-- "The free carnitine results obtained by this screening method on
-  blood spots with high levels of acylcarnitines should therefore be
-  used with caution." [fn:johnson]
-
-[fn:johnson] Johnson, D. W. (1999). Inaccurate measurement of free
-carnitine by the electrospray tandem mass spectrometry screening
-method for blood spots. Journal of Inherited Metabolic Disease, 22(2),
-201–202. 
-** Free and Total Carnitine
-*** Fractional Tubular Re-absorption of Carnitine
-
-#+BEGIN_LaTeX
-\begin{equation*}
-FTR_{carnitine}\% = \left( 1 -  \frac{carnitine_{urine} \cdot creatinine_{plasma}}{carnitine_{plasma} \cdot creatinine_{urine}}\right) \cdot 100
-\end{equation*}
-#+END_LaTeX
-
-- normally >98%, \Downarrow in CUD
-
-*** Free/Total Carnitine
-
-\[
-\frac{Free_{carnitine}}{Total_{carnitine}} = \frac{C_0}{\sum_{0}^{18} C_n}
-\]
-
-- \Downarrow in CUD, < 5-10% of normal 
 * Screening FIA-MS/MS
 ** FIA-MS/MS schematic
 #+BEGIN_LaTeX
@@ -268,6 +223,57 @@ FTR_{carnitine}\% = \left( 1 -  \frac{carnitine_{urine} \cdot creatinine_{plasma
  \chemname{\chemfig[][scale=.33]{H_{2}C^{+}-HC=CH-C([1]=O)([7]-OH)}}{\tiny 85 m/z}
 #+END_LaTeX
 
+** Overestimation of Free Carnitine
+
+- Butylated acylcarnitines are converted to butylated carnitine in
+  n-butanol-3M HCl at 65\degree{}C. [fn:johnson]
+
+| Acyl Carnitine | Half-life (min) |
+|----------------+-----------------|
+| C2             |              31 |
+| C10            |             125 |
+| C18            |             172 |
+
+- 65\degree{}C for 15 min.  
+- NSO uses 60\degree{}C for 20 minutes.
+- IMD uses 55\degree{}C for 20 minutes.
+
+- In a sample with low free carnitine and high acetylcarnitine.
+  - 30% of the acetylcarnitine and smaller amounts of higher
+    molecular mass acylcarnitines are converted to carnitine
+  - a low carnitine sample could appear to be normal.
+- "The free carnitine results obtained by this screening method on
+  blood spots with high levels of acylcarnitines should therefore be
+  used with caution." [fn:johnson]
+
+[fn:johnson] Johnson, D. W. (1999). Inaccurate measurement of free
+carnitine by the electrospray tandem mass spectrometry screening
+method for blood spots. Journal of Inherited Metabolic Disease, 22(2),
+201–202. 
+** COMMENT Free and Total Carnitine
+*** Fractional Tubular Re-absorption of Carnitine
+
+#+BEGIN_LaTeX
+\begin{equation*}
+FTR_{carnitine}\% = \left( 1 -  \frac{carnitine_{urine} \cdot creatinine_{plasma}}{carnitine_{plasma} \cdot creatinine_{urine}}\right) \cdot 100
+\end{equation*}
+#+END_LaTeX
+
+- normally >98%, \Downarrow in CUD
+
+*** Free/Total Carnitine
+
+\[
+\frac{Free_{carnitine}}{Total_{carnitine}} = \frac{C_0}{\sum_{0}^{18} C_n}
+\]
+
+- \Downarrow in CUD, < 5-10% of normal 
+
+
+** Why derivatize?
+
+[[./figures/ionization.png]]
+
 ** MRM is used to detected dicarboxylic acylcarnitines
 
 - C0-Bu 218.1 Da \to 103 Da transition is optimal
@@ -334,7 +340,18 @@ FTR_{carnitine}\% = \left( 1 -  \frac{carnitine_{urine} \cdot creatinine_{plasma
 - C18:1-OH
 - C18:2
 - C18-OH
-* Diagnostic FIA-MS/MS
+** Pros and Cons of Butanol  FIA-MSMS for Aceylcarnitines
+*** Pros
+- Speed
+- Sensitivity
+- Expertise
+- Amino acid measurement
+*** Cons
+- Isobaric compounds
+  - C5DC and C10-OH
+- Overestimation of CO due to hydrolysis
+
+* COMMENT Diagnostic FIA-MS/MS
 ** Diagnostic FIA-MS/MS schematic
 #+BEGIN_LaTeX
 \begin{center}
@@ -460,17 +477,3 @@ plot data u 1:2 w lp lw 2 t "80% ACN"
 - C16DC	
 - C18:1DC
 
-** Pros and Cons of Butanol  FIA-MSMS for Aceylcarnitines
-*** Pros
-- Speed
-- Sensitivity
-- Expertise
-- Amino acid measurement
-*** Cons
-- Isobaric compounds
-  - C5DC and C10-OH
-- Overestimation of CO due to hydrolysis
-
-** Why derivatize?
-
-[[./figures/ionization.png]]

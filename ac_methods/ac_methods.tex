@@ -1,4 +1,4 @@
-% Created 2018-01-11 Thu 12:45
+% Created 2018-01-25 Thu 10:08
 \documentclass[presentation, smaller]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -68,7 +68,7 @@
 \tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
 
 \section{Introduction}
-\label{sec:orgheadline7}
+\label{sec:orgheadline3}
 \begin{frame}[label={sec:orgheadline1}]{Carnitine and Acylcarnitines}
 \begin{itemize}
 \item Carnitine (\(\beta\)-hydroxy-\(\gamma\)-N-trimethylaminobutyric acid) is
@@ -104,81 +104,9 @@ mitochondrial matrix, for \(\beta\)-oxidation.
 \end{itemize}
 \end{itemize}
 \end{frame}
-\begin{frame}[label={sec:orgheadline3}]{ERNDIM Plasma Acylcarnitines Survey}
-\begin{figure}[htb]
-\centering
-\includegraphics[height=0.8\textheight]{./figures/free_carnitine_erndim.png}
-\caption{Free Carnitine}
-\end{figure}
-\end{frame}
-
-\begin{frame}[label={sec:orgheadline4}]{ERNDIM Plasma Acylcarnitines Survey}
-\begin{figure}[htb]
-\centering
-\includegraphics[height=0.8\textheight]{./figures/acetylcarnitine_erndim.png}
-\caption{Acetylcarnitine}
-\end{figure}
-\end{frame}
-
-\begin{frame}[label={sec:orgheadline5}]{Overestimation of Free Carnitine}
-\begin{itemize}
-\item Butylated acylcarnitines are converted to butylated carnitine in
-n-butanol-3M HCl at 65\degree{}C. \footnote{Johnson, D. W. (1999). Inaccurate measurement of free
-carnitine by the electrospray tandem mass spectrometry screening
-method for blood spots. Journal of Inherited Metabolic Disease, 22(2),
-201–202.}
-\end{itemize}
-
-\begin{center}
-\begin{tabular}{lr}
-Acyl Carnitine & Half-life (min)\\
-\hline
-C2 & 31\\
-C10 & 125\\
-C18 & 172\\
-\end{tabular}
-\end{center}
-
-\begin{itemize}
-\item 65\degree{}C for 15 min.
-\item NSO uses 60\degree{}C for 20 minutes.
-\item IMD uses 55\degree{}C for 20 minutes.
-
-\item In a sample with low free carnitine and high acetylcarnitine.
-\begin{itemize}
-\item 30\% of the acetylcarnitine and smaller amounts of higher
-molecular mass acylcarnitines are converted to carnitine
-\item a low carnitine sample could appear to be normal.
-\end{itemize}
-\item "The free carnitine results obtained by this screening method on
-blood spots with high levels of acylcarnitines should therefore be
-used with caution." \footnotemark[1]{}
-\end{itemize}
-\end{frame}
-\begin{frame}[label={sec:orgheadline6}]{Free and Total Carnitine}
-\begin{block}{Fractional Tubular Re-absorption of Carnitine}
-\begin{equation*}
-FTR_{carnitine}\% = \left( 1 -  \frac{carnitine_{urine} \cdot creatinine_{plasma}}{carnitine_{plasma} \cdot creatinine_{urine}}\right) \cdot 100
-\end{equation*}
-
-\begin{itemize}
-\item normally >98\%, \(\Downarrow\) in CUD
-\end{itemize}
-\end{block}
-
-\begin{block}{Free/Total Carnitine}
-\[
-\frac{Free_{carnitine}}{Total_{carnitine}} = \frac{C_0}{\sum_{0}^{18} C_n}
-\]
-
-\begin{itemize}
-\item \(\Downarrow\) in CUD, < 5-10\% of normal
-\end{itemize}
-\end{block}
-\end{frame}
 \section{Screening FIA-MS/MS}
-\label{sec:orgheadline14}
-\begin{frame}[label={sec:orgheadline8}]{FIA-MS/MS schematic}
+\label{sec:orgheadline13}
+\begin{frame}[label={sec:orgheadline4}]{FIA-MS/MS schematic}
 \begin{center}
 \begin{tikzpicture}[node distance=7em]
 % nodespp
@@ -209,7 +137,7 @@ to 600 sample capacity per instrument per day.
 \end{itemize}
 \end{itemize}
 \end{frame}
-\begin{frame}[label={sec:orgheadline9}]{FIA-MS/MS sample}
+\begin{frame}[label={sec:orgheadline5}]{FIA-MS/MS sample}
 \begin{itemize}
 \item Acylcarnitines in the DBS eluate are esterified as butyl esters with butanol-3M HCL
 \end{itemize}
@@ -238,7 +166,7 @@ to 600 sample capacity per instrument per day.
 \schemestop 
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline10}]{FIA-MS/MS Method}
+\begin{frame}[label={sec:orgheadline6}]{FIA-MS/MS Method}
 \begin{itemize}
 \item Electrospray ionization in positive mode
 \item Butylated acylcarnitines fragment to produce a characteristic ion with mass of 85 Da.
@@ -281,7 +209,7 @@ to 600 sample capacity per instrument per day.
 \end{block}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline11}]{Fragmentation}
+\begin{frame}[label={sec:orgheadline7}]{Fragmentation}
 \definesubmol{x}{-[1,.6]-[7,.6]}
 \centering
  \chemname{\chemfig[][scale=.33]{H_{3}C-N^{+}([2]-CH_3)([6]-CH_{3})-CH_2-C([2]-H)([6]-O-C([0]=O)-{\color{red}R})-CH_2-C([2]=O)-O-CH_2-CH_2-CH_2-CH_3}}{\tiny acylcarnitine, butyl ester}
@@ -297,7 +225,46 @@ to 600 sample capacity per instrument per day.
  \chemname{\chemfig[][scale=.33]{H_{2}C^{+}-HC=CH-C([1]=O)([7]-OH)}}{\tiny 85 m/z}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline12}]{MRM is used to detected dicarboxylic acylcarnitines}
+\begin{frame}[label={sec:orgheadline8}]{Overestimation of Free Carnitine}
+\begin{itemize}
+\item Butylated acylcarnitines are converted to butylated carnitine in
+n-butanol-3M HCl at 65\degree{}C. \footnote{Johnson, D. W. (1999). Inaccurate measurement of free
+carnitine by the electrospray tandem mass spectrometry screening
+method for blood spots. Journal of Inherited Metabolic Disease, 22(2),
+201–202.}
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{lr}
+Acyl Carnitine & Half-life (min)\\
+\hline
+C2 & 31\\
+C10 & 125\\
+C18 & 172\\
+\end{tabular}
+\end{center}
+
+\begin{itemize}
+\item 65\degree{}C for 15 min.
+\item NSO uses 60\degree{}C for 20 minutes.
+\item IMD uses 55\degree{}C for 20 minutes.
+
+\item In a sample with low free carnitine and high acetylcarnitine.
+\begin{itemize}
+\item 30\% of the acetylcarnitine and smaller amounts of higher
+molecular mass acylcarnitines are converted to carnitine
+\item a low carnitine sample could appear to be normal.
+\end{itemize}
+\item "The free carnitine results obtained by this screening method on
+blood spots with high levels of acylcarnitines should therefore be
+used with caution." \footnotemark[1]{}
+\end{itemize}
+\end{frame}
+\begin{frame}[label={sec:orgheadline9}]{Why derivatize?}
+\includegraphics[width=.9\linewidth]{./figures/ionization.png}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline10}]{MRM is used to detected dicarboxylic acylcarnitines}
 \begin{itemize}
 \item C0-Bu 218.1 Da \(\to\) 103 Da transition is optimal
 \item All others benefit from the added sensitivity of MRM mode as compared to parent ion scan
@@ -324,7 +291,7 @@ C8DC & 430.45 > 85.00\\
 \end{center}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline13}]{FIA-MS/MS Acylcarnitine Scan}
+\begin{frame}[label={sec:orgheadline11}]{FIA-MS/MS Acylcarnitine Scan}
 \begin{block}{Quantified Acylcarnitines}
 \begin{columns}
 \begin{column}{0.3\columnwidth}
@@ -373,110 +340,7 @@ C8DC & 430.45 > 85.00\\
 \end{columns}
 \end{block}
 \end{frame}
-\section{Diagnostic FIA-MS/MS}
-\label{sec:orgheadline20}
-\begin{frame}[label={sec:orgheadline15}]{Diagnostic FIA-MS/MS schematic}
-\begin{center}
-\begin{tikzpicture}[node distance=7em]
-% nodes
-\node(ms1)[ms]{MS1: Mass Filter};
-\node(cc)[ms, right of=ms1]{Collision cell};
-\node(ms2)[ms, right of=cc]{MS2: Mass Filter};
-\node(ion)[ms, below of=ms1,yshift=3em]{Ionization};
-\node(lc)[msw, below of=ion,yshift=3em]{Fused silica};
-\node(detector)[ms, below of=ms2, yshift=3em]{Detector};
-% arrows
-\draw[arrow](lc) -- (ion);
-\draw[arrow](ion) -- (ms1);
-\draw[arrow](ms1) -- (cc);
-\draw[arrow](cc) -- (ms2);
-\draw[arrow](ms2) -- (detector);
-\end{tikzpicture}
-\end{center}
-\begin{itemize}
-\item ESI in positive mode
-\end{itemize}
-\end{frame}
-\begin{frame}[label={sec:orgheadline16}]{FIA-MS/MS sample prep}
-\begin{itemize}
-\item 20 \textmu{}L of sample is mixed with 400 \textmu{}L of IS in Methanol centrifuge to deproteinize.
-\item supernatant is removed and 100 \textmu{}L of n-butanol-3M HCL is added
-\item dried down
-\item reconstituted with 200 \textmu{}L 80\% acetonitrile.
-\item 7.5 \textmu{}L injection.
-\end{itemize}
-
-\includegraphics[width=0.7\textwidth]{./figures/outletmethod.pdf}
-\end{frame}
-
-\begin{frame}[label={sec:orgheadline17}]{FIA-MS/MS transitions}
-\begin{block}{Quantified acetylcarnitines}
-\tiny
-
-\begin{columns}
-\begin{column}{0.33\columnwidth}
-\begin{itemize}
-\item C2 (ACETYL)
-\item C3:1 (PROPENYL)
-\item C3 (PROPIONYL)
-\item C4 (BUTYRYL)
-\item C5:1 (TIGLYL)
-\item C5 (ISOVALERYL)
-\item C4-OH (3OH-BUTYRYL)
-\item C6 (HEXANOYL)
-\item C5-OH/2ME3-OH BUTYRYL
-\item BENZOYL
-\item C6-OH (3OH-HEXANOYL)
-\item PHENYLACETYL
-\item C8:1 (OCTENOYL)
-\item C8 (OCTANOYL)
-\end{itemize}
-\end{column}
-
-\begin{column}{0.33\columnwidth}
-\begin{itemize}
-\item C3DC (MALONYL)
-\item C10:3 (DECATRIENOYL)
-\item C10:2 (DECADIENOYL)
-\item C10:1 (DECENOYL)
-\item C10 (DECANOYL)
-\item C4DC (MEMALONYL/SUCCINYL)
-\item C5DC (GLUTARYL)/C10-OH
-\item C12:1 (DODECENOYL)
-\item C12 (DODECANOYL)
-\item C6:DC/3 MEGLUTARYL
-\item C12OH (3 OH DODECANOYL)
-\item C14:2 (TETRADECADIENOYL)
-\item C14:1 (TETRADECENOYL)
-\item C14 (TETRADECANOYL)
-\item C8DC
-\end{itemize}
-\end{column}
-
-\begin{column}{0.33\columnwidth}
-\begin{itemize}
-\item C14-1OH (3OH TETRADECENYL)
-\item C14-OH (3OH TETRADECANOYL)
-\item C16:1 (PALMITOLEYL)
-\item C16 (PALMITOYL)
-\item C10DC (SEBACYL)
-\item C16-1OH (3OH PALMITOLEYL)
-\item C16OH (3OH PALMITOYL)
-\item C18:2 (LINOLEYL)
-\item C18:1 (OLEOYL)
-\item C18 (STEAROYL)
-\item C18:2OH (3OH LINOLEYL)
-\item C18:1OH (3OH OLELYL)
-\item C18OH (3OH STEAROYL)
-\item C16DC
-\item C18:1DC
-\end{itemize}
-\end{column}
-\end{columns}
-\end{block}
-\end{frame}
-
-\begin{frame}[label={sec:orgheadline18}]{Pros and Cons of Butanol  FIA-MSMS for Aceylcarnitines}
+\begin{frame}[label={sec:orgheadline12}]{Pros and Cons of Butanol  FIA-MSMS for Aceylcarnitines}
 \begin{block}{Pros}
 \begin{itemize}
 \item Speed
@@ -494,9 +358,5 @@ C8DC & 430.45 > 85.00\\
 \item Overestimation of CO due to hydrolysis
 \end{itemize}
 \end{block}
-\end{frame}
-
-\begin{frame}[label={sec:orgheadline19}]{Why derivatize?}
-\includegraphics[width=.9\linewidth]{./figures/ionization.png}
 \end{frame}
 \end{document}
