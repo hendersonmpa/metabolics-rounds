@@ -2,6 +2,8 @@
 #+AUTHOR: Matthew Henderson, PhD, FCACB
 #+DATE: \today
 
+:PROPERTIES:
+#+DRAWERS: PROPERTIES
 #+LaTeX_CLASS: beamer
 #+LaTeX_CLASS_OPTIONS: [presentation, smaller]
 #+BEAMER_THEME: Frankfurt 
@@ -33,7 +35,7 @@
 #+LaTeX_HEADER: \usepackage{verbatim}
 #+LaTeX_HEADER: \usepackage{tikz}
 #+LaTeX_HEADER: \usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
-
+:END:
 
 #+BEGIN_LaTeX
 %\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
@@ -117,7 +119,7 @@
 - Energy derived from oxidation of FA to acetyl-CoA in \Beta{}-oxidation.
 - The acetyl-CoA is oxidized in the TCA cycle or converted to ketone bodies in the liver.
 
-* \Beta{}-oxidation
+* \beta{}-oxidation
 ** Overview of Mitochondrial Long-Chain Fatty Acid Metabolism
 
 ***                                                                 :BMCOL:
@@ -212,7 +214,7 @@
 | Trifunctional protein             |  12-16 | \uparrow activity w \uparrow length   |
 
 
-** \Beta{}-oxidation of Long-Chain Fatty Acids
+** \beta{}-oxidation of Long-Chain Fatty Acids
 \centering
 #+ATTR_LATEX: :height 0.85\textheight
 [[./figures/23_7.png]]
@@ -247,9 +249,9 @@
 - gut \to portal vein \to liver
 - \to mito matrix via the monocarboxylate transporter
 - activated in the mito matrix
-- \Beta{}-oxidation
+- \beta{}-oxidation
 
-** Regulation of \Beta{}-oxidation
+** Regulation of \beta{}-oxidation
 \centering
 #+ATTR_LATEX: :height 0.6\textheight
 [[./figures/23_12.png]]
@@ -311,3 +313,4 @@
 - Next up:
   - Fatty Acid Oxidation Defects
   - Carnitine and Aceylcarnitines methods
+

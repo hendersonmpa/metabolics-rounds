@@ -1,4 +1,4 @@
-% Created 2018-02-06 Tue 14:03
+% Created 2018-02-07 Wed 17:00
 \documentclass[presentation, smaller]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -67,49 +67,63 @@
 \tikzstyle{arrow} = [thick,->,>=stealth]
 \tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
 
-\section{Propionic Acidemia}
-\label{sec:orgheadline13}
-\begin{frame}[label={sec:orgheadline1}]{PA Phenotype}
-\begin{itemize}
-\item Recurrent episodes of ketosis, acidosis and dehydration progressive to coma;
-\item neutropenia, thrombocytopenia; osteoporosis;
-\item hyperglycinemia;
-\item propionic acidemia;
-\item methylcitraturia;
-\item deficiency of propionyl CoA carboxylase.
-\end{itemize}
-\end{frame}
+\section{Introduction}
+\label{sec:orgheadline9}
 
-\begin{frame}[label={sec:orgheadline2}]{PA History}
-\begin{block}{Ketotic Hyperglycinemia}
+\begin{frame}[label={sec:orgheadline1}]{History}
 \begin{itemize}
-\item A patient with PA was reported in 1961 as hyperglycinemia
+\item Was called Ketotic Hyperglycinemia
+\item A patient with PA was reported in 1961 with hyperglycinemia
 \begin{itemize}
 \item recurrent ketoacidosis
 \item \(\uparrow\) \(\uparrow\) glycine in blood and urine
 \item attacks related to the intake of protein
 \begin{itemize}
-\item administration of BCAA, Thr, Met \(\to\) ketonuria
+\item administratioppn of BCAA, Thr, Met \(\to\) ketonuria
 \end{itemize}
 \end{itemize}
+\item Index patient and sister had defective propionyl carboxylase activity.
+\item Incidence of PA has not \(\uparrow\) with NBS
 \end{itemize}
-\end{block}
-\begin{block}{Non-ketotic Hyperglycinemia}
-\begin{itemize}
-\item Methylmalonic acidemia
-\end{itemize}
-\end{block}
+\centering
+\chemname{\chemfig[][scale=.5]{-[7]-[1]([2]=O)-[7]OH}}{\tiny propionic acid}
+\chemname{\chemfig[][scale=.5]{-[7]-[1]([2]=O)-[7]CoA}}{\tiny propionyl CoA}
+\chemname{\chemfig[][scale=.5]{-N^{+}([2]-)([6]-)-[1]-[7]([6]-O-([5]=O)-[7,.6]-[1,.6])-[1]-[7]([7]=O)([1]-O^{-})}}{\tiny propionyl-carnitine}
 \end{frame}
-
-\begin{frame}[label={sec:orgheadline3}]{BCAA catabolism}
+\begin{frame}[label={sec:orgheadline2}]{BCAA catabolism}
 \centering
 \includegraphics[height=0.85\textheight]{./figures/bcaa.png}
 \end{frame}
-\begin{frame}[label={sec:orgheadline4}]{Propionic Acidemia Pathway}
+
+\begin{frame}[label={sec:orgheadline3}]{AA catabolism}
+\includegraphics[width=.9\linewidth]{./figures/aa_met.png}
+\end{frame}
+\begin{frame}[label={sec:orgheadline4}]{Odd-Chain Length Fatty Acids}
+\centering
+\includegraphics[height=0.5\textheight]{./figures/23_10.png}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline5}]{Long-Chain Branched-Chain Fatty Acids}
+\centering
+\includegraphics[height=0.7\textheight]{./figures/ff22.png}
+
+\begin{itemize}
+\item \(\alpha\)-oxidation of phytanic acid takes place in peroxisomes.
+\item Pristanic acid can then undergo \(\beta\)-oxidation.
+\begin{itemize}
+\item Propionyl-CoA is released when the \(\alpha\) carbon is substituted
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline6}]{Sterol Catabolism}
+\includegraphics[width=.9\linewidth]{./figures/gr3.jpg}
+\end{frame}
+\begin{frame}[label={sec:orgheadline7}]{Propionic Acidemia Pathway}
 \includegraphics[width=.9\linewidth]{./figures/pa_path.png}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline5}]{Propionyl Carboxylase}
+\begin{frame}[label={sec:orgheadline8}]{Propionyl Carboxylase}
 \begin{itemize}
 \item Composed of \(\alpha\) and \(\beta\) subunits
 \begin{itemize}
@@ -119,7 +133,137 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline6}]{Acute presentation}
+\section{Genetics and Pathogenisis}
+\label{sec:orgheadline13}
+
+\begin{frame}[label={sec:orgheadline10}]{Genetics}
+\begin{itemize}
+\item autosomal recessive trait
+\item Two complementation groups
+\begin{description}
+\item[{A}] PccA
+\item[{B}] PccBC
+\end{description}
+\item \(\alpha\) 13q32
+\item \(\beta\) 3q13.3-22
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline11}]{Propionyl CoA}
+\begin{block}{Hyperglycinemia}
+\begin{itemize}
+\item Inhibits glycine catabolism
+\end{itemize}
+\end{block}
+\begin{block}{CBC}
+\begin{itemize}
+\item Propionyl-CoA toxic to bone marrow
+\begin{itemize}
+\item neutropenia
+\item transient thrombocytopenia in infancy
+\end{itemize}
+\end{itemize}
+\end{block}
+\begin{block}{Hyperammonemia}
+\begin{itemize}
+\item inhibition of of carbamylphosphate synthetase
+\end{itemize}
+\end{block}
+\begin{block}{Ketosis}
+\begin{itemize}
+\item inhibits mitochondrial oxidation of succinic acid and 2-ketoglutaric acid
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline12}]{Biochemical Markers}
+\begin{itemize}
+\item 3-hydroxypropionic acid
+\item tiglic acid / tiglyglycine
+\item propionylglycine
+\item methylcitrate
+\begin{itemize}
+\item condensation of propionyl-CoA \& oxaloacetic acid
+\item metabolic end product and very stable
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\section{Laboratory Investigations}
+\label{sec:orgheadline18}
+\begin{frame}[label={sec:orgheadline14}]{NSO PA/MMA Screening Logic}
+\begin{block}{Inital positive \textless{} 7 days}
+(C3/C2 \(\ge\) 0.21 AND C3 \(\ge\) 4.0)
+OR
+(C3/C2 \(\ge\) 0.23 AND C3 \(\ge\) 3.5)
+\end{block}
+\begin{block}{Inital positive \textgreater{} 7 days}
+(C3/C2 \(\ge\) 0.21 AND C3 \(\ge\) 2.6)
+OR
+(C3/C2 \(\ge\) 0.23 AND C3 \(\ge\) 2.4)
+\begin{itemize}
+\item Repeat overnight
+\item No weekend reporting
+\end{itemize}
+\end{block}
+\begin{block}{Alert}
+C3/C2 \(\ge\) 0.3 AND C3 \(\ge\) 9.0
+\begin{itemize}
+\item Repeat same day
+\item Weekend reporting
+\end{itemize}
+\end{block}
+\begin{block}{Confirmation}
+C3/C2 \(\ge\) 0.23 AND MCA \(\ge\) 0.5
+\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline15}]{Clinical Chemistry}
+\begin{itemize}
+\item Acidosis in acute episodes
+\begin{itemize}
+\item accumulation of \(\beta\)-hydroxybutyrate and acetoacetate
+\item Arterial pH as low as 6.9
+\item Bicarb as low as 5 mEq/L
+\end{itemize}
+\item \(\uparrow\) lactic acid
+\item Hypoglycemia
+\item Hyperammonemia
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline16}]{Biochemical Genetics}
+\begin{block}{Plasma Amino Acids}
+\begin{itemize}
+\item \(\Uparrow\) glycine
+\item \(\uparrow\) glutamine when hyperammonemia
+\end{itemize}
+\end{block}
+\begin{block}{Plasma Acylcarnitines}
+\begin{itemize}
+\item \(\uparrow\) propionyl carnitine (C3)
+\end{itemize}
+\end{block}
+\begin{block}{Urine Organic Acids}
+\begin{itemize}
+\item 3-hydroxypropionic acid
+\item methylcitric acid
+\item lactic acid
+\item BHB
+\item acetoacetate
+\item tiglic acid / tiglyglycine
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline17}]{Urine Organic Acids}
+\includegraphics[width=.9\linewidth]{./figures/pa_uoa.png}
+\end{frame}
+
+\section{Clinical Findings}
+\label{sec:orgheadline24}
+\begin{frame}[label={sec:orgheadline19}]{Acute presentation}
 \begin{itemize}
 \item Life-threatening illness early in life
 \begin{itemize}
@@ -134,7 +278,7 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline7}]{Recurrent Symptoms}
+\begin{frame}[label={sec:orgheadline20}]{Recurrent Symptoms}
 \begin{itemize}
 \item ketotic episodes
 \item infection
@@ -142,30 +286,7 @@
 \end{itemize}
 \end{frame}
 
-
-\begin{frame}[label={sec:orgheadline8}]{Clinical Chemistry}
-\begin{itemize}
-\item Acidosis in acute episodes
-\begin{itemize}
-\item accumulation of \(\beta\)-hydroxybutyrate and acetoacetate
-\item Arterial pH as low as 6.9
-\item Bicarb as low as 5 mEq/L
-\end{itemize}
-\item \(\uparrow\) lactic acid
-\item Hypoglycemia
-\item Hyperammonemia
-\end{itemize}
-\end{frame}
-
-\begin{frame}[label={sec:orgheadline9}]{Amino Acids}
-\begin{itemize}
-\item \(\Uparrow\) glycine
-\item \(\uparrow\) glutamine when hyperammonemia
-\end{itemize}
-\end{frame}
-
-
-\begin{frame}[label={sec:orgheadline10}]{Long term}
+\begin{frame}[label={sec:orgheadline21}]{Long term}
 \begin{itemize}
 \item Variable developmental/cognitive outcome
 \begin{itemize}
@@ -188,11 +309,11 @@
 \item Osteoporosis
 \item Pancreatitis
 \item Cardiomyopathy
+\item Fatty infiltration of liver on PM
 \end{itemize}
 \end{frame}
 
-
-\begin{frame}[label={sec:orgheadline11}]{Neurological Findings}
+\begin{frame}[label={sec:orgheadline22}]{Neurological Findings}
 \begin{columns}
 \begin{column}{.5\columnwidth}
 \begin{itemize}
@@ -218,10 +339,36 @@
 
 
 
-\begin{frame}[label={sec:orgheadline12}]{Genetics}
+
+\begin{frame}[label={sec:orgheadline23}]{Long-term Treatment}
+\begin{block}{Diet}
 \begin{itemize}
-\item autosomal recessive trait
-\item Propionyl CoA Carboxylase
+\item Limit Val, Ile, Thr, Met
+\begin{itemize}
+\item Monitor urine metabolites, plasma amino acids
+\item Urine ketones (daily in infancy)
+\item Monitor weight, nitrogen balance
 \end{itemize}
+\item Avoid fasting
+\begin{itemize}
+\item Catabolism
+\item Propionate release from lipids
+\end{itemize}
+\end{itemize}
+\end{block}
+
+\begin{block}{Supplementation}
+\begin{itemize}
+\item Carnitine
+\begin{itemize}
+\item excretion of carnitine esters \(\to\) detoxification
+\item Daily dose 60 to 100 mg/kg
+\end{itemize}
+\item Biotin
+\begin{itemize}
+\item conflicting information
+\end{itemize}
+\end{itemize}
+\end{block}
 \end{frame}
 \end{document}
