@@ -62,23 +62,36 @@
 #+END_LaTeX
 
 * Introduction
-
 ** History
 - Was called Ketotic Hyperglycinemia
 - A patient with PA was reported in 1961 with hyperglycinemia
   - recurrent ketoacidosis
   - \uparrow \uparrow glycine in blood and urine
   - attacks related to the intake of protein
-    - administratioppn of BCAA, Thr, Met \to ketonuria
-- Index patient and sister had defective propionyl carboxylase activity.
-- Incidence of PA has not \uparrow with NBS
-#+BEGIN_LaTeX
-\centering
-\chemname{\chemfig[][scale=.5]{-[7]-[1]([2]=O)-[7]OH}}{\tiny propionic acid}
-\chemname{\chemfig[][scale=.5]{-[7]-[1]([2]=O)-[7]CoA}}{\tiny propionyl CoA}
-\chemname{\chemfig[][scale=.5]{-N^{+}([2]-)([6]-)-[1]-[7]([6]-O-([5]=O)-[7,.6]-[1,.6])-[1]-[7]([7]=O)([1]-O^{-})}}{\tiny propionyl-carnitine}
+    - administration of BCAA, Thr, Met \to ketonuria
+- Index patient and sister had defective propionyl carboxylase.
+- \uparrow clinical penetrance
+  - incidence of PA has not \uparrow with NBS
 
+** Propionic Acid and Derivatives
+\centering
+
+#+BEGIN_LaTeX
+\vspace{2em}
+\chemname{\chemfig[][scale=.5]{-[7]-[1]([2]=O)-[7]OH}}{\tiny propionic acid}
+\hspace{4em}
+\chemname{\chemfig[][scale=.5]{-[7]-[1]([2]=O)-[7]CoA}}{\tiny propionyl CoA}
+
+\vspace{2em}
+\chemname{\chemfig[][scale=.5]{-N^{+}([2]-)([6]-)-[1]-[7]([6]-O-([5]=O)-[7,.6]-[1,.6])-[1]-[7]([7]=O)([1]-O^{-})}}{\tiny propionyl-carnitine}
+\hspace{4em}
+\chemname{\chemfig[][scale=.5]{OH-[1]-[7]-[1]([2]=O)-[7]OH}}{\tiny 3-hydroxypropionic acid}
 #+END_LaTeX
+
+** Propionic Acidemia Pathway
+
+[[./figures/pa_path.png]]
+
 ** BCAA catabolism
 \centering
 #+ATTR_LATEX: :height 0.85\textheight
@@ -102,37 +115,38 @@
 
 ** Sterol Catabolism
 [[./figures/gr3.jpg]]
-** Propionic Acidemia Pathway
-
-[[./figures/pa_path.png]]
 
 ** Propionyl Carboxylase
+\centering
+#+ATTR_LATEX: :height 0.75\textheight
+[[./figures/pc.jpg]]
+
 - Composed of \alpha{} and \beta{} subunits
   - \alpha{}_{4}\beta{}_{4} heteropolymer
-- Apoenzyme activated by covalent binding of biotin
+- Apoenzyme activated by covalent binding to biotin
 
 * Genetics and Pathogenisis
 
 ** Genetics
 - autosomal recessive trait
 - Two complementation groups
-  - A :: PccA
-  - B :: PccBC
+  - PccA \to \alpha
+  - PccBC \to \beta
 - \alpha{} 13q32
 - \beta{} 3q13.3-22 
 
 
 ** Propionyl CoA
 *** Hyperglycinemia
-- Inhibits glycine catabolism
+- PA inhibits synthesis of glycine cleaving enzyme.
 *** CBC
 - Propionyl-CoA toxic to bone marrow
   - neutropenia
   - transient thrombocytopenia in infancy
 *** Hyperammonemia
-- inhibition of of carbamylphosphate synthetase
+- PA of of carbamylphosphate synthetase
 *** Ketosis
-- inhibits mitochondrial oxidation of succinic acid and 2-ketoglutaric acid
+- PA inhibits mitochondrial oxidation of succinic acid and 2-ketoglutaric acid
 
 ** Biochemical Markers
 - 3-hydroxypropionic acid
@@ -160,7 +174,8 @@ C3/C2 \ge 0.3 AND C3 \ge 9.0
   - Weekend reporting
 *** Confirmation
  C3/C2 \ge 0.23 AND MCA \ge 0.5
-
+** Elevated C3 ACT algorithm
+[[./figures/pa_act.png]]
 ** Clinical Chemistry
 - Acidosis in acute episodes
   - accumulation of \beta-hydroxybutyrate and acetoacetate
@@ -202,7 +217,7 @@ C3/C2 \ge 0.3 AND C3 \ge 9.0
 - protein intolerance
 
 ** Long term 
-- Variable developmental/cognitive outcome
+- Variable developmental/cognitive outcomes
   - appears linked to incidence of illness
 - hypotonic
   - developmental delay
@@ -235,11 +250,6 @@ C3/C2 \ge 0.3 AND C3 \ge 9.0
 :BEAMER_col: .5
 :END:
 [[./figures/pa_mri.png]]
-
-
-
-
-
 
 ** Long-term Treatment
 *** Diet
