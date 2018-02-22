@@ -95,12 +95,13 @@
 VICKERY, H. B. (1947). Rules for the nomenclature of the natural amino
 acids and related substances. The Journal of Biological Chemistry,
 169(2), 237–245.
+
 ** L-Alloisoleucine
 - L-alloisoleucine is a branched chain amino acid and is a
   stereo-isomer of L-isoleucine.
 - It is a common low [ ] constituent of human plasma.
 - Produced as a byproduct of isoleucine transamination.
-- L-alloisoleucine differs from L-isoleucine by having having
+- L-alloisoleucine differs from L-isoleucine by having
   different stereochemistry around its beta carbon.
 
 #+BEGIN_LaTeX
@@ -109,6 +110,7 @@ acids and related substances. The Journal of Biological Chemistry,
 \chemname{\chemfig[][scale=.75]{H_{3}C-[1]-[7](<:[6]CH_3)-[1](<:[2]NH_2)-[7](=[6]0)-[1]OH}}{\small L-alloisoleucine}
 
 #+END_LaTeX
+
 ** BCAA Catabolism
 - First two steps are shared
 - *BCAT*: reversible transammination
@@ -121,6 +123,7 @@ acids and related substances. The Journal of Biological Chemistry,
     - product inhibition
     - phosporylation
     - transcription
+
 ** BCAT and BCKDC Reaction
 
 \centering
@@ -142,7 +145,7 @@ acids and related substances. The Journal of Biological Chemistry,
   - IA, IB, II, and III
   - E1\alpha{}, E1\beta{}, E2, and E3
 
-** Regulation of the BCKD Metabolic Machine
+** COMMENT Regulation of the BCKD Metabolic Machine
 *** Feedback Inhibition
 - product inhibition by branched chain acyl-CoAs
 - \uparrow NADH:NAD^{+} ratio
@@ -215,9 +218,8 @@ Nat. Struct. Biol. 6: 785-792, 2000).
 *** Confirmation
 - Screen Positive :: LEU/ALA \ge 1.0 AND LEU \ge 300
 
-**  Newborn Screening ACT Sheet
+** COMMENT  Newborn Screening ACT Sheet
 *** YOU SHOULD TAKE THE FOLLOWING ACTIONS IMMEDIATELY:
-
 - Contact family to inform them of the newborn screening result and
   ascertain clinical status (poor feeding,vomiting, lethargy,
   tachypnea).
@@ -236,7 +238,7 @@ Nat. Struct. Biol. 6: 785-792, 2000).
 
 [[./figures/leu_elevated.png]]
 
-** Hydroxyprolinemia
+** COMMENT Hydroxyprolinemia
 - hydroxyproline is primarily derived from collagen turn-over
 - hydroxyprolinemia is due to a defect in hydroxyproline dehydrogenase (HYDH)
 - Hydroxyprolinemia is probably benign.
@@ -257,7 +259,7 @@ Nat. Struct. Biol. 6: 785-792, 2000).
 - share the same parent and product in FIA-MS/MS with butanol derivatization
   - 188 m/z \to 86 m/z , NL of 102 
 
-** Clinical Considerations
+** COMMENT Clinical Considerations
 - MSUD presents in the neonate with:
   - feeding intolerance
   - failure to thrive
@@ -303,6 +305,11 @@ Nat. Struct. Biol. 6: 785-792, 2000).
 - The age at diagnosis and the subsequent course are the most
   important determinants.
 - Treatment initiated before 10 days of age gives the best results
+- Patients identified by the Massachusetts Newborn Screening Program
+  - Carefully monitored and achieved good compliance
+    - only a few mild episodes of metabolic decompensation.
+  - Some are now college graduates in their 20s and 30s.
+*** COMMENT to hide
 - In early studies, only a few patients treated after 14 days of age
   achieved normal intellect.
 - Chronic mild to moderate elevations of the BCAAs/BCKAs have been
@@ -310,13 +317,8 @@ Nat. Struct. Biol. 6: 785-792, 2000).
 - One study of 24 children over the first 6 years of life demonstrated
   that exposure to elevated plasma leucine levels has a negative
   impact on cognitive outcome, as measured by IQ testing
-- Patients identified by the Massachusetts Newborn Screening Program
-  - Carefully monitored and achieved good compliance
-    - only a few mild episodes of metabolic decompensation.
-  - Some are now college graduates in their 20s and 30s.
 
-
-** Next time
+** COMMENT Next time
 
 - Disorders of Branched Chain Amino Acid Catabolism
   - Part 2: Branch Chain Organic Acidurias
