@@ -1,4 +1,4 @@
-#+TITLE: Propionic Acidemia
+#+TITLE: Methylmalonic Acidemia
 #+AUTHOR: Matthew Henderson, PhD, FCACB
 #+DATE: \today
 
@@ -63,15 +63,69 @@
 
 * Introduction
 ** History
-- Was called Ketotic Hyperglycinemia
-- A patient with PA was reported in 1961 with hyperglycinemia
-  - recurrent ketoacidosis
-  - \uparrow \uparrow glycine in blood and urine
-  - attacks related to the intake of protein
-    - administration of BCAA, Thr, Met \to ketonuria
-- Index patient and sister had defective propionyl carboxylase.
-- \uparrow clinical penetrance
-  - incidence of PA has not \uparrow with NBS
+- First reported in 1967 by Oberholzer and Stokke
+- Methylmalonic mutase
+  - catalyzes the isomerization of methylmalonyl-CoA to succinyl-CoA
+- Requires adenosylcobalamin as a cofactor
+  - derived from vitamin B_12
+- Genetic heterogeneity was observed early
+  - response to large doses of B_12
+- B_12 responsive have defects in adenosylcobalamin synthesis
+- B_12 unresponsive have defects in the apoenzyme methylmalonyl mutase
+  - mut^- :: little activity
+  - mut^0 :: no activity
+
+** Methylmalonyl CoA Mutase
+- Upon entry to the mitochondria, the 32 amino acid mitochondrial
+  leader sequence at the N-terminus of the protein is cleaved, forming
+  the fully processed monomer.
+- The monomers associate into homodimers, and bind AdoCbl (one
+  for each monomer active site) to form the active holoenzyme
+
+#+BEGIN_SRC dot :file ./figures/mut.pdf :cmdline -Kdot -Tpdf
+    digraph {
+             // graph from left to right
+             rankdir=LR;
+             splines=true;
+             node [shape=box];
+             dmm [label="D-Methylmalonyl-CoA", fillcolor=steelblue3, style=filled]
+             lmm [label="L-Methylmalonyl-CoA", fillcolor=steelblue3, style=filled]
+             mma [label="Methylmalonic acid", fillcolor=red3, style=filled]    
+             suc [label="Succinyl-CoA", fillcolor=steelblue3, style=filled]     
+             s [label="Succinate", fillcolor=steelblue3, style=filled]     
+             dmm -> lmm [label="Epimerase"]
+             lmm -> suc [label="MCM + AdoCbl", color= red3]
+             suc -> s [label="Ligase"] 
+             dmm -> mma [style=dotted,dir=both]
+             mma -> lmm [style=dotted,dir=both]
+             }    
+#+END_SRC
+
+#+RESULTS:
+[[file:./figures/mut.pdf]]
+
+** Different Types of MMA
+- Methylmalonyl CoA mutase deficiency
+  - mut^0, mut^{-}
+- Adenosyltransferase deficiency (Cbl B)
+- Cbl A
+- Homocystinuria w MMA (Cbl C, D)
+- Methylmalonyl CoA Epimerase deficiency
+- B_12 deficiency
+  - Dietary (vegan)
+  - Pernicious anemia
+- Transcobalamin II deficiency
+- B_12 transport from lysosome defect (Cbl F)
+- Succinyl CoA ligase deficiency (SUCLG1, SUCLA1)
+
+** Methylmalonic  Acidemia Pathway
+\centering
+#+ATTR_LATEX: :height 0.85\textheight
+[[./figures/expanded_mma_path.png]]
+
+** Cobalamin Transport and Metabolism
+
+[[./figures/cbl_path.png]]
 
 ** Propionic Acid and Derivatives
 \centering
@@ -88,53 +142,40 @@
 \chemname{\chemfig[][scale=.5]{OH-[1]-[7]-[1]([2]=O)-[7]OH}}{\tiny 3-hydroxypropionic acid}
 #+END_LaTeX
 
-** Propionic Acidemia Pathway
+** Sources of Methylmalonic Acid
+- AA catabolism
+  - isoleucine
+  - valine
+  - threonine
+  - methionine
+- FA
+  - \downarrow contribution to urine MMA
 
-[[./figures/pa_path.png]]
+[[http://www.genome.jp/kegg-bin/show_pathway?org_name=hsa&mapno=00640&mapscale=&show_description=hide][propionate metabolism - KEGG]]
 
-** BCAA catabolism
-\centering
-#+ATTR_LATEX: :height 0.85\textheight
-[[./figures/bcaa.png]]
-
-** AA catabolism
-[[./figures/aa_met.png]]
-** Odd-Chain Length Fatty Acids
-\centering
-#+ATTR_LATEX: :height 0.5\textheight
-[[./figures/23_10.png]]
-
-** Long-Chain Branched-Chain Fatty Acids
-\centering
-#+ATTR_LATEX: :height 0.7\textheight
-[[./figures/ff22.png]]
-
-- \alpha{}-oxidation of phytanic acid takes place in peroxisomes.
-- Pristanic acid can then undergo \beta{}-oxidation.
-   - Propionyl-CoA is released when the \alpha{} carbon is substituted
-
-** Sterol Catabolism
-[[./figures/gr3.jpg]]
-
-** Propionyl Carboxylase
-\centering
-#+ATTR_LATEX: :height 0.75\textheight
-[[./figures/pc.jpg]]
-
-- Composed of \alpha{} and \beta{} subunits
-  - \alpha{}_{4}\beta{}_{4} heteropolymer
-- Apoenzyme activated by covalent binding to biotin
 
 * Genetics and Pathogenisis
 
 ** Genetics
-- autosomal recessive trait
-- Two complementation groups
-  - PccA \to \alpha
-  - PccBC \to \beta
-- \alpha{} 13q32
-- \beta{} 3q13.3-22 
+*** Methylmalonyl CoA Pathway
+- Methylmalonyl CoA Epimerase deficiency
+  - autosomal recessive 
+- Methylmalonyl CoA mutase deficiency
+  - mut^0, mut^{-}
+  - autosomal recessive 
+- Succinyl CoA ligase deficiency (SUCLG1, SUCLA1)
 
+*** Cobalamin Pathway
+- Adenosyltransferase deficiency (Cbl B)
+- Cbl A
+- Homocystinuria w MMA (Cbl C, D)
+
+- B_12 deficiency
+  - Dietary (vegan)
+  - Pernicious anemia
+- Transcobalamin II deficiency
+- B_12 transport from lysosome defect (Cbl F)
+- Succinyl CoA ligase deficiency (SUCLG1, SUCLA1)
 
 ** Propionyl CoA
 *** Hyperglycinemia
@@ -148,10 +189,10 @@
 *** Ketosis
 - PA inhibits mitochondrial oxidation of succinic acid and 2-ketoglutaric acid
 
+
 ** Biochemical Markers
+- methylmalonic acid
 - 3-hydroxypropionic acid
-- tiglic acid / tiglyglycine
-- propionylglycine
 - methylcitrate
   - condensation of propionyl-CoA & oxaloacetic acid
   - metabolic end product and very stable
@@ -174,8 +215,7 @@ C3/C2 \ge 0.3 AND C3 \ge 9.0
   - Weekend reporting
 *** Confirmation
  C3/C2 \ge 0.23 AND MCA \ge 0.5
-** Elevated C3 ACT algorithm
-[[./figures/pa_act.png]]
+
 ** Clinical Chemistry
 - Acidosis in acute episodes
   - accumulation of \beta-hydroxybutyrate and acetoacetate
@@ -183,11 +223,11 @@ C3/C2 \ge 0.3 AND C3 \ge 9.0
   - Bicarb as low as 5 mEq/L
 - \uparrow lactic acid
 - Hypoglycemia
-- Hyperammonemia 
-
+- Hyperammonemia
+ 
 ** Biochemical Genetics
 *** Plasma Amino Acids
-- \Uparrow glycine
+- \pm glycine
 - \uparrow glutamine when hyperammonemia
 *** Plasma Acylcarnitines
 - \uparrow propionyl carnitine (C3)
@@ -201,6 +241,22 @@ C3/C2 \ge 0.3 AND C3 \ge 9.0
 
 ** Urine Organic Acids
 [[./figures/pa_uoa.png]]
+
+** Typical Urine Methylmalonic Acid Values
+
+| Clinical Status                        | mmol/mol creatinine |
+|----------------------------------------+---------------------|
+| normal                                 |                 0-2 |
+| Mut^0;presentation                     |          3000-13000 |
+| Mut^0;steady state                     |            200-2000 |
+| B_12 responsive;presentation           |                2000 |
+| B_12 responsive;steady-state           |              90-300 |
+| B_12 deficient infanct                 |           4500-5700 |
+| Transcobalamin II deficiency           |                 600 |
+| Cobalamin C,D                          |                 270 |
+| Atypical-normal mutase                 |                 200 |
+| Succinyl CoA ligase                    |              80-120 |
+| Methylmalonyl CoA epimerase deficiency |              30-300 |
 
 * Clinical Findings
 ** Acute presentation

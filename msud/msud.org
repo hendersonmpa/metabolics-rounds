@@ -1,4 +1,4 @@
-#+TITLE: Disorders of Branched Chain Amino Acid Catabolism
+#+TITLE: Maple Syrup Urine Disease
 #+AUTHOR: Matthew Henderson, PhD, FCACB
 #+DATE: \today
 
@@ -18,7 +18,7 @@
 #+STARTUP: overview
 #+STARTUP: hidestars
 #+STARTUP: indent
-#+BEAMER_HEADER: \subtitle{Part 1: Maple Syrup Urine Diseas}
+# #+BEAMER_HEADER: \subtitle{Part 1: Maple Syrup Urine Diseas}
 #+BEAMER_HEADER: \institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
 #+BEAMER_HEADER: \titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
 #+latex_header: \hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
