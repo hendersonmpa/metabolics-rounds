@@ -1,4 +1,4 @@
-% Created 2018-02-28 Wed 16:42
+% Created 2018-03-01 Thu 09:38
 \documentclass[presentation, smaller]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -105,8 +105,43 @@ for each monomer active site) to form the active holoenzyme
 \includegraphics[width=.9\linewidth]{./figures/mut.pdf}
 \end{frame}
 
+\begin{frame}[label={sec:orgheadline3}]{Genetics}
+\begin{itemize}
+\item autosomal recessive
+\item 1/50000
+\begin{itemize}
+\item 1/2-2/3 have mutase apoenzyme defect
+\end{itemize}
+\end{itemize}
+\begin{block}{Methylmalonyl CoA Pathway}
+\begin{itemize}
+\item Methylmalonyl CoA Epimerase deficiency
+\item Methylmalonyl CoA mutase deficiency
+\begin{itemize}
+\item mut\(^{\text{0}}\), mut\(^{\text{-}}\)
+\item >200 mutations in MUT locus identified
+\end{itemize}
+\item Succinyl CoA ligase deficiency (SUCLG1, SUCLA1)
+\end{itemize}
+\end{block}
 
-\begin{frame}[label={sec:orgheadline3}]{Different Types of MMA}
+\begin{block}{Cobalamin Pathway}
+\begin{itemize}
+\item Adenosyltransferase deficiency (Cbl B)
+\item Cbl A
+\item Homocystinuria w MMA (Cbl C, D)
+\item B\(_{\text{12}}\) deficiency
+\begin{itemize}
+\item Dietary (vegan)
+\item Pernicious anemia
+\end{itemize}
+\item Transcobalamin II deficiency
+\item B\(_{\text{12}}\) transport from lysosome defect (Cbl F)
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline4}]{Different Types of MMA}
 \begin{itemize}
 \item Methylmalonyl CoA mutase deficiency
 \begin{itemize}
@@ -127,30 +162,14 @@ for each monomer active site) to form the active holoenzyme
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline4}]{Methylmalonic  Acidemia Pathway}
+\begin{frame}[label={sec:orgheadline5}]{Methylmalonic  Acidemia Pathway}
 \centering
 \includegraphics[height=0.85\textheight]{./figures/expanded_mma_path.png}
 \end{frame}
 
-
-\begin{frame}[label={sec:orgheadline5}]{Cobalamin Transport and Metabolism}
+\begin{frame}[label={sec:orgheadline6}]{Cobalamin Transport and Metabolism}
 \includegraphics[width=.9\linewidth]{./figures/cbl_path.png}
 \end{frame}
-
-\begin{frame}[label={sec:orgheadline6}]{Propionic Acid and Derivatives}
-\centering
-
-\vspace{2em}
-\chemname{\chemfig[][scale=.5]{-[7]-[1]([2]=O)-[7]OH}}{\tiny propionic acid}
-\hspace{4em}
-\chemname{\chemfig[][scale=.5]{-[7]-[1]([2]=O)-[7]CoA}}{\tiny propionyl CoA}
-
-\vspace{2em}
-\chemname{\chemfig[][scale=.5]{-N^{+}([2]-)([6]-)-[1]-[7]([6]-O-([5]=O)-[7,.6]-[1,.6])-[1]-[7]([7]=O)([1]-O^{-})}}{\tiny propionyl-carnitine}
-\hspace{4em}
-\chemname{\chemfig[][scale=.5]{OH-[1]-[7]-[1]([2]=O)-[7]OH}}{\tiny 3-hydroxypropionic acid}
-\end{frame}
-
 
 \begin{frame}[label={sec:orgheadline7}]{Sources of Methylmalonic Acid}
 \begin{itemize}
@@ -170,27 +189,32 @@ for each monomer active site) to form the active holoenzyme
 \href{http://www.genome.jp/kegg-bin/show_pathway?org_name=hsa&mapno=00640&mapscale=&show_description=hide}{propionate metabolism - KEGG}
 \end{frame}
 
-\section{Genetics and Pathogenisis}
-\label{sec:orgheadline12}
 
-\begin{frame}[label={sec:orgheadline9}]{Genetics}
-\end{frame}
+\section{Pathogenesis}
+\label{sec:orgheadline11}
 
-\begin{frame}[label={sec:orgheadline10}]{Propionyl CoA}
+
+\begin{frame}[label={sec:orgheadline9}]{Methylmalonyl-CoA}
+\begin{block}{PA}
+\begin{itemize}
+\item inhibits PCC \(\to\) \(\uparrow\) PA
+\end{itemize}
+\end{block}
 \begin{block}{Hyperglycinemia}
 \begin{itemize}
-\item PA inhibits synthesis of glycine cleaving enzyme.
+\item inhibits synthesis of glycine cleaving enzyme.
+\item inhibits transport of malate, 2-ketoglutarate and isocitrate
 \end{itemize}
 \end{block}
 \begin{block}{CBC}
 \begin{itemize}
-\item Propionyl-CoA toxic to bone marrow
+\item megaloblastosis in cblC defects
 \begin{itemize}
-\item neutropenia
-\item transient thrombocytopenia in infancy
+\item \(\downarrow\) methylcobalamin
 \end{itemize}
 \end{itemize}
 \end{block}
+
 \begin{block}{Hyperammonemia}
 \begin{itemize}
 \item PA inhibits carbamylphosphate synthetase
@@ -203,7 +227,8 @@ for each monomer active site) to form the active holoenzyme
 \end{block}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline11}]{Biochemical Markers}
+
+\begin{frame}[label={sec:orgheadline10}]{Biochemical Markers}
 \begin{itemize}
 \item methylmalonic acid
 \item 3-hydroxypropionic acid
@@ -216,8 +241,8 @@ for each monomer active site) to form the active holoenzyme
 \end{frame}
 
 \section{Laboratory Investigations}
-\label{sec:orgheadline19}
-\begin{frame}[label={sec:orgheadline13}]{NSO PA/MMA Screening Logic}
+\label{sec:orgheadline17}
+\begin{frame}[label={sec:orgheadline12}]{NSO PA/MMA Screening Logic}
 \begin{block}{Inital positive \textless{} 7 days}
 (C3/C2 \(\ge\) 0.21 AND C3 \(\ge\) 4.0)
 OR
@@ -243,10 +268,8 @@ C3/C2 \(\ge\) 0.3 AND C3 \(\ge\) 9.0
 C3/C2 \(\ge\) 0.23 AND MCA \(\ge\) 0.5
 \end{block}
 \end{frame}
-\begin{frame}[label={sec:orgheadline14}]{Elevated C3 ACT algorithm}
-\includegraphics[width=.9\linewidth]{./figures/pa_act.png}
-\end{frame}
-\begin{frame}[label={sec:orgheadline15}]{Clinical Chemistry}
+
+\begin{frame}[label={sec:orgheadline13}]{Clinical Chemistry}
 \begin{itemize}
 \item Acidosis in acute episodes
 \begin{itemize}
@@ -257,13 +280,14 @@ C3/C2 \(\ge\) 0.23 AND MCA \(\ge\) 0.5
 \item \(\uparrow\) lactic acid
 \item Hypoglycemia
 \item Hyperammonemia
+\item Measure B12
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline16}]{Biochemical Genetics}
+\begin{frame}[label={sec:orgheadline14}]{Biochemical Genetics}
 \begin{block}{Plasma Amino Acids}
 \begin{itemize}
-\item \(\Uparrow\) glycine
+\item \textpm{} glycine
 \item \(\uparrow\) glutamine when hyperammonemia
 \end{itemize}
 \end{block}
@@ -274,22 +298,25 @@ C3/C2 \(\ge\) 0.23 AND MCA \(\ge\) 0.5
 \end{block}
 \begin{block}{Urine Organic Acids}
 \begin{itemize}
+\item methylmalonic acid
 \item 3-hydroxypropionic acid
 \item methylcitric acid
-\item lactic acid
+\item tiglic acid / tiglyglycine
+\item Ketones
+\begin{itemize}
 \item BHB
 \item acetoacetate
-\item tiglic acid / tiglyglycine
+\end{itemize}
+\item lactic acid
 \end{itemize}
 \end{block}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline17}]{Urine Organic Acids}
-\includegraphics[width=.9\linewidth]{./figures/pa_uoa.png}
+\begin{frame}[label={sec:orgheadline15}]{Urine Organic Acids}
+\includegraphics[width=.9\linewidth]{./figures/mma_uoa.png}
 \end{frame}
 
-
-\begin{frame}[label={sec:orgheadline18}]{Typical Urine Methylmalonic Acid Values}
+\begin{frame}[label={sec:orgheadline16}]{Typical Urine Methylmalonic Acid Values}
 \begin{center}
 \begin{tabular}{lr}
 Clinical Status & mmol/mol creatinine\\
@@ -310,8 +337,8 @@ Methylmalonyl CoA epimerase deficiency & 30-300\\
 \end{frame}
 
 \section{Clinical Findings}
-\label{sec:orgheadline25}
-\begin{frame}[label={sec:orgheadline20}]{Acute presentation}
+\label{sec:orgheadline23}
+\begin{frame}[label={sec:orgheadline18}]{Acute presentation}
 \begin{itemize}
 \item Life-threatening illness early in life
 \begin{itemize}
@@ -326,7 +353,7 @@ Methylmalonyl CoA epimerase deficiency & 30-300\\
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline21}]{Recurrent Symptoms}
+\begin{frame}[label={sec:orgheadline19}]{Recurrent Symptoms}
 \begin{itemize}
 \item ketotic episodes
 \item infection
@@ -334,7 +361,7 @@ Methylmalonyl CoA epimerase deficiency & 30-300\\
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline22}]{Long term}
+\begin{frame}[label={sec:orgheadline20}]{Long term}
 \begin{itemize}
 \item Variable developmental/cognitive outcomes
 \begin{itemize}
@@ -361,7 +388,7 @@ Methylmalonyl CoA epimerase deficiency & 30-300\\
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline23}]{Neurological Findings}
+\begin{frame}[label={sec:orgheadline21}]{Neurological Findings}
 \begin{columns}
 \begin{column}{.5\columnwidth}
 \begin{itemize}
@@ -383,7 +410,7 @@ Methylmalonyl CoA epimerase deficiency & 30-300\\
 \end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline24}]{Long-term Treatment}
+\begin{frame}[label={sec:orgheadline22}]{Long-term Treatment}
 \begin{block}{Diet}
 \begin{itemize}
 \item Limit Val, Ile, Thr, Met

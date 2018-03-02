@@ -104,7 +104,29 @@
 #+RESULTS:
 [[file:./figures/mut.pdf]]
 
+** Genetics
+- autosomal recessive
+- 1/50000
+  - 1/2-2/3 have mutase apoenzyme defect
+*** Methylmalonyl CoA Pathway
+- Methylmalonyl CoA Epimerase deficiency
+- Methylmalonyl CoA mutase deficiency
+  - mut^0, mut^{-}
+  - >200 mutations in MUT locus identified
+- Succinyl CoA ligase deficiency (SUCLG1, SUCLA1)
+
+*** Cobalamin Pathway
+- Adenosyltransferase deficiency (Cbl B)
+- Cbl A
+- Homocystinuria w MMA (Cbl C, D)
+- B_12 deficiency
+  - Dietary (vegan)
+  - Pernicious anemia
+- Transcobalamin II deficiency
+- B_12 transport from lysosome defect (Cbl F)
+
 ** Different Types of MMA
+
 - Methylmalonyl CoA mutase deficiency
   - mut^0, mut^{-}
 - Adenosyltransferase deficiency (Cbl B)
@@ -127,7 +149,7 @@
 
 [[./figures/cbl_path.png]]
 
-** Propionic Acid and Derivatives
+** COMMENT Propionic Acid and Derivatives
 \centering
 
 #+BEGIN_LaTeX
@@ -154,36 +176,16 @@
 [[http://www.genome.jp/kegg-bin/show_pathway?org_name=hsa&mapno=00640&mapscale=&show_description=hide][propionate metabolism - KEGG]]
 
 
-* Genetics and Pathogenisis
-
-** Genetics
-*** Methylmalonyl CoA Pathway
-- Methylmalonyl CoA Epimerase deficiency
-  - autosomal recessive 
-- Methylmalonyl CoA mutase deficiency
-  - mut^0, mut^{-}
-  - autosomal recessive 
-- Succinyl CoA ligase deficiency (SUCLG1, SUCLA1)
-
-*** Cobalamin Pathway
-- Adenosyltransferase deficiency (Cbl B)
-- Cbl A
-- Homocystinuria w MMA (Cbl C, D)
-
-- B_12 deficiency
-  - Dietary (vegan)
-  - Pernicious anemia
-- Transcobalamin II deficiency
-- B_12 transport from lysosome defect (Cbl F)
-- Succinyl CoA ligase deficiency (SUCLG1, SUCLA1)
-
-** Propionyl CoA
+** Methylmalonyl-CoA
+*** PA
+- inhibits PCC \to \uparrow PA
 *** Hyperglycinemia
-- PA inhibits synthesis of glycine cleaving enzyme.
+- inhibits synthesis of glycine cleaving enzyme.
+- inhibits transport of malate, 2-ketoglutarate and isocitrate
 *** CBC
-- Propionyl-CoA toxic to bone marrow
-  - neutropenia
-  - transient thrombocytopenia in infancy
+- megaloblastosis in cblC defects
+  - \downarrow methylcobalamin
+
 *** Hyperammonemia
 - PA inhibits carbamylphosphate synthetase
 *** Ketosis
@@ -224,6 +226,7 @@ C3/C2 \ge 0.3 AND C3 \ge 9.0
 - \uparrow lactic acid
 - Hypoglycemia
 - Hyperammonemia
+- Measure B12
  
 ** Biochemical Genetics
 *** Plasma Amino Acids
@@ -232,15 +235,17 @@ C3/C2 \ge 0.3 AND C3 \ge 9.0
 *** Plasma Acylcarnitines
 - \uparrow propionyl carnitine (C3)
 *** Urine Organic Acids
+- methylmalonic acid
 - 3-hydroxypropionic acid
 - methylcitric acid
-- lactic acid
-- BHB
-- acetoacetate
 - tiglic acid / tiglyglycine
+- Ketones
+  - BHB
+  - acetoacetate
+- lactic acid
 
 ** Urine Organic Acids
-[[./figures/pa_uoa.png]]
+[[./figures/mma_uoa.png]]
 
 ** Typical Urine Methylmalonic Acid Values
 
@@ -251,7 +256,7 @@ C3/C2 \ge 0.3 AND C3 \ge 9.0
 | Mut^0;steady state                     |            200-2000 |
 | B_12 responsive;presentation           |                2000 |
 | B_12 responsive;steady-state           |              90-300 |
-| B_12 deficient infanct                 |           4500-5700 |
+| B_12 deficient infant                 |           4500-5700 |
 | Transcobalamin II deficiency           |                 600 |
 | Cobalamin C,D                          |                 270 |
 | Atypical-normal mutase                 |                 200 |
@@ -259,7 +264,10 @@ C3/C2 \ge 0.3 AND C3 \ge 9.0
 | Methylmalonyl CoA epimerase deficiency |              30-300 |
 
 * Clinical Findings
-** Acute presentation
+** Initial presentation
+- Failure to thrive
+  - \downarrow linear growth
+- Skin lesions - candidasis
 - Life-threatening illness early in life
   - ketonuria
     - acidosis
@@ -273,39 +281,38 @@ C3/C2 \ge 0.3 AND C3 \ge 9.0
 - protein intolerance
 
 ** Long term 
+
 - Variable developmental/cognitive outcomes
   - appears linked to incidence of illness
-- hypotonic
-  - developmental delay
-- A subset with exclusively neurological presentation
-  - \pm ketoacidosis
-  - hypotonia \to hypertonia
-- Propionyl-CoA toxic to bone marrow
-  - neutropenia
-  - transient thrombocytopenia in infancy
-- Osteoporosis
-- Pancreatitis
-- Cardiomyopathy
-- Fatty infiltration of liver on PM
+- severe hypotonia
+
+- stroke
+- hepatomegaly - normal LFTs
+- \downarrown renal function
+- pancreatitis
+- Candidasis
+  - MMA inhibits maturation of hematopoietic cells and T cells
+
+
 
 ** Neurological Findings
 
-***                                                                 :BMCOL:
-:PROPERTIES:
-:BEAMER_col: .5
-:END:
+- due to acute episodes
+  - \downarrow cerebral perfusion
+  - hypoglycemia
+  - hyperammonemia
+- more common in apo enzyme defect than Cbl 
 
-- Neonatal death
-  - spongy degeneration of white matter
-- Later death
-  - shrinkage and marbling in basal ganglia
-  - neuronal loss
-  - gliosis
-***                                                                 :BMCOL:
-:PROPERTIES:
-:BEAMER_col: .5
-:END:
-[[./figures/pa_mri.png]]
+- Successful treatment \to normal IQ
+- 25 of 33 patients :
+  - ataxia
+  - dystonia
+  - dyskinesia
+  - dsyarthria
+  - chorea
+  - clonus
+  - tremors
+
 
 ** Long-term Treatment
 *** Diet
@@ -313,15 +320,28 @@ C3/C2 \ge 0.3 AND C3 \ge 9.0
   - Monitor urine metabolites, plasma amino acids
   - Urine ketones (daily in infancy)
   - Monitor weight, nitrogen balance
+
 - Avoid fasting
   - Catabolism
   - Propionate release from lipids
 
 *** Supplementation
-- Carnitine
+- test for B_{12} response
+  - pharmacologic does of B_{12}
+- carnitine
   - excretion of carnitine esters \to detoxification
   - Daily dose 60 to 100 mg/kg 
-- Biotin
-  - conflicting information
+- alanine supplementation
+
+*** Medication
+- Production of PA by intestinal bacteria
+  - metronidazole
+  - neomycin
+- HGH \to anabolism
+
+*** Transplantation
+- liver transplantation does not stop progressive neurological symptoms
+- liver & kidney may be considered
+
 
   
