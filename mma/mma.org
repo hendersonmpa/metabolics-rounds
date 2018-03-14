@@ -64,7 +64,7 @@
 * Introduction
 ** History
 - First reported in 1967 by Oberholzer and Stokke
-- Methylmalonic mutase
+- Defect in methylmalonic mutase
   - catalyzes the isomerization of methylmalonyl-CoA to succinyl-CoA
 - Requires adenosylcobalamin as a cofactor
   - derived from vitamin B_12
@@ -107,61 +107,44 @@
 ** Genetics
 - autosomal recessive
 - 1/50000
-  - 1/2-2/3 have mutase apoenzyme defect
-*** Methylmalonyl CoA Pathway
+  - 1/2-2/3 have mutase apoenzyme defect 
+- Methymalonyl pathway
+- Cobalamin transport and metabolism
+ 
+** Methylmalonyl CoA Pathway
 - Methylmalonyl CoA Epimerase deficiency
 - Methylmalonyl CoA mutase deficiency
   - mut^0, mut^{-}
   - >200 mutations in MUT locus identified
 - Succinyl CoA ligase deficiency (SUCLG1, SUCLA1)
 
-*** Cobalamin Pathway
-- Adenosyltransferase deficiency (Cbl B)
-- Cbl A
-- Homocystinuria w MMA (Cbl C, D)
-- B_12 deficiency
-  - Dietary (vegan)
-  - Pernicious anemia
-- Transcobalamin II deficiency
-- B_12 transport from lysosome defect (Cbl F)
-
-** Different Types of MMA
-
-- Methylmalonyl CoA mutase deficiency
-  - mut^0, mut^{-}
-- Adenosyltransferase deficiency (Cbl B)
-- Cbl A
-- Homocystinuria w MMA (Cbl C, D)
-- Methylmalonyl CoA Epimerase deficiency
-- B_12 deficiency
-  - Dietary (vegan)
-  - Pernicious anemia
-- Transcobalamin II deficiency
-- B_12 transport from lysosome defect (Cbl F)
-- Succinyl CoA ligase deficiency (SUCLG1, SUCLA1)
-
-** Methylmalonic  Acidemia Pathway
+** Methylmalonyl-CoA  Pathway
 \centering
 #+ATTR_LATEX: :height 0.85\textheight
 [[./figures/expanded_mma_path.png]]
 
 ** Cobalamin Transport and Metabolism
+- Adenosyltransferase deficiency (Cbl B)
+- Cbl A
+- Homocystinuria w MMA (Cbl C, D)
+- B_12 deficiency
+  - Dietary (vegan)
+  - Pernicious anemia
+- Transcobalamin II deficiency
+- B_12 transport from lysosome defect (Cbl F)
 
+** Cobalamin Transport and Metabolism
 [[./figures/cbl_path.png]]
 
-** COMMENT Propionic Acid and Derivatives
+** Methylmalonic Acid and Derivatives
 \centering
-
 #+BEGIN_LaTeX
-\vspace{2em}
-\chemname{\chemfig[][scale=.5]{-[7]-[1]([2]=O)-[7]OH}}{\tiny propionic acid}
-\hspace{4em}
-\chemname{\chemfig[][scale=.5]{-[7]-[1]([2]=O)-[7]CoA}}{\tiny propionyl CoA}
-
-\vspace{2em}
-\chemname{\chemfig[][scale=.5]{-N^{+}([2]-)([6]-)-[1]-[7]([6]-O-([5]=O)-[7,.6]-[1,.6])-[1]-[7]([7]=O)([1]-O^{-})}}{\tiny propionyl-carnitine}
-\hspace{4em}
-\chemname{\chemfig[][scale=.5]{OH-[1]-[7]-[1]([2]=O)-[7]OH}}{\tiny 3-hydroxypropionic acid}
+\vspace{6em}
+\chemname{\chemfig[][scale=.5]{OH-[1]([2]=O)-[7]([2]-)-[1]([2]=O)-[7]S-CoA}}{\tiny D-methylmalonyl-CoA}
+\hspace{2em}
+\chemname{\chemfig[][scale=.5]{OH-[1]([2]=O)-[7]([6]-)-[1]([2]=O)-[7]S-CoA}}{\tiny L-methylmalonyl-CoA}
+\hspace{2em}
+\chemname{\chemfig[][scale=.5]{OH-[1]([2]=O)-[7]([6]-)-[1]([2]=O)-[7]OH}}{\tiny methylmalonic acid}
 #+END_LaTeX
 
 ** Sources of Methylmalonic Acid
@@ -175,9 +158,8 @@
 
 [[http://www.genome.jp/kegg-bin/show_pathway?org_name=hsa&mapno=00640&mapscale=&show_description=hide][propionate metabolism - KEGG]]
 
-
 ** Methylmalonyl-CoA
-*** PA
+
 - inhibits PCC \to \uparrow PA
 *** Hyperglycinemia
 - inhibits synthesis of glycine cleaving enzyme.
@@ -190,14 +172,6 @@
 - PA inhibits carbamylphosphate synthetase
 *** Ketosis
 - PA inhibits mitochondrial oxidation of succinic acid and 2-ketoglutaric acid
-
-
-** Biochemical Markers
-- methylmalonic acid
-- 3-hydroxypropionic acid
-- methylcitrate
-  - condensation of propionyl-CoA & oxaloacetic acid
-  - metabolic end product and very stable
 
 * Laboratory Investigations
 ** NSO PA/MMA Screening Logic
@@ -256,7 +230,7 @@ C3/C2 \ge 0.3 AND C3 \ge 9.0
 | Mut^0;steady state                     |            200-2000 |
 | B_12 responsive;presentation           |                2000 |
 | B_12 responsive;steady-state           |              90-300 |
-| B_12 deficient infant                 |           4500-5700 |
+| B_12 deficient infant                  |           4500-5700 |
 | Transcobalamin II deficiency           |                 600 |
 | Cobalamin C,D                          |                 270 |
 | Atypical-normal mutase                 |                 200 |
@@ -275,17 +249,21 @@ C3/C2 \ge 0.3 AND C3 \ge 9.0
   - vomiting
   - lethargy \to coma
 
+** Acute Treatment
+- aggressive intravenous hydration
+  - efficient renal excretion of MMA
+- Insulin and glucose \to analbolism
+- Acute HGH
+
 ** Recurrent Symptoms
 - ketotic episodes
 - infection
 - protein intolerance
 
 ** Long term 
-
 - Variable developmental/cognitive outcomes
   - appears linked to incidence of illness
 - severe hypotonia
-
 - stroke
 - hepatomegaly - normal LFTs
 - \downarrown renal function
@@ -293,16 +271,12 @@ C3/C2 \ge 0.3 AND C3 \ge 9.0
 - Candidasis
   - MMA inhibits maturation of hematopoietic cells and T cells
 
-
-
 ** Neurological Findings
-
 - due to acute episodes
   - \downarrow cerebral perfusion
   - hypoglycemia
   - hyperammonemia
 - more common in apo enzyme defect than Cbl 
-
 - Successful treatment \to normal IQ
 - 25 of 33 patients :
   - ataxia
@@ -313,14 +287,12 @@ C3/C2 \ge 0.3 AND C3 \ge 9.0
   - clonus
   - tremors
 
-
 ** Long-term Treatment
 *** Diet
 - Limit Val, Ile, Thr, Met
   - Monitor urine metabolites, plasma amino acids
   - Urine ketones (daily in infancy)
   - Monitor weight, nitrogen balance
-
 - Avoid fasting
   - Catabolism
   - Propionate release from lipids

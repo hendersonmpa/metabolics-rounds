@@ -1,4 +1,4 @@
-% Created 2018-03-01 Thu 09:38
+% Created 2018-03-12 Mon 16:26
 \documentclass[presentation, smaller]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -68,11 +68,11 @@
 \tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
 
 \section{Introduction}
-\label{sec:orgheadline8}
+\label{sec:orgheadline12}
 \begin{frame}[label={sec:orgheadline1}]{History}
 \begin{itemize}
 \item First reported in 1967 by Oberholzer and Stokke
-\item Methylmalonic mutase
+\item Defect in methylmalonic mutase
 \begin{itemize}
 \item catalyzes the isomerization of methylmalonyl-CoA to succinyl-CoA
 \end{itemize}
@@ -112,8 +112,12 @@ for each monomer active site) to form the active holoenzyme
 \begin{itemize}
 \item 1/2-2/3 have mutase apoenzyme defect
 \end{itemize}
+\item Methymalonyl pathway
+\item Cobalamin transport and metabolism
 \end{itemize}
-\begin{block}{Methylmalonyl CoA Pathway}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline4}]{Methylmalonyl CoA Pathway}
 \begin{itemize}
 \item Methylmalonyl CoA Epimerase deficiency
 \item Methylmalonyl CoA mutase deficiency
@@ -123,55 +127,43 @@ for each monomer active site) to form the active holoenzyme
 \end{itemize}
 \item Succinyl CoA ligase deficiency (SUCLG1, SUCLA1)
 \end{itemize}
-\end{block}
-
-\begin{block}{Cobalamin Pathway}
-\begin{itemize}
-\item Adenosyltransferase deficiency (Cbl B)
-\item Cbl A
-\item Homocystinuria w MMA (Cbl C, D)
-\item B\(_{\text{12}}\) deficiency
-\begin{itemize}
-\item Dietary (vegan)
-\item Pernicious anemia
-\end{itemize}
-\item Transcobalamin II deficiency
-\item B\(_{\text{12}}\) transport from lysosome defect (Cbl F)
-\end{itemize}
-\end{block}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline4}]{Different Types of MMA}
-\begin{itemize}
-\item Methylmalonyl CoA mutase deficiency
-\begin{itemize}
-\item mut\(^{\text{0}}\), mut\(^{\text{-}}\)
-\end{itemize}
-\item Adenosyltransferase deficiency (Cbl B)
-\item Cbl A
-\item Homocystinuria w MMA (Cbl C, D)
-\item Methylmalonyl CoA Epimerase deficiency
-\item B\(_{\text{12}}\) deficiency
-\begin{itemize}
-\item Dietary (vegan)
-\item Pernicious anemia
-\end{itemize}
-\item Transcobalamin II deficiency
-\item B\(_{\text{12}}\) transport from lysosome defect (Cbl F)
-\item Succinyl CoA ligase deficiency (SUCLG1, SUCLA1)
-\end{itemize}
-\end{frame}
-
-\begin{frame}[label={sec:orgheadline5}]{Methylmalonic  Acidemia Pathway}
+\begin{frame}[label={sec:orgheadline5}]{Methylmalonyl-CoA  Pathway}
 \centering
 \includegraphics[height=0.85\textheight]{./figures/expanded_mma_path.png}
 \end{frame}
 
 \begin{frame}[label={sec:orgheadline6}]{Cobalamin Transport and Metabolism}
+\begin{itemize}
+\item Adenosyltransferase deficiency (Cbl B)
+\item Cbl A
+\item Homocystinuria w MMA (Cbl C, D)
+\item B\(_{\text{12}}\) deficiency
+\begin{itemize}
+\item Dietary (vegan)
+\item Pernicious anemia
+\end{itemize}
+\item Transcobalamin II deficiency
+\item B\(_{\text{12}}\) transport from lysosome defect (Cbl F)
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline7}]{Cobalamin Transport and Metabolism}
 \includegraphics[width=.9\linewidth]{./figures/cbl_path.png}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline7}]{Sources of Methylmalonic Acid}
+\begin{frame}[label={sec:orgheadline8}]{Methylmalonic Acid and Derivatives}
+\centering
+\vspace{6em}
+\chemname{\chemfig[][scale=.5]{OH-[1]([2]=O)-[7]([2]-)-[1]([2]=O)-[7]S-CoA}}{\tiny D-methylmalonyl-CoA}
+\hspace{2em}
+\chemname{\chemfig[][scale=.5]{OH-[1]([2]=O)-[7]([6]-)-[1]([2]=O)-[7]S-CoA}}{\tiny L-methylmalonyl-CoA}
+\hspace{2em}
+\chemname{\chemfig[][scale=.5]{OH-[1]([2]=O)-[7]([6]-)-[1]([2]=O)-[7]OH}}{\tiny methylmalonic acid}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline9}]{Sources of Methylmalonic Acid}
 \begin{itemize}
 \item AA catabolism
 \begin{itemize}
@@ -189,12 +181,7 @@ for each monomer active site) to form the active holoenzyme
 \href{http://www.genome.jp/kegg-bin/show_pathway?org_name=hsa&mapno=00640&mapscale=&show_description=hide}{propionate metabolism - KEGG}
 \end{frame}
 
-
-\section{Pathogenesis}
-\label{sec:orgheadline11}
-
-
-\begin{frame}[label={sec:orgheadline9}]{Methylmalonyl-CoA}
+\begin{frame}[label={sec:orgheadline10}]{Methylmalonyl-CoA}
 \begin{block}{PA}
 \begin{itemize}
 \item inhibits PCC \(\to\) \(\uparrow\) PA
@@ -227,8 +214,7 @@ for each monomer active site) to form the active holoenzyme
 \end{block}
 \end{frame}
 
-
-\begin{frame}[label={sec:orgheadline10}]{Biochemical Markers}
+\begin{frame}[label={sec:orgheadline11}]{Biochemical Markers}
 \begin{itemize}
 \item methylmalonic acid
 \item 3-hydroxypropionic acid
@@ -241,8 +227,8 @@ for each monomer active site) to form the active holoenzyme
 \end{frame}
 
 \section{Laboratory Investigations}
-\label{sec:orgheadline17}
-\begin{frame}[label={sec:orgheadline12}]{NSO PA/MMA Screening Logic}
+\label{sec:orgheadline18}
+\begin{frame}[label={sec:orgheadline13}]{NSO PA/MMA Screening Logic}
 \begin{block}{Inital positive \textless{} 7 days}
 (C3/C2 \(\ge\) 0.21 AND C3 \(\ge\) 4.0)
 OR
@@ -269,7 +255,7 @@ C3/C2 \(\ge\) 0.23 AND MCA \(\ge\) 0.5
 \end{block}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline13}]{Clinical Chemistry}
+\begin{frame}[label={sec:orgheadline14}]{Clinical Chemistry}
 \begin{itemize}
 \item Acidosis in acute episodes
 \begin{itemize}
@@ -284,7 +270,7 @@ C3/C2 \(\ge\) 0.23 AND MCA \(\ge\) 0.5
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline14}]{Biochemical Genetics}
+\begin{frame}[label={sec:orgheadline15}]{Biochemical Genetics}
 \begin{block}{Plasma Amino Acids}
 \begin{itemize}
 \item \textpm{} glycine
@@ -312,11 +298,11 @@ C3/C2 \(\ge\) 0.23 AND MCA \(\ge\) 0.5
 \end{block}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline15}]{Urine Organic Acids}
+\begin{frame}[label={sec:orgheadline16}]{Urine Organic Acids}
 \includegraphics[width=.9\linewidth]{./figures/mma_uoa.png}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline16}]{Typical Urine Methylmalonic Acid Values}
+\begin{frame}[label={sec:orgheadline17}]{Typical Urine Methylmalonic Acid Values}
 \begin{center}
 \begin{tabular}{lr}
 Clinical Status & mmol/mol creatinine\\
@@ -326,7 +312,7 @@ Mut\(^{\text{0}}\);presentation & 3000-13000\\
 Mut\(^{\text{0}}\);steady state & 200-2000\\
 B\(_{\text{12}}\) responsive;presentation & 2000\\
 B\(_{\text{12}}\) responsive;steady-state & 90-300\\
-B\(_{\text{12}}\) deficient infanct & 4500-5700\\
+B\(_{\text{12}}\) deficient infant & 4500-5700\\
 Transcobalamin II deficiency & 600\\
 Cobalamin C,D & 270\\
 Atypical-normal mutase & 200\\
@@ -337,9 +323,14 @@ Methylmalonyl CoA epimerase deficiency & 30-300\\
 \end{frame}
 
 \section{Clinical Findings}
-\label{sec:orgheadline23}
-\begin{frame}[label={sec:orgheadline18}]{Acute presentation}
+\label{sec:orgheadline24}
+\begin{frame}[label={sec:orgheadline19}]{Initial presentation}
 \begin{itemize}
+\item Failure to thrive
+\begin{itemize}
+\item \(\downarrow\) linear growth
+\end{itemize}
+\item Skin lesions - candidasis
 \item Life-threatening illness early in life
 \begin{itemize}
 \item ketonuria
@@ -353,7 +344,7 @@ Methylmalonyl CoA epimerase deficiency & 30-300\\
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline19}]{Recurrent Symptoms}
+\begin{frame}[label={sec:orgheadline20}]{Recurrent Symptoms}
 \begin{itemize}
 \item ketotic episodes
 \item infection
@@ -361,56 +352,51 @@ Methylmalonyl CoA epimerase deficiency & 30-300\\
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline20}]{Long term}
+\begin{frame}[label={sec:orgheadline21}]{Long term}
 \begin{itemize}
 \item Variable developmental/cognitive outcomes
 \begin{itemize}
 \item appears linked to incidence of illness
 \end{itemize}
-\item hypotonic
+\item severe hypotonia
+
+\item stroke
+\item hepatomegaly - normal LFTs
+\item \downarrown renal function
+\item pancreatitis
+\item Candidasis
 \begin{itemize}
-\item developmental delay
+\item MMA inhibits maturation of hematopoietic cells and T cells
 \end{itemize}
-\item A subset with exclusively neurological presentation
-\begin{itemize}
-\item \textpm{} ketoacidosis
-\item hypotonia \(\to\) hypertonia
-\end{itemize}
-\item Propionyl-CoA toxic to bone marrow
-\begin{itemize}
-\item neutropenia
-\item transient thrombocytopenia in infancy
-\end{itemize}
-\item Osteoporosis
-\item Pancreatitis
-\item Cardiomyopathy
-\item Fatty infiltration of liver on PM
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline21}]{Neurological Findings}
-\begin{columns}
-\begin{column}{.5\columnwidth}
+\begin{frame}[label={sec:orgheadline22}]{Neurological Findings}
 \begin{itemize}
-\item Neonatal death
+\item due to acute episodes
 \begin{itemize}
-\item spongy degeneration of white matter
+\item \(\downarrow\) cerebral perfusion
+\item hypoglycemia
+\item hyperammonemia
 \end{itemize}
-\item Later death
+\item more common in apo enzyme defect than Cbl
+
+\item Successful treatment \(\to\) normal IQ
+\item 25 of 33 patients :
 \begin{itemize}
-\item shrinkage and marbling in basal ganglia
-\item neuronal loss
-\item gliosis
+\item ataxia
+\item dystonia
+\item dyskinesia
+\item dsyarthria
+\item chorea
+\item clonus
+\item tremors
 \end{itemize}
 \end{itemize}
-\end{column}
-\begin{column}{.5\columnwidth}
-\includegraphics[width=.9\linewidth]{./figures/pa_mri.png}
-\end{column}
-\end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline22}]{Long-term Treatment}
+
+\begin{frame}[label={sec:orgheadline23}]{Long-term Treatment}
 \begin{block}{Diet}
 \begin{itemize}
 \item Limit Val, Ile, Thr, Met
@@ -419,6 +405,7 @@ Methylmalonyl CoA epimerase deficiency & 30-300\\
 \item Urine ketones (daily in infancy)
 \item Monitor weight, nitrogen balance
 \end{itemize}
+
 \item Avoid fasting
 \begin{itemize}
 \item Catabolism
@@ -429,15 +416,34 @@ Methylmalonyl CoA epimerase deficiency & 30-300\\
 
 \begin{block}{Supplementation}
 \begin{itemize}
-\item Carnitine
+\item test for B\(_{\text{12}}\) response
+\begin{itemize}
+\item pharmacologic does of B\(_{\text{12}}\)
+\end{itemize}
+\item carnitine
 \begin{itemize}
 \item excretion of carnitine esters \(\to\) detoxification
 \item Daily dose 60 to 100 mg/kg
 \end{itemize}
-\item Biotin
-\begin{itemize}
-\item conflicting information
+\item alanine supplementation
 \end{itemize}
+\end{block}
+
+\begin{block}{Medication}
+\begin{itemize}
+\item Production of PA by intestinal bacteria
+\begin{itemize}
+\item metronidazole
+\item neomycin
+\end{itemize}
+\item HGH \(\to\) anabolism
+\end{itemize}
+\end{block}
+
+\begin{block}{Transplantation}
+\begin{itemize}
+\item liver transplantation does not stop progressive neurological symptoms
+\item liver \& kidney may be considered
 \end{itemize}
 \end{block}
 \end{frame}
