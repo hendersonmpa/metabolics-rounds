@@ -1,4 +1,4 @@
-% Created 2018-01-25 Thu 10:08
+% Created 2018-03-28 Wed 09:18
 \documentclass[presentation, smaller]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -74,7 +74,17 @@
 \item Carnitine (\(\beta\)-hydroxy-\(\gamma\)-N-trimethylaminobutyric acid) is
 an endogenous quaternary ammonium compound synthesized from lysine
 and methionine.
-
+\item L-Carnitine has been described as a "conditionally essential"
+nutrient for humans.
+\item Populations with an exogenous carnitine requirement include:
+\begin{itemize}
+\item infants (premature and full-term),
+\item patients on long-term parenteral nutrition,
+\item perhaps children.
+\end{itemize}
+\item Exogenous carnitine is required to maintain "normal" (in the
+epidemiologic sense) plasma or serum carnitine concentrations in
+humans of all ages.
 \item Primary function is to shuttle long chain fatty acids to the
 mitochondrial matrix, for \(\beta\)-oxidation.
 \item Acylcarnitines are markers for FAODs and OAs
@@ -137,6 +147,7 @@ to 600 sample capacity per instrument per day.
 \end{itemize}
 \end{itemize}
 \end{frame}
+
 \begin{frame}[label={sec:orgheadline5}]{FIA-MS/MS sample}
 \begin{itemize}
 \item Acylcarnitines in the DBS eluate are esterified as butyl esters with butanol-3M HCL
@@ -175,7 +186,7 @@ to 600 sample capacity per instrument per day.
 
 \begin{block}{Precursor Ion Scan}
 \begin{center}
-\begin{tikzpicture}[]
+\begin{tikzpicture}
 \node[box](ms1)[]{};
 \node[label](ms1u)[above=of ms1,yshift=-3em]{MS1};
 \node[label](ms1l)[below=of ms1,yshift=3em]{scanning};
@@ -208,6 +219,7 @@ to 600 sample capacity per instrument per day.
 \end{center}
 \end{block}
 \end{frame}
+
 
 \begin{frame}[label={sec:orgheadline7}]{Fragmentation}
 \definesubmol{x}{-[1,.6]-[7,.6]}

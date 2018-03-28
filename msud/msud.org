@@ -77,7 +77,6 @@
 #+ATTR_LATEX: :height 0.85\textheight
 [[./figures/bcaa.png]]
 
-
 * Biochemistry
 ** Maple Syrup Urine Disease
 - Only BCAA disorder detected by plasma amino acids.
@@ -130,7 +129,7 @@ acids and related substances. The Journal of Biological Chemistry,
 #+ATTR_LATEX: :height 0.90\textheight
 [[./figures/BCKD_Reaction.png]]
 
-** Branched Chain \alpha{}-Ketoacid-Dehdrogenase Metabolic Machine
+** Branched Chain \alpha{}-Ketoacid-Dehydrogenase Metabolic Machine
 - 4-megadalton metabolic machine on the IMM
 - organized around a 24-meric transacylase (E2b) cubic core
 - encoded by six genetic loci
@@ -201,9 +200,6 @@ Nat. Struct. Biol. 6: 785-792, 2000).
   - /\ anabolism
   - /\ insulin secretion
 
-
-
-
 * Diagnosis
 ** NSO Screening Logic
 
@@ -273,7 +269,6 @@ Nat. Struct. Biol. 6: 785-792, 2000).
   - seizures
   - coma
   - cerebral edema
-
 
 * Treatment
 ** Acute Management in the Newborn

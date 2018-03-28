@@ -1,4 +1,4 @@
-% Created 2018-03-12 Mon 16:26
+% Created 2018-03-27 Tue 14:16
 \documentclass[presentation, smaller]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -68,7 +68,7 @@
 \tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
 
 \section{Introduction}
-\label{sec:orgheadline12}
+\label{sec:orgheadline11}
 \begin{frame}[label={sec:orgheadline1}]{History}
 \begin{itemize}
 \item First reported in 1967 by Oberholzer and Stokke
@@ -156,9 +156,9 @@ for each monomer active site) to form the active holoenzyme
 \begin{frame}[label={sec:orgheadline8}]{Methylmalonic Acid and Derivatives}
 \centering
 \vspace{6em}
-\chemname{\chemfig[][scale=.5]{OH-[1]([2]=O)-[7]([2]-)-[1]([2]=O)-[7]S-CoA}}{\tiny D-methylmalonyl-CoA}
+\chemname{\chemfig[][scale=.5]{OH-[1]([2]=O)-[7]([6]<)-[1]([2]=O)-[7]S-CoA}}{\tiny S-methylmalonyl-CoA}
 \hspace{2em}
-\chemname{\chemfig[][scale=.5]{OH-[1]([2]=O)-[7]([6]-)-[1]([2]=O)-[7]S-CoA}}{\tiny L-methylmalonyl-CoA}
+\chemname{\chemfig[][scale=.5]{OH-[1]([2]=O)-[7]([6]<:)-[1]([2]=O)-[7]S-CoA}}{\tiny R-methylmalonyl-CoA}
 \hspace{2em}
 \chemname{\chemfig[][scale=.5]{OH-[1]([2]=O)-[7]([6]-)-[1]([2]=O)-[7]OH}}{\tiny methylmalonic acid}
 \end{frame}
@@ -178,15 +178,13 @@ for each monomer active site) to form the active holoenzyme
 \end{itemize}
 \end{itemize}
 
-\href{http://www.genome.jp/kegg-bin/show_pathway?org_name=hsa&mapno=00640&mapscale=&show_description=hide}{propionate metabolism - KEGG}
+\href{http://www.genome.jp/kegg-bin/show_pathway?scale=1.0&query=methylmalonyl-CoA&map=hsa00640&scale=&auto_image=&show_description=hide&multi_query=}{propionate metabolism - KEGG}
 \end{frame}
 
 \begin{frame}[label={sec:orgheadline10}]{Methylmalonyl-CoA}
-\begin{block}{PA}
 \begin{itemize}
 \item inhibits PCC \(\to\) \(\uparrow\) PA
 \end{itemize}
-\end{block}
 \begin{block}{Hyperglycinemia}
 \begin{itemize}
 \item inhibits synthesis of glycine cleaving enzyme.
@@ -214,21 +212,9 @@ for each monomer active site) to form the active holoenzyme
 \end{block}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline11}]{Biochemical Markers}
-\begin{itemize}
-\item methylmalonic acid
-\item 3-hydroxypropionic acid
-\item methylcitrate
-\begin{itemize}
-\item condensation of propionyl-CoA \& oxaloacetic acid
-\item metabolic end product and very stable
-\end{itemize}
-\end{itemize}
-\end{frame}
-
 \section{Laboratory Investigations}
-\label{sec:orgheadline18}
-\begin{frame}[label={sec:orgheadline13}]{NSO PA/MMA Screening Logic}
+\label{sec:orgheadline17}
+\begin{frame}[label={sec:orgheadline12}]{NSO PA/MMA Screening Logic}
 \begin{block}{Inital positive \textless{} 7 days}
 (C3/C2 \(\ge\) 0.21 AND C3 \(\ge\) 4.0)
 OR
@@ -255,7 +241,7 @@ C3/C2 \(\ge\) 0.23 AND MCA \(\ge\) 0.5
 \end{block}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline14}]{Clinical Chemistry}
+\begin{frame}[label={sec:orgheadline13}]{Clinical Chemistry}
 \begin{itemize}
 \item Acidosis in acute episodes
 \begin{itemize}
@@ -270,7 +256,7 @@ C3/C2 \(\ge\) 0.23 AND MCA \(\ge\) 0.5
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline15}]{Biochemical Genetics}
+\begin{frame}[label={sec:orgheadline14}]{Biochemical Genetics}
 \begin{block}{Plasma Amino Acids}
 \begin{itemize}
 \item \textpm{} glycine
@@ -280,8 +266,10 @@ C3/C2 \(\ge\) 0.23 AND MCA \(\ge\) 0.5
 \begin{block}{Plasma Acylcarnitines}
 \begin{itemize}
 \item \(\uparrow\) propionyl carnitine (C3)
+\item \(\uparrow\) methylmalonyl carnitine (C4DC)
 \end{itemize}
 \end{block}
+
 \begin{block}{Urine Organic Acids}
 \begin{itemize}
 \item methylmalonic acid
@@ -298,11 +286,11 @@ C3/C2 \(\ge\) 0.23 AND MCA \(\ge\) 0.5
 \end{block}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline16}]{Urine Organic Acids}
+\begin{frame}[label={sec:orgheadline15}]{Urine Organic Acids}
 \includegraphics[width=.9\linewidth]{./figures/mma_uoa.png}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline17}]{Typical Urine Methylmalonic Acid Values}
+\begin{frame}[label={sec:orgheadline16}]{Typical Urine Methylmalonic Acid Values}
 \begin{center}
 \begin{tabular}{lr}
 Clinical Status & mmol/mol creatinine\\
@@ -323,8 +311,8 @@ Methylmalonyl CoA epimerase deficiency & 30-300\\
 \end{frame}
 
 \section{Clinical Findings}
-\label{sec:orgheadline24}
-\begin{frame}[label={sec:orgheadline19}]{Initial presentation}
+\label{sec:orgheadline25}
+\begin{frame}[label={sec:orgheadline18}]{Initial presentation}
 \begin{itemize}
 \item Failure to thrive
 \begin{itemize}
@@ -344,6 +332,17 @@ Methylmalonyl CoA epimerase deficiency & 30-300\\
 \end{itemize}
 \end{frame}
 
+\begin{frame}[label={sec:orgheadline19}]{Acute Treatment}
+\begin{itemize}
+\item aggressive intravenous hydration
+\begin{itemize}
+\item efficient renal excretion of MMA
+\end{itemize}
+\item Insulin and glucose \(\to\) analbolism
+\item Acute HGH
+\end{itemize}
+\end{frame}
+
 \begin{frame}[label={sec:orgheadline20}]{Recurrent Symptoms}
 \begin{itemize}
 \item ketotic episodes
@@ -359,7 +358,6 @@ Methylmalonyl CoA epimerase deficiency & 30-300\\
 \item appears linked to incidence of illness
 \end{itemize}
 \item severe hypotonia
-
 \item stroke
 \item hepatomegaly - normal LFTs
 \item \downarrown renal function
@@ -380,7 +378,6 @@ Methylmalonyl CoA epimerase deficiency & 30-300\\
 \item hyperammonemia
 \end{itemize}
 \item more common in apo enzyme defect than Cbl
-
 \item Successful treatment \(\to\) normal IQ
 \item 25 of 33 patients :
 \begin{itemize}
@@ -395,7 +392,6 @@ Methylmalonyl CoA epimerase deficiency & 30-300\\
 \end{itemize}
 \end{frame}
 
-
 \begin{frame}[label={sec:orgheadline23}]{Long-term Treatment}
 \begin{block}{Diet}
 \begin{itemize}
@@ -405,7 +401,6 @@ Methylmalonyl CoA epimerase deficiency & 30-300\\
 \item Urine ketones (daily in infancy)
 \item Monitor weight, nitrogen balance
 \end{itemize}
-
 \item Avoid fasting
 \begin{itemize}
 \item Catabolism
@@ -428,7 +423,9 @@ Methylmalonyl CoA epimerase deficiency & 30-300\\
 \item alanine supplementation
 \end{itemize}
 \end{block}
+\end{frame}
 
+\begin{frame}[label={sec:orgheadline24}]{Long-term Treatment}
 \begin{block}{Medication}
 \begin{itemize}
 \item Production of PA by intestinal bacteria

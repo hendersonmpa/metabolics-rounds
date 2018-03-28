@@ -136,8 +136,8 @@
   to 600 sample capacity per instrument per day.
   - volume is typically 200-400 specimens per instrument per day
   - maintenance issues, repeat specimen analysis.
-** FIA-MS/MS sample 
 
+** FIA-MS/MS sample 
 - Acylcarnitines in the DBS eluate are esterified as butyl esters with butanol-3M HCL
 
 #+BEGIN_LaTeX
@@ -174,7 +174,7 @@
 *** Precursor Ion Scan
 #+BEGIN_LaTeX
 \begin{center}
-\begin{tikzpicture}[]
+\begin{tikzpicture}
 \node[box](ms1)[]{};
 \node[label](ms1u)[above=of ms1,yshift=-3em]{MS1};
 \node[label](ms1l)[below=of ms1,yshift=3em]{scanning};
@@ -206,6 +206,7 @@
 \end{tikzpicture}
 \end{center}
 #+END_LaTeX
+
 
 ** Fragmentation
 #+BEGIN_LaTeX

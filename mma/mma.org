@@ -140,9 +140,9 @@
 \centering
 #+BEGIN_LaTeX
 \vspace{6em}
-\chemname{\chemfig[][scale=.5]{OH-[1]([2]=O)-[7]([2]-)-[1]([2]=O)-[7]S-CoA}}{\tiny D-methylmalonyl-CoA}
+\chemname{\chemfig[][scale=.5]{OH-[1]([2]=O)-[7]([6]<)-[1]([2]=O)-[7]S-CoA}}{\tiny S-methylmalonyl-CoA}
 \hspace{2em}
-\chemname{\chemfig[][scale=.5]{OH-[1]([2]=O)-[7]([6]-)-[1]([2]=O)-[7]S-CoA}}{\tiny L-methylmalonyl-CoA}
+\chemname{\chemfig[][scale=.5]{OH-[1]([2]=O)-[7]([6]<:)-[1]([2]=O)-[7]S-CoA}}{\tiny R-methylmalonyl-CoA}
 \hspace{2em}
 \chemname{\chemfig[][scale=.5]{OH-[1]([2]=O)-[7]([6]-)-[1]([2]=O)-[7]OH}}{\tiny methylmalonic acid}
 #+END_LaTeX
@@ -156,7 +156,7 @@
 - FA
   - \downarrow contribution to urine MMA
 
-[[http://www.genome.jp/kegg-bin/show_pathway?org_name=hsa&mapno=00640&mapscale=&show_description=hide][propionate metabolism - KEGG]]
+[[http://www.genome.jp/kegg-bin/show_pathway?scale=1.0&query=methylmalonyl-CoA&map=hsa00640&scale=&auto_image=&show_description=hide&multi_query=][propionate metabolism - KEGG]]
 
 ** Methylmalonyl-CoA
 
@@ -208,6 +208,8 @@ C3/C2 \ge 0.3 AND C3 \ge 9.0
 - \uparrow glutamine when hyperammonemia
 *** Plasma Acylcarnitines
 - \uparrow propionyl carnitine (C3)
+- \uparrow methylmalonyl carnitine (C4DC)
+
 *** Urine Organic Acids
 - methylmalonic acid
 - 3-hydroxypropionic acid
@@ -305,6 +307,7 @@ C3/C2 \ge 0.3 AND C3 \ge 9.0
   - Daily dose 60 to 100 mg/kg 
 - alanine supplementation
 
+** Long-term Treatment
 *** Medication
 - Production of PA by intestinal bacteria
   - metronidazole
