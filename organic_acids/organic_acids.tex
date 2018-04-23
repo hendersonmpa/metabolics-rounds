@@ -1,19 +1,21 @@
-% Created 2017-09-20 Wed 11:44
+% Created 2018-04-23 Mon 14:58
 \documentclass[presentation, smaller]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{fixltx2e}
 \usepackage{graphicx}
-\usepackage{grffile}
 \usepackage{longtable}
+\usepackage{float}
 \usepackage{wrapfig}
 \usepackage{rotating}
 \usepackage[normalem]{ulem}
 \usepackage{amsmath}
 \usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
 \usepackage{amssymb}
-\usepackage{capt-of}
 \usepackage{hyperref}
+\tolerance=1000
 \hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
 \usepackage{textpos}
 \usepackage[version=4]{mhchem}
@@ -23,20 +25,17 @@
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{verbatim}
+\institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
+\titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
 \usetheme[height=20pt]{Boadilla}
 \usecolortheme[RGB={170,160,80}]{{structure}}
 \author{Matthew Henderson, PhD, FCACB}
 \date{\today}
 \title{Organic Acids in Homo Sapiens}
-\institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
-\titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
 \hypersetup{
- pdfauthor={Matthew Henderson, PhD, FCACB},
- pdftitle={Organic Acids in Homo Sapiens},
- pdfkeywords={},
- pdfsubject={},
- pdfcreator={Emacs 25.2.1 (Org mode 8.3.4)}, 
- pdflang={English}}
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 25.2.1 (Org mode 8.2.10)}}
 \begin{document}
 
 \maketitle
@@ -55,8 +54,13 @@
 % \end{textblock*}}
 
 \section{Background}
-\label{sec:orgheadline4}
-\begin{frame}[label={sec:orgheadline1}]{Nomenclature}
+\label{sec-1}
+\begin{frame}[label=sec-1-1]{Where do they come from?}
+\end{frame}
+
+\begin{frame}[label=sec-1-2]{Why are they here?}
+\end{frame}
+\begin{frame}[label=sec-1-3]{Nomenclature}
 \begin{center}
 \begin{tabular}{lll}
 Length & Monocarboxylic acid & Dicarboxylic acid\\
@@ -77,21 +81,7 @@ C10 & Decanoic (capric) & Sebacic\\
 \end{center}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline2}]{Functional Groups}
-%% Make polymer delimeters
-\newcommand\setpolymerdelim[2]{\def\delimleft{#1}\def\delimright{#2}}
-\def\makebraces[#1,#2]#3#4#5{%
-\edef\delimhalfdim{\the\dimexpr(#1+#2)/2}%
-\edef\delimvshift{\the\dimexpr(#1-#2)/2}%
-\chemmove{%
-\node[at=(#4),yshift=(\delimvshift)]
-{$\left\delimleft\vrule height\delimhalfdim depth\delimhalfdim
-width0pt\right.$};%
-\node[at=(#5),yshift=(\delimvshift)]
-{$\left.\vrule height\delimhalfdim depth\delimhalfdim
-width0pt\right\delimright_{\rlap{$\scriptstyle#3$}}$};}}
-\setpolymerdelim()
-
+\begin{frame}[label=sec-1-4]{Functional Groups}
 \centering
 \chemfig{X-C(-[2]X)(-[6]X)-C(-[2]X)(-[6]X)-C(-[7]OH)=[1]O}
 
@@ -103,11 +93,12 @@ hydrogen & -H\\
 keto & .= O\\
 hydroxyl & -OH\\
 carboxyl & -COOH\\
-side chain & -(CH\(_2\))\(_n\)\\
+side chain & -(CH$_2$)$_n$\\
 \end{tabular}
 \end{center}
 \end{frame}
-\begin{frame}[label={sec:orgheadline3}]{Side Chains}
+
+\begin{frame}[label=sec-1-5]{Side Chains}
 \centering
 \chemfig{X-C(-[2]X)(-[6]X)-C(-[2]X)(-[6]X)-C(-[7]OH)=[1]O}
 
@@ -122,4 +113,66 @@ Butyl & \chemfig{CH_3-CH_2-CH_2-CH_2-}\\
 \end{tabular}
 \end{center}
 \end{frame}
+
+
+\section{Urine Organic Acids by GC-MS}
+\label{sec-2}
+
+\begin{frame}[label=sec-2-1]{Oximation}
+\begin{itemize}
+\item Oximated with 10\% hydroxylamine-HCL
+\begin{itemize}
+\item avoids multiple TMS species due to keto-enol tautomerism
+\end{itemize}
+\end{itemize}
+
+\centering
+\schemedebug{false}
+\schemestart
+\chemname{\chemfig[][scale=.5]{R=[1](-[2]OH)-[7]R}}{\tiny enol}
+\arrow{<=>}
+\chemname{\chemfig[][scale=.5]{R-[1](=[2]O)-[7]R}}{\tiny ketone}
+\+
+\chemname{\chemfig[][scale=.5]{N(<:[::-160]H)(<[::-120]H)-O-[1]H}}{\tiny hydroxylamine}
+\arrow{->}
+\chemname{\chemfig[][scale=.5]{R-[1](=[2]N-[1]OH)-[7]R}}{\tiny ketoxime}
+\schemestop
+\end{frame}
+
+
+\begin{frame}[label=sec-2-2]{BSTFA derivatization}
+\begin{itemize}
+\item Acidified and extracted twice with ethyl ether
+\item Derivatised with BSTFA (N,O-bis(trimethylsilyl)trifluoroacetamide) \footnote{Stalling DL, Gehrke CW, Zumwalt RW. A new silylation
+reagent for amino acids bis(trimethylsilyl)trifluoroacetamide
+(BSTFA). Biochemical and Biophysical Research Communications. 1968 May
+23;31(4):616-22.}
+\begin{itemize}
+\item forms organic acid TMS esters
+\end{itemize}
+\end{itemize}
+
+\centering
+\schemedebug{false}
+\schemestart
+\chemname{\chemfig[][scale=.5]{F{_3}C-C(-[1]OTMS)=[7]NTMS}}{\tiny BSTFA}
+\+
+\chemname{\chemfig[][scale=.5]{R-C(=[1]O)-[7]OH}}{\tiny carboxylic acid}
+\arrow{->}
+\chemname{\chemfig[][scale=.5]{R-C(=[1]O)-[7]OTMS}}{\tiny TMS ester}
+\+
+\chemname{\chemfig[][scale=.5]{F{_3}C-C(=[1]O)-[7]NTMS}}{\tiny TMS amide}
+\schemestop
+\end{frame}
+
+
+\begin{frame}[label=sec-2-3]{Gas Chromatography}
+\end{frame}
+
+\begin{frame}[label=sec-2-4]{Mass-spectroscopy}
+\end{frame}
+
+\begin{frame}[label=sec-2-5]{Reporting}
+\end{frame}
+% Emacs 25.2.1 (Org mode 8.2.10)
 \end{document}
