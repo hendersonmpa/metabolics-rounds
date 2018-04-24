@@ -254,7 +254,7 @@ C3/C2 \ge 0.3 AND C3 \ge 9.0
 ** Acute Treatment
 - aggressive intravenous hydration
   - efficient renal excretion of MMA
-- Insulin and glucose \to analbolism
+- Insulin and glucose \to anabolism
 - Acute HGH
 
 ** Recurrent Symptoms
@@ -270,7 +270,7 @@ C3/C2 \ge 0.3 AND C3 \ge 9.0
 - hepatomegaly - normal LFTs
 - \downarrown renal function
 - pancreatitis
-- Candidasis
+- candidasis
   - MMA inhibits maturation of hematopoietic cells and T cells
 
 ** Neurological Findings
@@ -281,12 +281,12 @@ C3/C2 \ge 0.3 AND C3 \ge 9.0
 - more common in apo enzyme defect than Cbl 
 - Successful treatment \to normal IQ
 - 25 of 33 patients :
-  - ataxia
-  - dystonia
-  - dyskinesia
-  - dsyarthria
-  - chorea
-  - clonus
+  - ataxia = lack of coordination
+  - dystonia = muscle contraction
+  - dyskinesia = involuntary movement
+  - dsyarthria = speech
+  - chorea = rythmic contractions
+  - clonus = jerky movements
   - tremors
 
 ** Long-term Treatment
@@ -305,7 +305,7 @@ C3/C2 \ge 0.3 AND C3 \ge 9.0
 - carnitine
   - excretion of carnitine esters \to detoxification
   - Daily dose 60 to 100 mg/kg 
-- alanine supplementation
+- ?alanine supplementation?
 
 ** Long-term Treatment
 *** Medication
