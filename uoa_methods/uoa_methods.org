@@ -1,4 +1,4 @@
-#+TITLE: Urine Organic Acids in Homo Sapiens
+#+TITLE: Urine Organic Acid Methods
 #+AUTHOR: Matthew Henderson, PhD, FCACB
 #+DATE: \today
 
@@ -65,7 +65,7 @@
 * Background
 ** What are urine organic acids?
 - Water soluble compounds containing \ge one carboxyl group(s) and
-  non-amino functional groups
+  nonamino functional groups
 
 #+BEGIN_LaTeX
 \centering
@@ -123,7 +123,6 @@
 | Butyl      | \chemfig{CH_3-CH_2-CH_2-CH_2-} |
 
 
-* Urine Organic Acids
 ** Where do they come from?
 *** Endogenous Sources
 - Originate from the intermediate metabolism of all major groups of
@@ -140,17 +139,9 @@
 - environment
 - medications
 
-** Why are they measured in urine?
+** Why are they in urine?
 
-- not extensively reabsorbed in the kidney tubules after glomerular
-  filtration
-  - can be present at 100x concentration in blood
-- readily available sample type
-- less invasive than serum
-- Over 500 organic acids have been identified in urine.
-  - clinical metabolics 
-
-** Classes of organic acids detected in the urine of  healthly subjects
+** Urine organic acids detected in health
 
   - Tricarboxylica acid cycle acids
     - citric
@@ -164,6 +155,8 @@
     -  
   - aromatic acids
     - hippuric
+  - 
+    - 
 
 ** Abnormal Urine Organic acids profiles
 
@@ -183,38 +176,56 @@
   - cresol
   - 2-furaldehyde
 
-** Disorders that can be idenfified by Urine Organic Acid analysis
 
-- classic organic acidemias due to inborn errors of amino acid metabolism 
-  - isovaleric acidemia [MIM 243500]
-  - methylmalonic acidemia[s] propionic acidemia [MIM 606054]
-  - glutaric acidemia type I [MIM 231670]
-- as well as other amino acid disorders
-  - phenylketonuria [MIM 261600]
-  - tyrosinemia type I [MIM 276700]
-  - alkaptonuria [MIM 203500]
-  - 3-methylglutaconic aciduria type I [MIM 250950]
-  - maple syrup urine disease [MIM 248600]
-- disorders of the urea cycle - orotic acid
-- fatty acid oxidation
-  - short-chain acyl-CoA dehydrogenase deficiency [MIM 201470]
-  - medium-chain acyl-CoA dehydrogenase deficiency [MIM 201450]
-  - multiple acyl-CoA dehydrogenase deficiency [MIM 231680]
-  - energy metabolism (pyruvate dehydrogenase deficiency
-  - fumarase deficiency [MIM 606812]
-  - SUCLA2 deficiency [MIM 603921]
-- purine and pyrimidine metabolism
-  - uridine monophosphate synthetase deficiency [MIM 613891]
-  - dihydropyrimidine dehydrogenase deficiency [MIM 274270]
-- neurotransmission
-  - aromatic L-amino acid decarboxylase deficiency [MIM 608643]
-  - ethylmalonicencephalopathy pMIM 602473)
-  - Canavan disease [MIM 271900]
-  - glutathione synthetase deficiency [MIM 266130]
-  - glycerol kinase deficiency [MIM 307030]
-  - primary hyperoxaluria type I [MIM 259900]
-  - primary hyperoxaluria type II [MIM 260000]
+* Urine Organic Acids by GC-MS
 
-** Next time
+** Oximation
+- Oximated with 10% hydroxylamine-HCL
+  - avoids multiple TMS species due to keto-enol tautomerism
 
-- Urine organic acid methods
+#+BEGIN_LaTeX
+\centering
+\schemedebug{false}
+\schemestart
+\chemname{\chemfig[][scale=.5]{R=[1](-[2]OH)-[7]R}}{\tiny enol}
+\arrow{<=>}
+\chemname{\chemfig[][scale=.5]{R-[1](=[2]O)-[7]R}}{\tiny ketone}
+\+
+\chemname{\chemfig[][scale=.5]{N(<:[::-160]H)(<[::-120]H)-O-[1]H}}{\tiny hydroxylamine}
+\arrow{->}
+\chemname{\chemfig[][scale=.5]{R-[1](=[2]N-[1]OH)-[7]R}}{\tiny ketoxime}
+\schemestop
+#+END_LaTeX
+
+
+** BSTFA Derivatisation
+- Acidified and extracted twice with ethyl ether 
+- Derivatised with BSTFA (N,O-bis(trimethylsilyl)trifluoroacetamide) [fn:stalling]
+  - forms organic acid TMS esters
+
+#+BEGIN_LaTeX
+\centering
+\schemedebug{false}
+\schemestart
+\chemname{\chemfig[][scale=.5]{F{_3}C-C(-[1]OTMS)=[7]NTMS}}{\tiny BSTFA}
+\+
+\chemname{\chemfig[][scale=.5]{R-C(=[1]O)-[7]OH}}{\tiny carboxylic acid}
+\arrow{->}
+\chemname{\chemfig[][scale=.5]{R-C(=[1]O)-[7]OTMS}}{\tiny TMS ester}
+\+
+\chemname{\chemfig[][scale=.5]{F{_3}C-C(=[1]O)-[7]NTMS}}{\tiny TMS amide}
+\schemestop
+#+END_LaTeX
+
+
+[fn:stalling] Stalling DL, Gehrke CW, Zumwalt RW. A new silylation
+reagent for amino acids bis(trimethylsilyl)trifluoroacetamide
+(BSTFA). Biochemical and Biophysical Research Communications. 1968 May
+23;31(4):616-22.
+
+
+** Gas Chromatography
+
+** Mass-spectroscopy
+
+** Reporting

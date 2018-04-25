@@ -61,7 +61,6 @@
 \tikzstyle{arrow} = [thick,->,>=stealth]
 \tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
 
-
 #+END_LaTeX
 
 * Introduction

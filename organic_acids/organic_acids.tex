@@ -1,66 +1,100 @@
-% Created 2018-04-23 Mon 14:58
+% Created 2018-04-25 Wed 17:03
 \documentclass[presentation, smaller]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{fixltx2e}
 \usepackage{graphicx}
+\usepackage{grffile}
 \usepackage{longtable}
-\usepackage{float}
 \usepackage{wrapfig}
 \usepackage{rotating}
 \usepackage[normalem]{ulem}
 \usepackage{amsmath}
 \usepackage{textcomp}
-\usepackage{marvosym}
-\usepackage{wasysym}
 \usepackage{amssymb}
+\usepackage{capt-of}
 \usepackage{hyperref}
-\tolerance=1000
-\hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
+\hypersetup{colorlinks,linkcolor=gray,urlcolor=blue}
 \usepackage{textpos}
+\usepackage{textgreek}
 \usepackage[version=4]{mhchem}
 \usepackage{chemfig}
 \usepackage{siunitx}
+\usepackage{gensymb}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{verbatim}
-\institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
-\titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+\AtBeginSection[]{\begin{frame}\tableofcontents[currentsection] \end{frame}}
 \usetheme[height=20pt]{Boadilla}
 \usecolortheme[RGB={170,160,80}]{{structure}}
 \author{Matthew Henderson, PhD, FCACB}
 \date{\today}
-\title{Organic Acids in Homo Sapiens}
+\title{Urine Organic Acids in Homo Sapiens}
+\institute[NSO]{Newborn Screening Ontario}
+\titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
 \hypersetup{
-  pdfkeywords={},
-  pdfsubject={},
-  pdfcreator={Emacs 25.2.1 (Org mode 8.2.10)}}
+ pdfauthor={Matthew Henderson, PhD, FCACB},
+ pdftitle={Urine Organic Acids in Homo Sapiens},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.2.1 (Org mode 8.3.4)}, 
+ pdflang={English}}
 \begin{document}
 
 \maketitle
-\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
-    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
-}
+\begin{frame}{Outline}
+\tableofcontents
+\end{frame}
 
-\vspace{220pt}}
+
+\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}}
+
+\vspace{220pt}
 \beamertemplatenavigationsymbolsempty
 \setbeamertemplate{caption}[numbered]
 \setbeamerfont{caption}{size=\tiny}
-
 % \addtobeamertemplate{frametitle}{}{%
 % \begin{textblock*}{100mm}(.85\textwidth,-1cm)
 % \includegraphics[height=1cm,width=2cm]{cat}
 % \end{textblock*}}
 
+
+\tikzstyle{chemical} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=none]
+\tikzstyle{hardware} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=gray!30]
+\tikzstyle{ms} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{msw} = [rectangle, rounded corners, text width=7em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{label} = [rectangle,text width=8em, minimum height=1em, text centered, draw=none, fill=none]
+\tikzstyle{hl} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=red!30]
+\tikzstyle{box} = [rectangle, rounded corners, text width=5em, minimum height=5em,text centered, draw=black, fill=none]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
+
 \section{Background}
-\label{sec-1}
-\begin{frame}[label=sec-1-1]{Where do they come from?}
+\label{sec:orgheadline5}
+\begin{frame}[label={sec:orgheadline1}]{What are urine organic acids?}
+\begin{itemize}
+\item Water soluble compounds containing \(\ge\) one carboxyl group(s) and
+non-amino functional groups
+\end{itemize}
+
+\centering
+\chemfig{X-C(-[2]X)(-[6]X)-C(-[2]X)(-[6]X)-C(-[7]OH)=[1]O}
+
+\begin{block}{Acylglycines}
+\begin{itemize}
+\item Acylglycines are also detected in UOA analysis
+\begin{itemize}
+\item conjugation of acyl-CoA species to glycine
+\item catalysed by glycine N-acylase
+\end{itemize}
+\end{itemize}
+\end{block}
 \end{frame}
 
-\begin{frame}[label=sec-1-2]{Why are they here?}
-\end{frame}
-\begin{frame}[label=sec-1-3]{Nomenclature}
+\begin{frame}[label={sec:orgheadline2}]{Nomenclature}
 \begin{center}
 \begin{tabular}{lll}
 Length & Monocarboxylic acid & Dicarboxylic acid\\
@@ -81,7 +115,8 @@ C10 & Decanoic (capric) & Sebacic\\
 \end{center}
 \end{frame}
 
-\begin{frame}[label=sec-1-4]{Functional Groups}
+
+\begin{frame}[label={sec:orgheadline3}]{Functional Groups}
 \centering
 \chemfig{X-C(-[2]X)(-[6]X)-C(-[2]X)(-[6]X)-C(-[7]OH)=[1]O}
 
@@ -93,12 +128,12 @@ hydrogen & -H\\
 keto & .= O\\
 hydroxyl & -OH\\
 carboxyl & -COOH\\
-side chain & -(CH$_2$)$_n$\\
+side chain & -(CH\(_2\))\(_n\)\\
 \end{tabular}
 \end{center}
 \end{frame}
 
-\begin{frame}[label=sec-1-5]{Side Chains}
+\begin{frame}[label={sec:orgheadline4}]{Side Chains}
 \centering
 \chemfig{X-C(-[2]X)(-[6]X)-C(-[2]X)(-[6]X)-C(-[7]OH)=[1]O}
 
@@ -115,64 +150,153 @@ Butyl & \chemfig{CH_3-CH_2-CH_2-CH_2-}\\
 \end{frame}
 
 
-\section{Urine Organic Acids by GC-MS}
-\label{sec-2}
+\section{Urine Organic Acids}
+\label{sec:orgheadline12}
+\begin{frame}[label={sec:orgheadline6}]{Where do they come from?}
+\begin{block}{Endogenous Sources}
+\begin{itemize}
+\item Originate from the intermediate metabolism of all major groups of
+organic cellular components
+\begin{itemize}
+\item amino acids
+\item lipids
+\item nucleotides
+\item carbohydrates
+\item nucleic acids
+\item steroids
+\end{itemize}
+\end{itemize}
+\end{block}
 
-\begin{frame}[label=sec-2-1]{Oximation}
+\begin{block}{Exogenous}
 \begin{itemize}
-\item Oximated with 10\% hydroxylamine-HCL
+\item food
+\item environment
+\item medications
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline7}]{Why are they measured in urine?}
 \begin{itemize}
-\item avoids multiple TMS species due to keto-enol tautomerism
+\item not extensively reabsorbed in the kidney tubules after glomerular
+filtration
+\begin{itemize}
+\item can be present at 100x concentration in blood
+\end{itemize}
+\item readily available sample type
+\item less invasive than serum
+\item Over 500 organic acids have been identified in urine.
+\begin{itemize}
+\item clinical metabolics
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline8}]{Classes of organic acids detected in the urine of  healthly subjects}
+\begin{itemize}
+\item Tricarboxylica acid cycle acids
+\begin{itemize}
+\item citric
+\end{itemize}
+\item hydroxyaliphatic acids
+\begin{itemize}
+\item 3-hydroxybutyric
+\end{itemize}
+\item aliphatic keto acids
+\begin{itemize}
+\item pyrvic
+\end{itemize}
+\item aliphatic acids
+\begin{itemize}
+\item oxalic
+\end{itemize}
+\item aldonic and deoxyaldonic acids (sugar acids)
+\begin{itemize}
+\item 
+\end{itemize}
+\item aromatic acids
+\begin{itemize}
+\item hippuric
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline9}]{Abnormal Urine Organic acids profiles}
+\begin{itemize}
+\item Elevated concentration of normal metabolites
+\begin{itemize}
+\item fumaric acid in fumarase deficiency
+\item adipic, suberic, and sebacic acids in MCADD
+\item ketones in fasting
+\begin{itemize}
+\item 3-hydroxybutyric
+\item acetoacetic
 \end{itemize}
 \end{itemize}
 
-\centering
-\schemedebug{false}
-\schemestart
-\chemname{\chemfig[][scale=.5]{R=[1](-[2]OH)-[7]R}}{\tiny enol}
-\arrow{<=>}
-\chemname{\chemfig[][scale=.5]{R-[1](=[2]O)-[7]R}}{\tiny ketone}
-\+
-\chemname{\chemfig[][scale=.5]{N(<:[::-160]H)(<[::-120]H)-O-[1]H}}{\tiny hydroxylamine}
-\arrow{->}
-\chemname{\chemfig[][scale=.5]{R-[1](=[2]N-[1]OH)-[7]R}}{\tiny ketoxime}
-\schemestop
-\end{frame}
-
-
-\begin{frame}[label=sec-2-2]{BSTFA derivatization}
+\item Pathological metabolites
 \begin{itemize}
-\item Acidified and extracted twice with ethyl ether
-\item Derivatised with BSTFA (N,O-bis(trimethylsilyl)trifluoroacetamide) \footnote{Stalling DL, Gehrke CW, Zumwalt RW. A new silylation
-reagent for amino acids bis(trimethylsilyl)trifluoroacetamide
-(BSTFA). Biochemical and Biophysical Research Communications. 1968 May
-23;31(4):616-22.}
-\begin{itemize}
-\item forms organic acid TMS esters
-\end{itemize}
+\item succinylacetone, methylcitric acid
 \end{itemize}
 
-\centering
-\schemedebug{false}
-\schemestart
-\chemname{\chemfig[][scale=.5]{F{_3}C-C(-[1]OTMS)=[7]NTMS}}{\tiny BSTFA}
-\+
-\chemname{\chemfig[][scale=.5]{R-C(=[1]O)-[7]OH}}{\tiny carboxylic acid}
-\arrow{->}
-\chemname{\chemfig[][scale=.5]{R-C(=[1]O)-[7]OTMS}}{\tiny TMS ester}
-\+
-\chemname{\chemfig[][scale=.5]{F{_3}C-C(=[1]O)-[7]NTMS}}{\tiny TMS amide}
-\schemestop
+\item Food, medications, environment
+\begin{itemize}
+\item ethosuximide
+\item adipic acid
+\item cresol
+\item 2-furaldehyde
+\end{itemize}
+\end{itemize}
 \end{frame}
 
-
-\begin{frame}[label=sec-2-3]{Gas Chromatography}
+\begin{frame}[label={sec:orgheadline10}]{Disorders that can be idenfified by Urine Organic Acid analysis}
+\begin{itemize}
+\item classic organic acidemias due to inborn errors of amino acid metabolism 
+\begin{itemize}
+\item isovaleric acidemia [MIM 243500]
+\item methylmalonic acidemia[s] propionic acidemia [MIM 606054]
+\item glutaric acidemia type I [MIM 231670]
+\end{itemize}
+\item as well as other amino acid disorders
+\begin{itemize}
+\item phenylketonuria [MIM 261600]
+\item tyrosinemia type I [MIM 276700]
+\item alkaptonuria [MIM 203500]
+\item 3-methylglutaconic aciduria type I [MIM 250950]
+\item maple syrup urine disease [MIM 248600]
+\end{itemize}
+\item disorders of the urea cycle - orotic acid
+\item fatty acid oxidation
+\begin{itemize}
+\item short-chain acyl-CoA dehydrogenase deficiency [MIM 201470]
+\item medium-chain acyl-CoA dehydrogenase deficiency [MIM 201450]
+\item multiple acyl-CoA dehydrogenase deficiency [MIM 231680]
+\item energy metabolism (pyruvate dehydrogenase deficiency
+\item fumarase deficiency [MIM 606812]
+\item SUCLA2 deficiency [MIM 603921]
+\end{itemize}
+\item purine and pyrimidine metabolism
+\begin{itemize}
+\item uridine monophosphate synthetase deficiency [MIM 613891]
+\item dihydropyrimidine dehydrogenase deficiency [MIM 274270]
+\end{itemize}
+\item neurotransmission
+\begin{itemize}
+\item aromatic L-amino acid decarboxylase deficiency [MIM 608643]
+\item ethylmalonicencephalopathy pMIM 602473)
+\item Canavan disease [MIM 271900]
+\item glutathione synthetase deficiency [MIM 266130]
+\item glycerol kinase deficiency [MIM 307030]
+\item primary hyperoxaluria type I [MIM 259900]
+\item primary hyperoxaluria type II [MIM 260000]
+\end{itemize}
+\end{itemize}
 \end{frame}
 
-\begin{frame}[label=sec-2-4]{Mass-spectroscopy}
+\begin{frame}[label={sec:orgheadline11}]{Next time}
+\begin{itemize}
+\item Urine organic acid methods
+\end{itemize}
 \end{frame}
-
-\begin{frame}[label=sec-2-5]{Reporting}
-\end{frame}
-% Emacs 25.2.1 (Org mode 8.2.10)
 \end{document}
