@@ -144,7 +144,7 @@ acids and related substances. The Journal of Biological Chemistry,
   - IA, IB, II, and III
   - E1\alpha{}, E1\beta{}, E2, and E3
 
-** COMMENT Regulation of the BCKD Metabolic Machine
+** Regulation of the BCKD Metabolic Machine
 *** Feedback Inhibition
 - product inhibition by branched chain acyl-CoAs
 - \uparrow NADH:NAD^{+} ratio
@@ -214,7 +214,7 @@ Nat. Struct. Biol. 6: 785-792, 2000).
 *** Confirmation
 - Screen Positive :: LEU/ALA \ge 1.0 AND LEU \ge 300
 
-** COMMENT  Newborn Screening ACT Sheet
+** Newborn Screening ACT Sheet
 *** YOU SHOULD TAKE THE FOLLOWING ACTIONS IMMEDIATELY:
 - Contact family to inform them of the newborn screening result and
   ascertain clinical status (poor feeding,vomiting, lethargy,
@@ -234,7 +234,7 @@ Nat. Struct. Biol. 6: 785-792, 2000).
 
 [[./figures/leu_elevated.png]]
 
-** COMMENT Hydroxyprolinemia
+** Hydroxyprolinemia
 - hydroxyproline is primarily derived from collagen turn-over
 - hydroxyprolinemia is due to a defect in hydroxyproline dehydrogenase (HYDH)
 - Hydroxyprolinemia is probably benign.
@@ -255,7 +255,7 @@ Nat. Struct. Biol. 6: 785-792, 2000).
 - share the same parent and product in FIA-MS/MS with butanol derivatization
   - 188 m/z \to 86 m/z , NL of 102 
 
-** COMMENT Clinical Considerations
+** Clinical Considerations
 - MSUD presents in the neonate with:
   - feeding intolerance
   - failure to thrive
@@ -313,7 +313,7 @@ Nat. Struct. Biol. 6: 785-792, 2000).
   that exposure to elevated plasma leucine levels has a negative
   impact on cognitive outcome, as measured by IQ testing
 
-** COMMENT Next time
+** Next time
 
 - Disorders of Branched Chain Amino Acid Catabolism
   - Part 2: Branch Chain Organic Acidurias

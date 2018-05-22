@@ -1,4 +1,4 @@
-% Created 2018-03-21 Wed 18:53
+% Created 2018-05-07 Mon 14:44
 \documentclass[presentation, smaller]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -82,7 +82,7 @@
 \end{frame}
 
 \section{Biochemistry}
-\label{sec:orgheadline12}
+\label{sec:orgheadline13}
 \begin{frame}[label={sec:orgheadline4}]{Maple Syrup Urine Disease}
 \begin{itemize}
 \item Only BCAA disorder detected by plasma amino acids.
@@ -177,19 +177,40 @@ different stereochemistry around its beta carbon.
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline10}]{Structure of the BCKD Metabolic Machine}
+\begin{frame}[label={sec:orgheadline10}]{Regulation of the BCKD Metabolic Machine}
+\begin{block}{Feedback Inhibition}
+\begin{itemize}
+\item product inhibition by branched chain acyl-CoAs
+\item \(\uparrow\) NADH:NAD\(^{\text{+}}\) ratio
+\end{itemize}
+\end{block}
+\begin{block}{Phosphorylation}
+\begin{itemize}
+\item Inhibited by phosphorylation of E1\(\alpha\) Ser 293
+\item \(\uparrow\) protein diet, adrenaline and glucogon dephosphorylate BCKD
+\item Phenylbutyrate prevents dephosphorylation
+\end{itemize}
+\end{block}
+\begin{block}{Gene Expression}
+\begin{itemize}
+\item subunit expression differentially regulated
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline11}]{Structure of the BCKD Metabolic Machine}
 \centering
 \includegraphics[height=0.90\textheight]{./figures/bckdmm.jpg}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline11}]{Leucine}
+\begin{frame}[label={sec:orgheadline12}]{Leucine}
 \centering
 \includegraphics[width=.9\linewidth]{./figures/leu.png}
 \end{frame}
 
 \section{Diagnosis}
-\label{sec:orgheadline15}
-\begin{frame}[label={sec:orgheadline13}]{NSO Screening Logic}
+\label{sec:orgheadline19}
+\begin{frame}[label={sec:orgheadline14}]{NSO Screening Logic}
 \begin{block}{Screening}
 \begin{description}
 \item[{Inital positive}] LEU/ALA \(\ge\) 0.85 AND LEU \(\ge\) 250
@@ -212,13 +233,83 @@ different stereochemistry around its beta carbon.
 \end{block}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline14}]{Diagnostic Evaluation}
+\begin{frame}[label={sec:orgheadline15}]{Newborn Screening ACT Sheet}
+\begin{block}{YOU SHOULD TAKE THE FOLLOWING ACTIONS IMMEDIATELY:}
+\begin{itemize}
+\item Contact family to inform them of the newborn screening result and
+ascertain clinical status (poor feeding,vomiting, lethargy,
+tachypnea).
+\item Consult with pediatric metabolic specialist.
+\item Evaluate the newborn (poor feeding, lethargy, tachypnea, alternating
+hypertonia/hypotonia, seizures).
+\item If any sign is present or infant is ill, transport to hospital for
+further treatment in consultation with metabolic specialist.
+\item Initiate timely confirmatory/diagnostic testing and management, as
+recommended by specialist.
+\item Provide the family with basic information about MSUD and dietary
+management.
+\item Report findings to newborn screening program.
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline16}]{Diagnostic Evaluation}
 \includegraphics[width=.9\linewidth]{./figures/leu_elevated.png}
 \end{frame}
 
+\begin{frame}[label={sec:orgheadline17}]{Hydroxyprolinemia}
+\begin{itemize}
+\item hydroxyproline is primarily derived from collagen turn-over
+\item hydroxyprolinemia is due to a defect in hydroxyproline dehydrogenase (HYDH)
+\item Hydroxyprolinemia is probably benign.
+\end{itemize}
+
+\centering
+\schemedebug{false}
+\schemestart
+\chemname{\chemfig[][scale=.55]{COO^{-}>[6]*5(-^{+}H_2N--(<:[7]OH)--)}}{\small hydroyproline}
+\arrow{->[{\tiny HYDH}]}
+\chemname{\chemfig[][scale=.55]{COO^{-}>[6]*5(-H_N^{+}=-(<:[7]OH)--)}}{\small hydroyproline}
+\arrow{->}
+\schemestop
+
+\begin{itemize}
+\item hydroxyproline, leucine, isoleucine and alloisoleucine are isobaric
+\begin{itemize}
+\item commonly termed as "Xle"
+\end{itemize}
+\item share the same parent and product in FIA-MS/MS with butanol derivatization
+\begin{itemize}
+\item 188 m/z \(\to\) 86 m/z , NL of 102
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline18}]{Clinical Considerations}
+\begin{itemize}
+\item MSUD presents in the neonate with:
+\begin{itemize}
+\item feeding intolerance
+\item failure to thrive
+\item vomiting
+\item lethargy
+\item maple syrup odor to urine and cerumen.
+\end{itemize}
+\item If untreated, it will progress to:
+\begin{itemize}
+\item irreversible mental retardation
+\item hyperactivity
+\item failure to thrive
+\item seizures
+\item coma
+\item cerebral edema
+\end{itemize}
+\end{itemize}
+\end{frame}
+
 \section{Treatment}
-\label{sec:orgheadline19}
-\begin{frame}[label={sec:orgheadline16}]{Acute Management in the Newborn}
+\label{sec:orgheadline24}
+\begin{frame}[label={sec:orgheadline20}]{Acute Management in the Newborn}
 \begin{itemize}
 \item Metabolic decompensation
 \begin{itemize}
@@ -237,7 +328,7 @@ different stereochemistry around its beta carbon.
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline17}]{Long-term management}
+\begin{frame}[label={sec:orgheadline21}]{Long-term management}
 \begin{itemize}
 \item Similar principle to PKU
 \item BCAA free amino acid supplementation
@@ -258,7 +349,7 @@ thiamine-responsive form of MSUD
 \end{block}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline18}]{Prognosis}
+\begin{frame}[label={sec:orgheadline22}]{Prognosis}
 \begin{itemize}
 \item The age at diagnosis and the subsequent course are the most
 important determinants.
@@ -270,6 +361,14 @@ important determinants.
 \item only a few mild episodes of metabolic decompensation.
 \end{itemize}
 \item Some are now college graduates in their 20s and 30s.
+\end{itemize}
+\end{itemize}
+\end{frame}
+\begin{frame}[label={sec:orgheadline23}]{Next time}
+\begin{itemize}
+\item Disorders of Branched Chain Amino Acid Catabolism
+\begin{itemize}
+\item Part 2: Branch Chain Organic Acidurias
 \end{itemize}
 \end{itemize}
 \end{frame}
