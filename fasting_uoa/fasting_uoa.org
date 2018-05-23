@@ -76,17 +76,48 @@
   (DC6), suberic (DC8), and sebacic (DC10) acids?
 
 ** Fasting Urine Organic Acids
-- Many sample are sent from the ED or ICU in cases or prolonged
+- Many samples are sent from the ED or ICU in cases of prolonged
   fasting, vomiting, dehydration.
-  - Lactate
+
+- Urine organic acid results include:
+  - lactate
   - urea
-  - Ketones
+  - ketones
   - BCAA intermediate metabolites
   - dicarboxylic acids
   - NSAIDs
 
-** Glucose Sources with Fasting
 
+** Clinical History 
+
+- a 5 yo female who had come to the ED twice in the last year with
+  vomiting, dehydration and hypoglycemia.
+
+- urine organic acids elevation in alpha-ketoacids 
+  - 2-ketoisocaproic
+  - 2-ketoisovaleric
+  - 2-keto-3-methylvaleric
+  - urine creatinine = 4,113 umol/L
+
+- Plasma amino acids performed on a sample drawn at the same time
+  revealed a small elevation in BCAAs:
+  - Val = 608
+  - Ile = 293
+  - Leu = 484
+  - Allo-Ile = 7
+
+- All amino acids and organic acids were normal in the convalescent
+  sample.
+
+- *Ketotic dicarboxylic aciduria*
+
+** Fasting Profile
+[[./figures/fasting_rotate.png]]
+
+** Convalescent Profile
+[[./figures/convalescent_rotate.png]]
+
+** Glucose Sources with Fasting
 [[./figures/fasting_graph1.pdf]]
 
 \tiny
@@ -118,15 +149,16 @@ courtesy of SIMD-NAMA
   - acetoacetic acid
 
 
-** Ketotic Hypoglycemia in IMD
+** Ketotic Hypoglycemia does not rule out an IMD
+
 - Other conditions which can present with ketotic hypoglycaemia are:
   - FAOD: VLCADD, MCADD 
     - inappropriately low ketones
 - intermediate form of MSUD
-- organic acidaemia, particularly methylmalonic and isovaleric acidaemia
+- organic acidaemia: methylmalonic and isovaleric acidaemia
 - multiple carboxylase deficiency
-- defects of gluconeogenesis, such as glycogen storage disease type
-  1a where hepatomegaly is present
+- defects of gluconeogenesis,
+  - such as glycogen storage disease type 1a
 
 **  Dicarboxylic Aciduria
 
@@ -144,18 +176,16 @@ courtesy of SIMD-NAMA
 - All fatty acid oxidation defects will permit production of ketones.
 
 ** BCAA metabolites
-- 2-ketoisocaproic
-- 3-keto-3-methylvalerate
-  - 2-methyl-3-hydroxybutyric
-- 2-ketoisovaleric
-  - 3-hydroxyisobutyric
-
-
+\centering
+#+ATTR_LATEX: :height 0.85\textheight
+[[./figures/bcaa.png]]
 
 ** Dehydration
-
 - Urine Creatinine > 4,000 umol/L
-- 3-hydroxypropionic
-- 3-hydroxyisovaleric
-- 3-methylglutaconic
+
+- 3-hydroxypropionic - PA
+- 3-hydroxyisovaleric - IVA
+- 3-methylglutaconic - 3-methylglutaconic aciduria
+
+
 
