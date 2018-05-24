@@ -62,7 +62,7 @@
 
 #+END_LaTeX
 
-* Background
+* Fasting Urine Organic Acids
 ** Critical Sample
 - Abnormal urinary organic acid profiles of patients with FAOD may
   occur only during acute episodes of hypoglycemia and/or fasting.
@@ -85,11 +85,24 @@
   - ketones
   - BCAA intermediate metabolites
   - dicarboxylic acids
-  - NSAIDs
+  - ibuprofen
 
+** Ketotic Hypoglycemia does not rule out an IMD
+
+- Metabolic Disorders can present with ketotic hypoglycaemia include [fn:wraige]:
+  - FAOD: VLCADD, MCADD 
+    - inappropriately low ketones
+- intermediate form of MSUD
+- organic acidaemia: methylmalonic and isovaleric acidaemia
+- multiple carboxylase deficiency
+- defects of gluconeogenesis,
+  - such as glycogen storage disease type 1a
+
+[fn:wraige] Wraige, E., Champion, M. P., Turner, C., & Dalton,
+R. N. (2002). Fat oxidation defect presenting with overwhelming
+ketonuria. Archives of Disease in Childhood, 87(5), 428–429. 
 
 ** Clinical History 
-
 - a 5 yo female who had come to the ED twice in the last year with
   vomiting, dehydration and hypoglycemia.
 
@@ -106,10 +119,10 @@
   - Leu = 484
   - Allo-Ile = 7
 
-- All amino acids and organic acids were normal in the convalescent
-  sample.
+- Marked elevation of C4OH and long chain ACs.
 
-- *Ketotic dicarboxylic aciduria*
+- All amino acids, acylcarnitines and organic acids were normal in the convalescent
+  sample.
 
 ** Fasting Profile
 [[./figures/fasting_rotate.png]]
@@ -149,16 +162,6 @@ courtesy of SIMD-NAMA
   - acetoacetic acid
 
 
-** Ketotic Hypoglycemia does not rule out an IMD
-
-- Other conditions which can present with ketotic hypoglycaemia are:
-  - FAOD: VLCADD, MCADD 
-    - inappropriately low ketones
-- intermediate form of MSUD
-- organic acidaemia: methylmalonic and isovaleric acidaemia
-- multiple carboxylase deficiency
-- defects of gluconeogenesis,
-  - such as glycogen storage disease type 1a
 
 **  Dicarboxylic Aciduria
 
@@ -181,6 +184,9 @@ courtesy of SIMD-NAMA
 [[./figures/bcaa.png]]
 
 ** Dehydration
+
+- Concentrated samples results in numerous potentially significant organic acid peaks
+
 - Urine Creatinine > 4,000 umol/L
 
 - 3-hydroxypropionic - PA
@@ -188,4 +194,33 @@ courtesy of SIMD-NAMA
 - 3-methylglutaconic - 3-methylglutaconic aciduria
 
 
+
+** Interpretation of Fasting Urine Organic Acid 
+
+- Review biochemistry
+  - lactate
+  - ammonia
+  - blood gases
+  - glucose
+  - urine creatinine
+  - urinalysis
+- Review AA and AC results
+- Look for appropriate elevation of ketones
+- Relative concentrations of dicarboxylic acids
+  - DC6 > DC8 > DC10
+- Urine sample concentration
+
+- Comment on presence of:
+  - lactate
+  - ketones
+  - dicarboxylic acids
+  - elevated peaks / umol creatinine
+  - medications
+
+
+
+
+Interpretive comment:
+
+- Request a convalescent sample?
 
