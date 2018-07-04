@@ -1,0 +1,202 @@
+#+TITLE: Laboratory diagnosis of biotinidase deficiency: 2017 update
+#+AUTHOR: Matthew Henderson, PhD, FCACB
+#+DATE: \today
+
+:PROPERTIES:
+#+DRAWERS: PROPERTIES
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [presentation, smaller]
+# #+BEAMER_THEME: Ilmenau [height=20pt]
+# #+BEAMER_THEME: Szeged  [height=20pt]
+#+BEAMER_THEME: Boadilla [height=20pt]
+#+BEAMER_COLOR_THEME: [RGB={170,160,80}]{structure}
+#+BEAMER_FRAME_LEVEL: 2
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+OPTIONS: H:2 toc:nil
+#+STARTUP: beamer
+#+STARTUP: overview
+#+STARTUP: hidestars
+#+STARTUP: indent
+# #+BEAMER_HEADER: \subtitle{Document subtitle}
+#+BEAMER_HEADER: \institute[NSO]{Newborn Screening Ontario}
+#+BEAMER_HEADER: \titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
+#+latex_header: \hypersetup{colorlinks,linkcolor=gray,urlcolor=blue}
+#+LaTeX_header: \usepackage{textpos}
+#+LaTeX_header: \usepackage{textgreek}
+#+LaTeX_header: \usepackage[version=4]{mhchem}
+#+LaTeX_header: \usepackage{chemfig}
+#+LaTeX_header: \usepackage{siunitx}
+#+LaTeX_header: \usepackage{gensymb}
+#+LaTex_HEADER: \usepackage[usenames,dvipsnames]{xcolor}
+#+LaTeX_HEADER: \usepackage[T1]{fontenc}
+#+LaTeX_HEADER: \usepackage{lmodern}
+#+LaTeX_HEADER: \usepackage{verbatim}
+#+LaTeX_HEADER: \usepackage{tikz}
+#+LaTeX_HEADER: \usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+# #+LaTeX_HEADER: \AtBeginSection[]{\begin{frame}\tableofcontents[currentsection] \end{frame}}
+:END:
+
+#+BEGIN_LaTeX
+\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}}
+
+\vspace{220pt}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\tiny}
+% \addtobeamertemplate{frametitle}{}{%
+% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+% \includegraphics[height=1cm,width=2cm]{cat}
+% \end{textblock*}}
+
+
+\tikzstyle{chemical} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=none]
+\tikzstyle{hardware} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=gray!30]
+\tikzstyle{ms} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{msw} = [rectangle, rounded corners, text width=7em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{label} = [rectangle,text width=8em, minimum height=1em, text centered, draw=none, fill=none]
+\tikzstyle{hl} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=red!30]
+\tikzstyle{box} = [rectangle, rounded corners, text width=5em, minimum height=5em,text centered, draw=black, fill=none]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
+
+
+#+END_LaTeX
+
+* Background
+
+** Biotinidase Deficiency
+
+- autosomal recessively inherited disorder of biotin recycling
+  - associated with secondary alterations in amino acid, carbohydrate,
+    and fatty acid metabolism.
+- caused by absent or markedly deficient activity of biotinidase
+  - cytosolic enzyme that liberates biotin from biocytin during the
+    normal proteolytic turnover of holocarboxylases and other biotiny-
+    lated proteins.
+
+- Based on newborn screening outcome data from 2006, the incidence of
+  profound biotinidase deficiency in the United States is estimated at
+  1/80,000 births
+- partial biotinidase deficiency between 1/31,000 and 1/40,000
+
+** Biotinidase Deficiency
+
+- Diagnosis of biotinidase deficiency is based on demonstrating
+  deficient enzyme activity in serum or plasma
+
+- Patients with profound biotinidase deficiency have less than 10% of
+  mean normal serum activity
+
+- Patients with the partial biotinidase deficiency variant have 10–30%
+  of mean normal serum activity
+  - are largely asymptomatic
+
+- Confirmation of biotinidase deficiency by DNA analysis, by either
+  allele-targeted methods or full-gene sequencing, may be useful.
+
+
+** Biotin Cycle
+
+[[./figures/biot_cycle.png]]
+
+
+** Biotinidase
+
+- Biotinidase is a monomeric enzyme encoded by a single gene (BTD) located on chromosome 3p25
+  - comprises 543 amino acid residues, including 41 amino acids of a potential signal peptide.
+
+- Three publicly available databases of biotinidase variants:
+  - [[https://grenada.lumc.nl/LOVD2/shared1/home.php?select_db=BTD][Leiden Open Variation Database]]
+  - [[https://www.ncbi.nlm.nih.gov/clinvar/][ClinVar]]
+  - [[http://www.arup.utah.edu/database/BTD/BTD_welcome.php][ARUP:Biotinidase Deficiency and BTD]]
+
+- 204 biotinidase variants are consolidated in the ARUP database,
+  - >150 categorized as pathogenic
+  - 145 missense changes
+  - Four common pathogenic variants cause profound biotinidase deficiency.
+
+** Pathogenic Variants
+- Among children ascertained because of clinical symptoms, the two
+  most commonly reported variants are:
+
+  - c.98_104delinsTCC in exon 2
+    - seven-base deletion/three-base insertion
+    - occurring in at least one allele in approximately 50% of individuals
+
+  - p.Arg538Cys in exon 4
+    - occurring at least once in 30% of children.
+
+  - These variants result in complete absence of biotinidase protein. 
+
+- Other relatively common variants discovered by newborn screening are:
+  - p.Gln456His, associated with profound deficiency
+
+  - p.Asp444His, a substitution that reduces enzymatic activity by about 50%.
+
+  - The p.Asp444His variant in trans with a severe BTD pathogenic variant is associated with partial biotinidase deficiency,
+  - p.Asp444His in cis with p.Ala171Thr (i.e., as the double mutant p.[(Ala171Thr); (Asp444His)]), results in a profound biotinidase deficiency allele.
+
+
+** Partial & Profound Deficiency
+
+*** Profound Deficiency
+- Initially, most symptomatic children with biotinidase deficiency were found to have 3% of mean serum biotinidase activity of normal individuals.
+- Three standard deviations above this mean, corresponding to 10% of mean normal activity, was taken as the threshold below which individuals were considered to have profound biotinidase deficiency.
+
+*** Partial Deficiency
+- With NBS for biotinidase deficiency babies were identified with about 25% of mean normal activity.
+- Essentially all of these children had the p.Asp444His variant as one of their alleles
+- This variant, together with a variant for profound deficiency on the other allele, results in 10–30% of mean normal biotinidase activity.
+- These children are considered to have partial biotinidase deficiency.
+
+
+** NBS for partial deficiency
+
+- A retrospective study reviewing clinical histories of
+  individuals with profound (22) or partial (120) biotinidase
+  deficiency identified by newborn screening supports the long-term
+  benefit of treatment and management of both populations. [fn:biot]
+
+[fn:biot] Outcomes of individuals with profound and partial
+biotinidase deficiency ascertained by newborn screening in Michigan
+over 25 years, Genetics In Medicine, 2014/08/21/
+
+
+
+* Laboratory
+
+** NBS for Biotinidase Deficiency
+
+- Fluorimetric method showed 100% sensitivity and 97% specificity. [fn:methods]
+  - biotinyl-6-aminoquinoline
+- Spectrophotometric method showed 90.5% sensitivity and 93.7% specificity.
+  - biotin-4-amidobenzoic acid
+
+[fn:methods] Comparison of spectrophotometric and fluorimetric
+methods in evaluation of biotinidase deficiency. J Med Biochem 2016;35:123–129.
+
+
+** Prematurity and False Positives
+
+| Disorder     | Total |    % | Prem |    % |
+|--------------+-------+------+------+------|
+| Galactosemia |   480 | 0.16 |   41 |  8.5 |
+| Biotinidase  |   156 | 0.05 |   73 | 46.8 |
+
+- Although approximately half of the infants with false-positive
+  results for biotinidase deficiency were premature, less than 1% of
+  the premature infants had false-positive results for this test.[fn:prem]
+
+[fn:prem] Comparison of the effects of season and prematurity on the
+enzymatic newborn screening tests for galactosemia and biotinidase
+deficiency. Screening 1993
+
+
+** Seasonal Variation
+
+[[./figures/seasonal.png]]
+
+
+** Control Enzyme
+
+- 
