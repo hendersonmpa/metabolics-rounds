@@ -1,4 +1,4 @@
-#+TITLE: Urine Organic Acids in Homo Sapiens
+#+TITLE: Urine Organic Acids: What and Why?
 #+AUTHOR: Matthew Henderson, PhD, FCACB
 #+DATE: \today
 
@@ -60,7 +60,7 @@
 \tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
 #+END_LaTeX
 
-* Background
+* What are Urine Organic Acids?
 ** What are urine organic acids?
 - Water soluble compounds containing \ge one carboxyl group(s) and
   non-amino functional groups
@@ -92,7 +92,6 @@
 | C9     | Nonanoic (pelargonic) | Azelaic           |
 | C10    | Decanoic (capric)     | Sebacic           |
 
-
 ** Functional Groups
 #+BEGIN_LaTeX
 \centering
@@ -120,23 +119,61 @@
 | Propyl     | \chemfig{CH_3-CH_2-CH_2-}      |
 | Butyl      | \chemfig{CH_3-CH_2-CH_2-CH_2-} |
 
+** Classes of organic acids detected in the urine of  healthly subjects
 
+  - Tricarboxylic acid cycle acids
+    - citric
+  - hydroxyaliphatic acids
+    - 3-hydroxybutyric
+  - aliphatic keto acids
+    - pyrvic
+  - aliphatic acids
+    - oxalic
+  - aldonic and deoxyaldonic acids (sugar acids)
+    - 3,4-dihyroxybutanoic
+  - aromatic acids
+    - hippuric
+  - Short chain acids
+    - formic
+
+<<<<<<< HEAD
 * COMMENT Urine Organic Acids
+=======
+>>>>>>> 6214f9899b612f029741d469bd80f23c82e03c8d
 ** Where do they come from?
-*** Endogenous Sources
-- Originate from the intermediate metabolism of all major groups of
-  organic cellular components
-  - amino acids
-  - lipids
-  - nucleotides
-  - carbohydrates
-  - nucleic acids
-  - steroids
+- Intermediate metabolism of all major groups of organic cellular
+  components
 
-*** Exogenous
+***                                                                 :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.45
+:END:
+**** Endogenous Sources
+- amino acids
+  - 2-hydroxyisocaproate :: MSUD
+- fatty acids
+  - suberic :: MCADD
+- carbohydrates
+  - lactate :: multiple causes
+- nucleic acids
+  - uracil :: dihyropyrimidine dehydrogenase def
+- steroids
+  - 3-hydroxypropionic
+- neurotransmitters
+  - vanillactic :: aromatic AA decarboxylase def
+***                                                                 :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+**** Exogenous
 - food
+  - adipic - gelatin
 - environment
+  - palmitic - soap
 - medications
+  - ibuprofen
+- gut bacteria
+  - methylmalonic
 
 ** Why are they measured in urine?
 
@@ -146,25 +183,10 @@
 - readily available sample type
 - less invasive than serum
 - Over 500 organic acids have been identified in urine.
-  - clinical metabolics 
+  - a clinical metabolomics test
 
-** Classes of organic acids detected in the urine of  healthly subjects
-
-  - Tricarboxylica acid cycle acids
-    - citric
-  - hydroxyaliphatic acids
-    - 3-hydroxybutyric
-  - aliphatic keto acids
-    - pyrvic
-  - aliphatic acids
-    - oxalic
-  - aldonic and deoxyaldonic acids (sugar acids)
-    -  
-  - aromatic acids
-    - hippuric
-
-** Abnormal Urine Organic acids profiles
-
+* Why is Urine Organic Acid Analysis Requested
+** Reasons for Abnormal Urine Organic Acids profiles
 - Elevated concentration of normal metabolites
   - fumaric acid in fumarase deficiency
   - adipic, suberic, and sebacic acids in MCADD
@@ -181,6 +203,7 @@
   - cresol
   - 2-furaldehyde
 
+<<<<<<< HEAD
 ** Disorders that can be idenfified by Urine Organic Acid analysis
 
 ***                                                                 :BMCOL:
@@ -188,15 +211,45 @@
 :BEAMER_col: 0.5
 :END:
 - classic organic acidemias 
+=======
+** Clinical Indications for UOA analysis
+
+- Neonatal or late-onset acute illness associated with:
+  - hyperammonemia
+  - hypoglycemia, and/ or ketolactic acidosis
+  - neurologic abnormalities
+    - seizures,
+    - ataxia,
+    - hypotonia
+    - lethargy
+    - coma
+    - developmental delay
+    - unexplained intellectual disability
+  - failure to thrive
+  - pancreatitis
+  - unexplained metabolic acidosis
+  - unusual odor
+  - macrocephaly;
+  - liver failure
+- Some symptoms, including lethargy and acidosis, can be due to exogenous intoxication
+  - ethylene glycol poisoning
+  - ibuprofen overdose
+  - gamma{}-hydroxybutyric acid
+
+** Disorders that can be identified by Urine Organic Acid analysis
+
+*** classic organic acidemias
+>>>>>>> 6214f9899b612f029741d469bd80f23c82e03c8d
   - isovaleric acidemia [MIM 243500]
   - methylmalonic acidemia[s] propionic acidemia [MIM 606054]
   - glutaric acidemia type I [MIM 231670]
-- as well as other amino acid disorders
+*** amino acidopathies
   - phenylketonuria [MIM 261600]
   - tyrosinemia type I [MIM 276700]
   - alkaptonuria [MIM 203500]
   - 3-methylglutaconic aciduria type I [MIM 250950]
   - maple syrup urine disease [MIM 248600]
+<<<<<<< HEAD
 - disorders of the urea cycle - orotic acid
 - fatty acid oxidation
   - short-chain acyl-CoA dehydrogenase deficiency [MIM 201470]
@@ -212,17 +265,45 @@
   - fumarase deficiency [MIM 606812]
   - SUCLA2 deficiency [MIM 603921]
 - purine and pyrimidine metabolism
+=======
+*** urea cycle
+  - orotic acid
+*** fatty acid oxidation
+    - short-chain acyl-CoA dehydrogenase deficiency [MIM 201470]
+    - medium-chain acyl-CoA dehydrogenase deficiency [MIM 201450]
+    - multiple acyl-CoA dehydrogenase deficiency [MIM 231680]
+    - energy metabolism (pyruvate dehydrogenase deficiency
+    - fumarase deficiency [MIM 606812]
+    - SUCLA2 deficiency [MIM 603921]
+
+** Disorders that can be identified by Urine Organic Acid analysis
+*** purine and pyrimidine metabolism
+>>>>>>> 6214f9899b612f029741d469bd80f23c82e03c8d
   - uridine monophosphate synthetase deficiency [MIM 613891]
   - dihydropyrimidine dehydrogenase deficiency [MIM 274270]
-- neurotransmission
+*** neurotransmission
   - aromatic L-amino acid decarboxylase deficiency [MIM 608643]
-  - ethylmalonicencephalopathy pMIM 602473)
+  - ethylmalonic encephalopathy [MIM 602473]
   - Canavan disease [MIM 271900]
+*** others
   - glutathione synthetase deficiency [MIM 266130]
   - glycerol kinase deficiency [MIM 307030]
   - primary hyperoxaluria type I [MIM 259900]
   - primary hyperoxaluria type II [MIM 260000]
 
+
+** Naturopathic Medicine
+
+- labs provide the urine organic acid testing 
+  - Great Plains Laboratory - OAT
+  - Genova Diagnostics - Organix
+  - Analytical Reference Laboratories - Urinary Organic Acids
+
+  - Targeted to Naturopaths and  "Functional Medicine"
+  - Provide impressive graphical reportes with recomendations for diet and supplements
+
 ** Next time
 
-- Urine organic acid methods
+- Laboratory analysis of organic acids, 2018 update: a technical
+  standard of the American College of Medical Genetics and Genomics
+  (ACMG)

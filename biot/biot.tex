@@ -1,0 +1,347 @@
+% Created 2018-07-12 Thu 12:47
+\documentclass[presentation, smaller]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor=gray,urlcolor=blue}
+\usepackage{textpos}
+\usepackage{textgreek}
+\usepackage[version=4]{mhchem}
+\usepackage{chemfig}
+\usepackage{siunitx}
+\usepackage{gensymb}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{verbatim}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+\AtBeginSection[]{\begin{frame}\tableofcontents[currentsection] \end{frame}}
+\usetheme[height=20pt]{Boadilla}
+\usecolortheme[RGB={170,160,80}]{{structure}}
+\author{Matthew Henderson, PhD, FCACB}
+\date{\today}
+\title{Laboratory diagnosis of biotinidase deficiency}
+\subtitle{Screen Positive Rate Investigation}
+\institute[NSO]{Newborn Screening Ontario}
+\titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
+\hypersetup{
+ pdfauthor={Matthew Henderson, PhD, FCACB},
+ pdftitle={Laboratory diagnosis of biotinidase deficiency},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.2.1 (Org mode 8.3.4)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}}
+
+\vspace{220pt}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\tiny}
+% \addtobeamertemplate{frametitle}{}{%
+% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+% \includegraphics[height=1cm,width=2cm]{cat}
+% \end{textblock*}}
+
+
+\tikzstyle{chemical} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=none]
+\tikzstyle{hardware} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=gray!30]
+\tikzstyle{ms} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{msw} = [rectangle, rounded corners, text width=7em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{label} = [rectangle,text width=8em, minimum height=1em, text centered, draw=none, fill=none]
+\tikzstyle{hl} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=red!30]
+\tikzstyle{box} = [rectangle, rounded corners, text width=5em, minimum height=5em,text centered, draw=black, fill=none]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
+
+\section{Background}
+\label{sec:orgheadline6}
+
+\begin{frame}[label={sec:orgheadline1}]{Biotinidase Deficiency}
+\begin{itemize}
+\item autosomal recessively inherited disorder of biotin recycling
+\begin{itemize}
+\item associated with secondary alterations in amino acid, carbohydrate,
+and fatty acid metabolism.
+\end{itemize}
+\item caused by absent or markedly deficient activity of biotinidase
+\begin{itemize}
+\item cytosolic enzyme that liberates biotin from biocytin during the
+normal proteolytic turnover of holocarboxylases and other biotiny-
+lated proteins.
+\end{itemize}
+
+\item Based on newborn screening outcome data from 2006, the incidence of
+profound biotinidase deficiency in the United States is estimated at
+1/80,000 births
+\item partial biotinidase deficiency between 1/31,000 and 1/40,000
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline2}]{Biotinidase Deficiency}
+\begin{itemize}
+\item Diagnosis of biotinidase deficiency is based on demonstrating
+deficient enzyme activity in serum or plasma
+
+\item Patients with profound biotinidase deficiency have less than 10\% of
+mean normal serum activity
+
+\item Patients with the partial biotinidase deficiency variant have 10-30\%
+of mean normal serum activity
+\begin{itemize}
+\item are largely asymptomatic
+\end{itemize}
+
+\item Confirmation of biotinidase deficiency by DNA analysis, by either
+allele-targeted methods or full-gene sequencing, may be useful.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline3}]{Pathogenic Variants}
+\begin{itemize}
+\item Among children ascertained because of clinical symptoms, the two
+most commonly reported variants are:
+
+\begin{itemize}
+\item c.98\_104delinsTCC in exon 2
+\begin{itemize}
+\item seven-base deletion/three-base insertion
+\item occurring in at least one allele in approximately 50\% of individuals
+\end{itemize}
+
+\item p.Arg538Cys in exon 4
+\begin{itemize}
+\item occurring at least once in 30\% of children.
+\end{itemize}
+
+\item These variants result in complete absence of biotinidase protein.
+\end{itemize}
+
+\item Other relatively common variants discovered by newborn screening are:
+\begin{itemize}
+\item p.Gln456His, associated with profound deficiency
+
+\item p.Asp444His, a substitution that reduces enzymatic activity by about 50\%.
+
+\item The p.Asp444His variant in trans with a severe BTD pathogenic variant is associated with partial biotinidase deficiency,
+\item p.Asp444His in cis with p.Ala171Thr (i.e., as the double mutant p.[(Ala171Thr); (Asp444His)]), results in a profound biotinidase deficiency allele.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline4}]{Partial \& Profound Deficiency}
+\begin{block}{Profound Deficiency}
+\begin{itemize}
+\item Initially, most symptomatic children with biotinidase deficiency were found to have 3\% of mean serum biotinidase activity of normal individuals.
+\item Three standard deviations above this mean, corresponding to 10\% of mean normal activity, was taken as the threshold below which individuals were considered to have profound biotinidase deficiency.
+\end{itemize}
+\end{block}
+
+\begin{block}{Partial Deficiency}
+\begin{itemize}
+\item With NBS for biotinidase deficiency babies were identified with about 25\% of mean normal activity.
+\item Essentially all of these children had the p.Asp444His variant as one of their alleles
+\item This variant, together with a variant for profound deficiency on the other allele, results in 10–30\% of mean normal biotinidase activity.
+\item These children are considered to have partial biotinidase deficiency.
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline5}]{NBS for partial deficiency}
+\begin{itemize}
+\item A retrospective study reviewing clinical histories of
+individuals with profound (22) or partial (120) biotinidase
+deficiency identified by newborn screening supports the long-term
+benefit of treatment and management of both populations. \footnote{Outcomes of individuals with profound and partial
+biotinidase deficiency ascertained by newborn screening in Michigan
+over 25 years, Genetics In Medicine, 2014/08/21/}
+\end{itemize}
+\end{frame}
+
+
+
+\section{Laboratory}
+\label{sec:orgheadline11}
+
+\begin{frame}[label={sec:orgheadline7}]{Enyzmatic Testing for Biotinidase Deficiency}
+\begin{itemize}
+\item Fluorimetric method showed 100\% sensitivity and 97\% specificity. \footnote{Comparison of spectrophotometric and fluorimetric
+methods in evaluation of biotinidase deficiency. J Med Biochem 2016;35:123–129.}
+\begin{itemize}
+\item biotinyl-6-aminoquinoline
+\end{itemize}
+\item Spectrophotometric method showed 90.5\% sensitivity and 93.7\% specificity.
+\begin{itemize}
+\item biotin-4-amidobenzoic acid
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline8}]{Prematurity and False Positives}
+\begin{center}
+\begin{tabular}{lrrrr}
+Disorder & Total & \% & Prem & \%\\
+\hline
+Galactosemia & 480 & 0.16 & 41 & 8.5\\
+Biotinidase & 156 & 0.05 & 73 & 46.8\\
+\end{tabular}
+\end{center}
+
+\begin{itemize}
+\item Although approximately half of the infants with false-positive
+results for biotinidase deficiency were premature, less than 1\% of
+the premature infants had false-positive results for this test.\footnote{Comparison of the effects of season and prematurity on the
+enzymatic newborn screening tests for galactosemia and biotinidase
+deficiency. Screening 1993}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline9}]{Seasonal Variation}
+\includegraphics[width=.9\linewidth]{./figures/seasonal.png}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline10}]{Methodological Improvements/Variation}
+\begin{block}{Control Enzyme}
+\begin{itemize}
+\item \(\beta\)-galactosidase
+\item GALT
+\end{itemize}
+\end{block}
+
+\begin{block}{Thresholds}
+\begin{itemize}
+\item Percent of normal
+\begin{itemize}
+\item Seasonal
+\item Assay
+\end{itemize}
+\end{itemize}
+\end{block}
+\end{frame}
+
+\section{Increased Screen Positive Rate Investigation}
+\label{sec:orgheadline22}
+
+\begin{frame}[label={sec:orgheadline12}]{Variables}
+\begin{block}{Examined}
+\begin{itemize}
+\item Temperature
+\item Print Run
+\item Analytical
+\end{itemize}
+\end{block}
+
+\begin{block}{Not examined}
+\begin{itemize}
+\item Transport time
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline13}]{Initial Borderline or Positive Samples by Instrument}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=.9\linewidth]{./figures/instrument.pdf}
+\caption{\label{fig:instrument}
+Initial borderline or positive samples by instrument}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline14}]{Temperature}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=.9\linewidth]{./figures/temp.pdf}
+\caption{\label{fig:temp}
+Max Weekly Temperature}
+\end{figure}
+
+\begin{itemize}
+\item Hourly temperature data from a weather station in London, ON was
+aggregated by week. The max temperature for each week was
+determined (figure \ref{fig:temp})
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline15}]{Filter Paper Print Lots in Use}
+\begin{itemize}
+\item Filter paper print lots for all screen samples were determined for April to June 2018 (figure \ref{fig:form})
+\end{itemize}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=.9\linewidth]{./figures/form.pdf}
+\caption{\label{fig:form}
+Filter paper print lots in use.}
+\end{figure}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline16}]{Initial Borderline or Positive Samples by Print Run}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=.9\linewidth]{./figures/initial.pdf}
+\caption{\label{fig:initial}
+Initial borderline or positive samples by print run}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline17}]{Initial Borderline or Positive Samples by Assay}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=.9\linewidth]{./figures/assay.pdf}
+\caption{\label{fig:assay}
+Initial borderline or positive samples by assay}
+\end{figure}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline18}]{Initial Borderline or Positive Samples by Assay}
+\include{./figures/assay}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline19}]{BIOT results for Select Assays by Print Run}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=.9\linewidth]{./figures/assay_printrun.pdf}
+\caption{\label{fig:run}
+BIOT results for select assays by print run}
+\end{figure}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline20}]{BIOT results for Select Assays by Print Run}
+\include{./figures/run}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline21}]{Next steps}
+\begin{itemize}
+\item Print run appears to be the main contributor to the recent increased
+screen positive rate.
+\item Long term review of BIOT results and Print runs
+\begin{itemize}
+\item 2013-2018
+\end{itemize}
+\end{itemize}
+\end{frame}
+\end{document}

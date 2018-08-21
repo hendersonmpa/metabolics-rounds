@@ -1,0 +1,226 @@
+#+TITLE: Fasting Urine Organic Acids
+#+AUTHOR: Matthew Henderson, PhD, FCACB
+#+DATE: \today
+
+:PROPERTIES:
+#+DRAWERS: PROPERTIES
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [presentation, smaller]
+# #+BEAMER_THEME: Ilmenau [height=20pt]
+# #+BEAMER_THEME: Szeged  [height=20pt]
+#+BEAMER_THEME: Boadilla [height=20pt]
+#+BEAMER_COLOR_THEME: [RGB={170,160,80}]{structure}
+#+BEAMER_FRAME_LEVEL: 2
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+OPTIONS: H:2 toc:nil
+#+STARTUP: beamer
+#+STARTUP: overview
+#+STARTUP: hidestars
+#+STARTUP: indent
+# #+BEAMER_HEADER: \subtitle{Document subtitle}
+#+BEAMER_HEADER: \institute[NSO]{Newborn Screening Ontario}
+#+BEAMER_HEADER: \titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
+#+latex_header: \hypersetup{colorlinks,linkcolor=gray,urlcolor=blue}
+#+LaTeX_header: \usepackage{textpos}
+#+LaTeX_header: \usepackage{textgreek}
+#+LaTeX_header: \usepackage[version=4]{mhchem}
+#+LaTeX_header: \usepackage{chemfig}
+#+LaTeX_header: \usepackage{siunitx}
+#+LaTeX_header: \usepackage{gensymb}
+#+LaTex_HEADER: \usepackage[usenames,dvipsnames]{xcolor}
+#+LaTeX_HEADER: \usepackage[T1]{fontenc}
+#+LaTeX_HEADER: \usepackage{lmodern}
+#+LaTeX_HEADER: \usepackage{verbatim}
+#+LaTeX_HEADER: \usepackage{tikz}
+#+LaTeX_HEADER: \usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+# #+LaTeX_HEADER: \AtBeginSection[]{\begin{frame}\tableofcontents[currentsection] \end{frame}}
+:END:
+
+#+BEGIN_LaTeX
+\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}}
+
+\vspace{220pt}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\tiny}
+% \addtobeamertemplate{frametitle}{}{%
+% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+% \includegraphics[height=1cm,width=2cm]{cat}
+% \end{textblock*}}
+
+
+\tikzstyle{chemical} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=none]
+\tikzstyle{hardware} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=gray!30]
+\tikzstyle{ms} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{msw} = [rectangle, rounded corners, text width=7em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{label} = [rectangle,text width=8em, minimum height=1em, text centered, draw=none, fill=none]
+\tikzstyle{hl} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=red!30]
+\tikzstyle{box} = [rectangle, rounded corners, text width=5em, minimum height=5em,text centered, draw=black, fill=none]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
+
+
+#+END_LaTeX
+
+* Fasting Urine Organic Acids
+** Critical Sample
+- Abnormal urinary organic acid profiles of patients with FAOD may
+  occur only during acute episodes of hypoglycemia and/or fasting.
+
+  - plasma concentration of fatty acids increases, leading to an
+    elevated urinary excretion of medium-chain dicarboxylic acids.
+
+- Clinical notes refer to "Ketotic Hypoglycemia"
+
+- These medium-chain saturated metabolites usually include adipic
+  (DC6), suberic (DC8), and sebacic (DC10) acids?
+
+** Fasting Urine Organic Acids
+- Many samples are sent from the ED or ICU in cases of prolonged
+  fasting, vomiting, dehydration.
+
+- Urine organic acid results include:
+  - lactate
+  - urea
+  - ketones
+  - BCAA intermediate metabolites
+  - dicarboxylic acids
+  - ibuprofen
+
+** Ketotic Hypoglycemia does not rule out an IMD
+
+- Metabolic Disorders can present with ketotic hypoglycaemia include [fn:wraige]:
+  - FAOD: VLCADD, MCADD 
+    - inappropriately low ketones
+- intermediate form of MSUD
+- organic acidaemia: methylmalonic and isovaleric acidaemia
+- multiple carboxylase deficiency
+- defects of gluconeogenesis,
+  - such as glycogen storage disease type 1a
+
+[fn:wraige] Wraige, E., Champion, M. P., Turner, C., & Dalton,
+R. N. (2002). Fat oxidation defect presenting with overwhelming
+ketonuria. Archives of Disease in Childhood, 87(5), 428–429. 
+
+** Clinical History 
+- a 5 yo female who had come to the ED twice in the last year with
+  vomiting, dehydration and hypoglycemia.
+
+- urine organic acids elevation in alpha-ketoacids 
+  - 2-ketoisocaproic
+  - 2-ketoisovaleric
+  - 2-keto-3-methylvaleric
+  - urine creatinine = 4,113 umol/L
+
+- Plasma amino acids performed on a sample drawn at the same time
+  revealed a small elevation in BCAAs:
+  - Val = 608
+  - Ile = 293
+  - Leu = 484
+  - Allo-Ile = 7
+
+- Marked elevation of C4OH and long chain ACs.
+
+- All amino acids, acylcarnitines and organic acids were normal in the convalescent
+  sample.
+
+** Fasting Profile
+[[./figures/fasting_rotate.png]]
+
+** Convalescent Profile
+[[./figures/convalescent_rotate.png]]
+
+** Glucose Sources with Fasting
+[[./figures/fasting_graph1.pdf]]
+
+\tiny
+courtesy of SIMD-NAMA
+
+*** COMMENT
+Postprandially as glucose absorption declines and glucagon
+concentrations rise, insulin concentrations drop; this removes
+inhibition on adipose tissue lipoprotein lipase resulting in free
+fatty acid release. Many tissues preferentially oxidise fatty
+acid. The brain requires glucose but can adapt over days to use
+ketones as an oxidative substrate. Glycogenolysis and gluconeogenesis
+maintain glucose concentrations. Thus homoeostasis involves
+coordination of multiple metabolic and endocrine pathways.
+
+** Energy Sources with Fasting
+
+[[./figures/fasting_graph2.pdf]]
+
+\tiny
+courtesy of SIMD-NAMA
+
+** Ketonuria
+
+[[./figures/ketones.png]]
+
+- Ketone bodies
+  - \beta-hydroxybutyric acid
+  - acetoacetic acid
+
+
+
+**  Dicarboxylic Aciduria
+
+*** Ketotic Dicarboxylic Aciduria.
+- Physiological response to hypoglycemia
+  - DC6 > DC8 > DC10 
+
+*** Non-Ketotic Dicarboxylic Aciduria.
+- FAOD:
+  - DC6 > DC8 > DC10 
+- MCAD + MCT
+  - DC10 > DC8 > DC6
+  - or DC8 > DC10 > DC6 in some cases.
+
+- All fatty acid oxidation defects will permit production of ketones.
+
+** BCAA metabolites
+\centering
+#+ATTR_LATEX: :height 0.85\textheight
+[[./figures/bcaa.png]]
+
+** Dehydration
+
+- Concentrated samples results in numerous potentially significant organic acid peaks
+
+- Urine Creatinine > 4,000 umol/L
+
+- 3-hydroxypropionic - PA
+- 3-hydroxyisovaleric - IVA
+- 3-methylglutaconic - 3-methylglutaconic aciduria
+
+
+
+** Interpretation of Fasting Urine Organic Acid 
+
+- Review biochemistry
+  - lactate
+  - ammonia
+  - blood gases
+  - glucose
+  - urine creatinine
+  - urinalysis
+- Review AA and AC results
+- Look for appropriate elevation of ketones
+- Relative concentrations of dicarboxylic acids
+  - DC6 > DC8 > DC10
+- Urine sample concentration
+
+- Comment on presence of:
+  - lactate
+  - ketones
+  - dicarboxylic acids
+  - elevated peaks / umol creatinine
+  - medications
+
+
+
+
+Interpretive comment:
+
+- Request a convalescent sample?
+
