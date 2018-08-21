@@ -58,8 +58,6 @@
 \tikzstyle{box} = [rectangle, rounded corners, text width=5em, minimum height=5em,text centered, draw=black, fill=none]
 \tikzstyle{arrow} = [thick,->,>=stealth]
 \tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
-
-
 #+END_LaTeX
 
 * Background
@@ -123,7 +121,7 @@
 | Butyl      | \chemfig{CH_3-CH_2-CH_2-CH_2-} |
 
 
-* Urine Organic Acids
+* COMMENT Urine Organic Acids
 ** Where do they come from?
 *** Endogenous Sources
 - Originate from the intermediate metabolism of all major groups of
@@ -185,7 +183,11 @@
 
 ** Disorders that can be idenfified by Urine Organic Acid analysis
 
-- classic organic acidemias due to inborn errors of amino acid metabolism 
+***                                                                 :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+- classic organic acidemias 
   - isovaleric acidemia [MIM 243500]
   - methylmalonic acidemia[s] propionic acidemia [MIM 606054]
   - glutaric acidemia type I [MIM 231670]
@@ -200,7 +202,13 @@
   - short-chain acyl-CoA dehydrogenase deficiency [MIM 201470]
   - medium-chain acyl-CoA dehydrogenase deficiency [MIM 201450]
   - multiple acyl-CoA dehydrogenase deficiency [MIM 231680]
-  - energy metabolism (pyruvate dehydrogenase deficiency
+
+***                                                                 :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+- energy metabolism
+  - pyruvate dehydrogenase deficiency
   - fumarase deficiency [MIM 606812]
   - SUCLA2 deficiency [MIM 603921]
 - purine and pyrimidine metabolism
