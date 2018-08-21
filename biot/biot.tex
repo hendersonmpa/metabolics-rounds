@@ -1,4 +1,4 @@
-% Created 2018-07-04 Wed 17:10
+% Created 2018-07-12 Thu 12:47
 \documentclass[presentation, smaller]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -27,16 +27,18 @@
 \usepackage{verbatim}
 \usepackage{tikz}
 \usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+\AtBeginSection[]{\begin{frame}\tableofcontents[currentsection] \end{frame}}
 \usetheme[height=20pt]{Boadilla}
 \usecolortheme[RGB={170,160,80}]{{structure}}
 \author{Matthew Henderson, PhD, FCACB}
 \date{\today}
-\title{Laboratory diagnosis of biotinidase deficiency: 2017 update}
+\title{Laboratory diagnosis of biotinidase deficiency}
+\subtitle{Screen Positive Rate Investigation}
 \institute[NSO]{Newborn Screening Ontario}
 \titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
 \hypersetup{
  pdfauthor={Matthew Henderson, PhD, FCACB},
- pdftitle={Laboratory diagnosis of biotinidase deficiency: 2017 update},
+ pdftitle={Laboratory diagnosis of biotinidase deficiency},
  pdfkeywords={},
  pdfsubject={},
  pdfcreator={Emacs 25.2.1 (Org mode 8.3.4)}, 
@@ -67,9 +69,8 @@
 \tikzstyle{arrow} = [thick,->,>=stealth]
 \tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
 
-
 \section{Background}
-\label{sec:orgheadline8}
+\label{sec:orgheadline6}
 
 \begin{frame}[label={sec:orgheadline1}]{Biotinidase Deficiency}
 \begin{itemize}
@@ -100,7 +101,7 @@ deficient enzyme activity in serum or plasma
 \item Patients with profound biotinidase deficiency have less than 10\% of
 mean normal serum activity
 
-\item Patients with the partial biotinidase deficiency variant have 10–30\%
+\item Patients with the partial biotinidase deficiency variant have 10-30\%
 of mean normal serum activity
 \begin{itemize}
 \item are largely asymptomatic
@@ -111,42 +112,13 @@ allele-targeted methods or full-gene sequencing, may be useful.
 \end{itemize}
 \end{frame}
 
-
-\begin{frame}[label={sec:orgheadline3}]{Biotin Cycle}
-\includegraphics[width=.9\linewidth]{./figures/biot_cycle.png}
-\end{frame}
-
-
-\begin{frame}[label={sec:orgheadline4}]{Biotinidase}
-\begin{itemize}
-\item Biotinidase is a monomeric enzyme encoded by a single gene (BTD) located on chromosome 3p25
-\begin{itemize}
-\item comprises 543 amino acid residues, including 41 amino acids of a potential signal peptide.
-\end{itemize}
-
-\item Three publicly available databases of biotinidase variants:
-\begin{itemize}
-\item \href{https://grenada.lumc.nl/LOVD2/shared1/home.php?select_db=BTD}{Leiden Open Variation Database}
-\item \href{https://www.ncbi.nlm.nih.gov/clinvar/}{ClinVar}
-\item \href{http://www.arup.utah.edu/database/BTD/BTD_welcome.php}{ARUP:Biotinidase Deficiency and BTD}
-\end{itemize}
-
-\item 204 biotinidase variants are consolidated in the ARUP database,
-\begin{itemize}
-\item >150 categorized as pathogenic
-\item 145 missense changes
-\item Four common pathogenic variants cause profound biotinidase deficiency.
-\end{itemize}
-\end{itemize}
-\end{frame}
-
-\begin{frame}[label={sec:orgheadline5}]{Pathogenic Variants}
+\begin{frame}[label={sec:orgheadline3}]{Pathogenic Variants}
 \begin{itemize}
 \item Among children ascertained because of clinical symptoms, the two
 most commonly reported variants are:
 
 \begin{itemize}
-\item c.98\(_{\text{104delinsTCC}}\) in exon 2
+\item c.98\_104delinsTCC in exon 2
 \begin{itemize}
 \item seven-base deletion/three-base insertion
 \item occurring in at least one allele in approximately 50\% of individuals
@@ -173,7 +145,7 @@ most commonly reported variants are:
 \end{frame}
 
 
-\begin{frame}[label={sec:orgheadline6}]{Partial \& Profound Deficiency}
+\begin{frame}[label={sec:orgheadline4}]{Partial \& Profound Deficiency}
 \begin{block}{Profound Deficiency}
 \begin{itemize}
 \item Initially, most symptomatic children with biotinidase deficiency were found to have 3\% of mean serum biotinidase activity of normal individuals.
@@ -192,7 +164,7 @@ most commonly reported variants are:
 \end{frame}
 
 
-\begin{frame}[label={sec:orgheadline7}]{NBS for partial deficiency}
+\begin{frame}[label={sec:orgheadline5}]{NBS for partial deficiency}
 \begin{itemize}
 \item A retrospective study reviewing clinical histories of
 individuals with profound (22) or partial (120) biotinidase
@@ -206,9 +178,9 @@ over 25 years, Genetics In Medicine, 2014/08/21/}
 
 
 \section{Laboratory}
-\label{sec:orgheadline12}
+\label{sec:orgheadline11}
 
-\begin{frame}[label={sec:orgheadline9}]{NBS for Biotinidase Deficiency}
+\begin{frame}[label={sec:orgheadline7}]{Enyzmatic Testing for Biotinidase Deficiency}
 \begin{itemize}
 \item Fluorimetric method showed 100\% sensitivity and 97\% specificity. \footnote{Comparison of spectrophotometric and fluorimetric
 methods in evaluation of biotinidase deficiency. J Med Biochem 2016;35:123–129.}
@@ -223,7 +195,7 @@ methods in evaluation of biotinidase deficiency. J Med Biochem 2016;35:123–129
 \end{frame}
 
 
-\begin{frame}[label={sec:orgheadline10}]{Prematurity and False Positives}
+\begin{frame}[label={sec:orgheadline8}]{Prematurity and False Positives}
 \begin{center}
 \begin{tabular}{lrrrr}
 Disorder & Total & \% & Prem & \%\\
@@ -243,7 +215,133 @@ deficiency. Screening 1993}
 \end{frame}
 
 
-\begin{frame}[label={sec:orgheadline11}]{Seasonal Variation}
+\begin{frame}[label={sec:orgheadline9}]{Seasonal Variation}
 \includegraphics[width=.9\linewidth]{./figures/seasonal.png}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline10}]{Methodological Improvements/Variation}
+\begin{block}{Control Enzyme}
+\begin{itemize}
+\item \(\beta\)-galactosidase
+\item GALT
+\end{itemize}
+\end{block}
+
+\begin{block}{Thresholds}
+\begin{itemize}
+\item Percent of normal
+\begin{itemize}
+\item Seasonal
+\item Assay
+\end{itemize}
+\end{itemize}
+\end{block}
+\end{frame}
+
+\section{Increased Screen Positive Rate Investigation}
+\label{sec:orgheadline22}
+
+\begin{frame}[label={sec:orgheadline12}]{Variables}
+\begin{block}{Examined}
+\begin{itemize}
+\item Temperature
+\item Print Run
+\item Analytical
+\end{itemize}
+\end{block}
+
+\begin{block}{Not examined}
+\begin{itemize}
+\item Transport time
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline13}]{Initial Borderline or Positive Samples by Instrument}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=.9\linewidth]{./figures/instrument.pdf}
+\caption{\label{fig:instrument}
+Initial borderline or positive samples by instrument}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline14}]{Temperature}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=.9\linewidth]{./figures/temp.pdf}
+\caption{\label{fig:temp}
+Max Weekly Temperature}
+\end{figure}
+
+\begin{itemize}
+\item Hourly temperature data from a weather station in London, ON was
+aggregated by week. The max temperature for each week was
+determined (figure \ref{fig:temp})
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline15}]{Filter Paper Print Lots in Use}
+\begin{itemize}
+\item Filter paper print lots for all screen samples were determined for April to June 2018 (figure \ref{fig:form})
+\end{itemize}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=.9\linewidth]{./figures/form.pdf}
+\caption{\label{fig:form}
+Filter paper print lots in use.}
+\end{figure}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline16}]{Initial Borderline or Positive Samples by Print Run}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=.9\linewidth]{./figures/initial.pdf}
+\caption{\label{fig:initial}
+Initial borderline or positive samples by print run}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline17}]{Initial Borderline or Positive Samples by Assay}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=.9\linewidth]{./figures/assay.pdf}
+\caption{\label{fig:assay}
+Initial borderline or positive samples by assay}
+\end{figure}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline18}]{Initial Borderline or Positive Samples by Assay}
+\include{./figures/assay}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline19}]{BIOT results for Select Assays by Print Run}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=.9\linewidth]{./figures/assay_printrun.pdf}
+\caption{\label{fig:run}
+BIOT results for select assays by print run}
+\end{figure}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline20}]{BIOT results for Select Assays by Print Run}
+\include{./figures/run}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline21}]{Next steps}
+\begin{itemize}
+\item Print run appears to be the main contributor to the recent increased
+screen positive rate.
+\item Long term review of BIOT results and Print runs
+\begin{itemize}
+\item 2013-2018
+\end{itemize}
+\end{itemize}
 \end{frame}
 \end{document}

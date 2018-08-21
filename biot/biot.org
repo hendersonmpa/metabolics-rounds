@@ -1,4 +1,4 @@
-#+TITLE: Laboratory diagnosis of biotinidase deficiency: 2017 update
+#+TITLE: Laboratory diagnosis of biotinidase deficiency
 #+AUTHOR: Matthew Henderson, PhD, FCACB
 #+DATE: \today
 
@@ -12,12 +12,12 @@
 #+BEAMER_COLOR_THEME: [RGB={170,160,80}]{structure}
 #+BEAMER_FRAME_LEVEL: 2
 #+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
-#+OPTIONS: H:2 toc:nil
+#+OPTIONS: H:2 toc:nil ^:{}
 #+STARTUP: beamer
 #+STARTUP: overview
 #+STARTUP: hidestars
 #+STARTUP: indent
-# #+BEAMER_HEADER: \subtitle{Document subtitle}
+#+BEAMER_HEADER: \subtitle{Screen Positive Rate Investigation}
 #+BEAMER_HEADER: \institute[NSO]{Newborn Screening Ontario}
 #+BEAMER_HEADER: \titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
 #+latex_header: \hypersetup{colorlinks,linkcolor=gray,urlcolor=blue}
@@ -33,7 +33,7 @@
 #+LaTeX_HEADER: \usepackage{verbatim}
 #+LaTeX_HEADER: \usepackage{tikz}
 #+LaTeX_HEADER: \usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
-# #+LaTeX_HEADER: \AtBeginSection[]{\begin{frame}\tableofcontents[currentsection] \end{frame}}
+#+LaTeX_HEADER: \AtBeginSection[]{\begin{frame}\tableofcontents[currentsection] \end{frame}}
 :END:
 
 #+BEGIN_LaTeX
@@ -87,20 +87,19 @@
 - Patients with profound biotinidase deficiency have less than 10% of
   mean normal serum activity
 
-- Patients with the partial biotinidase deficiency variant have 10–30%
+- Patients with the partial biotinidase deficiency variant have 10-30%
   of mean normal serum activity
   - are largely asymptomatic
 
 - Confirmation of biotinidase deficiency by DNA analysis, by either
   allele-targeted methods or full-gene sequencing, may be useful.
 
-
-** Biotin Cycle
+** COMMENT Biotin Cycle
 
 [[./figures/biot_cycle.png]]
 
 
-** Biotinidase
+** COMMENT Biotinidase
 
 - Biotinidase is a monomeric enzyme encoded by a single gene (BTD) located on chromosome 3p25
   - comprises 543 amino acid residues, including 41 amino acids of a potential signal peptide.
@@ -165,7 +164,7 @@ over 25 years, Genetics In Medicine, 2014/08/21/
 
 * Laboratory
 
-** NBS for Biotinidase Deficiency
+** Enyzmatic Testing for Biotinidase Deficiency
 
 - Fluorimetric method showed 100% sensitivity and 97% specificity. [fn:methods]
   - biotinyl-6-aminoquinoline
@@ -197,6 +196,95 @@ deficiency. Screening 1993
 [[./figures/seasonal.png]]
 
 
-** Control Enzyme
+** Methodological Improvements/Variation
 
-- 
+*** Control Enzyme
+- \beta-galactosidase
+- GALT
+
+*** Thresholds
+- Percent of normal
+  - Seasonal
+  - Assay
+
+* Increased Screen Positive Rate Investigation
+
+** Variables
+
+***  Examined
+- Temperature
+- Print Run
+- Analytical
+
+*** Not examined
+- Transport time
+
+** Initial Borderline or Positive Samples by Instrument
+#+CAPTION: Initial borderline or positive samples by instrument
+#+LABEL: fig:instrument
+#+ATTR_LaTeX: width=0.9\textwidth
+[[./figures/instrument.pdf]]
+
+
+** Temperature
+#+CAPTION: Max Weekly Temperature
+#+LABEL: fig:temp
+#+ATTR_LaTeX: width=0.9\textwidth
+[[./figures/temp.pdf]]
+
+- Hourly temperature data from a weather station in London, ON was
+  aggregated by week. The max temperature for each week was
+  determined (figure [[fig:temp]])
+
+** Filter Paper Print Lots in Use
+- Filter paper print lots for all screen samples were determined for April to June 2018 (figure [[fig:form]])
+
+#+CAPTION: Filter paper print lots in use.
+#+LABEL: fig:form
+#+ATTR_LaTeX: width=0.9\textwidth
+[[./figures/form.pdf]]
+
+** Initial Borderline or Positive Samples by Print Run
+#+CAPTION: Initial borderline or positive samples by print run
+#+LABEL: fig:initial
+#+ATTR_LaTeX: width=0.9\textwidth
+[[./figures/initial.pdf]]
+
+
+** Initial Borderline or Positive Samples by Assay
+#+CAPTION: Initial borderline or positive samples by assay
+#+LABEL: fig:assay
+#+ATTR_LaTeX: width=0.9\textwidth
+[[./figures/assay.pdf]]
+
+** Initial Borderline or Positive Samples by Assay
+
+#+BEGIN_LaTeX
+\include{./figures/assay}
+#+END_LaTeX
+
+
+** BIOT results for Select Assays by Print Run
+
+
+#+CAPTION: BIOT results for select assays by print run
+#+LABEL: fig:run
+#+ATTR_LaTeX: width=0.9\textwidth
+[[./figures/assay_printrun.pdf]]
+
+** BIOT results for Select Assays by Print Run
+
+#+BEGIN_LaTeX
+\include{./figures/run}
+#+END_LaTeX
+
+
+** Next steps
+
+- Print run appears to be the main contributor to the recent increased
+  screen positive rate.
+- Long term review of BIOT results and Print runs
+  - 2013-2018
+
+
+  
