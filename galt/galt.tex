@@ -1,8 +1,8 @@
-% Created 2018-08-21 Tue 17:28
+% Created 2018-08-21 Tue 22:18
+% Intended LaTeX compiler: pdflatex
 \documentclass[presentation, smaller]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{fixltx2e}
 \usepackage{graphicx}
 \usepackage{grffile}
 \usepackage{longtable}
@@ -27,7 +27,6 @@
 \usepackage{verbatim}
 \usepackage{tikz}
 \usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
-\AtBeginSection[]{\begin{frame}\tableofcontents[currentsection] \end{frame}}
 \usetheme[height=20pt]{Boadilla}
 \usecolortheme[RGB={170,160,80}]{{structure}}
 \author{Matthew Henderson, PhD, FCACB}
@@ -40,22 +39,23 @@
  pdftitle={Summary of "Sweat and sour: an update on classic galactosemia"},
  pdfkeywords={},
  pdfsubject={},
- pdfcreator={Emacs 25.2.1 (Org mode 8.3.4)}, 
+ pdfcreator={Emacs 26.1 (Org mode 9.1.9)}, 
  pdflang={English}}
 \begin{document}
 
 \maketitle
 
-\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}}
+\begin{LaTeX}
+\logo\{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}\}
 
 \vspace{220pt}
 \beamertemplatenavigationsymbolsempty
 \setbeamertemplate{caption}[numbered]
 \setbeamerfont{caption}{size=\tiny}
-% \addtobeamertemplate{frametitle}{}{%
-% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
-% \includegraphics[height=1cm,width=2cm]{cat}
-% \end{textblock*}}
+\% \addtobeamertemplate{frametitle}{}\{\%
+\% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+\% \includegraphics[height=1cm,width=2cm]{cat}
+\% \end{textblock*}\}
 
 
 \tikzstyle{chemical} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=none]
@@ -67,36 +67,104 @@
 \tikzstyle{box} = [rectangle, rounded corners, text width=5em, minimum height=5em,text centered, draw=black, fill=none]
 \tikzstyle{arrow} = [thick,->,>=stealth]
 \tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
+\end{LaTeX}
 
 
-\section{Introduction}
-\label{sec:orgheadline3}
 
-\begin{frame}[label={sec:orgheadline1}]{Classical galactosemia}
+
+\begin{frame}[label={sec:orgf945789}]{Classical galactosemia}
 \begin{itemize}
 \item Caused by deficient activity of galactose-1-phosphate uridylyltransferase
-\end{itemize}
-
-\includegraphics[width=0.7\textwidth]{./figures/Fig1.png}
-\end{frame}
-
-
-\begin{frame}[label={sec:orgheadline2}]{Classical galactosemia}
-\begin{itemize}
 \item prevalence is 1:16,000-60,000 live births
 \item autosomal recessive
 \begin{itemize}
-\item 300 mutations is the GALT gene described
+\item 336 mutations is the GALT gene described
 \end{itemize}
 
 \item presents in the neonatal period
 \begin{itemize}
 \item potentially lethal
-
-\item chronic debilitating complications
 \end{itemize}
 
 \item Therapy is life long dietary galactose restriction
+\begin{itemize}
+\item does not prevent long-term complications
 \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:org3f8b2bd}]{Galactose}
+\begin{itemize}
+\item Functions
+\begin{itemize}
+\item energy source in pre-weaning infants
+\item glycosylation
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgb12169a}]{Galactose metabolism}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{./figures/Fig1.png}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:org54ccc22}]{GALT Protein}
+\begin{itemize}
+\item ubiquitous enzyme
+\end{itemize}
+
+\alert{crystal structure}
+\end{frame}
+
+\begin{frame}[label={sec:org41a94d0}]{GALT catalytic mechanism}
+\alert{mechanism}
+\end{frame}
+
+\begin{frame}[label={sec:orge06c9f8}]{GALT gene}
+\begin{itemize}
+\item 9p13, 11 exons, \textasciitilde{}4 kb
+\item housekeeping
+\end{itemize}
+\begin{block}{c.563A>G, p.Q188R}
+\begin{itemize}
+\item \textasciitilde{}64\% of galactosemic alleles in caucasian pop
+\item Irish Travellers 1:430
+\item Non-functional variant: Destabilise UMP-GALT
+\begin{itemize}
+\item no residual RBC GALT activity
+\end{itemize}
+\end{itemize}
+\end{block}
+
+\begin{block}{c.855G>T, p.K285N}
+\begin{itemize}
+\item slavic origin?
+\item no residual RBC GALT activity
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:org0cfcc08}]{Duarte and Los Angles variants}
+\begin{itemize}
+\item Duarte - 50\% RBC GALT enzyme activity
+\item LA - elevated RBC GALT enzyme activity
+\item Same electrophoretic pattern, both p.N314D
+\item Linkage disequilibrium
+\begin{description}
+\item[{D}] 4bp deletion in promoter
+\end{description}
+\item p.D314 is the ancestral allele
+\item p.N314
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[label={sec:org4fa738a}]{Diagnosis}
+\end{frame}
+\begin{frame}[label={sec:org796ea05}]{Long-term outcome}
+\end{frame}
+
+\begin{frame}[label={sec:orgd0b5144}]{Therapy}
 \end{frame}
 \end{document}
