@@ -112,13 +112,41 @@
 - Duarte - 50% RBC GALT enzyme activity
 - LA - elevated RBC GALT enzyme activity
 - Same electrophoretic pattern, both p.N314D
-- Linkage disequilibrium
-  - D :: 4bp deletion in promoter
+- D is in linkage disequilibrium w a 4bp promoter deletion 
 - p.D314 is the ancestral allele 
-- p.N314 
+- p.N314 arose early in human evolution
 
+
+* Biochemical Features
+- \uparrow  Galatactose
+- \uparrow Gal-1-p - pathogenic
+- \uparrow  galactitol - cataracts
+- \uparrow galactonate
+- \downarrow UPD-Gal - disordered glycosylation
+- \downarrow UPD-Glc
+
+* Acute Presentation 
+- asymptomatic at birth
+- feeding leads to:
+  - poor weight gain, vomiting, diarrhea
+  - hepatocellular damage, lethargy, and hypotonia
+- May progress to Gram negative sepsis, cataracts
 
 * Diagnosis
-* Long-term outcome
+- reducing substances in urine - not specific or sensitive
+- Gal-1-P, galactose, galactitol in blood or urine
+- RBC Gal-1-P - not specific
+- RBC GALT activity
+  - Classic galactosemia - undetectable or 1% of controls
+
+- Excluded from NBS because it can be diagnosed clinically, and long term complications are not prevented by early treatment
 
 * Therapy
+- life long dietary restriction of galactose.
+- endogenous synthesis 
+* Long-term outcome
+
+- Cognitive impairment
+- Bone health - dairy restriction
+- Ovarian insufficiency
+
