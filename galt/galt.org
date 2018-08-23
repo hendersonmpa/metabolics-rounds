@@ -61,9 +61,6 @@
 
 #+END_LaTeX
 
-
-
-
 * Classical galactosemia
 - Caused by deficient activity of galactose-1-phosphate uridylyltransferase
 - prevalence is 1:16,000-60,000 live births
@@ -77,23 +74,43 @@
   - does not prevent long-term complications
 
 * Galactose
+- Primary source is dietary lactose
 - Functions
   - energy source in pre-weaning infants
   - glycosylation
+  - glycolipid synthesis
+
+
+#+CAPTION[lactose]:Lactose is a disaccharide derived from the condensation of galactose and glucose, which form a \beta 1 \to 4 glycosidic linkage.
+#+NAME: fig:lactose
+#+ATTR_LaTeX: :width 0.4\textwidth
+[[file:./figures/Beta-D-Lactose.png]]
+
 
 * Galactose metabolism 
 
-#+ATTR_LaTeX: :width 0.7\textwidth
-[[./figures/Fig1.png]]
+#+CAPTION[met]:Galactose metabolism
+#+NAME: fig:met
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/Fig1.png]]
+
 
 * GALT Protein
 - ubiquitous enzyme
 
-*crystal structure*
+#+CAPTION[structure]:Crystal structure
+#+NAME: fig:struct
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/Fig2.png]]
+
 
 * GALT catalytic mechanism
- 
-*mechanism*
+
+#+CAPTION[mechanism]:Catalytic mechanism
+#+NAME: fig:mech
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/Fig3.png]]
+
 
 * GALT gene
 - 9p13, 11 exons, ~4 kb 
@@ -109,9 +126,9 @@
 - no residual RBC GALT activity
 
 * Duarte and Los Angles variants
-- Duarte - 50% RBC GALT enzyme activity
-- LA - elevated RBC GALT enzyme activity
-- Same electrophoretic pattern, both p.N314D
+- Duarte (p.N314D) - 50% RBC GALT enzyme activity
+- LA (p.N314D) - elevated RBC GALT enzyme activity
+- Same electrophoretic pattern
 - D is in linkage disequilibrium w a 4bp promoter deletion 
 - p.D314 is the ancestral allele 
 - p.N314 arose early in human evolution
@@ -122,15 +139,21 @@
 - \uparrow Gal-1-p - pathogenic
 - \uparrow  galactitol - cataracts
 - \uparrow galactonate
-- \downarrow UPD-Gal - disordered glycosylation
+- \downarrow UPD-Gal - disordered glycosylation, glycolipids
 - \downarrow UPD-Glc
 
 * Acute Presentation 
 - asymptomatic at birth
-- feeding leads to:
+- with feeding:
   - poor weight gain, vomiting, diarrhea
   - hepatocellular damage, lethargy, and hypotonia
 - May progress to Gram negative sepsis, cataracts
+
+* NBS
+- not universal because it can be diagnosed clinically, and long term
+  complications are not prevented by early treatment
+  - ??recommendation for all samples with increased phenylalanine to be
+    screened for galactosemia (Pollitt 1997)??
 
 * Diagnosis
 - reducing substances in urine - not specific or sensitive
@@ -139,15 +162,14 @@
 - RBC GALT activity
   - Classic galactosemia - undetectable or 1% of controls
 
-- Excluded from NBS because it can be diagnosed clinically, and long term complications are not prevented by early treatment
+* Therapy and Outcome
 
-* Therapy
+** Therapy
 - life long dietary restriction of galactose.
-- endogenous synthesis 
 
-* Long-term outcome
-
-- Cognitive impairment
-- Bone health - dairy restriction
-- Ovarian insufficiency
-
+** Outcome
+- Endogenous galactose synthesis may be responsible for:
+  - Cognitive impairment
+  - Ovarian insufficiency
+- Dairy restrictions
+  - Bone health 
