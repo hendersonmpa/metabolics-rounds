@@ -18,7 +18,6 @@
 #+STARTUP: overview
 #+STARTUP: hidestars
 #+STARTUP: indent
-# #+BEAMER_HEADER: \subtitle{Part 1: Maple Syrup Urine Diseas}
 #+BEAMER_HEADER: \institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
 #+BEAMER_HEADER: \titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
 #+latex_header: \hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
@@ -35,6 +34,7 @@
 #+LaTeX_HEADER: \usepackage{tikz}
 #+LaTeX_HEADER: \usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
 :END:
+
 #+BEGIN_LaTeX
 %\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
 %    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
@@ -60,4 +60,24 @@
 \tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
 
 #+END_LaTeX
+
+
+* Introduction
+** Proteoglycans
+- Structural proteins of the ECM are embedded in gels formed from
+  proteoglycans.
+- Composed of glycosaminoglycans (GAGs) linked to a protien core.
+- GAGs are composed of repeating units of disaccharides.
+  - GlcNac-sulfate|GalNAc-sulfate - glucuronic|iduronic
+- Negatively charged GAGs bind water to create a gel
+
+- Found in interstitial connective tissues such as: 
+  - synovial fluid
+  - vitreous humour, cornea
+  - arterial walls
+  - bone, cartilage
+
+** Synthesis of Proteoglycans
+
+
 
