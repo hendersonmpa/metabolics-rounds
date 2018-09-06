@@ -92,8 +92,8 @@
 
 ** Glycosaminoglycans
 
-1. heparin
-2. heparin sulfate
+1. heparan
+2. heparan sulfate
 3. chondroitin sulfate
 4. dermatan sulfate
 5. keratan sulfate
@@ -137,7 +137,7 @@
 
 ** GAGs
 
-*** Heparin Sulfate
+*** Heparan Sulfate
 - O-xylose-linked to core proteins
 - developmental processes,angiogenesis, blood coagulation, tumour metastasis.
 
@@ -182,7 +182,7 @@
 | MPS I (Hurler)          | \alpha-iduronidase       | HS,DS    |
 | MPS II (Hunter)         | Iduronate-2-sulfatase    | HS,DS    |
 |-------------------------+--------------------------+----------|
-| MPS IIIA (Sanfilippo A) | Heparin-N-Sulfatase      | HS       |
+| MPS IIIA (Sanfilippo A) | Heparan-N-Sulfatase      | HS       |
 | MPS IIIB (Sanfilippo B) | N-acetyl glucosaminidase | HS       |
 | MPS IIIC (Sanfilippo C) | Acetyl CoA glucosamine   | HS       |
 |                         | N-acetyltransferase      |          |
@@ -230,7 +230,7 @@
 [[file:./figures/ks_degradation_disorders.png]]
 
 
-** Heparin degradation
+** Heparan degradation
 #+NAME: fig:hse
 #+ATTR_LaTeX: :width 0.5\textwidth
 [[file:./figures/hs_degradation_disorders.png]]
