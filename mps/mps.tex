@@ -1,8 +1,8 @@
-% Created 2018-09-05 Wed 21:51
-% Intended LaTeX compiler: pdflatex
+% Created 2018-09-06 Thu 12:47
 \documentclass[presentation, smaller]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
 \usepackage{graphicx}
 \usepackage{grffile}
 \usepackage{longtable}
@@ -31,27 +31,33 @@
 \usecolortheme{whale}
 \author{Matthew Henderson, PhD, FCACB}
 \date{\today}
-\title{Mucopolysaccharidoses}
+\title{Mucopolysaccharidoses Overview}
 \institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
 \titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
 \hypersetup{
  pdfauthor={Matthew Henderson, PhD, FCACB},
- pdftitle={Mucopolysaccharidoses},
+ pdftitle={Mucopolysaccharidoses Overview},
  pdfkeywords={},
  pdfsubject={},
- pdfcreator={Emacs 26.1 (Org mode 9.1.9)}, 
+ pdfcreator={Emacs 25.2.1 (Org mode 8.3.4)}, 
  pdflang={English}}
 \begin{document}
 
 \maketitle
 
-\begin{LaTeX}
 
+# %\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
+# %    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
+# }
 
 \vspace{220pt}
 \beamertemplatenavigationsymbolsempty
 \setbeamertemplate{caption}[numbered]
 \setbeamerfont{caption}{size=\tiny}
+#  \addtobeamertemplate{frametitle}{}{%
+#  \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+#  \includegraphics[height=1cm,width=2cm]{cat}
+#  \end{textblock*}}
 
 \tikzstyle{chemical} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=none]
 \tikzstyle{hardware} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=gray!30]
@@ -62,12 +68,14 @@
 \tikzstyle{box} = [rectangle, rounded corners, text width=5em, minimum height=5em,text centered, draw=black, fill=none]
 \tikzstyle{arrow} = [thick,->,>=stealth]
 \tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
-\end{LaTeX}
-
 
 \section{Introduction}
-\label{sec:org9c666fb}
-\begin{frame}[label={sec:orgb7a4dbe}]{Proteoglycans function}
+\label{sec:orgheadline9}
+\begin{frame}[label={sec:orgheadline1}]{Proteoglycans}
+\includegraphics[width=0.8\textwidth]{./figures/ch17f01.jpg}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline2}]{Proteoglycans function}
 \begin{itemize}
 \item Structural proteins of the ECM are embedded in gels formed from
 proteoglycans.
@@ -87,14 +95,12 @@ proteoglycans.
 \end{frame}
 
 
-\begin{frame}[label={sec:org43daa8b}]{Proteoglycans synthesis}
-\begin{center}
+\begin{frame}[label={sec:orgheadline3}]{Proteoglycans synthesis}
 \includegraphics[width=0.8\textwidth]{./figures/ch3f1.jpg}
-\label{org7480fb9}
-\end{center}
 \end{frame}
 
-\begin{frame}[label={sec:org605e97e}]{Glycosaminoglycans}
+
+\begin{frame}[label={sec:orgheadline4}]{Glycosaminoglycans}
 \begin{enumerate}
 \item heparin
 \item heparin sulfate
@@ -113,42 +119,50 @@ proteoglycans.
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orga369c3d}]{GAGs: Dermatan sulfate}
-\begin{itemize}
-\item O-xylose-linked to core proteins
-\item found mostly in skin,
-\begin{itemize}
-\item also blood vessels, heart valves, tendons, and lungs.
-\end{itemize}
-\item may have roles in coagulation, cardiovascular disease, carcinogenesis, infection, wound repair, and fibrosis
-\end{itemize}
-
-\begin{center}
-\includegraphics[width=0.5\textwidth]{./figures/dermatan_sulfate.png}
-\label{org3f5b39b}
-\end{center}
+\begin{frame}[label={sec:orgheadline5}]{Symbol Nomenclature for Glycans (SNFG)}
+\includegraphics[width=0.8\textwidth]{./figures/snfg.png}
 \end{frame}
 
 
-\begin{frame}[label={sec:org6a74776}]{GAGs:Heparin Sulfate}
-\begin{itemize}
-\item O-xylose-linked to core proteins
-\item occurs as a proteoglycan in which two or three HS chains are
-attached in close proximity to cell surface or extracellular matrix
-proteins.
-\item developmental processes,
-\item angiogenesis
-\item blood coagulation
-\item tumour metastasis.
-\end{itemize}
-
-\begin{center}
-\includegraphics[width=0.5\textwidth]{./figures/heparin_sulfate.png}
-\label{org2d0db3b}
-\end{center}
+\begin{frame}[label={sec:orgheadline6}]{Glycosaminoglycans}
+\includegraphics[width=0.8\textwidth]{./figures/ch17f02.jpg}
 \end{frame}
 
-\begin{frame}[label={sec:org4fe44ad}]{GAGs:Keratan sulfate}
+\begin{frame}[label={sec:orgheadline7}]{GAGs}
+\begin{block}{Hyaluronan}
+\begin{itemize}
+\item not sulfated, not protein bound
+\item forms in the plasma membrane instead of the Golgi
+\item connective, epithelial, and neural tissues.
+\item cell proliferation and migration
+\end{itemize}
+\end{block}
+
+\begin{block}{Chondroitin sulfate}
+\begin{itemize}
+\item O-xylose-linked to core proteins
+\item structural component of cartilage
+\end{itemize}
+\end{block}
+
+\begin{block}{Dermatan sulfate}
+\begin{itemize}
+\item O-xylose-linked to core proteins
+\item skin, blood vessels, heart valves, tendons, and lungs.O
+\item coagulation, cardiovascular disease, carcinogenesis, infection, wound repair, and fibrosis
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline8}]{GAGs}
+\begin{block}{Heparin Sulfate}
+\begin{itemize}
+\item O-xylose-linked to core proteins
+\item developmental processes,angiogenesis, blood coagulation, tumour metastasis.
+\end{itemize}
+\end{block}
+
+\begin{block}{Keratan sulfate}
 \begin{itemize}
 \item KSI was isolated from corneal tissue and KSII from skeletal tissue
 \begin{itemize}
@@ -156,22 +170,17 @@ proteins.
 N-acetylglucosamine
 \item KSII is O-linked to specific Serine or Threonine amino acids via
 N-acetyl galactosamine.
-\item cornea, cartilage, and bone
-\item synthesized in the central nervous system where it participates both
-in development
+\item cornea, cartilage,bone, CNS
 \end{itemize}
 \end{itemize}
-
-\begin{center}
-\includegraphics[width=0.5\textwidth]{./figures/keratan_sulfate.png}
-\label{orgc2cff85}
-\end{center}
+\end{block}
 \end{frame}
 
-\section{Mucopolysaccharidoses}
-\label{sec:orge93f51f}
 
-\begin{frame}[label={sec:orgea366f4}]{Mucopolysaccharidoses}
+\section{Mucopolysaccharidoses}
+\label{sec:orgheadline18}
+
+\begin{frame}[label={sec:orgheadline10}]{Mucopolysaccharidoses}
 \begin{itemize}
 \item type of lysosomal storage disease
 \item a group of metabolic disorders caused by the absence or
@@ -193,7 +202,44 @@ degradation
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orga4c39d6}]{Classification}
+\begin{frame}[label={sec:orgheadline11}]{Glycosaminoglycan degradation}
+\includegraphics[width=0.8\textwidth]{./figures/ch16f9.jpg}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline12}]{Mucopolysaccharidoses}
+\small
+\begin{center}
+\begin{tabular}{lll}
+Name & Enzyme & GAG\\
+\hline
+MPS I (Hurler) & \(\alpha\)-iduronidase & HS,DS\\
+MPS II (Hunter) & Iduronate-2-sulfatase & HS,DS\\
+\hline
+MPS IIIA (Sanfilippo A) & Heparin-N-Sulfatase & HS\\
+MPS IIIB (Sanfilippo B) & N-acetyl glucosaminidase & HS\\
+MPS IIIC (Sanfilippo C) & Acetyl CoA glucosamine & HS\\
+ & N-acetyltransferase & \\
+MPS IIID (Sanfilippo D) & N-acetyl-glucosamine & HS\\
+ & 6-sulfatase & \\
+\hline
+MPS IVA (Morquio A) & N-acetylgalactosamine & KS,CS\\
+ & 6-sulfatase & \\
+MPS IVB (Morquio B) & \(\beta\)-galactosidase & KS\\
+\hline
+MPS VI (Maroteaux-Lamy) & N-acetylgalactosamine & DS\\
+ & 4-sulfatase & \\
+MPS VII (Sly) & \(\beta\)-glucuronidase & DS,HS,CS\\
+MPS IX & hyaluronidase & HA\\
+MSD (Austin) & formylglycine-generating & HS,DS\\
+ & enzyme & \\
+\end{tabular}
+\end{center}
+\end{frame}
+
+
+
+\begin{frame}[label={sec:orgheadline13}]{Classification}
 \begin{itemize}
 \item Presenting as a dysmorphic syndrome
 \begin{itemize}
@@ -219,62 +265,24 @@ degradation
 
 
 
-\begin{frame}[label={sec:org611a63f}]{MPS GAGs}
-\begin{center}
-\begin{tabular}{lll}
-Name & Enzyme & GAG\\
-\hline
-MPS I (Hurler) & \(\alpha\)-iduronidase & HS,DS\\
-MPS II (Hunter) & Iduronate-2-sulfatase & HS,DS\\
-\hline
-MPS IIIA (Sanfilippo A) & Heparin-N-Sulfatase & HS\\
-MPS IIIB (Sanfilippo B) & N-acetyl glucosaminidase & HS\\
-MPS IIIC (Sanfilippo C) & Acetyl CoA glucosamine & HS\\
- & N-acetyltransferase & \\
-MPS IIID (Sanfilippo D) & N-acetyl-glucosamine & HS\\
- & 6-sulfatase & \\
-\hline
-MPS IVA (Morquio A) & N-acetylgalactosamine & KS,CS\\
- & 6-sulfatase & \\
-MPS IVB (Morquio B) & \(\beta\)-galactosidase & KS\\
-\hline
-MPS VI (Maroteaux-Lamy) &  & DS\\
-MPS VII (Sly) & \(\beta\)-glucuronidase & DS,HS,CS\\
-MPS IX & hyaluronidase & HA\\
-MSD (Austin) & formylglycine-generating & HS,DS\\
-\end{tabular}
-\end{center}
+\begin{frame}[label={sec:orgheadline14}]{Dermatan sulfate degradation}
+\includegraphics[width=0.6\textwidth]{./figures/ds_degradation_disorders.png}
 \end{frame}
 
 
-\begin{frame}[label={sec:org2e3f9a5}]{Glycosaminoglycan degradation}
-\begin{center}
-\includegraphics[width=0.8\textwidth]{./figures/ch16f9.jpg}
-\label{org1713e00}
-\end{center}
+\begin{frame}[label={sec:orgheadline15}]{Keratan sulfate degradation}
+\includegraphics[width=0.6\textwidth]{./figures/ks_degradation_disorders.png}
 \end{frame}
 
 
-\begin{frame}[label={sec:orgadc67de}]{Dermatan sulfate degradation}
-\begin{center}
-\includegraphics[width=0.6\textwidth]{./figures/ds_degradation.jpg}
-\label{org848dc6f}
-\end{center}
+\begin{frame}[label={sec:orgheadline16}]{Heparin degradation}
+\includegraphics[width=0.5\textwidth]{./figures/hs_degradation_disorders.png}
 \end{frame}
 
 
-\begin{frame}[label={sec:org8328f4a}]{Keratan sulfate degradation}
-\begin{center}
-\includegraphics[width=0.6\textwidth]{./figures/ks_degradation.jpg}
-\label{org15c9c5f}
-\end{center}
-\end{frame}
-
-
-\begin{frame}[label={sec:org9d27f56}]{Heparin degradation}
-\begin{center}
-\includegraphics[width=0.5\textwidth]{./figures/hs_degradation.jpg}
-\label{org399b88c}
-\end{center}
+\begin{frame}[label={sec:orgheadline17}]{Next Up}
+\begin{itemize}
+\item NBS for MPS I
+\end{itemize}
 \end{frame}
 \end{document}
