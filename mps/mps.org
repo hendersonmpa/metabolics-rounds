@@ -69,15 +69,32 @@
 - Composed of glycosaminoglycans (GAGs) linked to a protien core.
 - GAGs are composed of repeating units of disaccharides.
   - GlcNac-sulfate|GalNAc-sulfate - glucuronic|iduronic
-- Negatively charged GAGs bind water to create a gel
-
+- Negatively charged GAGs bind Na^+
+  - draws water to create a gel 
 - Found in interstitial connective tissues such as: 
   - synovial fluid
   - vitreous humour, cornea
   - arterial walls
   - bone, cartilage
 
-** Synthesis of Proteoglycans
+** Proteoglycans
+
+- Heparin sulfate
+  - 
+- Chondroitin sulfate
+  - GalNAc - glucuronic acid
+  - Cartilage
+- Keratan sulfate
+  - Gal-GlcNAc
+  - cornea, cartilage, and bone
+
+** Non-proteoglycan polysaccharides
+- Hyaluronic acid
+  - connective, epithelial, neural tissues
+  - 70 kg person, 15 grams of HA
+  - 1/3 turned over daily
+
+
 
 
 
