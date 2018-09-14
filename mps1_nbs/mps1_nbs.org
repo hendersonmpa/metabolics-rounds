@@ -63,3 +63,152 @@
 #+END_LaTeX
 
 * Introduction
+** Hurler 
+- Hurler
+- Sheie
+- Hurler-Sheie
+- Psuedodeficiency
+  - A300T
+
+** Hydrolysis reaction catalyzed by Alpha-L-Iduronidase:
+
+#+CAPTION[mech]:Hydrolysis reaction catalyzed by Alpha-L-Iduronidase:
+#+NAME: fig:mech
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/nihms3970f3.jpg]]
+
+** Treatment
+
+- BMT
+- ERT
+- 
+
+* Screening Methods
+
+** Michaelis-Menten Kinetics 
+
+#+begin_src gnuplot :file ./figures/kinetics.png
+  reset
+  set key off 
+  set title "IDUA Kinetics"
+  set xlabel "Substrate [uM]"
+  set xrange [0:2000]
+  set ylabel "Rate (nmol/mg/hr)"
+  set yrange [0:6]
+  f(vmax,km,x) = (vmax*x)/(x + km)
+  v(vmax,km,x) = vmax * x/(x + km) 
+  vmax1 = 4.42 
+  km1 = 191
+  set style line 1 lw 2 lt 1 dt 2 lc rgb "red" 
+  set arrow from 0,vmax1 to 2000,vmax1 nohead ls 1
+  set label 1 at 50,(vmax1 + 0.2) "Vmax" front
+  set label 2 at (km1 + 15),0.5 "Km WT" front
+  set arrow from km1,0 to km1,f(vmax1,km1,km1) lw 2 nohead
+  set arrow from 0,v(vmax1,km1,km1) to km1,v(vmax1,km1,km1) lw 2 nohead
+
+  plot f(vmax1,km1,x) with lines lw 2 title 'WT'
+
+
+#+end_src
+
+
+#+CAPTION[]: IDUA Kinetics
+#+NAME: fig:mm
+#+ATTR_LaTeX: :width 0.8\textwidth
+#+RESULTS:
+[[file:./figures/kinetics.png]]
+
+
+
+** IDUA: Colorimetric
+- phenyl \alpha-Liduronide (Phi)
+  - Hydrolysis of phenyl \alpha{}-L-iduronide and subsequent
+    colorimetric assay of the liberated phenol
+  - Digests contained 5 mM phenyl \alpha{}-L-iduronide, 0.1 M NaCI,
+    and 0.08 M sodium formate buffer of pH 3.5;
+  - they were incubated for 18 hr at 25 ° under a layer of toluene.
+  - Recovery of the phenol liberated was completed by additional extractions with toluene.
+  - Phenol was returned to an aqueous phase for analysis by extraction of the pooled toluene layers with 0.05 M NaOH.
+  - Turbidity was then removed by a treatment with chloroform-amyl alcohol.
+
+** Spectrofluorometric
+- 4-Methylumbelliferyl-\alpha-L-iduronide is a fluorogenic substrate of \alpha-L-iduronidase
+- emission maximum at 445-454 nm.
+- excitation maximum for 4-MU is pH-dependent: 330, 370, and 385 nm at pH 4.6, 7.4, and 10.4 
+
+#+CAPTION[4MUI]:4-Methylumbelliferyl-α-L-Iduronide 2-sulfate
+#+NAME: fig:4mui
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/9001600.png]]
+
+** IDUA: FIA-MS/MS
+
+#+CAPTION[]:MS/MS workflow
+#+NAME: fig:msmswf
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/F2large.jpg]]
+
+
+** IDUA: FIA-MS/MS
+- Positive mode ESI
+- Ten µL of the 150 µL sample via flow injection
+  - 80/20 acetonitrile/water with 0.2% formic acid
+  - flow-rate of 0.1 mL/min for 1 min then 1 mL/min for 0.5 min.
+  - Data was collected during 1.5 minute of infusion,
+
+#+CAPTION[]:IDUA transitions
+#+LABEL: tab:mrm
+| Analyte | transition     |
+|---------+----------------|
+| IDUA-IS | 377.2 -> 277.1 |
+| IDUA-P  | 391.2 -> 291.2 |
+
+
+
+** GAGs: LC-MS/MS
+- Dried blood spot punches (1/8 in. diameter) were eluted for 10 min at RT and sonicated for 15 min.
+- Heparan sulfate and dermatan sulfate in the DBS punches were
+  digested to disaccharides by with 5 mIU of each heparinase I, II,
+  III and 50 mIU chondroitinase B.
+- 2 h of incubation at 30 \degree{} C, 15 μL 150 mM EDTA (pH7.0) and
+  125 ng internal standard, 4UA-2S-GlcNCOEt-6S, was added and the
+  reaction was stopped and proteins denatured by boiling for 5 min.
+- The reaction mixture was centrifuged at 16,000 g for 5 min at room
+  temperature. The supernatant was subsequently applied to an Amicon
+  Ultra 30 K centrifugal filter and centrifuged at 14,000 g
+
+** Inlet table                                                     :noexport:
+#+tblname: data-table
+| Time | Flow |   %A |   %B |
+|------+------+------+------|
+|    0 |  0.2 |  100 |    0 |
+|  2.5 |  0.2 | 80.0 | 20.0 |
+|  5.0 |  0.2 | 80.0 | 20.0 |
+|  5.1 |  0.2 |  100 |    0 |
+|  7.1 |  0.2 |  100 |    0 |
+
+** GAGs: LC-MS/MS
+
+#+begin_src gnuplot :var data=data-table :file ./figures/outletmethod.png
+reset
+set title "UPLC Gradient"
+set xlabel "min"
+
+set xrange [0:8]
+
+set ylabel "percent"
+set yrange [0:100]
+
+plot data u 1:3 w lp lw 2 title 'A', \
+     data u 1:4 w lp lw 2 title 'B'
+
+#+end_src
+
+#+RESULTS:
+[[file:./figures/outletmethod.png]]
+
+
+\[
+\frac{7.5 min/sample \cdot 1000 samples/day}{60 min/hour \cdot 7 instruments}
+= 17.86 hours/instrument/day
+\]
