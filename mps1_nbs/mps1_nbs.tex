@@ -1,4 +1,4 @@
-% Created 2018-09-14 Fri 17:11
+% Created 2018-09-17 Mon 16:27
 \documentclass[presentation, smaller]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -71,19 +71,72 @@
 
 \section{Introduction}
 \label{sec:orgheadline4}
-\begin{frame}[label={sec:orgheadline1}]{Hurler}
+\begin{frame}[label={sec:orgheadline1}]{MPS I}
 \begin{itemize}
-\item Hurler
-\item Sheie
-\item Hurler-Sheie
-\item Psuedodeficiency
+\item Defective \(\alpha\)-L-iduronidase enzyme
 \begin{itemize}
-\item A300T
+\item degradation of dermatan sulfate and heparin sulfate
+\end{itemize}
+\item Three clinical subtypes IH, IS and IHS
+
+\item The estimated prevalence for MPS1 (all forms) from NBS pilot studies is: 
+\begin{itemize}
+\item 1/35,500 Washington ​(Scott et al. 2013)
+\item 1/14,567 Missouri ​(Hopkins et al. 2015)
+\item 1/17,643 Taiwan ​(Lin et al. 2013)
 \end{itemize}
 \end{itemize}
+
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{./figures/idua.png}
+\label{fig:idua}
+\end{figure}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline2}]{Hydrolysis reaction catalyzed by Alpha-L-Iduronidase:}
+
+\begin{frame}[label={sec:orgheadline2}]{MPS I disease spectrum}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{./figures/mps1clinical.png}
+\label{fig:mps1}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline3}]{Diagnosis and Treatment}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{./figures/registry.png}
+\label{fig:reg}
+\end{figure}
+
+
+\begin{block}{Diagnosis}
+\begin{itemize}
+\item \(\alpha\)-L-iduronidase enzyme activity levels
+\begin{itemize}
+\item measured in WBCs, plasma or fibroblasts \(\to\) low to undetectable
+\item unable to predict severity of MPS I
+\end{itemize}
+\item Two ​IDUA mutations in trans (identified by sequencing)
+\end{itemize}
+\end{block}
+
+\begin{block}{Treatment}
+\begin{itemize}
+\item hematopoietic stem cell transplantation
+\item enzyme replacement therapy with Laronidase
+\item ERT + HSCT in children <2 years of age
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+\section{Biochemistry}
+\label{sec:orgheadline8}
+\begin{frame}[label={sec:orgheadline5}]{Hydrolysis reaction catalyzed by Alpha-L-Iduronidase:}
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.8\textwidth]{./figures/nihms3970f3.jpg}
@@ -92,21 +145,10 @@ Hydrolysis reaction catalyzed by Alpha-L-Iduronidase:}
 \end{figure}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline3}]{Treatment}
-\begin{itemize}
-\item BMT
-\item ERT
-\item 
-\end{itemize}
-\end{frame}
-
-\section{Screening Methods}
-\label{sec:orgheadline12}
-
-\begin{frame}[label={sec:orgheadline5}]{Michaelis-Menten Kinetics}
+\begin{frame}[label={sec:orgheadline6}]{IDUA exhibits Michaelis-Menten kinetics}
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.8\textwidth]{./figures/kinetics.png}
+\includegraphics[width=0.8\textwidth]{./figures/kinetics.pdf}
 \caption{\label{fig:mm}
 IDUA Kinetics}
 \end{figure}
@@ -114,23 +156,44 @@ IDUA Kinetics}
 
 
 
-\begin{frame}[label={sec:orgheadline6}]{IDUA: Colorimetric}
+\begin{frame}[label={sec:orgheadline7}]{Substrate concentration}
 \begin{itemize}
-\item phenyl \(\alpha\)-Liduronide (Phi)
+\item substrate concentrations 10-fold the Km recommended
+\item interference from contaminating 4MU-\(\beta\)-D-glucuronide
+\item the very high cost of 4MU-\(\alpha\)-L-iduronide are limiting factors.
+
+\item \(\alpha\)-L-iduronidase enzyme assays should be conducted either under
+substrate saturating conditions or, when substrate concentrations
+are significantly below enzyme saturation, the values are adjusted
+by arithmetic conversion using the Michaelis–Menten model
+\end{itemize}
+
+\[ 
+V  = \frac{Vmax[S]}{Km + [S]}
+\]
+\end{frame}
+\section{Screening Methods}
+\label{sec:orgheadline17}
+
+
+\begin{frame}[label={sec:orgheadline9}]{IDUA: Colorimetric}
+\begin{itemize}
+\item phenyl \(\alpha\)-L-iduronide (Phi)
 \begin{itemize}
 \item Hydrolysis of phenyl \(\alpha\)-L-iduronide and subsequent
 colorimetric assay of the liberated phenol
 \item Digests contained 5 mM phenyl \(\alpha\)-L-iduronide, 0.1 M NaCI,
 and 0.08 M sodium formate buffer of pH 3.5;
-\item they were incubated for 18 hr at 25 ° under a layer of toluene.
-\item Recovery of the phenol liberated was completed by additional extractions with toluene.
-\item Phenol was returned to an aqueous phase for analysis by extraction of the pooled toluene layers with 0.05 M NaOH.
-\item Turbidity was then removed by a treatment with chloroform-amyl alcohol.
+\item they were incubated for 18 hr at 25\degree C under a layer of \textbf{toluene}.
+\item Recovery of the phenol liberated was completed by additional extractions with \textbf{toluene}.
+\item Phenol was returned to an aqueous phase for analysis by extraction of the pooled \textbf{toluene} layers with 0.05 M NaOH.
+\item Turbidity was then removed by a treatment with \textbf{chloroform-amyl alcohol}.
 \end{itemize}
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline7}]{Spectrofluorometric}
+
+\begin{frame}[label={sec:orgheadline10}]{Spectrofluorometric}
 \begin{itemize}
 \item 4-Methylumbelliferyl-\(\alpha\)-L-iduronide is a fluorogenic substrate of \(\alpha\)-L-iduronidase
 \item emission maximum at 445-454 nm.
@@ -139,13 +202,56 @@ and 0.08 M sodium formate buffer of pH 3.5;
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.8\textwidth]{./figures/9001600.png}
+\includegraphics[width=0.4\textwidth]{./figures/9001600.png}
 \caption[4MUI]{\label{fig:4mui}
-4-Methylumbelliferyl-α-L-Iduronide 2-sulfate}
+4-Methylumbelliferyl-\(\alpha\)-L-Iduronide 2-sulfate}
 \end{figure}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline8}]{IDUA: FIA-MS/MS}
+
+\begin{frame}[label={sec:orgheadline11}]{Spectrofluorometric}
+\begin{enumerate}
+\item Elute one 3.1 mm DBS punch
+\begin{itemize}
+\item D-saccharic acid-1,4-lactone
+\item 2 mM 4MU-\(\alpha\)-L-iduronide
+\end{itemize}
+\item Incubate for 20hrs at 37\degree C
+\item Add glycine-carbonate and vortex to stop reaction
+\item 30 minutes at RT
+\item Measure fluorescence
+\begin{itemize}
+\item 4MU calibrator
+\end{itemize}
+\item Results uM/L blood/20 hr
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline12}]{Psuedodeficiency}
+\begin{itemize}
+\item Low IDUA activity \emph{in vitro}
+\item A300T, steric hindrance at active site E299
+\item homozygosity for p.A79T,
+\item heterozygosity for p.A79T and p.V322E
+\item heterozygosity for p.A79T and p. D223N
+\item heterozygosity for p.D223N and p. V322E
+\end{itemize}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{./figures/pd.png}
+\label{fig:pd}
+\end{figure}
+
+
+\begin{itemize}
+\item Missouri program
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline13}]{IDUA: FIA-MS/MS}
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.8\textwidth]{./figures/F2large.jpg}
@@ -155,7 +261,7 @@ MS/MS workflow}
 \end{frame}
 
 
-\begin{frame}[label={sec:orgheadline9}]{IDUA: FIA-MS/MS}
+\begin{frame}[label={sec:orgheadline14}]{IDUA: FIA-MS/MS}
 \begin{itemize}
 \item Positive mode ESI
 \item Ten µL of the 150 µL sample via flow injection
@@ -179,15 +285,13 @@ IDUA-P & 391.2 -> 291.2\\
 \end{table}
 \end{frame}
 
-
-
-\begin{frame}[label={sec:orgheadline10}]{GAGs: LC-MS/MS}
+\begin{frame}[label={sec:orgheadline15}]{GAGs: LC-MS/MS}
 \begin{itemize}
 \item Dried blood spot punches (1/8 in. diameter) were eluted for 10 min at RT and sonicated for 15 min.
 \item Heparan sulfate and dermatan sulfate in the DBS punches were
 digested to disaccharides by with 5 mIU of each heparinase I, II,
 III and 50 mIU chondroitinase B.
-\item 2 h of incubation at 30 \degree{} C, 15 μL 150 mM EDTA (pH7.0) and
+\item 2 h of incubation at 30\degree C, 15 μL 150 mM EDTA (pH7.0) and
 125 ng internal standard, 4UA-2S-GlcNCOEt-6S, was added and the
 reaction was stopped and proteins denatured by boiling for 5 min.
 \item The reaction mixture was centrifuged at 16,000 g for 5 min at room
@@ -196,7 +300,7 @@ Ultra 30 K centrifugal filter and centrifuged at 14,000 g
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline11}]{GAGs: LC-MS/MS}
+\begin{frame}[label={sec:orgheadline16}]{GAGs: LC-MS/MS}
 \includegraphics[width=.9\linewidth]{./figures/outletmethod.png}
 
 

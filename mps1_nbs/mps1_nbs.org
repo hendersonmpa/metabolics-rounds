@@ -63,31 +63,80 @@
 #+END_LaTeX
 
 * Introduction
-** Hurler 
-- Hurler
-- Sheie
-- Hurler-Sheie
-- Psuedodeficiency
-  - A300T
+** MPS I 
 
+- Defective \alpha{}-L-iduronidase enzyme
+  - degradation of dermatan sulfate and heparin sulfate
+- Three clinical subtypes IH, IS and IHS
+
+- The estimated prevalence for MPS1 (all forms) from NBS pilot studies is: 
+  - 1/35,500 Washington ​(Scott et al. 2013)
+  - 1/14,567 Missouri ​(Hopkins et al. 2015)
+  - 1/17,643 Taiwan ​(Lin et al. 2013) 
+
+
+#+CAPTION[]:
+#+NAME: fig:idua
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/idua.png]]
+
+
+** MPS I disease spectrum
+
+#+CAPTION[]:
+#+NAME: fig:mps1
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/mps1clinical.png]]
+
+
+** Diagnosis and Treatment
+#+CAPTION[]:
+#+NAME: fig:reg
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/registry.png]]
+
+
+*** Diagnosis
+- \alpha{}-L-iduronidase enzyme activity levels
+  - measured in WBCs, plasma or fibroblasts \to low to undetectable  
+  - unable to predict severity of MPS I 
+- Two ​IDUA mutations in trans (identified by sequencing) 
+
+*** Treatment
+- hematopoietic stem cell transplantation
+- enzyme replacement therapy with Laronidase
+- ERT + HSCT in children <2 years of age 
+
+
+* Biochemistry
 ** Hydrolysis reaction catalyzed by Alpha-L-Iduronidase:
-
 #+CAPTION[mech]:Hydrolysis reaction catalyzed by Alpha-L-Iduronidase:
 #+NAME: fig:mech
 #+ATTR_LaTeX: :width 0.8\textwidth
 [[file:./figures/nihms3970f3.jpg]]
 
-** Treatment
+*** COMMENT
+The catalytic pathway for human IDUA and supporting crystallographic
+evidence a) A model of the Michaelis complex with 5F-IdoAF bound in
+the active site of IDUA. The enzyme residues are distinguished by
+carbon atoms highlighted in green, whereas the ligand carbon atoms in
+grey. Hydrogen bonds are represented by dashed lines. (b) The
+glycosyl- enzyme intermediate as seen in the active site of IDUA with
+Glu299 covalently modified by 2F-IdoAF. The carbon atoms of the enzyme
+residues are highlighted in cyan, while those of the ligand are shown
+in yellow. (c) A comparative “front” view of the 5F-IdoAF and
+covalently bound 2F-IdoA in the active site of IDUA, the C2-C5 axis of
+the IdoA ring runs almost perpendicular to the plane of the paper. The
+anomeric carbon “travels” ~1.2Å downward from its position in the
+IDUA-5F-IdoAF complex to that in the IDUA-2F-IdoA adduct. (d) The
+proposed catalytic pathway of IDUA. See text for details. Note that
+acid catalysis by Glu 182 may not be important for fluoride departure
+but is crucial for the natural substrate of IDUA.
 
-- BMT
-- ERT
-- 
 
-* Screening Methods
+** IDUA exhibits Michaelis-Menten kinetics 
 
-** Michaelis-Menten Kinetics 
-
-#+begin_src gnuplot :file ./figures/kinetics.png
+#+begin_src gnuplot :file ./figures/kinetics.pdf
   reset
   set key off 
   set title "IDUA Kinetics"
@@ -99,14 +148,18 @@
   v(vmax,km,x) = vmax * x/(x + km) 
   vmax1 = 4.42 
   km1 = 191
+  km10 = km1*10
   set style line 1 lw 2 lt 1 dt 2 lc rgb "red" 
   set arrow from 0,vmax1 to 2000,vmax1 nohead ls 1
   set label 1 at 50,(vmax1 + 0.2) "Vmax" front
-  set label 2 at (km1 + 15),0.5 "Km WT" front
+  set label 2 at (km1 + 15),0.5 "Km" front
   set arrow from km1,0 to km1,f(vmax1,km1,km1) lw 2 nohead
   set arrow from 0,v(vmax1,km1,km1) to km1,v(vmax1,km1,km1) lw 2 nohead
 
-  plot f(vmax1,km1,x) with lines lw 2 title 'WT'
+  set arrow from km10 ,0 to km10,f(vmax1,km1,km10) lw 2 dt 3 nohead
+  set arrow from 0,v(vmax1,km1,km10) to km10,v(vmax1,km1,km10) lw 2 dt 3 nohead
+
+  plot f(vmax1,km1,x) with lines lw 2 lc rgb "midnight-blue"
 
 
 #+end_src
@@ -116,30 +169,77 @@
 #+NAME: fig:mm
 #+ATTR_LaTeX: :width 0.8\textwidth
 #+RESULTS:
-[[file:./figures/kinetics.png]]
+[[file:./figures/kinetics.pdf]]
 
+
+
+** Substrate concentration
+- substrate concentrations 10-fold the Km recommended
+- interference from contaminating 4MU-\beta-D-glucuronide
+- the very high cost of 4MU-\alpha-L-iduronide are limiting factors.
+
+- \alpha-L-iduronidase enzyme assays should be conducted either under
+  substrate saturating conditions or, when substrate concentrations
+  are significantly below enzyme saturation, the values are adjusted
+  by arithmetic conversion using the Michaelis–Menten model
+
+\[ 
+V  = \frac{Vmax[S]}{Km + [S]}
+\]
+* Screening Methods
 
 
 ** IDUA: Colorimetric
-- phenyl \alpha-Liduronide (Phi)
-  - Hydrolysis of phenyl \alpha{}-L-iduronide and subsequent
+- phenyl \alpha-L-iduronide (Phi)
+  - Hydrolysis of phenyl \alpha-L-iduronide and subsequent
     colorimetric assay of the liberated phenol
   - Digests contained 5 mM phenyl \alpha{}-L-iduronide, 0.1 M NaCI,
     and 0.08 M sodium formate buffer of pH 3.5;
-  - they were incubated for 18 hr at 25 ° under a layer of toluene.
-  - Recovery of the phenol liberated was completed by additional extractions with toluene.
-  - Phenol was returned to an aqueous phase for analysis by extraction of the pooled toluene layers with 0.05 M NaOH.
-  - Turbidity was then removed by a treatment with chloroform-amyl alcohol.
+  - they were incubated for 18 hr at 25\degree C under a layer of *toluene*.
+  - Recovery of the phenol liberated was completed by additional extractions with *toluene*.
+  - Phenol was returned to an aqueous phase for analysis by extraction of the pooled *toluene* layers with 0.05 M NaOH.
+  - Turbidity was then removed by a treatment with *chloroform-amyl alcohol*.
+
 
 ** Spectrofluorometric
 - 4-Methylumbelliferyl-\alpha-L-iduronide is a fluorogenic substrate of \alpha-L-iduronidase
 - emission maximum at 445-454 nm.
 - excitation maximum for 4-MU is pH-dependent: 330, 370, and 385 nm at pH 4.6, 7.4, and 10.4 
 
-#+CAPTION[4MUI]:4-Methylumbelliferyl-α-L-Iduronide 2-sulfate
+#+CAPTION[4MUI]:4-Methylumbelliferyl-\alpha-L-Iduronide 2-sulfate
 #+NAME: fig:4mui
-#+ATTR_LaTeX: :width 0.8\textwidth
+#+ATTR_LaTeX: :width 0.4\textwidth
 [[file:./figures/9001600.png]]
+
+
+** Spectrofluorometric
+
+
+1. Elute one 3.1 mm DBS punch
+   - D-saccharic acid-1,4-lactone; \beta-glucuronidase inhibitor
+   - 2 mM 4MU-\alpha-L-iduronide
+2. Incubate for 20hrs at 37\degree C
+3. Add glycine-carbonate and vortex to stop reaction
+4. 30 minutes at RT
+5. Measure fluorescence
+   - 4MU calibrator
+6. Results uM/L blood/20 hr
+
+
+** Psuedodeficiency
+
+- Low IDUA activity /in vitro/ 
+- p.A300T, steric hindrance at active site E299 
+- p.A79T, p.H82Q, p.V322E, p.D223N, p.V322E
+
+#+CAPTION[]:
+#+NAME: fig:pd
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/pd.png]]
+
+
+- Missouri program
+
 
 ** IDUA: FIA-MS/MS
 
@@ -163,14 +263,12 @@
 | IDUA-IS | 377.2 -> 277.1 |
 | IDUA-P  | 391.2 -> 291.2 |
 
-
-
 ** GAGs: LC-MS/MS
 - Dried blood spot punches (1/8 in. diameter) were eluted for 10 min at RT and sonicated for 15 min.
 - Heparan sulfate and dermatan sulfate in the DBS punches were
   digested to disaccharides by with 5 mIU of each heparinase I, II,
   III and 50 mIU chondroitinase B.
-- 2 h of incubation at 30 \degree{} C, 15 μL 150 mM EDTA (pH7.0) and
+- 2 h of incubation at 30\degree C, 15 μL 150 mM EDTA (pH7.0) and
   125 ng internal standard, 4UA-2S-GlcNCOEt-6S, was added and the
   reaction was stopped and proteins denatured by boiling for 5 min.
 - The reaction mixture was centrifuged at 16,000 g for 5 min at room
