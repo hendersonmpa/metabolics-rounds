@@ -98,13 +98,13 @@
 \chemfig{X-C(-[2]X)(-[6]X)-C(-[2]X)(-[6]X)-C(-[7]OH)=[1]O}
 #+END_LaTeX
 
-| Functional group | Formula            |
-|------------------+--------------------|
-| hydrogen         | -H                 |
-| keto             | .= O               |
-| hydroxyl         | -OH                |
-| carboxyl         | -COOH              |
-| side chain       | -(CH$_2$)$_n$      |
+| Functional group | Formula       |
+|------------------+---------------|
+| hydrogen         | -H            |
+| keto             | .=O           |
+| hydroxyl         | -OH           |
+| carboxyl         | -C(=O)OH      |
+| side chain       | -(CH$_2$)$_n$ |
 
 ** Side Chains
 #+BEGIN_LaTeX
@@ -126,7 +126,7 @@
   - hydroxyaliphatic acids
     - 3-hydroxybutyric
   - aliphatic keto acids
-    - pyrvic
+    - pyruvic
   - aliphatic acids
     - oxalic
   - aldonic and deoxyaldonic acids (sugar acids)
@@ -136,38 +136,36 @@
   - Short chain acids
     - formic
 
-<<<<<<< HEAD
-* COMMENT Urine Organic Acids
-=======
->>>>>>> 6214f9899b612f029741d469bd80f23c82e03c8d
 ** Where do they come from?
 - Intermediate metabolism of all major groups of organic cellular
   components
 
 ***                                                                 :BMCOL:
 :PROPERTIES:
-:BEAMER_col: 0.45
+:BEAMER_col: 0.5
 :END:
 **** Endogenous Sources
 - amino acids
-  - 2-hydroxyisocaproate :: MSUD
+  - 2-hydroxyisocaproate - MSUD
 - fatty acids
-  - suberic :: MCADD
+  - suberic - MCADD 
 - carbohydrates
-  - lactate :: multiple causes
+  - lactate - multiple causes
 - nucleic acids
-  - uracil :: dihyropyrimidine dehydrogenase def
+  - uracil - dihyropyrimidine dehydrogenase def
 - steroids
-  - 3-hydroxypropionic
+  - 3-hydroxypropionic - PA, MMA
 - neurotransmitters
-  - vanillactic :: aromatic AA decarboxylase def
+  - vanillactic - neuroblastoma
 ***                                                                 :BMCOL:
 :PROPERTIES:
-:BEAMER_col: 0.5
+:BEAMER_col: 0.45
 :END:
 **** Exogenous
 - food
   - adipic - gelatin
+  - furan dicarboxylate - heated sugar
+  - vanillactic - bananas
 - environment
   - palmitic - soap
 - medications
@@ -203,23 +201,14 @@
   - cresol
   - 2-furaldehyde
 
-<<<<<<< HEAD
-** Disorders that can be idenfified by Urine Organic Acid analysis
-
-***                                                                 :BMCOL:
-:PROPERTIES:
-:BEAMER_col: 0.5
-:END:
-- classic organic acidemias 
-=======
 ** Clinical Indications for UOA analysis
 
 - Neonatal or late-onset acute illness associated with:
   - hyperammonemia
-  - hypoglycemia, and/ or ketolactic acidosis
+  - hypoglycemia, and/or ketolactic acidosis
   - neurologic abnormalities
-    - seizures,
-    - ataxia,
+    - seizures
+    - ataxia
     - hypotonia
     - lethargy
     - coma
@@ -229,17 +218,15 @@
   - pancreatitis
   - unexplained metabolic acidosis
   - unusual odor
-  - macrocephaly;
+  - macrocephaly
   - liver failure
 - Some symptoms, including lethargy and acidosis, can be due to exogenous intoxication
   - ethylene glycol poisoning
   - ibuprofen overdose
-  - gamma{}-hydroxybutyric acid
+  - \gamma-hydroxybutyric acid
 
-** Disorders that can be identified by Urine Organic Acid analysis
-
+** Disorders that can be identified by UOA analysis
 *** classic organic acidemias
->>>>>>> 6214f9899b612f029741d469bd80f23c82e03c8d
   - isovaleric acidemia [MIM 243500]
   - methylmalonic acidemia[s] propionic acidemia [MIM 606054]
   - glutaric acidemia type I [MIM 231670]
@@ -249,43 +236,29 @@
   - alkaptonuria [MIM 203500]
   - 3-methylglutaconic aciduria type I [MIM 250950]
   - maple syrup urine disease [MIM 248600]
-<<<<<<< HEAD
-- disorders of the urea cycle - orotic acid
-- fatty acid oxidation
-  - short-chain acyl-CoA dehydrogenase deficiency [MIM 201470]
-  - medium-chain acyl-CoA dehydrogenase deficiency [MIM 201450]
-  - multiple acyl-CoA dehydrogenase deficiency [MIM 231680]
-
-***                                                                 :BMCOL:
-:PROPERTIES:
-:BEAMER_col: 0.5
-:END:
-- energy metabolism
-  - pyruvate dehydrogenase deficiency
+      
+** Disorders that can be identified by UOA analysis
+*** Mitochondrial disorders
+  - pyruvate dehydrogenase deficiency 
   - fumarase deficiency [MIM 606812]
   - SUCLA2 deficiency [MIM 603921]
-- purine and pyrimidine metabolism
-=======
-*** urea cycle
-  - orotic acid
 *** fatty acid oxidation
     - short-chain acyl-CoA dehydrogenase deficiency [MIM 201470]
     - medium-chain acyl-CoA dehydrogenase deficiency [MIM 201450]
     - multiple acyl-CoA dehydrogenase deficiency [MIM 231680]
-    - energy metabolism (pyruvate dehydrogenase deficiency
-    - fumarase deficiency [MIM 606812]
-    - SUCLA2 deficiency [MIM 603921]
 
-** Disorders that can be identified by Urine Organic Acid analysis
 *** purine and pyrimidine metabolism
->>>>>>> 6214f9899b612f029741d469bd80f23c82e03c8d
   - uridine monophosphate synthetase deficiency [MIM 613891]
   - dihydropyrimidine dehydrogenase deficiency [MIM 274270]
+
+** Disorders that can be identified by UOA analysis
+
 *** neurotransmission
   - aromatic L-amino acid decarboxylase deficiency [MIM 608643]
   - ethylmalonic encephalopathy [MIM 602473]
   - Canavan disease [MIM 271900]
 *** others
+  - Ornithine transcarbamylase deficiency [MIM 311250]
   - glutathione synthetase deficiency [MIM 266130]
   - glycerol kinase deficiency [MIM 307030]
   - primary hyperoxaluria type I [MIM 259900]
@@ -302,8 +275,59 @@
   - Targeted to Naturopaths and  "Functional Medicine"
   - Provide impressive graphical reportes with recomendations for diet and supplements
 
-** Next time
+* Examples
 
-- Laboratory analysis of organic acids, 2018 update: a technical
-  standard of the American College of Medical Genetics and Genomics
-  (ACMG)
+** Case 1
+
+- A 2-week-old female is referred to metabolic clinic following positive newborn screen.
+- 3 OH Glutaric acid = 121 mmol/mol UCR, RI <1
+
+** Case 1 UOA
+
+[[./figures/case1uoa.png]]
+
+\pause
+
+- Elevated glutaric acid and 3-hydroxyglutaric acid is consistent with
+  Glutaryl-CoA dehydrogenase deficiency (GA-1).
+
+** Case 2
+
+- 5 day old girl, with C3 acylcarnitine positive newborn screen.
+- MMA = 357 mmol/mol UCR, RI <10 
+
+
+** Case 2 UOA
+
+[[./figures/case2uoa.png]]
+
+\pause
+
+- Significant elevation in methylmalonic acid, with the presence of
+  methylcitric acid is consistent with methlymalonic acidemia
+  and cobalamin metabolism defects.
+
+** Case 3
+
+- - a 5 yo female who had come to the ED twice in the last year with
+  vomiting, dehydration and hypoglycemia.
+
+- urine organic acids elevation in alpha-ketoacids 
+  - 2-ketoisocaproic
+  - 2-ketoisovaleric
+  - 2-keto-3-methylvaleric
+  - urine creatinine = 4,113 umol/L
+
+
+** Case 3 UOA
+
+[[./figures/fasting.png]]
+
+\pause
+
+- Elevation in alpha-keto acids: 2-ketoisocaproic, 2-ketoisovaleric
+  and 2-keto-3-methylvaleric acids,
+- These intermediate metabolites of branched chain amino acid
+  metabolism can be elevate in fasting and maple syrup urine
+  disease.
+

@@ -1,36 +1,37 @@
-<<<<<<< HEAD
-% Created 2018-04-25 Wed 21:47
-\documentclass[presentation]{beamer}
-=======
-% Created 2018-04-26 Thu 12:42
+% Created 2018-09-18 Tue 13:08
 \documentclass[presentation, smaller]{beamer}
->>>>>>> 6214f9899b612f029741d469bd80f23c82e03c8d
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{fixltx2e}
 \usepackage{graphicx}
+\usepackage{grffile}
 \usepackage{longtable}
-\usepackage{float}
 \usepackage{wrapfig}
 \usepackage{rotating}
 \usepackage[normalem]{ulem}
 \usepackage{amsmath}
 \usepackage{textcomp}
-\usepackage{marvosym}
-\usepackage{wasysym}
 \usepackage{amssymb}
+\usepackage{capt-of}
 \usepackage{hyperref}
-\tolerance=1000
-\usetheme{default}
+\hypersetup{colorlinks,linkcolor=gray,urlcolor=blue}
+\usepackage{textpos}
+\usepackage{textgreek}
+\usepackage[version=4]{mhchem}
+\usepackage{chemfig}
+\usepackage{siunitx}
+\usepackage{gensymb}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{verbatim}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+\AtBeginSection[]{\begin{frame}\tableofcontents[currentsection] \end{frame}}
+\usetheme[height=20pt]{Boadilla}
+\usecolortheme[RGB={170,160,80}]{{structure}}
 \author{Matthew Henderson, PhD, FCACB}
 \date{\today}
-<<<<<<< HEAD
-\title{Urine Organic Acids in Homo Sapiens}
-\hypersetup{
-  pdfkeywords={},
-  pdfsubject={},
-  pdfcreator={Emacs 25.2.1 (Org mode 8.2.10)}}
-=======
 \title{Urine Organic Acids: What and Why?}
 \institute[NSO]{Newborn Screening Ontario}
 \titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
@@ -41,7 +42,6 @@
  pdfsubject={},
  pdfcreator={Emacs 25.2.1 (Org mode 8.3.4)}, 
  pdflang={English}}
->>>>>>> 6214f9899b612f029741d469bd80f23c82e03c8d
 \begin{document}
 
 \maketitle
@@ -72,16 +72,11 @@
 \tikzstyle{arrow} = [thick,->,>=stealth]
 \tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
 
-<<<<<<< HEAD
-\begin{frame}[label=sec-1]{Background}
-\begin{block}{What are urine organic acids?}
-=======
 \section{What are Urine Organic Acids?}
 \label{sec:orgheadline8}
 \begin{frame}[label={sec:orgheadline1}]{What are urine organic acids?}
->>>>>>> 6214f9899b612f029741d469bd80f23c82e03c8d
 \begin{itemize}
-\item Water soluble compounds containing $\ge$ one carboxyl group(s) and
+\item Water soluble compounds containing \(\ge\) one carboxyl group(s) and
 non-amino functional groups
 \end{itemize}
 
@@ -97,9 +92,9 @@ non-amino functional groups
 \end{itemize}
 \end{itemize}
 \end{block}
-\end{block}
+\end{frame}
 
-\begin{block}{Nomenclature}
+\begin{frame}[label={sec:orgheadline2}]{Nomenclature}
 \begin{center}
 \begin{tabular}{lll}
 Length & Monocarboxylic acid & Dicarboxylic acid\\
@@ -118,10 +113,9 @@ C9 & Nonanoic (pelargonic) & Azelaic\\
 C10 & Decanoic (capric) & Sebacic\\
 \end{tabular}
 \end{center}
-\end{block}
+\end{frame}
 
-
-\begin{block}{Functional Groups}
+\begin{frame}[label={sec:orgheadline3}]{Functional Groups}
 \centering
 \chemfig{X-C(-[2]X)(-[6]X)-C(-[2]X)(-[6]X)-C(-[7]OH)=[1]O}
 
@@ -130,15 +124,15 @@ C10 & Decanoic (capric) & Sebacic\\
 Functional group & Formula\\
 \hline
 hydrogen & -H\\
-keto & .= O\\
+keto & .=O\\
 hydroxyl & -OH\\
-carboxyl & -COOH\\
-side chain & -(CH$_2$)$_n$\\
+carboxyl & -C(=O)OH\\
+side chain & -(CH\(_2\))\(_n\)\\
 \end{tabular}
 \end{center}
-\end{block}
+\end{frame}
 
-\begin{block}{Side Chains}
+\begin{frame}[label={sec:orgheadline4}]{Side Chains}
 \centering
 \chemfig{X-C(-[2]X)(-[6]X)-C(-[2]X)(-[6]X)-C(-[7]OH)=[1]O}
 
@@ -152,9 +146,6 @@ Propyl & \chemfig{CH_3-CH_2-CH_2-}\\
 Butyl & \chemfig{CH_3-CH_2-CH_2-CH_2-}\\
 \end{tabular}
 \end{center}
-<<<<<<< HEAD
-\end{block}
-=======
 \end{frame}
 
 \begin{frame}[label={sec:orgheadline5}]{Classes of organic acids detected in the urine of  healthly subjects}
@@ -169,7 +160,7 @@ Butyl & \chemfig{CH_3-CH_2-CH_2-CH_2-}\\
 \end{itemize}
 \item aliphatic keto acids
 \begin{itemize}
-\item pyrvic
+\item pyruvic
 \end{itemize}
 \item aliphatic acids
 \begin{itemize}
@@ -197,42 +188,44 @@ components
 \end{itemize}
 
 \begin{columns}
-\begin{column}{0.45\columnwidth}
+\begin{column}{0.5\columnwidth}
 \begin{block}{Endogenous Sources}
 \begin{itemize}
 \item amino acids
-\begin{description}
-\item[{2-hydroxyisocaproate}] MSUD
-\end{description}
+\begin{itemize}
+\item 2-hydroxyisocaproate - MSUD
+\end{itemize}
 \item fatty acids
-\begin{description}
-\item[{suberic}] MCADD
-\end{description}
+\begin{itemize}
+\item suberic - MCADD
+\end{itemize}
 \item carbohydrates
-\begin{description}
-\item[{lactate}] multiple causes
-\end{description}
+\begin{itemize}
+\item lactate - multiple causes
+\end{itemize}
 \item nucleic acids
-\begin{description}
-\item[{uracil}] dihyropyrimidine dehydrogenase def
-\end{description}
+\begin{itemize}
+\item uracil - dihyropyrimidine dehydrogenase def
+\end{itemize}
 \item steroids
 \begin{itemize}
-\item 3-hydroxypropionic
+\item 3-hydroxypropionic - PA, MMA
 \end{itemize}
 \item neurotransmitters
-\begin{description}
-\item[{vanillactic}] aromatic AA decarboxylase def
-\end{description}
+\begin{itemize}
+\item vanillactic - neuroblastoma
+\end{itemize}
 \end{itemize}
 \end{block}
 \end{column}
-\begin{column}{0.5\columnwidth}
+\begin{column}{0.45\columnwidth}
 \begin{block}{Exogenous}
 \begin{itemize}
 \item food
 \begin{itemize}
 \item adipic - gelatin
+\item furan dicarboxylate - heated sugar
+\item vanillactic - bananas
 \end{itemize}
 \item environment
 \begin{itemize}
@@ -303,11 +296,11 @@ filtration
 \item Neonatal or late-onset acute illness associated with:
 \begin{itemize}
 \item hyperammonemia
-\item hypoglycemia, and/ or ketolactic acidosis
+\item hypoglycemia, and/or ketolactic acidosis
 \item neurologic abnormalities
 \begin{itemize}
-\item seizures,
-\item ataxia,
+\item seizures
+\item ataxia
 \item hypotonia
 \item lethargy
 \item coma
@@ -318,19 +311,19 @@ filtration
 \item pancreatitis
 \item unexplained metabolic acidosis
 \item unusual odor
-\item macrocephaly;
+\item macrocephaly
 \item liver failure
 \end{itemize}
 \item Some symptoms, including lethargy and acidosis, can be due to exogenous intoxication
 \begin{itemize}
 \item ethylene glycol poisoning
 \item ibuprofen overdose
-\item gamma\{\}-hydroxybutyric acid
+\item \(\gamma\)-hydroxybutyric acid
 \end{itemize}
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline11}]{Disorders that can be identified by Urine Organic Acid analysis}
+\begin{frame}[label={sec:orgheadline11}]{Disorders that can be identified by UOA analysis}
 \begin{block}{classic organic acidemias}
 \begin{itemize}
 \item isovaleric acidemia [MIM 243500]
@@ -347,9 +340,14 @@ filtration
 \item maple syrup urine disease [MIM 248600]
 \end{itemize}
 \end{block}
-\begin{block}{urea cycle}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline12}]{Disorders that can be identified by UOA analysis}
+\begin{block}{Mitochondrial disorders}
 \begin{itemize}
-\item orotic acid
+\item pyruvate dehydrogenase deficiency
+\item fumarase deficiency [MIM 606812]
+\item SUCLA2 deficiency [MIM 603921]
 \end{itemize}
 \end{block}
 \begin{block}{fatty acid oxidation}
@@ -357,20 +355,18 @@ filtration
 \item short-chain acyl-CoA dehydrogenase deficiency [MIM 201470]
 \item medium-chain acyl-CoA dehydrogenase deficiency [MIM 201450]
 \item multiple acyl-CoA dehydrogenase deficiency [MIM 231680]
-\item energy metabolism (pyruvate dehydrogenase deficiency
-\item fumarase deficiency [MIM 606812]
-\item SUCLA2 deficiency [MIM 603921]
 \end{itemize}
 \end{block}
-\end{frame}
 
-\begin{frame}[label={sec:orgheadline12}]{Disorders that can be identified by Urine Organic Acid analysis}
 \begin{block}{purine and pyrimidine metabolism}
 \begin{itemize}
 \item uridine monophosphate synthetase deficiency [MIM 613891]
 \item dihydropyrimidine dehydrogenase deficiency [MIM 274270]
 \end{itemize}
 \end{block}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline13}]{Disorders that can be identified by UOA analysis}
 \begin{block}{neurotransmission}
 \begin{itemize}
 \item aromatic L-amino acid decarboxylase deficiency [MIM 608643]
@@ -380,6 +376,7 @@ filtration
 \end{block}
 \begin{block}{others}
 \begin{itemize}
+\item Ornithine transcarbamylase deficiency [MIM 311250]
 \item glutathione synthetase deficiency [MIM 266130]
 \item glycerol kinase deficiency [MIM 307030]
 \item primary hyperoxaluria type I [MIM 259900]
@@ -389,7 +386,7 @@ filtration
 \end{frame}
 
 
-\begin{frame}[label={sec:orgheadline13}]{Naturopathic Medicine}
+\begin{frame}[label={sec:orgheadline14}]{Naturopathic Medicine}
 \begin{itemize}
 \item labs provide the urine organic acid testing 
 \begin{itemize}
@@ -403,13 +400,74 @@ filtration
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline14}]{Next time}
+\section{Examples}
+\label{sec:orgheadline22}
+
+\begin{frame}[label={sec:orgheadline16}]{Case 1}
 \begin{itemize}
-\item Laboratory analysis of organic acids, 2018 update: a technical
-standard of the American College of Medical Genetics and Genomics
-(ACMG)
+\item A 2-week-old female is referred to metabolic clinic following positive newborn screen.
+\item 3 OH Glutaric acid = 121 mmol/mol UCR, RI <1
 \end{itemize}
->>>>>>> 6214f9899b612f029741d469bd80f23c82e03c8d
 \end{frame}
-% Emacs 25.2.1 (Org mode 8.2.10)
+
+\begin{frame}[label={sec:orgheadline17}]{Case 1 UOA}
+\includegraphics[width=.9\linewidth]{./figures/case1uoa.png}
+
+\pause
+
+\begin{itemize}
+\item Elevated glutaric acid and 3-hydroxyglutaric acid is consistent with
+Glutaryl-CoA dehydrogenase deficiency (GA-1).
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline18}]{Case 2}
+\begin{itemize}
+\item 5 day old girl, with C3 acylcarnitine positive newborn screen.
+\item MMA = 357 mmol/mol UCR, RI <10
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline19}]{Case 2 UOA}
+\includegraphics[width=.9\linewidth]{./figures/case2uoa.png}
+
+\pause
+
+\begin{itemize}
+\item Significant elevation in methylmalonic acid, with the presence of
+methylcitric acid is consistent with methlymalonic acidemia
+and cobalamin metabolism defects.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline20}]{Case 3}
+\begin{itemize}
+\item - a 5 yo female who had come to the ED twice in the last year with
+vomiting, dehydration and hypoglycemia.
+
+\item urine organic acids elevation in alpha-ketoacids 
+\begin{itemize}
+\item 2-ketoisocaproic
+\item 2-ketoisovaleric
+\item 2-keto-3-methylvaleric
+\item urine creatinine = 4,113 umol/L
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline21}]{Case 3 UOA}
+\includegraphics[width=.9\linewidth]{./figures/fasting.png}
+
+\pause
+
+\begin{itemize}
+\item Elevation in alpha-keto acids: 2-ketoisocaproic, 2-ketoisovaleric
+and 2-keto-3-methylvaleric acids,
+\item These intermediate metabolites of branched chain amino acid
+metabolism can be elevate in fasting and maple syrup urine
+disease.
+\end{itemize}
+\end{frame}
 \end{document}
