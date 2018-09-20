@@ -1,4 +1,4 @@
-% Created 2018-09-17 Mon 16:27
+% Created 2018-09-20 Thu 12:22
 \documentclass[presentation, smaller]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -106,21 +106,19 @@
 
 
 \begin{frame}[label={sec:orgheadline3}]{Diagnosis and Treatment}
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.8\textwidth]{./figures/registry.png}
-\label{fig:reg}
-\end{figure}
-
-
 \begin{block}{Diagnosis}
 \begin{itemize}
 \item \(\alpha\)-L-iduronidase enzyme activity levels
 \begin{itemize}
 \item measured in WBCs, plasma or fibroblasts \(\to\) low to undetectable
-\item unable to predict severity of MPS I
+\item unable to distinguish between H/HS/S, there is overlap in the enzymatic levels.
 \end{itemize}
 \item Two ​IDUA mutations in trans (identified by sequencing)
+\begin{itemize}
+\item two ‘severe’ alleles \(\to\) severe MPS IH
+\item one ‘severe’ and one allele that allows some residual enzyme
+activity \(\to\) attenuated MPS I
+\end{itemize}
 \end{itemize}
 \end{block}
 
@@ -136,12 +134,12 @@
 
 \section{Biochemistry}
 \label{sec:orgheadline8}
-\begin{frame}[label={sec:orgheadline5}]{Hydrolysis reaction catalyzed by Alpha-L-Iduronidase:}
+\begin{frame}[label={sec:orgheadline5}]{Hydrolysis reaction catalyzed by \(\alpha\)-l-iduronidase}
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.8\textwidth]{./figures/nihms3970f3.jpg}
 \caption[mech]{\label{fig:mech}
-Hydrolysis reaction catalyzed by Alpha-L-Iduronidase:}
+Hydrolysis reaction catalyzed by \(\alpha\)-l-iduronidase}
 \end{figure}
 \end{frame}
 
@@ -150,7 +148,7 @@ Hydrolysis reaction catalyzed by Alpha-L-Iduronidase:}
 \centering
 \includegraphics[width=0.8\textwidth]{./figures/kinetics.pdf}
 \caption{\label{fig:mm}
-IDUA Kinetics}
+IDUA Kinetics, Km = 191 , Vmax = 4.42}
 \end{figure}
 \end{frame}
 
@@ -160,29 +158,30 @@ IDUA Kinetics}
 \begin{itemize}
 \item substrate concentrations 10-fold the Km recommended
 \item interference from contaminating 4MU-\(\beta\)-D-glucuronide
-\item the very high cost of 4MU-\(\alpha\)-L-iduronide are limiting factors.
-
-\item \(\alpha\)-L-iduronidase enzyme assays should be conducted either under
-substrate saturating conditions or, when substrate concentrations
-are significantly below enzyme saturation, the values are adjusted
-by arithmetic conversion using the Michaelis–Menten model
+\item high cost of 4MU-\(\alpha\)-L-iduronide
+\item \(\alpha\)-L-iduronidase enzyme assays should be conducted with either:
+\begin{itemize}
+\item substrate saturating conditions
+\item substrate concentrations significantly below enzyme saturation,
+the values are adjusted using Michaelis-Menten model.
+\end{itemize}
 \end{itemize}
 
 \[ 
 V  = \frac{Vmax[S]}{Km + [S]}
 \]
 \end{frame}
-\section{Screening Methods}
-\label{sec:orgheadline17}
 
+\section{Screening Methods}
+\label{sec:orgheadline20}
 
 \begin{frame}[label={sec:orgheadline9}]{IDUA: Colorimetric}
 \begin{itemize}
-\item phenyl \(\alpha\)-L-iduronide (Phi)
+\item phenyl \(\alpha\)-l-iduronide
 \begin{itemize}
 \item Hydrolysis of phenyl \(\alpha\)-L-iduronide and subsequent
 colorimetric assay of the liberated phenol
-\item Digests contained 5 mM phenyl \(\alpha\)-L-iduronide, 0.1 M NaCI,
+\item Digests contained 5 mM phenyl \(\alpha\)-l-iduronide, 0.1 M NaCI,
 and 0.08 M sodium formate buffer of pH 3.5;
 \item they were incubated for 18 hr at 25\degree C under a layer of \textbf{toluene}.
 \item Recovery of the phenol liberated was completed by additional extractions with \textbf{toluene}.
@@ -191,7 +190,6 @@ and 0.08 M sodium formate buffer of pH 3.5;
 \end{itemize}
 \end{itemize}
 \end{frame}
-
 
 \begin{frame}[label={sec:orgheadline10}]{Spectrofluorometric}
 \begin{itemize}
@@ -213,8 +211,8 @@ and 0.08 M sodium formate buffer of pH 3.5;
 \begin{enumerate}
 \item Elute one 3.1 mm DBS punch
 \begin{itemize}
-\item D-saccharic acid-1,4-lactone
-\item 2 mM 4MU-\(\alpha\)-L-iduronide
+\item D-saccharic acid-1,4-lactone: \(\beta\)-glucuronidase inhibitor
+\item 2 mM 4MU-\(\alpha\)-L-iduronide: substrate
 \end{itemize}
 \item Incubate for 20hrs at 37\degree C
 \item Add glycine-carbonate and vortex to stop reaction
@@ -228,14 +226,30 @@ and 0.08 M sodium formate buffer of pH 3.5;
 \end{frame}
 
 
-\begin{frame}[label={sec:orgheadline12}]{Psuedodeficiency}
+\begin{frame}[label={sec:orgheadline12}]{Spectrofluorometric}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{./figures/image001.png}
+\caption{\label{fig:ap}
+SpotCheck Pro}
+\end{figure}
+\end{frame}
+
+
+
+
+\begin{frame}[label={sec:orgheadline13}]{Psuedodeficiency}
 \begin{itemize}
 \item Low IDUA activity \emph{in vitro}
-\item A300T, steric hindrance at active site E299
-\item homozygosity for p.A79T,
-\item heterozygosity for p.A79T and p.V322E
-\item heterozygosity for p.A79T and p. D223N
-\item heterozygosity for p.D223N and p. V322E
+\item p.A300T, steric hindrance at active site E299
+\item p.A79T, p.H82Q, p.V322E, p.D223N, p.V322E
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline14}]{Missouri Program}
+\begin{itemize}
+\item 43,701 samples screened by Missouri program using the Baebies assay
 \end{itemize}
 
 \begin{figure}[htb]
@@ -245,13 +259,25 @@ and 0.08 M sodium formate buffer of pH 3.5;
 \end{figure}
 
 
+\[
+ PPV = \frac{TP}{TP + FP}  = \frac{1}{1 + (2 + 7 + 2 + 16)} = 0.037
+\]
+
+\begin{block}{Screen Positive and Pseudodeficiency rates}
 \begin{itemize}
-\item Missouri program
+\item SPR = 32/43701 =  0.0007322487
+\begin{itemize}
+\item 150000 samples/year * SPR \textasciitilde{}  110 SP/year
 \end{itemize}
+\item PD rate = 7/43701 = 0.0001601794
+\begin{itemize}
+\item 150000 samples/year * PD rate \textasciitilde{} 24 PD/year
+\end{itemize}
+\end{itemize}
+\end{block}
 \end{frame}
 
-
-\begin{frame}[label={sec:orgheadline13}]{IDUA: FIA-MS/MS}
+\begin{frame}[label={sec:orgheadline15}]{IDUA: FIA-MS/MS}
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.8\textwidth]{./figures/F2large.jpg}
@@ -261,10 +287,10 @@ MS/MS workflow}
 \end{frame}
 
 
-\begin{frame}[label={sec:orgheadline14}]{IDUA: FIA-MS/MS}
+\begin{frame}[label={sec:orgheadline16}]{IDUA: FIA-MS/MS}
 \begin{itemize}
 \item Positive mode ESI
-\item Ten µL of the 150 µL sample via flow injection
+\item Ten uL of the 150 uL sample via flow injection
 \begin{itemize}
 \item 80/20 acetonitrile/water with 0.2\% formic acid
 \item flow-rate of 0.1 mL/min for 1 min then 1 mL/min for 0.5 min.
@@ -283,9 +309,14 @@ IDUA-IS & 377.2 -> 277.1\\
 IDUA-P & 391.2 -> 291.2\\
 \end{tabular}
 \end{table}
+
+\begin{itemize}
+\item 25/26 patients with reduced leukocyte activity also had reduced
+activity in DBS using MS/MS substrate (Pollard, presentation)
+\end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline15}]{GAGs: LC-MS/MS}
+\begin{frame}[label={sec:orgheadline17}]{GAGs: LC-MS/MS}
 \begin{itemize}
 \item Dried blood spot punches (1/8 in. diameter) were eluted for 10 min at RT and sonicated for 15 min.
 \item Heparan sulfate and dermatan sulfate in the DBS punches were
@@ -300,13 +331,22 @@ Ultra 30 K centrifugal filter and centrifuged at 14,000 g
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline16}]{GAGs: LC-MS/MS}
+\begin{frame}[label={sec:orgheadline18}]{GAGs: LC-MS/MS}
 \includegraphics[width=.9\linewidth]{./figures/outletmethod.png}
 
 
 \[
-\frac{7.5 min/sample \cdot 1000 samples/day}{60 min/hour \cdot 7 instruments}
-= 17.86 hours/instrument/day
+\frac{7.5 \text{min/sample} \cdot 1000 \text{samples/day}}{60 \text{min/hour} \cdot 7 \text{instruments}}
+= 17.86 \text{hours/instrument/day}
 \]
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline19}]{Proposed NSO workflow}
+\begin{figure}[htb]
+\centering
+\includegraphics[height=0.8\textheight]{./figures/wf.pdf}
+\caption{\label{fig:wf}
+Hurler workflow}
+\end{figure}
 \end{frame}
 \end{document}

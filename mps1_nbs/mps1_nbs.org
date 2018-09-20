@@ -90,17 +90,20 @@
 
 
 ** Diagnosis and Treatment
-#+CAPTION[]:
-#+NAME: fig:reg
-#+ATTR_LaTeX: :width 0.8\textwidth
-[[file:./figures/registry.png]]
+# #+CAPTION[]:
+# #+NAME: fig:reg
+# #+ATTR_LaTeX: :width 0.8\textwidth
+# [[file:./figures/registry.png]]
 
 
 *** Diagnosis
 - \alpha{}-L-iduronidase enzyme activity levels
   - measured in WBCs, plasma or fibroblasts \to low to undetectable  
-  - unable to predict severity of MPS I 
-- Two ​IDUA mutations in trans (identified by sequencing) 
+  - unable to distinguish between H/HS/S, there is overlap in the enzymatic levels.
+- Two ​IDUA mutations in trans (identified by sequencing)
+  - two ‘severe’ alleles \to severe MPS IH
+  - one ‘severe’ and one allele that allows some residual enzyme
+    activity \to attenuated MPS I
 
 *** Treatment
 - hematopoietic stem cell transplantation
@@ -109,8 +112,8 @@
 
 
 * Biochemistry
-** Hydrolysis reaction catalyzed by Alpha-L-Iduronidase:
-#+CAPTION[mech]:Hydrolysis reaction catalyzed by Alpha-L-Iduronidase:
+** Hydrolysis reaction catalyzed by \alpha-l-iduronidase
+#+CAPTION[mech]:Hydrolysis reaction catalyzed by \alpha-l-iduronidase
 #+NAME: fig:mech
 #+ATTR_LaTeX: :width 0.8\textwidth
 [[file:./figures/nihms3970f3.jpg]]
@@ -161,11 +164,10 @@ but is crucial for the natural substrate of IDUA.
 
   plot f(vmax1,km1,x) with lines lw 2 lc rgb "midnight-blue"
 
-
 #+end_src
 
 
-#+CAPTION[]: IDUA Kinetics
+#+CAPTION[]: IDUA Kinetics, Km = 191 , Vmax = 4.42
 #+NAME: fig:mm
 #+ATTR_LaTeX: :width 0.8\textwidth
 #+RESULTS:
@@ -176,30 +178,28 @@ but is crucial for the natural substrate of IDUA.
 ** Substrate concentration
 - substrate concentrations 10-fold the Km recommended
 - interference from contaminating 4MU-\beta-D-glucuronide
-- the very high cost of 4MU-\alpha-L-iduronide are limiting factors.
-
-- \alpha-L-iduronidase enzyme assays should be conducted either under
-  substrate saturating conditions or, when substrate concentrations
-  are significantly below enzyme saturation, the values are adjusted
-  by arithmetic conversion using the Michaelis–Menten model
+- high cost of 4MU-\alpha-L-iduronide 
+- \alpha-L-iduronidase enzyme assays should be conducted with either:
+  - substrate saturating conditions
+  - substrate concentrations significantly below enzyme saturation,
+    the values are adjusted using Michaelis-Menten model.
 
 \[ 
 V  = \frac{Vmax[S]}{Km + [S]}
 \]
+
 * Screening Methods
 
-
 ** IDUA: Colorimetric
-- phenyl \alpha-L-iduronide (Phi)
+- phenyl \alpha-l-iduronide
   - Hydrolysis of phenyl \alpha-L-iduronide and subsequent
     colorimetric assay of the liberated phenol
-  - Digests contained 5 mM phenyl \alpha{}-L-iduronide, 0.1 M NaCI,
+  - Digests contained 5 mM phenyl \alpha-l-iduronide, 0.1 M NaCI,
     and 0.08 M sodium formate buffer of pH 3.5;
   - they were incubated for 18 hr at 25\degree C under a layer of *toluene*.
   - Recovery of the phenol liberated was completed by additional extractions with *toluene*.
   - Phenol was returned to an aqueous phase for analysis by extraction of the pooled *toluene* layers with 0.05 M NaOH.
   - Turbidity was then removed by a treatment with *chloroform-amyl alcohol*.
-
 
 ** Spectrofluorometric
 - 4-Methylumbelliferyl-\alpha-L-iduronide is a fluorogenic substrate of \alpha-L-iduronidase
@@ -213,11 +213,9 @@ V  = \frac{Vmax[S]}{Km + [S]}
 
 
 ** Spectrofluorometric
-
-
 1. Elute one 3.1 mm DBS punch
-   - D-saccharic acid-1,4-lactone; \beta-glucuronidase inhibitor
-   - 2 mM 4MU-\alpha-L-iduronide
+   - D-saccharic acid-1,4-lactone: \beta-glucuronidase inhibitor
+   - 2 mM 4MU-\alpha-L-iduronide: substrate
 2. Incubate for 20hrs at 37\degree C
 3. Add glycine-carbonate and vortex to stop reaction
 4. 30 minutes at RT
@@ -226,11 +224,26 @@ V  = \frac{Vmax[S]}{Km + [S]}
 6. Results uM/L blood/20 hr
 
 
-** Psuedodeficiency
+** Spectrofluorometric
 
+
+#+CAPTION: SpotCheck Pro
+#+NAME: fig:ap
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/image001.png]]
+
+
+
+
+** Psuedodeficiency
 - Low IDUA activity /in vitro/ 
 - p.A300T, steric hindrance at active site E299 
 - p.A79T, p.H82Q, p.V322E, p.D223N, p.V322E
+
+
+** Missouri Program
+
+- 43,701 samples screened by Missouri program using the Baebies assay
 
 #+CAPTION[]:
 #+NAME: fig:pd
@@ -238,8 +251,15 @@ V  = \frac{Vmax[S]}{Km + [S]}
 [[file:./figures/pd.png]]
 
 
-- Missouri program
+\[
+ PPV = \frac{TP}{TP + FP}  = \frac{1}{1 + (2 + 7 + 2 + 16)} = 0.037
+\]
 
+*** Screen Positive and Pseudodeficiency rates
+- SPR = 32/43701 =  0.0007322487
+  - 150000 samples/year * SPR ~  110 SP/year
+- PD rate = 7/43701 = 0.0001601794
+  - 150000 samples/year * PD rate ~ 24 PD/year
 
 ** IDUA: FIA-MS/MS
 
@@ -251,7 +271,7 @@ V  = \frac{Vmax[S]}{Km + [S]}
 
 ** IDUA: FIA-MS/MS
 - Positive mode ESI
-- Ten µL of the 150 µL sample via flow injection
+- Ten uL of the 150 uL sample via flow injection
   - 80/20 acetonitrile/water with 0.2% formic acid
   - flow-rate of 0.1 mL/min for 1 min then 1 mL/min for 0.5 min.
   - Data was collected during 1.5 minute of infusion,
@@ -262,6 +282,9 @@ V  = \frac{Vmax[S]}{Km + [S]}
 |---------+----------------|
 | IDUA-IS | 377.2 -> 277.1 |
 | IDUA-P  | 391.2 -> 291.2 |
+
+- 25/26 patients with reduced leukocyte activity also had reduced
+  activity in DBS using MS/MS substrate (Pollard, presentation)
 
 ** GAGs: LC-MS/MS
 - Dried blood spot punches (1/8 in. diameter) were eluted for 10 min at RT and sonicated for 15 min.
@@ -289,6 +312,7 @@ V  = \frac{Vmax[S]}{Km + [S]}
 
 #+begin_src gnuplot :var data=data-table :file ./figures/outletmethod.png
 reset
+set key center right
 set title "UPLC Gradient"
 set xlabel "min"
 
@@ -297,8 +321,8 @@ set xrange [0:8]
 set ylabel "percent"
 set yrange [0:100]
 
-plot data u 1:3 w lp lw 2 title 'A', \
-     data u 1:4 w lp lw 2 title 'B'
+plot data u 1:3 w lp lw 2 title '10 mM NH4HCO3', \
+     data u 1:4 w lp lw 2 title '10% Acetonitrile'
 
 #+end_src
 
@@ -307,6 +331,34 @@ plot data u 1:3 w lp lw 2 title 'A', \
 
 
 \[
-\frac{7.5 min/sample \cdot 1000 samples/day}{60 min/hour \cdot 7 instruments}
-= 17.86 hours/instrument/day
+\frac{7.5 \text{min/sample} \cdot 1000 \text{samples/day}}{60 \text{min/hour} \cdot 7 \text{instruments}}
+= 17.86 \text{hours/instrument/day}
 \]
+
+** Proposed NSO workflow
+#+BEGIN_SRC dot :file ./figures/wf.pdf :cmdline -Kdot -Tpdf
+    digraph {
+        start[label= "sample",shape="box", style=rounded];
+        enzyme[label="IDUA activity \n fluorometric",shape="diamond", fillcolor=steelblue3, style=filled];
+        gags[label="GAGs \n LC-MS/MS",shape="diamond", fillcolor=grey80, style=filled];
+        ngs[label = "IDUA \n NGS", shape="diamond", fillcolor=steelblue3 style=filled];
+        neg[label = "screen negative", shape="box"];
+        pos[label = "screen positive", shape="box"];
+        start -> enzyme;
+        enzyme -> ngs[label="positive"];
+        enzyme -> gags[label="borderline"];
+        enzyme -> neg[label="negative"];
+        gags -> ngs[label="positive"];
+        gags -> neg[label="negative"];
+        ngs -> neg[label="negative"];
+        ngs -> pos[label="positive"];
+  }
+#+END_SRC
+
+
+#+CAPTION[]:Hurler workflow
+#+NAME: fig:wf
+#+ATTR_LaTeX: :height 0.8\textheight
+#+RESULTS:
+[[file:./figures/wf.pdf]]
+
