@@ -163,7 +163,7 @@ courtesy of SIMD-NAMA
 
 
 
-**  Dicarboxylic Aciduria
+** Dicarboxylic Aciduria
 
 *** Ketotic Dicarboxylic Aciduria.
 - Physiological response to hypoglycemia

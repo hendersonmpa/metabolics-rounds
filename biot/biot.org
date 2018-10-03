@@ -66,13 +66,13 @@
 
 ** Biotinidase Deficiency
 
-- autosomal recessively inherited disorder of biotin recycling
+- Autosomal recessively inherited disorder of biotin recycling
   - associated with secondary alterations in amino acid, carbohydrate,
     and fatty acid metabolism.
-- caused by absent or markedly deficient activity of biotinidase
+- Caused by absent or markedly deficient activity of biotinidase
   - cytosolic enzyme that liberates biotin from biocytin during the
-    normal proteolytic turnover of holocarboxylases and other biotiny-
-    lated proteins.
+    normal proteolytic turnover of holocarboxylases and other
+    biotiny-lated proteins.
 
 - Based on newborn screening outcome data from 2006, the incidence of
   profound biotinidase deficiency in the United States is estimated at
@@ -94,7 +94,7 @@
 - Confirmation of biotinidase deficiency by DNA analysis, by either
   allele-targeted methods or full-gene sequencing, may be useful.
 
-** COMMENT Biotin Cycle
+** Biotin Cycle
 
 [[./figures/biot_cycle.png]]
 
@@ -120,10 +120,10 @@
 
   - c.98_104delinsTCC in exon 2
     - seven-base deletion/three-base insertion
-    - occurring in at least one allele in approximately 50% of individuals
+    - occurring in at least one allele in approximately 50% of affected individuals
 
   - p.Arg538Cys in exon 4
-    - occurring at least once in 30% of children.
+    - occurring at least once in 30% of affected individuals
 
   - These variants result in complete absence of biotinidase protein. 
 
@@ -175,7 +175,7 @@ over 25 years, Genetics In Medicine, 2014/08/21/
 methods in evaluation of biotinidase deficiency. J Med Biochem 2016;35:123–129.
 
 
-** Prematurity and False Positives
+** COMMENT Prematurity and False Positives
 
 | Disorder     | Total |    % | Prem |    % |
 |--------------+-------+------+------+------|
@@ -278,13 +278,45 @@ deficiency. Screening 1993
 \include{./figures/run}
 #+END_LaTeX
 
+** Long term review
 
-** Next steps
-
-- Print run appears to be the main contributor to the recent increased
-  screen positive rate.
-- Long term review of BIOT results and Print runs
-  - 2013-2018
+#+CAPTION[]:Long term review of biotinidase results
+#+NAME: fig:ts
+#+ATTR_LaTeX: :width 0.8\textheight
+[[file:./figures/posts.pdf]]
 
 
-  
+** Decomposition
+
+#+CAPTION[]: Time series decomposition
+#+NAME: fig:decomp
+#+ATTR_LaTeX: :width 0.8\textheight
+[[file:./figures/decomp.pdf]]
+
+
+** Warmer Summers?
+
+#+CAPTION[]:
+#+NAME: fig:temp
+#+ATTR_LaTeX: :width 0.8\textheight
+[[file:./figures/tempts.pdf]]
+
+** Cards Lots?
+
+#+CAPTION[]:
+#+NAME: fig:cards
+#+ATTR_LaTeX: :width 0.8\textheight
+[[file:./figures/formmts.pdf]]
+
+
+**  Card lots normalise over time
+
+
+#+CAPTION[]:
+#+NAME: fig:all
+#+ATTR_LaTeX: :width 0.8\textheight
+[[file:./figures/allts.pdf]]
+
+
+
+
