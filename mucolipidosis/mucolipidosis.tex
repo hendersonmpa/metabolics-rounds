@@ -1,0 +1,309 @@
+% Created 2018-10-04 Thu 12:44
+\documentclass[presentation, smaller]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
+\usepackage{textpos}
+\usepackage{textgreek}
+\usepackage[version=4]{mhchem}
+\usepackage{chemfig}
+\usepackage{siunitx}
+\usepackage{gensymb}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{verbatim}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+\usetheme{Hannover}
+\usecolortheme{whale}
+\author{Matthew Henderson, PhD, FCACB}
+\date{\today}
+\title{Mucolipidosis}
+\institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
+\titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
+\hypersetup{
+ pdfauthor={Matthew Henderson, PhD, FCACB},
+ pdftitle={Mucolipidosis},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.2.1 (Org mode 8.3.4)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+%\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
+%    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
+%}
+
+\vspace{220pt}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\tiny}
+% \addtobeamertemplate{frametitle}{}{%
+% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+% \includegraphics[height=1cm,width=2cm]{cat}
+% \end{textblock*}}
+
+\tikzstyle{chemical} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=none]
+\tikzstyle{hardware} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=gray!30]
+\tikzstyle{ms} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{msw} = [rectangle, rounded corners, text width=7em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{label} = [rectangle,text width=8em, minimum height=1em, text centered, draw=none, fill=none]
+\tikzstyle{hl} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=red!30]
+\tikzstyle{box} = [rectangle, rounded corners, text width=5em, minimum height=5em,text centered, draw=black, fill=none]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
+
+
+\section{Introduction}
+\label{sec:orgheadline3}
+\begin{frame}[label={sec:orgheadline1}]{Mucolipidosis}
+\begin{itemize}
+\item The mucolipidoses derived their name from the similarity in
+presentation to both mucopolysaccharidoses and sphingolipidoses.
+
+\item A biochemical understanding of these conditions has changed how they
+are classified.
+\item Four conditions (I, II, III, and IV) have been labeled as
+mucolipidoses:
+\begin{itemize}
+\item ML I: sialidosis - a glycoproteinosis
+\item ML II: I-cell - a glycoproteinosis
+\item ML III: pseudo-Hurler polydystropy - a glycoproteinosis
+\item ML IV: ganglioside sialidase deficiency - gangliosidosis
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline2}]{ML II \& III : Nomenclature}
+\begin{center}
+\begin{tabular}{lll}
+ & Current & Proposed\\
+\hline
+I-cell & ML II & ML II alpha/beta\\
+Pseudo-Hurler polydystropy & ML IIIA & ML III alpha/beta\\
+ML III variant & ML IIIC & ML III gamma\\
+\end{tabular}
+\end{center}
+\end{frame}
+
+\section{ML II \& III}
+\label{sec:orgheadline11}
+\begin{frame}[label={sec:orgheadline4}]{Protein trafficking to lysosomes}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{./figures/lysosome_traffic.jpg}
+\caption{\label{fig:traffic}
+Protein trafficking to lysosomes}
+\end{figure}
+
+\begin{itemize}
+\item ML II and III are due to incorrect protein trafficking to lysosomes
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline5}]{ML II \& III : Biochemical Defect}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{./figures/ml_defect.png}
+\caption{\label{fig:biochem}
+N-acetylglucosamine (GlcNAc) phosphotransferase}
+\end{figure}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline6}]{ML II \& III Biochemical Defect}
+\begin{itemize}
+\item Characterized by deficient activity of a large number of lysosomal enzymes:
+\begin{itemize}
+\item \(\beta\)-glucuronidase
+\item \(\beta\)-galactosidase
+\item \(\alpha\)-mannosidase
+\item \(\alpha\)-fucosidase
+\item N-acetyl-\(\beta\)-d-galactosiaminidase
+\item arylsulfatase-A
+\item glycosylasparaginase
+\end{itemize}
+\item The activities of the same lysosomal enzymes are high in the medium
+surrounding cultured I-cell fibroblasts
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline7}]{ML II \& III : I-cell}
+\begin{figure}[htb]
+\centering
+\includegraphics[height=0.65\textheight]{./figures/icell.png}
+\caption{\label{fig:icell}
+I cell in fibroblast culture}
+\end{figure}
+
+\begin{itemize}
+\item oligosaccharides, lipids, and glycosaminoglycan inclusions in lysosomes
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline8}]{ML II \& III : Clinical}
+\begin{block}{ML II}
+\begin{itemize}
+\item Low IQ
+\item Short, max 75 cm by 2 y
+\item early coarse features
+\item gingival hypertrophy
+\item limited joint movement
+\item dysostosis multiplex
+\item minimal to no hepatomegaly and splenomegaly
+\end{itemize}
+\end{block}
+
+\begin{block}{ML III}
+\begin{itemize}
+\item The pathology of ML-III is not as well documented as that of ML-II
+\item Available data indicate the presence of similar but less severe
+findings.
+
+\item ML-II and ML-III can be distinguished on clinical criteria and on progression of the disease
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline9}]{ML II \& III :Genetics}
+\begin{itemize}
+\item Autosomal recessive
+\item The GlcNAc-PT has been purified and characterized as a hexameric
+(\(\alpha\)2\(\beta\)2\(\gamma\)2) protein,
+\begin{itemize}
+\item a 540-KDa complex of disulfide linked homodimers
+\end{itemize}
+\item the \(\alpha\) and \(\beta\) subunits are encoded as a single \(\alpha \beta\) polypeptide by the GNPTAB gene
+\begin{itemize}
+\item subunits acquire molecular maturity following post-translational proteolysis of the initial gene product
+\item \(\alpha \beta\) is the catalytic center in the GlcNAc-PT enzyme complex.
+\end{itemize}
+\item Mutations in the GNPTAB gene cause ML II and ML IIIA
+\item Sequencing of the GNPTAB and GNPTG coding regions detects
+disease-causing mutations in over 95\% of patients.
+\item Mutations in the GNPTG gene that encodes the \(\gamma\) subunit were
+first identified in a large Druze family in the Middle-East with a
+variant form of ML III, termed ML IIIC.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline10}]{ML II \& III : Labs}
+\begin{itemize}
+\item Diagnosis is generally made by assay of lysosomal enzymes
+\begin{itemize}
+\item in cultured fibroblasts there is a distinct deficiency
+\item in the plasma or serum where there is as much as a 10- to 20-fold increase in enzyme activity
+\end{itemize}
+\item Assay of fibroblasts or plasma for glycosylasparaginase has been
+reported as useful for the diagnosis of I-cell disease.
+\item The diagnosis can also be made by assay of the GlcNAc
+phosphotransferase in leukocytes or cultured fibroblasts
+\end{itemize}
+
+
+\begin{itemize}
+\item Treatment is supportive
+\end{itemize}
+\end{frame}
+
+\section{Sialidosis and ML IV}
+\label{sec:orgheadline17}
+
+\begin{frame}[label={sec:orgheadline12}]{Sialidosis (ML I)}
+\begin{itemize}
+\item Sialidosis is an autosomal recessive lysosomal storage disorder.
+
+\item \textbf{Type I sialidosis}, the milder form of this disorder, is
+characterized by the development of ocular cherry-red spots and
+generalized myoclonus in the second or third decade of life.
+\item Additional findings, reported in more than 50 percent of patients,
+include seizures, hyperreflexia, and ataxia.
+
+\item \textbf{Type II sialidosis} is distinguished from this milder form by the
+early onset of a progressive, rather severe,
+mucopolysaccharidosis-like phenotype with visceromegaly, dysostosis
+multiplex, and mental retardation.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline13}]{Sialidosis (ML I)}
+\begin{itemize}
+\item Both forms of the disease result from deficiency of the
+neuraminidase (NEU1) that normally cleaves terminal \(\alpha\)2 \(\to\) 3 and
+\(\alpha\)2 \(\to\) 6 sialyl linkages of several oligosaccharides and glycopeptides
+
+\item found in increased amounts in tissues and fluids of affected patients.
+
+\item Test urine samples for both oligosaccharides and glycopeptides
+
+\item definitive diagnosis - measurement of sialidase activity in fresh tissue
+samples, i.e., fibroblasts, cultured amniotic fluid cells, or white
+blood cells.
+
+\item supportive treatment
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline14}]{ML IV}
+\begin{itemize}
+\item autosomal recessive inborn error of intracellular membrane trafficking
+\begin{itemize}
+\item associated with lysosomal inclusions in a variety of cell types.
+\item mucolipin-1, a transmembrane protein of the transient receptor
+potential channel family, causes MLIV.
+\item it is unclear why a deficiency or malfunction of mucolipin-1 causes MLIV.
+\end{itemize}
+
+\item Clinical presentation includes:
+\begin{itemize}
+\item severe motor developmental delay
+\item iron deficiency anemia
+\item corneal clouding
+\item progressive retinal degeneration
+\item achlorhydria.
+\end{itemize}
+
+\item Notably absent are dysplastic bone abnormalities and enlargement of
+organs such as the liver and the spleen.
+
+\item blood gastrin levels should be measured, and elevated levels in
+this setting are virtually diagnostic of MLIV
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline15}]{ML IV}
+\begin{itemize}
+\item MLIV is pan-ethnic, but most patients are of Ashkenazi-Jewish
+ancestry, in which the most prevalent mutation occurs at a frequency
+of approximately 1/100.
+
+\item g.5534A \(\to\) G and g.511-6944del, are present in 95\% of all
+Ashkenazi-Jewish patients. Population-based screening for these
+mutations is useful for the identification and counseling of MLIV
+carriers. Identification of mutations in MCOLN1 should be used for
+prenatal diagnosis.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline16}]{Next up}
+\begin{itemize}
+\item Lipid Storage Disorders
+\end{itemize}
+\end{frame}
+\end{document}
