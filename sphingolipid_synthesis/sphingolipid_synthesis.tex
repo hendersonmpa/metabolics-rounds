@@ -1,0 +1,313 @@
+% Created 2018-10-17 Wed 16:43
+\documentclass[presentation, smaller]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
+\usepackage{textpos}
+\usepackage{textgreek}
+\usepackage[version=4]{mhchem}
+\usepackage{chemfig}
+\usepackage{siunitx}
+\usepackage{gensymb}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{verbatim}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+\usetheme{Ilmenau}
+\usecolortheme{whale}
+\author{Matthew Henderson, PhD, FCACB}
+\date{\today}
+\title{Disorders of Sphingolipid Synthesis}
+\institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
+\titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
+\hypersetup{
+ pdfauthor={Matthew Henderson, PhD, FCACB},
+ pdftitle={Disorders of Sphingolipid Synthesis},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.2.1 (Org mode 8.3.4)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+%\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
+%    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
+%}
+
+\vspace{220pt}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\tiny}
+% \addtobeamertemplate{frametitle}{}{%
+% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+% \includegraphics[height=1cm,width=2cm]{cat}
+% \end{textblock*}}
+
+\tikzstyle{chemical} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=none]
+\tikzstyle{hardware} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=gray!30]
+\tikzstyle{ms} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{msw} = [rectangle, rounded corners, text width=7em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{label} = [rectangle,text width=8em, minimum height=1em, text centered, draw=none, fill=none]
+\tikzstyle{hl} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=red!30]
+\tikzstyle{box} = [rectangle, rounded corners, text width=5em, minimum height=5em,text centered, draw=black, fill=none]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
+
+
+\section{Introduction}
+\label{sec:orgheadline6}
+\begin{frame}[label={sec:orgheadline1}]{Sphingolipids}
+\begin{itemize}
+\item found in all mammalian cell membranes
+\begin{itemize}
+\item and plasma lipoproteins
+\end{itemize}
+\item Structural role
+\item Modulate numerous biological functions
+\begin{itemize}
+\item apoptosis
+\end{itemize}
+
+\item named after the Sphinx because of their enigmatic nature\ldots{}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline2}]{Sphingosine and Ceramide}
+\begin{itemize}
+\item long chain sphingolipid base
+\item N-acylated by a variety of fatty acids
+\end{itemize}
+\centering
+\definesubmol{x}{-[7,.3]-[1,.3]}
+\definesubmol{y}{-[:+30,.3]=[:-30,.3]}
+\definesubmol{a}{-[1,.3](=[2,.3]O)!x!x!x!x!x!x!x!x!x!x!x}
+\chemfig{OH!x([2,.5]<HN)-[7,.3](-[6,.3]OH)-[1,.3]=[7,.3]-[1,.3]!x!x!x!x!x!x}
+\chemfig{OH!x([2,.5]<HN!a)-[7,.3](-[6,.3]OH)-[1,.3]=[7,.3]-[1,.3]!x!x!x!x!x!x}
+%%\chemfig{!b}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline3}]{Sphingolipid Structure}
+\includegraphics[width=\textwidth]{./figures/Sphingolipids_general_structures.png}
+\end{frame}
+
+
+
+\begin{frame}[label={sec:orgheadline4}]{Biosynthesis}
+\begin{block}{ER}
+\begin{itemize}
+\item condensation of serine and palmitoyl-CoA \(\to\) sphinganine
+\item N-acylation \(\to\) ceramide
+\end{itemize}
+\end{block}
+
+\begin{block}{Golgi}
+\begin{itemize}
+\item stepwise addition of monosaccharides
+\begin{itemize}
+\item sphingomyelin
+\item glucosylceramide
+\item glycosphingolipids
+\item gangliosides
+\end{itemize}
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline5}]{Biosynthesis}
+\centering
+\includegraphics[width=0.6\textwidth]{./figures/synthesis.png}
+\end{frame}
+
+
+\section{Disorders of Sphingolipid Synthesis}
+\label{sec:orgheadline16}
+
+\begin{frame}[label={sec:orgheadline7}]{Serine Palmitoyltransferase (Subunit 1 or 2) Deficiency}
+\begin{itemize}
+\item Defect in first step of sphingolipid biosynthesis
+\item Major cause of dominant Hereditary Sensory and Autonomic Neuropathies (HSAN1).
+\begin{itemize}
+\item Late onset (2-4th decade)
+\item peripheral sensory neuropathy
+\item distal sensory loss
+\item ulcerative mutatilations
+\item hypohidrosis
+\item there is a more severe early onset form
+\end{itemize}
+\item Accumulation of sphingoid bases \(\to\) pathology
+\item mutations in serine palmitoyltransferase (SPCTLC1 or 2) alter
+substrate specificity
+\begin{itemize}
+\item serine \(\to\) alanine and glycine
+\end{itemize}
+\item Elevated plasma 1-deoxy-sphingamine, 1-deoxy-methyl-sphingamine, 1-deoxy-ceramindes
+\item Trial of serine supplementation
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline8}]{Ceramide Synthases 1 and 2}
+\begin{itemize}
+\item Six human ceramide synthases
+\begin{itemize}
+\item tissue and acyl-CoA substrate specificity
+\item Neurological CERS1 \&2
+\begin{description}
+\item[{CER1}] Myoclonic epilepsy, cognitive decline
+\begin{itemize}
+\item Decreased C18-ceramide in cultured fibroblasts
+\end{itemize}
+\item[{CER2}] Myoclonic epilepsy
+\begin{itemize}
+\item Decreased VLC-ceramide in cultured fibroblasts
+\end{itemize}
+\end{description}
+\item Dermatologic CERS3
+\begin{description}
+\item[{CER3}] Ichthyosis
+\begin{itemize}
+\item Lack of VLC-ceramides in skin and fibroblasts
+\end{itemize}
+\end{description}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline9}]{Fatty Acid 2-Hydroxylase}
+\begin{itemize}
+\item spastic paraplegia
+\begin{itemize}
+\item fatty acid hydroxylase associated neurodegeneration (FAHN)
+\end{itemize}
+\item 38 patients, most in present in childhood
+\item slowly progressing
+\begin{itemize}
+\item spastic paraplegia
+\item dysarthria
+\item mild cognitive decline
+\item dystonia
+\end{itemize}
+
+\item Insufficiency production of 2-hydroxy-galactosphingolipids
+\begin{itemize}
+\item required in myelin
+\item increase with brain development
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline10}]{GM3 Synthase Deficiency}
+\begin{itemize}
+\item Autosomal recessive infantile-onset epilepsy
+\begin{itemize}
+\item Amish epilepsy syndrome
+\end{itemize}
+\item In first year \(\to\) generalized tonic-clonic seizures
+\begin{itemize}
+\item profound developmental stagnation and regression
+\item salt and pepper syndrome
+\begin{itemize}
+\item hyper and hypo-pigmented skin maculae
+\item facial dysmorphism scoliosis
+\item intellectual disability
+\item seizures
+\item choreoathetosis
+\item spasticity
+\end{itemize}
+\end{itemize}
+
+\item lack of GM3, GD3 and higher gangliosides, and increased
+lactosylceramide and Gb4 levels in plasma and cultured cells
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline11}]{GM2/GD2 Synthase Deficiency}
+\begin{itemize}
+\item Mutations of B4GALNT1
+\item SPG26, a slowly progressive complex hereditary spastic paraplegia
+with mild to moderate cognitive impairment.
+
+\item Cultured fibroblasts of patients have shown decreased GM2 levels
+with an increase of its precursor, GM3.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline12}]{Non-lysosomal β-Glucosidase Deficiency}
+\begin{itemize}
+\item GBA2 is a membrane-associated protein localised at the ER and Golgi
+\begin{itemize}
+\item hydrolyse glucosylceramide to ceramide and glucose.
+\end{itemize}
+\item GBA2 is distinct from the lysosomal acid β-glucosidase GBA1 deficient in Gaucher disease
+\item hereditary (complex) spastic paraplegia locus SPG46.
+\item Starting in childhood marked spasticity in lower extremities with
+progressive gait disturbances
+\begin{itemize}
+\item later, ataxia and other cerebellar signs
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline13}]{Ceramide Synthase 3 and ULFA \(\omega\)-Hydroxylase}
+\begin{itemize}
+\item ceramides in skin maintain skin barrier homeostasis, prevent water
+loss and protect against microbial infections
+\item Autosomal recessive congenital ichthyosis (ARCI) is a heterogeneous
+group of disorders of epidermal cornification
+\item 9 causative genes have been identified including CERS3 and CYP4F22
+
+\item[{CERS3}] ichthyosis
+\begin{itemize}
+\item lack of ceramides with VLCFA in cultured fibroblasts
+\end{itemize}
+\item[{CYP4F22}] ichthyosis
+\begin{itemize}
+\item lack of ceramides with ULCFA in cultured fibroblasts
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline14}]{Classification}
+\begin{block}{Primarily nervous system involvement}
+\begin{itemize}
+\item Serine palmitoyltransferase - peripheral sensory neuropathy
+\item Ceramide synthase 1 - myoclonic epilepsy
+\item Ceramide synthase 2 - myoclonic epilepsy
+\item Fatty Acid 2-hydroxylase - SPG35
+\item Nonlysosomal β-Glucosidase - SPG46
+\item GM3 Synthase Deficiency - Amish infantile epilepsy
+\item GM2/GD2 Synthase Deficiency - SPG26
+\end{itemize}
+\end{block}
+
+
+\begin{block}{Primarily skin involvement}
+\begin{itemize}
+\item Ceramide synthase 3 - Ichthyosis
+\item ULCFA \(\omega\)-hydrolase - Ichthyosis
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline15}]{Next time}
+\begin{itemize}
+\item Back to LSDs with Sphingolipidoses
+\end{itemize}
+\end{frame}
+\end{document}
