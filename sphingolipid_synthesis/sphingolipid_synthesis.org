@@ -65,12 +65,11 @@
 * Introduction
 ** Sphingolipids
 
-- found in all mammalian cell membranes
-  - and plasma lipoproteins
+- Found in all mammalian cell membranes
+- Plasma lipoproteins
 - Structural role
 - Modulate numerous biological functions
   - apoptosis
-
 - named after the Sphinx because of their enigmatic nature...
 
 ** Sphingosine and Ceramide
@@ -88,14 +87,6 @@
 #+END_LaTeX
 
 
-** Sphingolipid Structure
-
-
-#+NAME: fig:structure
-#+ATTR_LaTeX: :width \textwidth
-file:./figures/Sphingolipids_general_structures.png
-
-
 
 ** Biosynthesis
 
@@ -109,6 +100,14 @@ file:./figures/Sphingolipids_general_structures.png
   - glucosylceramide
   - glycosphingolipids
   - gangliosides
+
+
+** Sphingolipid Structure
+
+
+#+NAME: fig:structure
+#+ATTR_LaTeX: :width \textwidth
+file:./figures/Sphingolipids_general_structures.png
 
 ** Biosynthesis
 
@@ -126,8 +125,8 @@ file:./figures/Sphingolipids_general_structures.png
   - Late onset (2-4th decade)
   - peripheral sensory neuropathy
   - distal sensory loss
-  - ulcerative mutatilations
-  - hypohidrosis
+  - ulcerative mutilations
+  - hypohydrosis
   - there is a more severe early onset form
 - Accumulation of sphingoid bases \to pathology
 - mutations in serine palmitoyltransferase (SPCTLC1 or 2) alter
@@ -165,6 +164,8 @@ file:./figures/Sphingolipids_general_structures.png
   - required in myelin
   - increase with brain development
 
+- Decreased hydroxylated sphingomyelin in cultured cells
+
 ** GM3 Synthase Deficiency
 
 - Autosomal recessive infantile-onset epilepsy
@@ -196,7 +197,7 @@ file:./figures/Sphingolipids_general_structures.png
 
 - GBA2 is a membrane-associated protein localised at the ER and Golgi
   - hydrolyse glucosylceramide to ceramide and glucose.
-- GBA2 is distinct from the lysosomal acid β-glucosidase GBA1 deficient in Gaucher disease
+- GBA2 is distinct from the lysosomal acid \beta-glucosidase GBA1 deficient in Gaucher disease
 - hereditary (complex) spastic paraplegia locus SPG46.
 - Starting in childhood marked spasticity in lower extremities with
   progressive gait disturbances
