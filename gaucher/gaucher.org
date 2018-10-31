@@ -249,5 +249,10 @@
 - The D409H mutation manifests a characteristic phenotype:
   - including cardiac calcification, oculomotor apraxia, and corneal opacities.
 
-
 * Treatment
+
+** Treatment
+- Bone marrow transplantation
+  - Curative for Type 1
+  - High risk of mortality
+  - Suggests that gene therapy may have promise
