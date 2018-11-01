@@ -167,9 +167,9 @@
   - polyneuropathy.
 
 ** Gaucher type 2
-- Of the two classic neuronopathic variants, type 2 is rare
+- Type 2 is the rarer of the two classic neuronopathic variants1
 - early infantile onset of acute neuronopathic disease
-- progressing rapidly to death before age 2 years.
+- progressing rapidly to death before age 2 years
 
   - retroflexion of the neck
   - developmental delay, poor weight gain,
@@ -181,8 +181,10 @@
     - dysphagia
 
 - The perinatal-lethal subtype is the most severe form of Gaucher
-  disease. It leads to death in utero or within hours to days after
-  birth
+  disease.
+
+  - leads to death in utero or within hours to days after
+    birth
 
 ** Gaucher type 3
 - type 3 disease has a later onset, with slower progression of
@@ -252,7 +254,29 @@
 * Treatment
 
 ** Treatment
-- Bone marrow transplantation
+*** Bone marrow transplantation
   - Curative for Type 1
+    - Suggests hematopoietic gene therapy
   - High risk of mortality
-  - Suggests that gene therapy may have promise
+*** ERT
+- treats: hematological, visceral, and bony disease
+  - not cerebral disease
+- macrophages have a mannose receptor
+  - glucocerebrosidase glycoprotein modified to expose terminal mannose
+- 1991, Ceredase (algucerase) - human placenta
+- 1994, Cerezyme (imiglucerase) - CHO cells
+- 2010, VPRIV (velaglucerase) - human fibroblasts
+
+** Treatment
+*** Substrate reduction therapy
+- ceramide glucoyltransferase inhibitor
+  - N-butyldeoxynojirimycin (miglustate)
+  - eliglustat tartrate
+- Chaperone to stabilize - missense mutation
+  - isofagomine
+
+
+** Next time
+
+- Disorders of Sphingolipid Degradation continued...
+
