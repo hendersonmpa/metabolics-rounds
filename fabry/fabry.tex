@@ -1,0 +1,279 @@
+% Created 2018-11-28 Wed 14:42
+\documentclass[presentation, smaller]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
+\usepackage{textpos}
+\usepackage{textgreek}
+\usepackage[version=4]{mhchem}
+\usepackage{chemfig}
+\usepackage{siunitx}
+\usepackage{gensymb}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{verbatim}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+\usetheme{Ilmenau}
+\usecolortheme{whale}
+\author{Matthew Henderson, PhD, FCACB}
+\date{\today}
+\title{Sphingolipid Degradation: Fabry}
+\institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
+\titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
+\hypersetup{
+ pdfauthor={Matthew Henderson, PhD, FCACB},
+ pdftitle={Sphingolipid Degradation: Fabry},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.2.1 (Org mode 8.3.4)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+%\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
+%    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
+%}
+
+\vspace{220pt}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\tiny}
+% \addtobeamertemplate{frametitle}{}{%
+% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+% \includegraphics[height=1cm,width=2cm]{cat}
+% \end{textblock*}}
+
+\tikzstyle{chemical} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=none]
+\tikzstyle{hardware} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=gray!30]
+\tikzstyle{ms} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{msw} = [rectangle, rounded corners, text width=7em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{label} = [rectangle,text width=8em, minimum height=1em, text centered, draw=none, fill=none]
+\tikzstyle{hl} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=red!30]
+\tikzstyle{box} = [rectangle, rounded corners, text width=5em, minimum height=5em,text centered, draw=black, fill=none]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
+
+\section{Introduction}
+\label{sec:orgheadline9}
+
+\begin{frame}[label={sec:orgheadline1}]{Fabry}
+\begin{itemize}
+\item AKA: angiokeratoma corporis diffusum universale
+\item Second most common LSD
+\item 1:339,000 heterozygote females in the UK
+\item First described in 1898 independently by Anderson and Fabry
+\begin{itemize}
+\item Dermatologists
+\end{itemize}
+\item Defect in \(\alpha\)-galactosidase A (ceramide trihexosidase)
+\begin{itemize}
+\item Inability to cleave terminal galactose from the sphingolipid globotriasylceramide Gb3 (galactosylgalactosylglucoceramide)
+\item 3 to 20\% activity in hemizygote males
+\end{itemize}
+\item Lack of \(\alpha\)-GalA leads to accumulation of Gb3 in blood vessels and other tissues
+\begin{itemize}
+\item wide range of symptoms including kidney, heart, and skin symptoms
+\item \(\uparrow\) [Gb3] in kidney and blood group B antigenic glycosphingolipid
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline2}]{Sphingolipid degradation}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.6\textwidth]{./figures/sl_degradation.png}
+\caption[deg]{\label{fig:sld}
+Sphingolipid degradation}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline3}]{Globotriasylceramide (Gb3): the Fabry lipid}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.5\textwidth]{./figures/globotriasylceramide.png}
+\caption[gluc]{\label{fig:galac}
+globotriasylceramide}
+\end{figure}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline4}]{\(\alpha\)-galactosidase A}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.5\textwidth]{./figures/galactosidaseA.png}
+\caption[block]{\label{fig:sidase}
+\(\beta\)-glucocerebrosidase}
+\end{figure}
+
+\begin{itemize}
+\item Located in the lumen of lysosomes
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline5}]{Lysosomal Trafficking}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{./figures/lysosome_trafficking.jpeg}
+\caption[traf]{\label{fig:traf}
+Lysosomal Trafficking}
+\end{figure}
+\begin{itemize}
+\item Sortilin dependant pathway
+\begin{itemize}
+\item Not affected in ML II \& III
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline6}]{Sortilin}
+\begin{itemize}
+\item Sortilin is a type I transmembrane protein found in lysosomes
+\begin{itemize}
+\item can transport several lysosomal proteins from the TGN or PM to the endosomes,
+\begin{itemize}
+\item Several of these proteins exhibit normal levels in some cell types and tissues of I-cell disease patients
+\end{itemize}
+\end{itemize}
+\item Tissues from sortilin knock-out mice exhibit normal morphology
+\item Sortilin may transport selected acid hydrolases in a subset of cell types
+\item under stress conditions (e.g. Man-6-P pathway is deficient)
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline7}]{Megalin}
+\begin{itemize}
+\item a cell surface receptor involved in reabsorption of proteins at the kidney proximal tubule
+\item megalin mediated endocytosis of \(\alpha\)-galactosidase kidney proximal tubule
+\item megalin also mediates the endocytosis of \(\alpha\)-galactosidase in renal podocytes
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline8}]{Genetics}
+\begin{itemize}
+\item The \(\alpha\)-galactosidase A gene is on the X chromosome
+\begin{itemize}
+\item Xq22.1
+\end{itemize}
+\item X-linked with penetrance in female heterozygotes
+\begin{itemize}
+\item may be considered X-linked dominant
+\end{itemize}
+\item More that 300 of mutations have been found
+\item Single nucleotide missense mutations identified in the majority of families
+\begin{itemize}
+\item Most private mutations
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\section{Clinical Findings}
+\label{sec:orgheadline11}
+
+\begin{frame}[label={sec:orgheadline10}]{Signs and Symptoms}
+\begin{itemize}
+\item postprandial pain or diarrhea
+\begin{itemize}
+\item may be sole complaint
+\end{itemize}
+\item degradation of interphalangeal joints
+\item cerebrovascular - stroke, seizures
+\item ocular lesions
+\end{itemize}
+
+
+\begin{center}
+\begin{tabular}{ll}
+Age & Signs\\
+\hline
+Childhood & Pain in extremities, fever, Fabry crisis \footnotemark\\
+Adolescence & Angiokeratomas\\
+Adulthood & Central nervous system symptoms\\
+ & Myocardial and pulmonary disease\\
+Middle age & Renal failure, lymphedema\\
+\end{tabular}
+\end{center}\footnotetext[1]{May be induced by heat, cold, fatigue or emotional stress}
+\end{frame}
+
+
+\section{Laboratory Investigations}
+\label{sec:orgheadline14}
+
+\begin{frame}[label={sec:orgheadline12}]{Biochemistry}
+\begin{itemize}
+\item Deficient \(\alpha\)-galactosidase A activity in leukocytes
+\item NBS via \(\alpha\)-galactosidase A activity in DBS
+\begin{itemize}
+\item Taiwan, MO, IL
+\end{itemize}
+\item Elevated urine Gb3 and Gb2 in hemizygote males and heterozygote females
+\item Plasma lyso-Gb3 is a sensitive biomarker
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline13}]{Pathology}
+\begin{columns}
+\begin{column}{0.5\columnwidth}
+\begin{itemize}
+\item Widespread deposition of Gb3
+\item Vacuoles seen in variety of cells, \(\uparrow\) endothelium of blood vessels
+\end{itemize}
+\end{column}
+
+\begin{column}{0.5\columnwidth}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.7\textwidth]{./figures/Fabrys-disease.jpg}
+\caption[em]{\label{fig:biopsy}
+EM showing concentric or lamellar structure of lysosomal inclusions in Fabry disease renal biopsy}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+
+
+\section{Treatment}
+\label{sec:orgheadline17}
+
+\begin{frame}[label={sec:orgheadline15}]{Treatment}
+\begin{itemize}
+\item Alleviate pain
+\item Treat renal and cardiac disease
+\begin{itemize}
+\item Dialysis or renal transplantation
+\end{itemize}
+\item Long term experience with ERT
+\begin{itemize}
+\item agalsidase alpha or beta)
+\item Reduces left ventricular hypertrophy
+\item Less effect on renal function
+\item Does not prevent progression
+\end{itemize}
+\item Chaperone therapy - migalastat
+\begin{itemize}
+\item Amenable mutations
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline16}]{Next time}
+\begin{itemize}
+\item Disorders of Sphingolipid Degradation continued\ldots{}
+\end{itemize}
+\end{frame}
+\end{document}
