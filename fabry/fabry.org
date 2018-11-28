@@ -101,21 +101,21 @@
 
 ** Lysosomal Trafficking
 
-#+CAPTION[traf]:Lysosomal Trafficking
+#+CAPTION[traf]:Lysosomal protein trafficking receptors
 #+NAME: fig:traf
 #+ATTR_LaTeX: :width 0.8\textwidth
 [[file:./figures/lysosome_trafficking.jpeg]]
-- Sortilin dependant pathway
+- \alpha-galactosidase A uses both sortilin and mannose receptor
   - Not affected in ML II & III
 
 ** Sortilin
 
 - Sortilin is a type I transmembrane protein found in lysosomes
   - can transport several lysosomal proteins from the TGN or PM to the endosomes,
-     - Several of these proteins exhibit normal levels in some cell types and tissues of I-cell disease patients
 - Tissues from sortilin knock-out mice exhibit normal morphology
-- Sortilin may transport selected acid hydrolases in a subset of cell types
-- under stress conditions (e.g. Man-6-P pathway is deficient) 
+- Sortilin may transport selected acid hydrolases in:
+  - a subset of cell types
+  - under stress conditions (e.g. Man-6-P pathway is deficient) 
 
 ** Megalin 
 - a cell surface receptor involved in reabsorption of proteins at the kidney proximal tubule
@@ -129,7 +129,7 @@
   - may be considered X-linked dominant
 - More that 300 of mutations have been found
 - Single nucleotide missense mutations identified in the majority of families
-  - Most private mutations
+  - Mostly private mutations
 
 * Clinical Findings
 
@@ -183,21 +183,20 @@
 [[file:./figures/Fabrys-disease.jpg]]
 
 
-
-
 * Treatment
 
 ** Treatment
 - Alleviate pain
-- Treat renal and cardiac disease
-  - Dialysis or renal transplantation
-- Long term experience with ERT
-  - agalsidase alpha or beta)
+  - chronic low dose of diphenylhydantoin
+  - carbamazapine, gabapentin
+- Dialysis or renal transplantation
+- There is long term experience with ERT
+  - Agalsidase (alpha or beta)
   - Reduces left ventricular hypertrophy
   - Less effect on renal function
   - Does not prevent progression
-- Chaperone therapy - migalastat
-  - Amenable mutations
+- Oral chaperone therapy - migalastat
+  - Only for amenable mutations
 
 ** Next time
 
