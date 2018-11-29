@@ -92,7 +92,7 @@
 [[file:./figures/globotriaosylceramide.png]]
 
 ** \alpha-galactosidase A
-#+CAPTION[block]:\beta-glucocerebrosidase
+#+CAPTION[block]:\alpha-galactosidase A
 #+NAME: fig:sidase
 #+ATTR_LaTeX: :width 0.5\textwidth
 [[file:./figures/galactosidaseA.png]]
@@ -111,7 +111,7 @@
 ** Sortilin
 
 - Sortilin is a type I transmembrane protein found in lysosomes
-  - can transport several lysosomal proteins from the TGN or PM to the endosomes,
+  - can transport several lysosomal proteins from the TGN or PM to the endosomes
 - Tissues from sortilin knock-out mice exhibit normal morphology
 - Sortilin may transport selected acid hydrolases in:
   - a subset of cell types
@@ -165,7 +165,6 @@
 - prominent on hip, buttocks and scrotum
 
 
-
 * Laboratory Investigations
 
 ** Biochemistry
@@ -198,7 +197,6 @@
 #+NAME: fig:biopsy
 #+ATTR_LaTeX: :width 0.7\textwidth
 [[file:./figures/Fabrys-disease.jpg]]
-
 
 * Treatment
 
