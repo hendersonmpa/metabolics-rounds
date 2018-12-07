@@ -134,8 +134,10 @@
 - Impaired lysosomal catabolism of GM2 ganglioside.
 - GM2 storage in neurons in Tay-Sachs and Sandhoff
   - Sandhoff \uparrow asialo-GM2 in brain, globoside and oligosacarides in viseral organs
+- Progressive cerebral degeneration
 - Prior to population-based carrier screening the incidence of TSD was ~1:3600 Ashkenazi Jewish births.
-  - Incidence of TSD in the Ashkenazi Jewish population of North America has reduced > 90% 
+  - Incidence of TSD in the Ashkenazi Jewish population of North America has reduced > 90%
+- French-Canadian founder effect
 
 
 ** GM2 ganglioside storage diseases
@@ -192,12 +194,12 @@
 ** Genetics
 
 *** GM1
-- GLB1:Autosomal recessive 
+- GLB1: autosomal recessive 
 - ~ 150 mutations in GLB1 have been described
 - Neither the type or location correlate with phenotype
 
 *** GM2
-- Autosomal recessive
+- HEXA, HEXB and GM2A: autosomal recessive
 - > 130 mutations in HEXA
   - > 3 alleles comprise ~95% of Askenazi Jewish disease alleles
   - Good correlation with phenotype 
@@ -228,19 +230,32 @@
 
 ** GM2 Signs and Symptoms
 
+| Finding           | Infantile         | Juvenile           | Adult            |
+|-------------------+-------------------+--------------------+------------------|
+| Onset of symptoms | <1 year           | 2-10 years         | 10+ years        |
+| Eye findings      | CRS, blindness    | +/- CRS            |                  |
+| movement          | weakness          | ataxia, dysarthria | dystonia, ataxia |
+| Neurological      | startle response, | seizures           | psychosis        |
+|                   | seizures          |                    |                  |
+
+
 * Laboratory Investigations
 
 ** Biochemistry
-- Deficient \alpha-galactosidase A activity in leukocytes
-  - fluorometric 4MU-\alpha-D-galactopyranoside substrate
-  - LC-MS/MS 
-- NBS via \alpha-galactosidase A activity in DBS
-  - Taiwan, MO, IL
-- Elevated urine Gb3 and Gb2 in hemizygote males and heterozygote females
-  - urine and DUS LC-MSMS assay
-- Plasma lyso-Gb3 (globotriaosylsphingosine) is a sensitive biomarker
-  - LC-MSMS
-  - Useful in diagnosis and monitoring
+
+*** GM1 
+
+- Urine oligosacarides
+- Mucopolysacarides: \uparrow keratin sulfate
+- /in vitro/ \beta-galactosidase activity: leukocytes and DBS
+  - 4-MU-\beta-d-galactopyranoside
+
+*** GM2 
+- /in vitro/ Hexoaminidase activity: leukocytes, fibroblasts
+  - 4-MU-6-sulfo-\beta-glucosaminide
+  - specific for the \alpha subunit
+  - \uparrow in Sandoff
+  - normal in GM2 activator deficiency
 
 ** Pathology
 
@@ -265,7 +280,6 @@
 * Treatment
 ** Prenatal Screening for Tay-Sachs
 
-
 #+CAPTION[screening]:Prevention of Tay-Sachs disease (1972-1992)
 
 | Group                  | number                        |
@@ -285,20 +299,15 @@
 - > 90% reduction in the disease in Jewish population
 
 [fn:1] Prior offspring as well as heterozygote screening (1969-1992)
-** Treatment
-- Alleviate pain
-  - chronic low dose of diphenylhydantoin
-  - carbamazapine, gabapentin
-- Dialysis or renal transplantation
-- There is long term experience with ERT
-  - Agalsidase (alpha or beta)
-  - Reduces left ventricular hypertrophy
-  - Less effect on renal function
-  - Does not prevent progression
-- Oral chaperone therapy - migalastat
-  - Only for amenable mutations
 
+** Treatment
+
+*** GM1
+- no curative treatment to date
+*** GM2
+- treat seizures
+- no curative treatment to date
 ** Next time
 
 - Disorders of Sphingolipid Degradation continued...
-
+  - Krabbe and Metachromatic Leukodystrophy
