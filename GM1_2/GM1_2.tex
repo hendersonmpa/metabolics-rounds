@@ -1,0 +1,386 @@
+% Created 2018-12-07 Fri 14:53
+\documentclass[presentation, smaller]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
+\usepackage{textpos}
+\usepackage{textgreek}
+\usepackage[version=4]{mhchem}
+\usepackage{chemfig}
+\usepackage{siunitx}
+\usepackage{gensymb}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{verbatim}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+\usetheme{Ilmenau}
+\usecolortheme{whale}
+\author{Matthew Henderson, PhD, FCACB}
+\date{\today}
+\title{Sphingolipid Degradation: GM1/2 Gangliosidosis}
+\institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
+\titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
+\hypersetup{
+ pdfauthor={Matthew Henderson, PhD, FCACB},
+ pdftitle={Sphingolipid Degradation: GM1/2 Gangliosidosis},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.2.1 (Org mode 8.3.4)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+%\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
+%    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
+%}
+
+\vspace{220pt}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\tiny}
+% \addtobeamertemplate{frametitle}{}{%
+% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+% \includegraphics[height=1cm,width=2cm]{cat}
+% \end{textblock*}}
+
+\tikzstyle{chemical} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=none]
+\tikzstyle{hardware} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=gray!30]
+\tikzstyle{ms} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{msw} = [rectangle, rounded corners, text width=7em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{label} = [rectangle,text width=8em, minimum height=1em, text centered, draw=none, fill=none]
+\tikzstyle{hl} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=red!30]
+\tikzstyle{box} = [rectangle, rounded corners, text width=5em, minimum height=5em,text centered, draw=black, fill=none]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
+
+\section{Introduction}
+\label{sec:orgheadline12}
+
+\begin{frame}[label={sec:orgheadline1}]{Sphingolipid degradation}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.6\textwidth]{./figures/sl_degradation.png}
+\caption[deg]{\label{fig:sld}
+Sphingolipid degradation}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline2}]{GM1 Gangliosidosis}
+\begin{itemize}
+\item Defect in \(\beta\)-gangliosidase
+\item GM1 ganglioside accumulates in the brain and visera
+\item Infantile, juvenile and adult forms
+\begin{itemize}
+\item Residual enzyme function
+\end{itemize}
+\item Devastating degenerative disease
+\item GM1 gangliosidosis of all types is estimated to occur in 1:100,000 - 300,000
+\end{itemize}
+
+\begin{block}{MPS IVB - Morquio B}
+\begin{itemize}
+\item Clinically indistinguishable from MPS IVA
+\begin{itemize}
+\item skeletal changes, including short stature and skeletal dysplasia.
+\item normal intelligence
+\end{itemize}
+\item The prevalence of MPS IVB has been reported as 1:250,000 - 1,000,000
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline3}]{\(\beta\)-galactosidase}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.7\textwidth]{./figures/bgalatosidase.png}
+\caption[bgal]{\label{fig:bgal}
+\(\beta\)-galactosidase}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline4}]{Lysosomal multi-enzyme complex}
+\begin{columns}
+\begin{column}{0.6\columnwidth}
+\begin{itemize}
+\item \(\beta\)-galactosidase forms a heterotrimeric complex with:
+\begin{itemize}
+\item cathepsin A/PPCA : CTSA
+\item neuraminidase: NEU1
+\end{itemize}
+
+\item \(\downarrow\) cathepsin A \(\to\) 2\degree  deficiency of NEU1
+\begin{itemize}
+\item ML-1 (sialidosis)
+\end{itemize}
+\end{itemize}
+\end{column}
+
+\begin{column}{0.5\columnwidth}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=\textwidth]{./figures/lmc.jpg}
+\caption[lmc]{\label{fig:lmc}
+lysosomal multi-enzyme complex}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline5}]{GM2 Gangliosidosis}
+\begin{itemize}
+\item Three genetic and biochemical subtypes
+\begin{itemize}
+\item Tay-Sachs disease
+\item Sandhoff disease
+\item GM2 activator deficiency
+\end{itemize}
+\item Impaired lysosomal catabolism of GM2 ganglioside.
+\item GM2 storage in neurons in Tay-Sachs and Sandhoff
+\begin{itemize}
+\item Sandhoff \(\uparrow\) asialo-GM2 in brain, globoside and oligosacarides in viseral organs
+\end{itemize}
+\item Prior to population-based carrier screening the incidence of TSD was \textasciitilde{}1:3600 Ashkenazi Jewish births.
+\begin{itemize}
+\item Incidence of TSD in the Ashkenazi Jewish population of North America has reduced > 90\%
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline6}]{GM2 ganglioside storage diseases}
+\begin{center}
+\begin{tabular}{llrl}
+Disorder & Onset & Death (y) & Enzyme\\
+\hline
+Tay-Sachs disease & 3-6 months & 2-4 & Hex A\\
+Sandhoff disease & 3-6 months & 2-4 & Hex A\&B\\
+AB variant & 3-6 months &  & Activator\\
+Adult GM 2 gangliosidosis & 2-6 years & 5-15 & Hex A\\
+Juvenile GM 2 gangliosidosis & 2 yrs-adult & Variable & Hex A\\
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline7}]{Lysosomal \(\beta\)-Hexosaminidase enzymes}
+\begin{itemize}
+\item Functional lysosomal \(\beta\)-hexosaminidase enzymes are dimeric.
+\item Three isozymes are produced through the combination of \(\alpha\)
+  and \(\beta\) subunits
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{lll}
+Isozyme & Dimer composition & Function\\
+\hline
+A & \(\alpha\)/\(\beta\) & hydrolyzes GM2 ganglioside\\
+B & \(\beta\)/\(\beta\) & non-GM2 gangliosides w terminal hexosamine\\
+S & \(\alpha\)/\(\alpha\) & no known physiological function\\
+\end{tabular}
+\end{center}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline8}]{Hexosaminidase A: Tay-Sachs}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{./figures/hexosaminidasea.png}
+\caption[hexa]{\label{fig:hexa}
+Hexosaminidase A}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline9}]{Hexosaminidase A \& B: Sandhoff disease}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{./figures/hexosaminidaseab.png}
+\caption[hexb]{\label{fig:hexb}
+Hexosaminidase A \& B}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline10}]{Lysosomal Trafficking}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{./figures/lysosome_trafficking.jpeg}
+\caption[traf]{\label{fig:traf}
+Lysosomal protein trafficking receptors}
+\end{figure}
+
+\footnotesize
+\begin{itemize}
+\item \(\beta\)-galactosidase, hexoaminidase A and B require the M6P-receptor
+\item GM2 activator protein - Sortilin
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline11}]{Genetics}
+\begin{block}{GM1}
+\begin{itemize}
+\item GLB1:Autosomal recessive
+\item \textasciitilde{} 150 mutations in GLB1 have been described
+\item Neither the type or location correlate with phenotype
+\end{itemize}
+\end{block}
+
+\begin{block}{GM2}
+\begin{itemize}
+\item Autosomal recessive
+\item > 130 mutations in HEXA
+\begin{itemize}
+\item > 3 alleles comprise \textasciitilde{}95\% of Askenazi Jewish disease alleles
+\item Good correlation with phenotype
+\end{itemize}
+\item > 40 mutations in HEXB
+\item 6 in GM2A
+\end{itemize}
+\end{block}
+\end{frame}
+
+\section{Clinical Findings}
+\label{sec:orgheadline15}
+
+\begin{frame}[label={sec:orgheadline13}]{GM1 Signs and Symptoms}
+\footnotesize
+
+\begin{center}
+\begin{tabular}{lllll}
+Finding & Infantile & Juvenile & Adult & MPS IVB\\
+\hline
+Onset of symptoms & <1 year & 1-10 years & 10+ years & 3-5 years\\
+Eye findings & CRS & CC & +/– CC & CC\\
+Motor abnormalities & + & + & Extrapyramidal & \footnotemark\\
+Hepatosplenomegaly & + & +/– & – & –\\
+Cardiac involvement & +/– & +/– & +/– & +\\
+Coarse facial features & +/– & – & – & \footnotemark[1]{}\\
+Skeletal findings & + & +/– & – & +\\
+Neuroimaging & PA & PA & +/– mild atrophy & \footnotemark[1]{}\\
+Urine (GAG) & \footnotemark & \footnotemark[2]{} & \footnotemark[2]{} & Keratan sulfate \footnotemark\\
+\end{tabular}
+\end{center}\footnotetext[1]{Secondary to bony changes}\footnotetext[2]{Oligosacaride with terminal galactose}\footnotetext[3]{FN have been observed}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline14}]{GM2 Signs and Symptoms}
+\end{frame}
+
+\section{Laboratory Investigations}
+\label{sec:orgheadline18}
+
+\begin{frame}[label={sec:orgheadline16}]{Biochemistry}
+\begin{itemize}
+\item Deficient \(\alpha\)-galactosidase A activity in leukocytes
+\begin{itemize}
+\item fluorometric 4MU-\(\alpha\)-D-galactopyranoside substrate
+\item LC-MS/MS
+\end{itemize}
+\item NBS via \(\alpha\)-galactosidase A activity in DBS
+\begin{itemize}
+\item Taiwan, MO, IL
+\end{itemize}
+\item Elevated urine Gb3 and Gb2 in hemizygote males and heterozygote females
+\begin{itemize}
+\item urine and DUS LC-MSMS assay
+\end{itemize}
+\item Plasma lyso-Gb3 (globotriaosylsphingosine) is a sensitive biomarker
+\begin{itemize}
+\item LC-MSMS
+\item Useful in diagnosis and monitoring
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline17}]{Pathology}
+\begin{columns}
+\begin{column}{0.5\columnwidth}
+\begin{itemize}
+\item Widespread deposition of Gb3
+\item Vacuoles seen in variety of cells, \(\uparrow\) endothelium of blood vessels
+\end{itemize}
+\end{column}
+
+\begin{column}{0.5\columnwidth}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.7\textwidth]{./figures/Fabrys-disease.jpg}
+\caption[em]{\label{fig:biopsy}
+EM showing concentric or lamellar structure of lysosomal inclusions in Fabry disease renal biopsy}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\section{Treatment}
+\label{sec:orgheadline22}
+\begin{frame}[label={sec:orgheadline19}]{Prenatal Screening for Tay-Sachs}
+\begin{center}
+\begin{tabular}{ll}
+Group & number\\
+\hline
+Total screened & 9.53 x 10\(^{\text{6}}\) (seven countries)\\
+Carriers identified & 36 418\\
+Couples at risk & 1056\\
+Pregnancies monitored & 2415 \footnotemark[2]{}\\
+Affected fetuses & 469\\
+Aborted & 451\\
+Normal offspring born & 1881\\
+Birth/year w Tay-Sachs & \\
+Prior to 1969 & 100 (US \& Canada) 80\% Jewish\\
+1980 & 13 80\% non-Jewish\\
+1985–1992 & 3-10 80\% non-Jewish\\
+\end{tabular}
+\end{center}
+
+\begin{itemize}
+\item > 90\% reduction in the disease in Jewish population
+\end{itemize}
+\end{frame}
+\begin{frame}[label={sec:orgheadline20}]{Treatment}
+\begin{itemize}
+\item Alleviate pain
+\begin{itemize}
+\item chronic low dose of diphenylhydantoin
+\item carbamazapine, gabapentin
+\end{itemize}
+\item Dialysis or renal transplantation
+\item There is long term experience with ERT
+\begin{itemize}
+\item Agalsidase (alpha or beta)
+\item Reduces left ventricular hypertrophy
+\item Less effect on renal function
+\item Does not prevent progression
+\end{itemize}
+\item Oral chaperone therapy - migalastat
+\begin{itemize}
+\item Only for amenable mutations
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline21}]{Next time}
+\begin{itemize}
+\item Disorders of Sphingolipid Degradation continued\ldots{}
+\end{itemize}
+\end{frame}
+\end{document}

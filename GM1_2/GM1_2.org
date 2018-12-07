@@ -1,0 +1,304 @@
+#+TITLE: Sphingolipid Degradation: GM1/2 Gangliosidosis
+#+AUTHOR: Matthew Henderson, PhD, FCACB
+#+DATE: \today
+
+:PROPERTIES:
+#+DRAWERS: PROPERTIES
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [presentation, smaller]
+#+BEAMER_THEME: Ilmenau
+#+BEAMER_COLOR_THEME: whale
+#+BEAMER_FRAME_LEVEL: 2
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+OPTIONS: H:2 toc:nil
+#+PROPERTY: header-args:R :session *R*
+#+PROPERTY: header-args :cache no
+#+PROPERTY: header-args :tangle yes
+#+STARTUP: beamer
+#+STARTUP: overview
+#+STARTUP: hidestars
+#+STARTUP: indent
+# #+BEAMER_HEADER: \subtitle{Part 1: Maple Syrup Urine Diseas}
+#+BEAMER_HEADER: \institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
+#+BEAMER_HEADER: \titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
+#+latex_header: \hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
+#+LaTeX_header: \usepackage{textpos}
+#+LaTeX_header: \usepackage{textgreek}
+#+LaTeX_header: \usepackage[version=4]{mhchem}
+#+LaTeX_header: \usepackage{chemfig}
+#+LaTeX_header: \usepackage{siunitx}
+#+LaTeX_header: \usepackage{gensymb}
+#+LaTex_HEADER: \usepackage[usenames,dvipsnames]{xcolor}
+#+LaTeX_HEADER: \usepackage[T1]{fontenc}
+#+LaTeX_HEADER: \usepackage{lmodern}
+#+LaTeX_HEADER: \usepackage{verbatim}
+#+LaTeX_HEADER: \usepackage{tikz}
+#+LaTeX_HEADER: \usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+:END:
+#+BEGIN_LaTeX
+%\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
+%    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
+%}
+
+\vspace{220pt}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\tiny}
+% \addtobeamertemplate{frametitle}{}{%
+% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+% \includegraphics[height=1cm,width=2cm]{cat}
+% \end{textblock*}}
+
+\tikzstyle{chemical} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=none]
+\tikzstyle{hardware} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=gray!30]
+\tikzstyle{ms} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{msw} = [rectangle, rounded corners, text width=7em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{label} = [rectangle,text width=8em, minimum height=1em, text centered, draw=none, fill=none]
+\tikzstyle{hl} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=red!30]
+\tikzstyle{box} = [rectangle, rounded corners, text width=5em, minimum height=5em,text centered, draw=black, fill=none]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
+
+#+END_LaTeX
+
+* Introduction
+
+** Sphingolipid degradation
+
+#+CAPTION[deg]:Sphingolipid degradation
+#+NAME: fig:sld
+#+ATTR_LaTeX: :width 0.6\textwidth
+[[file:./figures/sl_degradation.png]]
+
+
+** GM1 Gangliosidosis
+- Defect in \beta-gangliosidase
+- GM1 ganglioside accumulates in the brain and visera
+- Infantile, juvenile and adult forms
+  - Residual enzyme function
+- Devastating degenerative disease
+- GM1 gangliosidosis of all types is estimated to occur in 1:100,000 - 300,000
+
+*** MPS IVB - Morquio B
+- Clinically indistinguishable from MPS IVA
+  - skeletal changes, including short stature and skeletal dysplasia.
+  - normal intelligence
+- The prevalence of MPS IVB has been reported as 1:250,000 - 1,000,000
+
+
+** \beta-galactosidase
+#+CAPTION[bgal]: \beta-galactosidase
+#+NAME: fig:bgal
+#+ATTR_LaTeX: :width 0.7\textwidth
+[[file:./figures/bgalatosidase.png]]
+
+
+** Lysosomal multi-enzyme complex
+
+***                                                                 :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.6
+:END:
+- \beta-galactosidase forms a heterotrimeric complex with:
+  - cathepsin A/PPCA : CTSA 
+  - neuraminidase: NEU1
+
+- \downarrow cathepsin A \to 2\degree  deficiency of NEU1
+  - ML-1 (sialidosis)
+
+***                                                                 :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+#+CAPTION[lmc]:lysosomal multi-enzyme complex
+#+NAME: fig:lmc
+#+ATTR_LaTeX: :width \textwidth
+[[file:./figures/lmc.jpg]]
+
+
+*** COMMENT caption
+- Schematic representation of the pathways that involve the components
+  of the LMC and the CSER, and that become deregulated in case of
+  single or combined enzyme deficiencies in sialidosis, GM1 and
+  GS. CMA, chaperone mediated autophagy; CSER, cell surface elastin
+  receptor; EBP, elastin binding protein; ECM, extracellular matrix;
+  LM, lysosomal membrane; LMC, lysosomal multienzyme complex; PM,
+  plasma membrane
+
+
+** GM2 Gangliosidosis
+- Three genetic and biochemical subtypes
+  - Tay-Sachs disease
+  - Sandhoff disease
+  - GM2 activator deficiency
+- Impaired lysosomal catabolism of GM2 ganglioside.
+- GM2 storage in neurons in Tay-Sachs and Sandhoff
+  - Sandhoff \uparrow asialo-GM2 in brain, globoside and oligosacarides in viseral organs
+- Prior to population-based carrier screening the incidence of TSD was ~1:3600 Ashkenazi Jewish births.
+  - Incidence of TSD in the Ashkenazi Jewish population of North America has reduced > 90% 
+
+
+** GM2 ganglioside storage diseases
+
+| Disorder                     | Onset       | Death (y) | Enzyme    |
+|------------------------------+-------------+-----------+-----------|
+| Tay-Sachs disease            | 3-6 months  |       2-4 | Hex A     |
+| Sandhoff disease             | 3-6 months  |       2-4 | Hex A&B   |
+| AB variant                   | 3-6 months  |           | Activator |
+| Adult GM 2 gangliosidosis    | 2-6 years   |      5-15 | Hex A     |
+| Juvenile GM 2 gangliosidosis | 2 yrs-adult |  Variable | Hex A     |
+
+** Lysosomal \beta-Hexosaminidase enzymes
+
+- Functional lysosomal \beta-hexosaminidase enzymes are dimeric.
+- Three isozymes are produced through the combination of \alpha
+  and \beta subunits
+
+| Isozyme | Dimer composition | Function                                   |
+|---------+-------------------+--------------------------------------------|
+| A       | \alpha/\beta      | hydrolyzes GM2 ganglioside                 |
+| B       | \beta/\beta       | non-GM2 gangliosides w terminal hexosamine |
+| S       | \alpha/\alpha     | no known physiological function            |
+
+
+** Hexosaminidase A: Tay-Sachs
+
+#+CAPTION[hexa]:Hexosaminidase A
+#+NAME: fig:hexa
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/hexosaminidasea.png]]
+
+
+** Hexosaminidase A & B: Sandhoff disease
+
+#+CAPTION[hexb]:Hexosaminidase A & B
+#+NAME: fig:hexb
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/hexosaminidaseab.png]]
+
+
+** Lysosomal Trafficking
+
+#+CAPTION[traf]:Lysosomal protein trafficking receptors
+#+NAME: fig:traf
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/lysosome_trafficking.jpeg]]
+
+\footnotesize
+- \beta-galactosidase, hexoaminidase A and B require the M6P-receptor
+- GM2 activator protein - sortilin
+
+
+** Genetics
+
+*** GM1
+- GLB1:Autosomal recessive 
+- ~ 150 mutations in GLB1 have been described
+- Neither the type or location correlate with phenotype
+
+*** GM2
+- Autosomal recessive
+- > 130 mutations in HEXA
+  - > 3 alleles comprise ~95% of Askenazi Jewish disease alleles
+  - Good correlation with phenotype 
+- > 40 mutations in HEXB
+- 6 in GM2A
+
+* Clinical Findings
+
+** GM1 Signs and Symptoms
+\footnotesize
+
+| Finding                | Infantile | Juvenile   | Adult            | MPS IVB                |
+|------------------------+-----------+------------+------------------+------------------------|
+| Onset of symptoms      | <1 year   | 1-10 years | 10+ years        | 3-5 years              |
+| Eye findings           | CRS       | CC         | +/– CC           | CC                     |
+| Motor abnormalities    | +         | +          | Extrapyramidal   | [fn:2]                 |
+| Hepatosplenomegaly     | +         | +/–        | –                | –                      |
+| Cardiac involvement    | +/–       | +/–        | +/–              | +                      |
+| Coarse facial features | +/–       | –          | –                | [fn:2]                 |
+| Skeletal findings      | +         | +/–        | –                | +                      |
+| Neuroimaging           | PA        | PA         | +/– mild atrophy | [fn:2]                 |
+| Urine (GAG)            | [fn:1]    | [fn:1]     | [fn:1]           | Keratan sulfate [fn:3] |
+
+[fn:1] Oligosacaride with terminal galactose
+[fn:2] Secondary to bony changes
+[fn:3] FN have been observed
+
+
+** GM2 Signs and Symptoms
+
+* Laboratory Investigations
+
+** Biochemistry
+- Deficient \alpha-galactosidase A activity in leukocytes
+  - fluorometric 4MU-\alpha-D-galactopyranoside substrate
+  - LC-MS/MS 
+- NBS via \alpha-galactosidase A activity in DBS
+  - Taiwan, MO, IL
+- Elevated urine Gb3 and Gb2 in hemizygote males and heterozygote females
+  - urine and DUS LC-MSMS assay
+- Plasma lyso-Gb3 (globotriaosylsphingosine) is a sensitive biomarker
+  - LC-MSMS
+  - Useful in diagnosis and monitoring
+
+** Pathology
+
+***                                                                 :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+- Widespread deposition of Gb3
+- Vacuoles seen in variety of cells, \uparrow endothelium of blood vessels
+
+***                                                                 :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+CAPTION[em]:EM showing concentric or lamellar structure of lysosomal inclusions in Fabry disease renal biopsy
+#+NAME: fig:biopsy
+#+ATTR_LaTeX: :width 0.7\textwidth
+[[file:./figures/Fabrys-disease.jpg]]
+
+
+* Treatment
+** Prenatal Screening for Tay-Sachs
+
+
+#+CAPTION[screening]:Prevention of Tay-Sachs disease (1972-1992)
+
+| Group                  | number                        |
+|------------------------+-------------------------------|
+| Total screened         | 9.53 x 10^6 (seven countries) |
+| Carriers identified    | 36 418                        |
+| Couples at risk        | 1056                          |
+| Pregnancies monitored  | 2415 [fn:1]                  |
+| Affected fetuses       | 469                           |
+| Aborted                | 451                           |
+| Normal offspring born  | 1881                          |
+| Birth/year w Tay-Sachs |                               |
+| Prior to 1969          | 100 (US & Canada) 80% Jewish  |
+| 1980                   | 13 80% non-Jewish             |
+| 1985–1992              | 3-10 80% non-Jewish           |
+
+- > 90% reduction in the disease in Jewish population
+
+[fn:1] Prior offspring as well as heterozygote screening (1969-1992)
+** Treatment
+- Alleviate pain
+  - chronic low dose of diphenylhydantoin
+  - carbamazapine, gabapentin
+- Dialysis or renal transplantation
+- There is long term experience with ERT
+  - Agalsidase (alpha or beta)
+  - Reduces left ventricular hypertrophy
+  - Less effect on renal function
+  - Does not prevent progression
+- Oral chaperone therapy - migalastat
+  - Only for amenable mutations
+
+** Next time
+
+- Disorders of Sphingolipid Degradation continued...
+
