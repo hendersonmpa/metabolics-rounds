@@ -76,7 +76,7 @@
 - GM1 ganglioside accumulates in the brain and visera
 - Infantile, juvenile and adult forms
   - Residual enzyme function
-- Devastating degenerative disease
+  - Devastating degenerative disease
 - GM1 gangliosidosis of all types is estimated to occur in 1:100,000 - 300,000
 
 *** MPS IVB - Morquio B
@@ -136,8 +136,8 @@
   - Sandhoff \uparrow asialo-GM2 in brain, globoside and oligosacarides in viseral organs
 - Progressive cerebral degeneration
 - Prior to population-based carrier screening the incidence of TSD was ~1:3600 Ashkenazi Jewish births.
-  - Incidence of TSD in the Ashkenazi Jewish population of North America has reduced > 90%
-- French-Canadian founder effect
+  - Incidence of TSD in the Ashkenazi Jewish population in North America \downarrow > 90%
+- Eastern Quebec founder mutation
 
 
 ** GM2 ganglioside storage diseases
@@ -147,8 +147,9 @@
 | Tay-Sachs disease            | 3-6 months  |       2-4 | Hex A     |
 | Sandhoff disease             | 3-6 months  |       2-4 | Hex A&B   |
 | AB variant                   | 3-6 months  |           | Activator |
-| Adult GM 2 gangliosidosis    | 2-6 years   |      5-15 | Hex A     |
-| Juvenile GM 2 gangliosidosis | 2 yrs-adult |  Variable | Hex A     |
+| Juvenile GM 2 gangliosidosis | 2-6 years   |      5-15 | Hex A     |
+| Adult GM 2 gangliosidosis    | 2 yrs-adult |  Variable | Hex A     |
+
 
 ** Lysosomal \beta-Hexosaminidase enzymes
 
@@ -161,6 +162,7 @@
 | A       | \alpha/\beta      | hydrolyzes GM2 ganglioside                 |
 | B       | \beta/\beta       | non-GM2 gangliosides w terminal hexosamine |
 | S       | \alpha/\alpha     | no known physiological function            |
+
 
 
 ** Hexosaminidase A: Tay-Sachs
@@ -177,6 +179,7 @@
 #+NAME: fig:hexb
 #+ATTR_LaTeX: :width 0.8\textwidth
 [[file:./figures/hexosaminidaseab.png]]
+
 
 
 ** Lysosomal Trafficking
@@ -251,36 +254,18 @@
   - 4-MU-\beta-d-galactopyranoside
 
 *** GM2 
-- /in vitro/ Hexoaminidase activity: leukocytes, fibroblasts
+- Urine oligosacarides
+- /in vitro/ Hexoaminidase activity: leukocytes, fibroblasts, ?*serum*?
   - 4-MU-6-sulfo-\beta-glucosaminide
   - specific for the \alpha subunit
+- ?Heat inactivation enzyme assay?
   - \uparrow in Sandoff
   - normal in GM2 activator deficiency
 
-** Pathology
-
-***                                                                 :BMCOL:
-:PROPERTIES:
-:BEAMER_col: 0.5
-:END:
-- Widespread deposition of Gb3
-- Vacuoles seen in variety of cells, \uparrow endothelium of blood vessels
-
-***                                                                 :BMCOL:
-:PROPERTIES:
-:BEAMER_col: 0.5
-:END:
-
-#+CAPTION[em]:EM showing concentric or lamellar structure of lysosomal inclusions in Fabry disease renal biopsy
-#+NAME: fig:biopsy
-#+ATTR_LaTeX: :width 0.7\textwidth
-[[file:./figures/Fabrys-disease.jpg]]
-
-
+- ?Falsely normal results in Tay-Sachs female carriers?
 * Treatment
-** Prenatal Screening for Tay-Sachs
+** Carrier Screening for Tay-Sachs (1972-1992)
 
-#+CAPTION[screening]:Prevention of Tay-Sachs disease (1972-1992)
 
 | Group                  | number                        |
 |------------------------+-------------------------------|
@@ -307,6 +292,8 @@
 *** GM2
 - treat seizures
 - no curative treatment to date
+
+
 ** Next time
 
 - Disorders of Sphingolipid Degradation continued...

@@ -1,0 +1,292 @@
+% Created 2019-01-08 Tue 12:58
+\documentclass[presentation, smaller]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
+\usepackage{textpos}
+\usepackage{textgreek}
+\usepackage[version=4]{mhchem}
+\usepackage{chemfig}
+\usepackage{siunitx}
+\usepackage{gensymb}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{verbatim}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+\usetheme{Ilmenau}
+\usecolortheme{whale}
+\author{Matthew Henderson, PhD, FCACB}
+\date{\today}
+\title{Sphingolipid Degradation: Niemann-Pick}
+\institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
+\titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
+\hypersetup{
+ pdfauthor={Matthew Henderson, PhD, FCACB},
+ pdftitle={Sphingolipid Degradation: Niemann-Pick},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.2.1 (Org mode 8.3.4)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+%\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
+%    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
+%}
+
+\vspace{220pt}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\tiny}
+% \addtobeamertemplate{frametitle}{}{%
+% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+% \includegraphics[height=1cm,width=2cm]{cat}
+% \end{textblock*}}
+
+\tikzstyle{chemical} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=none]
+\tikzstyle{hardware} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=gray!30]
+\tikzstyle{ms} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{msw} = [rectangle, rounded corners, text width=7em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{label} = [rectangle,text width=8em, minimum height=1em, text centered, draw=none, fill=none]
+\tikzstyle{hl} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=red!30]
+\tikzstyle{box} = [rectangle, rounded corners, text width=5em, minimum height=5em,text centered, draw=black, fill=none]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
+
+\section{Introduction}
+\label{sec:orgheadline10}
+
+\begin{frame}[label={sec:orgheadline1}]{Niemann-Pick Disease}
+\begin{itemize}
+\item There are three types of Niemann-Pick Disease:
+\item Types A and B (ASMD or Acid Sphingomyelinase Deficiency)
+\begin{itemize}
+\item Type A and B (ASMD or Acid Sphingomyelinase Deficiency) are known as Type 1
+\end{itemize}
+\item Niemann-Pick Disease Type C (NPC).
+\begin{itemize}
+\item Type C (C1 \& C2) is known as Type 2
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline2}]{Niemann-Pick A \& B}
+\begin{itemize}
+\item Niemann-Pick Type A (NPA) and Type B or (ASMD), is caused by the deficiency of acid sphingomyelinase (ASM).
+\begin{itemize}
+\item required to metabolize sphingomyelin.
+\item progressive accumulation of sphingomyelin in systemic organs
+\begin{itemize}
+\item brain accumulation in neuronal forms
+\end{itemize}
+\item There is growing evidence that NPA \& NPB represent opposite ends of a continuum.
+\begin{itemize}
+\item NPA generally have little or no ASM production (less than 1\% of normal).
+\item NPB have approximately 10\% of normal level of ASM.
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline3}]{Sphingomyelinase}
+\begin{columns}
+\begin{column}{0.5\columnwidth}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{./figures/sphingomyelin.png}
+\label{fig:}
+\end{figure}
+\end{column}
+
+\begin{column}{0.5\columnwidth}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{./figures/sphingomyelinase.png}
+\label{fig:}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline4}]{Niemann-Pick C}
+\begin{itemize}
+\item a fatal, neuro degenerative disease that affects 1 in 100,000
+\begin{itemize}
+\item sometimes referred to as Childhood Alzheimer’s
+\item extremely heterogeneous
+\end{itemize}
+\item Accumulation of unesterified cholesterol, sphingomyelin, glycolipids in systemic organs
+\item GM2 and GM3 accumulate in brain
+\begin{itemize}
+\item no increase in cholesterol
+\end{itemize}
+\item NPC has two sub types NP-C1 (95\%) and NP-C2 (5\%)
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline5}]{Niemann-Pick C}
+\begin{columns}
+\begin{column}{0.5\columnwidth}
+\begin{itemize}
+\item LDL cholesterol enters cells via endocytosis at the LDL receptor.
+\item delivered to the late-stage endosomes and lysosomes
+\item hydrolyzed and released as free cholesterol.
+\item Unesterified cholesterol is transported to the plasma membrane and the ER for recycling.
+
+\item In NP-C, the LDL-cholesterol is trapped in lysosomes
+\end{itemize}
+\end{column}
+
+\begin{column}{0.5\columnwidth}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{./figures/cholesterol1.jpg}
+\label{fig:}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline6}]{NPC1 \& NPC2}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{./figures/Niemann-Pick-C-Brown-and-Goldstein.png}
+\label{fig:}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline7}]{Sphingolipid degradation}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.6\textwidth]{./figures/sl_degradation.png}
+\caption[deg]{\label{fig:sld}
+Sphingolipid degradation}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline8}]{Lysosomal Protein Trafficking}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{./figures/lysosome_trafficking.jpeg}
+\caption[traf]{\label{fig:traf}
+Lysosomal protein trafficking receptors}
+\end{figure}
+
+\footnotesize
+\begin{itemize}
+\item \(\beta\)-galactosidase, hexoaminidase A and B require the M6P-receptor
+\item GM2 activator protein - sortilin
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline9}]{Genetics}
+\begin{block}{Niemann-Pick A \& B}
+\begin{itemize}
+\item Mutations in SMPD1
+\end{itemize}
+\end{block}
+\begin{block}{Niemann-Pick C}
+\begin{itemize}
+\item Autosomal recessive inheritance
+\end{itemize}
+\end{block}
+\end{frame}
+
+\section{Clinical Findings}
+\label{sec:orgheadline14}
+
+\begin{frame}[label={sec:orgheadline11}]{Niemann-Pick A \& B symptoms}
+\begin{block}{Niemann-Pick A symptoms}
+\begin{itemize}
+\item hepatosplenomegaly by age 3 months
+\item Failure to thrive
+\item Psychomotor regression at age 1
+\begin{itemize}
+\item progressive loss of abilities – mental and physical
+\end{itemize}
+\item Interstitial lung disease resulting in lung infections and ultimate lung failure
+\item Cherry-red spot identified with eye examination (all affected children)
+\end{itemize}
+\end{block}
+
+\begin{block}{Niemann-Pick B symptoms}
+\begin{itemize}
+\item Symptoms outlined under NPA (but less severe)
+\item Thrombocytopenia
+\item pulmonary infiltration
+\item Short stature
+\item Cherry-red spot identified with eye examination (⅓ of affected children)
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgheadline12}]{Niemann-Pick C symptoms}
+\begin{itemize}
+\item onset of the disease can happen at any age.
+\begin{itemize}
+\item Often school age children.
+\item also been found in adults
+\end{itemize}
+
+\item Symptoms May Include:
+\begin{itemize}
+\item Jaundice at Birth or Shortly Afterwards
+\item Hepatosplenomegaly
+\item Vertical Supranuclear Gaze Palzy
+\item Ataxia
+\item Dystonia
+\item Dysarthria
+\item Cognitive Dysfunction/Dementia
+\item Cataplexy
+\item Tremors Accompanying Movement
+\item Seizures
+\item Dysphagia
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgheadline13}]{Niemann-Pick C classification}
+\begin{itemize}
+\item Classification by neurological form is widely used
+\item correlation between age at neurological onset and course of disease
+and lifespan has been established
+\end{itemize}
+
+\begin{block}{Early infantile}
+\begin{itemize}
+\item pre-existing hepatosplenomegaly
+\item delay in motor milestones 9 months - 2 years
+\item survival < 6 years
+\end{itemize}
+\end{block}
+
+\begin{block}{Late-infantile}
+\begin{itemize}
+\item classic NPC - 60-70\% of cases
+\item language delay
+\item Ataxia at 3-5 years
+\item Cognitive dysfunction follows 6-12 years
+\end{itemize}
+\end{block}
+\end{frame}
+\end{document}

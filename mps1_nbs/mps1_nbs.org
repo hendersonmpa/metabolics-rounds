@@ -83,7 +83,6 @@
 
 ** MPS I disease spectrum
 
-#+CAPTION[]:
 #+NAME: fig:mps1
 #+ATTR_LaTeX: :width 0.8\textwidth
 [[file:./figures/mps1clinical.png]]
@@ -112,31 +111,6 @@
 
 
 * Biochemistry
-** Hydrolysis reaction catalyzed by \alpha-l-iduronidase
-#+CAPTION[mech]:Hydrolysis reaction catalyzed by \alpha-l-iduronidase
-#+NAME: fig:mech
-#+ATTR_LaTeX: :width 0.8\textwidth
-[[file:./figures/nihms3970f3.jpg]]
-
-*** COMMENT
-The catalytic pathway for human IDUA and supporting crystallographic
-evidence a) A model of the Michaelis complex with 5F-IdoAF bound in
-the active site of IDUA. The enzyme residues are distinguished by
-carbon atoms highlighted in green, whereas the ligand carbon atoms in
-grey. Hydrogen bonds are represented by dashed lines. (b) The
-glycosyl- enzyme intermediate as seen in the active site of IDUA with
-Glu299 covalently modified by 2F-IdoAF. The carbon atoms of the enzyme
-residues are highlighted in cyan, while those of the ligand are shown
-in yellow. (c) A comparative “front” view of the 5F-IdoAF and
-covalently bound 2F-IdoA in the active site of IDUA, the C2-C5 axis of
-the IdoA ring runs almost perpendicular to the plane of the paper. The
-anomeric carbon “travels” ~1.2Å downward from its position in the
-IDUA-5F-IdoAF complex to that in the IDUA-2F-IdoA adduct. (d) The
-proposed catalytic pathway of IDUA. See text for details. Note that
-acid catalysis by Glu 182 may not be important for fluoride departure
-but is crucial for the natural substrate of IDUA.
-
-
 ** IDUA exhibits Michaelis-Menten kinetics 
 
 #+begin_src gnuplot :file ./figures/kinetics.pdf
@@ -174,7 +148,6 @@ but is crucial for the natural substrate of IDUA.
 [[file:./figures/kinetics.pdf]]
 
 
-
 ** Substrate concentration
 - substrate concentrations 10-fold the Km recommended
 - interference from contaminating 4MU-\beta-D-glucuronide
@@ -187,6 +160,33 @@ but is crucial for the natural substrate of IDUA.
 \[ 
 V  = \frac{Vmax[S]}{Km + [S]}
 \]
+
+
+** Hydrolysis reaction catalyzed by \alpha-l-iduronidase
+#+CAPTION[mech]:Hydrolysis reaction catalyzed by \alpha-l-iduronidase
+#+NAME: fig:mech
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/nihms3970f3.jpg]]
+
+*** COMMENT
+The catalytic pathway for human IDUA and supporting crystallographic
+evidence a) A model of the Michaelis complex with 5F-IdoAF bound in
+the active site of IDUA. The enzyme residues are distinguished by
+carbon atoms highlighted in green, whereas the ligand carbon atoms in
+grey. Hydrogen bonds are represented by dashed lines. (b) The
+glycosyl- enzyme intermediate as seen in the active site of IDUA with
+Glu299 covalently modified by 2F-IdoAF. The carbon atoms of the enzyme
+residues are highlighted in cyan, while those of the ligand are shown
+in yellow. (c) A comparative “front” view of the 5F-IdoAF and
+covalently bound 2F-IdoA in the active site of IDUA, the C2-C5 axis of
+the IdoA ring runs almost perpendicular to the plane of the paper. The
+anomeric carbon “travels” ~1.2Å downward from its position in the
+IDUA-5F-IdoAF complex to that in the IDUA-2F-IdoA adduct. (d) The
+proposed catalytic pathway of IDUA. See text for details. Note that
+acid catalysis by Glu 182 may not be important for fluoride departure
+but is crucial for the natural substrate of IDUA.
+
+
 
 * Screening Methods
 
@@ -225,8 +225,6 @@ V  = \frac{Vmax[S]}{Km + [S]}
 
 
 ** Spectrofluorometric
-
-
 #+CAPTION: SpotCheck Pro
 #+NAME: fig:ap
 #+ATTR_LaTeX: :width 0.8\textwidth
@@ -241,8 +239,7 @@ V  = \frac{Vmax[S]}{Km + [S]}
 
 
 ** Missouri Program
-
-- 43,701 samples screened by Missouri program using the Baebies assay
+- 43,701 samples screened by Missouri program using the Baebies spectrofluorometric assay
 
 #+CAPTION[]:
 #+NAME: fig:pd
@@ -259,20 +256,7 @@ V  = \frac{Vmax[S]}{Km + [S]}
   - 150000 samples/year * SPR ~  110 SP/year
 - PD rate = 7/43701 = 0.0001601794
   - 150000 samples/year * PD rate ~ 24 PD/year
-
-** IDUA: FIA-MS/MS
-
-#+CAPTION[]:MS/MS workflow
-#+NAME: fig:msmswf
-#+ATTR_LaTeX: :width 0.8\textwidth
-[[file:./figures/F2large.jpg]]
-
-
-\[
-\frac{1.7 \text{min/sample} \cdot 1000 \text{samples/day}}{60 \text{min/hour} \cdot 2 \text{instruments}}
-= 14.17 \text{hours/instrument/day}
-\]
-
+ 
 ** IDUA: FIA-MS/MS
 - Positive mode ESI
 - Ten uL of the 150 uL sample via flow injection
@@ -290,17 +274,30 @@ V  = \frac{Vmax[S]}{Km + [S]}
 - 25/26 patients with reduced leukocyte activity also had reduced
   activity in DBS using MS/MS substrate (Pollard, presentation)
 
+** IDUA: FIA-MS/MS
+
+#+CAPTION[]:MS/MS workflow
+#+NAME: fig:msmswf
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/F2large.jpg]]
+
+
+\[
+\frac{1.7 \text{min/sample} \cdot 1000 \text{samples/day}}{60 \text{min/hour} \cdot 2 \text{instruments}}
+= 14.17 \text{hours/instrument/day}
+\]
+
 ** GAGs: LC-MS/MS
-- Dried blood spot punches (1/8 in. diameter) were eluted for 10 min at RT and sonicated for 15 min.
+
+- Dried blood spot punch eluted for 10 min at RT and sonicated for 15 min.
 - Heparan sulfate and dermatan sulfate in the DBS punches were
-  digested to disaccharides by with 5 mIU of each heparinase I, II,
-  III and 50 mIU chondroitinase B.
-- 2 h of incubation at 30\degree C, 15 μL 150 mM EDTA (pH7.0) and
-  125 ng internal standard, 4UA-2S-GlcNCOEt-6S, was added and the
-  reaction was stopped and proteins denatured by boiling for 5 min.
-- The reaction mixture was centrifuged at 16,000 g for 5 min at room
-  temperature. The supernatant was subsequently applied to an Amicon
-  Ultra 30 K centrifugal filter and centrifuged at 14,000 g
+  digested to disaccharides with 5 mIU of each heparinase I, II, III
+  and 50 mIU chondroitinase B.
+- 2 h of incubation at 30\degree C,
+- 15 μL 150 mM EDTA (pH7.0), 125 ng internal standard, 4UA-2S-GlcNCOEt-6S
+- reaction was stopped and proteins denatured by boiling for 5 min.
+- centrifuged at 16,000 g for 5 min at room temp.
+- supernatant applied to an Amicon Ultra 30 K filter and centrifuged at 14,000 g
 
 ** Inlet table                                                     :noexport:
 #+tblname: data-table
@@ -366,3 +363,10 @@ plot data u 1:3 w lp lw 2 title '10 mM NH4HCO3', \
 #+RESULTS:
 [[file:./figures/wf.pdf]]
 
+** Hurler screening time-lines
+**** First, second and third tier assays validated
+   - 2019-12
+**** Start retrospective population study
+   - 2020-04
+**** Launch of NBS for Hurler
+   - 2021-04

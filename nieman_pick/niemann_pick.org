@@ -1,0 +1,241 @@
+#+TITLE: Sphingolipid Degradation: Niemann-Pick
+#+AUTHOR: Matthew Henderson, PhD, FCACB
+#+DATE: \today
+
+:PROPERTIES:
+#+DRAWERS: PROPERTIES
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [presentation, smaller]
+#+BEAMER_THEME: Ilmenau
+#+BEAMER_COLOR_THEME: whale
+#+BEAMER_FRAME_LEVEL: 2
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+OPTIONS: H:2 toc:nil
+#+PROPERTY: header-args:R :session *R*
+#+PROPERTY: header-args :cache no
+#+PROPERTY: header-args :tangle yes
+#+STARTUP: beamer
+#+STARTUP: overview
+#+STARTUP: hidestars
+#+STARTUP: indent
+# #+BEAMER_HEADER: \subtitle{Part 1: Maple Syrup Urine Diseas}
+#+BEAMER_HEADER: \institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
+#+BEAMER_HEADER: \titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
+#+latex_header: \hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
+#+LaTeX_header: \usepackage{textpos}
+#+LaTeX_header: \usepackage{textgreek}
+#+LaTeX_header: \usepackage[version=4]{mhchem}
+#+LaTeX_header: \usepackage{chemfig}
+#+LaTeX_header: \usepackage{siunitx}
+#+LaTeX_header: \usepackage{gensymb}
+#+LaTex_HEADER: \usepackage[usenames,dvipsnames]{xcolor}
+#+LaTeX_HEADER: \usepackage[T1]{fontenc}
+#+LaTeX_HEADER: \usepackage{lmodern}
+#+LaTeX_HEADER: \usepackage{verbatim}
+#+LaTeX_HEADER: \usepackage{tikz}
+#+LaTeX_HEADER: \usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+:END:
+#+BEGIN_LaTeX
+%\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
+%    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
+%}
+
+\vspace{220pt}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\tiny}
+% \addtobeamertemplate{frametitle}{}{%
+% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+% \includegraphics[height=1cm,width=2cm]{cat}
+% \end{textblock*}}
+
+\tikzstyle{chemical} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=none]
+\tikzstyle{hardware} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=gray!30]
+\tikzstyle{ms} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{msw} = [rectangle, rounded corners, text width=7em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{label} = [rectangle,text width=8em, minimum height=1em, text centered, draw=none, fill=none]
+\tikzstyle{hl} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=red!30]
+\tikzstyle{box} = [rectangle, rounded corners, text width=5em, minimum height=5em,text centered, draw=black, fill=none]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
+
+#+END_LaTeX
+
+* Introduction
+
+** Niemann-Pick Disease
+- There are three types of Niemann-Pick Disease:
+- Types A and B (ASMD or Acid Sphingomyelinase Deficiency)
+  - Type A and B (ASMD or Acid Sphingomyelinase Deficiency) are known as Type 1
+- Niemann-Pick Disease Type C (NPC).
+  - Type C (C1 & C2) is known as Type 2
+
+** Niemann-Pick A & B
+- Niemann-Pick Type A (NPA) and Type B or (ASMD), is caused by the deficiency of acid sphingomyelinase (ASM).
+  - required to metabolize sphingomyelin.
+  - progressive accumulation of sphingomyelin in systemic organs
+    - brain accumulation in neuronal forms
+  - There is growing evidence that NPA & NPB represent opposite ends of a continuum.
+    - NPA generally have little or no ASM production (less than 1% of normal).
+    - NPB have approximately 10% of normal level of ASM.
+
+** Sphingomyelinase
+
+***                                                                   :BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: 0.5
+    :END:
+
+#+CAPTION[]:
+#+NAME: fig:
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/sphingomyelin.png]]
+
+***                                                                   :BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: 0.5
+    :END:
+
+#+CAPTION[]:
+#+NAME: fig:
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/sphingomyelinase.png]]
+
+
+** Niemann-Pick C
+- a fatal, neuro degenerative disease that affects 1 in 100,000
+  - sometimes referred to as Childhood Alzheimer’s
+  - extremely heterogeneous
+- Accumulation of unesterified cholesterol, sphingomyelin, glycolipids in systemic organs
+- GM2 and GM3 accumulate in brain
+  - no increase in cholesterol
+- NPC has two sub types NP-C1 (95%) and NP-C2 (5%)
+
+
+** Niemann-Pick C
+
+*** text                                                              :BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: 0.5
+    :END:
+- LDL cholesterol enters cells via endocytosis at the LDL receptor.
+- delivered to the late-stage endosomes and lysosomes
+- hydrolyzed and released as free cholesterol.
+- Unesterified cholesterol is transported to the plasma membrane and the ER for recycling.
+
+- In NP-C, the LDL-cholesterol is trapped in lysosomes
+
+*** image                                                             :BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: 0.5
+    :END:
+
+
+#+CAPTION[]:
+#+NAME: fig:
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/cholesterol1.jpg]]
+
+
+** NPC1 & NPC2
+
+
+#+CAPTION[]:
+#+NAME: fig:
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/Niemann-Pick-C-Brown-and-Goldstein.png]]
+
+
+** Sphingolipid degradation
+
+#+CAPTION[deg]:Sphingolipid degradation
+#+NAME: fig:sld
+#+ATTR_LaTeX: :width 0.6\textwidth
+[[file:./figures/sl_degradation.png]]
+
+
+** Lysosomal Protein Trafficking
+
+#+CAPTION[traf]:Lysosomal protein trafficking receptors
+#+NAME: fig:traf
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/lysosome_trafficking.jpeg]]
+
+\footnotesize
+- \beta-galactosidase, hexoaminidase A and B require the M6P-receptor
+- GM2 activator protein - sortilin
+
+** Genetics
+
+*** Niemann-Pick A & B
+- Mutations in SMPD1
+*** Niemann-Pick C
+- Autosomal recessive inheritance
+
+* Clinical Findings
+
+** Niemann-Pick A & B symptoms
+
+*** Niemann-Pick A symptoms
+- hepatosplenomegaly by age 3 months
+- Failure to thrive
+- Psychomotor regression at age 1
+  - progressive loss of abilities – mental and physical
+- Interstitial lung disease resulting in lung infections and ultimate lung failure
+- Cherry-red spot identified with eye examination (all affected children)
+
+*** Niemann-Pick B symptoms
+- Symptoms outlined under NPA (but less severe)
+- Thrombocytopenia 
+- pulmonary infiltration
+- Short stature
+- Cherry-red spot identified with eye examination (⅓ of affected children)
+
+
+** Niemann-Pick C symptoms
+
+- onset of the disease can happen at any age.
+  - Often school age children.
+  - also been found in adults
+
+- Symptoms May Include:
+  - Jaundice at Birth or Shortly Afterwards
+  - Hepatosplenomegaly
+  - Vertical Supranuclear Gaze Palzy
+  - Ataxia
+  - Dystonia
+  - Dysarthria
+  - Cognitive Dysfunction/Dementia
+  - Cataplexy
+  - Tremors Accompanying Movement
+  - Seizures
+  - Dysphagia
+
+*** COMMENT Definitions:
+- Vertical Supranuclear Gaze Palzy: Difficulty with Upward & Downward Eye Movement 
+- Ataxia: Unsteadiness with Gait, Clumsiness or Walking 
+- Dystonia: Poor Posture Due to Difficulty with Posturing of Limbs
+- Dysarthria: Slurred Irregular Speech 
+- Cognitive Dysfunction/Dementia: Learning Difficulties & Progressive Intellectual Decline 
+- Cataplexy: Sudden Loss of Muscle Tone Which May Lead to Unexpected Falls 
+- Dysphagia:Swallowing Problems 
+- Thrombocytopenia: low number of platelets
+
+** Niemann-Pick C classification
+
+- Classification by neurological form is widely used
+- correlation between age at neurological onset and course of disease
+  and lifespan has been established
+
+*** Early infantile
+- pre-existing hepatosplenomegaly
+- delay in motor milestones 9 months - 2 years
+- survival < 6 years
+
+*** Late-infantile
+- classic NPC - 60-70% of cases
+- language delay
+- Ataxia at 3-5 years
+- Cognitive dysfunction follows 6-12 years 
+
+
