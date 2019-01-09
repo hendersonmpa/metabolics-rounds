@@ -274,7 +274,45 @@
   - Twenty-three were confirmed true positives, all of whom were predicted to have late-onset phenotypes.
   - Six of the 69 currently have undetermined disease status.
 
-** Biochemistry
+** Biomarkers
+
+- Plasma biomarkers:
+  - oxysterols cholestane-3\beta, 5\alpha, 6\beta-triol
+  - 7-ketocholesterol
+  - Chitotriosidase
+- Bile acid:
+  - 3\beta, 5\alpha, 6\beta-trihydroxy-cholanoyl-glycine
+
+** Enzymology
+*** Niemann-Pick A & B
+- Deficient ASM activity in leukocytes or cultured cells.
+  - use of native or radio-labelled substrate critical
+
+*** Niemann-Pick C
+- "filipin test"
+  - culture fibroblasts in an LDL-enriched medium
+  - pathognomonic free cholesterol accumulation in lysosomes
+  - fluorescence microscopy after filipin staining
+  - unequivocal results in ~ 85% of patients
+
+
+** Pathology: Niemann-Pick A & B
+
+#+CAPTION[]: Foam cells in bone marrow
+#+NAME: fig:
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/foam_cells.png]]
 
 
 
+** Biochemistry: Niemann-Pick C
+* Treatment
+
+
+** Treatment: Niemann-Pick A&B 
+
+
+** Treatment: Niemann-Pick C
+- substrate reduction therapy
+- miglustat approved for treatment of neurological manifestations
+- miglustat is an iminosugar, a synthetic analogue of D-glucose
