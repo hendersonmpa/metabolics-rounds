@@ -1,4 +1,5 @@
-#+TITLE: Sphingolipid Degradation: Niemann-Pick
+#+TITLE: Niemann-Pick Disease
+#+SUBTITLE: Sphingolipid and Cholesterol Degradation
 #+AUTHOR: Matthew Henderson, PhD, FCACB
 #+DATE: \today
 
@@ -64,16 +65,19 @@
 * Introduction
 
 ** Niemann-Pick Disease
-- There are three types of Niemann-Pick Disease:
-- Types A and B (ASMD or Acid Sphingomyelinase Deficiency)
-  - Type A and B (ASMD or Acid Sphingomyelinase Deficiency) are known as Type 1
-- Niemann-Pick Disease Type C (NPC).
-  - Type C (C1 & C2) is known as Type 2
+- There are three types of Niemann-Pick disease
+  - Types A and B (ASMD or Acid Sphingomyelinase Deficiency)
+    - Type A and B (ASMD or Acid Sphingomyelinase Deficiency) are also known as Type 1
+  - Niemann-Pick Disease Type C (NPC).
+    - Type C (C1 & C2) is also known as Type 2
 
+- The incidence of Niemann–Pick disease type C is estimated to be one in 150,000.
 ** Niemann-Pick A & B
-- Niemann-Pick Type A (NPA) and Type B or (ASMD), is caused by the deficiency of acid sphingomyelinase (ASM).
-  - required to metabolize sphingomyelin.
-  - progressive accumulation of sphingomyelin in systemic organs
+- Incidence of Niemann-Pick A among Ashkenazi Jews ~ 1:40,000.
+- Incidence of both Niemann–Pick A and B in all other populations ~ 1:250,000.
+- Niemann-Pick Type A and B are caused by deficiency of acid sphingomyelinase (ASM).
+  - sphingomyelinase is required to metabolize sphingomyelin.
+  - results in progressive accumulation of sphingomyelin in systemic organs
     - brain accumulation in neuronal forms
   - There is growing evidence that NPA & NPB represent opposite ends of a continuum.
     - NPA generally have little or no ASM production (less than 1% of normal).
@@ -86,7 +90,7 @@
     :BEAMER_col: 0.5
     :END:
 
-#+CAPTION[]:
+#+CAPTION[]:Sphingomyelin
 #+NAME: fig:
 #+ATTR_LaTeX: :width 0.8\textwidth
 [[file:./figures/sphingomyelin.png]]
@@ -96,16 +100,24 @@
     :BEAMER_col: 0.5
     :END:
 
-#+CAPTION[]:
+#+CAPTION[]: Sphingomyelinase
 #+NAME: fig:
 #+ATTR_LaTeX: :width 0.8\textwidth
 [[file:./figures/sphingomyelinase.png]]
 
 
+** Sphingolipid degradation
+
+#+CAPTION[deg]:Sphingolipid degradation
+#+NAME: fig:sld
+#+ATTR_LaTeX: :width 0.6\textwidth
+[[file:./figures/sl_degradation.png]]
+
 ** Niemann-Pick C
 - a fatal, neuro degenerative disease that affects 1 in 100,000
   - sometimes referred to as Childhood Alzheimer’s
   - extremely heterogeneous
+  - biochemically, genetically and clinically distinct from Niemann–Pick A and B. 
 - Accumulation of unesterified cholesterol, sphingomyelin, glycolipids in systemic organs
 - GM2 and GM3 accumulate in brain
   - no increase in cholesterol
@@ -139,36 +151,34 @@
 
 ** NPC1 & NPC2
 
-
 #+CAPTION[]:
 #+NAME: fig:
-#+ATTR_LaTeX: :width 0.8\textwidth
+#+ATTR_LaTeX: :width 0.65\textwidth
 [[file:./figures/Niemann-Pick-C-Brown-and-Goldstein.png]]
 
-
-** Sphingolipid degradation
-
-#+CAPTION[deg]:Sphingolipid degradation
-#+NAME: fig:sld
-#+ATTR_LaTeX: :width 0.6\textwidth
-[[file:./figures/sl_degradation.png]]
-
+\footnotesize
+- NPC1 is a lysosomal membrane protein involved in transport in the endosomal-lysosomal system
+- NPC2 acts in cooperation with the NPC1
+- The disruption of transport results in accumulation of cholesterol and glycolipids in lysosomes.
 
 ** Lysosomal Protein Trafficking
 
 #+CAPTION[traf]:Lysosomal protein trafficking receptors
 #+NAME: fig:traf
-#+ATTR_LaTeX: :width 0.8\textwidth
+#+ATTR_LaTeX: :width 0.65\textwidth
 [[file:./figures/lysosome_trafficking.jpeg]]
 
 \footnotesize
-- \beta-galactosidase, hexoaminidase A and B require the M6P-receptor
-- GM2 activator protein - sortilin
+- lysosomal trafficking of acid sphingomyelinase is mediated by sortilin and mannose 6-phosphate receptor.
+- MPR alone is sufficient to transport NPC2 to the endo/lysosomal compartment
+- Sorting of LMPs from Golgi/PM to endosomal system is mediated by
+  signals in the cytosolic domain
 
 ** Genetics
 
 *** Niemann-Pick A & B
 - Mutations in SMPD1
+- Good phenotype-genotype correlation
 *** Niemann-Pick C
 - Autosomal recessive inheritance
 
@@ -181,33 +191,31 @@
 - Failure to thrive
 - Psychomotor regression at age 1
   - progressive loss of abilities – mental and physical
-- Interstitial lung disease resulting in lung infections and ultimate lung failure
-- Cherry-red spot identified with eye examination (all affected children)
+- Interstitial lung disease resulting in lung infections and lung failure
+- Cherry-red spot identified with eye examination (100%)
 
 *** Niemann-Pick B symptoms
 - Symptoms outlined under NPA (but less severe)
 - Thrombocytopenia 
-- pulmonary infiltration
 - Short stature
-- Cherry-red spot identified with eye examination (⅓ of affected children)
-
+- Cherry-red spot identified with eye examination (50%)
 
 ** Niemann-Pick C symptoms
 
 - onset of the disease can happen at any age.
-  - Often school age children.
+  - often school age children.
   - also been found in adults
 
-- Symptoms May Include:
-  - Jaundice at Birth or Shortly Afterwards
+- Symptoms may include:
+  - Jaundice at birth or shortly afterwards
   - Hepatosplenomegaly
-  - Vertical Supranuclear Gaze Palzy
+  - Vertical supranuclear gaze palzy
   - Ataxia
   - Dystonia
   - Dysarthria
-  - Cognitive Dysfunction/Dementia
+  - Cognitive dysfunction/dementia
   - Cataplexy
-  - Tremors Accompanying Movement
+  - Tremors accompanying movement
   - Seizures
   - Dysphagia
 
@@ -221,21 +229,52 @@
 - Dysphagia:Swallowing Problems 
 - Thrombocytopenia: low number of platelets
 
-** Niemann-Pick C classification
+** Niemann-Pick C neurological forms
 
+\small
 - Classification by neurological form is widely used
 - correlation between age at neurological onset and course of disease
   and lifespan has been established
 
-*** Early infantile
+***                                                                 :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+**** Early infantile          
 - pre-existing hepatosplenomegaly
-- delay in motor milestones 9 months - 2 years
-- survival < 6 years
+- delay in motor milestones 9m-2yrs
+- survival <6 years
 
-*** Late-infantile
-- classic NPC - 60-70% of cases
+**** Late-infantile
+- classic NPC, 60-70% of cases
 - language delay
-- Ataxia at 3-5 years
-- Cognitive dysfunction follows 6-12 years 
+- Ataxia, 3-5 yrs
+- Cognitive dysfunction, 6-12 yrs 
+
+
+***                                                                 :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+**** Adult 
+- diagnosis 15->60yrs.
+- insidious presentation
+- ataxia, dystonia, dysarthria, movement disorders
+- variable cognitive dysfunction
+- Vertical gaze palzy common
+
+* Laboratory Investigations
+** Newborn Screening
+- New York state is conducting a pilot newborn screening program for four lysosomal storage disorders.
+- Pompe, Gaucher, Niemann-Pick A/B, Fabry, and MPS 1
+
+- 4 years, 65,605 infants participated, representing an overall consent rate of 73%.
+  - Sixty-nine infants were screen-positive.
+  - Twenty-three were confirmed true positives, all of whom were predicted to have late-onset phenotypes.
+  - Six of the 69 currently have undetermined disease status.
+
+** Biochemistry
+
 
 
