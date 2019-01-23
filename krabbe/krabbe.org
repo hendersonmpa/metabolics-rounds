@@ -1,0 +1,227 @@
+#+TITLE: Krabbe Disease
+#+SUBTITLE: Disorders of Sphingolipid Degradation
+#+AUTHOR: Matthew Henderson, PhD, FCACB
+#+DATE: \today
+
+:PROPERTIES:
+#+DRAWERS: PROPERTIES
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [presentation, smaller]
+#+BEAMER_THEME: Hannover
+#+BEAMER_COLOR_THEME: whale
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+OPTIONS: H:2 toc:nil
+#+PROPERTY: header-args:R :session *R*
+#+PROPERTY: header-args :cache no
+#+PROPERTY: header-args :tangle yes
+#+STARTUP: beamer
+#+STARTUP: overview
+#+STARTUP: hidestars
+#+STARTUP: indent
+# #+BEAMER_HEADER: \subtitle{Part 1: Maple Syrup Urine Diseas}
+#+BEAMER_HEADER: \institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
+#+BEAMER_HEADER: \titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
+#+latex_header: \hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
+#+LaTeX_header: \usepackage{textpos}
+#+LaTeX_header: \usepackage{textgreek}
+#+LaTeX_header: \usepackage[version=4]{mhchem}
+#+LaTeX_header: \usepackage{chemfig}
+#+LaTeX_header: \usepackage{siunitx}
+#+LaTeX_header: \usepackage{gensymb}
+#+LaTex_HEADER: \usepackage[usenames,dvipsnames]{xcolor}
+#+LaTeX_HEADER: \usepackage[T1]{fontenc}
+#+LaTeX_HEADER: \usepackage{lmodern}
+#+LaTeX_HEADER: \usepackage{verbatim}
+#+LaTeX_HEADER: \usepackage{tikz}
+#+LaTeX_HEADER: \usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+:END:
+
+#+BEGIN_EXPORT LaTeX
+%\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
+%    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
+%}
+
+\vspace{220pt}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\tiny}
+% \addtobeamertemplate{frametitle}{}{%
+% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+% \includegraphics[height=1cm,width=2cm]{cat}
+% \end{textblock*}}
+
+\tikzstyle{chemical} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=none]
+\tikzstyle{hardware} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=gray!30]
+\tikzstyle{ms} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{msw} = [rectangle, rounded corners, text width=7em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{label} = [rectangle,text width=8em, minimum height=1em, text centered, draw=none, fill=none]
+\tikzstyle{hl} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=red!30]
+\tikzstyle{box} = [rectangle, rounded corners, text width=5em, minimum height=5em,text centered, draw=black, fill=none]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
+#+END_EXPORT 
+
+* Introduction
+** Krabbe Disease
+- A rapidly progressive CNS degenerative disease
+- Krabbe is both a leukodystrophy, affecting white matter of the central
+  and peripheral nervous systems, and an LSD
+
+- Incidence of 1:250,000 births
+- Cause by deficiency in galactosylceramidase
+- catabolism of galactosylceramide, a major lipid in myelin, kidney, and epithelial cells of the small intestine and colon. 
+- results in accumulation of galactosylceramide in pathognomonic globoid cells
+  - Multinucleated microglia/macrophage seen in the white matter
+- galactosylspingosine (psychosine) in oligodenfrocytes and Schwann cells
+- spastic quadriplegia, blindness, deafness, peripheral neuropathy, pseudobulbar paralysis
+
+** galactosylceramidase
+
+#+CAPTION[]:galactosylceramidase
+#+NAME: fig:bgal
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/beta-galactosidase.png]]
+
+- galactosylceramidase is a lysosomal enzyme
+- hydrolyzes the galactose ester bonds of galactocerebroside, galactosylsphingosine, lactosylceramide, and monogalactosyldiglyceride.
+
+** Sphingolipid degradation
+
+#+CAPTION[deg]:Sphingolipid degradation
+#+NAME: fig:sld
+#+ATTR_LaTeX: :width 0.6\textwidth
+[[file:./figures/sl_degradation.png]]
+
+** Lysosomal Protein Trafficking
+
+#+CAPTION[traf]:Lysosomal protein trafficking receptors
+#+NAME: fig:traf
+#+ATTR_LaTeX: :width 0.65\textwidth
+[[file:./figures/lysosome_trafficking.jpeg]]
+
+\footnotesize
+- lysosomal trafficking of acid sphingomyelinase is mediated by sortilin and mannose 6-phosphate receptor.
+- MPR alone is sufficient to transport NPC2 to the endo/lysosomal compartment
+- Sorting of LMPs from Golgi/PM to endosomal system is mediated by
+  signals in the cytosolic domain
+
+** Genetics
+- Autosomal recessive
+- The GALC gene is situated at 14q31 and consists of 17 exons.
+- A recurrent 30 kb deletion has been described which extends from intron 10 to intron 17 of the GALC gene and in the homozygous state is associated with infantile onset disease.
+- The allele frequency of this deletion in Krabbe patients is reported to be approximately 50% in Dutch patients and 35% in non-Dutch European patients (Kleijer, WJ et al. (1997) J Inher Metab Dis 20:587-594). 
+
+* Clinical Findings
+** Disease Spectrum
+- Krabbe disease comprises a spectrum ranging from infantile to late-onset.
+
+- Infantile-onset Krabbe disease is characterized by normal
+  development in the first few months followed by rapid severe
+  neurologic deterioration
+  - the average age of death is 24 months (range 8 months to 9 years).
+
+- later-onset disease manifests after 12 months and as late as the
+  seventh decade.
+
+- Historically 85%-90% of symptomatic individuals with Krabbe disease
+  diagnosed by enzyme activity alone have infantile-onset Krabbe
+  disease and 10%-15% have later-onset Krabbe disease,
+
+- NBS suggests that the proportion of individuals with later-onset
+  Krabbe disease is higher than previously thought.
+
+** Clinical Findings
+
+*** Age <12 months (infantile-onset Krabbe disease)
+- Excessive crying to extreme irritability
+- Feeding difficulties, gastroesophageal reflux disease
+- Spasticity of lower extremities and fist clenching, with axial hypotonia
+- Loss of acquired milestones (smiling, cooing, and head control)
+- Staring episodes
+- Peripheral neuropathy
+- the average age of death is 24 months (range 8 months to 9 years).
+
+*** Age >12 months (later-onset Krabbe disease)
+
+- Slow development of motor milestones or loss of milestones (e.g.,
+  sitting without support, walking), slurred speech
+- Spasticity of extremities with truncal hypotonia
+- Vision loss, esotropia
+- Seizures
+- Peripheral neuropathy
+
+* Diagnosis
+** Symptomatic presentation
+ -The diagnosis of Krabbe disease, suspected in a
+  symptomatic proband based on clinical findings (by age) and other
+  supportive laboratory, neuroimaging, and electrophysiologic
+  findings, is established by: 
+- detection of deficient GALC enzyme activity in leukocytes.
+- Abnormal results require follow-up molecular genetic testing of GALC
+- elevated psychosine levels can also help establish the diagnosis.
+
+** Screen positive
+- In an asymptomatic newborn with low GALC enzyme activity
+  on dried blood spot specimens on NBS
+- urgent time-critical measurement of:
+  - blood psychosine levels
+  - GALC molecular genetic testing
+- is necessary to identify – before age 14 days – those
+  newborns with evidence of infantile-onset Krabbe disease who are
+  candidates for early treatment with hematopoietic stem cell
+  transplantation (HSCT).
+
+
+* Laboratory Investigations
+
+** CSF protein
+- protein in cerebrospinal fluid is elevated at the time of first symptom
+- with increased albumin and decrease in \beta-globulins
+- Leakage of the blood–brain barrier?
+
+** galactosylceramidase assay
+
+** Psychosine
+- This test is used as a second-tier assay for infants who have abnormal newborn screens with reduced GALC (galactocerebrosidase) activity and to diagnose and monitor patients with Krabbe disease and Saposin A cofactor deficiency.
+
+** Newborn Screening
+*** New York State
+- Almost 2 million infants were screened.
+- Five infants were diagnosed with early infantile Krabbe disease.
+- Three died, two from HSCT-related complications and one from untreated disease.
+- Two children who received HSCT have moderate to severe developmental delays.
+- Forty-six currently asymptomatic children are considered to be at
+  moderate or high risk for development of later-onset Krabbe disease.
+
+
+** DBS Assay
+- The latest screening assay, developed in a collaboration between the University of Washington and PerkinElmer, tests for Gaucher’s, Krabbe’s, Niemann-Pick-A/B, Pompe’s, and Fabry’s diseases and MPS-I. The assay, UW/PE 6-plex, uses a single 3-mm DBS punch, which is incubated in a single-assay cocktail with all substrates and internal standards. After incubation and a liquid–liquid extraction, samples are analyzed by flow injection MS/MS. All internal standards are chemically identical to the corresponding enzymatically generated products but isotopically differentiated with deuteration. In this way, all enzymatic products are quantified via a chemically identical internal standard that experiences the exact same fate as the products (losses to downstream enzymes, adherence to surfaces, suppression in the electrospray ionization source of the mass spectrometer, and others).
+- With the advent of highly sensitive MS/MS, we had hypothesized that psychosine may be elevated in DBS samples of newborns with KD. Results from a small study showed this to be correct (Chuang et al., 2013). The original DBS specimens from the first four infantile KD cases identified through NBS had very elevated psychosine concentrations, whereas the psychosine levels of all of the asymptomatic high- and moderate-risk infants were only slightly elevated compared with DBS from infants with normal GALC activities. 
+
+** NBS follow-up 
+
+#+CAPTION[]:NBS follow-up at Mayo
+#+NAME: fig:
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/NBS_follow_up.png]]
+
+
+** Treatment
+
+- Treatment of manifestations: Treatment of a child who is symptomatic
+  before age six months is supportive and focused on increasing the
+  quality of life and avoiding complications. For older individuals,
+  treatment with HSCT is individualized based on disease burden and
+  manifestations.
+- Prevention of primary manifestations: Consensus guidelines recommend
+  that asymptomatic newborns identified by either prenatal/neonatal
+  evaluation because of a positive family history of Krabbe disease or
+  an abnormal NBS result undergo additional testing to identify those
+  with infantile-onset Krabbe disease. Those with laboratory findings
+  consistent with infantile-onset Krabbe disease are candidates for
+  HSCT before age 30 days.
+- Surveillance: Monitor symptomatic individuals with Krabbe disease
+  for development of: hydrocephalus, swallowing difficulties and
+  chronic microaspiration, scoliosis, hip subluxation, and osteopenia,
+  decreased vision, and corneal ulcerations.
+

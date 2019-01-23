@@ -65,13 +65,10 @@
 * Introduction
 
 ** Niemann-Pick Disease
-- There are three types of Niemann-Pick disease
-  - Types A and B (ASMD or Acid Sphingomyelinase Deficiency)
-    - Type A and B (ASMD or Acid Sphingomyelinase Deficiency) are also known as Type 1
-  - Niemann-Pick Disease Type C (NPC).
-    - Type C (C1 & C2) is also known as Type 2
+- There are two distinct diseases called Niemann-Pick
+  - Types A and B (acid sphingomyelinase deficiency)
+  - Type C (cholesterol recycling)
 
-- The incidence of Niemann–Pick disease type C is estimated to be one in 150,000.
 ** Niemann-Pick A & B
 - Incidence of Niemann-Pick A among Ashkenazi Jews ~ 1:40,000.
 - Incidence of both Niemann–Pick A and B in all other populations ~ 1:250,000.
@@ -83,7 +80,7 @@
     - NPA generally have little or no ASM production (less than 1% of normal).
     - NPB have approximately 10% of normal level of ASM.
 
-** Sphingomyelinase
+** Sphingomyelin and Sphingomyelinase
 
 ***                                                                   :BMCOL:
     :PROPERTIES:
@@ -114,15 +111,14 @@
 [[file:./figures/sl_degradation.png]]
 
 ** Niemann-Pick C
-- a fatal, neuro degenerative disease that affects 1 in 100,000
+- a fatal, neuro-degenerative disease that affects ~ 1:150,000
   - sometimes referred to as Childhood Alzheimer’s
   - extremely heterogeneous
-  - biochemically, genetically and clinically distinct from Niemann–Pick A and B. 
+  - biochemically, genetically and clinically distinct from Niemann-Pick A and B. 
 - Accumulation of unesterified cholesterol, sphingomyelin, glycolipids in systemic organs
 - GM2 and GM3 accumulate in brain
   - no increase in cholesterol
 - NPC has two sub types NP-C1 (95%) and NP-C2 (5%)
-
 
 ** Niemann-Pick C
 
@@ -180,7 +176,10 @@
 - Mutations in SMPD1
 - Good phenotype-genotype correlation
 *** Niemann-Pick C
-- Autosomal recessive inheritance
+- Autosomal recessive inheritance,
+- Mutations in NPC1 (95%) and NPC2 (5%)
+
+
 
 * Clinical Findings
 
@@ -204,7 +203,7 @@
 
 - onset of the disease can happen at any age.
   - often school age children.
-  - also been found in adults
+  - also adults
 
 - Symptoms may include:
   - Jaundice at birth or shortly afterwards
@@ -222,7 +221,7 @@
 *** COMMENT Definitions:
 - Vertical Supranuclear Gaze Palzy: Difficulty with Upward & Downward Eye Movement 
 - Ataxia: Unsteadiness with Gait, Clumsiness or Walking 
-- Dystonia: Poor Posture Due to Difficulty with Posturing of Limbs
+- Dystonia:  neurological movement disorder syndrome in which sustained or repetitive muscle contractions result in twisting and repetitive movements or abnormal fixed postures
 - Dysarthria: Slurred Irregular Speech 
 - Cognitive Dysfunction/Dementia: Learning Difficulties & Progressive Intellectual Decline 
 - Cataplexy: Sudden Loss of Muscle Tone Which May Lead to Unexpected Falls 
@@ -274,45 +273,99 @@
   - Twenty-three were confirmed true positives, all of whom were predicted to have late-onset phenotypes.
   - Six of the 69 currently have undetermined disease status.
 
-** Biomarkers
+** Biomarkers: oxysterols
 
-- Plasma biomarkers:
+***                                                                 :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+- Plasma oxysterols
   - oxysterols cholestane-3\beta, 5\alpha, 6\beta-triol
   - 7-ketocholesterol
-  - Chitotriosidase
-- Bile acid:
-  - 3\beta, 5\alpha, 6\beta-trihydroxy-cholanoyl-glycine
+
+
+
+***                                                                 :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+#+CAPTION[]: Klinke, G. Clin Biochem 2015
+#+NAME: fig:
+#+ATTR_LaTeX: :width 0.7\textwidth
+[[file:./figures/biomarkers.jpg]]
+
+
+
+
+** Biomarkers: lysosphingomylin
+
+***                                                                 :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+- Plasma and DBS
+  - lysosphingomylin 
+  - lysosphingomylin-509
+
+
+
+***                                                                 :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+#+CAPTION[]: Kuckar, L. Anal Biochem. 2017
+#+NAME: fig:
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/biomarkersII.jpg]]
 
 ** Enzymology
 *** Niemann-Pick A & B
 - Deficient ASM activity in leukocytes or cultured cells.
-  - use of native or radio-labelled substrate critical
-
-*** Niemann-Pick C
-- "filipin test"
-  - culture fibroblasts in an LDL-enriched medium
-  - pathognomonic free cholesterol accumulation in lysosomes
-  - fluorescence microscopy after filipin staining
-  - unequivocal results in ~ 85% of patients
-
+  - use of native or radio-labelled substrate preferred to fluorescent substrate
+    - 6-hexadecanoylamino-4-methylumbelliferyl-phosphorylcholine
+    - Does not detect Q292K mutation
 
 ** Pathology: Niemann-Pick A & B
 
 #+CAPTION[]: Foam cells in bone marrow
 #+NAME: fig:
-#+ATTR_LaTeX: :width 0.8\textwidth
+#+ATTR_LaTeX: :width 0.45\textwidth
 [[file:./figures/foam_cells.png]]
 
+** Niemann-Pick C
+- Filipin test
+  - Streptomyces filipinensis - anti-fungal
+  - culture fibroblasts in an LDL-enriched medium
+  - pathognomonic free cholesterol accumulation in lysosomes
+  - fluorescence microscopy after filipin staining
+  - unequivocal results in ~ 85% of patients
 
+#+CAPTION[]:Filipin staining (red:filipin, green:CellMask)
+#+NAME: fig:
+#+ATTR_LaTeX: :width 0.5\textwidth
+[[file:./figures/filipin.png]]
 
-** Biochemistry: Niemann-Pick C
 * Treatment
-
-
 ** Treatment: Niemann-Pick A&B 
-
+- No approved treatments
+- Olipudase alfa, a recombinant human acid sphingomyelinase (ASM), is
+  an enzyme replacement therapy for the treatment of nonneurologic
+  manifestations of acid sphingomyelinase deficiency (ASMD).
+- ongoing, open-label, long-term study (NCT02004704) assessed safety
+  and efficacy of olipudase alfa following 30 months of treatment in
+  five adult patients with ASMD.
+- There were no deaths, serious or severe events, or discontinuations
+  during 30 months of treatment.
+- Chitotriosidase in serum and lyso-sphingomyelin in dried blood spots
+  decreased with olipudase alfa treatment
 
 ** Treatment: Niemann-Pick C
 - substrate reduction therapy
-- miglustat approved for treatment of neurological manifestations
-- miglustat is an iminosugar, a synthetic analogue of D-glucose
+  - miglustat approved for treatment of neurological manifestations
+  - miglustat is an iminosugar, a synthetic analogue of D-glucose
+
+
+** Next time
+
+- Disorders of sphingolipid degradation continued...
+  - Krabbe and Metachromatic Leukodystrophy
