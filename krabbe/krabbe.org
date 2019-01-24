@@ -68,22 +68,24 @@
   and peripheral nervous systems, and an LSD
 
 - Incidence of 1:250,000 births
-- Cause by deficiency in galactosylceramidase
+- Cause by deficiency in galactocerebrosidase
 - catabolism of galactosylceramide, a major lipid in myelin, kidney, and epithelial cells of the small intestine and colon. 
 - results in accumulation of galactosylceramide in pathognomonic globoid cells
-  - Multinucleated microglia/macrophage seen in the white matter
-- galactosylspingosine (psychosine) in oligodenfrocytes and Schwann cells
+  - Multinucleated microglia/macrophages seen in the white matter
+- accumulation of galactosylspingosine (psychosine) in oligodenfrocytes and Schwann cells
 - spastic quadriplegia, blindness, deafness, peripheral neuropathy, pseudobulbar paralysis
 
-** galactosylceramidase
+** galactocerebrosidase
 
-#+CAPTION[]:galactosylceramidase
+#+CAPTION[]:galactocerebrosidase
 #+NAME: fig:bgal
 #+ATTR_LaTeX: :width 0.8\textwidth
 [[file:./figures/beta-galactosidase.png]]
 
-- galactosylceramidase is a lysosomal enzyme
+- galactocerebrosidase is a lysosomal enzyme
 - hydrolyzes the galactose ester bonds of galactocerebroside, galactosylsphingosine, lactosylceramide, and monogalactosyldiglyceride.
+
+** Saposin A cofactor deficiency
 
 ** Sphingolipid degradation
 
@@ -100,16 +102,18 @@
 [[file:./figures/lysosome_trafficking.jpeg]]
 
 \footnotesize
-- lysosomal trafficking of acid sphingomyelinase is mediated by sortilin and mannose 6-phosphate receptor.
-- MPR alone is sufficient to transport NPC2 to the endo/lysosomal compartment
-- Sorting of LMPs from Golgi/PM to endosomal system is mediated by
-  signals in the cytosolic domain
+- lysosomal trafficking of galactocerebrosidase by the mannose 6-phosphate receptor.
+- enzyme activity is deficient in ML II 
 
 ** Genetics
 - Autosomal recessive
 - The GALC gene is situated at 14q31 and consists of 17 exons.
-- A recurrent 30 kb deletion has been described which extends from intron 10 to intron 17 of the GALC gene and in the homozygous state is associated with infantile onset disease.
-- The allele frequency of this deletion in Krabbe patients is reported to be approximately 50% in Dutch patients and 35% in non-Dutch European patients (Kleijer, WJ et al. (1997) J Inher Metab Dis 20:587-594). 
+- A recurrent 30 kb deletion has been described which extends from
+  intron 10 to intron 17 of the GALC gene and in the homozygous state
+  is associated with infantile onset disease.
+- The allele frequency of this deletion in Krabbe patients is reported
+  to be approximately 50% in Dutch patients and 35% in non-Dutch
+  European patients
 
 * Clinical Findings
 ** Disease Spectrum
@@ -168,21 +172,35 @@
   - GALC molecular genetic testing
 - is necessary to identify – before age 14 days – those
   newborns with evidence of infantile-onset Krabbe disease who are
-  candidates for early treatment with hematopoietic stem cell
-  transplantation (HSCT).
+  candidates for early hematopoietic stem cell transplantation. 
+
+** NBS follow-up 
+
+#+CAPTION[]:NBS follow-up at Mayo
+#+NAME: fig:
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/NBS_follow_up.png]]
 
 
 * Laboratory Investigations
 
 ** CSF protein
+
 - protein in cerebrospinal fluid is elevated at the time of first symptom
 - with increased albumin and decrease in \beta-globulins
 - Leakage of the blood–brain barrier?
 
-** galactosylceramidase assay
+** galactocerebrosidase assay
 
-** Psychosine
-- This test is used as a second-tier assay for infants who have abnormal newborn screens with reduced GALC (galactocerebrosidase) activity and to diagnose and monitor patients with Krabbe disease and Saposin A cofactor deficiency.
+- HSC
+- Leukocytes preferred
+- Draw 5-6 mL of heparinized peripheral blood
+- Fresh heparinized blood should be drawn early enough in the day to arrive in the laboratory by 3:00 p.m. that day
+- Several of the assays available can be performed on a single leukocyte pellet or plasma sample
+
+https://doi.org/10.1007/BF01800479
+
+
 
 ** Newborn Screening
 *** New York State
@@ -194,34 +212,53 @@
   moderate or high risk for development of later-onset Krabbe disease.
 
 
-** DBS Assay
-- The latest screening assay, developed in a collaboration between the University of Washington and PerkinElmer, tests for Gaucher’s, Krabbe’s, Niemann-Pick-A/B, Pompe’s, and Fabry’s diseases and MPS-I. The assay, UW/PE 6-plex, uses a single 3-mm DBS punch, which is incubated in a single-assay cocktail with all substrates and internal standards. After incubation and a liquid–liquid extraction, samples are analyzed by flow injection MS/MS. All internal standards are chemically identical to the corresponding enzymatically generated products but isotopically differentiated with deuteration. In this way, all enzymatic products are quantified via a chemically identical internal standard that experiences the exact same fate as the products (losses to downstream enzymes, adherence to surfaces, suppression in the electrospray ionization source of the mass spectrometer, and others).
-- With the advent of highly sensitive MS/MS, we had hypothesized that psychosine may be elevated in DBS samples of newborns with KD. Results from a small study showed this to be correct (Chuang et al., 2013). The original DBS specimens from the first four infantile KD cases identified through NBS had very elevated psychosine concentrations, whereas the psychosine levels of all of the asymptomatic high- and moderate-risk infants were only slightly elevated compared with DBS from infants with normal GALC activities. 
+** Multiplex DBS  Enzyme Assay
+- The latest screening assay tests for Gaucher’s, Krabbe’s,
+  Niemann-Pick-A/B, Pompe’s, and Fabry’s diseases and MPS-I.
+- a single 3-mm DBS punch, which is incubated in a single-assay
+  cocktail with all substrates and internal standards.
+- After incubation and a liquid–liquid extraction, samples are analyzed by flow injection MS/MS.
+- All deuterated internal standards correspond to enzymatically generated products.
 
-** NBS follow-up 
 
-#+CAPTION[]:NBS follow-up at Mayo
-#+NAME: fig:
-#+ATTR_LaTeX: :width 0.8\textwidth
-[[file:./figures/NBS_follow_up.png]]
+** DBS Psychosine
+- As an amphipathic molecule, psychosine partitions largely into
+  cellular membranes.
+- This test is used as a second-tier assay for infants who have
+  abnormal newborn screens with reduced GALC (galactocerebrosidase)
+  activity and to diagnose and monitor patients with Krabbe disease
+  and Saposin A cofactor deficiency.
+
+https://doi.org/10.1016/j.cca.2013.01.017
+
+- psychosine is elevated in DBS samples of newborns with Krabbe.
+
+- The original DBS specimens from the first four infantile
+  KD cases identified through NBS had very elevated psychosine
+  concentrations, whereas the psychosine levels of all of the
+  asymptomatic high- and moderate-risk infants were only slightly
+  elevated compared with DBS from infants with normal GALC activities.
 
 
 ** Treatment
 
-- Treatment of manifestations: Treatment of a child who is symptomatic
-  before age six months is supportive and focused on increasing the
-  quality of life and avoiding complications. For older individuals,
-  treatment with HSCT is individualized based on disease burden and
-  manifestations.
-- Prevention of primary manifestations: Consensus guidelines recommend
-  that asymptomatic newborns identified by either prenatal/neonatal
-  evaluation because of a positive family history of Krabbe disease or
-  an abnormal NBS result undergo additional testing to identify those
-  with infantile-onset Krabbe disease. Those with laboratory findings
-  consistent with infantile-onset Krabbe disease are candidates for
-  HSCT before age 30 days.
-- Surveillance: Monitor symptomatic individuals with Krabbe disease
-  for development of: hydrocephalus, swallowing difficulties and
-  chronic microaspiration, scoliosis, hip subluxation, and osteopenia,
-  decreased vision, and corneal ulcerations.
+- Treatment of manifestations:
+  - Treatment of a child who is symptomatic before age six months is
+    supportive and focused on increasing the quality of life and
+    avoiding complications. For older individuals, treatment with HSCT
+    is individualized based on disease burden and manifestations.
 
+- Prevention of primary manifestations:
+  - Consensus guidelines recommend that asymptomatic newborns
+    identified by either prenatal/neonatal evaluation because of a
+    positive family history of Krabbe disease or an abnormal NBS
+    result undergo additional testing to identify those with
+    infantile-onset Krabbe disease. Those with laboratory findings
+    consistent with infantile-onset Krabbe disease are candidates for
+    HSCT before age 30 days.
+
+- Surveillance:
+  - Monitor symptomatic individuals with Krabbe disease for
+    development of: hydrocephalus, swallowing difficulties and chronic
+    microaspiration, scoliosis, hip subluxation, and osteopenia,
+    decreased vision, and corneal ulcerations.
