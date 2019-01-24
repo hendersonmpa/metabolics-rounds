@@ -1,8 +1,8 @@
-% Created 2018-12-20 Thu 11:00
+% Created 2019-01-24 Thu 11:02
+% Intended LaTeX compiler: pdflatex
 \documentclass[presentation, smaller]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{fixltx2e}
 \usepackage{graphicx}
 \usepackage{grffile}
 \usepackage{longtable}
@@ -39,7 +39,7 @@
  pdftitle={Newborn Screening for MPS I},
  pdfkeywords={},
  pdfsubject={},
- pdfcreator={Emacs 25.2.1 (Org mode 8.3.4)}, 
+ pdfcreator={Emacs 26.1 (Org mode 9.1.9)}, 
  pdflang={English}}
 \begin{document}
 
@@ -70,8 +70,8 @@
 \tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
 
 \section{Introduction}
-\label{sec:orgheadline4}
-\begin{frame}[label={sec:orgheadline1}]{MPS I}
+\label{sec:org4dbc379}
+\begin{frame}[label={sec:org6b2c76e}]{MPS I}
 \begin{itemize}
 \item Defective \(\alpha\)-L-iduronidase enzyme
 \begin{itemize}
@@ -88,20 +88,23 @@
 \end{itemize}
 
 
-\begin{figure}[htb]
+\begin{figure}[htbp]
 \centering
 \includegraphics[width=0.8\textwidth]{./figures/idua.png}
-\label{fig:idua}
+\label{fig:orgc1074be}
 \end{figure}
 \end{frame}
 
 
-\begin{frame}[label={sec:orgheadline2}]{MPS I disease spectrum}
+\begin{frame}[label={sec:orgffc4b7c}]{MPS I disease spectrum}
+\begin{center}
 \includegraphics[width=0.8\textwidth]{./figures/mps1clinical.png}
+\label{orgc5ff427}
+\end{center}
 \end{frame}
 
 
-\begin{frame}[label={sec:orgheadline3}]{Diagnosis and Treatment}
+\begin{frame}[label={sec:orgd164dba}]{Diagnosis and Treatment}
 \begin{block}{Diagnosis}
 \begin{itemize}
 \item \(\alpha\)-L-iduronidase enzyme activity levels
@@ -129,18 +132,18 @@ activity \(\to\) attenuated MPS I
 
 
 \section{Biochemistry}
-\label{sec:orgheadline8}
-\begin{frame}[label={sec:orgheadline5}]{IDUA exhibits Michaelis-Menten kinetics}
-\begin{figure}[htb]
+\label{sec:org09305ad}
+\begin{frame}[label={sec:org9482acb}]{IDUA exhibits Michaelis-Menten kinetics}
+\begin{figure}[htbp]
 \centering
 \includegraphics[width=0.8\textwidth]{./figures/kinetics.pdf}
-\caption{\label{fig:mm}
+\caption{\label{fig:orgc4dc581}
 IDUA Kinetics, Km = 191 , Vmax = 4.42}
 \end{figure}
 \end{frame}
 
 
-\begin{frame}[label={sec:orgheadline6}]{Substrate concentration}
+\begin{frame}[label={sec:org92b3c7c}]{Substrate concentration}
 \begin{itemize}
 \item substrate concentrations 10-fold the Km recommended
 \item interference from contaminating 4MU-\(\beta\)-D-glucuronide
@@ -159,19 +162,10 @@ V  = \frac{Vmax[S]}{Km + [S]}
 \end{frame}
 
 
-\begin{frame}[label={sec:orgheadline7}]{Hydrolysis reaction catalyzed by \(\alpha\)-l-iduronidase}
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.8\textwidth]{./figures/nihms3970f3.jpg}
-\caption[mech]{\label{fig:mech}
-Hydrolysis reaction catalyzed by \(\alpha\)-l-iduronidase}
-\end{figure}
-\end{frame}
-
 \section{Screening Methods}
-\label{sec:orgheadline21}
+\label{sec:org326719c}
 
-\begin{frame}[label={sec:orgheadline9}]{IDUA: Colorimetric}
+\begin{frame}[label={sec:org384cfe0}]{IDUA: Colorimetric}
 \begin{itemize}
 \item phenyl \(\alpha\)-l-iduronide
 \begin{itemize}
@@ -179,31 +173,31 @@ Hydrolysis reaction catalyzed by \(\alpha\)-l-iduronidase}
 colorimetric assay of the liberated phenol
 \item Digests contained 5 mM phenyl \(\alpha\)-l-iduronide, 0.1 M NaCI,
 and 0.08 M sodium formate buffer of pH 3.5;
-\item they were incubated for 18 hr at 25\degree C under a layer of \textbf{toluene}.
-\item Recovery of the phenol liberated was completed by additional extractions with \textbf{toluene}.
-\item Phenol was returned to an aqueous phase for analysis by extraction of the pooled \textbf{toluene} layers with 0.05 M NaOH.
-\item Turbidity was then removed by a treatment with \textbf{chloroform-amyl alcohol}.
+\item they were incubated for 18 hr at 25\degree C under a layer of \alert{toluene}.
+\item Recovery of the phenol liberated was completed by additional extractions with \alert{toluene}.
+\item Phenol was returned to an aqueous phase for analysis by extraction of the pooled \alert{toluene} layers with 0.05 M NaOH.
+\item Turbidity was then removed by a treatment with \alert{chloroform-amyl alcohol}.
 \end{itemize}
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline10}]{Spectrofluorometric}
+\begin{frame}[label={sec:orgc2a1f70}]{Spectrofluorometric}
 \begin{itemize}
 \item 4-Methylumbelliferyl-\(\alpha\)-L-iduronide is a fluorogenic substrate of \(\alpha\)-L-iduronidase
 \item emission maximum at 445-454 nm.
 \item excitation maximum for 4-MU is pH-dependent: 330, 370, and 385 nm at pH 4.6, 7.4, and 10.4
 \end{itemize}
 
-\begin{figure}[htb]
+\begin{figure}[htbp]
 \centering
 \includegraphics[width=0.4\textwidth]{./figures/9001600.png}
-\caption[4MUI]{\label{fig:4mui}
+\caption[4MUI]{\label{fig:org00bcda6}
 4-Methylumbelliferyl-\(\alpha\)-L-Iduronide 2-sulfate}
 \end{figure}
 \end{frame}
 
 
-\begin{frame}[label={sec:orgheadline11}]{Spectrofluorometric}
+\begin{frame}[label={sec:orgd6e3b05}]{Spectrofluorometric}
 \begin{enumerate}
 \item Elute one 3.1 mm DBS punch
 \begin{itemize}
@@ -222,11 +216,11 @@ and 0.08 M sodium formate buffer of pH 3.5;
 \end{frame}
 
 
-\begin{frame}[label={sec:orgheadline12}]{Spectrofluorometric}
-\begin{figure}[htb]
+\begin{frame}[label={sec:orge9e0219}]{Spectrofluorometric}
+\begin{figure}[htbp]
 \centering
 \includegraphics[width=0.8\textwidth]{./figures/image001.png}
-\caption{\label{fig:ap}
+\caption{\label{fig:org84a86da}
 SpotCheck Pro}
 \end{figure}
 
@@ -235,7 +229,7 @@ SpotCheck Pro}
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline13}]{Psuedodeficiency}
+\begin{frame}[label={sec:orgf42741b}]{Psuedodeficiency}
 \begin{itemize}
 \item Low IDUA \emph{in vitro} activity with 4-MU substrate
 \item p.A300T, steric hindrance at active site E299
@@ -244,15 +238,15 @@ SpotCheck Pro}
 \end{frame}
 
 
-\begin{frame}[label={sec:orgheadline14}]{Missouri Program}
+\begin{frame}[label={sec:orgba49197}]{Missouri Program}
 \begin{itemize}
 \item 43,701 samples screened by Missouri program using the Baebies spectrofluorometric assay
 \end{itemize}
 
-\begin{figure}[htb]
+\begin{figure}[htbp]
 \centering
 \includegraphics[width=0.8\textwidth]{./figures/pd.png}
-\label{fig:pd}
+\label{fig:org65621ab}
 \end{figure}
 
 
@@ -274,7 +268,7 @@ SpotCheck Pro}
 \end{block}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline15}]{IDUA: FIA-MS/MS}
+\begin{frame}[label={sec:org75de139}]{IDUA: FIA-MS/MS}
 \begin{itemize}
 \item Positive mode ESI
 \item Ten uL of the 150 uL sample via flow injection
@@ -285,8 +279,8 @@ SpotCheck Pro}
 \end{itemize}
 \end{itemize}
 
-\begin{table}[htb]
-\caption{\label{tab:mrm}
+\begin{table}[htbp]
+\caption{\label{tab:orgbe481db}
 IDUA transitions}
 \centering
 \begin{tabular}{ll}
@@ -303,11 +297,11 @@ activity in DBS using MS/MS substrate (Pollard, presentation)
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline16}]{IDUA: FIA-MS/MS}
-\begin{figure}[htb]
+\begin{frame}[label={sec:org1c85205}]{IDUA: FIA-MS/MS}
+\begin{figure}[htbp]
 \centering
 \includegraphics[width=0.8\textwidth]{./figures/F2large.jpg}
-\caption{\label{fig:msmswf}
+\caption{\label{fig:org39b3027}
 MS/MS workflow}
 \end{figure}
 
@@ -318,7 +312,7 @@ MS/MS workflow}
 \]
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline17}]{GAGs: LC-MS/MS}
+\begin{frame}[label={sec:org47b6e40}]{GAGs: LC-MS/MS}
 \begin{itemize}
 \item Dried blood spot punch eluted for 10 min at RT and sonicated for 15 min.
 \item Heparan sulfate and dermatan sulfate in the DBS punches were
@@ -332,8 +326,10 @@ and 50 mIU chondroitinase B.
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline18}]{GAGs: LC-MS/MS}
+\begin{frame}[label={sec:orge07798a}]{GAGs: LC-MS/MS}
+\begin{center}
 \includegraphics[width=.9\linewidth]{./figures/outletmethod.png}
+\end{center}
 
 
 \[
@@ -342,16 +338,16 @@ and 50 mIU chondroitinase B.
 \]
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline19}]{Proposed Hurler workflow}
-\begin{figure}[htb]
+\begin{frame}[label={sec:orge067d56}]{Proposed Hurler workflow}
+\begin{figure}[htbp]
 \centering
 \includegraphics[height=0.8\textheight]{./figures/wf.pdf}
-\caption{\label{fig:wf}
+\caption{\label{fig:org3f8c0f3}
 Proposed Hurler workflow}
 \end{figure}
 \end{frame}
 
-\begin{frame}[label={sec:orgheadline20}]{Hurler screening time-lines}
+\begin{frame}[label={sec:org0672c8f}]{Hurler screening time-lines}
 \begin{block}{First, second and third tier assays validated}
 \begin{itemize}
 \item 2019-12

@@ -35,7 +35,7 @@
 #+LaTeX_HEADER: \usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
 :END:
 
-#+BEGIN_LaTeX
+#+BEGIN_EXPORT LaTeX
 
 # %\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
 # %    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
@@ -60,7 +60,7 @@
 \tikzstyle{arrow} = [thick,->,>=stealth]
 \tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
 
-#+END_LaTeX
+#+END_EXPORT
 
 * Introduction
 ** MPS I 
@@ -162,7 +162,7 @@ V  = \frac{Vmax[S]}{Km + [S]}
 \]
 
 
-** Hydrolysis reaction catalyzed by \alpha-l-iduronidase
+** COMMENT Hydrolysis reaction catalyzed by \alpha-l-iduronidase
 #+CAPTION[mech]:Hydrolysis reaction catalyzed by \alpha-l-iduronidase
 #+NAME: fig:mech
 #+ATTR_LaTeX: :width 0.8\textwidth
