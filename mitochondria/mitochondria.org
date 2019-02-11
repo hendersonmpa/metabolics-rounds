@@ -1,0 +1,185 @@
+#+TITLE: Hinterland Who's Who: Mitochondria
+#+AUTHOR: Matthew Henderson, PhD, FCACB
+#+DATE: \today
+
+:PROPERTIES:
+#+DRAWERS: PROPERTIES
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [presentation, smaller]
+#+BEAMER_THEME: Hannover
+#+BEAMER_COLOR_THEME: whale
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+OPTIONS: H:2 toc:nil
+#+PROPERTY: header-args:R :session *R*
+#+PROPERTY: header-args :cache no
+#+PROPERTY: header-args :tangle yes
+#+STARTUP: beamer
+#+STARTUP: overview
+#+STARTUP: hidestars
+#+STARTUP: indent
+# #+BEAMER_HEADER: \subtitle{Part 1: Maple Syrup Urine Diseas}
+#+BEAMER_HEADER: \institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
+#+BEAMER_HEADER: \titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
+#+latex_header: \hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
+#+LaTeX_header: \usepackage{textpos}
+#+LaTeX_header: \usepackage{textgreek}
+#+LaTeX_header: \usepackage[version=4]{mhchem}
+#+LaTeX_header: \usepackage{chemfig}
+#+LaTeX_header: \usepackage{siunitx}
+#+LaTeX_header: \usepackage{gensymb}
+#+LaTex_HEADER: \usepackage[usenames,dvipsnames]{xcolor}
+#+LaTeX_HEADER: \usepackage[T1]{fontenc}
+#+LaTeX_HEADER: \usepackage{lmodern}
+#+LaTeX_HEADER: \usepackage{verbatim}
+#+LaTeX_HEADER: \usepackage{tikz}
+#+LaTeX_HEADER: \usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+:END:
+
+#+BEGIN_EXPORT LaTeX
+%\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
+%    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
+%}
+
+\vspace{220pt}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\tiny}
+% \addtobeamertemplate{frametitle}{}{%
+% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+% \includegraphics[height=1cm,width=2cm]{cat}
+% \end{textblock*}}
+
+\tikzstyle{chemical} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=none]
+\tikzstyle{hardware} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=gray!30]
+\tikzstyle{ms} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{msw} = [rectangle, rounded corners, text width=7em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{label} = [rectangle,text width=8em, minimum height=1em, text centered, draw=none, fill=none]
+\tikzstyle{hl} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=red!30]
+\tikzstyle{box} = [rectangle, rounded corners, text width=5em, minimum height=5em,text centered, draw=black, fill=none]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
+#+END_EXPORT 
+
+
+* Introduction
+** Mitochondria
+- A double-membrane-bound organelle found in most eukaryotic organisms
+- For instance, red blood cells have no mitochondria
+- liver cells can have more than 2000.
+
+- The organelle is composed of outer membrane, the intermembrane
+  space, the inner membrane, and the cristae and matrix.
+
+- The mitochondrion has its own independent genome that shows
+  substantial similarity to bacterial genomes
+
+- Mitochondrial proteins (proteins transcribed from mitochondrial DNA)
+  vary depending on the tissue and the species. In humans, 615
+  distinct types of protein have been identified from cardiac
+  mitochondria,[16]
+
+** Replication 
+
+- Mitochondria divide by binary fission, similar to bacterial cell division
+
+- mammalian mitochondria replicate their DNA and divide mainly in response
+  to the energy needs of the cell,rather than in phase with the cell cycle.
+  - When the energy needs of a cell are high, mitochondria grow and
+    divide.
+  - When the energy use is low, mitochondria are destroyed
+    or become inactive.
+
+- mitochondria are apparently randomly distributed to the daughter
+  cells during the division of the cytoplasm.
+
+
+** Alternative genetic code
+
+- The mitochondria of many eukaryotes, including most plants, use the
+  standard code.
+
+#+CAPTION[mito code]: Exceptions to the standard genetic code in mitochondria
+#+NAME: tab:code 
+| Organism         | Codon    | Standard   | Mitochondria |
+|------------------+----------+------------+--------------|
+| Mammals          | AGA, AGG | Arginine   | Stop codon   |
+| Invertebrates    | AGA, AGG | Arginine   | Serine       |
+| Fungi            | CUA      | Leucine    | Threonine    |
+| All of the above | AUA      | Isoleucine | Methionine   |
+|                  | UGA      | Stop codon | Tryptophan   |
+
+- the AUA, AUC, and AUU codons are all allowable start codons.
+- Some of these differences should be regarded as pseudo-changes in
+  the genetic code due to the phenomenon of RNA editing, which is
+  common in mitochondria. 
+
+
+** Maternal Inheritance
+
+- the mitochondria and therefore the mitochondrial DNA, usually come from
+  the egg only.
+
+- sperm's mitochondria enter the egg, but do not contribute genetic information to the embryo.
+
+- Instead, paternal mitochondria are marked with ubiquitin to select them for later destruction inside the embryo.
+
+- The egg cell contains relatively few mitochondria, but it is these
+  mitochondria that survive and divide to populate the cells of the
+  adult organism.
+
+** Heteroplasmy
+- Heteroplasmy is the presence of more than one type of organellar
+  genome (mitochondrial DNA or plastid DNA) within a cell or
+  individual. It is an important factor in considering the severity of
+  mitochondrial diseases. Because most eukaryotic cells contain many
+  hundreds of mitochondria with hundreds of copies of mitochondrial
+  DNA, it is common for mutations to affect only some mitochondria,
+  leaving most unaffected.
+
+- Although detrimental scenarios are well-studied, heteroplasmy can
+  also be beneficial. For example, centenarians show a higher than
+  average degree of heteroplasmy.[1]
+
+- Microheteroplasmy is present in most individuals. This refers to
+  hundreds of independent mutations in one organism, with each
+  mutation found in about 1–2% of all mitochondrial genomes.[2]
+
+** Muller's Ratchet
+
+- Entities undergoing uniparental inheritance and with little to no
+  recombination may be expected to be subject to Muller's ratchet
+- the inexorable accumulation of deleterious mutations until functionality
+  is lost.
+- mitochondria avoid this buildup through a developmental process
+  known as the mtDNA bottleneck. The bottleneck exploits stochastic
+  processes in the cell to increase in the cell-to-cell variability in
+  mutant load as an organism develops: a single egg cell with some
+  proportion of mutant mtDNA thus produces an embryo where different
+  cells have different mutant loads. Cell-level selection may then act
+  to remove those cells with more mutant mtDNA, leading to a
+  stabilisation or reduction in mutant load between generations. The
+  mechanism underlying the bottleneck is debated,[135][136][137] with
+  a recent mathematical and experimental metastudy providing evidence
+  for a combination of random partitioning of mtDNAs at cell divisions
+  and random turnover of mtDNA molecules within the cell.[138]
+* Pyruvate and the Tricyclic Acid Cycle
+
+* Mitochondrial Fatty Acid Oxidation
+
+* Ketogenesis & Ketolysis
+
+* Oxidative Phosphorylation
+** Substrate-level phosphorylation
+Unlike oxidative phosphorylation, oxidation and phosphorylation are
+not coupled in the process of substrate-level phosphorylation, and
+reactive intermediates are most often gained in the course of
+oxidation processes in catabolism. Most ATP is generated by oxidative
+phosphorylation in aerobic or anaerobic respiration while
+substrate-level phosphorylation provides a quicker, less efficient
+source of ATP, independent of external electron acceptors. This is the
+case in human erythrocytes, which have no mitochondria, and in
+oxygen-depleted muscle.
+
+** Oxidative phosphorylation
+ The complete breakdown of glucose in the presence of oxygen is called cellular respiration. The last steps of this process occur in mitochondria. The reduced molecules NADH and FADH2 are generated by the Krebs cycle, glycolysis, and pyruvate processing. These molecules pass electrons to an electron transport chain, which uses the energy released to create a proton gradient across the inner mitochondrial membrane. ATP synthase then uses the energy stored in this gradient to make ATP. This process is called oxidative phosphorylation because it uses energy released by the oxidation of NADH and FADH2 to phospolyrize ADP into ATP. 
+* Urea Cycle
