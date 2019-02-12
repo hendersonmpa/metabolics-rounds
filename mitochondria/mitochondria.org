@@ -1,5 +1,4 @@
 #+TITLE: Hinterland Who's Who: Mitochondria
-#+SUBTITLE: Mitochondrial Genetics
 #+AUTHOR: Matthew Henderson, PhD, FCACB
 #+DATE: \today
 
@@ -65,8 +64,8 @@
 * Background
 ** Mitochondria
 - A double-membrane-bound organelle found in most eukaryotic organisms
-- liver cells can have more than 2000.
-- red blood cells have no mitochondria
+  - liver cells can have more than 2000.
+  - red blood cells have no mitochondria
 
 - The organelle is composed of an outer membrane, intermembrane
   space, and inner membrane with cristae and matrix.
@@ -74,33 +73,33 @@
 - The mitochondrion has its own independent genome that shows
   substantial similarity to bacterial genomes
 
-- Mitochondrial proteins (proteins transcribed from mitochondrial DNA)
+- Mitochondrial proteins (proteins transcribed from mt DNA)
   vary depending on the tissue and the species. In humans, 615
   distinct types of protein have been identified from cardiac
-  mitochondria,[16]
+  mitochondria
 
 ** Maternal Inheritance
-- the mitochondria and therefore the mitochondrial DNA, usually come from
+- Mitochondria and therefore the mitochondrial DNA, usually come from
   the egg only.
-
-- sperm's mitochondria enter the egg, but do not contribute genetic
+- The egg cell contains relatively few mitochondria
+  - these mitochondria divide to populate the cells
+- Sperm mitochondria enter the egg, but do not contribute genetic
   information to the embryo.
-
-- Instead, paternal mitochondria are marked with ubiquitin to select
-  them for later destruction inside the embryo.
-
-- The egg cell contains relatively few mitochondria, but it is these
-  mitochondria that survive and divide to populate the cells of the
-  adult organism.
+  - paternal mitochondria are marked with ubiquitin for destruction
+    inside the embryo.
 
 ** Heteroplasmy
+
 - Heteroplasmy is the presence of more than one type of organellar
   genome (mitochondrial DNA or plastid DNA) within a cell or
-  individual. It is an important factor in considering the severity of
-  mitochondrial diseases. Because most eukaryotic cells contain many
-  hundreds of mitochondria with hundreds of copies of mitochondrial
-  DNA, it is common for mutations to affect only some mitochondria,
-  leaving most unaffected.
+  individual.
+
+- It is an important factor in considering the severity of
+  mitochondrial diseases.
+
+- Most eukaryotic cells contain many hundreds of mitochondria with
+  hundreds of copies of mitochondrial DNA, it is common for mutations
+  to affect only some mitochondria, leaving most unaffected.
 
 - Although detrimental scenarios are well-studied, heteroplasmy can
   also be beneficial. For example, centenarians show a higher than
@@ -114,24 +113,17 @@
 
 - Entities undergoing uniparental inheritance and with little to no
   recombination may be expected to be subject to Muller's ratchet
-- the inexorable accumulation of deleterious mutations until functionality
-  is lost.
+  - the inexorable accumulation of deleterious mutations until functionality
+    is lost.
 - mitochondria avoid this buildup through a developmental process
-  known as the mtDNA bottleneck. The bottleneck exploits stochastic
-  processes in the cell to increase in the cell-to-cell variability in
-  mutant load as an organism develops: a single egg cell with some
-  proportion of mutant mtDNA thus produces an embryo where different
-  cells have different mutant loads. Cell-level selection may then act
-  to remove those cells with more mutant mtDNA, leading to a
-  stabilisation or reduction in mutant load between generations. The
-  mechanism underlying the bottleneck is debated,[135][136][137] with
-  a recent mathematical and experimental metastudy providing evidence
-  for a combination of random partitioning of mtDNAs at cell divisions
-  and random turnover of mtDNA molecules within the cell.[138]
-
-Mitochondrial diseases are a group of disorders caused by dysfunctional mitochondria, the organelles that generate energy for the cell. Mitochondria are found in every cell of the human body except red blood cells, and convert the energy of food molecules into the ATP that powers most cell functions.
-
-Mitochondrial diseases are sometimes (about 15% of the time)[1] caused by mutations in the mitochondrial DNA that affect mitochondrial function. Other mitochondrial diseases are caused by mutations in genes of the nuclear DNA, whose gene products are imported into the mitochondria (mitochondrial proteins) as well as acquired mitochondrial conditions. Mitochondrial diseases take on unique characteristics both because of the way the diseases are often inherited and because mitochondria are so critical to cell function. The subclass of these diseases that have neuromuscular disease symptoms are often called a mitochondrial myopathy. 
+  known as the mtDNA bottleneck. 
+  - Cell-level selection acts to remove those cells with more deleterious mtDNA
+  
+*** Fusion
+- response to cellular stress
+- enabling genetic complementation, fusion of the mitochondria allows
+  for two mitochondrial genomes with different defects within the same
+  organelle to individually encode what the other lacks. 
 
 ** Replication 
 
@@ -190,15 +182,65 @@ Mitochondrial diseases are sometimes (about 15% of the time)[1] caused by mutati
 * Biochemical Functions Relevant to IMD   
 
 ** Pyruvate and the Tricyclic Acid Cycle
+- one molecule of glucose breaks down into two molecules of pyruvate
+- Pyruvate is converted into acetyl-coenzyme A, which is the main
+  input for a series of reactions known as the Krebs cycle
+- Pyruvate is also converted to oxaloacetate by an anaplerotic
+  reaction, which replenishes Krebs cycle intermediates; also, the
+  oxaloacetate is used for gluconeogenesis
+
+https://en.wikipedia.org/wiki/Citric_acid_cycle#/media/File:Citric_acid_cycle_with_aconitate_2.svg
 
 ** Ketogenesis & Ketolysis
-
-** Oxidative Phosphorylation
-
+- Ketone bodies are produced mainly in the mitochondria of liver cells, and synthesis can occur in response to an unavailability of blood glucose, such as during fasting
+https://en.wikipedia.org/wiki/Ketogenesis#/media/File:Ketogenesis.svg
+** Electron Transport Chain
+- Energy obtained through the transfer of electrons down the ETC is used to pump protons from the mitochondrial matrix into the intermembrane space
+- creats an electrochemical proton gradient (\delta pH) across the IMM.
+- largely responsible for the mitochondrial membrane potential (ΔΨM).
+- allows ATP synthase to use the flow of H+ through the enzyme back into the matrix to generate ATP from ADP and Pi.
+- Complex I (NADH coenzyme Q reductase) accepts electrons from the Krebs cycle electron carrier NADH
+- passes them to CoQ (ubiquinone; labeled Q),
+- CoQ also receives electrons from complex II (succinate dehydrogenase).
+- CoQ passes electrons to complex III (cytochrome bc1 complex; labeled III), which passes them to cytochrome c (cyt c).
+- Cyt c passes electrons to Complex IV (cytochrome c oxidase; labeled IV), which uses the electrons and hydrogen ions to reduce molecular oxygen to water. 
 ** Oxidative phosphorylation
+#+BEGIN_SRC dot :file ./figures/etc.pdf :cmdline -Kdot -Tpdf
+  digraph {
+           // graph from left to right
+           rankdir=LR;
+           splines=true;
+           node [shape=box];
+           nadh [label="NADH+H", fillcolor=grey, style=filled]
+           c1 [label="Complex I", fillcolor=steelblue3, style=filled]
+           q [label="CoQ", fillcolor=red3, style=filled]    
+           c3 [label="Complex III", fillcolor=steelblue3, style=filled]     
+           cytc [label="Cytochrome C", fillcolor=red3, style=filled]     
+           c4 [label="Complex IV", fillcolor=steelblue3, style=filled]     
+           h2o [label="H2O", fillcolor=grey, style=filled]     
+           c2 [label="Complex II", fillcolor=forestgreen, style=filled]     
+           s [label="Succinate", fillcolor=grey, style=filled]     
+           nadh -> c1
+           c1 -> q 
+           q -> c3 
+           c3 -> cytc 	 
+           cytc -> c4
+           c4 -> h2o
+           c2 -> q
+           s -> c2
+	 
+           }    
+#+END_SRC
+
+#+RESULTS:
+[[file:./figures/etc.pdf]]
+
  The complete breakdown of glucose in the presence of oxygen is called cellular respiration. The last steps of this process occur in mitochondria. The reduced molecules NADH and FADH2 are generated by the Krebs cycle, glycolysis, and pyruvate processing. These molecules pass electrons to an electron transport chain, which uses the energy released to create a proton gradient across the inner mitochondrial membrane. ATP synthase then uses the energy stored in this gradient to make ATP. This process is called oxidative phosphorylation because it uses energy released by the oxidation of NADH and FADH2 to phospolyrize ADP into ATP. 
+ 
+ - https://en.wikipedia.org/wiki/Electron_transport_chain#/media/File:ATP-Synthase.svg
 
 ** Other Biochemical Functions Relevant to IMD   
+
 - Mitochondrial Fatty Acid Oxidation
 
 - Urea Cycle
