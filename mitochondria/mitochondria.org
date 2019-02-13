@@ -78,110 +78,165 @@
   distinct types of protein have been identified from cardiac
   mitochondria
 
+** Mitochondria
+#+CAPTION[mito]:Mitochondrion
+#+NAME: fig:mito
+#+ATTR_LaTeX: :width 0.8\textwidth
+
+[[file:./figures/Mitochondrion_mini.png]]
+
+** Mitochondria
+
+#+CAPTION[hela]:HeLa Cells mtGFP 
+#+NAME: fig:hela
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/HeLa_mtGFP.jpg]]
+
+
 ** Maternal Inheritance
-- Mitochondria and therefore the mitochondrial DNA, usually come from
-  the egg only.
-- The egg cell contains relatively few mitochondria
+- Mitochondria and therefore the mtDNA, usually come from the egg
+  - The egg cell contains relatively few mitochondria
   - these mitochondria divide to populate the cells
-- Sperm mitochondria enter the egg, but do not contribute genetic
-  information to the embryo.
-  - paternal mitochondria are marked with ubiquitin for destruction
-    inside the embryo.
+- paternal mitochondria are marked with ubiquitin for destruction
+  inside the embryo.
+- mitochondria are randomly distributed to the daughter cells during
+  the division of the cytoplasm.
+
+#+CAPTION[mom]:Maternal Inheritance
+#+NAME: fig:mom
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/Mitochondrial_Bottleneck.png]]
 
 ** Heteroplasmy
 
 - Heteroplasmy is the presence of more than one type of organellar
-  genome (mitochondrial DNA or plastid DNA) within a cell or
-  individual.
+  genome within a cell or individual.
 
 - It is an important factor in considering the severity of
   mitochondrial diseases.
+  - can also be beneficial
 
-- Most eukaryotic cells contain many hundreds of mitochondria with
-  hundreds of copies of mitochondrial DNA, it is common for mutations
-  to affect only some mitochondria, leaving most unaffected.
+- Microheteroplasmy is present in most individuals.
+  - hundreds of independent mutations, with each mutation found in
+    about 1–2% of all mitochondrial genomes.
 
-- Although detrimental scenarios are well-studied, heteroplasmy can
-  also be beneficial. For example, centenarians show a higher than
-  average degree of heteroplasmy.[1]
 
-- Microheteroplasmy is present in most individuals. This refers to
-  hundreds of independent mutations in one organism, with each
-  mutation found in about 1–2% of all mitochondrial genomes.[2]
+#+CAPTION[heter]:heteroplasmy
+#+NAME: fig:heter
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/heteroplasmy.png]]
+
 
 ** Muller's Ratchet and the Mitochondrial Bottleneck
 
-- Entities undergoing uniparental inheritance and with little to no
-  recombination may be expected to be subject to Muller's ratchet
+- Applies to entities undergoing uniparental inheritance and with little to no
+  recombination
   - the inexorable accumulation of deleterious mutations until functionality
     is lost.
 - mitochondria avoid this buildup through a developmental process
   known as the mtDNA bottleneck. 
-  - Cell-level selection acts to remove those cells with more deleterious mtDNA
-  
-*** Fusion
-- response to cellular stress
-- enabling genetic complementation, fusion of the mitochondria allows
-  for two mitochondrial genomes with different defects within the same
-  organelle to individually encode what the other lacks. 
+  - selection acts to remove those cells with more deleterious mtDNA
 
-** Replication 
+#+CAPTION[bottle]:Mitochondrial bottle neck
+#+NAME: fig:bottle
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/bottle_neck.jpg]]
+
+
+** Fusion
+***                                                                   :BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: 0.5
+    :END:
+
+- response to cellular stress
+  - mtDNA damage
+- enables genetic complementation
+
+***                                                                   :BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: 0.5
+    :END:
+  
+#+CAPTION[fusion]:Mitochondrial fusion
+#+NAME: fig:fusion
+#+ATTR_LaTeX: :width 1\textwidth
+[[file:./figures/nrm1125-f1.jpg]]
+
+
+
+** Replication and Fission
 
 - Mitochondria divide by binary fission, similar to bacterial cell division
 
 - mammalian mitochondria replicate their DNA and divide mainly in response
-  to the energy needs of the cell,rather than in phase with the cell cycle.
+  to the energy needs of the cell, not in phase with the cell cycle.
   - When the energy needs of a cell are high, mitochondria grow and
     divide.
   - When the energy use is low, mitochondria are destroyed
     or become inactive.
 
-- mitochondria are apparently randomly distributed to the daughter
-  cells during the division of the cytoplasm.
-
-
 ** Human Mitochondrial DNA
 
-- The human mitochondrial genome is a circular DNA molecule of about
-  16 kilobases.
-- It encodes 37 genes: 13 for subunits of respiratory complexes I,
-  III, IV and V,
-- 22 for mitochondrial tRNA (for the 20 standard amino acids, plus an
-  extra gene for leucine and serine)
-- 2 for rRNA.
+***                                                                   :BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: .7
+    :END:
+- a circular DNA molecule ~ 16 kb
+- encodes 37 genes
+  - 13 for subunits of respiratory complexes I, III, IV and V
+  - 22 for mitochondrial tRNA
+    - 20 standard amino acids, plus extra gene for leu and ser
+  - 2 for rRNA.
 - One mitochondrion can contain two to ten copies of its DNA.
+
+***                                                                   :BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: .3
+    :END:
+
+#+CAPTION[mtdna]: Human mitochondrial genome
+#+NAME: fig:mtdna
+#+ATTR_LaTeX: :width 1\textwidth
+[[file:./figures/mitochondrial_genome.png]]
 
 ** Alternative genetic code
 
 - The mitochondria of many eukaryotes, including most plants, use the
   standard code.
 
-#+CAPTION[mito code]: Exceptions to the standard genetic code in mitochondria
+#+CAPTION[mito code]: Exceptions to the standard genetic code in mamalian mitochondria
 #+NAME: tab:code 
-| Organism         | Codon    | Standard   | Mitochondria |
-|------------------+----------+------------+--------------|
-| Mammals          | AGA, AGG | Arginine   | Stop codon   |
-| Invertebrates    | AGA, AGG | Arginine   | Serine       |
-| Fungi            | CUA      | Leucine    | Threonine    |
-| All of the above | AUA      | Isoleucine | Methionine   |
-|                  | UGA      | Stop codon | Tryptophan   |
+| Codon    | Standard   | Mitochondria |
+|----------+------------+--------------|
+| AGA, AGG | Arginine   | Stop codon   |
+| AUA      | Isoleucine | Methionine   |
+| UGA      | Stop codon | Tryptophan   |
 
-- the AUA, AUC, and AUU codons are all allowable start codons.
-- Some of these differences should be regarded as pseudo-changes in
-  the genetic code due to the phenomenon of RNA editing, which is
-  common in mitochondria. 
+- AUA, AUC, and AUU codons are all allowable start codons.
+- Some of these differences are pseudo-changes in the genetic code due
+  to the phenomenon of RNA editing, common in mitochondria.
 
 
 ** Mitochondrial Disease
-- Mitochondrial diseases are about 15% of the time caused by mutations
-  in the mitochondrial DNA that affect mitochondrial function.
-- Other mitochondrial diseases are caused by mutations in genes of the
-  nuclear DNA, whose gene products are imported into the mitochondria
-  as well as acquired mitochondrial conditions.
+- About 15% of mitochondrial disease is caused by mutations in the
+  mitochondrial DNA that affect mitochondrial function.
+- Other mitochondrial diseases are caused by
+  - mutations nuclear DNA
+  - as well as acquired mitochondrial conditions
 
 * Biochemical Functions Relevant to IMD   
 
 ** Pyruvate and the Tricyclic Acid Cycle
+
+
+#+CAPTION[tca]:TCA
+#+NAME: fig:tca
+
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/tca.png]]
+
+*** COMMENT
 - one molecule of glucose breaks down into two molecules of pyruvate
 - Pyruvate is converted into acetyl-coenzyme A, which is the main
   input for a series of reactions known as the Krebs cycle
@@ -189,22 +244,13 @@
   reaction, which replenishes Krebs cycle intermediates; also, the
   oxaloacetate is used for gluconeogenesis
 
-https://en.wikipedia.org/wiki/Citric_acid_cycle#/media/File:Citric_acid_cycle_with_aconitate_2.svg
-
-** Ketogenesis & Ketolysis
-- Ketone bodies are produced mainly in the mitochondria of liver cells, and synthesis can occur in response to an unavailability of blood glucose, such as during fasting
-https://en.wikipedia.org/wiki/Ketogenesis#/media/File:Ketogenesis.svg
 ** Electron Transport Chain
 - Energy obtained through the transfer of electrons down the ETC is used to pump protons from the mitochondrial matrix into the intermembrane space
-- creats an electrochemical proton gradient (\delta pH) across the IMM.
-- largely responsible for the mitochondrial membrane potential (ΔΨM).
-- allows ATP synthase to use the flow of H+ through the enzyme back into the matrix to generate ATP from ADP and Pi.
-- Complex I (NADH coenzyme Q reductase) accepts electrons from the Krebs cycle electron carrier NADH
-- passes them to CoQ (ubiquinone; labeled Q),
-- CoQ also receives electrons from complex II (succinate dehydrogenase).
-- CoQ passes electrons to complex III (cytochrome bc1 complex; labeled III), which passes them to cytochrome c (cyt c).
-- Cyt c passes electrons to Complex IV (cytochrome c oxidase; labeled IV), which uses the electrons and hydrogen ions to reduce molecular oxygen to water. 
-** Oxidative phosphorylation
+  - creats an electrochemical proton gradient (\delta pH) across the IMM.
+  - largely responsible for the mitochondrial membrane potential (\Delta\Psi{}M).
+  - ATP synthase uses flow of H+ through the enzyme back into the matrix to generate ATP from ADP and Pi.
+
+
 #+BEGIN_SRC dot :file ./figures/etc.pdf :cmdline -Kdot -Tpdf
   digraph {
            // graph from left to right
@@ -235,9 +281,114 @@ https://en.wikipedia.org/wiki/Ketogenesis#/media/File:Ketogenesis.svg
 #+RESULTS:
 [[file:./figures/etc.pdf]]
 
- The complete breakdown of glucose in the presence of oxygen is called cellular respiration. The last steps of this process occur in mitochondria. The reduced molecules NADH and FADH2 are generated by the Krebs cycle, glycolysis, and pyruvate processing. These molecules pass electrons to an electron transport chain, which uses the energy released to create a proton gradient across the inner mitochondrial membrane. ATP synthase then uses the energy stored in this gradient to make ATP. This process is called oxidative phosphorylation because it uses energy released by the oxidation of NADH and FADH2 to phospolyrize ADP into ATP. 
- 
- - https://en.wikipedia.org/wiki/Electron_transport_chain#/media/File:ATP-Synthase.svg
+*** COMMENT
+- Complex I (NADH coenzyme Q reductase) accepts electrons from the Krebs cycle electron carrier NADH
+- passes them to CoQ (ubiquinone; labeled Q),
+- CoQ also receives electrons from complex II (succinate dehydrogenase).
+- CoQ passes electrons to complex III (cytochrome bc1 complex; labeled III), which passes them to cytochrome c (cyt c).
+- Cyt c passes electrons to Complex IV (cytochrome c oxidase; labeled IV), which uses the electrons and hydrogen ions to reduce molecular oxygen to water. 
+
+** ATP synthase
+- formation of ATP from ADP and Pi is energetically unfavorable
+- ATP synthase couples ATP synthesis to an electrochemical gradient (\Delta\Psi{}M).
+
+#+NAME: fig:atps
+#+ATTR_LaTeX: :width 0.5\textwidth
+[[file:./figures/atp_synthase.jpg]]
+
+\centering
+#+BEGIN_EXPORT LaTeX
+\ce{ADP + Pi + H+_{out} <=> ATP + H2O + H+_{in}}
+#+END_EXPORT
+
+*** COMMENT
+Simplified picture of ATP syntase The Fo part through which hydrogen
+ions (H+) stream is located in the membrane. The F1 part which
+synthesises ATP is outside the membrane. When the hydrogen ions flow
+through the membrane via the disc of c subunits in the Fo part, the
+disc is forced to twist around. The gamma subunit in the F1 part is
+attached to the disc and therefore rotates with it. The three alpha
+and three beta subunits in the F1 part cannot rotate, however. They
+are locked in a fixed position by the b subunit. This in turn is
+anchored in the membrane. Thus the gamma subunit rotates inside the
+cylinder formed by the six alpha and beta subunits. Since the gamma
+subunit is asymmetrical it compels the beta subunits to undergo
+structural changes. This leads to the beta subunits binding ATP and
+ADP with differing strengths (see Figure 2).
+
+
+Figure 2. Boyer’s “Binding Change Mechanism” The picture shows the
+cylinder with alternating alpha and beta subunits at four different
+stages of ATP synthesis. The asymmetrical gamma subunit that causes
+changes in the structure of the beta subunits can be seen in the
+centre. The structures are termed open betaO (light grey sector),
+loose betaL (grey sector) and tight betaT (black sector). At stage A
+we see an already-fully-formed ATP molecule bound to betaT. In the
+step to stage B betaL binds ADP and inorganic phosphate (Pi ). At the
+next stage, C, we see how the gamma subunit has twisted due to the
+flow of hydrogen ions (see Figure 1). This brings about changes in the
+structure of the three beta subunits. The tight beta subunit now
+becomes open and the bound ATP molecule is released. The loose beta
+subunit becomes tight and the open becomes loose. In the last stage
+the chemical reaction takes place in which phosphate ions react with
+the ADP molecule to form a new ATP molecule. We are back at the first
+stage.
+
+#+CAPTION[rotation]:Boyer's Binding Change Mechanism
+#+NAME: fig:rot
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/pressfig2.gif]]
+
+
+
+** Ketogenesis 
+***                                                                   :BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: 0.5
+    :END:
+- produced mainly in the mitochondria of liver cells,
+- in response \downarrow blood glucose
+
+***                                                                   :BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: 0.5
+    :END:
+#+CAPTION[keto]:Ketogenesis
+#+NAME: fig:keto
+#+ATTR_LaTeX: :width 1\textwidth
+[[file:./figures/Ketogenesis.png]]
+
+
+** Ketolysis
+
+#+BEGIN_SRC dot :file ./figures/etc.pdf :cmdline -Kdot -Tpdf
+  digraph {
+	   // graph from left to right
+	   rankdir=LR;
+	   splines=true;
+	   node [shape=box];
+	   bhb [label="beta-OH-butyrate", fillcolor=steelblue3, style=filled]
+	   aa [label="Acetoacetate", fillcolor=steelblue3, style=filled]
+	   scoa [label="Succinyl-CoA", fillcolor=grey, style=filled]     
+	   s [label="Succinate", fillcolor=grey, style=filled]     
+	   t [label="Succinyl-CoA transferase", fillcolor=red3, style=filled]     
+	   aacoa [label="Acetylacyl-CoA", fillcolor=steelblue3, style=filled]    
+	   acoa [label="Acetyl-CoA", fillcolor=steelblue3, style=filled]    
+	   bhb -> aa [label = "BHB dehydrogenase"]
+	   scoa -> t  
+	   aa -> t
+	   t -> s 
+	   t -> aacoa 
+	   aacoa -> acoa [label = "Acetyl-CoA thiolase"]
+	   }    
+#+END_SRC
+
+#+RESULTS:
+[[file:./figures/etc.pdf]]
+
+- ketone bodies are a way to move energy from the liver to other cells.
+- The liver does not have the succinyl CoA transferase, to metabolize ketone bodies
+- liver produces ketone bodies, but does not use a significant amount of them.
 
 ** Other Biochemical Functions Relevant to IMD   
 
