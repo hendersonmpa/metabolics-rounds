@@ -9,7 +9,7 @@
 #+BEAMER_THEME: Hannover
 #+BEAMER_COLOR_THEME: whale
 #+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
-#+OPTIONS: H:2 toc:nil
+#+OPTIONS: H:2 toc:nil ^:t
 #+PROPERTY: header-args:R :session *R*
 #+PROPERTY: header-args :cache no
 #+PROPERTY: header-args :tangle yes
@@ -64,7 +64,7 @@
 * Background
 ** Mitochondria
 - A double-membrane-bound organelle found in most eukaryotic organisms
-  - liver cells can have more than 2000.
+  - liver cells can have more than 2000
   - red blood cells have no mitochondria
 
 - The organelle is composed of an outer membrane, intermembrane
@@ -73,10 +73,11 @@
 - The mitochondrion has its own independent genome that shows
   substantial similarity to bacterial genomes
 
-- Mitochondrial proteins (proteins transcribed from mt DNA)
-  vary depending on the tissue and the species. In humans, 615
-  distinct types of protein have been identified from cardiac
-  mitochondria
+- Mitochondrial proteins transcribed from mtDNA vary depending on the
+  tissue and the species.
+
+- In humans, 615 distinct types of protein have been identified from
+  cardiac mitochondria.
 
 ** Mitochondria
 #+CAPTION[mito]:Mitochondrion
@@ -95,7 +96,7 @@
 
 ** Maternal Inheritance
 - Mitochondria and therefore the mtDNA, usually come from the egg
-  - The egg cell contains relatively few mitochondria
+  - the egg cell contains relatively few mitochondria
   - these mitochondria divide to populate the cells
 - paternal mitochondria are marked with ubiquitin for destruction
   inside the embryo.
@@ -222,12 +223,12 @@
 - About 15% of mitochondrial disease is caused by mutations in the
   mitochondrial DNA that affect mitochondrial function.
 - Other mitochondrial diseases are caused by
-  - mutations nuclear DNA
-  - as well as acquired mitochondrial conditions
+  - mutations  in nuclear DNA
+  - acquired mitochondrial conditions (drugs, toxins)
 
 * Biochemical Functions Relevant to IMD   
 
-** Pyruvate and the Tricyclic Acid Cycle
+** Pyruvate and the Tricarboxylic Acid Cycle
 
 
 #+CAPTION[tca]:TCA
@@ -236,7 +237,9 @@
 #+ATTR_LaTeX: :width 0.8\textwidth
 [[file:./figures/tca.png]]
 
+- oxidation of pyruvate \rightarrow 3 NADH, 1 \ce{FADH2}, and 1 GTP
 *** COMMENT
+- release of energy via oxidation of acetly-CoA
 - one molecule of glucose breaks down into two molecules of pyruvate
 - Pyruvate is converted into acetyl-coenzyme A, which is the main
   input for a series of reactions known as the Krebs cycle
@@ -246,9 +249,10 @@
 
 ** Electron Transport Chain
 - Energy obtained through the transfer of electrons down the ETC is used to pump protons from the mitochondrial matrix into the intermembrane space
-  - creats an electrochemical proton gradient (\delta pH) across the IMM.
-  - largely responsible for the mitochondrial membrane potential (\Delta\Psi{}M).
-  - ATP synthase uses flow of H+ through the enzyme back into the matrix to generate ATP from ADP and Pi.
+  - creates an electrochemical proton gradient (\Delta{}pH) across the IMM.
+    - largely responsible for the mitochondrial membrane potential (\Delta\Psi{}M).
+  - ATP synthase uses flow of \ce{H+} through the enzyme back into the
+    matrix to generate ATP from ADP and Pi.
 
 
 #+BEGIN_SRC dot :file ./figures/etc.pdf :cmdline -Kdot -Tpdf
@@ -361,7 +365,7 @@ stage.
 
 ** Ketolysis
 
-#+BEGIN_SRC dot :file ./figures/etc.pdf :cmdline -Kdot -Tpdf
+#+BEGIN_SRC dot :file ./figures/keto.pdf :cmdline -Kdot -Tpdf
   digraph {
 	   // graph from left to right
 	   rankdir=LR;
@@ -384,10 +388,10 @@ stage.
 #+END_SRC
 
 #+RESULTS:
-[[file:./figures/etc.pdf]]
+[[file:./figures/keto.pdf]]
 
 - ketone bodies are a way to move energy from the liver to other cells.
-- The liver does not have the succinyl CoA transferase, to metabolize ketone bodies
+- The liver does not have the succinyl-CoA transferase, to metabolize ketone bodies
 - liver produces ketone bodies, but does not use a significant amount of them.
 
 ** Other Biochemical Functions Relevant to IMD   
