@@ -1,4 +1,4 @@
-% Created 2019-02-11 Mon 21:08
+% Created 2019-02-14 Thu 10:50
 % Intended LaTeX compiler: pdflatex
 \documentclass[presentation, smaller]{beamer}
 \usepackage[utf8]{inputenc}
@@ -70,12 +70,12 @@
 
 
 \section{Background}
-\label{sec:org12f41fc}
-\begin{frame}[label={sec:org1e5c08f}]{Mitochondria}
+\label{sec:org55c905b}
+\begin{frame}[label={sec:orgf16b254}]{Mitochondria}
 \begin{itemize}
 \item A double-membrane-bound organelle found in most eukaryotic organisms
 \begin{itemize}
-\item liver cells can have more than 2000.
+\item liver cells can have more than 2000
 \item red blood cells have no mitochondria
 \end{itemize}
 
@@ -85,57 +85,83 @@ space, and inner membrane with cristae and matrix.
 \item The mitochondrion has its own independent genome that shows
 substantial similarity to bacterial genomes
 
-\item Mitochondrial proteins (proteins transcribed from mt DNA)
-vary depending on the tissue and the species. In humans, 615
-distinct types of protein have been identified from cardiac
-mitochondria
+\item Mitochondrial proteins transcribed from mtDNA vary depending on the
+tissue and the species.
+
+\item In humans, 615 distinct types of protein have been identified from
+cardiac mitochondria.
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgfcfdfd0}]{Maternal Inheritance}
+\begin{frame}[label={sec:org1d20d1b}]{Mitochondria}
+\begin{center}
+\includegraphics[width=.9\linewidth]{./figures/Mitochondrion_mini.png}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:org2dc5e91}]{Mitochondria}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\textwidth]{./figures/HeLa_mtGFP.jpg}
+\caption[hela]{\label{fig:org59cf2ae}
+HeLa Cells mtGFP}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}[label={sec:org1be77f0}]{Maternal Inheritance}
 \begin{itemize}
-\item Mitochondria and therefore the mitochondrial DNA, usually come from
-the egg only.
-\item The egg cell contains relatively few mitochondria
+\item Mitochondria and therefore the mtDNA, usually come from the egg
 \begin{itemize}
+\item the egg cell contains relatively few mitochondria
 \item these mitochondria divide to populate the cells
 \end{itemize}
-\item Sperm mitochondria enter the egg, but do not contribute genetic
-information to the embryo.
-\begin{itemize}
 \item paternal mitochondria are marked with ubiquitin for destruction
 inside the embryo.
+\item mitochondria are randomly distributed to the daughter cells during
+the division of the cytoplasm.
 \end{itemize}
-\end{itemize}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\textwidth]{./figures/Mitochondrial_Bottleneck.png}
+\caption[mom]{\label{fig:org67c4d3f}
+Maternal Inheritance}
+\end{figure}
 \end{frame}
 
-\begin{frame}[label={sec:org964335c}]{Heteroplasmy}
+\begin{frame}[label={sec:orgcce0268}]{Heteroplasmy}
 \begin{itemize}
 \item Heteroplasmy is the presence of more than one type of organellar
-genome (mitochondrial DNA or plastid DNA) within a cell or
-individual.
+genome within a cell or individual.
 
 \item It is an important factor in considering the severity of
 mitochondrial diseases.
-
-\item Most eukaryotic cells contain many hundreds of mitochondria with
-hundreds of copies of mitochondrial DNA, it is common for mutations
-to affect only some mitochondria, leaving most unaffected.
-
-\item Although detrimental scenarios are well-studied, heteroplasmy can
-also be beneficial. For example, centenarians show a higher than
-average degree of heteroplasmy.[1]
-
-\item Microheteroplasmy is present in most individuals. This refers to
-hundreds of independent mutations in one organism, with each
-mutation found in about 1–2\% of all mitochondrial genomes.[2]
+\begin{itemize}
+\item can also be beneficial
 \end{itemize}
+
+\item Microheteroplasmy is present in most individuals.
+\begin{itemize}
+\item hundreds of independent mutations, with each mutation found in
+about 1–2\% of all mitochondrial genomes.
+\end{itemize}
+\end{itemize}
+
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\textwidth]{./figures/heteroplasmy.png}
+\caption[heter]{\label{fig:orgea49b24}
+heteroplasmy}
+\end{figure}
 \end{frame}
 
-\begin{frame}[label={sec:org19cf295}]{Muller's Ratchet and the Mitochondrial Bottleneck}
+
+\begin{frame}[label={sec:orgabc120f}]{Muller's Ratchet and the Mitochondrial Bottleneck}
 \begin{itemize}
-\item Entities undergoing uniparental inheritance and with little to no
-recombination may be expected to be subject to Muller's ratchet
+\item Applies to entities undergoing uniparental inheritance and with little to no
+recombination
 \begin{itemize}
 \item the inexorable accumulation of deleterious mutations until functionality
 is lost.
@@ -143,140 +169,207 @@ is lost.
 \item mitochondria avoid this buildup through a developmental process
 known as the mtDNA bottleneck. 
 \begin{itemize}
-\item Cell-level selection acts to remove those cells with more deleterious mtDNA
+\item selection acts to remove those cells with more deleterious mtDNA
 \end{itemize}
 \end{itemize}
 
-\begin{block}{Fusion}
-\begin{itemize}
-\item response to cellular stress
-\item enabling genetic complementation, fusion of the mitochondria allows
-for two mitochondrial genomes with different defects within the same
-organelle to individually encode what the other lacks.
-\end{itemize}
-\end{block}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\textwidth]{./figures/bottle_neck.jpg}
+\caption[bottle]{\label{fig:orgbc048b3}
+Mitochondrial bottle neck}
+\end{figure}
 \end{frame}
 
-\begin{frame}[label={sec:orgdee1a30}]{Replication}
+
+\begin{frame}[label={sec:orgc0b06e9}]{Fusion}
+\begin{columns}
+\begin{column}{0.5\columnwidth}
+\begin{itemize}
+\item response to cellular stress
+\begin{itemize}
+\item mtDNA damage
+\end{itemize}
+\item enables genetic complementation
+\end{itemize}
+\end{column}
+
+\begin{column}{0.5\columnwidth}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1\textwidth]{./figures/nrm1125-f1.jpg}
+\caption[fusion]{\label{fig:org4b91074}
+Mitochondrial fusion}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+
+\begin{frame}[label={sec:org61b741b}]{Replication and Fission}
 \begin{itemize}
 \item Mitochondria divide by binary fission, similar to bacterial cell division
 
 \item mammalian mitochondria replicate their DNA and divide mainly in response
-to the energy needs of the cell,rather than in phase with the cell cycle.
+to the energy needs of the cell, not in phase with the cell cycle.
 \begin{itemize}
 \item When the energy needs of a cell are high, mitochondria grow and
 divide.
 \item When the energy use is low, mitochondria are destroyed
 or become inactive.
 \end{itemize}
-
-\item mitochondria are apparently randomly distributed to the daughter
-cells during the division of the cytoplasm.
 \end{itemize}
 \end{frame}
 
-
-\begin{frame}[label={sec:org5c66d09}]{Human Mitochondrial DNA}
+\begin{frame}[label={sec:orgd0f2dda}]{Human Mitochondrial DNA}
+\begin{columns}
+\begin{column}{.7\columnwidth}
 \begin{itemize}
-\item The human mitochondrial genome is a circular DNA molecule of about
-16 kilobases.
-\item It encodes 37 genes: 13 for subunits of respiratory complexes I,
-III, IV and V,
-\item 22 for mitochondrial tRNA (for the 20 standard amino acids, plus an
-extra gene for leucine and serine)
+\item a circular DNA molecule \textasciitilde{} 16 kb
+\item encodes 37 genes
+\begin{itemize}
+\item 13 for subunits of respiratory complexes I, III, IV and V
+\item 22 for mitochondrial tRNA
+\begin{itemize}
+\item 20 standard amino acids, plus extra gene for leu and ser
+\end{itemize}
 \item 2 for rRNA.
+\end{itemize}
 \item One mitochondrion can contain two to ten copies of its DNA.
 \end{itemize}
+\end{column}
+
+\begin{column}{.3\columnwidth}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1\textwidth]{./figures/mitochondrial_genome.png}
+\caption[mtdna]{\label{fig:orgc98abfe}
+Human mitochondrial genome}
+\end{figure}
+\end{column}
+\end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:org9d4764d}]{Alternative genetic code}
+\begin{frame}[label={sec:org0d7f73b}]{Alternative genetic code}
 \begin{itemize}
 \item The mitochondria of many eukaryotes, including most plants, use the
 standard code.
 \end{itemize}
 
 \begin{table}[htbp]
-\caption[mito code]{\label{tab:org468389c}
-Exceptions to the standard genetic code in mitochondria}
+\caption[mito code]{\label{tab:org2778280}
+Exceptions to the standard genetic code in mamalian mitochondria}
 \centering
-\begin{tabular}{llll}
-Organism & Codon & Standard & Mitochondria\\
+\begin{tabular}{lll}
+Codon & Standard & Mitochondria\\
 \hline
-Mammals & AGA, AGG & Arginine & Stop codon\\
-Invertebrates & AGA, AGG & Arginine & Serine\\
-Fungi & CUA & Leucine & Threonine\\
-All of the above & AUA & Isoleucine & Methionine\\
- & UGA & Stop codon & Tryptophan\\
+AGA, AGG & Arginine & Stop codon\\
+AUA & Isoleucine & Methionine\\
+UGA & Stop codon & Tryptophan\\
 \end{tabular}
 \end{table}
 
 \begin{itemize}
-\item the AUA, AUC, and AUU codons are all allowable start codons.
-\item Some of these differences should be regarded as pseudo-changes in
-the genetic code due to the phenomenon of RNA editing, which is
-common in mitochondria.
+\item AUA, AUC, and AUU codons are all allowable start codons.
+\item Some of these differences are pseudo-changes in the genetic code due
+to the phenomenon of RNA editing, common in mitochondria.
 \end{itemize}
 \end{frame}
 
 
-\begin{frame}[label={sec:orgd3563d6}]{Mitochondrial Disease}
+\begin{frame}[label={sec:orgca42263}]{Mitochondrial Disease}
 \begin{itemize}
-\item Mitochondrial diseases are about 15\% of the time caused by mutations
-in the mitochondrial DNA that affect mitochondrial function.
-\item Other mitochondrial diseases are caused by mutations in genes of the
-nuclear DNA, whose gene products are imported into the mitochondria
-as well as acquired mitochondrial conditions.
+\item About 15\% of mitochondrial disease is caused by mutations in the
+mitochondrial DNA that affect mitochondrial function.
+\item Other mitochondrial diseases are caused by
+\begin{itemize}
+\item mutations  in nuclear DNA
+\item acquired mitochondrial conditions (drugs, toxins)
+\end{itemize}
 \end{itemize}
 \end{frame}
 
 \section{Biochemical Functions Relevant to IMD}
-\label{sec:org6b9c34c}
+\label{sec:org25477c5}
 
-\begin{frame}[label={sec:org64a9d32}]{Pyruvate and the Tricyclic Acid Cycle}
+\begin{frame}[label={sec:org245cf33}]{Pyruvate and the Tricyclic Acid Cycle}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{./figures/tca.png}
+\end{center}
+
 \begin{itemize}
-\item one molecule of glucose breaks down into two molecules of pyruvate
-\item Pyruvate is converted into acetyl-coenzyme A, which is the main
-input for a series of reactions known as the Krebs cycle
-\item Pyruvate is also converted to oxaloacetate by an anaplerotic
-reaction, which replenishes Krebs cycle intermediates; also, the
-oxaloacetate is used for gluconeogenesis
+\item oxidation of pyruvate \(\rightarrow\) 3 NADH, 1 \ce{FADH2}, and 1 GTP
 \end{itemize}
-
-\url{https://en.wikipedia.org/wiki/Citric\_acid\_cycle\#/media/File:Citric\_acid\_cycle\_with\_aconitate\_2.svg}
 \end{frame}
-
-\begin{frame}[label={sec:org9953c48}]{Ketogenesis \& Ketolysis}
-\begin{itemize}
-\item Ketone bodies are produced mainly in the mitochondria of liver cells, and synthesis can occur in response to an unavailability of blood glucose, such as during fasting
-\end{itemize}
-\url{https://en.wikipedia.org/wiki/Ketogenesis\#/media/File:Ketogenesis.svg}
-\end{frame}
-\begin{frame}[label={sec:orgfa182fd}]{Electron Transport Chain}
+\begin{frame}[label={sec:org11c9bd4}]{Electron Transport Chain}
 \begin{itemize}
 \item Energy obtained through the transfer of electrons down the ETC is used to pump protons from the mitochondrial matrix into the intermembrane space
-\item creats an electrochemical proton gradient (\(\delta\) pH) across the IMM.
-\item largely responsible for the mitochondrial membrane potential (ΔΨM).
-\item allows ATP synthase to use the flow of H+ through the enzyme back into the matrix to generate ATP from ADP and Pi.
-\item Complex I (NADH coenzyme Q reductase) accepts electrons from the Krebs cycle electron carrier NADH
-\item passes them to CoQ (ubiquinone; labeled Q),
-\item CoQ also receives electrons from complex II (succinate dehydrogenase).
-\item CoQ passes electrons to complex III (cytochrome bc1 complex; labeled III), which passes them to cytochrome c (cyt c).
-\item Cyt c passes electrons to Complex IV (cytochrome c oxidase; labeled IV), which uses the electrons and hydrogen ions to reduce molecular oxygen to water.
+\begin{itemize}
+\item creates an electrochemical proton gradient (\(\Delta\)pH) across the IMM.
+\begin{itemize}
+\item largely responsible for the mitochondrial membrane potential (\(\Delta \Psi\)M).
 \end{itemize}
-\end{frame}
-\begin{frame}[label={sec:orgcfaaaf8}]{Oxidative phosphorylation}
+\item ATP synthase uses flow of \ce{H+} through the enzyme back into the
+matrix to generate ATP from ADP and Pi.
+\end{itemize}
+\end{itemize}
+
+
 \begin{center}
 \includegraphics[width=.9\linewidth]{./figures/etc.pdf}
 \end{center}
+\end{frame}
 
-The complete breakdown of glucose in the presence of oxygen is called cellular respiration. The last steps of this process occur in mitochondria. The reduced molecules NADH and FADH2 are generated by the Krebs cycle, glycolysis, and pyruvate processing. These molecules pass electrons to an electron transport chain, which uses the energy released to create a proton gradient across the inner mitochondrial membrane. ATP synthase then uses the energy stored in this gradient to make ATP. This process is called oxidative phosphorylation because it uses energy released by the oxidation of NADH and FADH2 to phospolyrize ADP into ATP. 
+\begin{frame}[label={sec:org3e43b02}]{ATP synthase}
+\begin{itemize}
+\item formation of ATP from ADP and Pi is energetically unfavorable
+\item ATP synthase couples ATP synthesis to an electrochemical gradient (\(\Delta \Psi\)M).
+\end{itemize}
+
+\begin{center}
+\includegraphics[width=0.5\textwidth]{./figures/atp_synthase.jpg}
+\label{orgf9dfba6}
+\end{center}
+
+\centering
+\ce{ADP + Pi + H+_{out} <=> ATP + H2O + H+_{in}}
+\end{frame}
+
+\begin{frame}[label={sec:org910dc18}]{Ketogenesis}
+\begin{columns}
+\begin{column}{0.5\columnwidth}
+\begin{itemize}
+\item produced mainly in the mitochondria of liver cells,
+\item in response \(\downarrow\) blood glucose
+\end{itemize}
+\end{column}
+
+\begin{column}{0.5\columnwidth}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1\textwidth]{./figures/Ketogenesis.png}
+\caption[keto]{\label{fig:orge91861b}
+Ketogenesis}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}[label={sec:org4081fa5}]{Ketolysis}
+\begin{center}
+\includegraphics[width=.9\linewidth]{./figures/keto.pdf}
+\end{center}
 
 \begin{itemize}
-\item \url{https://en.wikipedia.org/wiki/Electron\_transport\_chain\#/media/File:ATP-Synthase.svg}
+\item ketone bodies are a way to move energy from the liver to other cells.
+\item The liver does not have the succinyl-CoA transferase, to metabolize ketone bodies
+\item liver produces ketone bodies, but does not use a significant amount of them.
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgd74cc47}]{Other Biochemical Functions Relevant to IMD}
+\begin{frame}[label={sec:org634c5cf}]{Other Biochemical Functions Relevant to IMD}
 \begin{itemize}
 \item Mitochondrial Fatty Acid Oxidation
 
