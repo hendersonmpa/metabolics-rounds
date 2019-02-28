@@ -87,7 +87,7 @@
   information to the embryo.
   - paternal mitochondria are marked with ubiquitin for destruction
     inside the embryo.
-
+https://en.wikipedia.org/wiki/Heteroplasmy#/media/File:Mitochondrial_Bottleneck.png
 ** Heteroplasmy
 
 - Heteroplasmy is the presence of more than one type of organellar
@@ -103,27 +103,28 @@
 
 - Although detrimental scenarios are well-studied, heteroplasmy can
   also be beneficial. For example, centenarians show a higher than
-  average degree of heteroplasmy.[1]
+  average degree of heteroplasmy.
 
 - Microheteroplasmy is present in most individuals. This refers to
   hundreds of independent mutations in one organism, with each
-  mutation found in about 1–2% of all mitochondrial genomes.[2]
+  mutation found in about 1-2% of all mitochondrial genomes.
 
 ** Muller's Ratchet and the Mitochondrial Bottleneck
 
 - Entities undergoing uniparental inheritance and with little to no
-  recombination may be expected to be subject to Muller's ratchet
-  - the inexorable accumulation of deleterious mutations until functionality
-    is lost.
+  recombination can be subject to "Muller's ratchet"
+  - the inexorable accumulation of deleterious mutations until
+    functionality is lost.
 - mitochondria avoid this buildup through a developmental process
   known as the mtDNA bottleneck. 
   - Cell-level selection acts to remove those cells with more deleterious mtDNA
   
 *** Fusion
 - response to cellular stress
-- enabling genetic complementation, fusion of the mitochondria allows
-  for two mitochondrial genomes with different defects within the same
-  organelle to individually encode what the other lacks. 
+- enables genetic complementation
+  - fusion of the mitochondria allows two mitochondrial genomes with
+    different defects within the same organelle to encode what the
+    other lacks.
 
 ** Replication 
 
@@ -228,7 +229,7 @@ https://en.wikipedia.org/wiki/Ketogenesis#/media/File:Ketogenesis.svg
            c4 -> h2o
            c2 -> q
            s -> c2
-	 
+
            }    
 #+END_SRC
 
