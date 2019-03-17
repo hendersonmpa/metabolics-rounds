@@ -1,0 +1,176 @@
+#+TITLE: Disorders of the Tricarboxylic Acid Cycle
+#+AUTHOR: Matthew Henderson, PhD, FCACB
+#+DATE: \today
+
+:PROPERTIES:
+#+DRAWERS: PROPERTIES
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [presentation, smaller]
+#+BEAMER_THEME: Hannover
+#+BEAMER_COLOR_THEME: whale
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+OPTIONS: H:2 toc:nil ^:t
+#+PROPERTY: header-args:R :session *R*
+#+PROPERTY: header-args :cache no
+#+PROPERTY: header-args :tangle yes
+#+STARTUP: beamer
+#+STARTUP: overview
+#+STARTUP: hidestars
+#+STARTUP: indent
+# #+BEAMER_HEADER: \subtitle{Part 1: Maple Syrup Urine Diseas}
+#+BEAMER_HEADER: \institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
+#+BEAMER_HEADER: \titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
+#+latex_header: \hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
+#+LaTeX_header: \usepackage{textpos}
+#+LaTeX_header: \usepackage{textgreek}
+#+LaTeX_header: \usepackage[version=4]{mhchem}
+#+LaTeX_header: \usepackage{chemfig}
+#+LaTeX_header: \usepackage{siunitx}
+#+LaTeX_header: \usepackage{gensymb}
+#+LaTex_HEADER: \usepackage[usenames,dvipsnames]{xcolor}
+#+LaTeX_HEADER: \usepackage[T1]{fontenc}
+#+LaTeX_HEADER: \usepackage{lmodern}
+#+LaTeX_HEADER: \usepackage{verbatim}
+#+LaTeX_HEADER: \usepackage{tikz}
+#+LaTeX_HEADER: \usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+:END:
+
+#+BEGIN_EXPORT LaTeX
+%\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
+%    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
+%}
+
+\vspace{220pt}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\tiny}
+% \addtobeamertemplate{frametitle}{}{%
+% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+% \includegraphics[height=1cm,width=2cm]{cat}
+% \end{textblock*}}
+
+\tikzstyle{chemical} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=none]
+\tikzstyle{hardware} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=gray!30]
+\tikzstyle{ms} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{msw} = [rectangle, rounded corners, text width=7em, minimum height=1em,text centered, draw=orange, fill=none]
+\tikzstyle{label} = [rectangle,text width=8em, minimum height=1em, text centered, draw=none, fill=none]
+\tikzstyle{hl} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=red!30]
+\tikzstyle{box} = [rectangle, rounded corners, text width=5em, minimum height=5em,text centered, draw=black, fill=none]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
+#+END_EXPORT 
+
+* Introduction
+** Disorders of Pyruvate Metabolism
+
+- \alpha-Ketoglutarate Dehydrogenase Complex Deficiency
+- Fumarase Deficiency
+- Succinate Dehydrogenase Deficiency
+- Other TCA cycle disorders
+
+** Tricarboxylic Acid Cycle
+
+#+CAPTION[TCA]:Tricarboxylic Acid Cycle
+#+NAME: fig:tca
+#+ATTR_LaTeX: :width 0.7\textwidth
+[[file:./figures/tca.png]]
+
+** Tricarboxylic Acid Cycle
+
+#+CAPTION[TCA]:Tricarboxylic Acid Cycle Disorders
+#+NAME: fig:tcad
+#+ATTR_LaTeX: :width 0.7\textwidth
+[[file:./figures/pyruvate_disorders.png]]
+
+* \alpha-ketoglutarate Dehydrogenase Complex Deficiency
+** \alpha-ketoglutarate Dehydrogenase Complex
+- KDHC is a \alpha-ketoacid dehydrogenase analogous to PDHC and BCKD.
+- Oxidation of \alpha-KGA to CoA and NADH
+- E1 subunit is the thiamine dependant substrate specific dehydrogenase
+  - Not regulated by phosphorylation.
+- E2 subunit dihydrolipyoyl succinyl-transferase is also specific to KDHC
+** Clinical Presentation
+- Similar of PDHC
+- developmental delay, hypotonia, opisthotonos and ataxia
+  - seizures less common
+- Present as neonate and early childhood
+
+** Genetics
+- AR inheritence
+- E1 gene mapped to 7p13-14
+- E2 gene mapped to 14q24.3
+- Molecular basis of KDHC deficiencies is not resolved.
+
+** Diagnostic Tests
+- Urine organic acids
+  - \uparrow \alpha-KGA, \pm other TCA intermediates
+  - \alpha-KGA is a common finding, not specific for KDHC deficiency
+- Blood lactate
+  - Normal or increased L/P
+- KDHC activity
+  - cultured skin fibroblasts
+  - muscle
+
+** Treatment
+- None to date
+
+* Fumarase Deficiency
+
+** Fumarase
+- Fumarase catalyses reversible reversible hydration/dehydration of fumarate to malate
+- two forms: mitochondrial and cytosolic.
+  - The mitochondrial isoenzyme is involved in the TCA Cycle
+  - The cytosolic isoenzyme is involved in the metabolism of amino acids and fumarate.
+- Subcellular localization is established by the presence of a signal
+  sequence on the amino terminus in the mitochondrial form
+- SS is missing from the cytosolic isoform
+- Deficiency causes impaired energy production
+
+** Clinical Presentation
+- Characterized by polyhydramnios and fetal brain abnormalities.
+- In the newborn period, findings include:
+  - severe neurologic abnormalities,
+  - poor feeding,
+  - failure to thrive
+  - hypotonia.
+- Fumarase deficiency is suspected in infants with multiple severe
+  neurologic abnormalities in the absence of an acute metabolic
+  crisis.
+
+- Inactivity of both cytosolic and mitochondrial forms of
+  fumarase are potential causes.
+
+** Genetics
+
+- AR inheritance
+- Single gene and mRNA encode mito and cyto isoforms
+
+** Diagnostic Tests
+
+- Isolated, increased concentration of fumaric acid on urine organic
+  acid analysis is highly suggestive of fumarase deficiency.
+- Molecular
+  genetic testing for fumarase deficiency is currently available
+
+* Succinate Dehydrogenase Deficiency
+
+**  Succinate Dehydrogenase 
+- Succinate dehydrogenase is a catalytic subunit of succinate-ubiquinone oxidoreductase
+  - part of complex II of the mitochondrial respiratory chain. 
+- Succinate dehydrogenase contains the FAD binding site where
+  succinate is deprotonated and converted to fumarate.
+
+succinate + ubiquinone \ce{\to fumarate + ubiquinol
+
+
+- Electrons removed from succinate transfer to SDHA, transfer across
+  SDHB through iron sulphur clusters to the SDHC/SDHD subunits on the
+  hydrophobic end of the complex anchored in the mitochondrial
+  membrane.
+
+- Mutations in this gene have been associated with a form of
+  mitochondrial respiratory chain deficiency known as Leigh Syndrome.
+
+** Complex II
+
+https://en.wikipedia.org/wiki/SDHA#/media/File:SuccDeh.svg
