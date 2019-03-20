@@ -1,0 +1,354 @@
+% Created 2019-03-20 Wed 18:03
+% Intended LaTeX compiler: pdflatex
+\documentclass[presentation, smaller]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
+\usepackage{textpos}
+\usepackage{textgreek}
+\usepackage[version=4]{mhchem}
+\usepackage{chemfig}
+\usepackage{siunitx}
+\usepackage{gensymb}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{verbatim}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+\usetheme{Hannover}
+\usecolortheme{whale}
+\author{Matthew Henderson, PhD, FCACB}
+\date{\today}
+\title{Disorders of the Tricarboxylic Acid Cycle}
+\institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
+\titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
+\hypersetup{
+ pdfauthor={Matthew Henderson, PhD, FCACB},
+ pdftitle={Disorders of the Tricarboxylic Acid Cycle},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.1 (Org mode 9.1.9)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+%\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
+%    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
+%}
+
+\vspace{220pt}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\tiny}
+% \addtobeamertemplate{frametitle}{}{%
+% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+% \includegraphics[height=1cm,width=2cm]{cat}
+% \end{textblock*}}
+
+\section{Introduction}
+\label{sec:orga7f5c1e}
+
+\begin{frame}[label={sec:org8eefb5d}]{The Tricarboxylic Acid Cycle}
+\begin{itemize}
+\item Pathways for oxidation of fatty acids, glucose, amino acids and ketones produce acetyl-CoA
+\end{itemize}
+%%\setchemfig{lewis style=red}
+\centering
+\chemfig{\lewis{0.,H}-\lewis{0.2.4.6.,{\color{red}C}}(-[6]\lewis{2.,H})(-[2]\lewis{6.,H})-\lewis{4.,{\color{red}C}}(=[2]O)-[,,,,decorate, decoration=snake]SCoA}
+\begin{itemize}
+\item Part of aerobic respiration - where is the \ce{O2}?
+\begin{itemize}
+\item ETC regenerates \ce{NAD+} from NADH
+\end{itemize}
+\item Cofactors:
+\begin{itemize}
+\item niacin (\ce{NAD+})
+\item riboflavin (FAD and FMN)
+\item panthothenic acid (CoA)
+\item thiamine
+\item \ce{Mg^2+}, \ce{Ca^2+}, \ce{Fe+} and phosphate
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[label={sec:org7131712}]{The Tricarboxylic Acid Cycle}
+\begin{center}
+\includegraphics[width=.9\textwidth]{./figures/TCACycle.png}
+\end{center}
+
+\tiny
+\ce{AcetylCoA + 3NAD+ + FAD + GDP + Pi + 2H2O -> 2CO2 + CoA + 3NADH + FADH2 + GTP + 2H+}
+\end{frame}
+
+\begin{frame}[label={sec:orgf2f195b}]{Disorders of the TCA cycle}
+\begin{itemize}
+\item \(\alpha\)-Ketoglutarate Dehydrogenase Complex Deficiency
+\item Succinate Dehydrogenase Deficiency
+\item Fumarase Deficiency
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:org1a209cc}]{Disorders of the TCA cycle}
+\begin{center}
+\includegraphics[width=\textwidth]{./figures/TCA_disorders.png}
+\end{center}
+\end{frame}
+
+
+\section{\(\alpha\)-ketoglutarate Dehydrogenase Complex Deficiency}
+\label{sec:org15ddcc3}
+\begin{frame}[label={sec:orgece36cf}]{\(\alpha\)-ketoglutarate Dehydrogenase Complex}
+\begin{center}
+\includegraphics[width=0.9\textwidth]{./figures/kgdh.png}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:org1f57f0d}]{\(\alpha\)-ketoglutarate Dehydrogenase Complex}
+\begin{itemize}
+\item KDHC is a \(\alpha\)-ketoacid dehydrogenase analogous to PDHC and BCKD.
+\end{itemize}
+
+\ce{\alpha-ketoglutarate + NAD+ + CoA ->[KDHC] Succinyl CoA + CO2 + NADH}
+
+
+\begin{center}
+\begin{tabular}{llll}
+Unit & Name & Gene & Cofactor\\
+\hline
+E1 & \(\alpha\)-ketoglutarate dehydrogenase & OGDH & thiamine pyrophosphate(TPP)\\
+E2 & dihydrolipoyl succinyltransferase & DLST & lipoic acid, Coenzyme A\\
+E3 & dihydrolipoyl dehydrogenase & DLD & FAD, NAD\\
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:org4ef3fd4}]{Clinical Presentation}
+\begin{itemize}
+\item Similar to PDHC
+\item Developmental delay, hypotonia, opisthotonos and ataxia
+\begin{itemize}
+\item seizures less common
+\end{itemize}
+\item Present as neonate and early childhood
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:org991b5ae}]{Genetics}
+\begin{itemize}
+\item AR inheritence
+\item E1 gene mapped to 7p13-14
+\item E2 gene mapped to 14q24.3
+\item Molecular basis of KDHC deficiencies is not resolved.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orga5cfb8e}]{Diagnostic Tests}
+\begin{itemize}
+\item Urine organic acids
+\begin{itemize}
+\item \(\uparrow\) \(\alpha\)-KGA, \textpm{} other TCA intermediates
+\item \(\alpha\)-KGA is a common finding, not specific for KDHC deficiency
+\end{itemize}
+\item Blood lactate
+\begin{itemize}
+\item Normal or increased L/P
+\end{itemize}
+\item KDHC activity
+\begin{itemize}
+\item cultured skin fibroblasts
+\item muscle
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:org2178d84}]{Treatment}
+\begin{itemize}
+\item None to date
+\end{itemize}
+\end{frame}
+
+
+\section{Succinate Dehydrogenase Deficiency}
+\label{sec:orgab7e3ae}
+
+\begin{frame}[label={sec:org6f696c6}]{Succinate Dehydrogenase Deficiency}
+\begin{center}
+\includegraphics[width=0.9\textwidth]{./figures/sdh.png}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:orgcee4d6e}]{Succinate Dehydrogenase | Complex II}
+\begin{itemize}
+\item Complex II of the mitochondrial respiratory chain
+\begin{itemize}
+\item SDHA,B,C,D
+\end{itemize}
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{ll}
+Subunit name & Protein description\\
+\hline
+SdhA & Succinate dehydrogenase flavoprotein subunit\\
+SdhB & Succinate dehydrogenase iron-sulfur subunit\\
+SdhC & Succinate dehydrogenase cytochrome b560 subunit\\
+SdhD & Succinate dehydrogenase cytochrome b small subunit\\
+\end{tabular}
+\end{center}
+
+\begin{itemize}
+\item The SDHA subunit contains an FAD binding site where succinate
+is deprotonated and converted to fumarate.
+\end{itemize}
+
+succinate + ubiquinone \(\to\) fumarate + ubiquinol
+
+\begin{itemize}
+\item Electrons removed from succinate transfer to SDHA
+\item transfer across SDHB through iron sulphur clusters to the SDHC/SDHD subunits
+\begin{itemize}
+\item SDHC/SDHD are anchored in the mitochondrial membrane.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:org45f99e7}]{Succinate Dehydrogenase | Complex II}
+\begin{center}
+\includegraphics[width=0.9\textwidth]{./figures/SuccDeh.png}
+\end{center}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgbfdf398}]{Clinical Presentation}
+\begin{itemize}
+\item Very rare disorder
+\item SDH is part of the TCA cycle and ETC
+\begin{itemize}
+\item phenotype resembles defects in respiratory chain
+\end{itemize}
+\item Clinical picture can include:
+\begin{itemize}
+\item Kearns-Sayre syndrome
+\item isolated hypertrophic cardiomyopathy
+\item combined cardiac and skeletal myopathy
+\item generalized muscle weakness, \(\uparrow\) fatiguability
+\item early onset Leigh encephalopathy
+\end{itemize}
+\item Also:
+\begin{itemize}
+\item cerebral ataxia
+\item optic atropy
+\item tumor formation in adults
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:org91ac27a}]{Genetics}
+\begin{itemize}
+\item All components of Complex II are nuclear encoded.
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{ll}
+Gene & Location\\
+\hline
+SDHA & 5p15.33\\
+SDHB & 1p36.13\\
+SDHC & 1q23.3\\
+SDHD & 11q23.1\\
+\end{tabular}
+\end{center}
+
+
+\begin{itemize}
+\item Affected sisters with one SDHA mutation suggests dominant
+transmission
+\item Mutations in SDHB, SDHC and SDHD cause susceptibility to familial
+phaeochromocytoma and familial paraganglioma.
+\end{itemize}
+\end{frame}
+\begin{frame}[label={sec:org3eb3d3b}]{Diagnostic Tests}
+\begin{itemize}
+\item Unlike other TCA cycle disorders Complex II deficiency does not always
+result in characteristic organic aciduria.
+\begin{itemize}
+\item Succinic aciduria
+\end{itemize}
+\item Organic acids can show variable amounts of lactate, pyruvate, succinate, fumarate and malate
+\end{itemize}
+\end{frame}
+
+\section{Fumarase Deficiency}
+\label{sec:org59d86e5}
+\begin{frame}[label={sec:orgee2106f}]{Fumarase Deficiency}
+\begin{center}
+\includegraphics[width=0.9\textwidth]{./figures/fumarase.png}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:org4f692c0}]{Fumarase}
+\begin{itemize}
+\item Fumarase catalyses reversible reversible hydration/dehydration of fumarate to malate
+\item Two forms: mitochondrial and cytosolic.
+\begin{itemize}
+\item The mitochondrial isoenzyme is involved in the TCA Cycle
+\item The cytosolic isoenzyme is involved in the metabolism of amino acids and fumarate.
+\end{itemize}
+\item Subcellular localization is established by the presence of a signal
+sequence on the amino terminus in the mitochondrial form
+\item SS is missing from the cytosolic isoform
+\item Deficiency causes impaired energy production
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:org2318b52}]{Clinical Presentation}
+\begin{itemize}
+\item Characterized by polyhydramnios and fetal brain abnormalities.
+\item In the newborn period, findings include:
+\begin{itemize}
+\item severe neurologic abnormalities,
+\item poor feeding,
+\item failure to thrive
+\item hypotonia.
+\end{itemize}
+\item Fumarase deficiency is suspected in infants with multiple severe
+neurologic abnormalities in the absence of an acute metabolic
+crisis.
+
+\item Inactivity of both cytosolic and mitochondrial forms of
+fumarase are potential causes.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orge6b56ab}]{Genetics}
+\begin{itemize}
+\item AR inheritance
+\item Single gene and mRNA encode mito and cyto isoforms
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:org9040738}]{Diagnostic Tests}
+\begin{itemize}
+\item Isolated, increased concentration of fumaric acid on urine organic
+acid analysis is highly suggestive of fumarase deficiency.
+\begin{itemize}
+\item Succinate, \(\alpha\)-KGA can also be elevated
+\end{itemize}
+\item Molecular genetic testing for fumarase deficiency is currently available
+\end{itemize}
+\end{frame}
+\end{document}

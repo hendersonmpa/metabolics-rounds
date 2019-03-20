@@ -48,50 +48,83 @@
 % \begin{textblock*}{100mm}(.85\textwidth,-1cm)
 % \includegraphics[height=1cm,width=2cm]{cat}
 % \end{textblock*}}
-
-\tikzstyle{chemical} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=none]
-\tikzstyle{hardware} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=gray!30]
-\tikzstyle{ms} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=orange, fill=none]
-\tikzstyle{msw} = [rectangle, rounded corners, text width=7em, minimum height=1em,text centered, draw=orange, fill=none]
-\tikzstyle{label} = [rectangle,text width=8em, minimum height=1em, text centered, draw=none, fill=none]
-\tikzstyle{hl} = [rectangle, rounded corners, text width=5em, minimum height=1em,text centered, draw=black, fill=red!30]
-\tikzstyle{box} = [rectangle, rounded corners, text width=5em, minimum height=5em,text centered, draw=black, fill=none]
-\tikzstyle{arrow} = [thick,->,>=stealth]
-\tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
 #+END_EXPORT 
 
 * Introduction
-** Disorders of Pyruvate Metabolism
+
+** The Tricarboxylic Acid Cycle
+
+- Pathways for oxidation of fatty acids, glucose, amino acids and ketones produce acetyl-CoA
+#+BEGIN_EXPORT LaTeX
+%%\setchemfig{lewis style=red}
+\centering
+\chemfig{\lewis{0.,H}-\lewis{0.2.4.6.,{\color{red}C}}(-[6]\lewis{2.,H})(-[2]\lewis{6.,H})-\lewis{4.,{\color{red}C}}(=[2]O)-[,,,,decorate, decoration=snake]SCoA}
+#+END_EXPORT
+- Part of aerobic respiration - where is the \ce{O2}?
+  - ETC regenerates \ce{NAD+} from NADH
+- Cofactors:
+  - niacin (\ce{NAD+})
+  - riboflavin (FAD and FMN)
+  - panthothenic acid (CoA)
+  - thiamine
+  - \ce{Mg^2+}, \ce{Ca^2+}, \ce{Fe+} and phosphate
+
+
+** The Tricarboxylic Acid Cycle
+
+#+ATTR_LaTeX: :width .9\textwidth
+[[file:./figures/TCACycle.png]]
+
+\tiny
+\ce{AcetylCoA + 3NAD+ + FAD + GDP + Pi + 2H2O -> 2CO2 + CoA + 3NADH + FADH2 + GTP + 2H+}
+
+*** COMMENT
+- release of energy via oxidation of acetly-CoA
+- one molecule of glucose breaks down into two molecules of pyruvate
+- Pyruvate is converted into acetyl-coenzyme A, which is the main
+  input for a series of reactions known as the Krebs cycle
+- Pyruvate is also converted to oxaloacetate by an anaplerotic
+  reaction, which replenishes Krebs cycle intermediates; also, the
+  oxaloacetate is used for gluconeogenesis
+
+** Disorders of the TCA cycle
 
 - \alpha-Ketoglutarate Dehydrogenase Complex Deficiency
-- Fumarase Deficiency
 - Succinate Dehydrogenase Deficiency
-- Other TCA cycle disorders
+- Fumarase Deficiency
 
-** Tricarboxylic Acid Cycle
+** Disorders of the TCA cycle
 
-#+CAPTION[TCA]:Tricarboxylic Acid Cycle
-#+NAME: fig:tca
-#+ATTR_LaTeX: :width 0.7\textwidth
-[[file:./figures/tca.png]]
+#+ATTR_LaTeX: :width \textwidth
+[[file:./figures/TCA_disorders.png]]
 
-** Tricarboxylic Acid Cycle
-
-#+CAPTION[TCA]:Tricarboxylic Acid Cycle Disorders
-#+NAME: fig:tcad
-#+ATTR_LaTeX: :width 0.7\textwidth
-[[file:./figures/pyruvate_disorders.png]]
 
 * \alpha-ketoglutarate Dehydrogenase Complex Deficiency
 ** \alpha-ketoglutarate Dehydrogenase Complex
+
+#+ATTR_LaTeX: :width 0.9\textwidth
+[[file:./figures/kgdh.png]]
+
+** \alpha-ketoglutarate Dehydrogenase Complex
 - KDHC is a \alpha-ketoacid dehydrogenase analogous to PDHC and BCKD.
-- Oxidation of \alpha-KGA to CoA and NADH
+
+\ce{\alpha-ketoglutarate + NAD+ + CoA ->[KDHC] Succinyl CoA + CO2 + NADH}
+
+
+| Unit | Name                               | Gene | Cofactor                    |
+|------+------------------------------------+------+-----------------------------|
+| E1   | \alpha-ketoglutarate dehydrogenase | OGDH | thiamine pyrophosphate(TPP) |
+| E2   | dihydrolipoyl succinyltransferase  | DLST | lipoic acid, Coenzyme A     |
+| E3   | dihydrolipoyl dehydrogenase        | DLD  | FAD, NAD                    |
+
+*** COMMENT 
 - E1 subunit is the thiamine dependant substrate specific dehydrogenase
   - Not regulated by phosphorylation.
 - E2 subunit dihydrolipyoyl succinyl-transferase is also specific to KDHC
+
 ** Clinical Presentation
-- Similar of PDHC
-- developmental delay, hypotonia, opisthotonos and ataxia
+- Similar to PDHC
+- Developmental delay, hypotonia, opisthotonos and ataxia
   - seizures less common
 - Present as neonate and early childhood
 
@@ -114,11 +147,86 @@
 ** Treatment
 - None to date
 
-* Fumarase Deficiency
 
-** Fumarase
+* Succinate Dehydrogenase Deficiency
+
+** Succinate Dehydrogenase Deficiency
+
+#+ATTR_LaTeX: :width 0.9\textwidth
+[[file:./figures/sdh.png]]
+
+** Succinate Dehydrogenase | Complex II
+- Complex II of the mitochondrial respiratory chain
+  - SDHA,B,C,D
+
+| Subunit name | Protein description                                |
+|--------------+----------------------------------------------------|
+| SdhA         | Succinate dehydrogenase flavoprotein subunit       |
+| SdhB         | Succinate dehydrogenase iron-sulfur subunit        |
+| SdhC         | Succinate dehydrogenase cytochrome b560 subunit    |
+| SdhD         | Succinate dehydrogenase cytochrome b small subunit |
+
+- The SDHA subunit contains an FAD binding site where succinate
+  is deprotonated and converted to fumarate.
+
+succinate + ubiquinone \to fumarate + ubiquinol
+
+- Electrons removed from succinate transfer to SDHA
+- transfer across SDHB through iron sulphur clusters to the SDHC/SDHD subunits
+  - SDHC/SDHD are anchored in the mitochondrial membrane.
+
+** Succinate Dehydrogenase | Complex II
+
+#+ATTR_LaTeX: :width 0.9\textwidth
+[[file:./figures/SuccDeh.png]]
+
+
+** Clinical Presentation
+- Very rare disorder
+- SDH is part of the TCA cycle and ETC
+  - phenotype resembles defects in respiratory chain
+- Clinical picture can include:
+  - Kearns-Sayre syndrome
+  - isolated hypertrophic cardiomyopathy
+  - combined cardiac and skeletal myopathy
+  - generalized muscle weakness, \uparrow fatiguability
+  - early onset Leigh encephalopathy
+- Also:
+  - cerebral ataxia
+  - optic atropy
+  - tumor formation in adults
+
+** Genetics
+
+- All components of Complex II are nuclear encoded.
+
+| Gene | Location |
+|------+----------|
+| SDHA | 5p15.33  |
+| SDHB | 1p36.13  |
+| SDHC | 1q23.3   |
+| SDHD | 11q23.1  |
+
+
+- Affected sisters with one SDHA mutation suggests dominant
+  transmission
+- Mutations in SDHB, SDHC and SDHD cause susceptibility to familial
+  phaeochromocytoma and familial paraganglioma.
+** Diagnostic Tests
+- Unlike other TCA cycle disorders Complex II deficiency does not always
+  result in characteristic organic aciduria.
+  - Succinic aciduria
+- Organic acids can show variable amounts of lactate, pyruvate, succinate, fumarate and malate
+
+* Fumarase Deficiency
+** Fumarase Deficiency
+
+#+ATTR_LaTeX: :width 0.9\textwidth
+[[file:./figures/fumarase.png]]
+
+** Fumarase 
 - Fumarase catalyses reversible reversible hydration/dehydration of fumarate to malate
-- two forms: mitochondrial and cytosolic.
+- Two forms: mitochondrial and cytosolic.
   - The mitochondrial isoenzyme is involved in the TCA Cycle
   - The cytosolic isoenzyme is involved in the metabolism of amino acids and fumarate.
 - Subcellular localization is established by the presence of a signal
@@ -149,28 +257,25 @@
 
 - Isolated, increased concentration of fumaric acid on urine organic
   acid analysis is highly suggestive of fumarase deficiency.
-- Molecular
-  genetic testing for fumarase deficiency is currently available
-
-* Succinate Dehydrogenase Deficiency
-
-**  Succinate Dehydrogenase 
-- Succinate dehydrogenase is a catalytic subunit of succinate-ubiquinone oxidoreductase
-  - part of complex II of the mitochondrial respiratory chain. 
-- Succinate dehydrogenase contains the FAD binding site where
-  succinate is deprotonated and converted to fumarate.
-
-succinate + ubiquinone \ce{\to fumarate + ubiquinol
+  - Succinate, \alpha-KGA can also be elevated
+- Molecular genetic testing for fumarase deficiency is currently available
 
 
-- Electrons removed from succinate transfer to SDHA, transfer across
-  SDHB through iron sulphur clusters to the SDHC/SDHD subunits on the
-  hydrophobic end of the complex anchored in the mitochondrial
-  membrane.
+* COMMENT Isocitrate Dehydrogenase
+** Isocitrate Dehydrogenase
+- IDH exists in three isoforms:
+  - IDH3 catalyzes the third step of the citric acid cycle while converting \ce{NAD+} to NADH in the mitochondria.
 
-- Mutations in this gene have been associated with a form of
-  mitochondrial respiratory chain deficiency known as Leigh Syndrome.
+\ce{isocitrate + NAD+ ->[IHD3] \alpha-ketoglutarate + CO2 + NADH + H+}
 
-** Complex II
+  - IDH1 and IDH2 catalyze the same reaction outside TCA cycle and use \ce{NADP+} as a cofactor.
+    - They localize to the cytosol as well as the mitochondrion and peroxisome.
 
-https://en.wikipedia.org/wiki/SDHA#/media/File:SuccDeh.svg
+\ce{isocitrate + NADP+ ->[IHD1/2] \alpha-ketoglutarate + CO2 + NADPH + H+}
+
+** Clinical relevance
+
+- IDH3 deficiency is associated with retinitis pigmentosa
+- IDH1/2 mutations linked to malignant gliomas and acute myeloid leukemia
+
+- Mutations in IDH2 identified in half of patients 

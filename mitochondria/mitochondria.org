@@ -261,8 +261,6 @@ https://en.wikipedia.org/wiki/Heteroplasmy#/media/File:Mitochondrial_Bottleneck.
 * Biochemical Functions Relevant to IMD   
 
 ** Pyruvate and the Tricarboxylic Acid Cycle
-
-
 #+CAPTION[tca]:TCA
 #+NAME: fig:tca
 
