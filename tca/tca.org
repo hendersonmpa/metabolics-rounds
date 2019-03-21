@@ -75,6 +75,7 @@
 #+ATTR_LaTeX: :width .9\textwidth
 [[file:./figures/TCACycle.png]]
 
+\centering
 \tiny
 \ce{AcetylCoA + 3NAD+ + FAD + GDP + Pi + 2H2O -> 2CO2 + CoA + 3NADH + FADH2 + GTP + 2H+}
 
@@ -99,8 +100,28 @@
 [[file:./figures/TCA_disorders.png]]
 
 
+** Disorders of the TCA cycle
+
+#+CAPTION[]: Model for a functional splitting of the Krebs cycle reactions into complementary mini-cycles.
+#+ATTR_LaTeX: :width 0.7\textwidth
+[[file:./figures/gr2.png]]
+
+- Rustin, P., Bourgeron, T., Parfait, B., Chretien, D., Munnich, A., &
+  Rotig, A. (1997). Inborn errors of the Krebs cycle : a group of
+  unusual mitochondrial diseases in human, 185-197.
+
+*** COMMENT
+-uses aspartate-amino acid transferase
+The functioning of the first mini-cycle (A) would allow to convert
+pyruvate up to \alpha-KG, even when the second mini-cycle (B) does not
+function. This could account for the urinary excretion of \alpha-KG in
+patients presenting with defect of \alpha-KG, SDH or fumarase
+activity. Similarly, it could produce reduced equivalents to sustain
+the normal oxygen uptake measured in circulating lymphocytes or
+cultured skin fibroblast from these patients.
+
 * \alpha-ketoglutarate Dehydrogenase Complex Deficiency
-** \alpha-ketoglutarate Dehydrogenase Complex
+** \alpha-ketoglutarate Dehydrogenase Complex Deficiency
 
 #+ATTR_LaTeX: :width 0.9\textwidth
 [[file:./figures/kgdh.png]]
@@ -129,10 +150,12 @@
 - Present as neonate and early childhood
 
 ** Genetics
-- AR inheritence
-- E1 gene mapped to 7p13-14
+- AR inheritence, encoded by nuclear DNA
+- E1 gene mapped to 7p13
 - E2 gene mapped to 14q24.3
 - Molecular basis of KDHC deficiencies is not resolved.
+
+- \alpha-ketoglutarate dehydrogenase deficiency is sometimes a feature of DLD deficiency
 
 ** Diagnostic Tests
 - Urine organic acids
@@ -141,6 +164,7 @@
 - Blood lactate
   - Normal or increased L/P
 - KDHC activity
+  - \ce{^14CO2} release from \ce{[1-^14C]} \alpha-ketoglutarate (or \ce{[1-^14C]} leucine)
   - cultured skin fibroblasts
   - muscle
 
@@ -156,8 +180,7 @@
 [[file:./figures/sdh.png]]
 
 ** Succinate Dehydrogenase | Complex II
-- Complex II of the mitochondrial respiratory chain
-  - SDHA,B,C,D
+- Four subunits compose Complex II of the mitochondrial respiratory chain
 
 | Subunit name | Protein description                                |
 |--------------+----------------------------------------------------|
@@ -166,14 +189,14 @@
 | SdhC         | Succinate dehydrogenase cytochrome b560 subunit    |
 | SdhD         | Succinate dehydrogenase cytochrome b small subunit |
 
-- The SDHA subunit contains an FAD binding site where succinate
+- The SdhA subunit contains an FAD binding site where succinate
   is deprotonated and converted to fumarate.
 
 succinate + ubiquinone \to fumarate + ubiquinol
 
-- Electrons removed from succinate transfer to SDHA
-- transfer across SDHB through iron sulphur clusters to the SDHC/SDHD subunits
-  - SDHC/SDHD are anchored in the mitochondrial membrane.
+- Electrons removed from succinate transfer to SdhA
+- transfer across SdhB through iron sulphur clusters to the SdhC/SdhD subunits
+  - SdhC/SdhD are anchored in the mitochondrial membrane.
 
 ** Succinate Dehydrogenase | Complex II
 
@@ -182,8 +205,8 @@ succinate + ubiquinone \to fumarate + ubiquinol
 
 
 ** Clinical Presentation
-- Very rare disorder
-- SDH is part of the TCA cycle and ETC
+- Very rare disorder with highly variable phenotype
+- Complex II is part of the TCA cycle and ETC
   - phenotype resembles defects in respiratory chain
 - Clinical picture can include:
   - Kearns-Sayre syndrome
@@ -194,11 +217,11 @@ succinate + ubiquinone \to fumarate + ubiquinol
 - Also:
   - cerebral ataxia
   - optic atropy
-  - tumor formation in adults
+  - tumour formation in adults
 
 ** Genetics
 
-- All components of Complex II are nuclear encoded.
+- All components of Complex II are encoded by nuclear DNA.
 
 | Gene | Location |
 |------+----------|
@@ -208,15 +231,32 @@ succinate + ubiquinone \to fumarate + ubiquinol
 | SDHD | 11q23.1  |
 
 
-- Affected sisters with one SDHA mutation suggests dominant
-  transmission
+- AR with highly variable phenotype
+- Case of affected sisters with one identified SDHA mutation suggested
+  dominant transmission
 - Mutations in SDHB, SDHC and SDHD cause susceptibility to familial
   phaeochromocytoma and familial paraganglioma.
+
 ** Diagnostic Tests
 - Unlike other TCA cycle disorders Complex II deficiency does not always
-  result in characteristic organic aciduria.
-  - Succinic aciduria
+  result in characteristic organic aciduria
+  - succinic aciduria.
 - Organic acids can show variable amounts of lactate, pyruvate, succinate, fumarate and malate
+
+** Diagnostic Tests
+- Measurement of complex II activity in muscle is the most reliable
+  means of diagnosis
+  - there is no clear correlation between residual complex II activity
+    and severity or clinical outcome.
+
+#+CAPTION[]:Coupled spectrophotometric assay
+#+NAME: fig:
+#+ATTR_LaTeX: :width 0.9\textwidth
+[[file:./figures/gr4.jpg]]
+
+** Treatment 
+
+- In some cases, treatment with riboflavin may have clinical benefit
 
 * Fumarase Deficiency
 ** Fumarase Deficiency
@@ -225,13 +265,12 @@ succinate + ubiquinone \to fumarate + ubiquinol
 [[file:./figures/fumarase.png]]
 
 ** Fumarase 
-- Fumarase catalyses reversible reversible hydration/dehydration of fumarate to malate
+- Fumarase catalyses reversible hydration/dehydration of fumarate to malate
 - Two forms: mitochondrial and cytosolic.
   - The mitochondrial isoenzyme is involved in the TCA Cycle
   - The cytosolic isoenzyme is involved in the metabolism of amino acids and fumarate.
-- Subcellular localization is established by the presence of a signal
-  sequence on the amino terminus in the mitochondrial form
-- SS is missing from the cytosolic isoform
+- Subcellular localization is established by the presence/absence of an N-terminal mitochondrial signal
+  sequence
 - Deficiency causes impaired energy production
 
 ** Clinical Presentation
@@ -241,6 +280,7 @@ succinate + ubiquinone \to fumarate + ubiquinol
   - poor feeding,
   - failure to thrive
   - hypotonia.
+
 - Fumarase deficiency is suspected in infants with multiple severe
   neurologic abnormalities in the absence of an acute metabolic
   crisis.
@@ -250,7 +290,7 @@ succinate + ubiquinone \to fumarate + ubiquinol
 
 ** Genetics
 
-- AR inheritance
+- AR inheritance, encoded by nuclear DNA
 - Single gene and mRNA encode mito and cyto isoforms
 
 ** Diagnostic Tests
