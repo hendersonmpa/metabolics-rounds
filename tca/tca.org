@@ -171,7 +171,6 @@ cultured skin fibroblast from these patients.
 ** Treatment
 - None to date
 
-
 * Succinate Dehydrogenase Deficiency
 
 ** Succinate Dehydrogenase Deficiency
@@ -299,7 +298,6 @@ succinate + ubiquinone \to fumarate + ubiquinol
   acid analysis is highly suggestive of fumarase deficiency.
   - Succinate, \alpha-KGA can also be elevated
 - Molecular genetic testing for fumarase deficiency is currently available
-
 
 * COMMENT Isocitrate Dehydrogenase
 ** Isocitrate Dehydrogenase
