@@ -1,4 +1,4 @@
-#+TITLE: Disorders of the Electron Transport Chain
+#+TITLE: Disorders of Oxidative Phosphorylation
 #+AUTHOR: Matthew Henderson, PhD, FCACB
 #+DATE: \today
 
@@ -52,133 +52,141 @@
 
 * Introduction
 
-** The Tricarboxylic Acid Cycle
+** ETC and OxPhos system
+- Responsible for ATP production
+- ETC complexes I-IV
+  - There are three energy-transducing enzymes in the electron transport chain - NADH:ubiquinone oxidoreductase (complex I), Coenzyme Q – cytochrome c reductase (complex III), and cytochrome c oxidase (complex IV).[
+- OxPhos system complexes I-V
+- IMM proteins
+*** chemiosmotic coupling hypothesis
+ - chemiosmotic coupling hypothesis, proposed by Nobel Prize in Chemistry winner Peter D. Mitchell,
+ - the electron transport chain and oxidative phosphorylation are coupled by a proton gradient across the inner mitochondrial membrane.
+ - The efflux of protons from the mitochondrial matrix creates an electrochemical gradient (proton gradient).
+ - This gradient is used by the F_{O}F_{1} ATP synthase complex to make ATP via oxidative phosphorylation.
+ - ATP synthase is sometimes described as Complex V of the electron transport chain
 
-- Pathways for oxidation of fatty acids, glucose, amino acids and ketones produce acetyl-CoA
-#+BEGIN_EXPORT LaTeX
-%%\setchemfig{lewis style=red}
-\centering
-\chemfig{\lewis{0.,H}-\lewis{0.2.4.6.,{\color{red}C}}(-[6]\lewis{2.,H})(-[2]\lewis{6.,H})-\lewis{4.,{\color{red}C}}(=[2]O)-[,,,,decorate, decoration=snake]SCoA}
-#+END_EXPORT
-- Part of aerobic respiration - where is the \ce{O2}?
-  - ETC regenerates \ce{NAD+} from NADH
-- Cofactors:
-  - niacin (\ce{NAD+})
-  - riboflavin (FAD and FMN)
-  - panthothenic acid (CoA)
-  - thiamine
-  - \ce{Mg^2+}, \ce{Ca^2+}, \ce{Fe+} and phosphate
+https://upload.wikimedia.org/wikipedia/commons/8/89/Mitochondrial_electron_transport_chain%E2%80%94Etc4.svg
 
+https://upload.wikimedia.org/wikipedia/commons/1/18/Mitochondrial_electron_transport_chain_%28annotated_diagram%29.svg
 
-** The Tricarboxylic Acid Cycle
+** Electron Transport Chain
+- Energy obtained through the transfer of electrons down the ETC is
+  used to pump protons from the mitochondrial matrix into the
+  intermembrane space
+  - creates an electrochemical proton gradient (\Delta{}pH) across the IMM.
+    - largely responsible for the mitochondrial membrane potential (\Delta\Psi{}M).
+  - ATP synthase uses flow of \ce{H+} through the enzyme back into the
+    matrix to generate ATP from ADP and Pi.
+- There are three energy-transducing enzymes in the electron transport
+  chain:
+  - NADH:ubiquinone oxidoreductase (complex I)
+  - Coenzyme Q – cytochrome c reductase (complex III)
+  - cytochrome c oxidase (complex IV).
 
-#+ATTR_LaTeX: :width .9\textwidth
-[[file:./figures/TCACycle.png]]
+#+BEGIN_SRC dot :file ./figures/etc.pdf :cmdline -Kdot -Tpdf
+  digraph {
+           // graph from left to right
+           rankdir=LR;
+           splines=true;
+           node [shape=box];
+           nadh [label="NADH+H", fillcolor=grey, style=filled]
+           c1 [label="Complex I", fillcolor=steelblue3, style=filled]
+           q [label="CoQ", fillcolor=red3, style=filled]    
+           c3 [label="Complex III", fillcolor=steelblue3, style=filled]     
+           cytc [label="Cytochrome C", fillcolor=red3, style=filled]     
+           c4 [label="Complex IV", fillcolor=steelblue3, style=filled]     
+           h2o [label="H2O", fillcolor=grey, style=filled]     
+           c2 [label="Complex II", fillcolor=forestgreen, style=filled]     
+           s [label="Succinate", fillcolor=grey, style=filled]     
+           nadh -> c1
+           c1 -> q 
+           q -> c3 
+           c3 -> cytc 	 
+           cytc -> c4
+           c4 -> h2o
+           c2 -> q
+           s -> c2
 
-\centering
-\tiny
-\ce{AcetylCoA + 3NAD+ + FAD + GDP + Pi + 2H2O -> 2CO2 + CoA + 3NADH + FADH2 + GTP + 2H+}
+           }    
+#+END_SRC
+
+#+RESULTS:
+[[file:./figures/etc.pdf]]
 
 *** COMMENT
-- release of energy via oxidation of acetly-CoA
-- one molecule of glucose breaks down into two molecules of pyruvate
-- Pyruvate is converted into acetyl-coenzyme A, which is the main
-  input for a series of reactions known as the Krebs cycle
-- Pyruvate is also converted to oxaloacetate by an anaplerotic
-  reaction, which replenishes Krebs cycle intermediates; also, the
-  oxaloacetate is used for gluconeogenesis
 
-** Disorders of the TCA cycle
+- Complex I (NADH coenzyme Q reductase) accepts electrons from the Krebs cycle electron carrier NADH
+- passes them to CoQ (ubiquinone; labeled Q),
+- CoQ also receives electrons from complex II (succinate dehydrogenase).
+- CoQ passes electrons to complex III (cytochrome bc1 complex; labeled III), which passes them to cytochrome c (cyt c).
+- Cyt c passes electrons to Complex IV (cytochrome c oxidase; labeled IV), which uses the electrons and hydrogen ions to reduce molecular oxygen to water. 
 
-- \alpha-Ketoglutarate Dehydrogenase Complex Deficiency
-- Succinate Dehydrogenase Deficiency
-- Fumarase Deficiency
+** Electron Transport Chain
+https://www.genome.jp/kegg-bin/show_pathway?hsa00190
 
-** Disorders of the TCA cycle
+** Complex I | NADH-ubiquinone oxidoreductase
+- catalyzes the transfer of electrons from NADH to coenzyme Q10
+  (CoQ10) and translocates protons across the inner mitochondrial
+  membrane
 
-#+ATTR_LaTeX: :width \textwidth
-[[file:./figures/TCA_disorders.png]]
+- Mechanism: 
+  1. Seven iron sulfur centers carry electrons from the site of NADH
+     dehydration to ubiquinone.
+
+  2. ubiquinone (CoQ) is reduced to ubiquinol (\ce{CoQH2}).
+
+  3. The energy from the redox reaction results in conformational
+     change allowing hydrogen ions to pass through four transmembrane
+     helix channels.
+
+#+BEGIN_SRC dot :file ./figures/c1.pdf :cmdline -Kdot -Tpdf
+  digraph {
+           // graph from left to right
+           rankdir=LR;
+           splines=true;
+           node [shape=box];
+           nadh [label="NADH", fillcolor=grey, style=filled]
+           fmn [label="FMN", fillcolor=forestgreen, style=filled]
+           n3 [label="N3", fillcolor=red3, style=filled]    
+           n1b [label="N1b", fillcolor=red3, style=filled]     
+           n4 [label="N4", fillcolor=red3, style=filled]     
+           n5 [label="N5", fillcolor=red3, style=filled]     
+           n6a [label="N6a", fillcolor=red3, style=filled]     
+           n6b [label="N6b", fillcolor=red3, style=filled]     
+           n2 [label="N2", fillcolor=red3, style=filled]     
+           q [label="Q", fillcolor=steelblue3, style=filled]     
+           nadh-> fmn
+           fmn -> n3
+           n3 -> n1b
+	       n1b -> n4
+           n4 -> n5 
+           n5 -> n6a
+           n6a -> n6b
+           n6b-> n2
+           n2 -> q
+           }    
+#+END_SRC
 
 
-** Disorders of the TCA cycle
+** Complex I | NADH-ubiquinone oxidoreductase
+https://upload.wikimedia.org/wikipedia/commons/4/42/NADH_Dehydrogenase_Mechanism_%28Fixed%29.png
 
-#+CAPTION[]: Model for a functional splitting of the Krebs cycle reactions into complementary mini-cycles.
-#+ATTR_LaTeX: :width 0.7\textwidth
-[[file:./figures/gr2.png]]
+** Complex I | NADH-ubiquinone oxidoreductase Inhibitors
 
-- Rustin, P., Bourgeron, T., Parfait, B., Chretien, D., Munnich, A., &
-  Rotig, A. (1997). Inborn errors of the Krebs cycle : a group of
-  unusual mitochondrial diseases in human, 185-197.
+- The best-known inhibitor of complex I is rotenone (commonly used as an organic pesticide).
+- Rotenone and rotenoids are isoflavonoids occurring in several genera of tropical plants such as Antonia (Loganiaceae), Derris and Lonchocarpus (Faboideae, Fabaceae).
+- Rotenone binds to the ubiquinone binding site of complex I as well as piericidin A, another potent inhibitor with a close structural homologue to ubiquinone.
+- Bullatacin (an acetogenin found in Asimina triloba fruit) is the most potent known inhibitor of NADH dehydrogenase (ubiquinone) (IC50=1.2 nM, stronger than rotenone).
 
-*** COMMENT
--uses aspartate-amino acid transferase
-The functioning of the first mini-cycle (A) would allow to convert
-pyruvate up to \alpha-KG, even when the second mini-cycle (B) does not
-function. This could account for the urinary excretion of \alpha-KG in
-patients presenting with defect of \alpha-KG, SDH or fumarase
-activity. Similarly, it could produce reduced equivalents to sustain
-the normal oxygen uptake measured in circulating lymphocytes or
-cultured skin fibroblast from these patients.
+- Hydrophobic inhibitors like rotenone or piericidin most likely disrupt the electron transfer between the terminal FeS cluster N2 and ubiquinone.
 
-* \alpha-ketoglutarate Dehydrogenase Complex Deficiency
-** \alpha-ketoglutarate Dehydrogenase Complex Deficiency
+- Complex I is also blocked by adenosine diphosphate ribose – a reversible competitive inhibitor of NADH oxidation – by binding to the enzyme at the nucleotide binding site.[39] Both hydrophilic NADH and hydrophobic ubiquinone analogs act at the beginning and the end of the internal electron-transport pathway, respectively.
 
-#+ATTR_LaTeX: :width 0.9\textwidth
-[[file:./figures/kgdh.png]]
+- Metformin has been shown to induce a mild and transient inhibition of the mitochondrial respiratory chain complex I, and this inhibition appears to play a key role in its mechanism of action.
 
-** \alpha-ketoglutarate Dehydrogenase Complex
-- KDHC is a \alpha-ketoacid dehydrogenase analogous to PDHC and BCKD.
+- Inhibition of complex I has been implicated in hepatotoxicity associated with a variety of drugs, for instance flutamide and nefazodone.
 
-\ce{\alpha-ketoglutarate + NAD+ + CoA ->[KDHC] Succinyl CoA + CO2 + NADH}
-
-
-| Unit | Name                               | Gene | Cofactor                    |
-|------+------------------------------------+------+-----------------------------|
-| E1   | \alpha-ketoglutarate dehydrogenase | OGDH | thiamine pyrophosphate(TPP) |
-| E2   | dihydrolipoyl succinyltransferase  | DLST | lipoic acid, Coenzyme A     |
-| E3   | dihydrolipoyl dehydrogenase        | DLD  | FAD, NAD                    |
-
-*** COMMENT 
-- E1 subunit is the thiamine dependant substrate specific dehydrogenase
-  - Not regulated by phosphorylation.
-- E2 subunit dihydrolipyoyl succinyl-transferase is also specific to KDHC
-
-** Clinical Presentation
-- Similar to PDHC
-- Developmental delay, hypotonia, opisthotonos and ataxia
-  - seizures less common
-- Present as neonate and early childhood
-
-** Genetics
-- AR inheritence, encoded by nuclear DNA
-- E1 gene mapped to 7p13
-- E2 gene mapped to 14q24.3
-- Molecular basis of KDHC deficiencies is not resolved.
-
-- \alpha-ketoglutarate dehydrogenase deficiency is sometimes a feature of DLD deficiency
-
-** Diagnostic Tests
-- Urine organic acids
-  - \uparrow \alpha-KGA, \pm other TCA intermediates
-  - \alpha-KGA is a common finding, not specific for KDHC deficiency
-- Blood lactate
-  - Normal or increased L/P
-- KDHC activity
-  - \ce{^14CO2} release from \ce{[1-^14C]} \alpha-ketoglutarate (or \ce{[1-^14C]} leucine)
-  - cultured skin fibroblasts
-  - muscle
-
-** Treatment
-- None to date
-
-* Succinate Dehydrogenase Deficiency
-
-** Succinate Dehydrogenase Deficiency
-
-#+ATTR_LaTeX: :width 0.9\textwidth
-[[file:./figures/sdh.png]]
-
-** Succinate Dehydrogenase | Complex II
+**  Complex II | Succinate Dehydrogenase 
 - Four subunits compose Complex II of the mitochondrial respiratory chain
 
 | Subunit name | Protein description                                |
@@ -191,129 +199,136 @@ cultured skin fibroblast from these patients.
 - The SdhA subunit contains an FAD binding site where succinate
   is deprotonated and converted to fumarate.
 
-succinate + ubiquinone \to fumarate + ubiquinol
+\ce{succinate + ubiquinone ->[CII] fumarate + ubiquinol}
 
 - Electrons removed from succinate transfer to SdhA
 - transfer across SdhB through iron sulphur clusters to the SdhC/SdhD subunits
   - SdhC/SdhD are anchored in the mitochondrial membrane.
 
-** Succinate Dehydrogenase | Complex II
-
+**  Complex II | Succinate Dehydrogenase 
 #+ATTR_LaTeX: :width 0.9\textwidth
 [[file:./figures/SuccDeh.png]]
 
+** Complex III | Coenzyme Q – cytochrome c reductase
 
-** Clinical Presentation
-- Very rare disorder with highly variable phenotype
-- Complex II is part of the TCA cycle and ETC
-  - phenotype resembles defects in respiratory chain
-- Clinical picture can include:
-  - Kearns-Sayre syndrome
-  - isolated hypertrophic cardiomyopathy
-  - combined cardiac and skeletal myopathy
-  - generalized muscle weakness, \uparrow fatiguability
-  - early onset Leigh encephalopathy
-- Also:
-  - cerebral ataxia
-  - optic atropy
-  - tumour formation in adults
+- Complex III is a multisubunit transmembrane protein encoded by both
+  the mitochondrial (cytochrome b) and the nuclear genomes (all other
+  subunits)
 
-** Genetics
+- The bc1 complex contains 11 subunits:
+  - 3 respiratory subunits (cytochrome B, cytochrome C1, Rieske protein)
+  - 2 core proteins
+  - 6 low-molecular weight proteins
 
-- All components of Complex II are encoded by nuclear DNA.
-
-| Gene | Location |
-|------+----------|
-| SDHA | 5p15.33  |
-| SDHB | 1p36.13  |
-| SDHC | 1q23.3   |
-| SDHD | 11q23.1  |
+QH_2 + 2 cytochrome c (Fe^{3+}) + 2 H^{+}_{in} \to  Q + 2 cytochrome c (Fe^{2+}) + 4 H^{+}_{out}
 
 
-- AR with highly variable phenotype
-- Case of affected sisters with one identified SDHA mutation suggested
-  dominant transmission
-- Mutations in SDHB, SDHC and SDHD cause susceptibility to familial
-  phaeochromocytoma and familial paraganglioma.
+*** COMMENT Mechanism 
+- Round 1:
+    - Cytochrome b binds a ubiquinol and a ubiquinone.
+    - The 2Fe/2S center and BL heme each pull an electron off the bound ubiquinol, releasing two hydrogens into the intermembrane space.
+    - One electron is transferred to cytochrome c1 from the 2Fe/2S centre, whilst another is transferred from the BL heme to the BH Heme.
+    - Cytochrome c1 transfers its electron to cytochrome c (not to be confused with cytochrome c1), and the BH Heme transfers its electron to a nearby ubiquinone, resulting in the formation of a ubisemiquinone.
+    - Cytochrome c diffuses. The first ubiquinol (now oxidised to ubiquinone) is released, whilst the semiquinone remains bound.
 
-** Diagnostic Tests
-- Unlike other TCA cycle disorders Complex II deficiency does not always
-  result in characteristic organic aciduria
-  - succinic aciduria.
-- Organic acids can show variable amounts of lactate, pyruvate, succinate, fumarate and malate
+- Round 2:
+    - A second ubiquinol is bound by cytochrome b.
+    - The 2Fe/2S center and BL heme each pull an electron off the bound ubiquinol, releasing two hydrogens into the intermembrane space.
+    - One electron is transferred to cytochrome c1 from the 2Fe/2S centre, whilst another is transferred from the BL heme to the BH Heme.
+    - Cytocrome c1 then transfers its electron to cytochrome c, whilst the nearby semiquinone produced from round 1 picks up a second electron from the BH heme, along with two protons from the matrix.
+    - The second ubiquinol (now oxidised to ubiquinone), along with the newly formed ubiquinol are released.[8]
 
-** Diagnostic Tests
-- Measurement of complex II activity in muscle is the most reliable
-  means of diagnosis
-  - there is no clear correlation between residual complex II activity
-    and severity or clinical outcome.
 
-#+CAPTION[]:Coupled spectrophotometric assay
-#+NAME: fig:
-#+ATTR_LaTeX: :width 0.9\textwidth
-[[file:./figures/gr4.jpg]]
 
-** Treatment 
+** Complex III | Coenzyme Q – cytochrome c reductase
+https://upload.wikimedia.org/wikipedia/commons/e/e2/Complex_III.png
 
-- In some cases, treatment with riboflavin may have clinical benefit
+** Complex III | Coenzyme Q – cytochrome c reductase Inhibitors
 
-* Fumarase Deficiency
-** Fumarase Deficiency
+- There are three distinct groups of Complex III inhibitors:
+  - Antimycin A binds to the Q_i site and inhibits the transfer of electrons in Complex III from heme b_H to oxidized Q (Q_i site inhibitor).
+  - Myxothiazol and stigmatellin binds to the Q_o site and inhibits the transfer of electrons from reduced QH_2 to the Rieske Iron sulfur protein.
+    - Myxothiazol and stigmatellin bind to distinct but overlapping pockets within the Q_o site.
+    - Myxothiazol binds nearer to cytochrome bL (hence termed a "proximal" inhibitor).
+    - Stigmatellin binds farther from heme bL and nearer the Rieske Iron sulfur protein, with which it strongly interacts.
 
-#+ATTR_LaTeX: :width 0.9\textwidth
-[[file:./figures/fumarase.png]]
+** Complex IV | Cytochrome c oxidase
 
-** Fumarase 
-- Fumarase catalyses reversible hydration/dehydration of fumarate to malate
-- Two forms: mitochondrial and cytosolic.
-  - The mitochondrial isoenzyme is involved in the TCA Cycle
-  - The cytosolic isoenzyme is involved in the metabolism of amino acids and fumarate.
-- Subcellular localization is established by the presence/absence of an N-terminal mitochondrial signal
-  sequence
-- Deficiency causes impaired energy production
+- last enzyme in the respiratory electron transport chain.
+- large IMM integral membrane protein composed of several metal prosthetic sites and 14 protein subunits.
+- eleven subunits are nuclear in origin, and three are synthesized in the mitochondria. 
+  - contains two hemes,
+  - cytochrome a and cytochrome a3,
+  - two copper centers, CuA and CuB
+- the cytochrome a3 and CuB form a binuclear center that is the site of oxygen reduction.
 
-** Clinical Presentation
-- Characterized by polyhydramnios and fetal brain abnormalities.
-- In the newborn period, findings include:
-  - severe neurologic abnormalities,
-  - poor feeding,
-  - failure to thrive
-  - hypotonia.
+- receives an electron from four cytochrome c molecules and transfers them to one dioxygen molecule
+  - converting the molecular oxygen to two molecules of water.
+  - In the process binds four protons from the inner aqueous phase
+    to make two water molecules, and translocates another four protons
+    across the membrane, increasing the transmembrane difference of
+    proton electrochemical potential which the ATP synthase then uses to
+    synthesize ATP.
 
-- Fumarase deficiency is suspected in infants with multiple severe
-  neurologic abnormalities in the absence of an acute metabolic
-  crisis.
+4 Fe^{2+}-cytochrome c + 8 H^{+}_{in} + O_2 \to  4 Fe^{3+}-cytochrome c + 2H_{2}O + 4 H^{+}_{out}
 
-- Inactivity of both cytosolic and mitochondrial forms of
-  fumarase are potential causes.
 
-** Genetics
+** Complex IV | Cytochrome c oxidase Inhibitors
 
-- AR inheritance, encoded by nuclear DNA
-- Single gene and mRNA encode mito and cyto isoforms
+- Cyanide, azide, and carbon monoxide all bind to cytochrome c
+  oxidase 
 
-** Diagnostic Tests
+- Nitric oxide and hydrogen sulfide, can also inhibit COX by
+  binding to regulatory sites on the enzyme
 
-- Isolated, increased concentration of fumaric acid on urine organic
-  acid analysis is highly suggestive of fumarase deficiency.
-  - Succinate, \alpha-KGA can also be elevated
-- Molecular genetic testing for fumarase deficiency is currently available
+**  Complex V | ATP synthase 
+- formation of ATP from ADP and Pi is energetically unfavorable
+- ATP synthase couples ATP synthesis to an electrochemical gradient (\Delta\Psi{}M).
 
-* COMMENT Isocitrate Dehydrogenase
-** Isocitrate Dehydrogenase
-- IDH exists in three isoforms:
-  - IDH3 catalyzes the third step of the citric acid cycle while converting \ce{NAD+} to NADH in the mitochondria.
+#+NAME: fig:atps
+#+ATTR_LaTeX: :width 0.5\textwidth
+[[file:./figures/atp_synthase.jpg]]
 
-\ce{isocitrate + NAD+ ->[IHD3] \alpha-ketoglutarate + CO2 + NADH + H+}
+\centering
+#+BEGIN_EXPORT LaTeX
+\ce{ADP + Pi + H+_{out} <=> ATP + H2O + H+_{in}}
+#+END_EXPORT
 
-  - IDH1 and IDH2 catalyze the same reaction outside TCA cycle and use \ce{NADP+} as a cofactor.
-    - They localize to the cytosol as well as the mitochondrion and peroxisome.
+*** COMMENT
+Simplified picture of ATP syntase The Fo part through which hydrogen
+ions (H+) stream is located in the membrane. The F1 part which
+synthesises ATP is outside the membrane. When the hydrogen ions flow
+through the membrane via the disc of c subunits in the Fo part, the
+disc is forced to twist around. The gamma subunit in the F1 part is
+attached to the disc and therefore rotates with it. The three alpha
+and three beta subunits in the F1 part cannot rotate, however. They
+are locked in a fixed position by the b subunit. This in turn is
+anchored in the membrane. Thus the gamma subunit rotates inside the
+cylinder formed by the six alpha and beta subunits. Since the gamma
+subunit is asymmetrical it compels the beta subunits to undergo
+structural changes. This leads to the beta subunits binding ATP and
+ADP with differing strengths (see Figure 2).
 
-\ce{isocitrate + NADP+ ->[IHD1/2] \alpha-ketoglutarate + CO2 + NADPH + H+}
 
-** Clinical relevance
+Figure 2. Boyer’s “Binding Change Mechanism” The picture shows the
+cylinder with alternating alpha and beta subunits at four different
+stages of ATP synthesis. The asymmetrical gamma subunit that causes
+changes in the structure of the beta subunits can be seen in the
+centre. The structures are termed open betaO (light grey sector),
+loose betaL (grey sector) and tight betaT (black sector). At stage A
+we see an already-fully-formed ATP molecule bound to betaT. In the
+step to stage B betaL binds ADP and inorganic phosphate (Pi ). At the
+next stage, C, we see how the gamma subunit has twisted due to the
+flow of hydrogen ions (see Figure 1). This brings about changes in the
+structure of the three beta subunits. The tight beta subunit now
+becomes open and the bound ATP molecule is released. The loose beta
+subunit becomes tight and the open becomes loose. In the last stage
+the chemical reaction takes place in which phosphate ions react with
+the ADP molecule to form a new ATP molecule. We are back at the first
+stage.
 
-- IDH3 deficiency is associated with retinitis pigmentosa
-- IDH1/2 mutations linked to malignant gliomas and acute myeloid leukemia
+#+CAPTION[rotation]:Boyer's Binding Change Mechanism
+#+NAME: fig:rot
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/pressfig2.gif]]
 
-- Mutations in IDH2 identified in half of patients 
