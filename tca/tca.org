@@ -202,7 +202,6 @@ succinate + ubiquinone \to fumarate + ubiquinol
 #+ATTR_LaTeX: :width 0.9\textwidth
 [[file:./figures/SuccDeh.png]]
 
-
 ** Clinical Presentation
 - Very rare disorder with highly variable phenotype
 - Complex II is part of the TCA cycle and ETC
