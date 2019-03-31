@@ -38,7 +38,7 @@
 #+BEGIN_EXPORT LaTeX
 %\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
 %    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
-%}
+%}n
 
 \vspace{220pt}
 \beamertemplatenavigationsymbolsempty
@@ -54,24 +54,20 @@
 ** ETC and OxPhos system
 - Responsible for ATP production
 - ETC complexes I-IV
-  - There are three energy-transducing enzymes in the electron transport chain - NADH:ubiquinone oxidoreductase (complex I), Coenzyme Q – cytochrome c reductase (complex III), and cytochrome c oxidase (complex IV).[
 - OxPhos system complexes I-V
-- IMM proteins
-*** chemiosmotic coupling hypothesis
- - chemiosmotic coupling hypothesis, proposed by Nobel Prize in Chemistry winner Peter D. Mitchell,
- - the electron transport chain and oxidative phosphorylation are coupled by a proton gradient across the inner mitochondrial membrane.
- - The efflux of protons from the mitochondrial matrix creates an electrochemical gradient (proton gradient).
- - This gradient is used by the F_{O}F_{1} ATP synthase complex to make ATP via oxidative phosphorylation.
- - ATP synthase is sometimes described as Complex V of the electron transport chain
+*** Chemiosmotic Coupling Hypothesis
+ - proposed by Nobel Prize in Chemistry winner Peter D. Mitchell
+ - the ETC and OxPhos are coupled by a proton gradient across the IMM.
+ - The efflux of protons from the mitochondrial matrix creates an electrochemical gradient.
+   - used by the F_{O}F_{1} ATP synthase complex to make ATP via oxidative phosphorylation.
 
 https://upload.wikimedia.org/wikipedia/commons/8/89/Mitochondrial_electron_transport_chain%E2%80%94Etc4.svg
 
 https://upload.wikimedia.org/wikipedia/commons/1/18/Mitochondrial_electron_transport_chain_%28annotated_diagram%29.svg
 
 ** Electron Transport Chain
-- Energy obtained through the transfer of electrons down the ETC is
-  used to pump protons from the mitochondrial matrix into the
-  intermembrane space
+- Energy from transfer of electrons down the ETC is used to pump
+  protons from the mitochondrial matrix into the intermembrane space.
   - creates an electrochemical proton gradient (\Delta{}pH) across the IMM.
     - largely responsible for the mitochondrial membrane potential (\Delta\Psi{}M).
   - ATP synthase uses flow of \ce{H+} through the enzyme back into the
@@ -87,7 +83,7 @@ https://upload.wikimedia.org/wikipedia/commons/1/18/Mitochondrial_electron_trans
            // graph from left to right
            rankdir=LR;
            splines=true;
-           node [shape=box];
+           node [shape=oval];
            nadh [label="NADH+H", fillcolor=grey, style=filled]
            c1 [label="Complex I", fillcolor=steelblue3, style=filled]
            q [label="CoQ", fillcolor=red3, style=filled]    
@@ -131,6 +127,13 @@ https://upload.wikimedia.org/wikipedia/commons/1/1a/Ubiquinone%E2%80%93ubiquinol
   (CoQ10) and translocates protons across the inner mitochondrial
   membrane
 
+#+BEGIN_EXPORT LaTeX
+\centering
+\small
+\ce{NADH + H+ + CoQ + 4H^{+}_{in} ->[CI] NAD+ + CoQH2 + 4H^{+}_{out}}
+#+END_EXPORT
+
+
 - Mechanism: 
   1. Seven iron sulfur centers carry electrons from the site of NADH
      dehydration to ubiquinone.
@@ -146,7 +149,7 @@ https://upload.wikimedia.org/wikipedia/commons/1/1a/Ubiquinone%E2%80%93ubiquinol
            // graph from left to right
            rankdir=LR;
            splines=true;
-           node [shape=box];
+           node [shape=circle];
            nadh [label="NADH", fillcolor=grey, style=filled]
            fmn [label="FMN", fillcolor=forestgreen, style=filled]
            n3 [label="N3", fillcolor=red3, style=filled]    
@@ -175,18 +178,13 @@ https://upload.wikimedia.org/wikipedia/commons/4/42/NADH_Dehydrogenase_Mechanism
 https://upload.wikimedia.org/wikipedia/commons/4/42/Complex_I.svg
 ** Complex I Inhibitors
 
-- The best-known inhibitor of complex I is rotenone (commonly used as an organic pesticide).
-- Rotenone and rotenoids are isoflavonoids occurring in several genera of tropical plants such as Antonia (Loganiaceae), Derris and Lonchocarpus (Faboideae, Fabaceae).
-- Rotenone binds to the ubiquinone binding site of complex I as well as piericidin A, another potent inhibitor with a close structural homologue to ubiquinone.
-- Bullatacin (an acetogenin found in Asimina triloba fruit) is the most potent known inhibitor of NADH dehydrogenase (ubiquinone) (IC50=1.2 nM, stronger than rotenone).
-
-- Hydrophobic inhibitors like rotenone or piericidin most likely disrupt the electron transfer between the terminal FeS cluster N2 and ubiquinone.
-
-- Complex I is also blocked by adenosine diphosphate ribose – a reversible competitive inhibitor of NADH oxidation – by binding to the enzyme at the nucleotide binding site.[39] Both hydrophilic NADH and hydrophobic ubiquinone analogs act at the beginning and the end of the internal electron-transport pathway, respectively.
-
-- Metformin has been shown to induce a mild and transient inhibition of the mitochondrial respiratory chain complex I, and this inhibition appears to play a key role in its mechanism of action.
-
-- Inhibition of complex I has been implicated in hepatotoxicity associated with a variety of drugs, for instance flutamide and nefazodone.
+- The best-known inhibitor of complex I is rotenone
+  - commonly used as an organic pesticide
+- Rotenone binds to the ubiquinone binding site of complex I
+  -  piericidin A a potent inhibitor and structural homologue to ubiquinone.
+- Hydrophobic inhibitors like rotenone or piericidin likely disrupt electron transfer between FeS cluster N2 and ubiquinone.
+- Bullatacin is the most potent known inhibitor of NADH dehydrogenase (ubiquinone)
+- Complex I is also blocked by adenosine diphosphate ribose – a reversible competitive inhibitor of NADH oxidation
 
 * Complex II
 ** Complex II | Succinate Dehydrogenase 
@@ -202,7 +200,10 @@ https://upload.wikimedia.org/wikipedia/commons/4/42/Complex_I.svg
 - The SdhA subunit contains an FAD binding site where succinate
   is deprotonated and converted to fumarate.
 
+#+BEGIN_EXPORT LaTeX
+\centering
 \ce{succinate + ubiquinone ->[CII] fumarate + ubiquinol}
+#+END_EXPORT
 
 - Electrons removed from succinate transfer to SdhA
 - transfer across SdhB through iron sulphur clusters to the SdhC/SdhD subunits
@@ -217,7 +218,7 @@ https://upload.wikimedia.org/wikipedia/commons/1/11/Complex_II.svg
 ** Complex II Inhibitors
 
 - There are two distinct classes of inhibitors of complex II:
-- those that bind in the succinate pocket and those that bind in the ubiquinone pocket.
+  - those that bind in the succinate pocket and those that bind in the ubiquinone pocket.
 - Ubiquinone type inhibitors include carboxin and thenoyltrifluoroacetone.
 - Succinate-analogue inhibitors include the synthetic compound malonate as well as the TCA cycle intermediates, malate and oxaloacetate.
   - oxaloacetate is one of the most potent inhibitors of Complex II. 
@@ -225,8 +226,8 @@ https://upload.wikimedia.org/wikipedia/commons/1/11/Complex_II.svg
 * Complex III
 ** Complex III | Coenzyme Q – cytochrome c reductase
 
-- Complex III is a multisubunit transmembrane protein encoded by both
-  the mitochondrial (cytochrome b) and the nuclear genomes (all other
+- Complex III is a multi-subunit transmembrane protein encoded by both
+  mitochondrial (cytochrome b) and the nuclear genomes (all other
   subunits)
 
 - The bc1 complex contains 11 subunits:
@@ -234,8 +235,11 @@ https://upload.wikimedia.org/wikipedia/commons/1/11/Complex_II.svg
   - 2 core proteins
   - 6 low-molecular weight proteins
 
-QH_2 + 2 cytochrome c (Fe^{3+}) + 2 H^{+}_{in} \to  Q + 2 cytochrome c (Fe^{2+}) + 4 H^{+}_{out}
-
+#+BEGIN_EXPORT LaTeX
+\centering
+\small
+\ce{QH2 + 2Fe^{3+}-cyt c + 2H+_{in} ->[CIII]  Q + 2Fe^{2+}-cyt c + 4H+_{out}}
+#+END_EXPORT
 
 *** COMMENT Mechanism 
 - Round 1:
@@ -261,10 +265,10 @@ https://upload.wikimedia.org/wikipedia/commons/1/10/Complex_III_reaction.svg
 
 - There are three distinct groups of Complex III inhibitors:
   - Antimycin A binds to the Q_i site and inhibits the transfer of electrons in Complex III from heme b_H to oxidized Q (Q_i site inhibitor).
-  - Myxothiazol and stigmatellin binds to the Q_o site and inhibits the transfer of electrons from reduced QH_2 to the Rieske Iron sulfur protein.
-    - Myxothiazol and stigmatellin bind to distinct but overlapping pockets within the Q_o site.
+  - Myxothiazol and stigmatellin bind to distinct but overlapping pockets within the Q_o site.
     - Myxothiazol binds nearer to cytochrome bL (hence termed a "proximal" inhibitor).
-    - Stigmatellin binds farther from heme bL and nearer the Rieske Iron sulfur protein, with which it strongly interacts.
+    - Stigmatellin binds farther from heme bL and nearer the Rieske Iron sulfur protein.
+    - Both inhibit the transfer of electrons from reduced QH_2 to the Rieske Iron sulfur protein.
 
 * Complex IV
 ** Complex IV | Cytochrome c oxidase
@@ -276,16 +280,21 @@ https://upload.wikimedia.org/wikipedia/commons/1/10/Complex_III_reaction.svg
   - cytochrome a and cytochrome a3,
   - two copper centers, CuA and CuB
 - the cytochrome a3 and CuB form a binuclear center that is the site of oxygen reduction.
-
 - receives an electron from four cytochrome c molecules and transfers them to one dioxygen molecule
   - converting the molecular oxygen to two molecules of water.
-  - In the process binds four protons from the inner aqueous phase
-    to make two water molecules, and translocates another four protons
-    across the membrane, increasing the transmembrane difference of
-    proton electrochemical potential which the ATP synthase then uses to
-    synthesize ATP.
+ 
+#+BEGIN_EXPORT LaTeX
+\centering
+\small
+\ce{4Fe^{2+}-cyt c + 8H+_{in} + O2 ->[CIV] 4Fe^{3+}-cyt c + 2H2O + 4H+_{out}}
+#+END_EXPORT
 
-4 Fe^{2+}-cytochrome c + 8 H^{+}_{in} + O_2 \to  4 Fe^{3+}-cytochrome c + 2H_{2}O + 4 H^{+}_{out}
+*** COMMENT
+- In the process binds four protons from the inner aqueous phase to
+  make two water molecules, and translocates another four protons
+  across the membrane, increasing the transmembrane difference of
+  proton electrochemical potential which the ATP synthase then uses to
+  synthesize ATP.
 
 ** Complex IV | Cytochrome c oxidase
 
@@ -307,15 +316,18 @@ https://upload.wikimedia.org/wikipedia/commons/0/06/Complex_IV.svg
 
 - The overall reaction catalyzed by ATP synthase is:
 
-   ADP + P_i + H^{+}_out -> ATP + H2O + H^{+}_{in}
+#+BEGIN_EXPORT LaTeX
+\centering
+  \ce{ADP + P_i + H+_{out} <=> ATP + H2O + H+_{in}}
+#+END_EXPORT
 
-- The formation of ATP from ADP and P_{i} is energetically unfavorable
-  and would normally proceed in the reverse direction. 
 
-- In order to drive this reaction forward, ATP synthase couples ATP synthesis
-  during cellular respiration to an electrochemical gradient created
-  by the difference in proton (H+) concentration across the
-  mitochondrial membrane.
+- Formation of ATP from ADP and P_{i} is energetically unfavourable
+  - would normally proceed in the reverse direction. 
+
+- To drive this reaction forward, ATP synthase couples ATP synthesis
+  to the electrochemical gradient (\Delta\Psi{}M) created by complexes
+  I,III and IV
 
 - ATP synthase consists of two main subunits, FO and F1, which has a
   rotational motor mechanism allowing for ATP production.
@@ -353,41 +365,108 @@ the chemical reaction takes place in which phosphate ions react with
 the ADP molecule to form a new ATP molecule. We are back at the first
 stage.
 
-#+CAPTION[rotation]:Boyer's Binding Change Mechanism
-#+NAME: fig:rot
-#+ATTR_LaTeX: :width 0.8\textwidth
-[[file:./figures/pressfig2.gif]]
 
 ** Complex V | ATP synthase 
-- formation of ATP from ADP and Pi is energetically unfavorable
-- ATP synthase couples ATP synthesis to an electrochemical gradient (\Delta\Psi{}M).
 
 #+NAME: fig:atps
 #+ATTR_LaTeX: :width 0.5\textwidth
 [[file:./figures/atp_synthase.jpg]]
 
-\centering
+
 #+BEGIN_EXPORT LaTeX
+\centering
 \ce{ADP + Pi + H+_{out} <=> ATP + H2O + H+_{in}}
 #+END_EXPORT
-*
+
 
 ** Complex V Inhibitors
 
 
-- Oligomycin A is an inhibitor of ATP synthase.
-- used to prevent state 3 (phosphorylating) respiration.
 - Oligomycin A inhibits ATP synthase by blocking its proton channel
   (Fo subunit), which is necessary for oxidative phosphorylation of
   ADP to ATP (energy production).
 - The inhibition of ATP synthesis by oligomycin A will significantly
   reduce electron flow through the electron transport chain; however,
   electron flow is not stopped completely due to a process known as
-  proton leak or mitochondrial uncoupling.[1]
-- This process is due to facilitated diffusion of protons into the
-  mitochondrial matrix through an uncoupling protein such as
-  thermogenin, or UCP1.
+  proton leak or mitochondrial uncoupling.
+  - This process is due to facilitated diffusion of protons into the
+    mitochondrial matrix through an uncoupling protein such as
+    thermogenin, or UCP1.
 
-- Administering oligomycin to an individual can result in very high levels of lactate accumulating in the blood and urine.
+- Administering oligomycin to an individual can result in very high
+  levels of lactate accumulating in the blood and urine.
+
+* Metabolic Derangement
+
+** Anaerobic Glycolysis
+- Complex V harnesses the proton gradient created by Complexes I, III, and IV
+  - produces the majority of cellular ATP
+- Insufficient ATP severely affects highly energy dependant tissues
+  - A complete loss of OxPhos is not observed in human disease.
+- In the absence of OxPhos cells survive using ATP from anaerobic glycolysis
+  - 20x less efficient, generates lactate
+  - pyruvate \to alanine if glutamate is available 
+- Lactate, pyruvate and alanine are the typical products of anaerobic glycolysis
 
 
+** Factors Affecting OxPhos System
+
+- ~ 90 subunits
+  - 13 subunits of Complexes I, III, IV and V encoded by mtDNA
+- mitochondrial replication, transcription and translation
+  - require \gt 200 proteins, rRNAs and tRNAs
+- Cofactors: coenzyme Q_{10}, iron-sulfur clusters, heme, copper
+  - require synthesis and/or transport to OxPhos system
+- Cardiolipin required for cristae formation
+- Mitochondrial function
+  - protein import, turnover
+  - fission, fusion
+- Toxic metabolites
+
+- \gt 1500 proteins in the human mitochondrial proteome
+  - other additional factors - lipids, cofactors
+  - up to 10% of human proteome may be involved in mitochondria 
+
+** Types of genetic defects and affected systems
+
+*** Classes of Defect                                               :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+**** Type of Defect
+- OxPhos Subunit
+- Assembly Factor
+- mtDNA replication
+- mtDNA transcription
+- mitochondrial transcription
+- cofactor
+- mitochondrial homeostasis
+- inhibitor
+
+*** Affected Systems                                                :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+\small
+**** Affected Systems
+- Leigh syndrome
+- Epilepsy
+- Leukodystropy
+- Eye
+- Deafness
+- Cardiac disease
+- Pulmonary disease
+- GI disease
+- Pancreas endocrine/exocrine
+- Liver disease
+- Kidney
+- Endocrine
+- Ovarian failure
+- Hematological
+- Myopathy
+- Periperal neuropathy
+
+
+** Next talk
+
+- ETC and OxPhos defects
