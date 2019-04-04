@@ -61,10 +61,6 @@
  - The efflux of protons from the mitochondrial matrix creates an electrochemical gradient.
    - used by the F_{O}F_{1} ATP synthase complex to make ATP via oxidative phosphorylation.
 
-https://upload.wikimedia.org/wikipedia/commons/8/89/Mitochondrial_electron_transport_chain%E2%80%94Etc4.svg
-
-https://upload.wikimedia.org/wikipedia/commons/1/18/Mitochondrial_electron_transport_chain_%28annotated_diagram%29.svg
-
 ** Electron Transport Chain
 - Energy from transfer of electrons down the ETC is used to pump
   protons from the mitochondrial matrix into the intermembrane space.
@@ -77,6 +73,7 @@ https://upload.wikimedia.org/wikipedia/commons/1/18/Mitochondrial_electron_trans
   - NADH:ubiquinone oxidoreductase (complex I)
   - Coenzyme Q – cytochrome c reductase (complex III)
   - cytochrome c oxidase (complex IV).
+  - also ETF-QO and mitochondrial GPD
 
 #+BEGIN_SRC dot :file ./figures/etc.pdf :cmdline -Kdot -Tpdf
   digraph {
@@ -84,24 +81,33 @@ https://upload.wikimedia.org/wikipedia/commons/1/18/Mitochondrial_electron_trans
            rankdir=LR;
            splines=true;
            node [shape=oval];
-           nadh [label="NADH+H", fillcolor=grey, style=filled]
-           c1 [label="Complex I", fillcolor=steelblue3, style=filled]
-           q [label="CoQ", fillcolor=red3, style=filled]    
-           c3 [label="Complex III", fillcolor=steelblue3, style=filled]     
-           cytc [label="Cytochrome C", fillcolor=red3, style=filled]     
-           c4 [label="Complex IV", fillcolor=steelblue3, style=filled]     
-           h2o [label="H2O", fillcolor=grey, style=filled]     
-           c2 [label="Complex II", fillcolor=forestgreen, style=filled]     
-           s [label="Succinate", fillcolor=grey, style=filled]     
-           nadh -> c1
-           c1 -> q 
-           q -> c3 
-           c3 -> cytc 	 
-           cytc -> c4
-           c4 -> h2o
-           c2 -> q
-           s -> c2
-
+           fadh [label="FADH2", fillcolor=grey, style=filled];
+           etf[label="ETF", fillcolor=steelblue3, style=filled];
+           etfd[label="ETF-QO", fillcolor=steelblue3, style=filled];
+	       g3p[label="glycerol-3-phosphate", fillcolor=grey, style=filled];
+           gpd[label="GPD", fillcolor=steelblue3, style=filled];
+           nadh [label="NADH", fillcolor=grey, style=filled];
+           c1 [label="Complex I", fillcolor=steelblue3, style=filled];
+           q [label="CoQ", fillcolor=red3, style=filled];    
+           c3 [label="Complex III", fillcolor=steelblue3, style=filled];     
+           cytc [label="Cytochrome C", fillcolor=red3, style=filled];     
+           c4 [label="Complex IV", fillcolor=steelblue3, style=filled];     
+           h2o [label="H2O", fillcolor=grey, style=filled];     
+           c2 [label="Complex II", fillcolor=steelblue3, style=filled];     
+           s [label="succinate", fillcolor=grey, style=filled];     
+           fadh -> etf; 
+           etf -> etfd;
+           etfd -> q;
+           g3p -> gpd;
+           gpd -> q;
+           nadh -> c1;
+           c1 -> q;
+           q -> c3;
+           c3 -> cytc; 	 
+           cytc -> c4;
+           c4 -> h2o;
+           c2 -> q;
+           s -> c2;
            }    
 #+END_SRC
 
@@ -116,10 +122,26 @@ https://upload.wikimedia.org/wikipedia/commons/1/18/Mitochondrial_electron_trans
 - CoQ passes electrons to complex III (cytochrome bc1 complex; labeled III), which passes them to cytochrome c (cyt c).
 - Cyt c passes electrons to Complex IV (cytochrome c oxidase; labeled IV), which uses the electrons and hydrogen ions to reduce molecular oxygen to water. 
 
-** Electron Transport Chain
-https://www.genome.jp/kegg-bin/show_pathway?hsa00190
+** Oxidative Phosphorylation
 
-https://upload.wikimedia.org/wikipedia/commons/1/1a/Ubiquinone%E2%80%93ubiquinol_conversion.svg
+#+CAPTION[ETC]: Oxidative Phosphorylation, KEGG
+#+NAME: fig:oxpho
+#+ATTR_LaTeX: :width 0.9\textwidth
+[[file:./figures/hsa00190.png]]
+
+** Mega- Complex
+
+#+CAPTION[ETC mega complex]:ETC Mega Complex
+#+NAME: fig:mega
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/etc_supercomplex.jpg]]
+
+** Redox Potential and Free Energy in ETC
+
+#+CAPTION[redox]:Electron flow to O_2 and release free energy
+#+NAME: fig:redox
+#+ATTR_LaTeX: :width 0.9\textwidth
+[[file:./figures/potential.png]]
 
 * Complex I
 ** Complex I | NADH-ubiquinone oxidoreductase
@@ -173,9 +195,14 @@ https://upload.wikimedia.org/wikipedia/commons/1/1a/Ubiquinone%E2%80%93ubiquinol
 #+END_SRC
 
 ** Complex I | NADH-ubiquinone oxidoreductase
-https://upload.wikimedia.org/wikipedia/commons/4/42/NADH_Dehydrogenase_Mechanism_%28Fixed%29.png
+#+CAPTION[c1]:Complex I
+#+NAME: fig:c1
+#+ATTR_LaTeX: :width 0.9\textwidth
+[[file:./figures/CI.png]]
 
-https://upload.wikimedia.org/wikipedia/commons/4/42/Complex_I.svg
+# https://upload.wikimedia.org/wikipedia/commons/4/42/NADH_Dehydrogenase_Mechanism_%28Fixed%29.png
+
+# https://upload.wikimedia.org/wikipedia/commons/4/42/Complex_I.svg
 ** Complex I Inhibitors
 
 - The best-known inhibitor of complex I is rotenone
@@ -210,10 +237,11 @@ https://upload.wikimedia.org/wikipedia/commons/4/42/Complex_I.svg
   - SdhC/SdhD are anchored in the mitochondrial membrane.
 
 ** Complex II | Succinate Dehydrogenase 
-#+ATTR_LaTeX: :width 0.9\textwidth
-[[file:./figures/SuccDeh.png]]
 
-https://upload.wikimedia.org/wikipedia/commons/1/11/Complex_II.svg
+#+CAPTION[cII]:Complex II
+#+NAME: fig:cII
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/CII.png]]
 
 ** Complex II Inhibitors
 
@@ -222,6 +250,33 @@ https://upload.wikimedia.org/wikipedia/commons/1/11/Complex_II.svg
 - Ubiquinone type inhibitors include carboxin and thenoyltrifluoroacetone.
 - Succinate-analogue inhibitors include the synthetic compound malonate as well as the TCA cycle intermediates, malate and oxaloacetate.
   - oxaloacetate is one of the most potent inhibitors of Complex II. 
+* Glycerol-3-phosphate shuttle
+** Glycerol-3-phosphate shuttle
+- Oxidation of cytoplasmic NADH by the cytosolic form of the enzyme
+  creates glycerol-3-phosphate from dihydroxyacetone phosphate.
+- Glycerol-3-phosphate diffuses into IMM and is oxidised by mitochondrial glycerol-3-phosphate dehydrogenase
+  - uses quinone as an oxidant and FAD as a co-factor.
+- maintains the cytoplasmic NAD+/NADH ratio.
+
+#+CAPTION[g3ps]:Glycerol-3-phosphate shuttle
+#+NAME: fig:g3ps
+#+ATTR_LaTeX: :width 0.8\textwidth
+[[file:./figures/GPDH_shuttle.png]]
+
+* Electron Transferring Flavoprotein/ Dehydrogenase
+** Electron Transferring Flavoprotein/ Dehydrogenase
+- ETFs are heterodimeric proteins composed of an alpha and beta subunit (ETFA and ETFB), and contain an FAD cofactor and AMP
+
+- ETQ-QO links the oxidation of fatty acids and some amino acids to
+  oxidative phosphorylation in the mitochondria.
+- catalyzes the transfer of electrons from electron transferring
+  flavoprotein (ETF) to ubiquinone, reducing it to ubiquinol.
+
+#+BEGIN_EXPORT LaTeX
+\small
+\centering
+\ce{Acyl-CoA + FAD ->[ACAD] FADH2 + ETF ->[ETF-QO] UQ ->[CIII] CytC}
+#+END_EXPORT
 
 * Complex III
 ** Complex III | Coenzyme Q – cytochrome c reductase
@@ -256,10 +311,12 @@ https://upload.wikimedia.org/wikipedia/commons/1/11/Complex_II.svg
     - Cytocrome c1 then transfers its electron to cytochrome c, whilst the nearby semiquinone produced from round 1 picks up a second electron from the BH heme, along with two protons from the matrix.
     - The second ubiquinol (now oxidised to ubiquinone), along with the newly formed ubiquinol are released.[8]
 
-
 ** Complex III | Coenzyme Q – cytochrome c reductase
-https://upload.wikimedia.org/wikipedia/commons/e/e2/Complex_III.png
-https://upload.wikimedia.org/wikipedia/commons/1/10/Complex_III_reaction.svg
+
+#+CAPTION[cIII]: Complex III two step reaction 
+#+NAME: fig:cIII
+#+ATTR_LaTeX: :width 0.9\textwidth
+[[file:./figures/CIII.png]]
 
 ** Complex III Inhibitors
 
@@ -280,13 +337,12 @@ https://upload.wikimedia.org/wikipedia/commons/1/10/Complex_III_reaction.svg
   - cytochrome a and cytochrome a3,
   - two copper centers, CuA and CuB
 - the cytochrome a3 and CuB form a binuclear center that is the site of oxygen reduction.
-- receives an electron from four cytochrome c molecules and transfers them to one dioxygen molecule
-  - converting the molecular oxygen to two molecules of water.
+- receives an electron from four cytochrome c molecules and transfers them to one O_2 molecule
  
 #+BEGIN_EXPORT LaTeX
 \centering
 \small
-\ce{4Fe^{2+}-cyt c + 8H+_{in} + O2 ->[CIV] 4Fe^{3+}-cyt c + 2H2O + 4H+_{out}}
+\ce{4Fe^{2+}-cyt c + 8H^{+}_{in} + O2 ->[CIV] 4Fe^{3+}-cyt c + 2H2O + 4H^{+}_{out}}
 #+END_EXPORT
 
 *** COMMENT
@@ -298,7 +354,10 @@ https://upload.wikimedia.org/wikipedia/commons/1/10/Complex_III_reaction.svg
 
 ** Complex IV | Cytochrome c oxidase
 
-https://upload.wikimedia.org/wikipedia/commons/0/06/Complex_IV.svg
+#+CAPTION[cIV]:Complex IV
+#+NAME: fig:cIV
+#+ATTR_LaTeX: :width 0.7\textwidth
+[[file:./figures/CIV.png]]
 
 ** Complex IV | Inhibitors
 
@@ -447,25 +506,26 @@ stage.
 :PROPERTIES:
 :BEAMER_col: 0.5
 :END:
-\small
+
 **** Affected Systems
-- Leigh syndrome
-- Epilepsy
-- Leukodystropy
-- Eye
+\scriptsize
+- Neurological disease
+  - \scriptsize Leigh disease
+  - Epilepsy
+  - Leukodystropy
+  - Periperal neuropathy
+- Eye disease
 - Deafness
 - Cardiac disease
 - Pulmonary disease
 - GI disease
 - Pancreas endocrine/exocrine
+- Endocrine
 - Liver disease
 - Kidney
-- Endocrine
 - Ovarian failure
 - Hematological
 - Myopathy
-- Periperal neuropathy
-
 
 ** Next talk
 
