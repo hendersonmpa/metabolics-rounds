@@ -1,0 +1,256 @@
+#+TITLE: Disorders of Oxidative Phosphorylation
+#+AUTHOR: Matthew Henderson, PhD, FCACB
+#+DATE: \today
+
+:PROPERTIES:
+#+DRAWERS: PROPERTIES
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [presentation, smaller]
+#+BEAMER_THEME: Hannover
+#+BEAMER_COLOR_THEME: whale
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+OPTIONS: H:2 toc:nil ^:t
+#+PROPERTY: header-args:R :session *R*
+#+PROPERTY: header-args :cache no
+#+PROPERTY: header-args :tangle yes
+#+STARTUP: beamer
+#+STARTUP: overview
+#+STARTUP: hidestars
+#+STARTUP: indent
+# #+BEAMER_HEADER: \subtitle{Part 1: Maple Syrup Urine Diseas}
+#+BEAMER_HEADER: \institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
+#+BEAMER_HEADER: \titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
+#+latex_header: \hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
+#+LaTeX_header: \usepackage{textpos}
+#+LaTeX_header: \usepackage{textgreek}
+#+LaTeX_header: \usepackage[version=4]{mhchem}
+#+LaTeX_header: \usepackage{chemfig}
+#+LaTeX_header: \usepackage{siunitx}
+#+LaTeX_header: \usepackage{gensymb}
+#+LaTex_HEADER: \usepackage[usenames,dvipsnames]{xcolor}
+#+LaTeX_HEADER: \usepackage[T1]{fontenc}
+#+LaTeX_HEADER: \usepackage{lmodern}
+#+LaTeX_HEADER: \usepackage{verbatim}
+#+LaTeX_HEADER: \usepackage{tikz}
+#+LaTeX_HEADER: \usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+:END:
+
+#+BEGIN_EXPORT LaTeX
+%\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
+%    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
+%}n
+
+\vspace{220pt}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\tiny}
+% \addtobeamertemplate{frametitle}{}{%
+% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+% \includegraphics[height=1cm,width=2cm]{cat}
+% \end{textblock*}}
+#+END_EXPORT 
+
+* Metabolic Derangement
+** Anaerobic Glycolysis
+- Complex V harnesses the proton gradient created by Complexes I, III, and IV
+  - produces the majority of cellular ATP
+- Insufficient ATP severely affects highly energy dependant tissues
+  - A complete loss of OxPhos is not observed in human disease.
+- In the absence of OxPhos cells survive using ATP from anaerobic glycolysis
+  - 20x less efficient, generates lactate
+  - pyruvate \to alanine if glutamate is available 
+- Lactate, pyruvate and alanine are the typical products of anaerobic glycolysis
+
+** Factors Affecting OxPhos System
+
+- ~ 90 subunits
+  - 13 subunits of Complexes I, III, IV and V encoded by mtDNA
+- mitochondrial replication, transcription and translation
+  - require \gt 200 proteins, rRNAs and tRNAs
+- Cofactors: coenzyme Q_{10}, iron-sulfur clusters, heme, copper
+  - require synthesis and/or transport to OxPhos system
+- Cardiolipin required for cristae formation
+- Mitochondrial function
+  - protein import, turnover
+  - fission, fusion
+- Toxic metabolites
+
+- \gt 1500 proteins in the human mitochondrial proteome
+  - other additional factors - lipids, cofactors
+  - up to 10% of human proteome may be involved in mitochondria 
+
+** Types of genetic defects and affected systems
+
+*** Classes of Defect                                               :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+**** Type of Defect
+- OxPhos Subunit
+- Assembly Factor
+- mtDNA replication
+- mtDNA transcription
+- mitochondrial transcription
+- cofactor
+- mitochondrial homeostasis
+- inhibitor
+
+*** Affected Systems                                                :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+**** Affected Systems
+\scriptsize
+- Neurological disease
+  - \scriptsize Leigh disease
+  - Epilepsy
+  - Leukodystropy
+  - Periperal neuropathy
+- Eye disease
+- Deafness
+- Cardiac disease
+- Pulmonary disease
+- GI disease
+- Pancreas endocrine/exocrine
+- Endocrine
+- Liver disease
+- Kidney
+- Ovarian failure
+- Hematological
+- Myopathy
+
+
+* OxPhos Clinical Manifestations
+** Clinical Manifestations
+- Clinical diagnosis is extremely challenging
+  - can affect any organ system
+  - antenatal (IUGR, birth defects) \to elderly (myopathy)
+
+*** Clinical Suspicion
+1. Constellation of symptoms/signs consistent with a mitochondrial syndrome
+2. Complex multi-system presentation involving two/more organ systems,
+   best described by an underlying disorder of energy generation.
+3. Lactic acidosis, characteristic neuro-imaging, 3-methylglutaconic
+   aciduria, ragged red fiber mypopathy.
+4. Pathogenic mutation in a known mitochondrial disease gene.
+
+** Clinical Manifestations
+
+| System          | Manifestation                      |
+|-----------------+------------------------------------|
+| CNS             | *Myoclonus*                        |
+|                 | *Seizures*                         |
+|                 | *Ataxia*                           |
+| Skeletal Muscle | *Myopathy, hypotonia*              |
+|                 | *CPEO*                             |
+|                 | myoglobinuria                      |
+| Marrow          | Sideroblastic anemia/pancytopenia  |
+| Kidney          | Fanconi                            |
+| Endocrine       | *Diabetes*                         |
+|                 | Hypoparathyroidism,                |
+|                 | growth/multiple hormone deficiency |
+| Heart           | Cardiomyopathy                     |
+|                 | Conduction defects                 |
+| GI              | pancreatic failure                 |
+|                 | villous atrophy                    |
+| Ear             | *Sensorineural deafness*           |
+|                 | Aminoglycoside deafness            |
+| Systemic        | *Lactic Acidosis*                  |
+
+** Myopathies
+
+- Chronic progressive external ophthalmoplegia (CPEO)
+  - w/wo retinitis pigmentosa
+  - most common clinical manifestation
+  - muscle biopsy is diagnostic
+- Kearns Sayre syndrome is a subtype of CPEO
+  - onset \lt 20
+  - pigmentary retinopathy
+  - cardiac conduction defect
+  - ataxia, \uparrow CSF protein
+- Isolated limb myopathy
+
+** Encephalopathies 
+- encephalopathic features:
+  - dementia/ID, ataxia, seizures, myoclonus, deafness, dystonia.
+- MELAS: myopathy, encephalopathy, lactic acidosis, stroke-like episodes)
+  - most common mito encephalopathy
+- MERRF: myoclonic epilepsy w ragged red fibers
+  - ptosis, ataxia, deafness
+- Leigh Syndrome
+  - most frequent presentation of MD in childhood
+  - subacute necrotising encephalomyelopathy
+  - several biochemical defects including: PDH, OxPhos
+  - MRI - lesions affecting basal ganglia and/or brain stem
+  - \uparrow lactate blood and CSF
+  - hypo/er-ventilation, spasticity, dystonia, ataxia, tremor, optic atrophy
+  - cardiomyopathy, renal tubulopathy, GI disfunction
+  - \gt 75 genes(mt and nuclear)
+  - Saguenay-Lac-Saint-Jean
+
+** Leber’s hereditary optic neuropathy
+- most common cause of blindness in otherwise healthy young men.
+- maternally inherited and manifests in late adolescence or early
+  adulthood as bilateral sequential visual failure.
+- 90% of patients are affected by age 40
+
+** Pearson's Syndrome
+- transfusion dependant sideroblastic anemia/pancytopenia
+- exocrine pancreas failure
+- progressive liver disease
+- renal tubular disease
+
+** Neonatal and Infantile Presentation
+- Congenital Lactic Acidosis
+- Leigh Syndrome
+- MEGDEL: 3-methylglutaconic aciduria, deafness, encephalopathy and Leigh-like disease
+- Pearson's marrow-pancreas syndrome
+- MDDS: mitochondrial DNA depletion syndrome
+- Alper-Huttenlocher syndrome
+- Reversible infantile respiratory chain deficiency
+- Infantile onset Q_{10} biosynthetic defects
+
+** Childhood and Adolescent Presentation
+- Kearn-Sayre syndrome
+- MELAS
+- MERRF
+- NARP
+- LHON
+- MEMSA
+- MNGIE
+
+** Adult Presentation
+
+- MIDD: maternally inherited diabetes and deafness
+
+* Investigations
+** Biochemistry
+- blood lactate, CSF lactate
+- L/P \uparrow at rest, \Uparrow after excercise
+- renal tubular disfunction: urine anion gap, pH, serum K
+
+** Imaging
+- Cranial CT demonstrates cerebral and cerebellar atrophy in many encephalopathic patients
+  - basal ganglia calcification may be seen in MELAS.
+- Magnetic resonance imaging in MELAS-associated stroke reveals increased T2 weighted signals in the grey and white matter
+- Symmetrical changes in the basal ganglia and brainstem are frequently observed in those with Leigh syndrome.
+
+** Histology
+- Muscle biopsy is diagnostic
+  - occasional patients, with mitochondrial myopathy due to mtDNA mutations and those with LHON may have normal biopsies.
+- Histochemical analysis typically reveals ragged red fibres on Gomori trichrome staining
+- ragged red fibres reflect mitochondrial proliferation
+- fibres stain strongly for succinate dehydrogenase
+- fibres often stain negatively for COX (complex IV) in CPEO, KSS, or MERRF but positively in MELAS.
+- Leigh syndrome patients may have no ragged red fibres and demonstrate COX-negative fibres only
+** Molecular
+  - no strict relation between phenotype and genotype.
+  - mtDNA tRNA mutations are most common of the single base change abnormalities.
+    - A3243G in the tRNA^{Leu(UUR)} gene is most frequently found in MELAS
+    - G8344A in tRNA^{Lys} in MERRF.
+    - Many other tRNA mutations have been associated with other clinical phenotypes.
+  - The primary mutations associated with LHON (G11778A, G3460A,T14484C) are in complex I genes ND4, ND1, and ND6.
+    - G11778A is by far the commonest and is found in over 50% of LHON families in the UK. 
+
+
