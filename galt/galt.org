@@ -35,7 +35,8 @@
 #+LaTeX_HEADER: \usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
 :END:
 
-#+BEGIN_LaTeX
+#+BEGIN_EXPORT LaTeX
+
 \logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}}
 
 \vspace{220pt}
@@ -58,8 +59,8 @@
 \tikzstyle{arrow} = [thick,->,>=stealth]
 \tikzstyle{hl-arrow} = [ultra thick,->,>=stealth,draw=red]
 
+#+END_EXPORT
 
-#+END_LaTeX
 
 * Classical galactosemia
 - Caused by deficient activity of galactose-1-phosphate uridylyltransferase
@@ -150,10 +151,22 @@
 - May progress to Gram negative sepsis, cataracts
 
 * NBS
-- not universal because it can be diagnosed clinically, and long term
-  complications are not prevented by early treatment
-  - ??recommendation for all samples with increased phenylalanine to be
-    screened for galactosemia (Pollitt 1997)??
+- not universal
+  - must be identified early
+  - \lt 5 days is ideal
+
+* Spotcheck Method
+
+#+BEGIN_EXPORT LaTeX
+\ce{Gal-1-P + UDP-Glu ->[GALT] Glu-1-P + UDP-Gal}
+
+\ce{Glu-1-P ->[PGluM] Glu-6-P}
+
+\ce{Glu-6-P + NADP ->[G6PD] 6-PG + NADPH}
+
+\ce{NADPH + MTT ->[methoxy PMS] Coloured Formazan + NADP}
+
+#+END_EXPORT
 
 * Diagnosis
 - reducing substances in urine - not specific or sensitive
