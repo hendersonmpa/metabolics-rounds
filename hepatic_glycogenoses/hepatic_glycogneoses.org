@@ -88,6 +88,13 @@
 
 
 * GSD Type 0
+** GSD Type 0
+
+#+CAPTION[Hepatic Glycogenoses]:Hepatic Glycogenoses
+#+NAME: fig:hglyc
+#+ATTR_LaTeX: :width 0.75\textwidth
+[[file:./figures/gggmetab_hepatic.png]]
+
 ** Metabolic Derangement
 - Deficiency in hepatic glycogen synthase (GS2)
 - Very low liver glycogen
@@ -109,6 +116,13 @@
 - avoid fasting
 - uncooked cornstarch prior to overnight fast and during infections
 * GSD Type I
+** GSD Type I
+
+#+CAPTION[Hepatic Glycogenoses]:Hepatic Glycogenoses
+#+NAME: fig:hglyc
+#+ATTR_LaTeX: :width 0.75\textwidth
+[[file:./figures/gggmetab_hepatic.png]]
+
 ** Metabolic Derangement
 - GSD Ia, glucose 6 phosphatase-\alpha
 - GSD Ib, glucose 6 phosphate transporter
@@ -154,14 +168,21 @@
   - bone disease
 
 * GSD Type III
+** GSD Type III
+
+#+CAPTION[Hepatic Glycogenoses]:Hepatic Glycogenoses
+#+NAME: fig:hglyc
+#+ATTR_LaTeX: :width 0.75\textwidth
+[[file:./figures/gggmetab_hepatic.png]]
+
 ** Metabolic Derangement
 - Glycogen debrancher enzyme (GDE) deficiency
 - has both glucosidase and transferase activity
-- \alpha-1,4 glucose linkages of the terminal glucose
-- then breaks \alpha-1,6 linkage to remove branch point
-- \to accumulation of abnormal glycogen (limit dextran)
+  - cleaves \alpha-1,4 glucose linkages of the terminal glucose
+  - then breaks \alpha-1,6 linkage to remove branch point
+- accumulation of abnormal glycogen
 - limited glucose release from glycogen
-  - gluconeogenesis
+- gluconeogenesis functions normally
 ** Genetics
 - AR, AGL gene
 - mutations occur throughout AGL (GSD IIIa)
@@ -173,7 +194,7 @@
 - First year with poor growth, delayed motor milestones and abdominal
   distension
 - Fasting hypoglycaemia 
-  - Fasting tolerance is usually longer than in GSD I. 
+  - Fasting tolerance is usually longer than in GSD I 
 - Fasting ketosis is prominent.
 - Gluconeogenesis is normal \therefore no fasting hyperlactataemia
 - Moderate post-prandial \uparrow lactate
@@ -184,7 +205,7 @@
 - DBE activity in leucocytes
 - mutation analysis
 ** Treatment
-- Maintain normoglycaemia, reduce the hyperlipidaemia and ketosis and
+- Aim is to maintain normoglycaemia, reduce the hyperlipidaemia and ketosis and
   ensure adequate growth.
 - Regular meals and uncooked cornstarch
 - Overnight continuous feeding is less commonly needed in GSD III than
@@ -192,6 +213,13 @@
 - Long term outcome for individuals with GSD III is generally good
   with survival into adulthood.
 * GSD Type IV
+** GSD Type IV
+
+#+CAPTION[Hepatic Glycogenoses]:Hepatic Glycogenoses
+#+NAME: fig:hglyc
+#+ATTR_LaTeX: :width 0.75\textwidth
+[[file:./figures/gggmetab_hepatic.png]]
+
 ** Metabolic Derangement
 - GSD IV is caused by deficiency in glycogen brancher enzyme (GBE).
 - GBE transfers short glucosyl chains to form branch points with an
@@ -207,20 +235,20 @@
 
 ** Clinical Presentation
 
-- multiple phenotypes associated with GBE deficiency
-  - ranges from death in utero to adult presentation
+- Multiple phenotypes associated with GBE deficiency
+  - Ranges from death in utero to adult presentation
 
 *** Liver Disease
 - Progressive liver disease in infancy.
-  - presents in first months of life with:
-    - failure to thrive and hepatomegaly.
+  - Presents in first months of life with:
+    - Failure to thrive and hepatomegaly.
   - Cirrhosis develops with eventual end stage liver disease and
     portal hypertension.
   - Death is usual by 5 years of age.
 - Non-progressive liver disease in childhood.
-  - present with hepatomegaly,liver dysfunction, hypotonia and
+  - Present with hepatomegaly, liver dysfunction, hypotonia and
     myopathy.
-  - liver disease does not progress, survival into adulthood.
+  - Liver disease does not progress, survival into adulthood.
 
 ** Clinical Presentation
 
@@ -228,7 +256,7 @@
 - Congenital onset
   - fetal loss in pregnancy,
   - fetal akinesia deformation sequence (FADS) with athrogryposis, hydrops and perinatal death
-  - severe congenital myopathy similar to SMA with \pm  cardiomyopathy
+  - severe congenital myopathy similar to SMA with \pm cardiomyopathy
 - Juvenile onset
   - with a myopathy and/or cardiomyopathy
 - Adult onset
@@ -244,21 +272,28 @@
   inclusions and evidence of interstitial fibrosis.
 - Enzyme analysis can be undertaken in liver tissue, cultured skin
   fibroblast, peripheral lymphocytes and muscle
-- confirmed by GBE1 mutation analysis.
+- Confirmed by GBE1 mutation analysis.
 
 ** Treatment
 - Liver transplant is the only treatment for the progressive liver form
 - Heart transplant may be considered in those with heart failure caused by cardiomyopathy.
 - There is no specific treatment for the other forms of the disease.
 * GSD Type VI
+** GSD Type VI
+
+#+CAPTION[Hepatic Glycogenoses]:Hepatic Glycogenoses
+#+NAME: fig:hglyc
+#+ATTR_LaTeX: :width 0.75\textwidth
+[[file:./figures/gggmetab_hepatic.png]]
+
 ** Metabolic Derangement
-- GSD VI is caused by deficiency in hepatic glycogen phosphorylase.
-- catalyses the release and phosphorylation of terminal glucosyl units
-  from glycogen forming glucose-1-phosphate.
+- GSD VI is caused by deficiency in hepatic glycogen phosphorylase
+- Catalyses the release and phosphorylation of terminal glucosyl units
+  from glycogen forming glucose-1-phosphate
 - Ketosis with or without hypoglycaemia may occur with fasting
 - Although plasma lipids may be raised
-- In severe variants recurrent hypoglycaemia and post prandial lactic
-  acidosis can occur.
+- In severe variants recurrent hypoglycaemia and post-prandial lactic
+  acidosis can occur
 ** Genetics
 - AR, PGYL gene
 
@@ -280,6 +315,13 @@
 - The outcome for individuals with GSD VI is generally excellent
   - Catch up growth occurring for those with short stature in childhood.
 * GSD Type IX
+** GSD Type IX
+
+#+CAPTION[Hepatic Glycogenoses]:Hepatic Glycogenoses
+#+NAME: fig:hglyc
+#+ATTR_LaTeX: :width 0.75\textwidth
+[[file:./figures/gggmetab_hepatic.png]]
+
 ** Metabolic Derangement
 - GSD IX is caused by deficiency in hepatic glycogen phosphorylase kinase (PHK)
 - PHK phosphorylates glycogen phosphatase /b/ \to /a/ form
