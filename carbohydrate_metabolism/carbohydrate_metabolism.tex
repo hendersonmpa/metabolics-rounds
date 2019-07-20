@@ -1,0 +1,250 @@
+% Created 2019-07-17 Wed 15:29
+% Intended LaTeX compiler: pdflatex
+\documentclass[presentation, smaller]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
+\usepackage{textpos}
+\usepackage{textgreek}
+\usepackage[version=4]{mhchem}
+\usepackage{chemfig}
+\usepackage{siunitx}
+\usepackage{gensymb}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{verbatim}
+\usepackage{tikz}
+\usepackage{wasysym}
+\usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+\usetheme{Hannover}
+\usecolortheme{whale}
+\author{Matthew Henderson, PhD, FCACB}
+\date{\today}
+\title{Carbohydrate Metabolism}
+\institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
+\titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
+\hypersetup{
+ pdfauthor={Matthew Henderson, PhD, FCACB},
+ pdftitle={Carbohydrate Metabolism},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.1 (Org mode 9.1.9)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+%\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
+%    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
+%}
+
+\vspace{220pt}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\tiny}
+% \addtobeamertemplate{frametitle}{}{%
+% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+% \includegraphics[height=1cm,width=2cm]{cat}
+% \end{textblock*}}
+
+\section{Introduction}
+\label{sec:orgfc30a68}
+\begin{frame}[label={sec:orgbee72d6}]{Carbohydrate Digestion}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.7\textwidth]{./figures/carb_digest.PNG}
+\caption{\label{fig:orgc694711}
+Carbohydrate Digestions}
+\end{figure}
+\end{frame}
+
+\begin{frame}[label={sec:org608f721}]{Major Pathways of Glucose Metabolism}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{./figures/glucose_pathways.PNG}
+\caption{\label{fig:org5283a92}
+Major Pathways of Glucose Metabolism}
+\end{figure}
+\end{frame}
+
+\begin{frame}[label={sec:orgd4f606e}]{Conversion to AAs and FAs}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.65\textwidth]{./figures/glucose_conversion.PNG}
+\caption{\label{fig:org6b7d870}
+Conversion of Glucose}
+\end{figure}
+\end{frame}
+
+\section{Regulation}
+\label{sec:org57ec49d}
+\begin{frame}[label={sec:org72a5e1c}]{Major Hormones of Metabolic Homeostasis}
+\begin{itemize}
+\item \alert{Insulin} is the main anabolic hormone
+\begin{itemize}
+\item promotes use of glucose as fuel
+\begin{itemize}
+\item \(\uparrow\) transport into cells
+\end{itemize}
+\item storage of glucose as glycogen
+\item conversion of glucose \(\to\) TAGs
+\item TAG storage in adipose tissue
+\item AA uptake and protein synthesis in muscle
+\end{itemize}
+\item \alert{Glucagon} is catabolic
+\begin{itemize}
+\item maintain fuel availability in the absence of dietary glucose
+\item stimulates glycogenolysis
+\item stimulates gluconeogenesis from lactate, glycerol and AAs
+\item mobilizing FAs from adipose TAGs
+\item acts on liver and adipose, muscle has no receptor
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgbcfa7b3}]{Major Hormones of Metabolic Homeostasis}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{./figures/regulation.PNG}
+\caption{\label{fig:org4d60338}
+Glucose Homeostasis}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}[label={sec:org7b513fe}]{Insulin and Counterregulatory Hormones}
+\begin{center}
+\begin{tabular}{lll}
+Hormone & Function & Pathway\\
+\hline
+Insulin & \(\uparrow\) storage & glucose \(\to\) glycogen\\
+ & \(\uparrow\) growth & FA synthesis and storage\\
+ &  & AA uptake, protein synthesis\\
+\hline
+Glucagon & mobilizes stores & \(\uparrow\) gluconeogenesis\\
+ & maintain blood glucose & \(\uparrow\) glycogenolysis\\
+ & during a fast & FA release\\
+\hline
+Epinephrine & mobilize fuel during & \(\uparrow\) glycogenolysis\\
+ & acute stress & FA release\\
+\hline
+Cortisol & long-term fuel requirements & \(\uparrow\) AA mobilization\\
+ &  & from muscle\\
+ &  & \(\uparrow\) gluconeogenesis for\\
+ &  & glycogen synthesis\\
+ &  & \(\uparrow\) FA release\\
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:org0e5d7cd}]{Post Prandial Production}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.5\textwidth]{./figures/meal.PNG}
+\caption{\label{fig:org9903ab2}
+Carbohydrate rich meal}
+\end{figure}
+\end{frame}
+
+\begin{frame}[label={sec:org583420e}]{Fasting}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{./figures/counter_hormones.PNG}
+\caption{\label{fig:org7964309}
+Low Blood Glucose}
+\end{figure}
+\end{frame}
+
+\section{Transport}
+\label{sec:org9642a58}
+\begin{frame}[label={sec:orgfc551ca}]{Digestion}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{./figures/digestion.PNG}
+\caption{\label{fig:org906a726}
+Digestion of Carbohydrates}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}[label={sec:org93c7fc5}]{Absorption from the Intestine}
+\begin{itemize}
+\item NA-dependent transporter
+\begin{itemize}
+\item transport glucose \(\uparrow\) the concentration gradient
+\item transport NA \(\downarrow\) the concentration gradient
+\end{itemize}
+\item Facilitative Glucose Transport
+\begin{itemize}
+\item transport glucose \(\downarrow\) the concentration gradient
+\item GLUT1 to GLUT5
+\end{itemize}
+\item Galactose and Fructose Transport
+\begin{itemize}
+\item Gal uses same mechanism as glucose
+\item Fructose relies on facilitated diffusion via GLUT5
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:org62d00f9}]{Absorption from the Intestine}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{./figures/intestine.PNG}
+\caption{\label{fig:org111b321}
+Absorption from the intestine}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}[label={sec:orgdf508cc}]{GLUTs}
+\begin{center}
+\begin{tabular}{lll}
+Transporter & Distribution & Comments\\
+\hline
+GLUT1 & erythrocyte & barrier cells\\
+ & brain barrier & \(\uparrow\) affinity transporter\\
+ & retina barrier & \\
+ & placenta barrier & \\
+ & testis barrier & \\
+\hline
+GLUT2 & Liver & \(\uparrow\) capacity, \(\downarrow\) affinity\\
+ & Kidney & may be glucose sensor\\
+ & Pancratic \(\beta\)-cell & in pancreas\\
+ & intestine & \\
+\hline
+GLUT3 & Neurons & \(\uparrow\) affinity  transporter in CNS\\
+\hline
+GLUT4 & Adipose & insulin sensitive transport\\
+ & Skeletal muscle & \(\uparrow\) insuline \(\to\) \(\uparrow\) number\\
+ & Heart muscle & \(\uparrow\) affinity\\
+\hline
+GLUT5 & Intestinal epithelium & fructose transport\\
+ & spermatozoa & \\
+\end{tabular}
+\end{center}
+\end{frame}
+
+\section{Glycogen}
+\label{sec:orgd6dcd1f}
+\section{Sugar Metabolism}
+\label{sec:org48dbe2d}
+\section{Synthesis}
+\label{sec:org9add830}
+\section{Gluconeogenesis}
+\label{sec:org82ebff2}
+\end{document}
