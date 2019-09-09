@@ -1,4 +1,4 @@
-#+TITLE: Hepatic Glycogenoses
+#+TITLE: Muscle & Cardiac Glycogenoses
 #+AUTHOR: Matthew Henderson, PhD, FCACB
 #+DATE: \today
 
@@ -51,40 +51,37 @@
 #+END_EXPORT 
 
 * Introduction
+** Muscle and Cardiac Glycogenoses
 
-** Hepatic Glycogenoses
+- at rest muscle predominately utilizes fatty acids.
+  - uses blood glucose during sub-maximal exercise.
+- Energy is supplied by glycogenolysis during intense exercise.
+  - glycogenolysis supplies glucose for anaerobic glycolysis
+
+** Muscle and Cardiac Glycogenoses
 
 \scriptsize
-| Type | Enzyme                          | Gene    | Phenotype                                  |
-|------+---------------------------------+---------+--------------------------------------------|
-| 0a   | liver glycogen synthase         | GYS2    | ketotic hypoglycema                        |
-| 0b   | Muscle glycogen synthase        | GYS1    | cardiomyopathy & myopathy                  |
-| Ia   | G6Pase \alpha                   | GSPC    | hypoglycema, hepatomegaly, lactic acidosis |
-| Ib   | G6P transporter                 | SLC37A4 | Ia + neutrophil dysfunction, colitis       |
-| III  | Glycogen debrancher             | AGL     | hypoglycema, hepatomegaly                  |
-| IV   | Glycogen brancher               | GBE1    | cirrhosis, cardiomyopathy & myopathy       |
-|      |                                 |         | adult polyglucosan body disease            |
-| VI   | Liver glycogen phosphorylase    | PYGL    | hypoglycema, hepatomegaly, growth delay    |
-| IXa  | phosphorylase kinase \alpha2    | PHKA2   | hypoglycema, hepatomegaly                  |
-| IXb  | phosphorylase kinase \beta      | PHKB    |                                            |
-| IXc  | phosphorylase kinase \gamma{}TL | PHKG2   |                                            |
-| IXd  | phosphorylase kinase \alpha1    | PHKA1   | myopathy                                   |
+| Type        | Enzyme                                  | Gene  | Phenotype                             |
+|-------------+-----------------------------------------+-------+---------------------------------------|
+| 0b          | Muscle glycogen synthase                | GYS1  | cardiomyopathy & myopathy             |
+| II (Pompe)  | Acid \alpha-glucosidase                 | GAA   | hypotonia, muscle dysfunction         |
+| III         | Glycogen debrancher                     | AGL   | hypoglycema, hepatomegaly             |
+| V (McArdle) | Muscle Glycogen Phosphorylase           | PYGM  | Excercise intolerance                 |
+| LAMP2       | Lysosomal associated membrame protein 2 | LAMP2 | cardiomyopathy, \pm skeletal myopathy |
 
-** Hepatic Glycogenoses
+** Glycogenoses
 
-#+CAPTION[Hepatic Glycogenoses]:Hepatic Glycogenoses
-#+NAME: fig:hglyc
+#+CAPTION[Glycogenoses]:Glycogenoses
+#+NAME: fig:glyc
 #+ATTR_LaTeX: :width 0.75\textwidth
 [[file:./figures/gggmetab.png]]
 
+** Muscle and Cardiac Glycogenoses
 
-
-** Hepatic Glycogenoses
-
-#+CAPTION[Hepatic Glycogenoses]:Hepatic Glycogenoses
-#+NAME: fig:hglyc
+#+CAPTION[Muscle and Cardiac Glycogenoses]:Muscle and Cardiac Glycogenoses
+#+NAME: fig:mcglyc
 #+ATTR_LaTeX: :width 0.75\textwidth
-[[file:./figures/gggmetab_hepatic.png]]
+[[file:./figures/gggmetab_muscle_cardiac.png]]
 
 
 * GSD Type 0
@@ -115,57 +112,6 @@
 ** Treatment 
 - avoid fasting
 - uncooked cornstarch prior to overnight fast and during infections
-* GSD Type I
-** GSD Type I
-
-#+CAPTION[Hepatic Glycogenoses]:Hepatic Glycogenoses
-#+NAME: fig:hglyc
-#+ATTR_LaTeX: :width 0.75\textwidth
-[[file:./figures/gggmetab_hepatic.png]]
-
-** Metabolic Derangement
-- GSD Ia, glucose 6 phosphatase-\alpha
-- GSD Ib, glucose 6 phosphate transporter
-- Disorder of glycogen metabolism and gluconeogenesis
-- Failure of glucose dephosphorylation inhibits hepatic glycogen breakdown
-- Hyperlactatemia occurs due to lack of gluconeogenesis
-  - protective
-- hyperlipidemia and hyperuricemia due to \uparrow G6P
-  - \uparrow G6P \to /de novo/ lipogenesis and flux through pentose phosphate pathway
-- G6P transporter required for normal neutrophil function
-
-** Genetics
-- AR, 1:100,000, 80% Ia
-- GSD Ia: G6PC 
-- GSD Ib: SLC37A4
-- no genotype phenotype correlation established
-
-** Clinical Presentation
-*** Ia and Ib
-- severe fasting hypoglycema, lactic acidosis
-- hepatomegaly
-- hyperlipidemia, hyperuricemia
-*** Ib
-- neutrophil dysfunction
-- increased infections
-
-** Diagnostic Tests
-- mutation analysis
-
-** Treatment
-- generally fatal if untreated
-- diet
-- liver transplant
-- treatment of sequelae
-  - hepatic tumors
-  - GI disease - IBD in GSD Ib
-  - renal disease - glycogen deposition
-  - hematological disease
-    - anemia
-    - coagulopathy
-    - infections, GSD Ib
-  - cardiovascular disease
-  - bone disease
 
 * GSD Type III
 ** GSD Type III
@@ -212,6 +158,7 @@
   in GSD I
 - Long term outcome for individuals with GSD III is generally good
   with survival into adulthood.
+
 * GSD Type IV
 ** GSD Type IV
 

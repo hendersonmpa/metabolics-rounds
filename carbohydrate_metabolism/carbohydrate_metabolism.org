@@ -240,7 +240,7 @@
 | CHO meal | \uparrow insulin     | \uparrow synthesis        |
 | (rest)   |                      | \uparrow gluc transport   |
 |          |                      |                           |
-| exercise | \uparrow epinephrine | glycolysis                |
+| exercise | \uparrow epinephrine | \uparrow glycolysis       |
 |          | \uparrow cAMP        | \downarrow synthesis      |
 |          | \downarrow AMP       | \downarrow degradation    |
 
