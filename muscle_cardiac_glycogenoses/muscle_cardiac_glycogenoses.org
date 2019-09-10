@@ -35,7 +35,7 @@
 #+LaTeX_HEADER: \usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
 :END:
 
-#+BEGIN_EXPORT LaTeXd
+#+BEGIN_EXPORT LaTeX
 %\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
 %    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
 %}
