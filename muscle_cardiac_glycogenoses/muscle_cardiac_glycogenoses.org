@@ -35,7 +35,7 @@
 #+LaTeX_HEADER: \usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
 :END:
 
-#+BEGIN_EXPORT LaTeX
+#+BEGIN_EXPORT LaTeXd
 %\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
 %    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
 %}
@@ -61,13 +61,14 @@
 ** Muscle and Cardiac Glycogenoses
 
 \scriptsize
-| Type        | Enzyme                                  | Gene  | Phenotype                             |
-|-------------+-----------------------------------------+-------+---------------------------------------|
-| 0b          | Muscle glycogen synthase                | GYS1  | cardiomyopathy & myopathy             |
-| II (Pompe)  | Acid \alpha-glucosidase                 | GAA   | hypotonia, muscle dysfunction         |
-| III         | Glycogen debrancher                     | AGL   | hypoglycema, hepatomegaly             |
-| V (McArdle) | Muscle Glycogen Phosphorylase           | PYGM  | Excercise intolerance                 |
-| LAMP2       | Lysosomal associated membrame protein 2 | LAMP2 | cardiomyopathy, \pm skeletal myopathy |
+| Type        | Enzyme                        | Gene   | Phenotype                             |
+|-------------+-------------------------------+--------+---------------------------------------|
+| 0b          | Muscle glycogen synthase      | GYS1   | cardiomyopathy & myopathy             |
+| II (Pompe)  | Acid \alpha-glucosidase       | GAA    | hypotonia, muscle dysfunction         |
+| III         | Glycogen debrancher           | AGL    | hypoglycema, hepatomegaly             |
+| V (McArdle) | Muscle Glycogen Phosphorylase | PYGM   | exercise intolerance                  |
+| Danon       | LAMP2                         | LAMP2  | cardiomyopathy, \pm skeletal myopathy |
+| AMPK        | AMP-activated Protein Kinase  | PRKAG2 | cardiomyopathy, \pm skeletal myopathy |
 
 ** Glycogenoses
 
@@ -83,43 +84,96 @@
 #+ATTR_LaTeX: :width 0.75\textwidth
 [[file:./figures/gggmetab_muscle_cardiac.png]]
 
-
 * GSD Type 0
 ** GSD Type 0
 
-#+CAPTION[Hepatic Glycogenoses]:Hepatic Glycogenoses
+#+CAPTION[Muscle, Cardiac Glycogenoses]:Muscle, Cardiac Glycogenoses
 #+NAME: fig:hglyc
 #+ATTR_LaTeX: :width 0.75\textwidth
-[[file:./figures/gggmetab_hepatic.png]]
+[[file:./figures/gggmetab_muscle_cardiac.png]]
+
+
+** GSD Type 0
+*** Metabolic Derangement
+- Deficiency in muscle glycogen synthase
+- Ubiquitously expressed
+
+*** Genetics
+- AR, GYS1 encodes muscle isoform of GS
+
+*** Clinical Presentation
+- muscle fatigue
+- hypertrophic cardiomyopathy
+
+*** Diagnostic Tests
+- mutation analysis
+*** Treatment 
+- \beta_1-receptor blockage for cardiac protection
+
+* GSD Type II (Pompe)
+** GSD Type II (Pompe)
+
+#+CAPTION[Muscle, Cardiac Glycogenoses]:Muscle, Cardiac Glycogenoses
+#+NAME: fig:hglyc
+#+ATTR_LaTeX: :width 0.75\textwidth
+[[file:./figures/gggmetab_muscle_cardiac.png]]
 
 ** Metabolic Derangement
-- Deficiency in hepatic glycogen synthase (GS2)
-- Very low liver glycogen
-- Fasting associated with ketosis
-- Post-prandial hyperglycemia with moderate hyperlactatemia
-  - reduced liver uptake of glucose
+- Acid \alpha-glucosidase deficiency
+- accumulation of glycogen within the lysosomes
+- with different critical thresholds depending on the organ
 
 ** Genetics
-- AR, GYS2 encodes liver isoform of GS2
+- AR, AGL gene
+- 200 mutations have been reported in GAA
+  - ~ 75% of these being pathogenic mutations (www.pompecenter.nl)
+- some genotype-phenotype correlation
+  - severe mutations (such as del exon18) associated with the infantile form
+  - ›leaky‹ mutations associated with the adult variant
+- c.-32-13T>G is the most common mutation in adults and children with
+  a slowly progressive course
+  - approximately 80% of Caucasian patients.
 
 ** Clinical Presentation
-- ketotic hypoglycema with post-prandial hyperglycemia/uria
-- can have poor growth
-- no hepatomegaly
 
+*** Infantile
+- first months of life with hypotonia and hypertrophic cardiomyopathy
+- also dysphagia, smooth muscle dysfunction, enlargement of the tongue
+  and liver
+- Most untreated infantile onset patients die from cardiopulmonary
+  failure or aspiration pneumonia prior to one year of age 
+*** Juvenile
+- predominant skeletal muscle dysfunction
+  - with motor and respiratory problems, rarely cardiac involvement.
+  - Calf hypertrophy can be present, mimicking Duchenne muscular dystrophy in boys.
+- Myopathy and respiratory insufficiency deteriorate gradually, and patients may become dependent on a ventilator or wheelchair.
+*** Adult
+- 3rd or 4th decade and affects the trunk and proximal limb muscles
+  - mimicks inherited limb-girdle muscle dystrophies.
+- Involvement of the diaphragm is frequent,
+  - acute respiratory failure may be the initial symptom in some patients.
+- the heart is generally not affected.
 ** Diagnostic Tests
+- Acid \alpha-glucosidase enzyme assay
+  - classic infantile ~ 1% residual activity
+  - Children and Adults \le 30% activity
+- Skin Fibroblasts are best tissue
+  - Lower biochemical interferences (neutral \alpha-glucosidases)
 - mutation analysis
-** Treatment 
-- avoid fasting
-- uncooked cornstarch prior to overnight fast and during infections
+** Treatment
+- Recombinant acid \alpha-glucosidase (rhGAA)
+  - CHO cells (alglucosidase alfa)
+- Anti rhGAA IgG antibodies form
+- 1/3 of ERT treated were ventilator free
+- Better outcome if identified by NBS
 
 * GSD Type III
 ** GSD Type III
 
-#+CAPTION[Hepatic Glycogenoses]:Hepatic Glycogenoses
+#+CAPTION[Muscle, Cardiac Glycogenoses]:Muscle, Cardiac Glycogenoses
 #+NAME: fig:hglyc
 #+ATTR_LaTeX: :width 0.75\textwidth
-[[file:./figures/gggmetab_hepatic.png]]
+[[file:./figures/gggmetab_muscle_cardiac.png]]
 
 ** Metabolic Derangement
 - Glycogen debrancher enzyme (GDE) deficiency
@@ -159,154 +213,108 @@
 - Long term outcome for individuals with GSD III is generally good
   with survival into adulthood.
 
-* GSD Type IV
-** GSD Type IV
+* GSD Type V
+** GSD Type V
 
-#+CAPTION[Hepatic Glycogenoses]:Hepatic Glycogenoses
+#+CAPTION[Muscle, Cardiac Glycogenoses]:Muscle, Cardiac Glycogenoses
 #+NAME: fig:hglyc
 #+ATTR_LaTeX: :width 0.75\textwidth
-[[file:./figures/gggmetab_hepatic.png]]
+[[file:./figures/gggmetab_muscle_cardiac.png]]
 
 ** Metabolic Derangement
-- GSD IV is caused by deficiency in glycogen brancher enzyme (GBE).
-- GBE transfers short glucosyl chains to form branch points with an
-  \alpha-1,6 linkage.
-- Deficiency results in an abnormal poorly soluble glycogen with fewer branch points (polyglucosan)
-- This abnormal glycogen accumulates in liver, muscle, heart, nervous system and skin.
-  - leads to tissue damage.
+- There are three isoforms of glycogen phosphorylase: brain/heart,
+  liver and muscle, all encoded by different genes.
+- GSD V is caused by deficient myophosphorylase activity.
 
 ** Genetics
-- AR, GBE1
-- Common mutation in Ashkenazi Jewish pop
-  - adult polyglucosan body disease (APBD)
+- AR, PYGM
+- \gt 100 known pathogenic mutations
+- p.R50X mutation, most common in Caucasians
+  - 81% of the alleles in British patients
+  - 63% of alleles in US patients
+- No genotype-phenotype correlations have been detected
+- ACE polymorphism may be a phenotype modulator
 
 ** Clinical Presentation
-
-- Multiple phenotypes associated with GBE deficiency
-  - Ranges from death in utero to adult presentation
-
-*** Liver Disease
-- Progressive liver disease in infancy.
-  - Presents in first months of life with:
-    - Failure to thrive and hepatomegaly.
-  - Cirrhosis develops with eventual end stage liver disease and
-    portal hypertension.
-  - Death is usual by 5 years of age.
-- Non-progressive liver disease in childhood.
-  - Present with hepatomegaly, liver dysfunction, hypotonia and
-    myopathy.
-  - Liver disease does not progress, survival into adulthood.
-
-** Clinical Presentation
-
-*** Neuromuscular Disease
-- Congenital onset
-  - fetal loss in pregnancy,
-  - fetal akinesia deformation sequence (FADS) with athrogryposis, hydrops and perinatal death
-  - severe congenital myopathy similar to SMA with \pm cardiomyopathy
-- Juvenile onset
-  - with a myopathy and/or cardiomyopathy
-- Adult onset
-  - adult polyglucosan body disease (APBD)
-  - rarely myopathy
+- exercise intolerance with myalgia and stiffness in exercising muscles
+  - relieved by rest.
+- Onset of the disease occurs during childhood
+  - diagnosis is frequently missed at an early age
+  - affected children are often considered lazy.
+- Myoglobinuria is the major complication, and occurs in about half of
+  the patients.
+- Creatine kinase (CK) can increase to more than 100,000–1,000,000
+  UI/l during episodes of rhabdomyolysis
+- Risk of acute renal failure
 
 ** Diagnostic Tests
 
-- \uparrow transaminases in those with hepatic involvement
-- Fasting hypoglycaemia is uncommon except in end stage liver failure
-- Liver and muscle histology show swollen hepatocytes that contain
-  periodic acid-Schiff (PAS)-positive and diastase resistance
-  inclusions and evidence of interstitial fibrosis.
-- Enzyme analysis can be undertaken in liver tissue, cultured skin
-  fibroblast, peripheral lymphocytes and muscle
-- Confirmed by GBE1 mutation analysis.
+- ischaemic forearm exercise test (IFET) was first used by McArdle to
+  describe the absence of elevation of lactate during exercise.
+  - *Should not be used*
+
+- Non-ischemic FET has a sensitivity of 100% in McArdle’s disease
+- Ammonia levels should be also assessed in parallel with lactate
+  -  an abnormal increase in ammonia always observed in GSD V.
+- PYGM gene sequencing
 
 ** Treatment
-- Liver transplant is the only treatment for the progressive liver form
-- Heart transplant may be considered in those with heart failure caused by cardiomyopathy.
-- There is no specific treatment for the other forms of the disease.
-* GSD Type VI
-** GSD Type VI
+- no pharmacological treatment-
+- exercise intolerance may be alleviated by:
+  - aerobic conditioning programs
+  - ingestion of oral sucrose
+* LAMP 2 Deficiency (Danon Disease)
+** LAMP2 Deficiency (Danon Disease)
 
-#+CAPTION[Hepatic Glycogenoses]:Hepatic Glycogenoses
+#+CAPTION[Muscle, Cardiac Glycogenoses]:Muscle, Cardiac Glycogenoses
 #+NAME: fig:hglyc
 #+ATTR_LaTeX: :width 0.75\textwidth
-[[file:./figures/gggmetab_hepatic.png]]
+[[file:./figures/gggmetab_muscle_cardiac.png]]
 
-** Metabolic Derangement
-- GSD VI is caused by deficiency in hepatic glycogen phosphorylase
-- Catalyses the release and phosphorylation of terminal glucosyl units
-  from glycogen forming glucose-1-phosphate
-- Ketosis with or without hypoglycaemia may occur with fasting
-- Although plasma lipids may be raised
-- In severe variants recurrent hypoglycaemia and post-prandial lactic
-  acidosis can occur
-** Genetics
-- AR, PGYL gene
+** LAMP2 Deficiency (Danon Disease)
+- Danon disease is a rare X-linked disorder
+- caused by a primary deficiency of lysosomal-associated membrane
+  protein 2 (LAMP2).
+- Presents after 1st decade
+  - cardiomyopathy all cases
+  - mild skeletal myopathy and developmental delay 70%
+- muscle biopsy shows glycogen filled vacuoles
+- consider cardiac transplantation
 
-** Clinical Presentation
-- GSD VI is generally a mild disorder often diagnosed due to hepatomegaly.
-  - can present with symptomatic ketotic hypoglycaemia and growth retardation
-** Diagnostic Tests
-- Diagnosis confirmed by mutation analysis or
-- Enzyme deficiency in hepatic tissue, erythrocytes, and leukocytes.
-- Enzyme activity may not always be reduced in blood and even in liver
-  tissue may be difficult to interpret due to residual activity and
-  the effect of other factors.
-- For example, deficiency of glycogen phosphorylase kinase will cause
-  low activity of glycogen phosphorylase.
-** Treatment
-- No treatment required for asymptomatic children
-- Those with growth failure or fasting ketosis benefit from regular
-  meals,snacks and uncooked cornstarch.
-- The outcome for individuals with GSD VI is generally excellent
-  - Catch up growth occurring for those with short stature in childhood.
-* GSD Type IX
-** GSD Type IX
-
-#+CAPTION[Hepatic Glycogenoses]:Hepatic Glycogenoses
+* AMPK Deficiency
+** AMPK Deficiency
+#+CAPTION[Muscle, Cardiac Glycogenoses]:Muscle, Cardiac Glycogenoses
 #+NAME: fig:hglyc
 #+ATTR_LaTeX: :width 0.75\textwidth
-[[file:./figures/gggmetab_hepatic.png]]
+[[file:./figures/gggmetab_muscle_cardiac.png]]
+
+** AMPK Deficiency
+- AMPK controls whole-body glucose homeostasis by regulating metabolism in multiple peripheral tissues, such as
+  skeletal muscle, liver, adipose tissues, and pancreatic \beta-cells
+- activated \uparrow AMP/ATP ratio
+- stimulates glucose uptake and lipid oxidation to produce energy
+- inhibits energy-consuming processes including glucose and lipid production.
 
 ** Metabolic Derangement
-- GSD IX is caused by deficiency in hepatic glycogen phosphorylase kinase (PHK)
-- PHK phosphorylates glycogen phosphatase /b/ \to /a/ form
-  - inactive /b/ \to  active /a/
-- Decreased PHK activity \to \uparrow 
-- PHK is homotetramer in which each subunit is itself a tetramer
-  - \alpha, \beta, \gamma and \delta subunits.
-- The \gamma subunit is catalytic and the other subunits regulatory
-- There are tissue specific isoforms of the \alpha and \gamma subunits.
-- The \delta subunit, calmodulin, is ubiquitous
+- AMPK is a heterotrimeric complex comprising:
+  - a catalytic subunit (α)
+  - two regulatory subunits (β and γ).
+- Three isoforms of the gamma subunits are known (γ1, γ2 and γ3) with different tissue
+  expression
 
 ** Genetics
-| Type | Gene  | Subunit    | Inheritance | Tissue         |
-|------+-------+------------+-------------+----------------|
-| IXa  | PHKA2 | \alpha2    | XLR         | liver & blood  |
-| IXb  | PHKB  | \beta      | AR          | liver & muscle |
-| IXc  | PHKG2 | \gamma{}TL | AR          | live           |
-| IXd  | PHKA1 | \alpha1    | AR          | muscle         |
+- The PRKAG2 gene coding for the \gamma-subunit of AMPK is located on chromosome 7q36.
+- Mutations in the \gamma2-subunit of AMPK are transmitted as an
+  autosomal dominant trait with full penetrance.
 
-** Clinical Presentation
-- Usually a benign disorder, with hepatomegaly often detected
-  incidentally
-- possible short stature, fasting hypoglycaemia and ketosis, with
-  raised liver transaminases, cholesterol and triglycerides.
-- Blood lactate and uric acid are normal. There is usually resolution
-  of signs and symptoms by adulthood.
-- GSD IXc can be more severe with an increased risk of hepatic fibrosis and cirrhosis
+** Diagnosis & Treatment
+- The differential diagnosis includes Pompe, Danon (LAMP2) and Fabry diseases.
 
-** Diagnostic Tests
-- Considered in children with unexplained hepatomegaly and in those with ketotic hypoglycaemia.
-- PHK can be measured in liver, erythrocytes and leukocytes.
-- However, in view of variable tissue expression enzyme assays may be
-  difficult to interpret.
-- Diagnosis is best achieved by mutation analysis using a DNA panel.
-** Treatment
-- Asymptomatic patients may not need treatment.
-- growth failure or symptomatic hypoglycaemia frequent meals and
-  uncooked cornstarch may be used.
-- Protein can be increased to 15 to 20% of calories to provide a gluconeogenesis substrate.
-- The outcome for most patients is good with resolution of
-  hepatomegaly and catch up growth by adulthood.
+- diagnosis, if clinically suspected, is based on ECG,
+  echocardiography and molecular genetics.
+
+- Treatment requires a pacemaker/defibrillator and heart transplant.
+
+
+
+
