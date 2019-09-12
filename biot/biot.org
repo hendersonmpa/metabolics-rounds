@@ -62,7 +62,7 @@
 
 #+END_LaTeX
 
-* Background
+* Biotinidase Deficiency
 
 ** Biotinidase Deficiency
 
@@ -309,9 +309,7 @@ deficiency. Screening 1993
 [[file:./figures/formmts.pdf]]
 
 
-**  Card lots normalise over time
-
-
+** Card lots normalise over time
 #+CAPTION[]:
 #+NAME: fig:all
 #+ATTR_LaTeX: :width 0.8\textheight

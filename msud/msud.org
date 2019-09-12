@@ -131,6 +131,7 @@ acids and related substances. The Journal of Biological Chemistry,
 
 ** Branched Chain \alpha{}-Ketoacid-Dehydrogenase Metabolic Machine
 - 4-megadalton metabolic machine on the IMM
+- thiamine (TPP) is a cofactor
 - organized around a 24-meric transacylase (E2b) cubic core
 - encoded by six genetic loci
   - E1\alpha

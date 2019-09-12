@@ -53,7 +53,7 @@
 * Introduction
 ** Muscle and Cardiac Glycogenoses
 
-- at rest muscle predominately utilizes fatty acids.
+- Muscle predominately utilizes fatty acids for energy when at rest
   - uses blood glucose during sub-maximal exercise.
 - Energy is supplied by glycogenolysis during intense exercise.
   - glycogenolysis supplies glucose for anaerobic glycolysis
@@ -63,14 +63,14 @@
 \scriptsize
 | Type        | Enzyme                        | Gene   | Phenotype                             |
 |-------------+-------------------------------+--------+---------------------------------------|
-| 0b          | Muscle glycogen synthase      | GYS1   | cardiomyopathy & myopathy             |
-| II (Pompe)  | Acid \alpha-glucosidase       | GAA    | hypotonia, muscle dysfunction         |
-| III         | Glycogen debrancher           | AGL    | hypoglycema, hepatomegaly             |
+| 0           | Muscle Glycogen Synthase      | GYS1   | cardiomyopathy & myopathy             |
+| II (Pompe)  | Acid \alpha-Glucosidase       | GAA    | hypotonia, muscle dysfunction         |
+| III         | Glycogen Debrancher           | AGL    | hypoglycema, hepatomegaly             |
 | V (McArdle) | Muscle Glycogen Phosphorylase | PYGM   | exercise intolerance                  |
 | Danon       | LAMP2                         | LAMP2  | cardiomyopathy, \pm skeletal myopathy |
-| AMPK        | AMP-activated Protein Kinase  | PRKAG2 | cardiomyopathy, \pm skeletal myopathy |
+| AMPK        | AMP-Activated Protein Kinase  | PRKAG2 | cardiomyopathy, \pm skeletal myopathy |
 
-** Glycogenoses
+** COMMENT Glycogenoses
 
 #+CAPTION[Glycogenoses]:Glycogenoses
 #+NAME: fig:glyc
@@ -135,7 +135,6 @@
   - approximately 80% of Caucasian patients.
 
 ** Clinical Presentation
-
 *** Infantile
 - first months of life with hypotonia and hypertrophic cardiomyopathy
 - also dysphagia, smooth muscle dysfunction, enlargement of the tongue
@@ -147,6 +146,7 @@
   - with motor and respiratory problems, rarely cardiac involvement.
   - Calf hypertrophy can be present, mimicking Duchenne muscular dystrophy in boys.
 - Myopathy and respiratory insufficiency deteriorate gradually, and patients may become dependent on a ventilator or wheelchair.
+** Clinical Presentation
 *** Adult
 - 3rd or 4th decade and affects the trunk and proximal limb muscles
   - mimicks inherited limb-girdle muscle dystrophies.
@@ -157,8 +157,8 @@
 - Acid \alpha-glucosidase enzyme assay
   - classic infantile ~ 1% residual activity
   - Children and Adults \le 30% activity
-- Skin Fibroblasts are best tissue
-  - Lower biochemical interferences (neutral \alpha-glucosidases)
+- Skin fibroblasts are best tissue
+  - Lower biochemical interference (neutral \alpha-glucosidases)
 - mutation analysis
 ** Treatment
 - Recombinant acid \alpha-glucosidase (rhGAA)
@@ -167,51 +167,6 @@
 - 1/3 of ERT treated were ventilator free
 - Better outcome if identified by NBS
 
-* GSD Type III
-** GSD Type III
-
-#+CAPTION[Muscle, Cardiac Glycogenoses]:Muscle, Cardiac Glycogenoses
-#+NAME: fig:hglyc
-#+ATTR_LaTeX: :width 0.75\textwidth
-[[file:./figures/gggmetab_muscle_cardiac.png]]
-
-** Metabolic Derangement
-- Glycogen debrancher enzyme (GDE) deficiency
-- has both glucosidase and transferase activity
-  - cleaves \alpha-1,4 glucose linkages of the terminal glucose
-  - then breaks \alpha-1,6 linkage to remove branch point
-- accumulation of abnormal glycogen
-- limited glucose release from glycogen
-- gluconeogenesis functions normally
-** Genetics
-- AR, AGL gene
-- mutations occur throughout AGL (GSD IIIa)
-  - defect in liver and muscle
-- two specific mutations in exon 3 (GSD IIIb)
-  - liver only 
-** Clinical Presentation
-- Hepatic glycogenosis and (in most cases) also myopathic
-- First year with poor growth, delayed motor milestones and abdominal
-  distension
-- Fasting hypoglycaemia 
-  - Fasting tolerance is usually longer than in GSD I 
-- Fasting ketosis is prominent.
-- Gluconeogenesis is normal \therefore no fasting hyperlactataemia
-- Moderate post-prandial \uparrow lactate
-- Hyperlipdaemia
-- \uparrow \uparrow \uparrow liver transaminases
-- \uparrow CK in myopathic form 
-** Diagnostic Tests
-- DBE activity in leucocytes
-- mutation analysis
-** Treatment
-- Aim is to maintain normoglycaemia, reduce the hyperlipidaemia and ketosis and
-  ensure adequate growth.
-- Regular meals and uncooked cornstarch
-- Overnight continuous feeding is less commonly needed in GSD III than
-  in GSD I
-- Long term outcome for individuals with GSD III is generally good
-  with survival into adulthood.
 
 * GSD Type V
 ** GSD Type V
@@ -243,7 +198,7 @@
   - affected children are often considered lazy.
 - Myoglobinuria is the major complication, and occurs in about half of
   the patients.
-- Creatine kinase (CK) can increase to more than 100,000–1,000,000
+- Creatine kinase (CK) can increase to more than 100,000-1,000,000
   UI/l during episodes of rhabdomyolysis
 - Risk of acute renal failure
 
@@ -259,7 +214,7 @@
 - PYGM gene sequencing
 
 ** Treatment
-- no pharmacological treatment-
+- no pharmacological treatment
 - exercise intolerance may be alleviated by:
   - aerobic conditioning programs
   - ingestion of oral sucrose
@@ -297,9 +252,9 @@
 
 ** Metabolic Derangement
 - AMPK is a heterotrimeric complex comprising:
-  - a catalytic subunit (α)
-  - two regulatory subunits (β and γ).
-- Three isoforms of the gamma subunits are known (γ1, γ2 and γ3) with different tissue
+  - a catalytic subunit (\alpha)
+  - two regulatory subunits (\beta and \gamma).
+- Three isoforms of the gamma subunits are known (\gamma1, \gamma2 and \gamma3) with different tissue
   expression
 
 ** Genetics
@@ -313,7 +268,7 @@
 - diagnosis, if clinically suspected, is based on ECG,
   echocardiography and molecular genetics.
 
-- Treatment requires a pacemaker/defibrillator and heart transplant.
+- Treatment includes a pacemaker/defibrillator and heart transplant.
 
 
 
