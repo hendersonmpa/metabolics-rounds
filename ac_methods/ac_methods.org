@@ -353,7 +353,7 @@ FTR_{carnitine}\% = \left( 1 -  \frac{carnitine_{urine} \cdot creatinine_{plasma
   - C5DC and C10-OH
 - Overestimation of CO due to hydrolysis
 
-* COMMENT Diagnostic FIA-MS/MS
+* Diagnostic FIA-MS/MS
 ** Diagnostic FIA-MS/MS schematic
 #+BEGIN_LaTeX
 \begin{center}
