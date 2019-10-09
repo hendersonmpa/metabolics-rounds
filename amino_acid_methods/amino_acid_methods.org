@@ -391,25 +391,6 @@
 #+END_LaTeX
 
 
-** FIA-MS/MS transitions
-
-- Electrospray ionization in positive mode
-- \alpha{}-amino acids fragment to produce the neutral butyl formate molecule (102 Da). 
-- A neutral loss scan is used to identify parent molecules with a NL of 102 Da.
-- MRM is used to detected amino acids with basic functional groups
-  - arginine, ornithine and citrulline
-
-#+BEGIN_LaTeX
-\centering
-\schemedebug{false}
-\schemestart
-\chemname{\chemfig[][scale=.33]{{\color{red}R}-[::-60](<[::-60]NH_3^+)-[::60](=[::60]O)-[::-60]O-[::60]-[::-60]-[::60]-[::-60]}}{\tiny AA butyl ester}
-\arrow{->[{\tiny fragmentation}]}
-\chemname{\chemfig[][scale=.33]{{\color{red}R}-[::60]=NH_2^{+}}}{\tiny fragment}
-\+
-\chemname{\chemfig[][scale=.33]{H-[::60](=[::60]O)-[::-60]O-[::60]-[::-60]-[::60]-[::-60]}}{\tiny butyl formate (102 Da)}
-\schemestop
-#+END_LaTeX
 
 ** FIA-MS/MS  MRM
 
