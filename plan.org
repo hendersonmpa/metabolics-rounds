@@ -1,0 +1,68 @@
+* Carbohydrate
+** TODO Glycolysis and PPP
+   SCHEDULED: <2019-10-10 Thu>
+** TODO Disorders of Fructose Metabolism
+   SCHEDULED: <2019-10-17 Thu>
+** TODO Hyperinsulinism
+   SCHEDULED: <2019-10-24 Thu>
+** TODO Glucose Transport
+   SCHEDULED: <2019-10-31 Thu>
+
+* Organelles
+** TODO Peroxisomes
+   SCHEDULED: <2020-03-19 Thu>
+** TODO CDGs
+   SCHEDULED: <2020-03-26 Thu>
+** TODO Cystinosis
+   SCHEDULED: <2020-04-02 Thu>
+
+
+* Lipid and Bile Acid Metabolism
+** TODO Lipoprotein Metabolism
+   SCHEDULED: <2020-02-06 Thu>
+** TODO Isoprenoid/Cholesterol Synthesis
+   SCHEDULED: <2020-02-13 Thu>
+** TODO Bile Acid Synthesis
+   SCHEDULED: <2020-02-20 Thu>
+** TODO Trig and PL Metabolism
+   SCHEDULED: <2020-02-27 Thu>
+
+* Neurotransmitters and Small Peptide
+** TODO Neurotransmission
+   SCHEDULED: <2020-01-23 Thu>
+** TODO Small Peptides
+   SCHEDULED: <2020-01-30 Thu>
+
+* Nucleic Acids and Heme
+** TODO Purine and Pyrimidine Metabolism
+   SCHEDULED: <2020-03-05 Thu>
+** TODO Haem Biosynthesis
+   SCHEDULED: <2020-03-12 Thu>
+
+* Mito Clean Up
+** TODO Ketogenesis and Ketolysis 
+   SCHEDULED: <2019-11-07 Thu>
+** TODO Creatine Deficiency 
+   SCHEDULED: <2019-11-14 Thu>
+
+* Amino Acids
+** TODO Tyrosine Metabolism
+   SCHEDULED: <2019-11-21 Thu>
+** TODO Sulfur Amino Acid Metabolism
+   SCHEDULED: <2019-11-28 Thu> 
+** TODO Ornithine and Proline Metabolism
+   SCHEDULED: <2019-12-05 Thu>
+** TODO Lysine Catabolism
+   SCHEDULED: <2019-12-12 Thu>
+** TODO NKH
+   SCHEDULED: <2019-12-19 Thu>
+** TODO Glutamine, Serine and Asparagine
+   SCHEDULED: <2019-12-26 Thu>
+** TODO Amino Acid Transport
+   SCHEDULED: <2020-01-02 Thu>
+
+* Vitamins
+** TODO Cobalamin and Folate
+   SCHEDULED: <2020-01-09 Thu>
+** TODO Thiamine and Pyridoxine
+   SCHEDULED: <2020-01-16 Thu>
