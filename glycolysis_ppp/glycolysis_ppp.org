@@ -51,62 +51,21 @@
 #+END_EXPORT 
 
 * Introduction
-** Carbohydrate Digestion
-#+CAPTION[]:Carbohydrate Digestions
-#+NAME: fig:chod
-#+ATTR_LaTeX: :width 0.7\textwidth
-[[file:./figures/carb_digest.pdf]]
+** Glycolysis and PPP
 
-** Major Pathways of Glucose Metabolism
+#+CAPTION[]:Glycolysis and PPP
+#+NAME: fig:glyc_ppp
+#+ATTR_LaTeX: :width 1\textwidth
+[[file:./figures/glyc_ppp.png]]
 
-#+CAPTION[]:Major Pathways of Glucose Metabolism
-#+NAME: fig:glucpath
-#+ATTR_LaTeX: :width 0.9\textwidth
-[[file:./figures/glucose_pathways.pdf]]
-
-** Conversion to AAs and FAs
-
-#+CAPTION[]:Conversion of Glucose
-#+NAME: fig:cgluc
-#+ATTR_LaTeX: :width 0.65\textwidth
-[[file:./figures/glucose_conversion.pdf]]
-
-* Sugar Metabolism Pathways
-** Pathways
-- Fructose
-- Galactose
-- Pentose Phosphate Pathway
-** Fructose Metabolism
-
-#+CAPTION[]:Fructose Metabolism
-#+NAME: fig:glycsnd
-#+ATTR_LaTeX: :width 0.8\textwidth
-[[file:./figures/fruc_met.pdf]]
-
-** Fructose Synthesis
-
-***                                                                 :BMCOL:
-:PROPERTIES:
-:BEAMER_col: 0.5
-:END:
-#+CAPTION[]:Fructose Synthesis
-#+NAME: fig:frucsyn
-#+ATTR_LaTeX: :width 0.5\textwidth
-[[file:./figures/fruc_syn.pdf]]
-
-***                                                                 :BMCOL:
-:PROPERTIES:
-:BEAMER_col: 0.5
-:END:
-- polyol pathway
-- present in most tissues
-
-** Galactose Metabolism
-
-#+CAPTION[]: Galactose Metabolism
-#+NAME: fig:galmet
-#+ATTR_LaTeX: :width 0.7\textwidth
-[[file:./figures/gal_met.pdf]]
+** Glycolysis 
+- Glycolysis is an oxygen-independent metabolic pathway
+  - converts each molecule of glucose to two of pyruvate.
+  - consists of two phases and ten steps.
+- The first five steps are the preparatory phase,
+  - consumes ATP to convert glucose into two, three-carbon sugar
+    phosphate molecules.
+- In the other five steps ATP and NADH are produced
 
 ** Pentose Phosphate Pathway
 *** Oxidative Phase
@@ -132,103 +91,132 @@
     - deoxynucleotide
     - superoxide
 
+* Disorders
+** Overview of Glycolysis Disorders
+- Glycolysis is the most important source of energy in erythrocytes
+  and in some types of skeletal muscle fibres
+
+  - \therefore IMD of glycolysis are mainly characterized by hemolytic
+    anaemia \pm metabolic myopathy.
+
+- Ten inborn errors of the glycolytic pathway are known,
+  - 8 inherited as an autosomal recessive trait
+  - X-linked phosphoglycerate kinase and glycerol kinase deficiencies.
+
+- Hexokinase (HK), glucose-6-phosphate isomerase (GPI) and pyruvate
+  kinase (PKD) deficiencies cause severe haemolytic anaemia.
+
+- Muscle phosphofructokinase (PFKM), aldolase A, triosephosphate
+  isomerase (TPI) and phosphoglycerate kinase (PGK) deficiencies are
+  characterized by haemolytic anaemia alone or coupled with
+  neurological disease and/or myopathy.
+
+** Overview of Glycolysis Disorders
+- Phosphoglycerate mutase (PGAM), enolase and lactate dehydrogenase
+  (LDH) deficiencies present with a purely myopathic syndrome
+  - characterized by exercise induced cramps and myoglobinuria.
+
+- Glycerol kinase deficiency (GKD) is either an isolated condition
+  with hypoglycaemia and acidosis or part of a contiguous
+  gene deletion where it also associated with congenital adrenal
+  hypoplasia and/or Duchenne muscular dystrophy.
+
+- Glucose-6-phosphate can also be formed by the conversion of the
+  glycogen derived glucose-1-phosphate, a reaction catalysed by
+  phosphoglucomutase (PGM). PGM1 deficiency is a congenital disorder
+  of glycosylation CDG
+
+** Overview of PPP Disorders
+
+- Four inborn errors in the pentose phosphate pathway (PPP) are known.
+- Glucose-6-phosphate dehydrogenase deficiency is an X-linked defect
+  in the first, irreversible step of the pathway.
+  - An exclusively haematological disorder.
+- Ribose-5-phosphate isomerase (RPI) deficiency has been described in one patient
+  - who presented with developmental delay and a slowly progressive leukoencephalopathy.
+- Transaldolase (TALDO) deficiency often presents in the neonatal or
+  antenatal period with hepatosplenomegaly, liver function problems, hepatic fibrosis and anaemia.
+
+** Overview of PPP Disorders
+- Transketolase (TKT) deficiency presents with short stature,
+  developmental delay and congenital heart defects.
+- Sedoheptulokinase (SHPK) deficiency, a defect related to the PPP has
+  been described as an isolated disorder and also as part of a 57-kb
+  deletion in nephropathic cystinosis.
+- Essential pentosuria is the result of a partial deficiency of L-xylulose reductase (xylitol dehydrogenase) an enzyme of the glucuronic acid pathway.
+  - Affected individuals excrete large amounts of L-xylulose in urine.
+  - benign disorder that occurs almost exclusively in Jewish people
+
 * The non-ischemic forearm exercise test
-** Exercising Muscle
+** NIET Method
+
+#+CAPTION[]:NIET Method
+#+NAME: fig:me
+#+ATTR_LaTeX: :width 0.9\textwidth
+[[file:./figures/niet_method.png]]
+
+** Exercising Muscle: Lactate
 - Lactate, ammonia and purine compounds are generated by exercising muscle.
-- Exercising muscle generates lactic acid from the anaerobic breakdown of glycogen
-  - bc pyruvate generated by anaerobic glycolysis is not metabolized
-    in the mitochondrial TCA cycle and is converted to lactate.
+- Exercising muscle generates lactic acid from the anaerobic breakdown of glycogen to pyruvate
+  - pyruvate \to lactate 
 - Lactate enters the circulation and is converted back to pyruvate in the liver.
-- Under anaerobic conditions it is essential that sufficient ATP is
-  regenerated to provide energy so that contracting muscle can continue to work.
+
+#+CAPTION[]:LDH
+#+NAME: fig:ldh
+#+ATTR_LaTeX: :width 0.5\textwidth
+[[file:./figures/Lactate_dehydrogenase_mechanism.png]]
+
+** Exercising Muscle: ATP
+
 - Some ATP regeneration is provided by glycolytic metabolism of fuels,
-  but this is relatively slow and most is achieved by the transfer of phosphate from phosphocreatine.
+  but this is relatively slow
+- Most ATP regeneration relys on creatine kinase catalysed transfer of
+  phosphate from phosphocreatine.
 
-phosphocreatine + ADP \to creatine + ATP
+\ce{phosphocreatine + ADP ->[CK] creatine + ATP}
 
-- another transphosphorylation reaction catalysed by the
-  myoadenylatekinase allows ATP to be regenerated with the formation
+- adenylatekinase transphosphorylates ATP to be regenerated with the formation
   of AMP
 
-2ADP \to ATP + AMP
-AMP \to IMP + NH_3
+\ce{2ADP ->[ADK] ATP + AMP}
 
-- IMP produced in this reaction is degraded to hypoxanthine
-- alternatively recycled back to AMP in the purine nucleotide cycle.
+- AMP deaminase
+\ce{AMP ->[AMPD] IMP + NH4+}
 
-This is converted to inosine monophosphate (IMP) and
-ammonia by the enzyme myoadenylate de-
-aminase (MADA) (see Equation 3).
+- IMP degraded to hypoxanthine
+- recycled back to AMP in the purine nucleotide cycle.
 
-Most ammonia produced by exercising
-muscle is detoxied by the formation of
-glutamine and ultimately excreted as urea,
-owing to the activity of the urea cycle in liver.
-Some ammonia is released by exercising skeletal
-muscle directly into the circulation, from which
-it is removed with a half-life of 20±30 min. 1 In
-resting skeletal muscle ammonia is consumed
-rather than produced and about 50% of arterial
-ammonia can be taken up and metabolized by
-skeletal muscle.
+** Exercising Muscle: Ammonia
+- Most ammonia produced by exercising muscle removed by formation of glutamine
+  - ultimately excreted as urea
+
+#+CAPTION[gln]: Glutamine and Ammonia
+#+NAME: fig:gln
+#+ATTR_LaTeX: :width 0.6\textwidth
+[[file:./figures/nitrogen_glutamine.png]]
+
+- Some ammonia is released by exercising skeletal muscle directly into the circulation
+  - removed with a half-life of 20\pm30 min.
+- In resting skeletal muscle ammonia is consumed rather than produced
+- ~50% of arterial ammonia can be taken up and metabolized by skeletal muscle.
+
 ** Interpretation
-- A normal lactate response is generally considered to be a 3-4x \uparrow plasma lactate 1 min after release of the cuff.
-  - w gradual decrease to baseline
-- Failure of lactate generation in the test is consistent impaired glucose metabolism in muscle.
-  - McArdle’s disease (GSDV), GSDVII
-- A consistently poor lactate response in the face of adequate effort therefore merits further investigation.
-- determine maximum absolute change in both plasma lactate and ammonia, rather than the fold
 
-
-
-- normal plasma ammonia response is a severalfold \uparrow 1 or 2 min after release of the cuff
-  - and thereafter a gradual decline to baseline values.
-- normal baseline plasma ammonia levels of 30\pm 65 mmol/L
-- post-ischaemia peaks of 9\pm140 mmol/L
-- any rise in plasma ammonia  i.e. above assay imprecision is likely to represent a normal response,
-  - demonstrating that the subject has reached this threshold.
-- Before a poor ammonia response can be considered pathological it is important to document adequate effort and to repeat the test to exclude day-to-day variation.
-- Variations in ammonia response are larger than for lactate
-- Maximal absolute ammonia response and maximal absolute lactate response to ischaemic exercise have been shown to be significantly correlated in normal subjects. 
+#+CAPTION[interp]:NIET Results 
+#+NAME: fig:results
+#+ATTR_LaTeX: :width .8\textheight
+[[file:./figures/niet_results.png]]
 
 ** Expected Results
 
-|                    | Lactate               | Ammonia               |
-|--------------------+-----------------------+-----------------------|
-| GSDI               | N                     | N                     |
-| GSDIII (L&M)       | \downarrow \downarrow | N/\uparrow            |
-| GSDIII (L)         | N                     | N                     |
-| GSDV               | \downarrow \downarrow | N/\uparrow            |
-| GSDIX              | N                     | N                     |
-| MADA               | \downarrow            | \downarrow \downarrow |
-| Alcoholic myopathy | N                     | N                     |
-| CFS                | N                     | N                     |
-| Poor effort        | N/\downarrow          | N/\downarrow          |
-
-* Disorders
-** Muscle Phosphofuctokinase
-- GSD VII, AR
-
-fructose-6-phosphate \to fructose-1,6-biphosphate
-- can not use free or glycogen derive glucose as a fuel source
-- accumulate glycogen
-- Clinical Presentation
-  - Like McArdle (GSD V)
-  - muscle cramps, exercise intolerance, rhabdo, myoglobinuria
-  - hemolytic anemia, hyperuricemia
-  - usually childhood onset
-- Diagnostic Tests
-  - \uparrow bilirubin, \uparrow retic count distinguish PFKM from McArdle
-  - FNIET = flat lactate, normal ammonia increase
-  
-** Aldolase A Deficiency
-** Triosephosphate Isomerase Deficiency
-** Phosphoglycerate Kinase Deficiency
-** Phosphoglycerate Mutase Deficiency
-** Enolase Deficiency
-** Lactate Dehydrogenase Deficiency
-** Glycerol Kinase Deficiency
-** Ribose-5-Phosphate Isomerase Deficiency
-** Transaldolase Deficiency
-** Transketolase Deficiency
-** Sedoheptulokinase Deficiency
+|                    | Lactate               | Ammonia      |
+|--------------------+-----------------------+--------------|
+| GSD I              | N                     | N            |
+| GSD III (L&M)      | \downarrow \downarrow | N/\uparrow   |
+| GSD V              | \downarrow \downarrow | N/\uparrow   |
+| *GSD VII (PFK)*    | \downarrow \downarrow | N/\uparrow   |
+| *GSD IX (PGK)*     | \downarrow \downarrow | N/\uparrow   |
+| *GSD X (PGAM)*     | \downarrow            | N/\uparrow   |
+| Alcoholic myopathy | N                     | N            |
+| CFS                | N                     | N            |
+| Poor effort        | N/\downarrow          | N/\downarrow |
