@@ -1,5 +1,8 @@
-#*
-#!*.org
-#!*.tex
-#!.gitignore
-#
+*/figures/*
+*/auto/*
+*.*~
+*.pdf
+*.bbl
+*.txt
+*.csv
+/logos/*
