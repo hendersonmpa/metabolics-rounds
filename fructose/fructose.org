@@ -53,7 +53,7 @@
 * Introduction
 ** Fructose Metabolism
 - Fructose is mainly metabolised in the liver, renal cortex and small intestinal mucosa
-- Pathway composed of fructokinase , aldolase B and triokinase .
+- Pathway composed of fructokinase, aldolase B and triokinase.
 - Aldolase B is also involved in the glycolytic-gluconeogenic pathway
 
 ** Disorders of Fructose Metabolism
@@ -144,7 +144,73 @@ pathway
 - Liver biopsy Aldo B activity
   - False low Aldo B secondary to liver damage
 
-- remove fructose (sucrose and sorbitol) from diet
-
+- acute intoxication:
+  - fresh frozen plasma
+- Remove fructose (sucrose and sorbitol) from diet
+- Prognosis on diet is excellent with normal growth,
+  intelligence and life span
 
 * Fructose-1,6-Bisphosphatase Deficiency
+** Clinical Presentation
+- 1/2 present in the first 1-4 days of life
+  - severe hyperventilation
+    - lactic acidosis
+    - hypoglycaemia
+- later irritability, apnoeic spells, tachycardia, muscle hypotonia
+- chronic ingestion of fructose does not lead to gastrointestinal symptoms
+  - no aversion to sweet foods or failure to thrive, and only rarely \downarrow liver function.
+
+** Metabolic Derangement
+- Deficiency of hepatic FBPase, key enzyme in gluconeogenesis, impairs
+  the formation of glucose from all gluconeogenic precursors, including dietary fructose
+- normoglycaemia in patients is dependent on glucose (and galactose)
+  intake and degradation of hepatic glycogen
+- hypoglycaemia occurs when glycogen reserves are limited (newborns, fasting)
+- accumulation of the gluconeogenic substrates lactate, pyruvate, alanine, and glycerol.
+** Genetics
+- AR
+- Liver isoform, FBP1 gene
+- 35 mutations in all regions of the gene have been published
+
+** Diagnosis
+- plasma during acute episodes
+  - \uparrow lactate (up to 15–25 mM)
+  - \downarrow pH
+  - \uparrow lactate/pyruvate ratio (up to 40)
+  - hyperalaninaemia,
+  - \uparrow glycerol which may mimic hypertriglyceridaemia
+  - glucagon-resistant hypoglycaemia
+  - \uparrow free fatty acids and uric acid.
+- Urinary analysis reveals
+  - \uparrow lactate, alanine, glycerol,
+  - in most cases, ketones and glycerol-3-phosphate.
+
+- molecular analysis on DNA from peripheral leukocytes
+- if no mutations found
+  - enzymatic activity in a liver biopsy
+  - the residual activity may vary from zero to 30% of normal
+
+** Differential Diagnosis
+- other disturbances in gluconeogenesis and pyruvate oxidation should be considered, including:
+  1) pyruvate dehydrogenase deficiency characterised by a low
+     lactate/pyruvate ratio, absence of hypoglycaemia and aggravation
+     of lactic acidosis by glucose infusion
+  2) pyruvate carboxylase deficiency
+  3) respiratory chain disorders
+  4) glycogenosis type Ia and Ib presenting with the same metabolic profile
+     - fasting hypoglycaemia and lactic acidosis and hepato nephromegaly, hyperlipidaemia, and hyperuricaemia
+  5) fatty acid oxidation defects presenting with fasting hypoketotic hypoglycaemia and hyperlactataemia
+
+** Treatment
+
+- acute life-threatening episodes should be treated with an IV bolus
+  of 20% glucose
+- followed by a continuous infusion of glucose and bicarbonate to
+  control hypoglycaemia and acidosis.
+- Maintenance therapy should be aimed at avoiding fasting,
+  particularly during febrile episodes
+  - slowly absorbed carbohydrates (uncooked starch), and a gastric
+    drip, if necessary.
+- absence of any triggering effects leading to metabolic
+  decompensation, individuals with FBPase deficiency are healthy and
+  no carbohydrate supplements are needed.
