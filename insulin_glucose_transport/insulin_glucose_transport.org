@@ -100,24 +100,47 @@
 - Severe CHI is responsible for recurrent severe hypoglycaemia in neonates
   - delayed diagnosis or inappropriate medical management is responsible for brain damage in about 1⁄3,
 - Two main histopathological variants of CHI: diffuse and focal
+- Three forms: transient, syndromic and isolated congenital HI
 
-** Clinical Presentation in Neonates
-1) Transient neonatal HI
-   - can occur in newborns from diabetic mothers,
-   - small for gestational age
-   - due to perinatal stress such as fetal distress or following birth asphyxia.
-   - Hypoglycaemia can be severe,
-     - usually resolves within a few days or months.
-2) Syndromic HI
-   - HI is part of a developmental syndrome.
-   - Hypoglycaemia can be the initial manifestation of a number of
-     different syndromes during the neonatal period
-     - Beckwith Wiedemann Syndrome (BWS),
-     - congenital disorder of glycosylation PMM2-CDG and PMMI-CDG,
-     - Kabuki syndrome ,
-     - Sotos syndrome
-3) Isolated congenital HI
-   - HI is inherited but occurs primarily as an isolated abnormality.
-   - Hypoglycaemia can reveal the disease in all ages.
+** Transient and Syndromic HI 
+- Transient neonatal HI
+  - can occur in newborns from diabetic mothers,
+  - small for gestational age
+  - due to perinatal stress such as fetal distress or following birth asphyxia.
+  - Hypoglycaemia can be severe,
+    - usually resolves within a few days or months.
+- Syndromic HI
+  - HI is part of a developmental syndrome.
+  - Hypoglycaemia can be the initial manifestation of a number of
+    different syndromes during the neonatal period
+    - Beckwith Wiedemann Syndrome (BWS),
+    - congenital disorder of glycosylation PMM2-CDG and PMMI-CDG,
+    - Kabuki syndrome ,
+    - Sotos syndrome
+
+**  Isolated congenital HI
+  - HI is inherited but occurs primarily as an isolated abnormality.
+  - Hypoglycaemia can reveal the disease in all ages.
+  - Hypoglycaemia occurs both in the fasting and the post-prandial states,
+  - Most neonates (86%) are resistant to treatment with diazoxide.
+
+** Metabolic Derangement
+- functional defect of the pancreatic \beta-cells.
+- inappropriate secretion of insulin \to hypoglycaemia
+  - \downarrow hepatic glucose release from glycogen and gluconeogenesis
+  - \uparrow glucose uptake in muscular and fatty tissues.
+  - CHI is heterogeneous, caused by various defects in regulation of insulin secretion.
+
+- channelopathies affecting the ATP channel (ABCC8 and KCNJ11mutations);
+
+- metabolic defects: enzymes deficiencies, such as glucokinase,
+  glutamate dehydrogenase, or SCHAD; transporter deficiencies such as
+  the MCT1 (SLC16A1 mutations) and the mitochondrial uncoupling protein 2 (UCP2)
+
+- transcription factors impairment, such as HNF1A and HNF4A.
+
+- exceptional cases, defect in the signalling pathway of the insulin
+  receptor. 
+
 
 * Disorders of Glucose Transport
