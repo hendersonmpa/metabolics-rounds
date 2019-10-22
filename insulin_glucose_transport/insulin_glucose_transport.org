@@ -1,0 +1,123 @@
+#+TITLE: Congenital Hyperinsulinemia and Disorders of Glucose Transport
+#+AUTHOR: Matthew Henderson, PhD, FCACB
+#+DATE: \today
+
+:PROPERTIES:
+#+DRAWERS: PROPERTIES
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [presentation, smaller]
+#+BEAMER_THEME: Hannover
+#+BEAMER_COLOR_THEME: whale
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+OPTIONS: H:2 toc:nil ^:t
+#+PROPERTY: header-args:R :session *R*
+#+PROPERTY: header-args :cache no
+#+PROPERTY: header-args :tangle yes
+#+STARTUP: beamer
+#+STARTUP: overview
+#+STARTUP: indent
+# #+BEAMER_HEADER: \subtitle{Part 1: Maple Syrup Urine Diseas}
+#+BEAMER_HEADER: \institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
+#+BEAMER_HEADER: \titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
+#+latex_header: \hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
+#+LaTeX_header: \usepackage{textpos}
+#+LaTeX_header: \usepackage{textgreek}
+#+LaTeX_header: \usepackage[version=4]{mhchem}
+#+LaTeX_header: \usepackage{chemfig}
+#+LaTeX_header: \usepackage{siunitx}
+#+LaTeX_header: \usepackage{gensymb}
+#+LaTex_HEADER: \usepackage[usenames,dvipsnames]{xcolor}
+#+LaTeX_HEADER: \usepackage[T1]{fontenc}
+#+LaTeX_HEADER: \usepackage{lmodern}
+#+LaTeX_HEADER: \usepackage{verbatim}
+#+LaTeX_HEADER: \usepackage{tikz}
+#+LaTeX_HEADER: \usepackage{wasysym}
+#+LaTeX_HEADER: \usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+:END:
+
+#+BEGIN_EXPORT LaTeX
+%\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
+%    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
+%}
+
+\vspace{220pt}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\tiny}
+% \addtobeamertemplate{frametitle}{}{%
+% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+% \includegraphics[height=1cm,width=2cm]{cat}
+% \end{textblock*}}
+#+END_EXPORT 
+
+* Congenital Hyperinsulinemia
+** Insulin Secretion
+- glucose is transported into the pancreatic \beta-cell is phosphorylated to glucose-6-phosphate by glucokinase
+  - GCK Km \sim [glucose] in  blood
+  - functions as a glucose sensor
+- \uparrow glycolysis \to \uparrow ATP
+- \uparrow ATP/ADP ratio detected by ATP/ADP-sensitive potassium channels (K_{ATP}),
+  - \to channel closure depolarization of the plasma membrane.
+  - volt-age-sensitive Ca^{2+}
+  - influx of extracellular Ca^{2+} stimulates insulin secretion by
+    exocytosis from storage granules.
+
+** Insulin Secretion
+- Other mechanisms regulate the release of insulin
+  1) transcription factors, such as HNF1A and HNF4A
+
+  2) metabolic factors which modulate the ATP production,
+     - namely leucine (through the activation of the glutamate dehydrogenase (GDH,GLUD1)
+     - short-chain L-3-hydroxyacyl-CoA dehydrogenase (SCHAD, HADH)
+     - monocarboxylate transporter (MCT1,SLC16A1),
+     - mitochondrial uncoupling protein 2(UCP2)
+  3) receptors for various hormones and neuropeptides including:
+     - somatostatin, insulin, GLP1,GIP, etc.
+
+** Insulin Secretion
+
+#+CAPTION[insulin]: Insulin Secretion
+#+NAME: fig:insulin
+#+ATTR_LaTeX: :width 0.9\textwidth
+[[file:./figures/insulin.png]]
+
+** Insulin Effects
+- Activation of insulin receptors:
+- \uparrow glucose utilization
+- \downarrow lipid utilization,
+- cellular growth,
+- translocates the glucose transporter GLUT4 to the PM
+- Cerebral cells are poorly insulin-sensitive
+  - highly dependent on circulating glucose
+    - in hyperinsulinism, there is a significant risk of brain damage
+      from neuroglucopenia.
+
+** Congenital Hyperinsulinism
+- CHI includes all genetic causes leading to hyperinsulinaemic
+  hypoglycaemia that are due to a primary defect of the pancreatic
+  \beta-cell
+- CHI can present throughout childhood, most common in infancy.
+- Severe CHI is responsible for recurrent severe hypoglycaemia in neonates
+  - delayed diagnosis or inappropriate medical management is responsible for brain damage in about 1⁄3,
+- Two main histopathological variants of CHI: diffuse and focal
+
+** Clinical Presentation in Neonates
+1) Transient neonatal HI
+   - can occur in newborns from diabetic mothers,
+   - small for gestational age
+   - due to perinatal stress such as fetal distress or following birth asphyxia.
+   - Hypoglycaemia can be severe,
+     - usually resolves within a few days or months.
+2) Syndromic HI
+   - HI is part of a developmental syndrome.
+   - Hypoglycaemia can be the initial manifestation of a number of
+     different syndromes during the neonatal period
+     - Beckwith Wiedemann Syndrome (BWS),
+     - congenital disorder of glycosylation PMM2-CDG and PMMI-CDG,
+     - Kabuki syndrome ,
+     - Sotos syndrome
+3) Isolated congenital HI
+   - HI is inherited but occurs primarily as an isolated abnormality.
+   - Hypoglycaemia can reveal the disease in all ages.
+
+* Disorders of Glucose Transport
