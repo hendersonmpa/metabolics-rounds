@@ -70,8 +70,10 @@
   - may be life-threatening
 
 ** Fructose Metabolism
-pathway
-
+#+CAPTION[Fructose]:Fructose Metabolism
+#+NAME: fig:fruct
+#+ATTR_LaTeX: :width 0.9\textwidth
+[[file:./figures/fructose.png]]
 * Essential Fructosuria
 ** Clinical Presentation
 - Rare non-disease
