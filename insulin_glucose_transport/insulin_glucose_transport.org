@@ -52,25 +52,25 @@
 
 * Congenital Hyperinsulinemia
 ** Insulin Secretion
-- glucose is transported into the pancreatic \beta-cell is phosphorylated to glucose-6-phosphate by glucokinase
+- glucose is transported into the pancreatic \beta-cell and phosphorylated to G-6-P by glucokinase
   - GCK Km \sim [glucose] in  blood
   - functions as a glucose sensor
 - \uparrow glycolysis \to \uparrow ATP
-- \uparrow ATP/ADP ratio detected by ATP/ADP-sensitive potassium channels (K_{ATP}),
-  - \to channel closure depolarization of the plasma membrane.
-  - volt-age-sensitive Ca^{2+}
+- \uparrow ATP/ADP ratio detected by ATP/ADP-sensitive potassium channels (K_{ATP})
+  - \to channel closure depolarization of the plasma membrane
+  - \to voltage-sensitive Ca^{2+} channel opens
   - influx of extracellular Ca^{2+} stimulates insulin secretion by
-    exocytosis from storage granules.
+    exocytosis from storage granules
 
 ** Insulin Secretion
 - Other mechanisms regulate the release of insulin
   1) transcription factors, such as HNF1A and HNF4A
 
-  2) metabolic factors which modulate the ATP production,
-     - namely leucine (through the activation of the glutamate dehydrogenase (GDH,GLUD1)
+  2) metabolic factors which modulate the ATP production
+     - leucine (through the activation of the glutamate dehydrogenase (GDH,GLUD1)
      - short-chain L-3-hydroxyacyl-CoA dehydrogenase (SCHAD, HADH)
      - monocarboxylate transporter (MCT1,SLC16A1),
-     - mitochondrial uncoupling protein 2(UCP2)
+     - mitochondrial uncoupling protein 2 (UCP2)
   3) receptors for various hormones and neuropeptides including:
      - somatostatin, insulin, GLP1,GIP, etc.
 
@@ -83,46 +83,46 @@
 
 ** Insulin Effects
 - Activation of insulin receptors:
-- \uparrow glucose utilization
-- \downarrow lipid utilization,
-- cellular growth,
-- translocates the glucose transporter GLUT4 to the PM
+  - \uparrow glucose utilization
+  - \downarrow lipid utilization
+  - cellular growth
+  - translocates the glucose transporter GLUT4 to the PM
 - Cerebral cells are poorly insulin-sensitive
   - highly dependent on circulating glucose
     - in hyperinsulinism, there is a significant risk of brain damage
       from neuroglucopenia.
 
 ** Congenital Hyperinsulinism
-- CHI includes all genetic causes leading to hyperinsulinaemic
-  hypoglycaemia that are due to a primary defect of the pancreatic
+- CHI includes all genetic causes of hyperinsulinaemic
+  hypoglycaemia due to a primary defect of the pancreatic
   \beta-cell
-- CHI can present throughout childhood, most common in infancy.
+- CHI can present throughout childhood, most common in infancy
 - Severe CHI is responsible for recurrent severe hypoglycaemia in neonates
-  - delayed diagnosis or inappropriate medical management is responsible for brain damage in about 1⁄3,
+  - delayed diagnosis or inappropriate medical management is responsible for brain damage in about 1/3
 - Two main histopathological variants of CHI: diffuse and focal
 - Three forms: transient, syndromic and isolated congenital HI
 
 ** Transient and Syndromic HI 
 - Transient neonatal HI
-  - can occur in newborns from diabetic mothers,
+  - can occur in newborns from diabetic mothers
   - small for gestational age
-  - due to perinatal stress such as fetal distress or following birth asphyxia.
-  - Hypoglycaemia can be severe,
-    - usually resolves within a few days or months.
+  - due to perinatal stress such as fetal distress or following birth asphyxia
+  - Hypoglycaemia can be severe
+    - usually resolves within a few days or months
 - Syndromic HI
   - HI is part of a developmental syndrome.
   - Hypoglycaemia can be the initial manifestation of a number of
     different syndromes during the neonatal period
-    - Beckwith Wiedemann Syndrome (BWS),
-    - congenital disorder of glycosylation PMM2-CDG and PMMI-CDG,
-    - Kabuki syndrome ,
+    - Beckwith Wiedemann Syndrome (BWS)
+    - CDGs (PMM2-CDG and PMMI-CDG)
+    - Kabuki syndrome
     - Sotos syndrome
 
-**  Isolated congenital HI
-  - HI is inherited but occurs primarily as an isolated abnormality.
-  - Hypoglycaemia can reveal the disease in all ages.
-  - Hypoglycaemia occurs both in the fasting and the post-prandial states,
-  - Most neonates (86%) are resistant to treatment with diazoxide.
+** Isolated Congenital HI
+  - HI is inherited but occurs primarily as an isolated abnormality
+  - Hypoglycaemia can reveal the disease in all ages
+  - Hypoglycaemia occurs both in the fasting and the post-prandial states
+  - Most neonates (86%) are resistant to treatment with diazoxide
 
 ** Metabolic Derangement
 - functional defect of the pancreatic \beta-cells.
@@ -130,16 +130,11 @@
   - \downarrow hepatic glucose release from glycogen and gluconeogenesis
   - \uparrow glucose uptake in muscular and fatty tissues.
 - CHI is heterogeneous, caused by various defects in regulation of insulin secretion.
-
   - channelopathies affecting the ATP channel (ABCC8 and KCNJ11 mutations)
-
   - metabolic defects:
     - enzymes deficiencies: glucokinase, glutamate dehydrogenase, or SCHAD
-
     - transporter deficiencies: MCT1 (SLC16A1 mutations) and the mitochondrial uncoupling protein 2 (UCP2)
-
   - transcription factors impairment, such as HNF1A and HNF4A.
-
   - exceptional cases, defect in the signalling pathway of the insulin
     receptor. 
 
@@ -168,117 +163,129 @@
   5. The need for a high glucose infusion rate (GIR) to keep blood
      glucose above 3 mmol/l is characteristic of an insulin related
      hypoglycaemia
+
+- Once HI is established molecular can identify a gene
+
 * Disorders of Glucose Transport
 ** Glucose Transporters
-- D-Glucose and other monosaccharides are hydrophilic an 
-  cannot easily cross the lipophilic bilayer of the cell membrane.
+- Glucose is hydrophilic \therefore cannot easily cross cell membrane
 - Transporters exist in almost all cell types
 - glucose transporter proteins can be divided into two groups:
   1. Sodium-dependent glucose transporters (SGLTs)
      - symporter systems, active transporters encoded by members of
        the SLC5 gene family
      - couple sugar transport to the electrochemical gradient of sodium
-     - transport glucose against its [gradient].
+     - transport glucose \uparrow [gradient].
   2. Facilitative glucose transporters (GLUTs)
      - uniporter systems, passive transporters encoded by members of the SLC2 gene family
-     - transport monosaccharides down [gradient].
+     - transport glucose \downarrow [gradient].
+
+** Glucose Transporters
+
+#+CAPTION[glucose transporters]:Glucose Transporters
+#+NAME: fig:glut
+#+ATTR_LaTeX: :width 0.9\textwidth
+[[file:./figures/glut.png]]
 
 ** Congenital Defects of Glucose Transporters
-- five congenital defects of monosaccharide transporters
+- Five congenital defects of monosaccharide transporters
 - Their clinical picture depends on tissue-specific expression and
   substrate specificity of the affected transporter.
 
-- SGLT1, SGLT2
-- GLUT1, GLUT2, GLUT10
+  1. SGLT1 : Congenital Glucose/Galactose Malabsorption
+  2. SGLT2 : Renal Glucosuria
+  3. GLUT1 : Glucose Transporter-1 Deficiency
+  4. GLUT2 : Fanconi-Bickel Syndrome
+  5. GLUT10 : Arterial Tortuosity Syndrome
 
 ** Congenital Glucose/Galactose Malabsorption (SGLT1 Deficiency )
 - SGLT1 is a high-affinity, low-capacity sodium-dependent transporter
   of the two monosaccharides, at the brush border of enterocytes.
 
-- SGLT1 deficiency causes intestinal glucose-galactose malabsorption,
-  a condition that presents with severe osmotic diarrhoea and
-  dehydration soon after birth.
-
+- SGLT1 deficiency \to intestinal glucose-galactose malabsorption
 - GGM is a rare autosomal recessive disorder.
 
-- present with bloating and profuse watery diarrhoea within days after
-  a normal birth and a normal pregnancy
+- presents with severe osmotic diarrhoea and dehydration soon after a
+  normal birth and pregnancy
   - patients develop severe hypertonic dehydration, often with fever
   - patients die from hypovolaemic shock.
 
-- Glucose and galactose free diet
+- Treatement is a glucose and galactose free diet
 
 ** Renal Glucosuria (SGLT2 Deficiency)
-- SGLT2 mutations result in isolated renal glucosuria, a harmless
-  renal transport defect characterised by normal blood glucose
-  concentrations and the absence of any other signs of renal tubular dysfunction.
+- SGLT2 is the major cotransporter involved in glucose reabsorption in
+  the kidney
+- SGLT2 mutations result in isolated renal glucosuria,
+  - a harmless renal transport defect characterised by:
+    - normal blood glucose concentrations
+    - absence of any other signs of renal tubular dysfunction
 
 ** Glucose Transporter-1 Deficiency (GLUT1 Deficiency)
-- clinical symptoms such as microcephaly,epileptic encephalopathies,
-  paroxysmal movement disorders or different types of tremor,
-  - caused by impaired glucose transport at the blood-brain barrier
-  - haemolytic anaemia has also been observed
-
 - GLUT1 is a membrane-spanning, glycosylated protein that facilitates
   glucose transport across the blood-brain barrier
   - low CSF glucose concentration (hypoglycorrhachia)
 
+- clinical symptoms include: microcephaly, epileptic encephalopathies,
+  paroxysmal movement disorders, tremor
+- haemolytic anaemia has also been observed
+
+** Glucose Transporter-1 Deficiency (GLUT1 Deficiency)
 - both AD and AR inheritance have been described
 
 - GLUT1D should be suspected in any child with a CSF glucose
-  concentration \lt 2.5 mmol/l (range range 0.9-2.9 mmol/l)
-- normal \gt 3.3 mmol/l
+  concentration \lt 2.5 mmol/L (range range 0.9-2.9 mmol/l)
+  - normal \gt 3.3 mmol/L
 
-- CSF to blood glucose ratio is normally \gt 0.6
-- <0.5 (range 0.19–0.52)
-- absence of hypoglycaemia or a CNS infection is diagnostic.
-
-- ketogenic diet
-
+- CSF to blood glucose ratio \lt 0.5 (range 0.19-0.52)
+  - normal \gt 0.6
+  - in the absence of hypoglycaemia or a CNS infection is diagnostic.
+- ketogenic diet is used in treatment
 
 ** Fanconi-Bickel Syndrome (GLUT2 Deficiency )
 
-- Fanconi-Bickel syndrome (GLUT2), an important glucose and galactose
-  carrier of hepatic, renal and pancreatic \beta-cells.
-- Patients typically present with a combination of increased hepatic
-  glycogen storage and generalised renal tubular dysfunction which
-  includes severe glucosuria.
+- GLUT2 is a high-K_m monosaccharide carrier 
+  - located in hepatocytes
+  - at the basolateral membrane of cells in the proximal tubule
+  - pancreatic \beta-cells
 
-- GLUT2 is a high-K_m monosaccharide carrier that can transport both glucose and galactose
-  - hepatocytes and at the basolateral membrane of reabsorbing cells
-    of the proximal tubule
-- In FBS hepatocytes, GLUT2 has the effect of a malfunctioning glucose
-  sensor:
-  - in the fasted state, the concentrations of glucose and
-    glucose-6-phosphate within hepatocytes are inappropriately high in FBS.
+- Typically presents with a combination of increased hepatic
+  glycogen storage, generalised renal tubular dysfunction, severe glucosuria.
 
-  - This stimulates glycogen synthesis, inhibits gluconeogenesis and
-    glycogenolysis, and ultimately predisposes to hypoglycaemia and
-    hepatic glycogen accumulation [39]
+- In FBS GLUT2 acts as a malfunctioning glucose sensor:
+  - in the fasted state, [glucose] and [G-6-P] are inappropriately \uparrow in hepatocytes
+  - stimulates glycogen synthesis, inhibits gluconeogenesis and glycogenolysis
+  - predisposes to hypoglycaemia and hepatic glycogen accumulation
 
-- very rare autosomal recessive condition caused by mutations of GLUT2 (SLC2A2).
+- very rare autosomal recessive condition caused by mutations in
+  SLC2A2.
 
-- suggested by the characteristic combination of an altered glucose homeostasis, hepatic glycogen accumulation, and the typical features of a Fanconi-type tubulopathy.
+** Fanconi-Bickel Syndrome (GLUT2 Deficiency )
 
-- Elevated biotinidase activity in serum has been found tobe a useful screening test for hepatic glycogen storage disorders including FBS.
+- Diagnosis suggested by the characteristic combination of an altered
+  glucose homeostasis, hepatic glycogen accumulation, and the typical
+  features of a Fanconi-type tubulopathy.
+
+- Elevated biotinidase activity in serum has been found to be a useful
+  screening test for hepatic glycogen storage disorders including FBS.
 
 - Only symptomatic treatment is available.
 
 ** Arterial Tortuosity Syndrome (GLUT10 Deficiency)
 
-- GLUT10 deficiency is an entity characterised by hyperelastic
-  connective tissue and generalised tortuosity and elongation of all
-  major arteries including the aorta
-- not related to impaired transport of glucose but of the structurally
-  related dehydroascorbic acid at the mitochondrial membrane of smooth
-  muscle cells and insulin-stimulated adipocytes.
+- GLUT10 function not entirely clear:
+  - localizes to mitochondria of smooth muscle and insulin-stimulated adipocytes
+  - facilitates transport of l-dehydroascorbic acid (DHA), the oxidized
+    form of vitamin C, into mitochondria,
 
-- acute infarction owing to ischaemic stroke or an increased risk of
-  thromboses.
+- GLUT10 deficiency is characterised by hyperelastic connective tissue
+  and generalised tortuosity and elongation of all major arteries
+  including the aorta
 
+** Arterial Tortuosity Syndrome (GLUT10 Deficiency)
+- presents with acute infarction owing to ischaemic stroke or an
+  increased risk of thromboses.
 - Aortic regurgitation and multiple pulmonary artery stenoses are
   typical intrathoracic manifestations.
-
 - closely resembles a connective tissue disorder in presentation.
 
 - rare, AR GLUT10 (SLC2A10)
