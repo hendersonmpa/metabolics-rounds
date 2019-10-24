@@ -1,4 +1,4 @@
-#+TITLE: Congenital Hyperinsulinemia and Disorders of Glucose Transport
+#+TITLE: Congenital Hyperinsulinemia or Disorders of Glucose Transport
 #+AUTHOR: Matthew Henderson, PhD, FCACB
 #+DATE: \today
 
@@ -67,10 +67,10 @@
   1) transcription factors, such as HNF1A and HNF4A
 
   2) metabolic factors which modulate the ATP production
-     - leucine (through the activation of the glutamate dehydrogenase (GDH,GLUD1)
-     - short-chain L-3-hydroxyacyl-CoA dehydrogenase (SCHAD, HADH)
-     - monocarboxylate transporter (MCT1,SLC16A1),
-     - mitochondrial uncoupling protein 2 (UCP2)
+     - leucine activation of glutamate dehydrogenase
+     - short-chain L-3-hydroxyacyl-CoA dehydrogenase 
+     - monocarboxylate transporter 1
+     - mitochondrial uncoupling protein 2
   3) receptors for various hormones and neuropeptides including:
      - somatostatin, insulin, GLP1,GIP, etc.
 
@@ -85,8 +85,8 @@
 - Activation of insulin receptors:
   - \uparrow glucose utilization
   - \downarrow lipid utilization
-  - cellular growth
-  - translocates the glucose transporter GLUT4 to the PM
+  - \uparrow cellular growth
+  - translocation of GLUT4 to the PM
 - Cerebral cells are poorly insulin-sensitive
   - highly dependent on circulating glucose
     - in hyperinsulinism, there is a significant risk of brain damage
@@ -133,7 +133,7 @@
   - channelopathies affecting the ATP channel (ABCC8 and KCNJ11 mutations)
   - metabolic defects:
     - enzymes deficiencies: glucokinase, glutamate dehydrogenase, or SCHAD
-    - transporter deficiencies: MCT1 (SLC16A1 mutations) and the mitochondrial uncoupling protein 2 (UCP2)
+    - transporter deficiencies: MCT1 and the mitochondrial uncoupling protein 2
   - transcription factors impairment, such as HNF1A and HNF4A.
   - exceptional cases, defect in the signalling pathway of the insulin
     receptor. 
@@ -141,30 +141,29 @@
 ** Genetics
 - estimated incidence of severe CHI is 1 in 50,000 live births
   - in countries with substantial consanguinity it may be as high as 1 in 2,500
-- The pattern of inheritance can be dominant or recessive,
-  - and the genetic abnormality sometimes occurs de novo.
+- The pattern of inheritance can be dominant or recessive
+  - sometimes /de novo/
 - In isolated CHI, the inheritance is:
   - autosomal recessive for ABCC8, KCNJ11 and HADH gene mutations
-  - autosomal dominant or de novo for GLUD1, GCK, UCP2,SLC16A1, HNF1A, HNF4A mutations
+  - autosomal dominant or /de novo/ for GLUD1, GCK, UCP2,SLC16A1, HNF1A, HNF4A mutations
     - some cases for ABCC8 and KCNJ11 mutations.
 
 ** Diagnosis 
 - Diagnosis of HI relies on 5 non-essential criteria:
-  1. Fasting and/or post-prandial hypoglycaemia (<2.5–3 mmol/l).
+  1. Fasting and/or post-prandial hypoglycaemia (<2.5-3 mmol/l).
   2. Inappropriate plasma insulin levels and c-peptide at the time of
      hypoglycaemia (potentially missed by a single sample because of
      the pulsatile secretion of insulin).
   3. Absent/low blood & urine ketones bodies and non-esterified fatty
      acids (NEFA). However, in some cases, ketones bodies and NEFA are
      not totally suppressed.
-  4. An increase in blood glucose greater than 1.7 mmol/l (30 mg/dl)
-     within 30–40 minutes after SC/IM or IV administration of 1 mg
-     glucagon.
+  4. \uparrow blood glucose \gt 1.7 mmol/l within 30–40 min after
+     SC/IM or IV administration of 1 mg glucagon.
   5. The need for a high glucose infusion rate (GIR) to keep blood
      glucose above 3 mmol/l is characteristic of an insulin related
      hypoglycaemia
 
-- Once HI is established molecular can identify a gene
+- Once HI is established molecular studies to identify a gene
 
 * Disorders of Glucose Transport
 ** Glucose Transporters
@@ -213,10 +212,11 @@
 - Treatement is a glucose and galactose free diet
 
 ** Renal Glucosuria (SGLT2 Deficiency)
-- SGLT2 is the major cotransporter involved in glucose reabsorption in
+- SGLT2 is the major co-transporter involved in glucose reabsorption in
   the kidney
-- SGLT2 mutations result in isolated renal glucosuria,
+- SGLT2 deficiency results in isolated renal glucosuria,
   - a harmless renal transport defect characterised by:
+    - glucosuria
     - normal blood glucose concentrations
     - absence of any other signs of renal tubular dysfunction
 
@@ -245,7 +245,7 @@
 
 - GLUT2 is a high-K_m monosaccharide carrier 
   - located in hepatocytes
-  - at the basolateral membrane of cells in the proximal tubule
+  - basolateral membrane of cells in the proximal tubule
   - pancreatic \beta-cells
 
 - Typically presents with a combination of increased hepatic
@@ -274,8 +274,8 @@
 
 - GLUT10 function not entirely clear:
   - localizes to mitochondria of smooth muscle and insulin-stimulated adipocytes
-  - facilitates transport of l-dehydroascorbic acid (DHA), the oxidized
-    form of vitamin C, into mitochondria,
+  - facilitates transport of dehydroascorbic acid (DHA), the
+    oxidized form of vitamin C, into mitochondria
 
 - GLUT10 deficiency is characterised by hyperelastic connective tissue
   and generalised tortuosity and elongation of all major arteries
