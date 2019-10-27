@@ -51,6 +51,26 @@
 #+END_EXPORT 
 
 * Peroxisomal \beta-oxidation Disorders
+** Peroxisomal \beta-oxidation
+- oxidation of a range of fatty acids including:
+  1) very-long-chain fatty acids
+     -  do not degrade fatty acids to completion
+  2) pristanic acid
+  3) the bile acid intermediates di- and trihydroxycholes-tanoic acid
+  4) a range of eicosanoids
+
+- Two acyl-CoA oxidases (ACOX1 & 2)
+- Two bifunctional proteins (LBP & DBP)
+- Two thiolases (ACAA1 & SCPx). 
+- Single enzyme or transport protein defect result in abnormalities in some fatty acids.
+
+** Peroxisomal \beta-oxidation Disorders
+- Peroxisomal \beta-oxidation disorders can be subdivided into two groups:
+  1) single peroxisomal enzyme or transport protein deficiencies
+     - X-linked adrenoleukodystrophy (X-ALD)
+  2) generalized peroxisomal beta-oxidation deficiencies.
+     - Zellweger syndrome 
+
 ** X-linked Adrenoleukodystrophy
 
 
