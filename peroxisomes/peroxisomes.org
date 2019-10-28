@@ -56,7 +56,7 @@
   1) very-long-chain fatty acids
      -  do not degrade fatty acids to completion
   2) pristanic acid
-  3) the bile acid intermediates di- and trihydroxycholes-tanoic acid
+  3) bile acid intermediates di- and trihydroxycholestanoic acid
   4) a range of eicosanoids
 
 - Two acyl-CoA oxidases (ACOX1 & 2)
@@ -71,17 +71,107 @@
   2) generalized peroxisomal beta-oxidation deficiencies.
      - Zellweger syndrome 
 
-** X-linked Adrenoleukodystrophy
+** Non-mitochondrial FA metabolism
+#+CAPTION[Non-mitochondrial FA metabolism]:Non-mitochondrial FA metabolism
+#+NAME: fig:nmfa
+#+ATTR_LaTeX: :width \textwidth
+[[file:./figures/non_mito_FA_met.png]]
 
+* X-linked Adrenoleukodystrophy
+** Clinical Presentation
+- 1/20,000 males and females
+- childhood cerebral form is the most severe
+  - neurological symptoms between 4-12 years
+  - vegetative state and death
+- Males may present with ADD or behavioural changes (due to
+  visuospatial deficits \pm central hearing loss) as the first manifestations
+- followed by severe visual and hearing impairment, quadriplegia and
+  cerebellar ataxia.
+- Adrenomyeloneuropathy (AMN) affects 65% of adult X-ALD male patients (20–50 years)
+  - up to 88% of heterozygous women (>40 years)
+- Presentation is progressive spastic paraparesis and sensory ataxia.
 
-** Zellweger Spectrum Disorders
+** Metabolic Derangement
+- ALDP deficiency a peroxisomal ABC transporter
+- \to \uparrow VLCFA-CoA in cytosol
+  - incorporation into a variety of lipids including:
+  - cholesterol esters, phospholipids, and sphingolipids
+- VLCFAs accumulate in virtually all tissues, including erythrocytes,
+  white blood cells and plasma.
+
+** Genetics
+- X-ALD is caused by mutations in ABCD1
+- X-linked
+
+** Diagnostic Tests
+
+- The single most important test for X-ALD is the analysis of VLCFAs,
+  including C22:0, C24:0, and C26:0 in plasma after alkaline and acid
+  hydrolysis to release the VLCFAs from all lipid species
+
+- \uparrow concentration of C26:0
+- \uparrow C26:0/C22:0 and C24:0/C22:0 ratios.
+- In women, a normal plasma VLCFA level thus does not exclude the diagnosis adrenoleukodystrophy.
+  - When a female is suspected to have adrenoleukodystrophy, mutation analysis is the most reliable method for the diagnosis.
+
+- False-positive results, however, have been reported in patients on a
+  ketogenic diet and especially in patients taking peanut butter
+
+** Treatment
+- A boy born with X-ALD has a 35% risk of developing cerebral ALD
+  between the age of 4–12 years
+- 100% risk of developing AMN between the age of 25-50 years.
+- Cerebral X-ALD can be treated in boys and adult males
+  - only at a very early stage of the disease,
+  - when patients start to develop cerebral demyelination on brain MRI
+    but have no or minimal neurologic symptoms.
+- HCT can arrest the cerebral demyelination when the procedure is
+  performed at a very early stage
+* Zellweger Spectrum Disorders
+** Clinical Presentation
+- prototype of the ZSD:
+ 1) the typical cranial facial dysmorphia including:
+    - high forehead, large interior fontanelle, hypoplastic
+      supraorbital ridges, epicanthal folds, flat nasal bridge, and
+      deformed ear lobes
+ 2) profound neurological abnormalities.
+
+** Metabolic Derangement
+- absence or marked deficiency of peroxisomes
+  - assessed by catalase-staining in fibroblasts
+  - using immunofluorescence microscopy analysis
+- all peroxisomal functions are impaired.
+- In classical ZS abnormalities include accumulation of VLCFAs,
+  pristanic acid, di- and trihydroxycholestanoic acid, and pipecolic
+  acid and deficient plasmalogens in erythrocytes
+
+** Genetics
+- The genetic basis of the ZSD is markedly heterogeneous
+  - biallelic mutations identified in:
+  - PEX1, PEX2, PEX3, PEX5, PEX6, PEX10, PEX12, PEX13, PEX14, PEX16, PEX19, and PEX26
+- All disorders are autosomal recessive
+
+** Diagnostic Tests
+- VLCFA analysis remains a good initial biochemical test
+- erythrocyte plasmalogens
+- pipecolic acid upon amino acid analysis
+- DNA-panel containing all PEX genes or all genes coding for
+  peroxisomal protein
+
+** Treatment
+- No treatment available
+- supplementation with docosahexaenoic acid (DHA) is not beneficial
+- Investigating cholic acid supplementation to reduce formation of the
+  toxic bile acid intermediates di- and trihydroxycholestanoic acid
 * Peroxisomal \alpha-oxidation Disorders 
 ** Adult Refsum Disease
 * Sjogren Larsson Syndrome
 ** Test
 
 * Very Long Chain Fatty Acid Measurement
+- 
+
+
+** COMMENT Reference 
 https://adrenoleukodystrophy.info/mutations-biochemistry/vlcfa
-The assay depends upon demonstration of increased levels of C26:0 and increases in the C26:0/C22:0 and C24:0/C22:0 ratios. The experience with this assay in more than 2,000 ALD patients (males and females) has demonstrated that approximately 10 to 20% of women with ALD have normal levels of VLCFA.
-For women, a normal plasma VLCFA level thus does not exclude the diagnosis adrenoleukodystrophy. When a female is suspected to have adrenoleukodystrophy, mutation analysis is the most reliable method for the diagnosis. Ideally, the mutation in the family has to be defined in an affected male or obligate heterozygote relative (an obligate heterozygote is a woman either with a father diagnosed with adrenoleukodystrophy or a woman with two children with genetically proven adrenoleukodystrophy).
 
