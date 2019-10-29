@@ -50,26 +50,41 @@
 % \end{textblock*}}
 #+END_EXPORT 
 
-* Peroxisomal \beta-oxidation Disorders
-** Peroxisomal \beta-oxidation
+* Introduction
+** Peroxisomal FA oxidation
 - oxidation of a range of fatty acids including:
-  1) very-long-chain fatty acids
-     -  do not degrade fatty acids to completion
-  2) pristanic acid
-  3) bile acid intermediates di- and trihydroxycholestanoic acid
-  4) a range of eicosanoids
+  1) very-long-chain fatty acid \beta-oxidation
+     1) do not degrade fatty acids to completion
+  2) \alpha-oxidation of phytanic acid  
+  3) pristanic acid
+  4) bile acid intermediates di- and trihydroxycholestanoic acid
+  5) a range of eicosanoids
 
 - Two acyl-CoA oxidases (ACOX1 & 2)
 - Two bifunctional proteins (LBP & DBP)
 - Two thiolases (ACAA1 & SCPx). 
 - Single enzyme or transport protein defect result in abnormalities in some fatty acids.
 
-** Peroxisomal \beta-oxidation Disorders
+** Peroxisomal Disorders
 - Peroxisomal \beta-oxidation disorders can be subdivided into two groups:
   1) single peroxisomal enzyme or transport protein deficiencies
      - X-linked adrenoleukodystrophy (X-ALD)
   2) generalized peroxisomal beta-oxidation deficiencies.
      - Zellweger syndrome 
+
+- Peroxisomal \alpha-oxidation disorders
+  - Adult Refsum
+- Sjogren Larsson Syndrome
+
+** Peroxisomal Disorders (Exam?)
+- Etherphospholipid Biosynthesis
+  - Rhizomelic Chondrodysplasia Punctata (RCDP) 1-4
+- FA Elongation disorders
+  - EVOL4, EVOL5,
+  - Trans-2,3-Enoyl-CoA Reductase (TER), 3-Hydroxyacyl-CoA Dehydratase 1 (HACD1)
+- Eicosanoid Metabolism
+  - Primary Hypertrophic Osteoarthropathy Type 1
+  - LTC4-Synthase Deficiency
 
 ** Non-mitochondrial FA metabolism
 #+CAPTION[Non-mitochondrial FA metabolism]:Non-mitochondrial FA metabolism
@@ -127,6 +142,7 @@
     but have no or minimal neurologic symptoms.
 - HCT can arrest the cerebral demyelination when the procedure is
   performed at a very early stage
+
 * Zellweger Spectrum Disorders
 ** Clinical Presentation
 - prototype of the ZSD:
@@ -163,14 +179,84 @@
 - supplementation with docosahexaenoic acid (DHA) is not beneficial
 - Investigating cholic acid supplementation to reduce formation of the
   toxic bile acid intermediates di- and trihydroxycholestanoic acid
-* Peroxisomal \alpha-oxidation Disorders 
-** Adult Refsum Disease
+
+* Adult Refsum Disease
+** Clinical Presentation
+- present in late childhood with progressive loss of night vision, a
+  decline in visual capacity and anosmia.
+- After \ge 10 years patients may develop: deafness, ataxia,
+  polyneuropathy, ichthyosis, fatigue, and cardiac conduction
+  disturbances.
+- full constellation of features defined by Refsum in the 1940s includes:
+  - retinitis pigmentosa, cerebellar ataxia and chronic polyneuropathy
+  - rarely seen in single patients with ARD
+** Metabolic derangement
+- Phytanoyl-CoA hydroxylase is deficient in ARD
+- required for \alpha-oxidation of phytanic acid
+- \to accumulation of phytanic acid 
+** Genetics
+- ARD is an autosomal recessive disorder caused by mutations in PHYH.
+- A large number of often private mutations has been identified
+
+** Diagnostic Tests
+- \uparrow \uparrow \uparrow plasma phytanic acid 
+- \uparrow phytanic acid in ZS,
+  - initially called infantile Refsum
+
+** Treatment
+- Dietary restriction of phytanic acid is the mainstay of therapy in ARD patients
+- critical to minimize ongoing tissue accumulation.
+- The largest sources of phytanic acid and its metabolic precursor phytol are:
+  - dairy products, meats and certain fish
+- Green leaves and vegetables do not need to be restricted since the
+  phytanic acid they contain cannot be released from the chlorophyll molecule.
+- avoid rapid weight loss since this may mobilize phytanic acid stores
+  from adipose tissue
+- halt progression of symptoms and some functional recovery if the
+  disease is recognized early and dietary restriction and regular
+  lipid apheresis are maintained life-long.
+
 * Sjogren Larsson Syndrome
-** Test
+** Clinical Presentation
+- classical tetrad of abnormalities in SLS includes:
+  1) ichthyosis
+  2) spasticity
+  3) ophthalmological abnormalities
+  4) intellectual disability
+- full-blown phenotype of SLS is not observed in all patients
+- manifests later on in childhood \gt 3 years of age.
+
+** Metabolic Derangement
+- Enzyme deficient in SLS is fatty aldehyde dehydrogenase (FALDH)
+- Plays a key role in the degradation of long-chain fatty alcohols and
+  Leukotriene B4
+
+
+** Genetics
+- SLS is an autosomal recessive disorder caused by mutations in
+  ALD-H3A2
+- a range of different mutations including missense,nonsense,
+  splice-site and deletions has been reported.
+ 
+
+** Diagnostic Tests
+- \uparrow long-chain fatty alcohols in plasma
+- \uparrow LTB4 metabolites in urine.
+- Since no easy methods have been described to measure these
+  metabolites, enzymatic analysis is the methodof choice,
+- can be done in polymorphonuclear lymphocytes using pyrenedecanal as substrate
+- allows straightforward identification of FALDH-deficiency in candidate patients.
+
+** Treatment
+- Treatment of SLS patients is focused on the spasticity and prevention of contracture development.
+- One of the key problems in SLS patients is the striking pruritus which may originate from LTB4 accumulation.
+- Zileuton, inhibits leukotriene formation by blocking its biosynthesis
+- effective in managing chronic (severe) asthma.
+- improvement of pruritus with a significant reduction of urinary LTB4
+  excretion and of the lipid peak at the MRS.
+- A double-blind placebo controlled trial is currently underway
 
 * Very Long Chain Fatty Acid Measurement
-- 
-
 
 ** COMMENT Reference 
 https://adrenoleukodystrophy.info/mutations-biochemistry/vlcfa
