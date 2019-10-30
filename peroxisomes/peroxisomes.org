@@ -52,13 +52,14 @@
 
 * Introduction
 ** Peroxisomal FA oxidation
-- oxidation of a range of fatty acids including:
-  1) very-long-chain fatty acid \beta-oxidation
-     1) do not degrade fatty acids to completion
-  2) \alpha-oxidation of phytanic acid  
-  3) pristanic acid
-  4) bile acid intermediates di- and trihydroxycholestanoic acid
-  5) a range of eicosanoids
+- \beta-oxidation of:
+  - very-long-chain fatty acids
+    - C22:6-CoA, C22:5-CoA, C26:1-CoA, C26:0-CoA
+    - do not degrade fatty acids to completion
+  - bile acid intermediates di- and trihydroxycholestanoic acid
+  - a range of eicosanoids
+- \alpha-oxidation of phytanoyl-CoA \to pristanoly-CoA
+  - \beta-oxidation of pristanoly-CoA
 
 - Two acyl-CoA oxidases (ACOX1 & 2)
 - Two bifunctional proteins (LBP & DBP)
@@ -95,19 +96,21 @@
 * X-linked Adrenoleukodystrophy
 ** Clinical Presentation
 - 1/20,000 males and females
+*** ALD
 - childhood cerebral form is the most severe
   - neurological symptoms between 4-12 years
   - vegetative state and death
-- Males may present with ADD or behavioural changes (due to
-  visuospatial deficits \pm central hearing loss) as the first manifestations
+- Males may present with ADD or behavioural changes
+  - due to visuospatial deficits \pm central hearing loss
 - followed by severe visual and hearing impairment, quadriplegia and
   cerebellar ataxia.
-- Adrenomyeloneuropathy (AMN) affects 65% of adult X-ALD male patients (20–50 years)
-  - up to 88% of heterozygous women (>40 years)
+*** AMN
+- Adrenomyeloneuropathy affects 65% of adult X-ALD male patients (20-50 years)
+  - up to 88% of heterozygous women (\gt40 years)
 - Presentation is progressive spastic paraparesis and sensory ataxia.
 
 ** Metabolic Derangement
-- ALDP deficiency a peroxisomal ABC transporter
+- Deficiency in ALDP a peroxisomal ABC transporter
 - \to \uparrow VLCFA-CoA in cytosol
   - incorporation into a variety of lipids including:
   - cholesterol esters, phospholipids, and sphingolipids
@@ -120,21 +123,22 @@
 
 ** Diagnostic Tests
 
-- The single most important test for X-ALD is the analysis of VLCFAs,
-  including C22:0, C24:0, and C26:0 in plasma after alkaline and acid
-  hydrolysis to release the VLCFAs from all lipid species
+- Quantitative VLCFAs including:C22:0, C24:0, and C26:0 in plasma
+  - after alkaline and acid hydrolysis
+  - releases the VLCFAs from all lipid species
+  - \uparrow concentration of C26:0
+  - \uparrow C26:0/C22:0 and C24:0/C22:0 ratios
 
-- \uparrow concentration of C26:0
-- \uparrow C26:0/C22:0 and C24:0/C22:0 ratios.
-- In women, a normal plasma VLCFA level thus does not exclude the diagnosis adrenoleukodystrophy.
-  - When a female is suspected to have adrenoleukodystrophy, mutation analysis is the most reliable method for the diagnosis.
+- In females, normal plasma VLCFA does not exclude XALD
+  - mutation analysis is the most reliable method for diagnosis in females
 
-- False-positive results, however, have been reported in patients on a
-  ketogenic diet and especially in patients taking peanut butter
+- False-positive results have been reported in:
+  - patients on a ketogenic diet
+  - recent ingestion of peanut butter
 
 ** Treatment
 - A boy born with X-ALD has a 35% risk of developing cerebral ALD
-  between the age of 4–12 years
+  between the age of 4-12 years
 - 100% risk of developing AMN between the age of 25-50 years.
 - Cerebral X-ALD can be treated in boys and adult males
   - only at a very early stage of the disease,
@@ -145,30 +149,36 @@
 
 * Zellweger Spectrum Disorders
 ** Clinical Presentation
-- prototype of the ZSD:
- 1) the typical cranial facial dysmorphia including:
-    - high forehead, large interior fontanelle, hypoplastic
-      supraorbital ridges, epicanthal folds, flat nasal bridge, and
-      deformed ear lobes
- 2) profound neurological abnormalities.
+- Prototypical ZSD:
+  1) Typical cranial facial dysmorphia including:
+     - high forehead
+     - large interior fontanelle
+     - hypoplastic supraorbital ridges
+     - epicanthal folds
+     - flat nasal bridge
+     - deformed ear lobes
+  2) Profound neurological abnormalities
 
 ** Metabolic Derangement
-- absence or marked deficiency of peroxisomes
+- Absence or marked deficiency of peroxisomes
   - assessed by catalase-staining in fibroblasts
   - using immunofluorescence microscopy analysis
-- all peroxisomal functions are impaired.
-- In classical ZS abnormalities include accumulation of VLCFAs,
-  pristanic acid, di- and trihydroxycholestanoic acid, and pipecolic
-  acid and deficient plasmalogens in erythrocytes
+- All peroxisomal functions are impaired.
+- In classical ZSD abnormalities include:
+  - \uparrow VLCFAs
+  - \uparrow pristanic acid,
+  - \uparrow di- and trihydroxycholestanoic acid,
+  - \uparrow pipecolic acid
+  - \downarrow plasmalogens in erythrocytes
 
 ** Genetics
-- The genetic basis of the ZSD is markedly heterogeneous
-  - biallelic mutations identified in:
+- The genetic basis of the ZSD is heterogeneous
+- Biallelic mutations identified in:
   - PEX1, PEX2, PEX3, PEX5, PEX6, PEX10, PEX12, PEX13, PEX14, PEX16, PEX19, and PEX26
 - All disorders are autosomal recessive
 
 ** Diagnostic Tests
-- VLCFA analysis remains a good initial biochemical test
+- VLCFA analysis is a good initial biochemical test
 - erythrocyte plasmalogens
 - pipecolic acid upon amino acid analysis
 - DNA-panel containing all PEX genes or all genes coding for
@@ -178,47 +188,56 @@
 - No treatment available
 - supplementation with docosahexaenoic acid (DHA) is not beneficial
 - Investigating cholic acid supplementation to reduce formation of the
-  toxic bile acid intermediates di- and trihydroxycholestanoic acid
+  toxic bile acid intermediates DHCA and THCA
 
 * Adult Refsum Disease
 ** Clinical Presentation
-- present in late childhood with progressive loss of night vision, a
-  decline in visual capacity and anosmia.
-- After \ge 10 years patients may develop: deafness, ataxia,
-  polyneuropathy, ichthyosis, fatigue, and cardiac conduction
-  disturbances.
-- full constellation of features defined by Refsum in the 1940s includes:
+- present in late childhood with:
+  - progressive loss of night vision
+  - decline in visual capacity
+  - anosmia
+- After \ge 10 years patients may develop:
+  - deafness, ataxia, polyneuropathy, ichthyosis, fatigue, and cardiac
+    conduction disturbances
+- full constellation of features defined by Refsum includes:
   - retinitis pigmentosa, cerebellar ataxia and chronic polyneuropathy
-  - rarely seen in single patients with ARD
+- rarely seen in single patients with ARD
+
 ** Metabolic derangement
 - Phytanoyl-CoA hydroxylase is deficient in ARD
 - required for \alpha-oxidation of phytanic acid
 - \to accumulation of phytanic acid 
+
+#+CAPTION[oxidation of phytanic]:Oxidation of Phytanic Acid
+#+NAME: fig:oxphy
+#+ATTR_LaTeX: :width 0.3\textwidth
+[[file:./figures/alpha.png]]
+
 ** Genetics
 - ARD is an autosomal recessive disorder caused by mutations in PHYH.
 - A large number of often private mutations has been identified
 
 ** Diagnostic Tests
 - \uparrow \uparrow \uparrow plasma phytanic acid 
-- \uparrow phytanic acid in ZS,
+- \uparrow phytanic acid in ZS
   - initially called infantile Refsum
 
 ** Treatment
-- Dietary restriction of phytanic acid is the mainstay of therapy in ARD patients
-- critical to minimize ongoing tissue accumulation.
+- Dietary restriction of phytanic acid 
+  - critical to minimize ongoing tissue accumulation.
 - The largest sources of phytanic acid and its metabolic precursor phytol are:
   - dairy products, meats and certain fish
-- Green leaves and vegetables do not need to be restricted since the
-  phytanic acid they contain cannot be released from the chlorophyll molecule.
-- avoid rapid weight loss since this may mobilize phytanic acid stores
-  from adipose tissue
-- halt progression of symptoms and some functional recovery if the
+- vegetables do not need to be restricted
+  - phytanic acid is not released from chlorophyll
+- avoid rapid weight loss
+  - may mobilize phytanic acid from adipose tissue
+- Can halt progression of symptoms and some functional recovery if the
   disease is recognized early and dietary restriction and regular
   lipid apheresis are maintained life-long.
 
-* Sjogren Larsson Syndrome
+* Sj\ouml{}gren Larsson Syndrome
 ** Clinical Presentation
-- classical tetrad of abnormalities in SLS includes:
+- Classical tetrad of abnormalities in SLS includes:
   1) ichthyosis
   2) spasticity
   3) ophthalmological abnormalities
@@ -228,35 +247,30 @@
 
 ** Metabolic Derangement
 - Enzyme deficient in SLS is fatty aldehyde dehydrogenase (FALDH)
-- Plays a key role in the degradation of long-chain fatty alcohols and
-  Leukotriene B4
-
+- degradation of long-chain fatty alcohols and leukotriene B4
 
 ** Genetics
 - SLS is an autosomal recessive disorder caused by mutations in
   ALD-H3A2
-- a range of different mutations including missense,nonsense,
+- a range of different mutations including missense, nonsense,
   splice-site and deletions has been reported.
  
-
 ** Diagnostic Tests
 - \uparrow long-chain fatty alcohols in plasma
 - \uparrow LTB4 metabolites in urine.
-- Since no easy methods have been described to measure these
-  metabolites, enzymatic analysis is the methodof choice,
-- can be done in polymorphonuclear lymphocytes using pyrenedecanal as substrate
-- allows straightforward identification of FALDH-deficiency in candidate patients.
+  - No easy methods have been described to measure these metabolites
+- enzymatic analysis is the method of choice
+  - can be done in polymorphonuclear lymphocytes using pyrenedecanal as substrate
+  - identification of FALDH-deficiency in candidate patients.
 
 ** Treatment
 - Treatment of SLS patients is focused on the spasticity and prevention of contracture development.
-- One of the key problems in SLS patients is the striking pruritus which may originate from LTB4 accumulation.
+- One of the key problems in SLS patients is the striking pruritus
+  - may originate from LTB4 accumulation.
 - Zileuton, inhibits leukotriene formation by blocking its biosynthesis
-- effective in managing chronic (severe) asthma.
-- improvement of pruritus with a significant reduction of urinary LTB4
-  excretion and of the lipid peak at the MRS.
+  - effective in managing chronic (severe) asthma.
+- improvement of pruritus
+  - \downarrow urinary LTB4
+  - \downarrow lipid peak on MRS.
 - A double-blind placebo controlled trial is currently underway
-
-* Very Long Chain Fatty Acid Measurement
-** COMMENT Reference 
-https://adrenoleukodystrophy.info/mutations-biochemistry/vlcfa
 
