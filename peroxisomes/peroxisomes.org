@@ -64,7 +64,6 @@
 - Two acyl-CoA oxidases (ACOX1 & 2)
 - Two bifunctional proteins (LBP & DBP)
 - Two thiolases (ACAA1 & SCPx). 
-- Single enzyme or transport protein defect result in abnormalities in some fatty acids.
 
 ** Peroxisomal Disorders
 - Peroxisomal \beta-oxidation disorders can be subdivided into two groups:
@@ -119,7 +118,7 @@
 
 ** Genetics
 - X-ALD is caused by mutations in ABCD1
-- X-linked
+- X-linked, recessive
 
 ** Diagnostic Tests
 

@@ -1,0 +1,103 @@
+#+TITLE: Congenital Disorders of Glycosylation
+#+AUTHOR: Matthew Henderson, PhD, FCACB
+#+DATE: \today
+
+:PROPERTIES:
+#+DRAWERS: PROPERTIES
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [presentation, smaller]
+#+BEAMER_THEME: Hannover
+#+BEAMER_COLOR_THEME: whale
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+OPTIONS: H:2 toc:nil ^:t
+#+PROPERTY: header-args:R :session *R*
+#+PROPERTY: header-args :cache no
+#+PROPERTY: header-args :tangle yes
+#+STARTUP: beamer
+#+STARTUP: overview
+#+STARTUP: indent
+# #+BEAMER_HEADER: \subtitle{Part 1: Maple Syrup Urine Diseas}
+#+BEAMER_HEADER: \institute[NSO]{Newborn Screening Ontario | The University of Ottawa}
+#+BEAMER_HEADER: \titlegraphic{\includegraphics[height=1cm,keepaspectratio]{../logos/NSO_logo.pdf}\includegraphics[height=1cm,keepaspectratio]{../logos/cheo-logo.png} \includegraphics[height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}}
+#+latex_header: \hypersetup{colorlinks,linkcolor=white,urlcolor=blue}
+#+LaTeX_header: \usepackage{textpos}
+#+LaTeX_header: \usepackage{textgreek}
+#+LaTeX_header: \usepackage[version=4]{mhchem}
+#+LaTeX_header: \usepackage{chemfig}
+#+LaTeX_header: \usepackage{siunitx}
+#+LaTeX_header: \usepackage{gensymb}
+#+LaTex_HEADER: \usepackage[usenames,dvipsnames]{xcolor}
+#+LaTeX_HEADER: \usepackage[T1]{fontenc}
+#+LaTeX_HEADER: \usepackage{lmodern}
+#+LaTeX_HEADER: \usepackage{verbatim}
+#+LaTeX_HEADER: \usepackage{tikz}
+#+LaTeX_HEADER: \usepackage{wasysym}
+#+LaTeX_HEADER: \usetikzlibrary{shapes.geometric,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+:END:
+
+#+BEGIN_EXPORT LaTeX
+%\logo{\includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/NSO_logo_small.pdf}~%
+%    \includegraphics[width=1cm,height=1cm,keepaspectratio]{../logos/UOlogoBW.eps}%
+%}
+
+\vspace{220pt}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\tiny}
+% \addtobeamertemplate{frametitle}{}{%
+% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+% \includegraphics[height=1cm,width=2cm]{cat}
+% \end{textblock*}}
+#+END_EXPORT 
+
+* Introduction
+
+** Introduction
+
+- Most extracellular proteins, such as serum proteins, most membrane proteins and several intracellular proteins (such as lysosomal enzymes), are glycoproteins.
+- The glycans are defined by their linkage to the protein:
+  - N-glycans are linked to the amide group of asparagine
+  - O-glycans are linked to the hydroxyl group of serine or
+    threonine.
+
+- Glycosylphosphatidylinositol (GPI) anchors are glycolipids that
+  tether more than 150 proteins to the outer leaflet of plasma
+  membranes.
+
+- Congenital disorders of glycosylation are due to defects in the
+  synthesis of glycans and in the attachment of glycans to proteins
+  and lipids.
+- Rapidly growing disease family ~ 
+
+** Synthesis of N-glycans
+
+1) Formation in the cytosol of nucleotide-linked sugars, mainly
+   GDP-Man, and also UDP-Glc and UDP-GlcNAc followed by attachment of
+   GlcNAc and Man units to dolichol phosphate, and flipping of the
+   nascent oligosaccharide structure into the ER.
+2) Stepwise assembly in the ER, by addition of Man and Glc resulting
+   in the 14-unit oligosaccharide precuror:
+   - dolichol pyrophosphate-N-acetyl-glucosamine_2 -mannose_9 -glucose_3
+3) Transfer of this precursor onto the nascent protein, followed by
+   final processing of the glycan in the Golgi apparatus by trimming
+   and attachment of various sugar units.
+
+** N-glycan Assembly
+
+#+CAPTION[]:N-glycan assembly
+#+NAME: fig:ngassembly
+#+ATTR_LaTeX: :width 0.9\textwidth
+[[file:./figures/ngassembly.png]]
+
+** N-glycan Remodelling
+
+#+CAPTION[]:N-glycan remodelling
+#+NAME: fig:ngremodel
+#+ATTR_LaTeX: :width 0.9\textwidth
+[[file:./figures/ngremodel.png]]
+
+** CDGs
+
+
+* CDG-1a
+CDG-Ia accounts for 70% of the congenital disorders of glycosylation, which combined affect 1 in every 50,000 to 100,000 births. Cases of CDG-Ia have been reported worldwide, with about half coming from Scandinavian countries
