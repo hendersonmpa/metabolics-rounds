@@ -170,7 +170,16 @@
   - principal isozyme of PMM
 - GDP-mannose is the donor of the mannose units used in the ER to assemble the dolichol-pyrophosphate oligosaccharide precursor,
 - defect \to hypoglycosylation
-- deficiency and/or dysfunction of numerous glycoproteins, including serum pro-
-teins (such as thyroxin-binding globulin, haptoglobin, clotting
-factor XI, antithrombin III, cholinesterase etc.), lysosomal
-enzymes and membranous glycoproteins.
+- deficiency and/or dysfunction of numerous glycoproteins, including:
+  - serum proteins thyroxin-binding globulin, haptoglobin, clotting factor XI, antithrombin III, cholinesterase
+  - lysosomal enzymes
+  - membranous glycoproteins.
+
+
+** Genetics
+- PMM deficiency is inherited as an autosomal-recessive trait caused by mutations of PMM2.
+- At least 107 mutations identified
+- The most frequent mutation (c.422G>A) causes an R141H substitution and is present in 75% of patients of Caucasian origin.
+- This mutation is not compatible with life in the homozygous state.
+- Its frequency in the Belgian population is as high as 1 in 50.
+- The incidence of PMM2 deficiency is not known; in Sweden it has been estimated at 1 in 40,000.
