@@ -50,27 +50,21 @@
 % \end{textblock*}}
 #+END_EXPORT 
 
-* Introduction
+* Disorders of Protein N-glycosylation
 
 ** Introduction
-
 - Most extracellular proteins, such as serum proteins, most membrane proteins and several intracellular proteins (such as lysosomal enzymes), are glycoproteins.
 - The glycans are defined by their linkage to the protein:
   - N-glycans are linked to the amide group of asparagine
   - O-glycans are linked to the hydroxyl group of serine or
     threonine.
 
-- Glycosylphosphatidylinositol (GPI) anchors are glycolipids that
-  tether more than 150 proteins to the outer leaflet of plasma
-  membranes.
-
 - Congenital disorders of glycosylation are due to defects in the
   synthesis of glycans and in the attachment of glycans to proteins
   and lipids.
 - Rapidly growing disease family ~ 
-
+  - 1% of HG involved in glycosylation
 ** Synthesis of N-glycans
-
 1) Formation in the cytosol of nucleotide-linked sugars, mainly
    GDP-Man, and also UDP-Glc and UDP-GlcNAc followed by attachment of
    GlcNAc and Man units to dolichol phosphate, and flipping of the
@@ -83,21 +77,100 @@
    and attachment of various sugar units.
 
 ** N-glycan Assembly
-
 #+CAPTION[]:N-glycan assembly
 #+NAME: fig:ngassembly
 #+ATTR_LaTeX: :width 0.9\textwidth
 [[file:./figures/ngassembly.png]]
 
 ** N-glycan Remodelling
-
 #+CAPTION[]:N-glycan remodelling
 #+NAME: fig:ngremodel
 #+ATTR_LaTeX: :width 0.9\textwidth
 [[file:./figures/ngremodel.png]]
 
-** CDGs
+** CDG
+- very broad spectrum of clinical manifestations.
+- considered in any unexplained clinical condition
+  - particularly in multi-organ disease with neurological involvement
+  - non-specific developmental disability is the only presenting sign.
+- Incidence 1:50,000 to 100,000 births.
+
+** CDG classification
+- Each CDG type is defined by a specific enzyme defect and the mutation in its underlying gene
+- Most CDG mutations are hypomorphic and allow some glycan synthesis
+- There are more than 100 types of CDGs
+- Type 1: ER defects
+- Type 2: Golgi defects
+- 1500+ cases worldwide and approximately 300+ cases in the US
+- New disorders continue to be identified including the 1st disorder of de-glycosylation
 
 
-* CDG-1a
-CDG-Ia accounts for 70% of the congenital disorders of glycosylation, which combined affect 1 in every 50,000 to 100,000 births. Cases of CDG-Ia have been reported worldwide, with about half coming from Scandinavian countries
+** Laboratory Investigations
+- serum transferrin IEF is still the screening method of choice
+  - able to detect only a limited number of CDG
+  - N-glycosylation disorders associated with sialic acid deficiency
+
+- partial deficiency of sialic acid in these forms of CDG causes one
+  of two main types of cathodal shift.
+
+- A type 1 pattern indicates an assembly disorder, and PMM2-CDG or MPI-CDG
+  - (depending on the clinical presentation) should be considered first.
+
+- If these are excluded, the next step could be dolichol-linked glycan
+  analysis, or direct mutation analysis of a panel of genes known to
+  be involved in CDG or whole exome sequencing (WES).
+
+- A type 2 pattern indicates a disorder of processing.
+  - Protein-linked glycan analysis should next be performed in an
+    attempt to identify the defective step, or CDG gene panel analysis or WES.
+
+** CDG diagnosis
+
+#+CAPTION[]:CDG diagnosis
+#+NAME: fig:cdg_diag
+#+ATTR_LaTeX: :width 0.9\textwidth
+[[file:./figures/cdg_diag.png]]
+
+
+** Transferrin IEF
+
+#+CAPTION[]:Transferrin IEF
+#+NAME: fig:tief
+#+ATTR_LaTeX: :width 0.9\textwidth
+[[file:./figures/transferrin_ief.png]]
+
+
+
+* Phosphomannomutase 2 Deficiency (CDG-1a)
+
+** Clinical Presenation
+- CDG-Ia accounts for 70% CDGs
+- The nervous system is affected in all patients
+- most other organs are involved in a variable way.
+- The neurological symptoms include:
+  - alternating internal strabismus and other abnormal eye movements
+  - axial hypotonia, psychomotor disability, ataxia and hyporeflexia.
+- After infancy, symptoms include retinitis pigmentosa, stroke-like episodes, \pm epilepsy.
+- As a rule there is no regression.
+- 1st year variable feeding problems (anorexia, vomiting, diarrhoea) \to failure to thrive.
+- Other features are:
+  - variable dysmorphism, which may include large,
+    hypoplastic/dysplastic ears, abnormal subcutaneous adipose tissue
+    distribution (fat pads, orange peel skin), inverted nipples,
+  - mild to moderate hepatomegaly, skeletal abnormalities and hypogonadism.
+- Some infants develop a pericardial effusion and/or cardiomyopathy.
+- At the other end of the clinical spectrum are patients with a very
+  mild phenotype (no dysmorphic features, slight intellectual
+  disability). 
+
+** Metabolic Derangment
+- Phosphomannomutase (PMM) 2 catalyses the second committed step in the synthesis of GDP-mannose
+  - mannose-6-phosphate \to mannose-1-phosphate, occurs in the cytosol
+- PMM2-CDG is due to the deficiency of PMM2
+  - principal isozyme of PMM
+- GDP-mannose is the donor of the mannose units used in the ER to assemble the dolichol-pyrophosphate oligosaccharide precursor,
+- defect \to hypoglycosylation
+- deficiency and/or dysfunction of numerous glycoproteins, including serum pro-
+teins (such as thyroxin-binding globulin, haptoglobin, clotting
+factor XI, antithrombin III, cholinesterase etc.), lysosomal
+enzymes and membranous glycoproteins.
