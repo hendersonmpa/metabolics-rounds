@@ -1,4 +1,4 @@
-#+TITLE: Congenital Disorders of Glycosylation
+#+TITLE: Congenital Disorders of N-Linked Glycosylation
 #+AUTHOR: Matthew Henderson, PhD, FCACB
 #+DATE: \today
 
@@ -50,10 +50,11 @@
 % \end{textblock*}}
 #+END_EXPORT 
 
-* Disorders of Protein N-glycosylation
-
+* Disorders of Protein N-Glycosylation
 ** Introduction
-- Most extracellular proteins, such as serum proteins, most membrane proteins and several intracellular proteins (such as lysosomal enzymes), are glycoproteins.
+- Most extracellular proteins, membrane proteins and several
+  intracellular proteins (lysosomal enzymes), are glycoproteins.
+
 - The glycans are defined by their linkage to the protein:
   - N-glycans are linked to the amide group of asparagine
   - O-glycans are linked to the hydroxyl group of serine or
@@ -62,19 +63,27 @@
 - Congenital disorders of glycosylation are due to defects in the
   synthesis of glycans and in the attachment of glycans to proteins
   and lipids.
-- Rapidly growing disease family ~ 
+- Rapidly growing disease family (N-,O-,GPI) ~60 (listed on NORD)
   - 1% of HG involved in glycosylation
+
 ** Synthesis of N-glycans
-1) Formation in the cytosol of nucleotide-linked sugars, mainly
-   GDP-Man, and also UDP-Glc and UDP-GlcNAc followed by attachment of
-   GlcNAc and Man units to dolichol phosphate, and flipping of the
-   nascent oligosaccharide structure into the ER.
-2) Stepwise assembly in the ER, by addition of Man and Glc resulting
-   in the 14-unit oligosaccharide precuror:
-   - dolichol pyrophosphate-N-acetyl-glucosamine_2 -mannose_9 -glucose_3
-3) Transfer of this precursor onto the nascent protein, followed by
-   final processing of the glycan in the Golgi apparatus by trimming
-   and attachment of various sugar units.
+1) Formation in the cytosol of nucleotide-linked sugars
+   - mainly GDP-Man, UDP-Glc and UDP-GlcNAc
+   - attachment of GlcNAc and Man units to dolichol phosphate
+   - flipping into the ER
+2) Stepwise assembly in the ER
+   - addition of Man and Glc \to 14-unit oligosaccharide precuror:
+     - dolichol pyrophosphate-N-acetyl-glucosamine_2-mannose_9-glucose_3
+3) Transfer of this precursor onto the nascent protein
+   - processing of the glycan in the Golgi apparatus
+     - trimming and attachment of various sugar units
+
+** N-glycan Assembly
+#+CAPTION[]:N-glycan assembly
+#+NAME: fig:
+#+ATTR_LaTeX: :width 0.9\textwidth
+[[file:./figures/glyc.png]]
+
 
 ** N-glycan Assembly
 #+CAPTION[]:N-glycan assembly
@@ -89,48 +98,67 @@
 [[file:./figures/ngremodel.png]]
 
 ** CDG
-- very broad spectrum of clinical manifestations.
+- very broad spectrum of clinical manifestations
 - considered in any unexplained clinical condition
   - particularly in multi-organ disease with neurological involvement
-  - non-specific developmental disability is the only presenting sign.
-- Incidence 1:50,000 to 100,000 births.
+  - non-specific developmental disability is the only presenting sign
+- Incidence 1:50,000 to 100,000 births
 
 ** CDG classification
 - Each CDG type is defined by a specific enzyme defect and the mutation in its underlying gene
 - Most CDG mutations are hypomorphic and allow some glycan synthesis
-- There are more than 100 types of CDGs
 - Type 1: ER defects
 - Type 2: Golgi defects
-- 1500+ cases worldwide and approximately 300+ cases in the US
-- New disorders continue to be identified including the 1st disorder of de-glycosylation
+- ~1500+ cases worldwide
+- ~300+ cases in the US
+  - 70% PMM2-CDG
 
-
-** Laboratory Investigations
+** Transferrin IEF
 - serum transferrin IEF is still the screening method of choice
-  - able to detect only a limited number of CDG
+  - able to detect only a limited number of CDGs
   - N-glycosylation disorders associated with sialic acid deficiency
 
-- partial deficiency of sialic acid in these forms of CDG causes one
-  of two main types of cathodal shift.
+- Normal serum transferrin is mainly composed of tetrasialotransferrin
+  and small amounts of mono-, di-, tri-, penta- and
+  hex-asialotransferrins.
 
-- A type 1 pattern indicates an assembly disorder, and PMM2-CDG or MPI-CDG
-  - (depending on the clinical presentation) should be considered first.
+- Partial deficiency of sialic acid (-ve charge) causes a
+  cathodal shift.
 
-- If these are excluded, the next step could be dolichol-linked glycan
-  analysis, or direct mutation analysis of a panel of genes known to
-  be involved in CDG or whole exome sequencing (WES).
+- Two main types of cathodal shift can be recognized:
+  - Type 1 or 2 patterns
 
-- A type 2 pattern indicates a disorder of processing.
-  - Protein-linked glycan analysis should next be performed in an
-    attempt to identify the defective step, or CDG gene panel analysis or WES.
+** Transferrin IEF
 
-** CDG diagnosis
+- A Type 1 pattern is characterized by an increase of both disialo- and
+  asialotransferrin and a decrease of tetra-, penta-and
+  hexasialotransferrins;
 
-#+CAPTION[]:CDG diagnosis
-#+NAME: fig:cdg_diag
-#+ATTR_LaTeX: :width 0.9\textwidth
-[[file:./figures/cdg_diag.png]]
+  - indicates an assembly disorder, and PMM2-CDG or MPI-CDG should be
+    considered first.
 
+- A Type 1 pattern is also seen in secondary glycosylation disorders
+  such as chronic alcoholism, hereditary fructose intolerance and
+  galactosaemia.
+
+- In a Type 2 pattern there is also an increase of the tri- \pm
+  monosialotransferrin bands.
+  - indicates a disorder of processing
+
+- A shift due to a transferrin protein variant has first to be excluded
+  - IEF after neuraminidase treatment, study of another glycoprotein
+    or, investigation of the parents.
+
+** Additional Laboratory Investigations
+
+- Protein-linked glycan analysis can be performed to identify the defective step
+  - MALDI-TOF analysis of released N-linked oligosaccharides
+- CDG gene panel analysis or WES.
+
+- Capillary zone electrophoresis of total serum is a rapid screening
+  test for CDG.
+  - An abnormal result should be further investigated by serum
+    transferrin IEF.
 
 ** Transferrin IEF
 
@@ -140,46 +168,76 @@
 [[file:./figures/transferrin_ief.png]]
 
 
+** CDG diagnosis
 
-* Phosphomannomutase 2 Deficiency (CDG-1a)
+#+CAPTION[]:CDG diagnosis
+#+NAME: fig:cdg_diag
+#+ATTR_LaTeX: :width 0.9\textwidth
+[[file:./figures/cdg_diag.png]]
+
+
+* PMM2-CDG (CDG-1a)
 
 ** Clinical Presenation
 - CDG-Ia accounts for 70% CDGs
 - The nervous system is affected in all patients
-- most other organs are involved in a variable way.
-- The neurological symptoms include:
+- most other organs are involved in a variable way
+- neurological symptoms include:
   - alternating internal strabismus and other abnormal eye movements
   - axial hypotonia, psychomotor disability, ataxia and hyporeflexia.
 - After infancy, symptoms include retinitis pigmentosa, stroke-like episodes, \pm epilepsy.
-- As a rule there is no regression.
-- 1st year variable feeding problems (anorexia, vomiting, diarrhoea) \to failure to thrive.
+- 1st year variable feeding problems anorexia, vomiting, diarrhoea \to failure to thrive.
 - Other features are:
-  - variable dysmorphism, which may include large,
-    hypoplastic/dysplastic ears, abnormal subcutaneous adipose tissue
-    distribution (fat pads, orange peel skin), inverted nipples,
+  - variable dysmorphism, which may include large ears, abnormal
+    subcutaneous adipose tissue distribution, inverted nipples,
   - mild to moderate hepatomegaly, skeletal abnormalities and hypogonadism.
-- Some infants develop a pericardial effusion and/or cardiomyopathy.
+- Some infants develop a pericardial effusion \pm cardiomyopathy.
 - At the other end of the clinical spectrum are patients with a very
-  mild phenotype (no dysmorphic features, slight intellectual
-  disability). 
+  mild phenotype - no dysmorphic features, slight intellectual disability. 
 
-** Metabolic Derangment
-- Phosphomannomutase (PMM) 2 catalyses the second committed step in the synthesis of GDP-mannose
-  - mannose-6-phosphate \to mannose-1-phosphate, occurs in the cytosol
+** Metabolic Derangement
 - PMM2-CDG is due to the deficiency of PMM2
   - principal isozyme of PMM
-- GDP-mannose is the donor of the mannose units used in the ER to assemble the dolichol-pyrophosphate oligosaccharide precursor,
+- Phosphomannomutase (PMM) 2 catalyses the second committed step in the synthesis of GDP-mannose
+  - mannose-6-phosphate \to mannose-1-phosphate, occurs in the cytosol
+- GDP-mannose is the donor of the mannose units used in the ER to
+  assemble the dolichol-pyrophosphate oligosaccharide precursor
 - defect \to hypoglycosylation
 - deficiency and/or dysfunction of numerous glycoproteins, including:
   - serum proteins thyroxin-binding globulin, haptoglobin, clotting factor XI, antithrombin III, cholinesterase
   - lysosomal enzymes
-  - membranous glycoproteins.
+  - membranous glycoproteins
+
+** Metabolic Derangement
+#+CAPTION[]:PMM2
+#+NAME: fig:pmm2
+#+ATTR_LaTeX: :width 0.9\textwidth
+[[file:./figures/pmm.png]]
 
 
 ** Genetics
-- PMM deficiency is inherited as an autosomal-recessive trait caused by mutations of PMM2.
-- At least 107 mutations identified
-- The most frequent mutation (c.422G>A) causes an R141H substitution and is present in 75% of patients of Caucasian origin.
-- This mutation is not compatible with life in the homozygous state.
-- Its frequency in the Belgian population is as high as 1 in 50.
-- The incidence of PMM2 deficiency is not known; in Sweden it has been estimated at 1 in 40,000.
+- AR, PMM2
+- \ge 107 mutations identified
+- The most frequent mutation (c.422G>A) causes an R141H substitution
+  - present in 75% of Caucasian patients
+  - not compatible with life in the homozygous state.
+  - frequency in Belgian as high as 1 in 50.
+- The incidence of PMM2 deficiency is not known;
+  - in Sweden it has been estimated at 1 in 40,000.
+
+** Diagnostic Tests
+
+- elevation of serum transaminase levels, hypoalbuminaemia, hypocholesterolaemia, and tubular proteinuria.
+- Transferrin IEF
+- To confirm the diagnosis, the activity of PMM should be measured in
+  leukocytes or fibroblasts.
+  - [2-H^{3}]mannose-6-phosphate
+- PMM activity in fibroblasts can be normal
+
+** Treatment
+- No effective treatment is available.
+- The promising finding that mannose is able to correct glycosylation
+  in fibroblasts with PMM2 deficiency could not be substantiated in patients.
+
+* CDG-IIa
+* CDG-1b
