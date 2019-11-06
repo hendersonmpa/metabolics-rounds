@@ -134,8 +134,9 @@
   asialotransferrin and a decrease of tetra-, penta-and
   hexasialotransferrins;
 
-  - indicates an assembly disorder, and PMM2-CDG or MPI-CDG should be
-    considered first.
+  - defects in the assembly of the dolichol lipid-linked oligosaccharide (LLO) chain
+    and its transfer to the nascent protein,
+  - PMM2-CDG or MPI-CDG should be considered first
 
 - A Type 1 pattern is also seen in secondary glycosylation disorders
   such as chronic alcoholism, hereditary fructose intolerance and
@@ -143,7 +144,10 @@
 
 - In a Type 2 pattern there is also an increase of the tri- \pm
   monosialotransferrin bands.
-  - indicates a disorder of processing
+
+  - defects in the trimming and processing of the protein-bound
+    glycans either late in the endoplasmic reticulum or the Golgi
+    compartments.
 
 - A shift due to a transferrin protein variant has first to be excluded
   - IEF after neuraminidase treatment, study of another glycoprotein
@@ -174,7 +178,6 @@
 #+NAME: fig:cdg_diag
 #+ATTR_LaTeX: :width 0.9\textwidth
 [[file:./figures/cdg_diag.png]]
-
 
 * PMM2-CDG (CDG-1a)
 
@@ -214,7 +217,6 @@
 #+ATTR_LaTeX: :width 0.9\textwidth
 [[file:./figures/pmm.png]]
 
-
 ** Genetics
 - AR, PMM2
 - \ge 107 mutations identified
@@ -227,7 +229,8 @@
 
 ** Diagnostic Tests
 
-- elevation of serum transaminase levels, hypoalbuminaemia, hypocholesterolaemia, and tubular proteinuria.
+- \uparrow transaminases, hypoalbuminaemia, hypocholesterolaemia, and
+  tubular proteinuria.
 - Transferrin IEF
 - To confirm the diagnosis, the activity of PMM should be measured in
   leukocytes or fibroblasts.
@@ -239,5 +242,44 @@
 - The promising finding that mannose is able to correct glycosylation
   in fibroblasts with PMM2 deficiency could not be substantiated in patients.
 
-* CDG-IIa
-* CDG-1b
+* MPI-CDG (CDG-1b)
+
+** MPI-CDG (CDG-1b)
+- Mannose-6 phosphate isomerase eficiency
+#+ATTR_LaTeX: :width 0.4\textwidth
+[[file:./figures/pmm.png]]
+
+- Prevalence: \lt 1/1,000,000
+- AR, MPI
+- onset in infancy, neonatal
+
+- cyclic vomiting, profound hypoglycemia, failure to thrive, liver
+  fibrosis, gastrointestinal complications
+  - protein-losing enteropathy with hypoalbuminaemia, life-threatening
+    intestinal bleeding of diffuse origin
+- thrombotic events protein C and S deficiency, low anti-thrombine III levels
+- neurological development and cognitive capacity is usually normal.
+- treated effectively with oral mannose supplementation
+- can be fatal if untreated
+
+* MGAT2-CDG (CDG-IIa)
+
+** MGAT2-CDG (CDG-IIa)
+- N-acetylglucosaminyltransferase 2 deficiency
+
+#+CAPTION[]:N-acetylglucosaminyltransferase 2
+#+NAME: fig:gntII
+#+ATTR_LaTeX: :width 0.2\textwidth
+[[file:./figures/gntII.jpg]]
+
+- AR, MGAT2
+- Prevalence \lt1/1,000,000
+- onset in infancy, neonatal
+- facial dysmorphism: large, posteriorly rotated ears with prominent
+  antihelices, convex nasal ridge, open mouth, large and crowded
+  teeth
+- stereotypic hand movements, seizures, and varying degrees of
+  developmental delay.
+- A bleeding tendency is also observed due to diminished platelet
+  aggregation.
+
