@@ -55,7 +55,7 @@
 - Most extracellular proteins, membrane proteins and several
   intracellular proteins (lysosomal enzymes), are glycoproteins.
 
-- The glycans are defined by their linkage to the protein:
+- glycans are defined by their linkage to the protein:
   - N-glycans are linked to the amide group of asparagine
   - O-glycans are linked to the hydroxyl group of serine or
     threonine.
@@ -63,7 +63,8 @@
 - Congenital disorders of glycosylation are due to defects in the
   synthesis of glycans and in the attachment of glycans to proteins
   and lipids.
-- Rapidly growing disease family (N-,O-,GPI) ~60 (listed on NORD)
+- Rapidly growing disease family (N-,O-,GPI)
+  - ~60 listed on NORD
   - 1% of HG involved in glycosylation
 
 ** Synthesis of N-glycans
@@ -73,8 +74,8 @@
    - flipping into the ER
 2) Stepwise assembly in the ER
    - addition of Man and Glc \to 14-unit oligosaccharide precuror:
-     - dolichol pyrophosphate-N-acetyl-glucosamine_2-mannose_9-glucose_3
-3) Transfer of this precursor onto the nascent protein
+   - dolichol pyrophosphate-GlcNac_2-Man_9-Glu_3
+3) Transfer of this precursor onto the nascent protein by OST
    - processing of the glycan in the Golgi apparatus
      - trimming and attachment of various sugar units
 
@@ -97,30 +98,32 @@
 #+ATTR_LaTeX: :width 0.9\textwidth
 [[file:./figures/ngremodel.png]]
 
-** CDG
+** Congenital Disorders of Glycosylation
 - very broad spectrum of clinical manifestations
-- considered in any unexplained clinical condition
+- consider in any unexplained clinical condition
   - particularly in multi-organ disease with neurological involvement
-  - non-specific developmental disability is the only presenting sign
+  - when non-specific developmental disability is the only presenting sign
 - Incidence 1:50,000 to 100,000 births
 
 ** CDG classification
 - Each CDG type is defined by a specific enzyme defect and the mutation in its underlying gene
-- Most CDG mutations are hypomorphic and allow some glycan synthesis
-- Type 1: ER defects
-- Type 2: Golgi defects
-- ~1500+ cases worldwide
-- ~300+ cases in the US
-  - 70% PMM2-CDG
+- Most CDG mutations are hypomorphic - allow some glycan synthesis
+- N-Glycan CDGs
+  - Type 1: ER defects
+  - Type 2: Golgi defects
+  - ~1500+ cases worldwide
+  - ~300+ cases in the US
+    - 70% PMM2-CDG
 
 ** Transferrin IEF
-- serum transferrin IEF is still the screening method of choice
-  - able to detect only a limited number of CDGs
+- serum transferrin IEF is the screening method of choice
+
+  - can detect nearly all known CDG-I types as well as most CDG-II types and many CDG-X cases.
   - N-glycosylation disorders associated with sialic acid deficiency
 
-- Normal serum transferrin is mainly composed of tetrasialotransferrin
-  and small amounts of mono-, di-, tri-, penta- and
-  hex-asialotransferrins.
+- Normal serum transferrin is mainly composed of:
+  - tetrasialotransferrin and small amounts of mono-, di-, tri-,
+    penta- and hex-asialotransferrins
 
 - Partial deficiency of sialic acid (-ve charge) causes a
   cathodal shift.
@@ -130,28 +133,42 @@
 
 ** Transferrin IEF
 
-- A Type 1 pattern is characterized by an increase of both disialo- and
-  asialotransferrin and a decrease of tetra-, penta-and
-  hexasialotransferrins;
+- Type 1 pattern
 
-  - defects in the assembly of the dolichol lipid-linked oligosaccharide (LLO) chain
-    and its transfer to the nascent protein,
+  - \uparrow disialo- and asialotransferrin
+
+  - \downarrow  tetra-, penta-and hexasialotransferrins
+
+  - defects in the assembly of the dolichol lipid-linked
+    oligosaccharide chain and transfer to the nascent protein
   - PMM2-CDG or MPI-CDG should be considered first
 
-- A Type 1 pattern is also seen in secondary glycosylation disorders
-  such as chronic alcoholism, hereditary fructose intolerance and
-  galactosaemia.
+  - also seen in secondary glycosylation disorders such as:
+    - chronic alcoholism, hereditary fructose intolerance and galactosaemia
 
-- In a Type 2 pattern there is also an increase of the tri- \pm
-  monosialotransferrin bands.
+- Type 2 pattern
+
+  - Type 1 pattern with additional \uparrow tri- \pm
+    monosialotransferrin bands.
 
   - defects in the trimming and processing of the protein-bound
     glycans either late in the endoplasmic reticulum or the Golgi
     compartments.
 
-- A shift due to a transferrin protein variant has first to be excluded
-  - IEF after neuraminidase treatment, study of another glycoprotein
-    or, investigation of the parents.
+** Transferrin IEF limitations
+
+- deficiencies of ER-glucosidase I (CDG-IIb) and Golgi GDP-fucose
+  transporter (CDG-IIc) are missed.
+- prenatal diagnostics by IEF analysis from fetal blood is not
+  reliable
+- IEF of serum from children \lt 2 weeks may be false-positive
+- Heavy alcohol consumption can also result in serum transferrin
+  deficiency in carbohydrate moieties, leading to an abnormal
+  IEF-pattern.
+- Mutations in the protein backbone of transferrin
+  - desialylation of transferrin by neuraminidase treatment or IEF of
+    an alternative glycoprotein like \alpha 1-antitrypsin should be
+    performed.
 
 ** Additional Laboratory Investigations
 
@@ -164,6 +181,8 @@
   - An abnormal result should be further investigated by serum
     transferrin IEF.
 
+- HPLC-UV/Vis @ Sickkids
+
 ** Transferrin IEF
 
 #+CAPTION[]:Transferrin IEF
@@ -172,82 +191,66 @@
 [[file:./figures/transferrin_ief.png]]
 
 
-** CDG diagnosis
 
-#+CAPTION[]:CDG diagnosis
-#+NAME: fig:cdg_diag
-#+ATTR_LaTeX: :width 0.9\textwidth
-[[file:./figures/cdg_diag.png]]
+* PMM2-CDG (CDG-Ia)
 
-* PMM2-CDG (CDG-1a)
-
-** Clinical Presenation
-- CDG-Ia accounts for 70% CDGs
+** Clinical Presentation
+- ~70% CDGs
 - The nervous system is affected in all patients
-- most other organs are involved in a variable way
-- neurological symptoms include:
   - alternating internal strabismus and other abnormal eye movements
-  - axial hypotonia, psychomotor disability, ataxia and hyporeflexia.
-- After infancy, symptoms include retinitis pigmentosa, stroke-like episodes, \pm epilepsy.
-- 1st year variable feeding problems anorexia, vomiting, diarrhoea \to failure to thrive.
+  - axial hypotonia, psychomotor disability, ataxia and hyporeflexia
 - Other features are:
   - variable dysmorphism, which may include large ears, abnormal
     subcutaneous adipose tissue distribution, inverted nipples,
-  - mild to moderate hepatomegaly, skeletal abnormalities and hypogonadism.
-- Some infants develop a pericardial effusion \pm cardiomyopathy.
+  - mild to moderate hepatomegaly, skeletal abnormalities and hypogonadism
+- After infancy, symptoms include retinitis pigmentosa, stroke-like episodes, \pm epilepsy
+- 1st year variable feeding problems anorexia, vomiting, diarrhoea \to failure to thrive
+- Some infants develop a pericardial effusion \pm cardiomyopathy
 - At the other end of the clinical spectrum are patients with a very
-  mild phenotype - no dysmorphic features, slight intellectual disability. 
+  mild phenotype - no dysmorphic features, slight intellectual disability 
 
 ** Metabolic Derangement
-- PMM2-CDG is due to the deficiency of PMM2
-  - principal isozyme of PMM
-- Phosphomannomutase (PMM) 2 catalyses the second committed step in the synthesis of GDP-mannose
-  - mannose-6-phosphate \to mannose-1-phosphate, occurs in the cytosol
-- GDP-mannose is the donor of the mannose units used in the ER to
-  assemble the dolichol-pyrophosphate oligosaccharide precursor
+- Deficiency of PMM2, principal isozyme of PMM
+- Phosphomannomutase 2 catalyses the second committed step in the synthesis of GDP-mannose
+  - Man-6-P \ce{<=>} Man-1-P, occurs in the cytosol
+- GDP-mannose is used in the ER to assemble the dolichol-pyrophosphate
+  oligosaccharide precursor
 - defect \to hypoglycosylation
 - deficiency and/or dysfunction of numerous glycoproteins, including:
-  - serum proteins thyroxin-binding globulin, haptoglobin, clotting factor XI, antithrombin III, cholinesterase
+  - serum proteins thyroxin-binding globulin, haptoglobin, clotting
+    factor XI, antithrombin III, cholinesterase
   - lysosomal enzymes
   - membranous glycoproteins
-
-** Metabolic Derangement
-#+CAPTION[]:PMM2
-#+NAME: fig:pmm2
-#+ATTR_LaTeX: :width 0.9\textwidth
-[[file:./figures/pmm.png]]
 
 ** Genetics
 - AR, PMM2
 - \ge 107 mutations identified
 - The most frequent mutation (c.422G>A) causes an R141H substitution
   - present in 75% of Caucasian patients
-  - not compatible with life in the homozygous state.
-  - frequency in Belgian as high as 1 in 50.
-- The incidence of PMM2 deficiency is not known;
-  - in Sweden it has been estimated at 1 in 40,000.
+  - not compatible with life in the homozygous state
+  - frequency in Belgian as high as 1 in 50
+- The incidence of PMM2 deficiency is not known
+  - in Sweden it has been estimated at 1 in 40,000
 
 ** Diagnostic Tests
-
 - \uparrow transaminases, hypoalbuminaemia, hypocholesterolaemia, and
-  tubular proteinuria.
-- Transferrin IEF
+  tubular proteinuria
+- transferrin IEF
 - To confirm the diagnosis, the activity of PMM should be measured in
-  leukocytes or fibroblasts.
+  leukocytes or fibroblasts
   - [2-H^{3}]mannose-6-phosphate
 - PMM activity in fibroblasts can be normal
 
 ** Treatment
-- No effective treatment is available.
+- No effective treatment is available
 - The promising finding that mannose is able to correct glycosylation
-  in fibroblasts with PMM2 deficiency could not be substantiated in patients.
+  in fibroblasts with PMM2 deficiency could not be substantiated in
+  patients
 
-* MPI-CDG (CDG-1b)
 
 ** MPI-CDG (CDG-1b)
-- Mannose-6 phosphate isomerase eficiency
-#+ATTR_LaTeX: :width 0.4\textwidth
-[[file:./figures/pmm.png]]
+- Mannose-6 phosphate isomerase deficiency
+- F-6-P \ce{<=>} M-6-P
 
 - Prevalence: \lt 1/1,000,000
 - AR, MPI
@@ -258,20 +261,18 @@
   - protein-losing enteropathy with hypoalbuminaemia, life-threatening
     intestinal bleeding of diffuse origin
 - thrombotic events protein C and S deficiency, low anti-thrombine III levels
-- neurological development and cognitive capacity is usually normal.
-- treated effectively with oral mannose supplementation
+- neurological development and cognitive capacity is usually normal
+- *treated effectively with oral mannose supplementation*
 - can be fatal if untreated
+- Saquenay-Lac Saint-Jean syndrome
+- Type I pattern, \downarrow MPI activity WBC, Fib
 
-* MGAT2-CDG (CDG-IIa)
+* Type II 
 
 ** MGAT2-CDG (CDG-IIa)
-- N-acetylglucosaminyltransferase 2 deficiency
-
-#+CAPTION[]:N-acetylglucosaminyltransferase 2
-#+NAME: fig:gntII
-#+ATTR_LaTeX: :width 0.2\textwidth
-[[file:./figures/gntII.jpg]]
-
+- Golgi N-acetylglucosaminyltransferase II deficiency
+  - transfer GlcNAc \to free terminal mannose of core N-linked glycan chain
+  - \to second branch in complex glycans
 - AR, MGAT2
 - Prevalence \lt1/1,000,000
 - onset in infancy, neonatal
@@ -282,4 +283,29 @@
   developmental delay.
 - A bleeding tendency is also observed due to diminished platelet
   aggregation.
+- Type II pattern, \downarrow GnT II activity WBC, Fib
 
+** SLC35C1-CDG (CDG-IIc)
+- GDP-fucose transporter 1	defect
+- AR
+- Normal transferrin IEF
+- severe mental retardation, microcephaly, cortical atrophy, seizures,
+  hypotonia, rhizomelic short stature, and recurrent infections with
+  neutrophilia.
+- *fucose has been used to treat*, thought that:
+  - K_{M} mutants - treatable
+  - V_{max} mutants - not treatable
+
+#+CAPTION[Hh]:Hh Blood Group
+#+NAME: fig:hh
+#+ATTR_LaTeX: :width 0.4\textwidth
+[[file:./figures/Bombay.png]]
+
+
+
+** CDG diagnosis
+
+#+CAPTION[]:CDG diagnosis
+#+NAME: fig:cdg_diag
+#+ATTR_LaTeX: :width 0.9\textwidth
+[[file:./figures/cdg_diag.png]]
